@@ -25,7 +25,7 @@ deploy_to_server:
 
   script:
     - pm2 version -v
-    - pm2 deploy ecosystem.json master setup
+    # - pm2 deploy ecosystem.json master setup
     - pm2 deploy ecosystem.json master
 
 
