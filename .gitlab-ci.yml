@@ -55,7 +55,7 @@ deploy_to_server_develop:
   script:
     - pm2 version -v
     # - pm2 deploy ecosystem.json develop setup #this should be run first time deploying
-    - pm2 deploy ecosystem.json develop
+    - pm2 deploy ecosystem_develop.json develop
 
 
   only: 

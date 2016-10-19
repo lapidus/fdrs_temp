@@ -2,7 +2,7 @@
   // Applications part
   "apps": [
     {
-      "name": "react_test",
+      "name": "react_test_dev",
       "script": "build/server.js",
       "env": {
         "COMMON_VARIABLE": "true"
@@ -17,28 +17,28 @@
   // Deployment part
   // Here you describe each environment
   "deploy": {
-    "master": {
+    "develop": {
       "user": "master",
       // Multi host is possible, just by passing IPs/hostname as an array
       "host": [
         "13.95.9.227"
       ],
       // Branch
-      "ref": "origin/master",
+      "ref": "origin/develop",
       // Git repository to clone
       "repo": "git@gitlab.com:LapidusInteractive/fdrs.git",
       // Path of the application on target servers
-      "path": "/home/master",
+      "path": "/home/master/develop",
       // Commands to execute locally (on the same machine you deploy things)
       // Can be multiple commands separated by the character ";"
       "pre-deploy-local": "echo 'This is a local executed command:::';pwd",
       // Commands to be executed on the server after the repo has been cloned
-      "post-deploy": "npm install && npm run build --release && pm2 startOrRestart ecosystem.json --env master",
+      "post-deploy": "npm install && npm run build --release && pm2 startOrRestart ecosystem_develop.json --env develop",
       // Environment variables that must be injected in all applications on this env
       "env": {
-        "NODE_ENV": "prod",
-        "ENV":"prod",
-        "PORT":3034
+        "NODE_ENV": "development",
+        "ENV":"development",
+        "PORT":4034
       }
     }
   }
