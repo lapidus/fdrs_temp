@@ -40,10 +40,8 @@
         "ENV":"prod",
         "PORT":3034
       }
-    }
-  },
-  "deploy": {
-    "master": {
+    },
+    "develop": {
       "user": "master",
       // Multi host is possible, just by passing IPs/hostname as an array
       "host": [

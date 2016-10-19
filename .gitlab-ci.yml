@@ -35,3 +35,32 @@ deploy_to_server:
   tags:
     - shared
 
+deploy_to_server_develop:
+  stage: deploy
+
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    # Run ssh-agent (inside the build environment)
+    - eval $(ssh-agent -s)
+
+    # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+    - mkdir -p ~/.ssh
+    - cp keys/ifrc_rsa ~/.ssh/id_rsa
+    - chmod 400 ~/.ssh/id_rsa
+    - ssh-keyscan -H 13.95.9.227 >> ~/.ssh/known_hosts
+
+    - npm install -g pm2
+
+
+  script:
+    - pm2 version -v
+    # - pm2 deploy ecosystem.json develop setup #this should be run first time deploying
+    - pm2 deploy ecosystem.json develop
+
+
+  only: 
+    - develop
+
+  tags:
+    - shared
+
