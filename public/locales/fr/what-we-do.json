@@ -1,0 +1,45 @@
+{
+    "chapter": "2",
+    "slug": "what-we-do",
+    "title": "Ce que nous faisons",
+    "intro": "La Strat\u00e9gie 2020 guidera les actions de la F\u00e9d\u00e9ration internationale des Soci\u00e9t\u00e9s de la Croix-Rouge et du Croissant-Rouge au cours des dix prochaines ann\u00e9es. Elle d\u00e9finit trois objectifs strat\u00e9giques et trois actions facilitatrices pour la F\u00e9d\u00e9ration internationale et ses Soci\u00e9t\u00e9s nationales membres, en vue de la r\u00e9alisation de la vision commune.",
+    "general": [
+        "to inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world."
+    ],
+    "sections": [
+        {
+            "title": "Strat\u00e9gie 2020",
+            "blocks": [
+                "Les objectifs strat\u00e9giques de la Strat\u00e9gie 2020 sont:",
+                [
+                    "Sauver des vies, prot\u00e9ger les moyens d\u2019existence et renforcer le rel\u00e8vement apr\u00e8s les catastrophes et les crises",
+                    "Promouvoir des modes de vie sains et s\u00fbrs",
+                    "Promouvoir l\u2019int\u00e9gration sociale et une culture de non-violence et de paix"
+                ],
+                "Les actions facilitatrices, propices \u00e0 la r\u00e9alisation des objectifs strat\u00e9giques sont:",
+                [
+                    "B\u00e2tir des Soci\u00e9t\u00e9s nationales de la Croix-Rouge et du Croissant-Rouge fortes",
+                    "Mener des actions de diplomatie humanitaire pour pr\u00e9venir et r\u00e9duire la vuln\u00e9rabilit\u00e9 dans un monde interd\u00e9pendant",
+                    "Fonctionner efficacement en tant que F\u00e9d\u00e9ration internationale"
+                ],
+                "Adopt\u00e9e par l\u2019Assembl\u00e9e g\u00e9n\u00e9rale de la F\u00e9d\u00e9ration internationale en novembre 2009, la Strat\u00e9gie 2020 est le r\u00e9sultat de larges consultations conduites au sein du Mouvement international de la Croix-Rouge et du Croissant-Rouge et avec nos partenaires ext\u00e9rieurs. Guid\u00e9e par les Statuts et la Strat\u00e9gie du Mouvement, elle fait la synth\u00e8se des politiques et des strat\u00e9gies ant\u00e9rieures et sert d\u2019assise aux activit\u00e9s qui seront men\u00e9es pour faire plus, le faire mieux et aller plus loin.",
+                "http:\/\/www.ifrc.org\/Global\/Publications\/general\/strategy-2020.pdf",
+                "Strat\u00e9gie 2020 document"
+            ]
+        },
+        {
+            "title": "Images de notre photostream Flickr",
+            "blocks": [
+                "D\u00e9couvrez le travail des Soci\u00e9t\u00e9s nationales du monde entier.",
+                "Les albums photo sur Flickr"
+            ]
+        }
+    ],
+    "nextChapter": {
+        "heading": "Prochain chapitre",
+        "chapter": "3",
+        "subtitle": "Aper\u00e7u",
+        "title": "Nos principes fondamentaux en action",
+        "slug": "living-our-fundamental-principles"
+    }
+}

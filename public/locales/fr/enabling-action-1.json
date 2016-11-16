@@ -1,0 +1,646 @@
+{
+    "chapter": "7",
+    "slug": "enabling-action-1",
+    "title": "Action facilitatrice 1",
+    "subtitle": "Ba\u0302tir des socie\u0301te\u0301s nationales de la croix-rouge et du croissant-rouge fortes",
+    "intro": "Les Socie\u0301te\u0301s nationales sont profonde\u0301ment enracine\u0301es dans le contexte dans lequel elles ope\u0300rent. Une Socie\u0301te\u0301 nationale forte est capable de fournir, dans tout le pays, par le biais d\u2019un re\u0301seau d\u2019unite\u0301s fonctionnant a\u0300 l\u2019aide de volontaires, un service approprie\u0301 aux personnes vulne\u0301rables, aussi longtemps qu\u2019elles en ont besoin.",
+    "sections": [
+        {
+            "title": "Capacit\u00e9s essentielles d'une Soci\u00e9t\u00e9 nationale",
+            "blocks": [
+                "La capacite\u0301 combine\u0301e des Socie\u0301te\u0301s nationales de fournir des services est la principale force de la Fe\u0301de\u0301ration et du Mouvement dans son ensemble.",
+                {
+                    "type": "chart",
+                    "title": "Capacit\u00e9s essentielles",
+                    "src": "\/img\/chapters\/7\/core-capacities-fr.jpg",
+                    "caption": "Source: Organisational Development Department"
+                },
+                "Les Socie\u0301te\u0301s nationales sont profonde\u0301ment enracine\u0301es dans le contexte dans lequel elles ope\u0300rent. Une Socie\u0301te\u0301 nationale forte est capable de fournir, dans tout le pays, par le biais d\u2019un re\u0301seau d\u2019unite\u0301s fonctionnant a\u0300 l\u2019aide de volontaires, un service approprie\u0301 aux personnes vulne\u0301rables, aussi longtemps qu\u2019elles en ont besoin.",
+                "Nous e\u0301valuons nos capacite\u0301s au moyen de notre processus d\u2019E\u0301valuation et de certification des capacite\u0301s organisationnelles (ECCO). Le processus de\u0301bute par une auto-e\u0301valuation syste\u0301matise\u0301e portant sur 85 caracte\u0301ristiques. Chaque caracte\u0301ristique est e\u0301value\u0301e sur une e\u0301chelle cumulative allant de un a\u0300 cinq, l\u2019objectif e\u0301tant d\u2019atteindre le niveau de re\u0301fe\u0301rence pour chacune des caracte\u0301ristiques.",
+                {
+                    "type": "chart",
+                    "title": "E\u0301valuer les capacite\u0301s au regard d\u2019une se\u0301rie de caracte\u0301ristiques (exemple)",
+                    "headings": [
+                        "Investing in skills",
+                        "Succession management"
+                    ],
+                    "dataset": [
+                        [
+                            "A",
+                            "Niveau B non atteint pour cette caracte\u0301ristique",
+                            "Niveau B non atteint pour cette caracte\u0301ristique"
+                        ],
+                        [
+                            "B",
+                            "La Socie\u0301te\u0301 nationale re\u0301pertorie les compe\u0301tences et les profils dont elle a besoin pour mettre en \u0153uvre ses activite\u0301s.",
+                            "La Socie\u0301te\u0301 nationale re\u0301pertorie les meilleurs e\u0301le\u0301ments dans sa base de volontaires et de membres du personnel. La direction encourage les jeunes de la Croix-Rouge et du Croissant-Rouge Jeunesse a\u0300 devenir volontaires, et elle assure le suivi de ce processus."
+                        ],
+                        [
+                            "C",
+                            "La proce\u0301dure de recrutement des volontaires fait une distinction entre le recrutement ge\u0301ne\u0301ral et le recrutement de groupes et profils spe\u0301cifiques.",
+                            "La Socie\u0301te\u0301 nationale investit dans la formation des personnes qu\u2019elle a identifie\u0301es comme e\u0301tant des talents et leur permet de be\u0301ne\u0301ficier de possibilite\u0301s d\u2019apprentissage a\u0300 l\u2019inte\u0301rieur et a\u0300 l\u2019exte\u0301rieur de l\u2019organisation."
+                        ],
+                        [
+                            "Niveau de re\u0301fe\u0301rence pour toutes les Socie\u0301te\u0301s nationales"
+                        ],
+                        [
+                            "D",
+                            "La Socie\u0301te\u0301 nationale a recense\u0301 les compe\u0301tences des volontaires et du personnel qui sont ne\u0301cessaires pour l\u2019aider a\u0300 faire plus, a\u0300 faire mieux et a\u0300 aller plus loin. Elle s\u2019emploie a\u0300 renforcer ces compe\u0301tences.",
+                            "La Socie\u0301te\u0301 nationale offre une formation ge\u0301ne\u0301rale en matie\u0300re de direction\/ gouvernance aux futurs candidats potentiels a\u0300 des postes cle\u0301s."
+                        ],
+                        [
+                            "E",
+                            "La Socie\u0301te\u0301 nationale dispose de suffisamment de compe\u0301tences et de ressources pour se lancer dans de nouvelles activite\u0301s ou e\u0301largir des activite\u0301s existantes, afin de re\u0301pondre aux besoins de la communaute\u0301.",
+                            "La Socie\u0301te\u0301 nationale a un plan relatif aux successions aux postes de direction."
+                        ]
+                    ],
+                    "caption": "Source: de\u0301partement De\u0301veloppement organisationnel"
+                },
+                "Il est inte\u0301ressant de noter que la force d\u2019une Socie\u0301te\u0301 nationale n\u2019est pas ne\u0301cessairement lie\u0301e a\u0300 la richesse de son pays; tant les Socie\u0301te\u0301s issues de pays riches que celles issues de pays plus pauvres peuvent devenir fortes.",
+                {
+                    "type": "chart",
+                    "title": "Force par rapport au niveau de richesse",
+                    "legend": [
+                        {
+                            "color": "#82BC01",
+                            "name": "Afrique"
+                        },
+                        {
+                            "color": "#0F9EE3",
+                            "name": "Am\u00e9riques"
+                        },
+                        {
+                            "color": "#EE3224",
+                            "name": "Asie-Pacifique"
+                        },
+                        {
+                            "color": "#5C315E",
+                            "name": "Europe"
+                        },
+                        {
+                            "color": "#7E6E69",
+                            "name": "Moyen-Orient et Afrique du Nord"
+                        }
+                    ],
+                    "dataset": [
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "251.0145229838",
+                            "x": "2.3996988492",
+                            "y": "94",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "268.0539113455",
+                            "x": "2.4282221487",
+                            "y": "39",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "394.775830896",
+                            "x": "2.5963505563",
+                            "y": "31",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "413.7574148529",
+                            "x": "2.6167457897",
+                            "y": "28",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "447.4371289135",
+                            "x": "2.6507320196",
+                            "y": "54",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "453.5689927392",
+                            "x": "2.6566433573",
+                            "y": "40",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "491.7899781002",
+                            "x": "2.6917796743",
+                            "y": "42",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "494.3146150632",
+                            "x": "2.6940034511",
+                            "y": "69",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "512.1031992238",
+                            "x": "2.709357489",
+                            "y": "36",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "574.1195223244",
+                            "x": "2.7590023148",
+                            "y": "53",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "634.3209745958",
+                            "x": "2.8023090721",
+                            "y": "59",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "687.2454749827",
+                            "x": "2.837111889",
+                            "y": "42",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "690.2053852927",
+                            "x": "2.8389783435",
+                            "y": "60",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "693.9843611994",
+                            "x": "2.8413496838",
+                            "y": "69",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "751.9163167908",
+                            "x": "2.8761695092",
+                            "y": "33",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "752.1560525138",
+                            "x": "2.8763079546",
+                            "y": "30",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "870.54210662",
+                            "x": "2.939789782",
+                            "y": "47",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "1023.2943547429",
+                            "x": "3.0100005782",
+                            "y": "63",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "1068.3893101576",
+                            "x": "3.028729534",
+                            "y": "72",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "1144",
+                            "x": "3.0584260245",
+                            "y": "31",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "1159.9297395354",
+                            "x": "3.0644316835",
+                            "y": "51",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "1243.986074645",
+                            "x": "3.0948155188",
+                            "y": "16",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "1469.1211622675",
+                            "x": "3.1670576147",
+                            "y": "33",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "1555.3606139083",
+                            "x": "3.1918310972",
+                            "y": "74",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "1716.5262836303",
+                            "x": "3.2346504578",
+                            "y": "40",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "1753.6423665158",
+                            "x": "3.2439410291",
+                            "y": "14",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "1755.2140164853",
+                            "x": "3.2443300784",
+                            "y": "30",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "2184.1634610913",
+                            "x": "3.3392851375",
+                            "y": "31",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "2322.8805603409",
+                            "x": "3.3660268795",
+                            "y": "38",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "2575.6836947783",
+                            "x": "3.4108925287",
+                            "y": "58",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "3330.5252303753",
+                            "x": "3.522512728",
+                            "y": "73",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "3490.2453158802",
+                            "x": "3.5428559529",
+                            "y": "79",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "3672.9669404092",
+                            "x": "3.5650170194",
+                            "y": "40",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "3789.5675576278",
+                            "x": "3.5785896538",
+                            "y": "42",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "3866.9897922327",
+                            "x": "3.5873730257",
+                            "y": "62",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Moyen-Orient et Afrique du Nord",
+                            "x_regular_gdp": "4236.793630997",
+                            "x": "3.6270373106",
+                            "y": "6",
+                            "stroke": "#7E6E69"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "4467.1037911876",
+                            "x": "3.6500260432",
+                            "y": "86",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "4565.2698841641",
+                            "x": "3.6594664567",
+                            "y": "99",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "4636",
+                            "x": "3.6661434273",
+                            "y": "49",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Moyen-Orient et Afrique du Nord",
+                            "x_regular_gdp": "4909.0280937704",
+                            "x": "3.6909955175",
+                            "y": "88",
+                            "stroke": "#7E6E69"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "5440.4524646364",
+                            "x": "3.7356350201",
+                            "y": "51",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "6091.0143517459",
+                            "x": "3.7846896228",
+                            "y": "80",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Moyen-Orient et Afrique du Nord",
+                            "x_regular_gdp": "6454.619627972",
+                            "x": "3.8098706543",
+                            "y": "67",
+                            "stroke": "#7E6E69"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "6685.0187489763",
+                            "x": "3.8251026296",
+                            "y": "76",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "6795.7724978042",
+                            "x": "3.8322388316",
+                            "y": "19",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "6797.7343069753",
+                            "x": "3.832364186",
+                            "y": "45",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "7747.8413209319",
+                            "x": "3.8891807176",
+                            "y": "63",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "9036.0361679301",
+                            "x": "3.9559779606",
+                            "y": "34",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "9386.3048352874",
+                            "x": "3.9724946545",
+                            "y": "58",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Moyen-Orient et Afrique du Nord",
+                            "x_regular_gdp": "9705.3922340726",
+                            "x": "3.9870130917",
+                            "y": "20",
+                            "stroke": "#7E6E69"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "12116.15460932",
+                            "x": "4.0833648066",
+                            "y": "37",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "12707.85431362",
+                            "x": "4.1040722273",
+                            "y": "46",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "14007.877516277",
+                            "x": "4.1463723357",
+                            "y": "46",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "14037.015448307",
+                            "x": "4.1472747779",
+                            "y": "46",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "14183.01601695",
+                            "x": "4.1517685933",
+                            "y": "55",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Am\u00e9riques",
+                            "x_regular_gdp": "15452.173598195",
+                            "x": "4.1889895786",
+                            "y": "47",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Moyen-Orient et Afrique du Nord",
+                            "x_regular_gdp": "19512",
+                            "x": "4.2903017873",
+                            "y": "72",
+                            "stroke": "#7E6E69"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "22000.069567182",
+                            "x": "4.3424240541",
+                            "y": "66",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "33071.839313506",
+                            "x": "4.5194583492",
+                            "y": "83",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "37749.442722625",
+                            "x": "4.5769105447",
+                            "y": "62",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "45931.724786305",
+                            "x": "4.662112754",
+                            "y": "43",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Asie-Pacifique",
+                            "x_regular_gdp": "46720.356660302",
+                            "x": "4.6695061495",
+                            "y": "73",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Moyen-Orient et Afrique du Nord",
+                            "x_regular_gdp": "92682",
+                            "x": "4.9669953969",
+                            "y": "63",
+                            "stroke": "#7E6E69"
+                        }
+                    ],
+                    "caption": "Source: de\u0301partement De\u0301veloppement organisationnel"
+                },
+                "Les analyses en cours laissent penser que les facteurs essentiels du succe\u0300s incluent un leadership adapte\u0301 au contexte et des partenariats a\u0300 long terme solides et strate\u0301giques, re\u0301pondant aux besoins des Socie\u0301te\u0301s nationales en matie\u0300re de de\u0301veloppement organisationnel."
+            ]
+        },
+        {
+            "title": "Re\u0301duire la fracture nume\u0301rique",
+            "blocks": [
+                "Dans le cadre de l\u2019Initiative pour la re\u0301duction de la fracture nume\u0301rique, le Secre\u0301tariat de la Fe\u0301de\u0301ration a recense\u0301 les capacite\u0301s en matie\u0300re de technologies de l\u2019information et de la communication des 155 Socie\u0301te\u0301s nationales ayant participe\u0301 aux enque\u0302tes mene\u0301es en 2011 et en 2013. Les re\u0301sultats de ces enque\u0302tes ont conduit a\u0300 la de\u0301cision d\u2019apporter en priorite\u0301 un soutien a\u0300 28 Socie\u0301te\u0301s nationales. Un appui souvent tre\u0300s e\u0301le\u0301mentaire a e\u0301te\u0301 fourni en vue de stabiliser et simplifier des syste\u0300mes, raccorder des sections locales, former les employe\u0301s et les responsables techniques, fournir des logiciels antivirus et de bureautique, mettre en place un re\u0301seau de soutien compose\u0301 de prestataires de services",
+                "et mettre a\u0300 profit la pre\u0301sence et la re\u0301putation mondiales de la Fe\u0301de\u0301ration pour ne\u0301gocier des accords plus avantageux avec les entreprises spe\u0301cialise\u0301es dans les technologies. Cet appui a permis d\u2019accroi\u0302tre d\u2019un tiers en moyenne les capacite\u0301s en matie\u0300re de technologies de l\u2019information et de la communication de ces 28 Socie\u0301te\u0301s nationales durant la pe\u0301riode 2011 a\u0300 2013.",
+                {
+                    "type": "image",
+                    "title": "Image title"
+                }
+            ]
+        },
+        {
+            "title": "Le volontariat dans un monde en e\u0301volution",
+            "blocks": [
+                "En Re\u0301publique de\u0301mocratique du Congo, les volontaires ont aide\u0301 a\u0300 prote\u0301ger plus de deux millions de personnes de la poliomye\u0301lite. En Syrie, ils apportent chaque mois une aide vitale a\u0300 plus de 3,5 millions de personnes. Nos volontaires ont e\u0301te\u0301 en premie\u0300re ligne de l\u2019action contre l\u2019Ebola en Afrique de l\u2019Ouest, portant assistance a\u0300 quelque 7 millions de personnes.",
+                "Ces exemples montrent que la force, l\u2019efficacite\u0301 et la porte\u0301e des Socie\u0301te\u0301s nationales reposent sur leur capacite\u0301 de mobiliser des volontaires et cette capacite\u0301 s\u2019exprime quand un volontaire interagit avec un be\u0301ne\u0301ficiaire.",
+                "Le volontariat apporte des avantages personnels et sociaux non pe\u0301cuniaires conside\u0301rables aux individus et, par voie de conse\u0301quence, a\u0300 leur communaute\u0301. Pour les personnes isole\u0301es et marginalise\u0301es (notamment les communaute\u0301s de migrants), c\u2019est un moyen important de parvenir a\u0300 l\u2019inte\u0301gration sociale. En outre, c\u2019est un moyen essentiel de renforcer le capital humain et social des communaute\u0301s, de de\u0301fendre leurs besoins et leurs droits, et de renforcer leur re\u0301silience face aux crises.",
+                "Le volontariat devra jouer un ro\u0302le central dans la re\u0301alisation des Objectifs de de\u0301veloppement durable en en assurant la mise en \u0153uvre au niveau local partout dans le monde. La voie a\u0300 suivre consiste a\u0300 conside\u0301rer les volontaires non plus comme de simples prestataires de services, mais comme des acteurs du de\u0301veloppement et donc comme des maillons essentiels de l\u2019action civique et de la re\u0301silience.",
+                {
+                    "type": "case-study-simple",
+                    "title": "Une journe\u0301e dans la vie d\u2019un volontaire",
+                    "content": [
+                        "Il est 6 h 30 et Daniel se pre\u0301pare a\u0300 endosser son habit de volontaire. Depuis un an, il participe aux efforts de\u0301ploye\u0301s pour mettre fin a\u0300 l\u2019e\u0301pide\u0301mie de maladie a\u0300 virus Ebola en Sierra Leone. Il dirige aujourd\u2019hui l\u2019e\u0301quipe de la Croix-Rouge de Sierra Leone qui proce\u0300de a\u0300 l\u2019inhumation su\u0302re et digne de de\u0301pouilles susceptibles d\u2019e\u0302tre infecte\u0301es par le virus. C\u2019est un travail difficile et les membres de l\u2019e\u0301quipe se sont heurte\u0301s a\u0300 une forte opposition des communaute\u0301s qui avaient peur d\u2019eux. Leurs propres familles leur ont demande\u0301 de quitter la maison, les ho\u0302tels ont refuse\u0301 de leur louer des chambres et beaucoup de commerces de les servir. Mais progressivement, ils ont su gagner la confiance des communaute\u0301s. Daniel est l\u2019un des 7 000 volontaires de la Croix-Rouge a\u0300 l\u2019\u0153uvre dans les pays touche\u0301s par le virus Ebola.",
+                        "Le 8 mai 2015, Journe\u0301e mondiale de la Croix-Rouge et du Croissant-Rouge, nous avons demande\u0301 a\u0300 nos volontaires partout dans le monde de prendre une photo de ce qu\u2019ils faisaient ce jour-la\u0300. Pre\u0300s de 3 000 photos et re\u0301cits ont e\u0301te\u0301 pre\u0301sente\u0301s par 110 pays, ce qui ne repre\u0301sente qu\u2019une petite partie de l\u2019incroyable travail accompli par les volontaires."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Une jeunesse forte pour des Socie\u0301te\u0301s nationales fortes",
+            "blocks": [
+                "La premie\u0300re initiative formelle visant a\u0300 associer les jeunes aux activite\u0301s de la Croix-Rouge a vu le jour en 1892, mais a ensuite e\u0301te\u0301 rejete\u0301e. Ce n\u2019est qu\u2019en 1906, apre\u0300s le tremblement de terre de San Francisco, que la Croix-Rouge ame\u0301ricaine fait e\u0301tat de la premie\u0300re contribution officielle de la jeunesse. Les jeunes sont depuis lors a\u0300 l\u2019avant-garde des efforts de\u0301ploye\u0301s partout dans le monde et assument de multiples ro\u0302les. Ils sont notamment des innovateurs et des adeptes pre\u0301coces des moyens de communication, des re\u0301seaux sociaux et d\u2019autres technologies ; des ambassadeurs et des de\u0301fenseurs interculturels ; des e\u0301ducateurs de pairs ; des agents de la mobilisation communautaire ; et des agents du changement de comportement.",
+                {
+                    "type": "chart",
+                    "title": "Jeunesse dans la FICR",
+                    "captions": [
+                        "des volontaires sont des jeunes",
+                        "du personnel du si\u00e8ge des Soci\u00e9t\u00e9s nationales sont \u00e2g\u00e9s de moins de 30 ans***"
+                    ],
+                    "dataset": [
+                        [
+                            {
+                                "x": " ",
+                                "y": "50",
+                                "fill": "#EE3224"
+                            },
+                            {
+                                "x": " ",
+                                "y": "50",
+                                "fill": "#F1F0EF"
+                            }
+                        ],
+                        [
+                            {
+                                "x": " ",
+                                "y": "18",
+                                "fill": "#EE3224"
+                            },
+                            {
+                                "x": " ",
+                                "y": "82",
+                                "fill": "#F1F0EF"
+                            }
+                        ]
+                    ]
+                },
+                "La Strate\u0301gie de la Fe\u0301de\u0301ration relative a\u0300 la mobilisation de la jeunesse rapproche trois perspectives de la mobilisation des jeunes: les jeunes en tant que volontaires, les jeunes en tant que leaders et les jeunes en tant que be\u0301ne\u0301ficiaires. Selon les estimations, la moitie\u0301 de nos volontaires sont des jeunes et la quasi-totalite\u0301 des Socie\u0301te\u0301s nationales favorisent une participation active de la jeunesse a\u0300 leurs programmes. Environ 18% des employe\u0301s des sie\u0300ges des Socie\u0301te\u0301s nationales sont a\u0302ge\u0301s de moins de 30 ans, ce qui correspond a\u0300 la fourchette haute de la de\u0301finition de la jeunesse adopte\u0301e par la Fe\u0301de\u0301ration, bien que les normes sociales locales et le contexte culturel autorisent certaines variations raisonnables.",
+                {
+                    "type": "chart",
+                    "title": "Participation de la jeunesse",
+                    "dataset": [
+                        {
+                            "name": "Socie\u0301te\u0301s nationales ont des coordonnateurs Jeunesse au sein de la gouvernance",
+                            "number": "116"
+                        },
+                        {
+                            "name": "Socie\u0301te\u0301s nationales ont des repre\u0301sentants Jeunesse au sein de leur conseil de direction",
+                            "number": "89"
+                        },
+                        {
+                            "name": "Socie\u0301te\u0301s nationales ont des structures de gouvernance dirige\u0301es par la jeunesse",
+                            "number": "69"
+                        },
+                        {
+                            "name": "Socie\u0301te\u0301s nationales associent la jeunesse a\u0300 la fourniture de services",
+                            "number": "108"
+                        },
+                        {
+                            "name": "Socie\u0301te\u0301s nationales forment les jeunes aux compe\u0301tences de direction",
+                            "number": "76"
+                        },
+                        {
+                            "name": "Socie\u0301te\u0301s nationales forment les jeunes be\u0301ne\u0301ficiaires",
+                            "number": "110"
+                        },
+                        {
+                            "name": "Socie\u0301te\u0301s nationales forment les jeunes volontaires",
+                            "number": "92"
+                        }
+                    ],
+                    "caption": "Source: de\u0301partement Action Jeunesse et de\u0301veloppement du volontariat"
+                },
+                "Nous nous attachons a\u0300 donner aux jeunes be\u0301ne\u0301ficiaires la possibilite\u0301 de devenir des jeunes volontaires et nous les encourageons a\u0300 jouer un ro\u0302le de premier plan au sein de leur communaute\u0301, tout en ame\u0301liorant leurs capacite\u0301s d\u2019insertion professionnelle. L\u2019e\u0301ducation, l\u2019autonomisation et la cre\u0301ation d\u2019environnements facilitateurs sont des e\u0301le\u0301ments essentiels a\u0300 l\u2019optimisation de la participation des jeunes a\u0300 nos activite\u0301s."
+            ]
+        }
+    ],
+    "nextChapter": {
+        "heading": "Prochain chapitre",
+        "chapter": "8",
+        "subtitle": "Action facilitatrice 2",
+        "title": "Mener des activite\u0301s de diplomatie humanitaire pour pre\u0301venir et re\u0301duire la vulne\u0301rabilite\u0301 dans un monde interde\u0301pendant",
+        "slug": "enabling-action-2"
+    }
+}

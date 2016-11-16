@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>Voluntary service</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.197623762 39.8019802 0.197623762 39.8019802 39.9762376 0 39.9762376"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Voluntary-service">
+            <g id="icon-Voluntary-service">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M19.9009901,40 C30.8918812,40 39.8019802,31.089901 39.8019802,20.0990099 C39.8019802,9.10772277 30.8918812,0.197623762 19.9009901,0.197623762 C8.90970297,0.197623762 0,9.10772277 0,20.0990099 C0,31.089901 8.90970297,40 19.9009901,40" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <polyline id="Fill-4" fill="#CCCCCC" points="18.2023762 20.0990099 10.8641584 13.2336634 10.8641584 26.9639604 18.2023762 20.0990099"></polyline>
+                <polyline id="Fill-5" fill="#CCCCCC" points="21.599604 20.0990099 28.9378218 13.2336634 28.9378218 26.9639604 21.599604 20.0990099"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,120 @@
+{
+  "chapter": "4",
+  "slug": "strategic-aim-1",
+  "title": "Strategic Aim 1",
+  "subtitle": "Save lives, protect livelihoods and strengthen recovery from disasters and crises",
+  "intro": "From our earliest days, the Red Cross and Red Crescent is best known for our mission to bring urgent help and comfort in moments of greatest need.",
+  "general": [
+    "In 2014, we responded internationally to 278 disasters and crises worldwide, continuing a general downward trend during this decade. This trend is partly a reflection of the wider – perhaps temporary – reduction in the frequency of major natural disasters in recent years, but may also be an indicator of increased local and national capacities to deal with disasters without requiring international support.",
+    {
+      "type": "chart",
+      "title": "Decline of Natural Disasters",
+      "caption": "The chart above shows..."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Number of people reached by types of disasters",
+      "blocks": [
+        "Hydrometeorological disasters including floods, hurricanes, and droughts dominated in all regions. Africa had the added burden of prolonged conflict-related crises. Asia Pacific tends to have been more prone to geophysical hazards including earthquakes.",
+        "The majority of the Red Cross and Red Crescent emergency actions and beneficiaries were in Asia Pacific and Africa.",
+        {
+          "type": "chart",
+          "title": "People reached by region",
+          "caption": "The chart above shows..."
+        }
+      ]
+    },
+    {
+      "title": "Magnitude of crises tackled by the Red Cross and Red Crescent",
+      "blocks": [
+        "The number of emergency response actions do not indicate the magnitude of the disasters or crises addressed. A reflection of the latter can be seen from the number and size of emergency appeals launched by the IFRC secretariat on behalf of National Societies: 137 appeals for 1.25 billion Swiss francs covering 91 million beneficiaries were launched in 2010–2014, with one or two predominant catastrophes each year determining the scope of the crisis response, and considerable between year fluctuations.",
+        {
+          "type": "chart",
+          "title": "Biggest Crises Tackled",
+          "caption": "The table above shows..."
+        }
+      ]
+    },
+    {
+      "title": "Highest and lowest funded appeals",
+      "blocks": [
+        "In practice, the availability of adequate donor resources is conditioned by many factors. Chronic or long-term crises tend to be less well funded than acute disasters. A higher number of appeals in a particular region may bear on donor willingness to contribute adequately to each of them, compared to a region that has fewer appeals.",
+        "Proximity to donor countries, e.g. crises at the periphery of Europe or around North America, may attract more funding because of the donor interest in reducing refugee flows coming across their own borders. Environments that are seen as difficult to operate in due to political factors that curtail access, or those with a poor previous performance track record, may attract fewer resources.",
+        "Appeals in Africa have tended to be less well covered, probably because the continent has more long-term crises in which interest wanes after a time. Food insecurity related appeals also tend to be poorly funded, perhaps because they are long-term crises. Emergencies that attract intense publicity tend to be much better funded.",
+        {
+          "type": "chart",
+          "title": "Appeal Funding",
+          "caption": "List of largest contributors in cash, kind and services, CHF millions."
+        }
+      ]
+    },
+    {
+      "title": "Our disaster management system",
+      "blocks": [
+        "The Disaster Relief Emergency Fund (DREF) is a pool of immediately available money kept by the IFRC secretariat and available on request to any National Society for mounting an urgent response. Every year, hundreds of minor disasters and health emergencies happen without attracting media attention due to their limited size and scale, and do not receive the rapid financial support they require.",
+        {
+          "type": "chart",
+          "title": "Emergency Fund Type",
+          "caption": "The chart above shows...."
+        },
+        "A profile of DREF operations in 2014 shows that disease epidemics, floods, and conflicts were the main triggers."
+      ]
+    },
+    {
+      "title": "Global logistics service",
+      "blocks": [
+        "The IFRC’s Global Logistics Service works to ensure that 100 the right supplies and equipment get to the right place at the right time at the right price in order to benefit the maximum number of vulnerable people. The service has won several accolades for its work. It operates from hubs in Geneva, Panama, Las Palmas, Nairobi, Dubai, and Kuala Lumpur, and transacts an impressive and growing volume of business.",
+        {
+          "type": "chart",
+          "title": "Growing Volume of Business",
+          "caption": "The chart above shows...."
+        },
+        "The principal focus of the Global Logistics Service is on procurement and transportation, warehousing, fleet management, contingency stocks, and specialised technical expertise",
+        "At any moment, the Global Logistics Service holds contingency stocks in strategically located warehouses enabling the IFRC to meet the immediate needs of 450,000 people at any time. It also advises and helps National Societies to develop their own domestic logistics capacities. Expanding services to external humani- tarian partners has allowed the Global Logistics Service to consolidate purchasing power through increased business volumes, bringing efficiencies of scale that ultimately benefit the IFRC network."
+      ]
+    },
+    {
+      "title": "Shelter — more than four walls and a roof",
+      "blocks": [
+        "For people coping with a disaster or war that has cost them everything, shelter is much more than four walls and a roof. It means a home. It is a place to feel secure, and to be together in privacy and safety with your loved ones. Shelter sets the foundation for rebuilding shattered lives and livelihoods, and regaining or maintaining good health. Resilience and dignity begin with having the right shelter.",
+        {
+          "type": "chart",
+          "title": "People Assisted in 2014",
+          "caption": "The chart above shows...."
+        },
+        "The Red Cross and Red Crescent is the largest provider of emergency shelter amongst humanitarian agencies, and also supports longer-term recovery and reconstruction among disaster-affected communities. To date, the IFRC has coordinated the shelter response in 32 emergencies through the deployment of dedicated shelter coordination teams comprising individuals from National Red Cross and Red Crescent Societies and from cluster partner agencies.",
+        {
+          "type": "case-study-extended",
+          "title": "The Syria crisis"
+        },
+        {
+          "type": "case-study-extended",
+          "title": "Typhoon Haiyan"
+        },
+        {
+          "type": "case-study-extended",
+          "title": "Ebola virus disease"
+        }
+      ]
+    },
+    {
+      "title": "Staying safe",
+      "blocks": [
+        "It can be risky at the frontline of humanitarian response. Worldwide, more than 1,100 aid workers have died in the course of their duties over the past decade with many more being injured and an increasing number of kidnappings. The trend indicates increased disrespect for international humanitarian law and the deliberate targeting of humanitarian and health service facilities.",
+        {
+          "type": "chart",
+          "title": "Security Incidents",
+          "caption": "The chart above shows...."
+        },
+        "For the IFRC, the number of reported security incidents has declined in recent years. It is a positive sign that while there was one security incident recorded for about 15 IFRC staff deployed in 2010, this had improved to one incident per 44 staff in 2014.",
+        {
+          "type": "chart",
+          "title": "Causes of death",
+          "caption": "The chart above shows...."
+        },
+        "However the pattern of risk has changed. Whereas, in previous years, the majority of Red Cross and Red Crescent deaths occurred while responding to natural disasters, direct violence is now an increasing cause."
+      ]
+    }
+  ]
+}

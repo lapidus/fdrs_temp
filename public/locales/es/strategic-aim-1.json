@@ -1,0 +1,726 @@
+{
+    "chapter": "4",
+    "slug": "strategic-aim-1",
+    "title": "Objetivo estrat\u00e9gico 1",
+    "subtitle": "Salvar vidas, proteger los medios de sustento y apoyar la recuperaci\u00f3n despu\u00e9s de desastres y crisis",
+    "intro": "Desde sus or\u00edgenes, se conoce a las organizaciones de la Cruz Roja y de la Media Luna Roja por su cometido de prestar asistencia urgente y consuelo a las personas en momentos de gran necesidad.",
+    "general": [
+        "En 2014, a nivel internacional, la organizaci\u00f3n intervino a ra\u00edz de doscientos setenta y ocho (278) situaciones de crisis y desastres en el mundo.",
+        {
+            "type": "chart",
+            "title": "Intervenci\u00f3n de las organizaciones de la Cruz Roja y de la Media Luna Roja en situaciones de desastre y de crisis",
+            "caption": "Fuente: Departamento de Gesti\u00f3n de Desastres y Crisis",
+            "dataset": [
+                {
+                    "year": "2010",
+                    "disasters": "393"
+                },
+                {
+                    "year": "2011",
+                    "disasters": "406"
+                },
+                {
+                    "year": "2012",
+                    "disasters": "358"
+                },
+                {
+                    "year": "2013",
+                    "disasters": "305"
+                },
+                {
+                    "year": "2014",
+                    "disasters": "278"
+                }
+            ],
+            "axisLabels": {
+                "x": "A\u00f1os",
+                "y": "Desastres naturales"
+            },
+            "lineLabels": [
+                "Desastres\\nnaturales"
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "title": "Cantidad de beneficiarios por tipo de desastre",
+            "blocks": [
+                "Las cat\u00e1strofes hidro-meteorol\u00f3gicas, entre otras, inundaciones, huracanes y sequ\u00edas, predominaron en todas las regiones y, en \u00c1frica, contaron con el factor a\u00f1adido de crisis relativas a conflictos prolongados.",
+                "La zona de Asia y el Pac\u00edfico denota mayor proclividad a las amenazas geof\u00edsicas, con inclusi\u00f3n de los terremotos.",
+                {
+                    "type": "chart",
+                    "title": "Cantidad de beneficiarios por tipo de desastre",
+                    "customFills": [
+                        "#E02726",
+                        "#1A9FE0",
+                        "#BEBAB8",
+                        "#FED02F"
+                    ],
+                    "dataset": [
+                        {
+                            "index": "1",
+                            "numbers": [
+                                "0",
+                                "608168",
+                                "6953897",
+                                "600019"
+                            ],
+                            "labels": [
+                                "Geof\u00edsicos",
+                                "Hidrometeorol\u00f3gicos",
+                                "Biol\u00f3gicos",
+                                "Otras causas"
+                            ],
+                            "total": "8162084",
+                            "name": "\u00c1frica"
+                        },
+                        {
+                            "index": "2",
+                            "numbers": [
+                                "2308695",
+                                "1152032",
+                                "10000",
+                                "173729"
+                            ],
+                            "labels": [
+                                "Geof\u00edsicos",
+                                "Hidrometeorol\u00f3gicos",
+                                "Biol\u00f3gicos",
+                                "Otras causas"
+                            ],
+                            "total": "3644456",
+                            "name": "Asia y el Pac\u00edfico"
+                        },
+                        {
+                            "index": "3",
+                            "numbers": [
+                                "0",
+                                "644820",
+                                "181250",
+                                "0"
+                            ],
+                            "labels": [
+                                "Geof\u00edsicos",
+                                "Hidrometeorol\u00f3gicos",
+                                "Biol\u00f3gicos",
+                                "Otras causas"
+                            ],
+                            "total": "826070",
+                            "name": "Am\u00e9rica"
+                        },
+                        {
+                            "index": "4",
+                            "numbers": [
+                                "0",
+                                "72614",
+                                "172000",
+                                "168250"
+                            ],
+                            "labels": [
+                                "Geof\u00edsicos",
+                                "Hidrometeorol\u00f3gicos",
+                                "Biol\u00f3gicos",
+                                "Otras causas"
+                            ],
+                            "total": "412864",
+                            "name": "Europa"
+                        },
+                        {
+                            "index": "5",
+                            "numbers": [
+                                "0",
+                                "69725",
+                                "0",
+                                "3000"
+                            ],
+                            "labels": [
+                                "Geof\u00edsicos",
+                                "Hidrometeorol\u00f3gicos",
+                                "Biol\u00f3gicos",
+                                "Otras causas"
+                            ],
+                            "total": "72725",
+                            "name": "Oriente Medio y Norte de \u00c1frica"
+                        }
+                    ],
+                    "caption": "Fuente: Departamento de Gesti\u00f3n de Desastres y Crisis y banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
+                }
+            ]
+        },
+        {
+            "title": "Magnitud de las crisis atendidas por las organizaciones de la Cruz Roja y de la Media Luna Roja",
+            "blocks": [
+                "La cantidad de intervenciones a ra\u00edz de emergencias no refleja plenamente la magnitud de los desastres o crisis enfrentados. Una mejor apreciaci\u00f3n de este aspecto emerge a trav\u00e9s del an\u00e1lisis de la cantidad y de los montos de los llamamientos de emergencia emitidos por la secretar\u00eda de la Federaci\u00f3n Internacional en nombre de las Sociedades Nacionales, a saber, ciento treinta y siete (137) llamamientos, por un valor total de un mill\u00f3n doscientos cincuenta mil millones de francos suizos (CHF 1 250 mil millones) con el fin de prestar asistencia a noventa y un (91) millones de beneficiarios emitidos entre 2010 y 2014, con una o dos cat\u00e1strofes predominantes cada a\u00f1o que determinaron la envergadura de la intervenci\u00f3n y con considerables fluctuaciones intermedias en el a\u00f1o.",
+                {
+                    "type": "table",
+                    "title": "Magnitud de las crisis atendidas",
+                    "headers": [
+                        "A\u00f1o de llamamiento de emergencia",
+                        "Cantidad de llamamientos de emergencia emitidos",
+                        "Cantidad recaudada mediante llamamientos de emergencia (en millones de francos suizos)",
+                        "Cantidad de beneficiarios (en millones)",
+                        "Crisis predominantes"
+                    ],
+                    "dataset": [
+                        {
+                            "year": "2010",
+                            "appealsLaunched": "30",
+                            "amount": "459.4",
+                            "beneficiaries": "10.9",
+                            "crisis": "Terremoto en Hait\u00ed"
+                        },
+                        {
+                            "year": "2011",
+                            "appealsLaunched": "25",
+                            "amount": "149.1",
+                            "beneficiaries": "3.3",
+                            "crisis": "Refugiados de Somalia y sequ\u00eda en el Cuerno de \u00c1frica"
+                        },
+                        {
+                            "year": "2012",
+                            "appealsLaunched": "36",
+                            "amount": "281.7",
+                            "beneficiaries": "12.4",
+                            "crisis": "Crisis en Siria"
+                        },
+                        {
+                            "year": "2013",
+                            "appealsLaunched": "19",
+                            "amount": "129.8",
+                            "beneficiaries": "1.9",
+                            "crisis": "Tif\u00f3n Haiyan, Filipinas"
+                        },
+                        {
+                            "year": "2014",
+                            "appealsLaunched": "27",
+                            "amount": "230.8",
+                            "beneficiaries": "62.5",
+                            "crisis": "Epidemia de \u00e9bola en \u00c1frica occidental"
+                        },
+                        {
+                            "year": "Total",
+                            "appealsLaunched": "137",
+                            "amount": "1250.8",
+                            "beneficiaries": "91.1",
+                            "crisis": "-"
+                        }
+                    ],
+                    "caption": "Fuente: Departamento de Finanzas"
+                }
+            ]
+        },
+        {
+            "title": "Llamamientos de emergencia con mayor y menor recaudaci\u00f3n de fondos",
+            "blocks": [
+                "En la pr\u00e1ctica, la adecuada disponibilidad de recursos de los donantes depende de diversos factores. Las crisis cr\u00f3nicas o de larga duraci\u00f3n suelen contar con menos financiaci\u00f3n que la concedida en caso de desastres agudos. La elevada cantidad de llamamientos relativos a una determinada regi\u00f3n puede incidir en la predisposici\u00f3n de los donantes para aportar contribuciones adecuadas a cada uno de ellos, mientras que la situaci\u00f3n podr\u00e1 ser diferente en una regi\u00f3n que cuente con menos llamamientos.",
+                "La proximidad de los pa\u00edses donantes tiene peso; as\u00ed, por ejemplo, las crisis que surgen en la periferia de Europa o a proximidad de Norteam\u00e9rica podr\u00edan ser objeto de mayor aporte de fondos en vista del inter\u00e9s de los donantes por reducir la afluencia de refugiados a trav\u00e9s de sus fronteras. Los entornos que se consideran poco seguros para operaciones, debido a factores pol\u00edticos que obstaculizan el acceso, o un historial de resultados deficientes, generar\u00e1n menos inter\u00e9s en aportar recursos.",
+                "Los llamamientos relativos a \u00c1frica denotan tendencia a menor cobertura tal vez debido a las crisis que perduran en el continente y son objeto de menguante inter\u00e9s con el transcurso del tiempo. Los llamamientos relacionados con la inseguridad alimentaria tambi\u00e9n carecen de financiaci\u00f3n suficiente, probablemente porque se trata de crisis de larga data. Las situaciones de emergencia que suscitan intensa difusi\u00f3n p\u00fablica tienden a gozar de mejor financiaci\u00f3n.",
+                {
+                    "type": "tabs",
+                    "title": "Llamamientos de recaudaci\u00f3n de fondos",
+                    "tabs": [
+                        {
+                            "name": "Menor recaudaci\u00f3n de fondos",
+                            "headers": [
+                                "Llamamiento",
+                                "Alcance"
+                            ],
+                            "dataset": [
+                                {
+                                    "country": "Kenia",
+                                    "percentage": "4.8"
+                                },
+                                {
+                                    "country": "Kenia",
+                                    "percentage": "7.6"
+                                },
+                                {
+                                    "country": "Angola",
+                                    "percentage": "8.8"
+                                },
+                                {
+                                    "country": "Etiop\u00eda",
+                                    "percentage": "11.1"
+                                },
+                                {
+                                    "country": "C\u00f4te d\u2019Ivoire",
+                                    "percentage": "11.7"
+                                },
+                                {
+                                    "country": "Sud\u00e1n",
+                                    "percentage": "17.8"
+                                },
+                                {
+                                    "country": "Burkina Faso",
+                                    "percentage": "18.9"
+                                },
+                                {
+                                    "country": "Sud\u00e1n",
+                                    "percentage": "23.6"
+                                },
+                                {
+                                    "country": "N\u00edger",
+                                    "percentage": "25.2"
+                                },
+                                {
+                                    "country": "Chad",
+                                    "percentage": "26.7"
+                                },
+                                {
+                                    "country": "Kenia",
+                                    "percentage": "27.1"
+                                },
+                                {
+                                    "country": "Rep\u00fablica del Congo",
+                                    "percentage": "28"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Mayor recaudaci\u00f3n de fondos",
+                            "headers": [
+                                "Llamamiento",
+                                "Coverage"
+                            ],
+                            "dataset": [
+                                {
+                                    "country": "Sierra Leona",
+                                    "percentage": "82.6"
+                                },
+                                {
+                                    "country": "Pakist\u00e1n",
+                                    "percentage": "85"
+                                },
+                                {
+                                    "country": "Sri Lanka",
+                                    "percentage": "87.7"
+                                },
+                                {
+                                    "country": "Chile",
+                                    "percentage": "87.7"
+                                },
+                                {
+                                    "country": "Kenia",
+                                    "percentage": "88"
+                                },
+                                {
+                                    "country": "Hait\u00ed y Rep\u00fablica Dominicana",
+                                    "percentage": "88.4"
+                                },
+                                {
+                                    "country": "Filipinas",
+                                    "percentage": "88.5"
+                                },
+                                {
+                                    "country": "Cuba",
+                                    "percentage": "90.8"
+                                },
+                                {
+                                    "country": "Turqu\u00eda",
+                                    "percentage": "95.2"
+                                },
+                                {
+                                    "country": "Pakist\u00e1n",
+                                    "percentage": "96.5"
+                                },
+                                {
+                                    "country": "Hait\u00ed",
+                                    "percentage": "100"
+                                },
+                                {
+                                    "country": "Somalia",
+                                    "percentage": "100"
+                                }
+                            ]
+                        }
+                    ],
+                    "caption": "Fuente: Departamento de Finanzas"
+                }
+            ]
+        },
+        {
+            "title": "Sistema de gesti\u00f3n de desastres",
+            "blocks": [
+                "Los servicios de emergencia que presta la Federaci\u00f3n Internacional abarcan los principales elementos necesarios para preservar la vida de las personas con dignidad, evitar p\u00e9rdidas y da\u00f1os ulteriores, estabilizar el estado f\u00edsico y emocional de la poblaci\u00f3n afectada, y sentar los cimientos para una r\u00e1pida recuperaci\u00f3n.",
+                {
+                    "type": "chart",
+                    "title": "Fondo de Reserva para el Socorro en Casos de Desastre \u2010 tipo y cantidad de operaciones",
+                    "dataset": [
+                        {
+                            "x": "Sequ\u00edas (1)",
+                            "y": "1",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": "Inundaciones (30)",
+                            "y": "30",
+                            "fill": "#0F9EE2"
+                        },
+                        {
+                            "x": "Terremotos (3)",
+                            "y": "3",
+                            "fill": "#FED02F"
+                        },
+                        {
+                            "x": [
+                                "Erupciones",
+                                "volc\u00e1nicas (4)"
+                            ],
+                            "y": "4",
+                            "fill": "#DE2214"
+                        },
+                        {
+                            "x": [
+                                "Ciclones,",
+                                "tormentas (4)"
+                            ],
+                            "y": "4",
+                            "fill": "#84BB23"
+                        },
+                        {
+                            "x": [
+                                "Temperaturas",
+                                "extremas (4)"
+                            ],
+                            "y": "4",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": [
+                                "Disturbios",
+                                "civiles (13)"
+                            ],
+                            "y": "13",
+                            "fill": "#84BB23"
+                        },
+                        {
+                            "x": [
+                                "Explosiones,",
+                                "incendios (2)"
+                            ],
+                            "y": "2",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": [
+                                "Movimiento",
+                                "de poblaciones (11)"
+                            ],
+                            "y": "11",
+                            "fill": "#EE3224"
+                        },
+                        {
+                            "x": "Otros (2)",
+                            "y": "2",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": "Epidemias (28)",
+                            "y": "28",
+                            "fill": "#FED02F"
+                        }
+                    ],
+                    "caption": "Fuente: Departamento de Gesti\u00f3n de Desastres y Crisis"
+                },
+                "Un cuadro de uso caracter\u00edstico del Fondo de Reserva para el Socorro en Casos de Desastre para operaciones efectuadas en 2014 denota que las principales causas fueron las epidemias, las inundaciones y los conflictos."
+            ]
+        },
+        {
+            "title": "Servicio Mundial de Log\u00edstica",
+            "blocks": [
+                "El Servicio Mundial de Log\u00edstica de la Federaci\u00f3n Internacional vela por que los suministros y equipos adecuados lleguen con la debida oportunidad al lugar correcto y conforme a precios adecuados con el fin de beneficiar a la mayor cantidad posible de personas vulnerables. La labor de este servicio ha sido objeto de encomio y reconocimiento. Cuenta con platafor mas de operaciones en Ginebra, Panam\u00e1, Las Palmas, Nairobi, Dubai y Kuala Lumpur y realiza una impresionante cantidad de transacciones, adem\u00e1s de contar con un creciente volumen de negocios",
+                {
+                    "type": "chart",
+                    "title": "Volumen creciente de actividades",
+                    "axisLabels": {
+                        "x": "A\u00f1os",
+                        "y": "Millones de francos suizos"
+                    },
+                    "lineLabels": [
+                        "Adquisiciones",
+                        "Movilizaci\u00f3n"
+                    ],
+                    "dataset": [
+                        [
+                            {
+                                "year": "2011",
+                                "value": "72"
+                            },
+                            {
+                                "year": "2012",
+                                "value": "78"
+                            },
+                            {
+                                "year": "2013",
+                                "value": "116"
+                            },
+                            {
+                                "year": "2014",
+                                "value": "148"
+                            }
+                        ],
+                        [
+                            {
+                                "year": "2011",
+                                "value": "45"
+                            },
+                            {
+                                "year": "2012",
+                                "value": "52"
+                            },
+                            {
+                                "year": "2013",
+                                "value": "88"
+                            },
+                            {
+                                "year": "2014",
+                                "value": "95"
+                            }
+                        ]
+                    ],
+                    "caption": "Fuente: Servicio Mundial de Log\u00edstica"
+                },
+                "El Servicio Mundial de Log\u00edstica centra su atenci\u00f3n en las adquisiciones, el transporte, el almacenamiento, la gesti\u00f3n del parque de veh\u00edculos, las existencias de reserva y la pericia t\u00e9cnica especializada.",
+                "De manera constante, el Servicio Mundial de Log\u00edstica mantiene existencias de reserva en dep\u00f3sitos situados en lugares estrat\u00e9gicos que permiten a la Federaci\u00f3n Internacional satisfacer las necesidades inmediatas de 450 000 personas en cualquier momento. Presta, asimismo, asesoramiento a las Sociedades Nacionales para que se doten de capacidades propias en materia de log\u00edstica. Ha ampliado la prestaci\u00f3n de servicios a asociados humanitarios externos, de manera que ha podido consolidar su poder adquisitivo mediante el incremento de vol\u00famenes de negocios, los cuales, a su vez, se traducen en eficiencias de escala que redundan en beneficio de la Federaci\u00f3n Internacional en conjunto."
+            ]
+        },
+        {
+            "title": "Alojamiento provisional y de emergencia \u2013 mucho m\u00e1s que paredes y un tejado",
+            "blocks": [
+                "Para quienes viven las consecuencias de guerras o desastres que los han dejado completamente desamparados y desprovistos de todo, el alojamiento provisional y de emergencia es mucho m\u00e1s que cuatro paredes y un tejado. Es un hogar. Un lugar donde sentirse a salvo, en seguridad y en privado, rodeado de sus seres queridos. Se trata de los cimientos para la reconstrucci\u00f3n de existencias y medios de vida trastocados y de un lugar para recuperar un buen estado de salud o preservarlo. La dignidad y la capacidad de resistencia y recuperaci\u00f3n comienzan con gozar de adecuado alojamiento provisional y de emergencia.",
+                {
+                    "type": "chart",
+                    "title": "8,2 Millones de personas se beneficiaron de asistencia en 2014",
+                    "popupContent": "Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios",
+                    "dataset": {
+                        "PHL": {
+                            "fillKey": "bubbleFill",
+                            "name": "Filipinas",
+                            "number": "728000",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">728,000<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentario<\/p>"
+                        },
+                        "SSD": {
+                            "fillKey": "bubbleFill",
+                            "name": "Sud\u00e1n del Sur",
+                            "number": "202907",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">202,907<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "COD": {
+                            "fillKey": "bubbleFill",
+                            "name": "Rep\u00fablica Democr\u00e1tica del Congo",
+                            "number": "166442",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">166,442<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "IRQ": {
+                            "fillKey": "bubbleFill",
+                            "name": "Irak",
+                            "number": "108873",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">108,873<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "CAF": {
+                            "fillKey": "bubbleFill",
+                            "name": "Rep\u00fablica Centroafricana",
+                            "number": "103904",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">103,904<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "SOM": {
+                            "fillKey": "bubbleFill",
+                            "name": "Somalia",
+                            "number": "55200",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">55,200<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "YEM": {
+                            "fillKey": "bubbleFill",
+                            "name": "Yemen",
+                            "number": "48855",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">48,855<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "BGD": {
+                            "fillKey": "bubbleFill",
+                            "name": "Bangladesh",
+                            "number": "43187",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">43,187<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "ETH": {
+                            "fillKey": "bubbleFill",
+                            "name": "Etiop\u00eda",
+                            "number": "33918",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">33,918<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "SYR": {
+                            "fillKey": "bubbleFill",
+                            "name": "Siria",
+                            "number": "31825",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">31,825<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "AFG": {
+                            "fillKey": "bubbleFill",
+                            "name": "Afganist\u00e1n",
+                            "number": "19364",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">19,364<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "MMR": {
+                            "fillKey": "bubbleFill",
+                            "name": "Myanmar",
+                            "number": "16898",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">16,898<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "PAK": {
+                            "fillKey": "bubbleFill",
+                            "name": "Pakist\u00e1n",
+                            "number": "15360",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">15,360<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "UKR": {
+                            "fillKey": "bubbleFill",
+                            "name": "Ucrania",
+                            "number": "13000",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">13,000<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        },
+                        "MLI": {
+                            "fillKey": "bubbleFill",
+                            "name": "Mal\u00ed",
+                            "number": "11370",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">11,370<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
+                        }
+                    },
+                    "caption": "Fuente: Departamento de Alojamiento Provisional y Asentamientos"
+                },
+                "Hasta la fecha, la Federaci\u00f3n Internacional ha coordinado actividades de alojamiento provisional y de emergencia a ra\u00edz de treinta y dos (32) emergencias mediante el env\u00edo de unidades especializadas que incluyen personal de distintas Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja y de otros organismos miembros del grupo tem\u00e1tico.",
+                {
+                    "type": "case-study-extended",
+                    "title": "La crisis en Siria"
+                },
+                {
+                    "type": "case-study-extended",
+                    "title": "Tif\u00f3n Haiyan "
+                },
+                {
+                    "type": "case-study-extended",
+                    "title": "Enfermedad causada por el virus del \u00e9bola"
+                }
+            ]
+        },
+        {
+            "title": "Mant\u00e9ngase a salvo",
+            "blocks": [
+                "El servicio humanitario en primera l\u00ednea no est\u00e1 exento de riesgos. A nivel mundial, m\u00e1s de mil cien (1 100) trabajadores humanitarios han perecido en el cumplimiento de su deber durante el \u00faltimo decenio; una cifra superior de ellos ha sufrido heridas, y se observa un aumento sostenido en la cantidad de secuestros. Las tendencias apuntan a una creciente inobservancia de las normas del derecho internacional humanitario y a ataques deliberados contra bienes e instalaciones humanitarias y sanitarias.",
+                {
+                    "type": "chart",
+                    "title": "Incidentes relativos a la seguridad comunicados a la secretar\u00eda de la Federaci\u00f3n Internacional",
+                    "barLabels": [
+                        "281",
+                        "155",
+                        "114",
+                        "103",
+                        "79"
+                    ],
+                    "axisLabels": {
+                        "x": "A\u00f1os"
+                    },
+                    "dataset": [
+                        {
+                            "value": "281",
+                            "year": "2010"
+                        },
+                        {
+                            "value": "155",
+                            "year": "2011"
+                        },
+                        {
+                            "value": "114",
+                            "year": "2012"
+                        },
+                        {
+                            "value": "103",
+                            "year": "2013"
+                        },
+                        {
+                            "value": "79",
+                            "year": "2014"
+                        }
+                    ],
+                    "caption": "Fuente: Unidad de Seguridad de la secretar\u00eda"
+                },
+                "En el caso de la Federaci\u00f3n Internacional, en a\u00f1os recientes ha disminuido la cantidad de notificaciones de incidentes relativos a la seguridad. Se trata de un indicio alentador pues en 2010, el \u00edndice correspond\u00eda a un incidente relativo a la seguridad por cada quince (15) miembros del personal de la Federaci\u00f3n Internacional presentes sobre el terreno, mientras que en 2014, ese \u00edndice fue de un incidente por cada cuarenta y cuatro (44) miembros del personal.",
+                {
+                    "type": "tabs",
+                    "title": "Muertes de miembros del personal y de voluntarios que trabajan para las organizaciones de la Cruz Roja y de la Media Luna Roja - cambio de tendencias",
+                    "tabs": [
+                        {
+                            "name": "1993\u20142011",
+                            "dataset": [
+                                {
+                                    "x": [
+                                        "Accidentes",
+                                        "con veh\u00edculos (10)"
+                                    ],
+                                    "y": "10",
+                                    "fill": "#012A39"
+                                },
+                                {
+                                    "x": [
+                                        "Violencia,",
+                                        "Delincuencia,",
+                                        " Conflictos",
+                                        " (30)"
+                                    ],
+                                    "y": "30",
+                                    "fill": "#EE3224"
+                                },
+                                {
+                                    "x": [
+                                        "Desastres",
+                                        "naturales (60)"
+                                    ],
+                                    "y": "60",
+                                    "fill": "#FED02F"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012\u20142014",
+                            "dataset": [
+                                {
+                                    "x": [
+                                        "Accidentes",
+                                        "con veh\u00edculos (10)"
+                                    ],
+                                    "y": "10",
+                                    "fill": "#012A39"
+                                },
+                                {
+                                    "x": [
+                                        "Violencia,",
+                                        "Delincuencia,",
+                                        " Conflictos",
+                                        " (86)"
+                                    ],
+                                    "y": "86",
+                                    "fill": "#EE3224"
+                                },
+                                {
+                                    "x": [
+                                        "Desastres ",
+                                        "naturales (4)"
+                                    ],
+                                    "y": "4",
+                                    "fill": "#FED02F"
+                                }
+                            ]
+                        }
+                    ],
+                    "caption": "Fuente: Unidad de Seguridad de la secretar\u00eda"
+                },
+                "Cabe observar, sin embargo, un cambio en los patrones de riesgo. En a\u00f1os anteriores la mayor\u00eda de decesos de colaboradores de las organizaciones de la Cruz Roja y de la Media Luna Roja estuvieron vinculados con intervenciones de socorro a ra\u00edz de desastres, mientras que ahora una de las causas predominantes es la violencia directa."
+            ]
+        }
+    ],
+    "nextChapter": {
+        "heading": "Cap\u00edtulo siguiente",
+        "chapter": "5",
+        "subtitle": "Objetivo estrat\u00e9gico 2",
+        "title": "Posibilitar una vida sana y segura",
+        "slug": "strategic-aim-2"
+    }
+}

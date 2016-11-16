@@ -1,0 +1,68 @@
+{
+  "chapter": "3",
+  "slug": "living-our-fundamental-principles",
+  "title": "Nos principes fondamentaux en action",
+  "intro": "Toutes nos actions sont guidées par nos Principes fondamentaux, lesquels s’inspirent de l’expérience collective accumulée depuis plus d’un siècle.",
+  "general": [
+    [
+      "Humanité",
+      "Impartialité",
+      "Neutralité",
+      "Indépendance",
+      "Volontariat",
+      "Unité",
+      "Universalité"
+    ],
+    "Bien que ces Principes constituent un tout interdépendant et indivisible, celui d’humanité est la motivation principale qui nous pousse à agir, ceux d’impartialité, de neutralité et d’indépendance nous indiquent comment garantir l’efficacité de nos actions, et ceux de volontariat, d’unité et d’universalité déterminent la façon dont nous nous organisons afin d’optimiser notre impact."
+  ],
+  "sections": [
+    {
+      "title": "Introduction Section",
+      "blocks": [
+        "Les Principes fondamentaux sont au cœur de notre identité et notre finalité communes. Ils sont reflétés par les valeurs qui sous-tendent nos efforts et par les aptitudes personnelles dont doivent disposer les volontaires et les employés de la Croix-Rouge et du Croissant-Rouge.",
+        {
+          "type": "chart",
+          "title": "",
+          "name": "7 Principes\nfondamentaux",
+          "items": [
+            "Humanité",
+            "Impartialité",
+            "Neutralité",
+            "Indépendance",
+            "Volontariat",
+            "Unité",
+            "Universalité"
+          ],
+          "src": "/img/chapters/3/principles.svg",
+          "caption": ""
+        },
+        "L’année 2015 marque le 50e anniversaire de l’adoption officielle des Principes fondamentaux. Beaucoup de choses ont changé dans le monde depuis 1965. Des consultations réunissant des membres, des volontaires et des employés de 115 Sociétés nationales ainsi que d’autres parties prenantes ont été organisées dans chacune des régions afin de savoir comment les Principes fondamentaux sont perçus. Les conclusions ont été remarquablement unanimes.",
+        "Les Principes fondamentaux sont considérés comme étant tout aussi pertinents aujourd’hui que par le passé. Ils le seraient même davantage à notre époque, où il est encore plus nécessaire de disposer d’un cadre éthique clair pour naviguer à travers les défis que pose la complexité considérablement accrue du paysage humanitaire actuel.",
+        {
+          "type": "chart",
+          "title": "",
+          "name": "7 compétences\npersonnelles",
+          "items": [
+            "Empathie",
+            "Écoute active",
+            "Pensée critique\net non-jugement",
+            "Communication\nnon violente",
+            "Négociation\net médiation",
+            "Résilience\npersonnelle",
+            "Paix\nintérieure"
+          ],
+          "src": "/img/chapters/3/skills.svg",
+          "caption": ""
+        },
+        "Télécharger le tableau"
+      ]
+    }
+  ],
+  "nextChapter": {
+    "heading": "Prochain chapitre",
+    "chapter": "4",
+    "subtitle": "Objectif stratégique 1",
+    "title": "Sauver des vies, protéger les moyens d'existence et renforcer le relèvement après les catastrophes et les crises",
+    "slug": "strategic-aim-1"
+  }
+}

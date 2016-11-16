@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="480px" height="480px" viewBox="0 0 480 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>7 Personal Skills</title>
+    <desc></desc>
+    <defs>
+        <circle id="path-1" cx="240" cy="240" r="210"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="420" height="420" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="240" cy="240" r="150"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="300" height="300" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="skills">
+            <use id="Oval-50-Copy-3" stroke="#F1F0EF" mask="url(#mask-2)" stroke-width="8" fill-opacity="0" fill="#D8D8D8" xlink:href="#path-1"></use>
+            <use id="Oval-50-Copy-2" stroke="#F1F0EF" mask="url(#mask-4)" stroke-width="8" fill-opacity="0" fill="#D8D8D8" xlink:href="#path-3"></use>
+            <g id="Group" transform="translate(45.000000, 62.000000)" font-size="20" font-family="Roboto-Bold, Roboto" fill="#786A65" font-weight="bold">
+                <text id="Empathy">
+                    <tspan x="155.232422" y="19">Empathy</tspan>
+                </text>
+                <text id="Active-Listening">
+                    <tspan x="254.087891" y="103">Active Listening</tspan>
+                </text>
+                <text id="Critical">
+                    <tspan x="310.400391" y="157">Critical</tspan>
+                    <tspan x="303.164062" y="181">Thinking</tspan>
+                    <tspan x="301.220703" y="205">and Non-</tspan>
+                    <tspan x="291.52832" y="229">Judgement</tspan>
+                </text>
+                <text id="Nonviolent">
+                    <tspan x="236.789062" y="289">Nonviolent</tspan>
+                    <tspan x="214.279297" y="313">Communication</tspan>
+                </text>
+                <text id="Collaborative">
+                    <tspan x="46.5664062" y="265">Collaborative</tspan>
+                    <tspan x="34.4082031" y="289">Negotiation and</tspan>
+                    <tspan x="60.9023438" y="313">Mediation</tspan>
+                </text>
+                <text id="Personal">
+                    <tspan x="7.65136719" y="157">Personal</tspan>
+                    <tspan x="0.991210938" y="181">Resilience</tspan>
+                </text>
+                <text id="Inner-Peace">
+                    <tspan x="33.0673828" y="73">Inner Peace</tspan>
+                </text>
+            </g>
+            <text id="7-PERSONAL" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#EE3224">
+                <tspan x="196.631592" y="237">7 PERSONAL</tspan>
+                <tspan x="215.947998" y="252">SKILLS</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

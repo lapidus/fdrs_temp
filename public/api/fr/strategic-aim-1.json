@@ -1,0 +1,424 @@
+{
+  "chapter": "4",
+  "slug": "strategic-aim-1",
+  "title": "Objectif stratégique 1",
+  "subtitle": "Sauver des vies, protéger les moyens d'existence et renforcer le relèvement après les catastrophes et les crises",
+  "intro": "Depuis leurs débuts, la Croix-Rouge et le Croissant-Rouge sont surtout connus pour leur mission, qui est d’apporter une aide d’urgence et un réconfort aux personnes en détresse.",
+  "general": [
+    "En 2014, nous avons mené des opérations internationales en réponse à 278 catastrophes et crises survenues dans le monde, un chiffre qui s’inscrit dans la tendance générale à la baisse observée au cours de la présente décennie. Cette tendance est due en partie à la réduction importante – mais peut-être temporaire – du nombre de catastrophes naturelles de grande ampleur enregistrées ces dernières années, mais elle peut également être le signe de l’amélioration de la capacité des unités locales et nationales de faire face aux catastrophes sans avoir besoin d’un appui international.",
+    {
+      "type": "chart",
+      "title": "Déclin des catastrophes naturelles",
+      "caption": "Source: Disaster and Crisis Management Department",
+      "dataset": [
+        {"year": 2010, "disasters": 393},
+        {"year": 2011, "disasters": 406},
+        {"year": 2012, "disasters": 358},
+        {"year": 2013, "disasters": 305},
+        {"year": 2014, "disasters": 278}
+      ],
+      "axisLabels": {
+        "x": "Années",
+        "y": "Catastrophes naturelles"
+      },
+      "lineLabels": [
+        "Catastrophes\nnaturelles"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "Nombre de personnes soutenues, par type de catastrophe",
+      "blocks": [
+        "Les catastrophes les plus courantes dans toutes les régions ont été les catastrophes hydrométéorologiques, telles que les inondations, les ouragans et les sécheresses, aggravées en Afrique par des crises liées à des conflits prolongés. La région Asie-Pacifique a été plus exposée à des risques géophysiques, tels que les tremblements de terre.",
+        "La majorité des interventions d’urgence et des bénéficiaires de la Croix-Rouge et du Croissant-Rouge se trouvent dans les régions Asie-Pacifique et Afrique. Seul un faible nombre de Sociétés nationales a fourni des données ventilées par sexe, celles-ci faisant état d’une répartition équitable.",
+        {
+          "type": "chart",
+          "title": "Personnes soutenues, par type de catastrophe",
+          "customFills": ["#E02726","#1A9FE0", "#BEBAB8","#FED02F"],
+          "dataset": [
+            {
+              "index": 1,
+              "numbers": [0,608168,6953897,600019],
+              "labels": ["Géophysique","Hydrométéorologique","Biologique","Divers"],
+              "total": 8162084,
+              "name": "Afrique"
+            },
+            {
+              "index": 2,
+              "numbers": [2308695,1152032,10000,173729],
+              "labels": ["Géophysique","Hydrométéorologique","Biologique","Divers"],
+              "total": 3644456,
+              "name": "Asie-Pacifique"
+            },
+            {
+              "index": 3,
+              "numbers": [0,644820,181250,0],
+              "labels": ["Géophysique","Hydrométéorologique","Biologique","Divers"],
+              "total": 826070,
+              "name": "Amériques"
+            },
+            {
+              "index": 4,
+              "numbers": [0,72614,172000,168250],
+              "labels": ["Géophysique","Hydrométéorologique","Biologique","Divers"],
+              "total": 412864,
+              "name": "Europe"
+            },
+            {
+              "index": 5,
+              "numbers": [0,69725,0,3000],
+              "labels": ["Géophysique","Hydrométéorologique","Biologique","Divers"],
+              "total": 72725,
+              "name": "Moyen-Orient et Afrique du Nord"
+            }
+          ],
+          "caption": "Source: Disaster and Crisis Management Department, FDRS"
+        }
+      ]
+    },
+    {
+      "title": "Magnitude des crises abordées par le Croix Rouge et le Croissant Rouge",
+      "blocks": [
+        "Le nombre d’interventions d’urgence ne donne pas d’indication sur l’ampleur des catastrophes ou des crises. Pour connaître cette donnée, il faut se référer au nombre et au montant des appels d’urgence lancés par le Secrétariat de la Fédération au nom des Sociétés nationales : 137 appels d’un montant total de 1,25 milliard de francs suisses en faveur de 91 millions de bénéficiaires ont été lancés pendant la période de 2010 à 2014, une ou deux catastrophes de grande ampleur ayant influencé chaque année l’étendue des interventions d’urgence et causé d’importantes fluctuations d’une année à l’autre.",
+        {
+          "type": "table",
+          "title": "Engagement dans les plus grandes crises",
+          "headers": [
+            "Année",
+            "Nombre d’appels d’urgence lancés",
+            "Montant des appels d’urgence (en millions de CHF)",
+            "Nombre de bénéficiaires (en millions)",
+            "Crise majeure"
+          ],
+          "dataset": [
+            {
+              "year": 2010,
+              "appealsLaunched": 30,
+              "amount": 459.4,
+              "beneficiaries": 10.9,
+              "crisis": "Tremblement de terre à Haïti"
+            },
+            {
+              "year": 2011,
+              "appealsLaunched": 25,
+              "amount": 149.1,
+              "beneficiaries": 3.3,
+              "crisis": "Crise des réfugiés en Somalie/sécheresse dans la Corne de l’Afrique"
+            },
+            {
+              "year": 2012,
+              "appealsLaunched": 36,
+              "amount": 281.7,
+              "beneficiaries": 12.4,
+              "crisis": "Crise en Syrie"
+            },
+            {
+              "year": 2013,
+              "appealsLaunched": 19,
+              "amount": 129.8,
+              "beneficiaries": 1.9,
+              "crisis": "Typhon Haiyan aux Philippines"
+            },
+            {
+              "year": 2014,
+              "appealsLaunched": 27,
+              "amount": 230.8,
+              "beneficiaries": 62.5,
+              "crisis": "Épidémie d’Ebola en Afrique de l’Ouest"
+            },
+            {
+              "year": "Total",
+              "appealsLaunched": 137,
+              "amount": 1250.8,
+              "beneficiaries": 91.1,
+              "crisis": "-"
+            }
+          ],
+          "caption": "Source: Département Finances"
+        }
+      ]
+    },
+    {
+      "title": "Appels d’urgence les mieux et les moins bien financés",
+      "blocks": [
+        "Dans la pratique, la mise à disposition des ressources nécessaires par les donateurs dépend de nombreux facteurs. Les interventions liées à des crises chroniques ou persistantes tendent à être moins bien financées que celles liées à des catastrophes graves. Un nombre plus élevé d’appels dans une région donnée peut avoir une incidence sur la disposition des donateurs à répondre de manière adéquate à chacun d’entre eux, par rapport à une région dans laquelle moins d’appels ont été lancés.",
+        "La proximité des pays donateurs, en cas par exemple de crises à la périphérie de l’Europe ou aux frontières de l’Amérique du Nord, peut favoriser les financements, les donateurs ayant la volonté de réduire les flux de réfugiés franchissant les frontières de leurs pays respectifs. Les environnements considérés comme difficiles car des facteurs politiques en limitent l’accès, ou les contextes dans lesquels les opérations précédentes ont obtenu de mauvais résultats, peuvent attirer moins de ressources.",
+        "Les appels en faveur de l’Afrique ont tendance à être moins bien financés, probablement parce que le continent fait face à plusieurs crises de longue durée, pour lesquelles l’intérêt décline après un certain temps. Les appels liés à l’insécurité alimentaire tendent aussi à être sous-financés, en raison peut-être du caractère prolongé de ce type de crises. Les situations d’urgence très médiatisées sont souvent bien mieux financées.",
+        {
+          "type": "tabs",
+          "title": "Financement des appels",
+          "tabs": [
+            {
+              "name": "Moins bien financés",
+              "headers": ["Appel", "Couverture"],
+              "dataset": [
+                { "country": "Kenya", "percentage": 4.8 },
+                { "country": "Kenya", "percentage": 7.6 },
+                { "country": "Angola", "percentage": 8.8 },
+                { "country": "Ethiopie", "percentage": 11.1 },
+                { "country": "Côte d'Ivoire", "percentage": 11.7 },
+                { "country": "Sudan", "percentage": 17.8 },
+                { "country": "Burkina Faso", "percentage": 18.9 },
+                { "country": "Sudan", "percentage": 23.6 },
+                { "country": "Niger", "percentage": 25.2 },
+                { "country": "Chad", "percentage": 26.7 },
+                { "country": "Kenya", "percentage": 27.1 },
+                { "country": "République du Congo", "percentage": 28.0 }
+              ]
+            },
+            {
+              "name": "Mieux financés",
+              "headers": ["Appel", "Couverture"],
+              "dataset": [
+                { "country": "Sierra Leone", "percentage": 82.6 },
+                { "country": "Pakistan", "percentage": 85 },
+                { "country": "Sri Lanka", "percentage": 87.7 },
+                { "country": "Chili", "percentage": 87.7 },
+                { "country": "Kenya", "percentage": 88 },
+                { "country": "Haïti et la République Dominicaine", "percentage": 88.4 },
+                { "country": "Philippines", "percentage": 88.5 },
+                { "country": "Cuba", "percentage": 90.8 },
+                { "country": "Turquie", "percentage": 95.2 },
+                { "country": "Pakistan", "percentage": 96.5 },
+                { "country": "Haïti", "percentage": 100 },
+                { "country": "Somalie", "percentage": 100 }
+              ]
+            }
+          ],
+          "caption": "Source: Finance Department"
+        }
+      ]
+    },
+    {
+      "title": "Notre système de gestion des catastrophes",
+      "blocks": [
+        "Le Fonds d’urgence pour les secours lors de catastrophes (DREF) est un fonds géré par le Secrétariat de la Fédération, dont les ressources peuvent, sur demande, être immédiatement mises à la disposition des Sociétés nationales pour lancer une intervention d’urgence. Les centaines de catastrophes et d’urgences sanitaires mineures qui sont à déplorer chaque année n’attirent pas l’attention des médias du fait de leur faible ampleur et ne reçoivent donc pas l’appui financier rapide nécessaire.",
+        {
+          "type": "chart",
+          "title": "DREF – type et nombre des opérations",
+          "dataset": [
+            { "x": "Sécheresses (1)", "y": 1, "fill": "#012A39" },
+            { "x": "Inondations (30)", "y": 30, "fill": "#0F9EE2" },
+            { "x": "Tremblements\nde terre (3)", "y": 3, "fill": "#FED02F" },
+            { "x": "Éruptions\nvolcaniques (4)", "y": 4, "fill": "#DE2214" },
+            { "x": "Cyclones,\ntempêtes, (4)", "y": 4, "fill": "#84BB23" },
+            { "x": "Température\nextrême (4)", "y": 4, "fill": "#012A39" },
+            { "x": "Troubles\ncivils (13)", "y": 13, "fill": "#84BB23" },
+            { "x": "Explosions,\nincendies (2)", "y": 2, "fill": "#012A39" },
+            { "x": "Mouvements de\npopulation (11)", "y": 11, "fill": "#EE3224" },
+            { "x": "Autres (2)", "y": 2, "fill": "#012A39" },
+            { "x": "Epidémies (28)", "y": 28, "fill": "#FED02F" }
+          ],
+          "caption": "Source: Disaster and Crisis Management Department"
+        },
+        "Les chiffres montrent qu’en 2014, le DREF a été le plus souvent sollicité pour faire face à des épidémies, des inondations et des conflits."
+      ]
+    },
+    {
+      "title": "Notre Service mondial de logistique",
+      "blocks": [
+        "Le Service mondial de logistique de la Fédération, dont le travail a été salué à plusieurs reprises, a pour mission de garantir que les fournitures et les équipements adéquats soient disponibles au bon endroit, au bon moment et au bon prix afin d’atteindre le plus grand nombre possible de personnes vulnérables. Il opère par le biais de pôles situés à Genève, à Panama, à Las Palmas, à Nairobi, à Dubaï et à Kuala Lumpur, et gère un volume impressionnant et croissant d’activités.",
+        {
+          "type": "chart",
+          "title": "Volume croissant d’activités",
+          "axisLabels": {
+            "x": "Années",
+            "y": "Millions de CHF"
+          },
+          "lineLabels": ["Achats", "Mobilisation"],
+          "dataset": [
+            [
+              {"year": 2011, "value": 72},
+              {"year": 2012, "value": 78},
+              {"year": 2013, "value": 116},
+              {"year": 2014, "value": 148}
+            ],
+            [
+              {"year": 2011, "value": 45},
+              {"year": 2012, "value": 52},
+              {"year": 2013, "value": 88},
+              {"year": 2014, "value": 95}
+            ]
+          ],
+          "caption": "Source: Logistics Department"
+        },
+        "Le Service mondial de logistique est avant tout axé sur les achats, le transport, le stockage, la gestion du parc automobile, les stocks d’urgence et les compétences techniques spécialisées.",
+        "Il maintient en tout temps des stocks d’urgence dans les entrepôts installés dans des endroits stratégiques afin de permettre à la Fédération de répondre à tout moment aux besoins immédiats de 450 000 personnes. Son rôle consiste également à conseiller et à aider les Sociétés nationales à renforcer leurs propres capacités logistiques. En étendant ses services aux partenaires humanitaires externes, le Service mondial de logistique a accru ses volumes de transactions, ce qui lui a permis d’améliorer son pouvoir d’achat et de réaliser des économies d’échelle bénéfiques pour l’ensemble du réseau de la Fédération."
+      ]
+    },
+    {
+      "title": "Le logement: davantage que quatre murs et un toit",
+      "blocks": [
+        "Pour les individus qui ont tout perdu du fait d’une catastrophe ou d’une guerre, un logement, c’est bien plus que quatre murs et un toit. C’est un foyer, un endroit où ils se sentent en sécurité et où ils peuvent vivre dans l’intimité avec leurs proches. La fourniture de logements est une première étape vers la reconstruction des vies et des moyens de subsistance, et elle permet aux individus de redevenir ou de rester en bonne santé. La résilience et la dignité commencent par un logement adéquat.",
+        {
+          "type": "chart",
+          "title": "Personnes assistées en 2014",
+          "popupContent": "households assisted with shelter and/or non-food items",
+          "dataset": {
+            "PHL": {
+              "fillKey": "bubbleFill",
+              "name": "Philippines-Haiyan",
+              "number": 728000,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">728,000</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "SSD": {
+              "fillKey": "bubbleFill",
+              "name": "South Sudan",
+              "number": 202907,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">202,907</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "COD": {
+              "fillKey": "bubbleFill",
+              "name": "Democratic Republic of Congo",
+              "number": 166442,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">166,442</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "IRQ": {
+              "fillKey": "bubbleFill",
+              "name": "Iraq",
+              "number": 108873,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">108,873</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "CAF": {
+              "fillKey": "bubbleFill",
+              "name": "Central African Republic",
+              "number": 103904,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">103,904</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "SOM": {
+              "fillKey": "bubbleFill",
+              "name": "Somalia",
+              "number": 55200,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">55,200</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "YEM": {
+              "fillKey": "bubbleFill",
+              "name": "Yemen",
+              "number": 48855,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">48,855</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "BGD": {
+              "fillKey": "bubbleFill",
+              "name": "Bangladesh",
+              "number": 43187,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">43,187</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "ETH": {
+              "fillKey": "bubbleFill",
+              "name": "Ethiopia",
+              "number": 33918,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">33,918</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "SYR": {
+              "fillKey": "bubbleFill",
+              "name": "Syria",
+              "number": 31825,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">31,825</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "AFG": {
+              "fillKey": "bubbleFill",
+              "name": "Afghanistan",
+              "number": 19364,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">19,364</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "MMR": {
+              "fillKey": "bubbleFill",
+              "name": "Myanmar",
+              "number": 16898,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">16,898</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "PAK": {
+              "fillKey": "bubbleFill",
+              "name": "Pakistan",
+              "number": 15360,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">15,360</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "UKR": {
+              "fillKey": "bubbleFill",
+              "name": "Ukraine",
+              "number": 13000,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">13,000</span> households assisted with shelter and/or non-food items</p>"
+            },
+            "MLI": {
+              "fillKey": "bubbleFill",
+              "name": "Mali",
+              "number": 11370,
+              "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">11,370</span> households assisted with shelter and/or non-food items</p>"
+            }
+          },
+          "caption": "Source: Shelter and Settlements Department"
+        },
+        "Le réseau de la Croix-Rouge et du Croissant-Rouge est l’acteur humanitaire qui fournit le plus grand nombre de logements d’urgence. Il œuvre également en faveur du relèvement et de la reconstruction à plus long terme des communautés touchées par une catastrophe. Au cours de la dernière décennie, la Fédération a fourni chaque année un soutien en matière de logement à plus de 2,5 millions de personnes touchées par une catastrophe, la moyenne annuelle des dépenses dans ce domaine s’élevant à 160 millions de francs suisses.",
+        {
+          "type": "case-study-extended",
+          "title": "The Syria crisis"
+        },
+        {
+          "type": "case-study-extended",
+          "title": "Typhoon Haiyan"
+        },
+        {
+          "type": "case-study-extended",
+          "title": "Ebola virus disease"
+        }
+      ]
+    },
+    {
+      "title": "La sécurité",
+      "blocks": [
+        "Œuvrer en première ligne des interventions humanitaires peut être risqué. Ces dix dernières années, plus de 1 100 travailleurs humanitaires ont perdu la vie dans l’exercice de leurs fonctions, beaucoup d’autres ont été blessés et un nombre accru d’enlèvements a été enregistré. Ces faits sont le résultat du non-respect croissant du droit international humanitaire et de la prise pour cible délibérée des structures humanitaires et sanitaires.",
+        {
+          "type": "chart",
+          "title": "Incidents de securité",
+          "barLabels": ["281", "155", "114", "103", "79"],
+          "axisLabels": {
+            "x": "Années",
+            "y": ""
+          },
+          "dataset": [
+            { "value": 281, "year": 2010 },
+            { "value": 155, "year": 2011 },
+            { "value": 114, "year": 2012 },
+            { "value": 103, "year": 2013 },
+            { "value": 79,  "year": 2014 }
+          ],
+          "caption": "Source: Security Unit"
+        },
+        "En ce qui concerne la Fédération, le nombre d’incidents de sécurité signalés a baissé ces dernières années. La situation est encourageante: en 2010, un incident de sécurité était signalé pour environ 15 employés déployés, contre un incident pour 44 employés en 2014.",
+        {
+          "type": "tabs",
+          "title": "Employés et volontaires de la Croix-Rouge et du Croissant-Rouge tués ",
+          "tabs": [
+            {
+              "name": "1993—2011",
+              "dataset": [
+                { "x": "Accidents\nimpliquant des véhicules (10%)", "y": 10, "fill":"#012A39" },
+                { "x": "Violence/\ncriminalité/\n conflit (30%)", "y": 30, "fill":"#EE3224" },
+                { "x": "Catastrophes\nnaturelles (60%)", "y": 60, "fill":"#FED02F" }
+              ]
+            },
+            {
+              "name": "2012—2014",
+              "dataset": [
+                { "x": "Accidents\nimpliquant\ndes véhicules\n(10%)", "y": 10, "fill": "#012A39" },
+                { "x": "Violence/\ncriminalité/\n conflit (86%)", "y": 86, "fill": "#EE3224" },
+                { "x": "Catastrophes\nnaturelles (4%)", "y": 4, "fill": "#FED02F" }
+              ]
+            }
+          ],
+          "caption": "Source: Security Unit"
+        },
+        "Toutefois, les facteurs de risque ont changé. Si, par le passé, la majorité des décès de membres du personnel de la Croix-Rouge et du Croissant-Rouge survenaient dans le cadre d’interventions consécutives à des catastrophes naturelles, la violence directe est aujourd’hui une cause de décès de plus en plus courante."
+      ]
+    }
+  ],
+  "nextChapter": {
+    "heading": "Prochain chapitre",
+    "chapter": "5",
+    "subtitle": "Objectif stratégique 2",
+    "title": "Promouvoir des modes de vie sains et sûrs",
+    "slug": "strategic-aim-2"
+  }
+}
+

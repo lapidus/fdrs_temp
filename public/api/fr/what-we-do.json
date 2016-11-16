@@ -1,0 +1,45 @@
+{
+  "chapter": "2",
+  "slug": "what-we-do",
+  "title": "Ce que nous faisons",
+  "intro": "La Stratégie 2020 guidera les actions de la Fédération internationale des Sociétés de la Croix-Rouge et du Croissant-Rouge au cours des dix prochaines années. Elle définit trois objectifs stratégiques et trois actions facilitatrices pour la Fédération internationale et ses Sociétés nationales membres, en vue de la réalisation de la vision commune.",
+  "general": [
+    "to inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world."
+  ],
+  "sections": [
+    {
+      "title": "Stratégie 2020",
+      "blocks": [
+        "Les objectifs stratégiques de la Stratégie 2020 sont:",
+        [
+          "Sauver des vies, protéger les moyens d’existence et renforcer le relèvement après les catastrophes et les crises",
+          "Promouvoir des modes de vie sains et sûrs",
+          "Promouvoir l’intégration sociale et une culture de non-violence et de paix"
+        ],
+        "Les actions facilitatrices, propices à la réalisation des objectifs stratégiques sont:",
+        [
+          "Bâtir des Sociétés nationales de la Croix-Rouge et du Croissant-Rouge fortes",
+          "Mener des actions de diplomatie humanitaire pour prévenir et réduire la vulnérabilité dans un monde interdépendant",
+          "Fonctionner efficacement en tant que Fédération internationale"
+        ],
+        "Adoptée par l’Assemblée générale de la Fédération internationale en novembre 2009, la Stratégie 2020 est le résultat de larges consultations conduites au sein du Mouvement international de la Croix-Rouge et du Croissant-Rouge et avec nos partenaires extérieurs. Guidée par les Statuts et la Stratégie du Mouvement, elle fait la synthèse des politiques et des stratégies antérieures et sert d’assise aux activités qui seront menées pour faire plus, le faire mieux et aller plus loin.",
+        "http://www.ifrc.org/Global/Publications/general/strategy-2020.pdf",
+        "Stratégie 2020 document"
+      ]
+    },
+    {
+      "title": "Images de notre photostream Flickr",
+      "blocks": [
+        "Découvrez le travail des Sociétés nationales du monde entier.",
+        "Les albums photo sur Flickr"
+      ]
+    }
+  ],
+  "nextChapter": {
+    "heading": "Prochain chapitre",
+    "chapter": "3",
+    "subtitle": "Aperçu",
+    "title": "Nos principes fondamentaux en action",
+    "slug": "living-our-fundamental-principles"
+  }
+}

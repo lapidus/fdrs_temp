@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>Neutrality</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.0304950495 39.9691089 0.0304950495 39.9691089 39.9762376 0 39.9762376"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Neutrality">
+            <g id="icon-Neutrality">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M19.9841584,40 C31.0217822,40 39.9691089,31.0526733 39.9691089,20.0154455 C39.9691089,8.97782178 31.0217822,0.0304950495 19.9841584,0.0304950495 C8.94732673,0.0304950495 0,8.97782178 0,20.0154455 C0,31.0526733 8.94732673,40 19.9841584,40" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <polygon id="Fill-4" fill="#CCCCCC" points="9.64475248 15.0914851 30.3235644 15.0914851 30.3235644 18.499802 9.64475248 18.499802"></polygon>
+                <polygon id="Fill-5" fill="#CCCCCC" points="9.64475248 21.530297 30.3235644 21.530297 30.3235644 24.9386139 9.64475248 24.9386139"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
