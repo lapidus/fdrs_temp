@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { VictoryScatter, VictoryLabel } from 'victory';
 
+import ChartTooltip from "../ChartTooltip"
 import numberFormatter from '../../utils/numberFormatter';
 
 //
@@ -14,23 +14,6 @@ var LegendItem = (props) => (
     <span className='small'>{props.children}</span>
   </div>
 );
-
-class Tooltip extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div className='chart-tooltip' style={{
-        display: this.props.visible ? 'block' : 'none',
-        top: this.props.position[0] - 8 || 0,
-        left: this.props.position[1] || 0
-      }}>
-        {this.props.children}
-      </div>
-    );
-  }
-}
 
 class ScatterChart extends React.Component {
   constructor(props) {
@@ -77,7 +60,7 @@ class ScatterChart extends React.Component {
             <rect x={this.state.padding.left + ((this.state.width - this.state.padding.left - this.state.padding.right) / 2 )} y={this.state.padding.top} width={(this.state.width - this.state.padding.left - this.state.padding.right) / 2} height={(this.state.height - this.state.padding.top - this.state.padding.bottom) / 2} fill='#FBFAF9' />
             <rect x={this.state.padding.left} y={this.state.padding.top + ((this.state.height - this.state.padding.top - this.state.padding.bottom) / 2)} width={(this.state.width - this.state.padding.left - this.state.padding.right) / 2} height={(this.state.height - this.state.padding.top - this.state.padding.bottom) / 2} fill='#FBFAF9' />
             <rect x={this.state.padding.left + ((this.state.width - this.state.padding.left - this.state.padding.right) / 2 )} y={this.state.padding.top + ((this.state.height - this.state.padding.top - this.state.padding.bottom) / 2)} width={(this.state.width - this.state.padding.left - this.state.padding.right) / 2} height={(this.state.height - this.state.padding.top - this.state.padding.bottom) / 2} fill='#EEEDEC' />
-            
+
             <VictoryLabel x={this.state.padding.left - 20} y={this.state.padding.top + (((this.state.height - this.state.padding.top - this.state.padding.bottom) / 4) * 3)}
               textAnchor='end'
               verticalAnchor='middle'
@@ -168,11 +151,11 @@ class ScatterChart extends React.Component {
               }}
              />
           </svg>
-          <Tooltip visible={this.state.tooltipVisible} position={this.state.tooltipPosition} parentPosition={this.state.tooltipParentPosition}>
+          <ChartTooltip visible={this.state.tooltipVisible} position={this.state.tooltipPosition} parentPosition={this.state.tooltipParentPosition}>
             <strong className='small'>{this.state.tooltipTitle}</strong>
             <br/>
             <span className='small'>{this.state.tooltipContent}</span>
-          </Tooltip>
+          </ChartTooltip>
         </div>
         <div className='clearfix'>
           {this.props.legend.map((item, i) => {

@@ -24,8 +24,8 @@ class Chapter4 extends React.Component {
     console.log("Mounted Strategic Aim 1")
   }
   shouldComponentUpdate(newProps, newState, newContext) {
-    var newDataAvailable = newProps.content[newContext.language].chapters["strategic-aim-1"] !== undefined
-    var sameData = this.props.content[this.context.language].chapters["strategic-aim-1"] === newProps.content[newContext.language].chapters["who-we-are"]
+    const newDataAvailable = newProps.content[newContext.language].chapters["strategic-aim-1"] !== undefined
+    const sameData = this.props.content[this.context.language].chapters["strategic-aim-1"] === newProps.content[newContext.language].chapters["who-we-are"]
     return newDataAvailable && !sameData
   }
   render() {
@@ -193,14 +193,14 @@ class Chapter4 extends React.Component {
                   <thead>
                     <tr className="small">
                       {section1.blocks[1].headers.map((item, i) => {
-                        return (<th key={i}>{item}</th>)
+                        return (<th key={ i }>{item}</th>)
                       })}
                     </tr>
                   </thead>
                   <tbody>
                     {section1.blocks[1].dataset.map((item, i) => {
                       return (
-                        <tr key={i}>
+                        <tr key={ i }>
                           <td>{item.year}</td>
                           <td>{item.appealsLaunched}</td>
                           <td>{item.amount}</td>
@@ -216,7 +216,7 @@ class Chapter4 extends React.Component {
             </div>
           </div>
 
-          <div classeName="clearfix" id="scroll-target-section2">
+          <div className="clearfix" id="scroll-target-section2">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
               <p className="small strong color-primary caps">{t("strategic-aim-1:title")}</p>
               <h3 className="headline">{t("strategic-aim-1:sections.2.title")}</h3>

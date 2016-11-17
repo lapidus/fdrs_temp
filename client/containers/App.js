@@ -34,7 +34,7 @@ class App extends React.Component {
   goToLanguage(lang) {
     this.context.router.push(
       constructLanguageRoute(
-        lang === "en" ? null : lang,
+        lang.value === "en" ? null : lang.value,
         this.props.location
       )
     )

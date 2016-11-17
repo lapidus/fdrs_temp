@@ -6,7 +6,7 @@ import Select from "react-select"
 
 import { fetchNationalSocieties } from "../../actions/appActions"
 import numberFormatter from "../../utils/numberFormatter"
-import niceNum from "../../utils/niceNum.filter"
+import niceNum from "../../utils/niceNum"
 import BreadCrumbs from "../../components/Breadcrumbs"
 import Icon from "../../components/Icon"
 
@@ -238,7 +238,7 @@ class DataView extends React.Component {
         let centroid = this.centroids.find((c) => c.iso2 === datum.iso2)
         bubbles.push({
           customClass: this.state.society.iso3 == "World" ? false : this.state.society.iso3 === geography.id ? "is-focused" : false,
-          value: niceNum()(value),
+          value: niceNum(value),
           name: datum.society_name,
           icon: this.state.indicator.icon,
           indicator: this.t.indicators[this.state.indicator.key],
@@ -414,7 +414,7 @@ class DataView extends React.Component {
                         { this.props.content[this.props.language].data.indicators[item.key] }
                       </div>
                       <div className="col md-4 indicator-value">
-                        { numberFormatter.addCommas(this.niceNum()(this.state.society[item.key])) } { item.currency }
+                        { numberFormatter.addCommas(this.niceNum(this.state.society[item.key])) } { item.currency }
                       </div>
                     </li>
                 )})}
