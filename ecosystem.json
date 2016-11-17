@@ -3,7 +3,7 @@
   "apps": [
     {
       "name": "react_test",
-      "script": "build/server.js",
+      "script": "build/index.js",
       "env": {
         "COMMON_VARIABLE": "true"
       },

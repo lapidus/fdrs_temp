@@ -6,7 +6,9 @@
   "scripts": {
     "start": "concurrently --kill-others \"node index\" \"npm run development\"",
     "development": "webpack --progress --colors --watch",
-    "production": "NODE_ENV=production webpack -p",
+    "clean": "rm -rf ./build",
+    "build": "NODE_ENV=production webpack -p && npm run clean && npm run copy",
+    "copy": "mkdir build && ./node_modules/ncp/bin/ncp index.js ./build/index.js && ./node_modules/ncp/bin/ncp server ./build/server && ./node_modules/ncp/bin/ncp public ./build/public",
     "scss": "node_modules/.bin/node-sass client/styles/styles.scss public/styles/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -87,6 +89,7 @@
     "eslint-plugin-react": "^6.7.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
+    "ncp": "^2.0.0",
     "node-sass": "^3.13.0",
     "webpack": "^1.13.3"
   }
