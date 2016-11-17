@@ -29,8 +29,12 @@ function beforeTransitionHandler(location, callback) {
   const currentLanguage = store.getState().appReducer.language
   const newLanguage = urlArray[1]
   let languageFetchingPromise
+  console.log(urlArray);
 
-  if (i18n.language !== newLanguage) i18n.changeLanguage(newLanguage || "en")
+  if (i18n.language !== newLanguage)
+    i18n.changeLanguage(
+      newLanguage && newLanguage.length === 2 ? newLanguage : "en"
+    )
 
   // Switch language if necessary
   // newLanguage: /fr /es /ar    currentLanguage: en fr es ar

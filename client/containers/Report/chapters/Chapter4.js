@@ -1,25 +1,20 @@
-
 import React from "react"
 import { connect } from "react-redux"
-import { fetchChapter } from "../../../actions/chapterActions"
-import BreadCrumbs from "../../Breadcrumbs"
-import HeadlineDivider from "../../HeadlineDivider"
-import LineChart from "../../charts/LineChart"
-
 import { translate } from "react-i18next"
+
 import i18n from "../../../i18n"
-
+import { fetchChapter } from "../../../actions/chapterActions"
 import NextChapter from "../../../utils/NextChapter"
-import { Tabs, TabPanel } from "../../Tabs"
-
-import SideNavigation from "../../SideNavigation"
 import numberFormatter from "../../../utils/numberFormatter"
-
-import SimpleBarChart from "../../charts/SimpleBarChart"
-import DonutChart from "../../charts/DonutChart"
-import WorldMap from "../../charts/WorldMap"
-
-import StackedBarChart from "../../charts/StackedBarChart"
+import BreadCrumbs from "../../../components/Breadcrumbs"
+import HeadlineDivider from "../../../components/HeadlineDivider"
+import LineChart from "../../../components/charts/LineChart"
+import { Tabs, TabPanel } from "../../../components/Tabs"
+import SideNavigation from "../../../components/Report/SideNavigation"
+import SimpleBarChart from "../../../components/charts/SimpleBarChart"
+import DonutChart from "../../../components/charts/DonutChart"
+import WorldMap from "../../../components/charts/WorldMap"
+import StackedBarChart from "../../../components/charts/StackedBarChart"
 
 class Chapter4 extends React.Component {
   constructor(props) {
@@ -605,4 +600,4 @@ function mapStateToProps(state) {
 //   }
 // }
 
-module.exports = translate(["strategic-aim-1"], {wait: true})(connect(mapStateToProps)(Chapter4))
+export default translate(["strategic-aim-1"], {wait: true})(connect(mapStateToProps)(Chapter4))

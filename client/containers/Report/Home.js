@@ -1,19 +1,12 @@
-
 import React from "react"
-import ReactDOM from "react-dom"
-
 import { connect } from "react-redux"
-
 import { translate } from "react-i18next"
-
 import { Link } from "react-router"
+
 import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
-
-import Reveal from "../Reveal"
-
-import TextTruncate from "../../utils/TextTruncate"
-import Icon from "../Icon"
-import HeadlineDivider from "../HeadlineDivider"
+import Reveal from "../../components/Reveal"
+import Icon from "../../components/Icon"
+import HeadlineDivider from "../../components/HeadlineDivider"
 
 class Quote extends React.Component {
   render() {
@@ -408,4 +401,4 @@ function mapStateToProps(state) {
 
 // Home.defaultProps = {}
 
-module.exports = translate()(connect(mapStateToProps)(Home))
+export default translate()(connect(mapStateToProps)(Home))

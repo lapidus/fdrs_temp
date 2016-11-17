@@ -1,80 +1,77 @@
+import React from "react"
+import { connect } from "react-redux"
 
-import React from 'react';
-import { connect } from 'react-redux';
-import { fetchChapter } from '../../../actions/chapterActions';
-import BreadCrumbs from '../../Breadcrumbs';
-import HeadlineDivider from '../../HeadlineDivider';
-
-import NextChapter from '../../../utils/NextChapter';
-import numberFormatter from '../../../utils/numberFormatter';
-
-import SideNavigation from '../../SideNavigation';
-import SimpleBarChart from '../../charts/SimpleBarChart';
-import StackedBarChart from '../../charts/StackedBarChart';
-import LineChart from '../../charts/LineChart';
-
-import { Tabs, TabPanel } from '../../Tabs';
+import { fetchChapter } from "../../../actions/chapterActions"
+import numberFormatter from "../../../utils/numberFormatter"
+import BreadCrumbs from "../../../components/Breadcrumbs"
+import HeadlineDivider from "../../../components/HeadlineDivider"
+import NextChapter from "../../../components/../utils/NextChapter"
+import SideNavigation from "../../../components/Report/SideNavigation"
+import SimpleBarChart from "../../../components/charts/SimpleBarChart"
+import StackedBarChart from "../../../components/charts/StackedBarChart"
+import LineChart from "../../../components/charts/LineChart"
+import { Tabs, TabPanel } from "../../../components/Tabs"
 
 class Chapter5 extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
   componentDidMount() {
-    console.log('Mounted Strategic Aim 2');
+    console.log("Mounted Strategic Aim 2")
   }
   shouldComponentUpdate(newProps, newState, newContext) {
-    var newDataAvailable = newProps.content[newContext.language].chapters['strategic-aim-2'] !== undefined;
-    var sameData = this.props.content[this.context.language].chapters['strategic-aim-2'] === newProps.content[newContext.language].chapters['who-we-are'];
-    return newDataAvailable && !sameData;
+    var newDataAvailable = newProps.content[newContext.language].chapters["strategic-aim-2"] !== undefined
+    var sameData = this.props.content[this.context.language].chapters["strategic-aim-2"] === newProps.content[newContext.language].chapters["who-we-are"]
+    return newDataAvailable && !sameData
   }
   render() {
 
-    var chapter = this.props.content[this.context.language].chapters['strategic-aim-2'];
+    var chapter = this.props.content[this.context.language].chapters["strategic-aim-2"]
 
-    var section1 = chapter.sections[0];
-    var section2 = chapter.sections[1];
-    var section3 = chapter.sections[2];
-    var section4 = chapter.sections[3];
-    var section5 = chapter.sections[4];
-    var section6 = chapter.sections[5];
+    var section1 = chapter.sections[0]
+    var section2 = chapter.sections[1]
+    var section3 = chapter.sections[2]
+    var section4 = chapter.sections[3]
+    var section5 = chapter.sections[4]
+    var section6 = chapter.sections[5]
 
     return (
       <div>
-        <div className='clearfix bg-primary-dark'>
-          <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1'>
+        <div className="clearfix bg-primary-dark">
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
             <BreadCrumbs chapter={chapter} language={this.context.language}/>
           </div>
         </div>
 
-        <div className='clearfix bg-primary pt1'>
-          <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3'>
-            <h2 className='display-2'>{chapter.title}</h2>
-            <p className='title'>{chapter.subtitle}</p>
+        <div className="clearfix bg-primary pt1">
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
+            <h2 className="display-2">{chapter.title}</h2>
+            <p className="title">{chapter.subtitle}</p>
           </div>
         </div>
 
-        <div className='clearfix bg-dark chapter-banner' style={{backgroundImage:'url(/img/chapters/chapter-5.jpg)',backgroundSize:'cover',backgroundPosition:'center 50%',backgroundRepeat:'no-repeat'}}>
-        <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3'>
-            <p className='lead'>{chapter.intro}</p>
+        <div className="clearfix bg-dark chapter-banner" style={{backgroundImage:"url(/img/chapters/chapter-5.jpg)",backgroundSize:"cover",backgroundPosition:"center 50%",backgroundRepeat:"no-repeat"}}>
+        <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
+            <p className="lead">{chapter.intro}</p>
             <hr />
           </div>
         </div>
 
-        <div className='clearfix body-text' style={{position:'relative'}}>
+        <div className="clearfix body-text" style={{position:"relative"}}>
 
-          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={['scroll-target-section1','scroll-target-section2','scroll-target-section3','scroll-target-section4','scroll-target-section5','scroll-target-section6']}/>
+          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section1","scroll-target-section2","scroll-target-section3","scroll-target-section4","scroll-target-section5","scroll-target-section6"]}/>
 
-          <div className='clearfix' id='scroll-target-section1'>
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2'>
-              <p className='small strong color-primary caps'>{chapter.title}</p>
-              <h3 className='headline'>{section1.title}</h3>
+          <div className="clearfix" id="scroll-target-section1">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p className="small strong color-primary caps">{chapter.title}</p>
+              <h3 className="headline">{section1.title}</h3>
               <HeadlineDivider />
               <p>{section1.blocks[0]}</p>
             </div>
           </div>
 
-          <div className='clearfix'>
-            <div className='col px1 sm-px0 sm-4 sm-offset-2 md-offset-3 lg-3'>
+          <div className="clearfix">
+            <div className="col px1 sm-px0 sm-4 sm-offset-2 md-offset-3 lg-3">
               <SimpleBarChart
                 title={section1.blocks[1].title}
                 caption={section1.blocks[1].caption}
@@ -85,8 +82,8 @@ class Chapter5 extends React.Component {
                     { y: 103.4, x: new Date(2013,1,1) },
                 ]}
                 labels={[
-                  '160.7M',
-                  '103.4M'
+                  "160.7M",
+                  "103.4M"
                 ]}
                 tickValues={[
                     new Date(2012, 1, 1),
@@ -96,13 +93,13 @@ class Chapter5 extends React.Component {
                 axisLabels={section1.blocks[1].axisLabels}
                 />
             </div>
-            <div className='col px1 sm-px0 sm-4 md-offset-0 lg-3'>
+            <div className="col px1 sm-px0 sm-4 md-offset-0 lg-3">
               <p>{section1.blocks[2]}</p>
             </div>
           </div>
 
-          <div className='clearfix'>
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3'>
+          <div className="clearfix">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
               <p>{section1.blocks[3]}</p>
               <StackedBarChart
                 title={section1.blocks[4].title}
@@ -116,19 +113,19 @@ class Chapter5 extends React.Component {
                 }}
                 labels={
                   section1.blocks[4].dataset.map((item, i) => {
-                    // return `${item.name} (${item.first + item.second + item.rest})`;
+                    // return `${item.name} (${item.first + item.second + item.rest})`
                     return { text: item.name, number: numberFormatter.addCommas(Math.round(item.first + item.second + item.rest)) }
                   })
                 }
                 data={[
                   section1.blocks[4].dataset.map((item, i) => {
-                    return { x: item.index, y: item.first, name: item.names[0] };
+                    return { x: item.index, y: item.first, name: item.names[0] }
                   }),
                   section1.blocks[4].dataset.map((item, i) => {
-                    return { x: item.index, y: item.second, name: item.names[1] };
+                    return { x: item.index, y: item.second, name: item.names[1] }
                   }),
                   section1.blocks[4].dataset.map((item, i) => {
-                    return { x: item.index, y: item.rest };
+                    return { x: item.index, y: item.rest }
                   })
                 ]}
                 />
@@ -151,65 +148,65 @@ class Chapter5 extends React.Component {
                 labels={section1.blocks[6].lineLabels}
                 dataset={[
                   section1.blocks[6].dataset[0].map((item, i) => {
-                    return { x: new Date(item.year,1,1), y: item.value};
+                    return { x: new Date(item.year,1,1), y: item.value}
                   }),
                   section1.blocks[6].dataset[1].map((item, i) => {
-                    return { x: new Date(item.year,1,1), y: item.value};
+                    return { x: new Date(item.year,1,1), y: item.value}
                   })
                 ]}
               />
             </div>
           </div>
 
-          <div className='clearfix' id='scroll-target-section2'>
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2'>
-              <p className='small strong color-primary caps'>{chapter.title}</p>
-              <h3 className='headline'>{section2.title}</h3>
+          <div className="clearfix" id="scroll-target-section2">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p className="small strong color-primary caps">{chapter.title}</p>
+              <h3 className="headline">{section2.title}</h3>
               <HeadlineDivider />
               <p>{section2.blocks[0]}</p>
             </div>
           </div>
 
-          <div className='clearfix' style={{width:'100%',height:'0px',paddingBottom:'50%',overflow:'hidden',backgroundImage:'url(/img/chapters/5/climate-change.jpg)',backgroundSize:'cover',backgroundPosition:'center center',backgroundRepeat:'no-repeat'}}>
-            { /* <img src='/img/chapters/5/climate-change.jpg' width='1440' height='auto' /> */ }
+          <div className="clearfix" style={{width:"100%",height:"0px",paddingBottom:"50%",overflow:"hidden",backgroundImage:"url(/img/chapters/5/climate-change.jpg)",backgroundSize:"cover",backgroundPosition:"center center",backgroundRepeat:"no-repeat"}}>
+            { /* <img src="/img/chapters/5/climate-change.jpg" width="1440" height="auto" /> */ }
           </div>
 
-          <div className='clearfix'>
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3'>
-              <p className='small'>{section2.blocks[1].caption}</p>
+          <div className="clearfix">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
+              <p className="small">{section2.blocks[1].caption}</p>
             </div>
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2'>
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
               <p>{section2.blocks[2]}</p>
             </div>
           </div>
 
-          <div className='clearfix' id='scroll-target-section3'>
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2'>
-              <p className='small strong color-primary caps'>{chapter.title}</p>
-              <h3 className='headline'>{section3.title}</h3>
+          <div className="clearfix" id="scroll-target-section3">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p className="small strong color-primary caps">{chapter.title}</p>
+              <h3 className="headline">{section3.title}</h3>
               <HeadlineDivider />
               <p>{section3.blocks[0]}</p>
               <div>
-                <h4 className='title strong'>{section3.blocks[1].title}</h4>
+                <h4 className="title strong">{section3.blocks[1].title}</h4>
                 <Tabs activeTab={0}>
                   <TabPanel title={section3.blocks[1].tabs[0].name}>
                     <table>
                       <thead>
-                        <tr className='small'>
+                        <tr className="small">
                           {section3.blocks[1].tabs[0].headers.map((item, i) => {
-                            return (<th key={i}>{item}</th>);
+                            return (<th key={i}>{item}</th>)
                           })}
                         </tr>
                       </thead>
                       <tbody>
                         {section3.blocks[1].tabs[0].dataset.map((item, i) => {
                           return (
-                            <tr key={i} className={item.region === 'Global' ? 'strong' : ''}>
+                            <tr key={i} className={item.region === "Global" ? "strong" : ""}>
                               <td>{item.region}</td>
                               <td>{item.percentage1}%</td>
                               <td>{item.percentage2}%</td>
                             </tr>
-                          );
+                          )
                         })}
                       </tbody>
                     </table>
@@ -218,9 +215,9 @@ class Chapter5 extends React.Component {
                   <TabPanel title={section3.blocks[1].tabs[1].name}>
                     <table>
                       <thead>
-                        <tr className='small'>
+                        <tr className="small">
                           {section3.blocks[1].tabs[1].headers.map((item, i) => {
-                            return (<th key={i}>{item}</th>);
+                            return (<th key={i}>{item}</th>)
                           })}
                         </tr>
                       </thead>
@@ -231,28 +228,28 @@ class Chapter5 extends React.Component {
                               <td>{item.activity}</td>
                               <td>{item.amount}</td>
                             </tr>
-                          );
+                          )
                         })}
                       </tbody>
                     </table>
                   </TabPanel>
                 </Tabs>
-                <p className='small'>{section3.blocks[1].caption}</p>
+                <p className="small">{section3.blocks[1].caption}</p>
               </div>
             </div>
           </div>
 
-          <div className='clearfix' id='scroll-target-section4'>
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2'>
-              <p className='small strong color-primary caps'>{chapter.title}</p>
-              <h3 className='headline'>{section4.title}</h3>
+          <div className="clearfix" id="scroll-target-section4">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p className="small strong color-primary caps">{chapter.title}</p>
+              <h3 className="headline">{section4.title}</h3>
               <HeadlineDivider />
               <p>{section4.blocks[0]}</p>
             </div>
 
-            <div className='clearfix'>
-              <div className='col px1 sm-px0 sm-6 md-4 md-offset-3 lg-4 lg-offset-2'>
-                <div className='col sm-10 sm-offset-2 md-12 md-offset-0 sm-pr1'>
+            <div className="clearfix">
+              <div className="col px1 sm-px0 sm-6 md-4 md-offset-3 lg-4 lg-offset-2">
+                <div className="col sm-10 sm-offset-2 md-12 md-offset-0 sm-pr1">
                   <ul>
                     {section4.blocks[1].map((item, i) => {
                       return <li key={i}>{item}</li>
@@ -261,12 +258,12 @@ class Chapter5 extends React.Component {
                   <p>{section4.blocks[2]}</p>
                   <p>{section4.blocks[3]}</p>
                 </div>
-                <div className='col sm-8 sm-offset-4 md-9 md-offset-3 sm-pr1'>
+                <div className="col sm-8 sm-offset-4 md-9 md-offset-3 sm-pr1">
                   <p>{section4.blocks[4]}</p>
                 </div>
               </div>
 
-              <div className='col px1 sm-px0 sm-5 md-4 md-offset-0 lg-4'>
+              <div className="col px1 sm-px0 sm-5 md-4 md-offset-0 lg-4">
                 <SimpleBarChart
                   title={section4.blocks[5].title}
                   caption={section4.blocks[5].caption}
@@ -280,13 +277,13 @@ class Chapter5 extends React.Component {
                     right: 200
                   }}
                   data={section4.blocks[5].dataset}
-                  labels={(datum) => datum.y !== 0 ? datum.xName + ' [' + String(datum.y) + '%]' : datum.xName}
+                  labels={(datum) => datum.y !== 0 ? datum.xName + " [" + String(datum.y) + "%]" : datum.xName}
                   />
               </div>
             </div>
 
-            <div className='clearfix'>
-              <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2'>
+            <div className="clearfix">
+              <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
                 <p>{section4.blocks[6]}</p>
                 <SimpleBarChart
                   noAxisChart={true}
@@ -313,10 +310,10 @@ class Chapter5 extends React.Component {
           </div>
 
 
-          <div className='clearfix' id='scroll-target-section5'>
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2'>
-              <p className='small strong color-primary caps'>{chapter.title}</p>
-              <h3 className='headline'>{section5.title}</h3>
+          <div className="clearfix" id="scroll-target-section5">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p className="small strong color-primary caps">{chapter.title}</p>
+              <h3 className="headline">{section5.title}</h3>
               <HeadlineDivider />
               <p>{section5.blocks[0]}</p>
               <div>
@@ -332,19 +329,19 @@ class Chapter5 extends React.Component {
                   }}
                   labels={
                     section5.blocks[1].dataset.map((item, i) => {
-                      // return `${item.name} (${numberFormatter.addCommas(item.first + item.second + item.rest)})`;
+                      // return `${item.name} (${numberFormatter.addCommas(item.first + item.second + item.rest)})`
                       return { text: item.name, number: numberFormatter.addCommas(Math.round(item.first + item.second + item.rest)) }
                     })
                   }
                   data={[
                     section5.blocks[1].dataset.map((item, i) => {
-                      return { x: item.index, y: item.first, name: item.names[0] };
+                      return { x: item.index, y: item.first, name: item.names[0] }
                     }),
                     section5.blocks[1].dataset.map((item, i) => {
-                      return { x: item.index, y: item.second, name: item.names[1] };
+                      return { x: item.index, y: item.second, name: item.names[1] }
                     }),
                     section5.blocks[1].dataset.map((item, i) => {
-                      return { x: item.index, y: item.rest };
+                      return { x: item.index, y: item.rest }
                     })
                   ]}
                   />
@@ -353,21 +350,21 @@ class Chapter5 extends React.Component {
             </div>
           </div>
 
-          <div className='clearfix' id='scroll-target-section6'>
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2'>
-              <p className='small strong color-primary caps'>{chapter.title}</p>
-              <h3 className='headline'>{section6.title}</h3>
+          <div className="clearfix" id="scroll-target-section6">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p className="small strong color-primary caps">{chapter.title}</p>
+              <h3 className="headline">{section6.title}</h3>
               <HeadlineDivider />
               <p>{section6.blocks[0]}</p>
             </div>
-            <div className='col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2'>
+            <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2">
               <svg width="100%" height="540px" viewBox="0 0 840 540">
                   <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                       <text fontFamily="Roboto-Bold, Roboto" fontSize="45" fontWeight="bold" fill="#0F9EE2">
-                          <tspan x="600" y="142">&gt;9M</tspan>
+                          <tspan x="600" y="142">&gt9M</tspan>
                       </text>
                       <text fontFamily="Roboto-Bold, Roboto" fontSize="20" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
-                          {section6.blocks[1].translations[0].split('\n').map((item, i) => {
+                          {section6.blocks[1].translations[0].split("\n").map((item, i) => {
                             return <tspan x="600" y={188 + (i * 24)}>{item}</tspan>
                           })}
                       </text>
@@ -375,8 +372,8 @@ class Chapter5 extends React.Component {
                           <tspan x="122.460" y="291">2015</tspan>
                       </text>
                       <text fontFamily="Roboto-Bold, Roboto" fontSize="24" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
-                          {section6.blocks[1].translations[1].split('\n').map((item, i) => {
-                            return <tspan x="155" y={420 + (i * 30)} textAnchor='middle'>{item}</tspan>
+                          {section6.blocks[1].translations[1].split("\n").map((item, i) => {
+                            return <tspan x="155" y={420 + (i * 30)} textAnchor="middle">{item}</tspan>
                           })}
                       </text>
                       <g transform="translate(234, 7)" fill="#D6D2D0">
@@ -432,10 +429,10 @@ class Chapter5 extends React.Component {
                       </text>
                       <path d="M659.062,32.878 C661.687,37.097 663,41.679 663,46.625 C663,50.140 662.314,53.492 660.943,56.679 C659.572,59.867 657.732,62.615 655.423,64.923 C653.115,67.232 650.367,69.072 647.179,70.443 C643.992,71.814 640.640,72.5 637.125,72.5 C633.609,72.5 630.257,71.814 627.070,70.443 C623.882,69.072 621.134,67.232 618.826,64.923 C616.517,62.615 614.677,59.867 613.306,56.679 C611.935,53.492 611.25,50.140 611.25,46.625 C611.25,41.679 612.562,37.097 615.187,32.878 C616.429,30.886 618.790,27.945 622.271,24.054 C625.751,20.164 628.470,17.205 630.427,15.177 C632.384,13.150 633.949,11.550 635.121,10.378 L637.125,8.375 L639.128,10.378 C640.300,11.550 641.865,13.150 643.822,15.177 C645.779,17.205 648.498,20.164 651.978,24.054 C655.459,27.945 657.820,30.886 659.062,32.878 L659.062,32.878 Z M637.125,66.875 C639.867,66.875 642.486,66.341 644.982,65.275 C647.478,64.208 649.634,62.767 651.451,60.951 C653.267,59.134 654.708,56.978 655.775,54.482 C656.841,51.986 657.375,49.367 657.375,46.625 C657.375,42.734 656.343,39.148 654.281,35.867 C652.148,32.468 646.429,25.964 637.125,16.355 C627.820,25.964 622.101,32.468 619.968,35.867 C617.906,39.148 616.875,42.734 616.875,46.625 C616.875,49.367 617.408,51.986 618.474,54.482 C619.541,56.978 620.982,59.134 622.798,60.951 C624.615,62.767 626.771,64.208 629.267,65.275 C631.763,66.341 634.382,66.875 637.125,66.875 L637.125,66.875 Z M623.765,38.222 C625.195,35.949 628.968,31.531 635.085,24.968 L639.164,28.835 C633.421,34.953 629.882,39.078 628.546,41.210 C627.515,42.851 627,44.656 627,46.625 C627,49.484 628.031,51.910 630.093,53.902 L626.156,57.910 C622.968,54.839 621.375,51.078 621.375,46.625 C621.375,43.601 622.171,40.800 623.765,38.222 L623.765,38.222 Z" fill="#0F9EE2"></path>
                       <text fontFamily="Roboto-Bold, Roboto" fontSize="45" fontWeight="bold" fill="#0F9EE2">
-                          <tspan x="600" y="383">&gt;5M</tspan>
+                          <tspan x="600" y="383">&gt5M</tspan>
                       </text>
                       <text fontFamily="Roboto-Bold, Roboto" fontSize="20" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
-                        {section6.blocks[1].translations[2].split('\n').map((item, i) => {
+                        {section6.blocks[1].translations[2].split("\n").map((item, i) => {
                           return <tspan x="600" y={429 + (i * 24)}>{item}</tspan>
                         })}
                       </text>
@@ -444,10 +441,10 @@ class Chapter5 extends React.Component {
               </svg>
             </div>
 
-            <div className='col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2'>
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
               { /* <div>
-                <h4 className='title strong'>{section6.blocks[1].title}</h4>
-                <p className='small'>{section6.blocks[1].caption}</p>
+                <h4 className="title strong">{section6.blocks[1].title}</h4>
+                <p className="small">{section6.blocks[1].caption}</p>
               </div> */ }
               <p>{section6.blocks[2]}</p>
             </div>
@@ -457,15 +454,15 @@ class Chapter5 extends React.Component {
 
         <NextChapter nextChapter={chapter.nextChapter} />
       </div>
-    );
+    )
   }
 }
 
-Chapter5.needs = [ fetchChapter ];
+Chapter5.needs = [ fetchChapter ]
 
 Chapter5.contextTypes = {
   language: React.PropTypes.string
-};
+}
 
 function mapStateToProps(state) {
   return {
@@ -482,9 +479,9 @@ function mapStateToProps(state) {
 // function mapDispatchToProps(dispatch) {
 //   return {
 //     changeDataset: (id) => {
-//       dispatch(changeDataset(id));
+//       dispatch(changeDataset(id))
 //     }
 //   }
 // }
 
-module.exports = connect(mapStateToProps)(Chapter5);
+export default connect(mapStateToProps)(Chapter5)

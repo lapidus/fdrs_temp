@@ -2,8 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import debounce from '../utils/debounce';
-
 class SideNavigation extends React.Component {
   constructor(props) {
     super(props);

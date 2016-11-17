@@ -2,10 +2,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-// import prefixLanguageToRoute from '../utils/prefixLanguageToRoute';
-import HeadlineDivider from './HeadlineDivider';
+import HeadlineDivider from '../HeadlineDivider';
 
-import Icon from './Icon';
+import Icon from '../Icon';
 
 class ReadMore extends React.Component {
   shouldComponentUpdate(nextProps, nextState, nextContext) {

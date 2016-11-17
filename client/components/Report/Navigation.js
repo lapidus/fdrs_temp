@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import prefixLanguageToRoute from '../utils/prefixLanguageToRoute';
+import prefixLanguageToRoute from '../../utils/prefixLanguageToRoute';
 
 class Navigation extends React.Component {
   componentDidMount() {
@@ -23,7 +23,7 @@ class Navigation extends React.Component {
                         <li key={chapterKey} className='site-nav__chapter col md-12 lg-12'>
                           <div style={{position:'absolute',width:'2rem',top:0,left:0}} className='display-2 center strong'>{chapter.id}</div>
                           <div className='pl2'>
-                            <Link to={prefixLanguageToRoute(this.props.language,chapter.slug)}>
+                            <Link to={prefixLanguageToRoute( this.props.language, `/report${chapter.slug}`) }>
                               <div className='title'>{chapter.title}</div>
                               <hr style={{marginBottom:'8px',marginTop:'4px'}}/>
                               <div style={{color:'#222'}}>{chapter.subtitle || ''}</div>
@@ -43,13 +43,13 @@ class Navigation extends React.Component {
                 <li className='site-nav__chapter col md-12'>
                   <div style={{position:'absolute',width:'2rem',top:0,left:0}} className='display-2 center strong'>10</div>
                   <div className='pl3'>
-                    <Link to={prefixLanguageToRoute(this.props.language, '/data')}>
+                    <Link to={prefixLanguageToRoute(this.props.language, '/report/data')}>
                       <div className='title'>{this.props.navigationContent[this.props.language].home.sections[3].chapters[0].preTitle}</div>
                       <hr style={{marginBottom:'8px',marginTop:'4px'}}/>
                     </Link>
                   </div>
                   <div>
-                    <Link to={prefixLanguageToRoute(this.props.language, '/data')}>
+                    <Link to={prefixLanguageToRoute(this.props.language, '/report/data')}>
                       <img src='/img/data-view-preview.png' />
                     </Link>
                   </div>
@@ -57,7 +57,7 @@ class Navigation extends React.Component {
                 <li className='site-nav__chapter col md-12'>
                   <div style={{position:'absolute',width:'2rem',top:0,left:0}} className='display-2 center strong'>11</div>
                   <div className='pl3'>
-                    <Link to={prefixLanguageToRoute(this.props.language, '/acknowledgements')}>
+                    <Link to={prefixLanguageToRoute(this.props.language, '/report/acknowledgements')}>
                       <div className='title'>{this.props.navigationContent[this.props.language].home.sections[3].chapters[1].title}</div>
                       <hr style={{marginBottom:'8px',marginTop:'4px'}}/>
                     </Link>
