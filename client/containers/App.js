@@ -51,82 +51,12 @@ class App extends React.Component {
         className={ language === "ar" ? "layout-rtl" : "" }
       >
         <Loader />
-        <header className={ headerClassName }>
-          <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
-            <div
-              className="clearfix bg-white"
-              style={{ position: "relative", zIndex: 10000, height: "72px" }}
-            >
-              <div
-                className="logo-wrapper pl2"
-                style={{ position: "relative", float: language === "ar" ? "right" : "left" }}
-              >
-                <Link to={ prefixLanguageToRoute(language, "/") }>
-                  <img
-                    src="/img/ifrc-logo.png"
-                    height={ 60 }
-                    style={{ verticalAlign: "middle" }}
-                  />&nbsp;&nbsp;
-                </Link>
-                <span className="caps">
-                  { "FDRS" }
-                </span>
-              </div>
-              <div
-                style={{ position: "relative", float: language === "ar" ? "left" : "right" }}
-                className="pr2 md-visible"
-              >
-                <div style={{ float: language === "ar" ? "right" : "left", width:"200px" }}>
-                  <Select
-                    searchable={ false }
-                    clearable={ false }
-                    name="language-selector"
-                    value={ language }
-                    options={ languageOptions }
-                    onChange={ this.goToLanguage }
-                  />
-                </div>
-                <Link
-                  className="btn px1 py15"
-                  to={ prefixLanguageToRoute(this.props.language, "/report") }
-                >
-                  <span className="caps">{ this.props[language].home.downloadReportSection.preTitle }</span>
-                </Link>
-                <button className="btn px1 py15">
-                  <Icon name="share" height="20px" />
-                  &nbsp;&nbsp;&nbsp;
-                  <span className="caps">{this.props[language].share}</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </header>
 
         <div className={ "main-content-wrapper" }>
           <div style={{ paddingTop:"72px" }}>
             { this.props.children }
           </div>
-
-          <footer className="site-footer bg-dark clearfix">
-            <div className="clearfix py2" style={{ background:"rgba(0,0,0,0.2)" }}>
-              <div className="col sm-9 sm-offset-3 md-9 md-offset-2 px2" style={{ opacity:0.8 }}>
-                <p className="small">
-                  { "Website by:" }&nbsp;
-                  <a
-                    href="http://www.lapidus.se"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>{ "Lapidus Interactive" }</span>
-                  </a>
-                </p>
-                <p className="small">
-                  &copy;
-                  { " 2016 FDRS" }
-                </p>
-              </div>
-            </div>
-          </footer>
+          
         </div>
       </div>
     )
