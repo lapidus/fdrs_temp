@@ -1,0 +1,1545 @@
+[{
+  "iso_3": "AFG",
+  "iso_2": "AF",
+  "lat":33.0000,
+  "long":65.0000,
+  "en": "Afghan Red Crescent",
+  "fr": "Croissant-Rouge afghan",
+  "es": "Media Luna Roja Afgana",
+  "ar": "الهلال الأحمر الأفغاني"
+},
+{
+  "iso_3": "AGO",
+  "iso_2": "AO",
+  "lat":-12.5000,
+  "long":18.5000,
+  "en": "Angola Red Cross",
+  "fr": "Croix-Rouge angolaise",
+  "es": "Cruz Roja de Angola",
+  "ar": "الصليب الأحمر الأنغولي"
+},
+{
+  "iso_3": "ALB",
+  "iso_2": "AL",
+  "lat":41.0000,
+  "long":20.0000,
+  "en": "Albanian Red Cross",
+  "fr": "Croix-Rouge albanaise",
+  "es": "Cruz Roja de Albania",
+  "ar": "الصليب الأحمر الألباني"
+},
+{
+  "iso_3": "AND",
+  "iso_2": "AD",
+  "lat":42.5000,"long":1.5000,
+  "en": "Andorran Red Cross",
+  "fr": "Croix-Rouge andorrane",
+  "es": "Cruz Roja Andorrana",
+  "ar": "الصليب الأحمر الأندوري"
+},
+{
+  "iso_3": "ARE",
+  "iso_2": "AE",
+  "lat":24.0000,"long":54.0000,
+  "en": "Red Crescent Society of the United Arab Emirates",
+  "fr": "Société du Croissant-Rouge des Émirats arabes unis",
+  "es": "Sociedad de la Media Luna Roja de los Emiratos Arabes Unidos",
+  "ar": "الهلال الأحمر لدولة الإمارات العربية المتحدة (الإماراتي)"
+},
+{
+  "iso_3": "ARG",
+  "iso_2": "AR",
+  "lat":-34.0000,"long":-64.0000,
+  "en": "Argentine Red Cross",
+  "fr": "Croix-Rouge argentine",
+  "es": "Cruz Roja Argentina",
+  "ar": "الصليب الأحمر الأرجنتيني"
+},
+{
+  "iso_3": "ARM",
+  "iso_2": "AM",
+  "lat":40.0000,"long":45.0000,
+  "en": "Armenian Red Cross Society",
+  "fr": "Société de la Croix-Rouge arménienne",
+  "es": "Sociedad de la Cruz Roja de Armenia",
+  "ar": "الصليب الأحمر الأرمني"
+},
+{
+  "iso_3": "ATG",
+  "iso_2": "AG",
+  "lat":17.0500,"long":-61.8000,
+  "en": "Antigua and Barbuda Red Cross Society",
+  "fr": "Croix-Rouge d'Antigua-et-Barbuda",
+  "es": "Cruz Roja de Antigua y Barbuda",
+  "ar": "الصليب الأحمر في أنتيغوا وبربودا"
+},
+{
+  "iso_3": "AUS",
+  "iso_2": "AU",
+  "lat":-27.0000,"long":133.0000,
+  "en": "Australian Red Cross",
+  "fr": "Croix-Rouge australienne",
+  "es": "Cruz Roja Australiana",
+  "ar": "الصليب الأحمر الأسترالي"
+},
+{
+  "iso_3": "AUT",
+  "iso_2": "AT",
+  "lat":47.3333,"long":13.3333,
+  "en": "Austrian Red Cross",
+  "fr": "Croix-Rouge autrichienne",
+  "es": "Cruz Roja Austríaca",
+  "ar": "الصليب الأحمر النمساوي"
+},
+{
+  "iso_3": "AZE",
+  "iso_2": "AZ",
+  "lat":40.5000,"long":47.5000,
+  "en": "Red Crescent Society of Azerbaijan",
+  "fr": "La Société du Croissant-Rouge d'Azerbaïdjan",
+  "es": "Sociedad de la Media Luna de Azerbaiyán",
+  "ar": "الهلال الأحمر الأذربيجاني"
+},
+{
+  "iso_3": "BDI",
+  "iso_2": "BI",
+  "lat":-3.5000,"long":30.0000,
+  "en": "Burundi Red Cross",
+  "fr": "Croix-Rouge du Burundi",
+  "es": "Cruz Roja de Burundi",
+  "ar": "الصليب الأحمر البوروندي"
+},
+{
+  "iso_3": "BEL",
+  "iso_2": "BE",
+  "lat":50.8333,"long":4.0000,
+  "en": "Belgian Red Cross",
+  "fr": "Croix-Rouge de Belgique",
+  "es": "Cruz Roja de Bélgica",
+  "ar": "الصليب الأحمر البلجيكي"
+},
+{
+  "iso_3": "BEN",
+  "iso_2": "BJ",
+  "lat":9.5000,"long":2.2500,
+  "en": "Red Cross of Benin",
+  "fr": "Croix-Rouge béninoise",
+  "es": "Cruz Roja de Benin",
+  "ar": "الصليب الأحمر في بنن"
+},
+{
+  "iso_3": "BFA",
+  "iso_2": "BF",
+  "lat":13.0000,"long":-2.0000,
+  "en": "Burkinabe Red Cross Society",
+  "fr": "Croix-Rouge burkinabè",
+  "es": "Cruz Roja de Burkina Faso",
+  "ar": "الصليب الأحمر في بوركينا فاسو"
+},
+{
+  "iso_3": "BGD",
+  "iso_2": "BD",
+  "lat":24.0000,"long":90.0000,
+  "en": "Bangladesh Red Crescent Society",
+  "fr": "Croissant-Rouge du Bangladesh",
+  "es": "Media Luna Roja de Bangladesh",
+  "ar": "الهلال الأحمر البنغلاديشي"
+},
+{
+  "iso_3": "BGR",
+  "iso_2": "BG",
+  "lat":43.0000,"long":25.0000,
+  "en": "Bulgarian Red Cross",
+  "fr": "Croix-Rouge bulgare",
+  "es": "Cruz Roja Búlgara",
+  "ar": "الصليب الأحمر البلغاري"
+},
+{
+  "iso_3": "BHR",
+  "iso_2": "BH",
+  "lat":26.0000,"long":50.5500,
+  "en": "Bahrain Red Crescent Society",
+  "fr": "Société du Croissant-Rouge de Bahreïn",
+  "es": "Sociedad de la Media Luna Roja de Bahrein",
+  "ar": "الهلال الأحمر البحريني"
+},
+{
+  "iso_3": "BHS",
+  "iso_2": "BS",
+  "lat":24.2500,"long":-76.0000,
+  "en": "The Bahamas Red Cross Society",
+  "fr": "Croix-Rouge des Bahamas",
+  "es": "Cruz Roja de las Bahamas",
+  "ar": "الصليب الأحمر في البهاما"
+},
+{
+  "iso_3": "BIH",
+  "iso_2": "BA",
+  "lat":44.0000,"long":18.0000,
+  "en": "The Red Cross Society of Bosnia and Herzegovina",
+  "fr": "Société de la Croix-Rouge de Bosnie-Herzégovine",
+  "es": "Cruz Roja de Bosnia y Herzegovina",
+  "ar": "الصليب الأحمر في البوسنة والهرسك"
+},
+{
+  "iso_3": "BLR",
+  "iso_2": "BY",
+  "lat":53.0000,"long":28.0000,
+  "en": "Belarus Red Cross",
+  "fr": "Croix-Rouge du Bélarus",
+  "es": "Cruz Roja de Belarús",
+  "ar": "الصليب الأحمر البيلاروسي"
+},
+{
+  "iso_3": "BLZ",
+  "iso_2": "BZ",
+  "lat":17.2500,"long":-88.7500,
+  "en": "Belize Red Cross Society",
+  "fr": "Société de la Croix-Rouge du Belize",
+  "es": "Sociedad de la Cruz Roja de Belice",
+  "ar": "الصليب الأحمر البليزي"
+},
+{
+  "iso_3": "BOL",
+  "iso_2": "BO",
+  "lat":-17.0000,"long":-65.0000,
+  "en": "Bolivian Red Cross",
+  "fr": "Croix-Rouge bolivienne",
+  "es": "Cruz Roja Boliviana",
+  "ar": "الصليب الأحمر البوليفي"
+},
+{
+  "iso_3": "BRA",
+  "iso_2": "BR",
+  "lat":-10.0000,"long":-55.0000,
+  "en": "Brazilian Red Cross",
+  "fr": "Croix-Rouge brésilienne",
+  "es": "Cruz Roja Brasileña",
+  "ar": "الصليب الأحمر البرازيلي"
+},
+{
+  "iso_3": "BRB",
+  "iso_2": "BB",
+  "lat":13.1667,"long":-59.5333,
+  "en": "The Barbados Red Cross Society",
+  "fr": "Croix-Rouge de la Barbade",
+  "es": "Cruz Roja de Barbados",
+  "ar": "الصليب الأحمر البربادوسي"
+},
+{
+  "iso_3": "BRN",
+  "iso_2": "BN",
+  "lat":4.5000,"long":114.6667,
+  "en": "Brunei Darussalam Red Crescent Society",
+  "fr": "Croissant-Rouge de Brunéi",
+  "es": "Media Luna Roja de Brunei",
+  "ar": "الهلال الأحمر في بروني دار السلام"
+},
+{
+  "iso_3": "BWA",
+  "iso_2": "BW",
+  "lat":-22.0000,"long":24.0000,
+  "en": "Botswana Red Cross Society",
+  "fr": "Société de la Croix-Rouge du Botswana",
+  "es": "Sociedad de la Cruz Roja de Botsuana",
+  "ar": "الصليب الأحمر البوتسواني"
+},
+{
+  "iso_3": "CAF",
+  "iso_2": "CF",
+  "lat":7.0000,"long":21.0000,
+  "en": "Central African Red Cross Society",
+  "fr": "Société de la Croix-Rouge centrafricaine",
+  "es": "Sociedad de la Cruz Roja Centroafricana",
+  "ar": "الصليب الأحمر في جمهورية إفريقيا الوسطى"
+},
+{
+  "iso_3": "CAN",
+  "iso_2": "CA",
+  "lat":60.0000,"long":-95.0000,
+  "en": "The Canadian Red Cross Society",
+  "fr": "Société canadienne de la Croix-Rouge",
+  "es": "Sociedad Canadiense de la Cruz Roja",
+  "ar": "الصليب الأحمر الكندي"
+},
+{
+  "iso_3": "CHE",
+  "iso_2": "CH",
+  "lat":47.0000,"long":8.0000,
+  "en": "Swiss Red Cross",
+  "fr": "Croix-Rouge suisse",
+  "es": "Cruz Roja Suiza",
+  "ar": "الصليب الأحمر السويسري"
+},
+{
+  "iso_3": "CHL",
+  "iso_2": "CL",
+  "lat":-30.0000,"long":-71.0000,
+  "en": "Chilean Red Cross",
+  "fr": "Croix-Rouge chilienne",
+  "es": "Cruz Roja Chilena",
+  "ar": "الصليب الأحمر الشيلي"
+},
+{
+  "iso_3": "CHN",
+  "iso_2": "CN",
+  "lat":35.0000,"long":105.0000,
+  "en": "Red Cross Society of China",
+  "fr": "Croix-Rouge chinoise",
+  "es": "Cruz Roja China",
+  "ar": "الصليب الأحمر الصيني"
+},
+{
+  "iso_3": "CIV",
+  "iso_2": "CI",
+  "lat":8.0000,"long":-5.0000,
+  "en": "Red Cross Society of Côte d'Ivoire",
+  "fr": "Croix-Rouge de Côte d'Ivoire",
+  "es": "Cruz Roja de la Côte d'Ivoire",
+  "ar": "الصليب الأحمر في كوت ديفوار"
+},
+{
+  "iso_3": "CMR",
+  "iso_2": "CM",
+  "lat":6.0000,"long":12.0000,
+  "en": "Cameroon Red Cross Society",
+  "fr": "Croix-Rouge camerounaise",
+  "es": "Cruz Roja del Camerún",
+  "ar": "الصليب الأحمر الكاميروني"
+},
+{
+  "iso_3": "COG",
+  "iso_2": "CG",
+  "lat":-1.0000,"long":15.0000,
+  "en": "Congolese Red Cross",
+  "fr": "Croix-Rouge congolaise",
+  "es": "Cruz Roja Congoleña",
+  "ar": "الصليب الأحمر الكونغولي"
+},
+{
+  "iso_3": "COL",
+  "iso_2": "CO",
+  "lat":4.0000,"long":-72.0000,
+  "en": "Colombian Red Cross Society",
+  "fr": "Société de la Croix-Rouge colombienne",
+  "es": "Sociedad Nacional de la Cruz Roja Colombiana",
+  "ar": "الصليب الأحمر الكولومبي"
+},
+{
+  "iso_3": "COM",
+  "iso_2": "KM",
+  "lat":-12.1667,"long":44.2500,
+  "en": "The Comoros Red Crescent",
+  "fr": "Croissant-Rouge comorien",
+  "es": "Media Luna Roja de Las Comoras",
+  "ar": "الهلال الأحمر في جزر القمر"
+},
+{
+  "iso_3": "CPV",
+  "iso_2": "CV",
+  "lat":16.0000,"long":-24.0000,
+  "en": "Red Cross of Cape Verde",
+  "fr": "Croix-Rouge du Cap-Vert",
+  "es": "Cruz Roja de Cabo Verde",
+  "ar": "الصليب الأحمر في الرأس الأخضر"
+},
+{
+  "iso_3": "CRI",
+  "iso_2": "CR",
+  "lat":10.0000,"long":-84.0000,
+  "en": "Costa Rican Red Cross",
+  "fr": "Croix-Rouge costaricienne",
+  "es": "Cruz Roja Costarricense",
+  "ar": "الصليب الأحمر الكوستاريكي"
+},
+{
+  "iso_3": "CUB",
+  "iso_2": "CU",
+  "lat":21.5000,"long":-80.0000,
+  "en": "Cuban Red Cross",
+  "fr": "Croix-Rouge cubaine",
+  "es": "Cruz Roja Cubana",
+  "ar": "الصليب الأحمر الكوبي"
+},
+{
+  "iso_3": "CYP",
+  "iso_2": "CY",
+  "lat":35.0000,"long":33.0000,
+  "en": "Cyprus Red Cross Society",
+  "fr": "Croix-Rouge chypriote",
+  "es": "Cruz Roja de Chipre",
+  "ar": "الصليب الأحمر القبرصي"
+},
+{
+  "iso_3": "CZE",
+  "iso_2": "CZ",
+  "lat":49.7500,"long":15.5000,
+  "en": "Czech Red Cross",
+  "fr": "Croix-Rouge tchèque",
+  "es": "Cruz Roja Checa",
+  "ar": "الصليب الأحمر التشيكي"
+},
+{
+  "iso_3": "DEU",
+  "iso_2": "DE",
+  "lat":51.0000,"long":9.0000,
+  "en": "German Red Cross",
+  "fr": "Croix-Rouge allemande",
+  "es": "Cruz Roja Alemana",
+  "ar": "الصليب الأحمر الألماني"
+},
+{
+  "iso_3": "DJI",
+  "iso_2": "DJ",
+  "lat":11.5000,"long":43.0000,
+  "en": "Red Crescent Society of Djibouti",
+  "fr": "Société du Croissant-Rouge de Djibouti",
+  "es": "Sociedad de la Media Luna Roja de Yibutí",
+  "ar": "الهلال الأحمر الجيبوتي"
+},
+{
+  "iso_3": "DMA",
+  "iso_2": "DM",
+  "lat":15.4167,"long":-61.3333,
+  "en": "Dominica Red Cross Society",
+  "fr": "Société de la Croix-Rouge de la Dominique",
+  "es": "Sociedad de la Cruz Roja de Dominica",
+  "ar": "الصليب الأحمر الدومينيكاني"
+},
+{
+  "iso_3": "DNK",
+  "iso_2": "DK",
+  "lat":56.0000,"long":10.0000,
+  "en": "Danish Red Cross",
+  "fr": "Croix-Rouge danoise",
+  "es": "Cruz Roja Danesa",
+  "ar": "الصليب الأحمر الدانمركي"
+},
+{
+  "iso_3": "DOM",
+  "iso_2": "DO",
+  "lat":19.0000,"long":-70.6667,
+  "en": "Dominican Red Cross",
+  "fr": "Croix-Rouge dominicaine",
+  "es": "Cruz Roja Dominicana",
+  "ar": "الصليب الأحمر الدومينيكي"
+},
+{
+  "iso_3": "DZA",
+  "iso_2": "DZ",
+  "lat":28.0000,"long":3.0000,
+  "en": "Algerian Red Crescent",
+  "fr": "Croissant-Rouge algérien",
+  "es": "Media Luna Roja Argelina",
+  "ar": "الهلال الأحمر الجزائري"
+},
+{
+  "iso_3": "ECU",
+  "iso_2": "EC",
+  "lat":-2.0000,"long":-77.5000,
+  "en": "Ecuadorian Red Cross",
+  "fr": "Croix-Rouge équatorienne",
+  "es": "Cruz Roja Ecuatoriana",
+  "ar": "الصليب الأحمر الإكوادوري"
+},
+{
+  "iso_3": "EGY",
+  "iso_2": "EG",
+  "lat":27.0000,"long":30.0000,
+  "en": "Egyptian Red Crescent Society",
+  "fr": "Société du Croissant-Rouge égyptien",
+  "es": "Sociedad de la Media Luna Roja Egipcia",
+  "ar": "الهلال الأحمر المصري"
+},
+{
+  "iso_3": "ESP",
+  "iso_2": "ES",
+  "lat":40.0000,"long":-4.0000,
+  "en": "Spanish Red Cross",
+  "fr": "Croix-Rouge espagnole",
+  "es": "Cruz Roja Española",
+  "ar": "الصليب الأحمر الأسباني"
+},
+{
+  "iso_3": "EST",
+  "iso_2": "EE",
+  "lat":59.0000,"long":26.0000,
+  "en": "Estonia Red Cross",
+  "fr": "Croix-Rouge d'Estonie",
+  "es": "Cruz Roja de Estonia",
+  "ar": "الصليب الأحمر الإستوني"
+},
+{
+  "iso_3": "ETH",
+  "iso_2": "ET",
+  "lat":8.0000,"long":38.0000,
+  "en": "Ethiopian Red Cross Society",
+  "fr": "Croix-Rouge éthiopienne",
+  "es": "Cruz Roja Etíope",
+  "ar": "الصليب الأحمر الإثيوبي"
+},
+{
+  "iso_3": "FIN",
+  "iso_2": "FI",
+  "lat":64.0000,"long":26.0000,
+  "en": "Finnish Red Cross",
+  "fr": "Croix-Rouge finlandaise",
+  "es": "Cruz Roja Finlandesa",
+  "ar": "الصليب الأحمر الفنلندي"
+},
+{
+  "iso_3": "FJI",
+  "iso_2": "FJ",
+  "en": "Fiji Red Cross Society",
+  "fr": "Croix-Rouge de Fidji",
+  "es": "Cruz Roja de Fiyi",
+  "ar": "الصليب الأحمر الفيجي"
+},
+{
+  "iso_3": "FRA",
+  "iso_2": "FR",
+  "en": "French Red Cross",
+  "fr": "Croix-Rouge française",
+  "es": "Cruz Roja Francesa",
+  "ar": "الصليب الأحمر الفرنسي"
+},
+{
+  "iso_3": "FSM",
+  "iso_2": "FM",
+  "en": "Micronesia Red Cross",
+  "fr": "Croix-Rouge de Micronésie",
+  "es": "Cruz Roja de Micronesia",
+  "ar": "الصليب الأحمر الميكرونيزي"
+},
+{
+  "iso_3": "GAB",
+  "iso_2": "GA",
+  "en": "Gabonese Red Cross Society",
+  "fr": "Croix-Rouge gabonaise",
+  "es": "Cruz Roja Gabonesa",
+  "ar": "الصليب الأحمر الغابوني"
+},
+{
+  "iso_3": "GBR",
+  "iso_2": "GB",
+  "en": "British Red Cross",
+  "fr": "Croix-Rouge britannique",
+  "es": "Cruz Roja Británica",
+  "ar": "الصليب الأحمر البريطاني"
+},
+{
+  "iso_3": "GEO",
+  "iso_2": "GE",
+  "en": "Red Cross Society of Georgia",
+  "fr": "Société de la Croix-Rouge de Géorgie",
+  "es": "Sociedad de la Cruz Roja de Georgia",
+  "ar": "الصليب الأحمر الجورجي"
+},
+{
+  "iso_3": "GHA",
+  "iso_2": "GH",
+  "en": "Ghana Red Cross Society",
+  "fr": "Croix-Rouge du Ghana",
+  "es": "Cruz Roja de Ghana",
+  "ar": "الصليب الأحمر الغاني"
+},
+{
+  "iso_3": "GIN",
+  "iso_2": "GN",
+  "en": "Red Cross Society of Guinea",
+  "fr": "Croix-Rouge guinéenne",
+  "es": "Cruz Roja de Guinea",
+  "ar": "الصليب الأحمر الغيني"
+},
+{
+  "iso_3": "GMB",
+  "iso_2": "GM",
+  "en": "The Gambia Red Cross Society",
+  "fr": "Croix-Rouge de la Gambie",
+  "es": "Cruz Roja de Gambia",
+  "ar": "الصليب الأحمر الغامبي"
+},
+{
+  "iso_3": "GNB",
+  "iso_2": "GW",
+  "en": "Red Cross Society of Guinea-Bissau",
+  "fr": "Croix-Rouge de la Guinée-Bissau",
+  "es": "Cruz Roja de Guinea Bissau",
+  "ar": "الصليب الأحمر في غينيا بيساو"
+},
+{
+  "iso_3": "GNQ",
+  "iso_2": "GQ",
+  "en": "Red Cross of Equatorial Guinea",
+  "fr": "Croix-Rouge de Guinée équatoriale",
+  "es": "Cruz Roja de Guinea Ecuatorial",
+  "ar": "الصليب الأحمر في غينيا الاستوائية"
+},
+{
+  "iso_3": "GRC",
+  "iso_2": "GR",
+  "en": "Hellenic Red Cross",
+  "fr": "Croix-Rouge hellénique",
+  "es": "Cruz Roja Helénica",
+  "ar": "الصليب الأحمر اليوناني"
+},
+{
+  "iso_3": "GRD",
+  "iso_2": "GD",
+  "en": "Grenada Red Cross Society",
+  "fr": "Croix-Rouge de Grenade",
+  "es": "Cruz Roja de Granada",
+  "ar": "الصليب الأحمر الغرينادي"
+},
+{
+  "iso_3": "GTM",
+  "iso_2": "GT",
+  "en": "Guatemalan Red Cross",
+  "fr": "Croix-Rouge du Guatemala",
+  "es": "Cruz Roja Guatemalteca",
+  "ar": "الصليب الأحمر الغواتيمالي"
+},
+{
+  "iso_3": "GUY",
+  "iso_2": "GY",
+  "en": "The Guyana Red Cross Society",
+  "fr": "Croix-Rouge du Guyana",
+  "es": "Cruz Roja de Guyana",
+  "ar": "الصليب الأحمر الغياني"
+},
+{
+  "iso_3": "HND",
+  "iso_2": "HN",
+  "en": "Honduran Red Cross",
+  "fr": "Croix-Rouge du Honduras",
+  "es": "Cruz Roja Hondureña",
+  "ar": "الصليب الأحمر الهندوراسي"
+},
+{
+  "iso_3": "HRV",
+  "iso_2": "HR",
+  "en": "Croatian Red Cross",
+  "fr": "Croix-Rouge croate",
+  "es": "Cruz Roja de Croacia",
+  "ar": "الصليب الأحمر الكرواتي"
+},
+{
+  "iso_3": "HTI",
+  "iso_2": "HT",
+  "en": "Haiti Red Cross Society",
+  "fr": "Croix-Rouge haïtienne",
+  "es": "Sociedad de la Cruz Roja de Haití",
+  "ar": "الصليب الأحمر الهايتي"
+},
+{
+  "iso_3": "HUN",
+  "iso_2": "HU",
+  "en": "Hungarian Red Cross",
+  "fr": "Croix-Rouge hongroise",
+  "es": "Cruz Roja Húngara",
+  "ar": "الصليب الأحمر الهنغاري"
+},
+{
+  "iso_3": "IDN",
+  "iso_2": "ID",
+  "en": "Indonesian Red Cross Society",
+  "fr": "Croix-Rouge indonésienne",
+  "es": "Cruz Roja Indonesia",
+  "ar": "الهلال الأحمر الإندونيسي"
+},
+{
+  "iso_3": "IND",
+  "iso_2": "IN",
+  "en": "Indian Red Cross Society",
+  "fr": "Croix-Rouge de l'Inde",
+  "es": "Cruz Roja de la India",
+  "ar": "الصليب الأحمر الهندي"
+},
+{
+  "iso_3": "IRL",
+  "iso_2": "IE",
+  "en": "Irish Red Cross Society",
+  "fr": "Croix-Rouge irlandaise",
+  "es": "Cruz Roja Irlandesa",
+  "ar": "الصليب الأحمر الأيرلندي"
+},
+{
+  "iso_3": "IRN",
+  "iso_2": "IR",
+  "en": "Red Crescent Society of the Islamic Republic of Iran",
+  "fr": "Société du Croissant-Rouge de la République islamique d'Iran",
+  "es": "Sociedad de la Media Luna Roja de la República Islámica de Irán",
+  "ar": "الهلال الأحمر الإيراني"
+},
+{
+  "iso_3": "IRQ",
+  "iso_2": "IQ",
+  "en": "Iraqi Red Crescent Society",
+  "fr": "Croissant-Rouge de l'Iraq",
+  "es": "Media Luna Roja del Iraq",
+  "ar": "الهلال الأحمر العراقي"
+},
+{
+  "iso_3": "ISL",
+  "iso_2": "IS",
+  "en": "Icelandic Red Cross",
+  "fr": "Croix-Rouge islandaise",
+  "es": "Cruz Roja Islandesa",
+  "ar": "الصليب الأحمر الأيسلندي"
+},
+{
+  "iso_3": "ISR",
+  "iso_2": "IL",
+  "en": "Israel - Magen David Adom in Israel",
+  "fr": "Israël - Magen David Adom d'Israël",
+  "es": "Israel - Magen David Adom de Israel",
+  "ar": "اسرائيل- ماجن دافيد أدوم في إسرائيل"
+},
+{
+  "iso_3": "ITA",
+  "iso_2": "IT",
+  "en": "Italian Red Cross",
+  "fr": "Croix-Rouge italienne",
+  "es": "Cruz Roja Italiana",
+  "ar": "الصليب الأحمر الإيطالي"
+},
+{
+  "iso_3": "JAM",
+  "iso_2": "JM",
+  "en": "Jamaica Red Cross",
+  "fr": "Croix-Rouge de la Jamaïque",
+  "es": "Cruz Roja de Jamaica",
+  "ar": "الصليب الأحمر الجامايكي"
+},
+{
+  "iso_3": "JOR",
+  "iso_2": "JO",
+  "en": "Jordan National Red Crescent Society",
+  "fr": "Croissant-Rouge jordanien",
+  "es": "Media Luna Roja de Jordania",
+  "ar": "الهلال الأحمر الأردني"
+},
+{
+  "iso_3": "JPN",
+  "iso_2": "JP",
+  "en": "Japanese Red Cross Society",
+  "fr": "Société de la Croix-Rouge du Japon",
+  "es": "Sociedad de la Cruz Roja Japonesa",
+  "ar": "الصليب الأحمر الياباني"
+},
+{
+  "iso_3": "KAZ",
+  "iso_2": "KZ",
+  "en": "Kazakh Red Crescent",
+  "fr": "Croissant-Rouge du Kazakhstan",
+  "es": "Media Luna Roja de Kazajstán",
+  "ar": "الهلال الأحمر الكازاخستاني"
+},
+{
+  "iso_3": "KEN",
+  "iso_2": "KE",
+  "en": "Kenya Red Cross Society",
+  "fr": "Croix-Rouge du Kenya",
+  "es": "Cruz Roja de Kenya",
+  "ar": "الصليب الأحمر الكيني"
+},
+{
+  "iso_3": "KGZ",
+  "iso_2": "KG",
+  "en": "Red Crescent Society of Kyrgyzstan",
+  "fr": "Société du Croissant-Rouge du Kirghizistan",
+  "es": "Sociedad de la Media Luna Roja de Kirguistán",
+  "ar": "الهلال الأحمر القيرغيزستاني"
+},
+{
+  "iso_3": "KHM",
+  "iso_2": "KH",
+  "en": "Cambodian Red Cross Society",
+  "fr": "Croix-Rouge cambodgienne",
+  "es": "Cruz Roja de Camboya",
+  "ar": "الصليب الأحمر الكمبودي"
+},
+{
+  "iso_3": "KIR",
+  "iso_2": "KI",
+  "en": "Kiribati Red Cross Society",
+  "fr": "Croix-Rouge de Kiribati",
+  "es": "Cruz Roja de Kiribati",
+  "ar": "الصليب الأحمر الكيريباتي"
+},
+{
+  "iso_3": "KNA",
+  "iso_2": "KN",
+  "en": "Saint Kitts and Nevis Red Cross Society",
+  "fr": "Croix-Rouge de Saint-Kitts-et-Nevis",
+  "es": "Cruz Roja de Saint Kitts y Nevis",
+  "ar": "الصليب الأحمر في سانت كيتس ونيفيس"
+},
+{
+  "iso_3": "KOR",
+  "iso_2": "KR",
+  "en": "The Republic of Korea National Red Cross",
+  "fr": "Croix-Rouge de la République de Corée",
+  "es": "Cruz Roja de la República de Corea",
+  "ar": "الصليب الأحمر الكوري"
+},
+{
+  "iso_3": "KWT",
+  "iso_2": "KW",
+  "en": "Kuwait Red Crescent Society",
+  "fr": "Croissant-Rouge du Koweït",
+  "es": "Media Luna Roja de Kuwait",
+  "ar": "الهلال الأحمر الكويتي"
+},
+{
+  "iso_3": "LAO",
+  "iso_2": "LA",
+  "en": "Lao Red Cross",
+  "fr": "Croix-Rouge lao",
+  "es": "Cruz Roja de Lao",
+  "ar": "الصليب الأحمر في لاو"
+},
+{
+  "iso_3": "LBN",
+  "iso_2": "LB",
+  "en": "Lebanese Red Cross",
+  "fr": "Croix-Rouge libanaise",
+  "es": "Cruz Roja Libanesa",
+  "ar": "الصليب الأحمر اللبناني"
+},
+{
+  "iso_3": "LBR",
+  "iso_2": "LR",
+  "en": "Liberian Red Cross Society",
+  "fr": "Croix-Rouge du Libéria",
+  "es": "Cruz Roja de Liberia",
+  "ar": "الصليب الأحمر الليبيري"
+},
+{
+  "iso_3": "LBY",
+  "iso_2": "LY",
+  "en": "Libyan Red Crescent",
+  "fr": "Croissant-Rouge libyen",
+  "es": "Media Luna Roja Libia",
+  "ar": "الهلال الأحمر الليبي"
+},
+{
+  "iso_3": "LCA",
+  "iso_2": "LC",
+  "en": "Saint Lucia Red Cross",
+  "fr": "Croix-Rouge de Sainte-Lucie",
+  "es": "Cruz Roja de Santa Lucía",
+  "ar": "الصليب الأحمر في سانتا لوسيا"
+},
+{
+  "iso_3": "LIE",
+  "iso_2": "LI",
+  "en": "Liechtenstein Red Cross",
+  "fr": "Croix-Rouge du Liechtenstein",
+  "es": "Cruz Roja de Liechtenstein",
+  "ar": "الصليب الأحمر الليختنشتايني"
+},
+{
+  "iso_3": "LKA",
+  "iso_2": "LK",
+  "en": "The Sri Lanka Red Cross Society",
+  "fr": "Croix-Rouge de Sri Lanka",
+  "es": "Cruz Roja de Sri Lanka",
+  "ar": "الصليب الأحمر السري لانكي"
+},
+{
+  "iso_3": "LSO",
+  "iso_2": "LS",
+  "en": "Lesotho Red Cross Society",
+  "fr": "Croix-Rouge du Lesotho",
+  "es": "Cruz Roja de Lesotho",
+  "ar": "الصليب الأحمر في ليسوتو"
+},
+{
+  "iso_3": "LTU",
+  "iso_2": "LT",
+  "en": "Lithuanian Red Cross Society",
+  "fr": "Croix-Rouge lituanienne",
+  "es": "Cruz Roja Lituana",
+  "ar": "الصليب الأحمر الليتواني"
+},
+{
+  "iso_3": "LUX",
+  "iso_2": "LU",
+  "en": "Luxembourg Red Cross",
+  "fr": "Croix-Rouge luxembourgeoise",
+  "es": "Cruz Roja de Luxemburgo",
+  "ar": "الصليب الأحمر اللكسمبرغي"
+},
+{
+  "iso_3": "LVA",
+  "iso_2": "LV",
+  "en": "Latvian Red Cross",
+  "fr": "Croix-Rouge lettone",
+  "es": "Cruz Roja Letona",
+  "ar": "الصليب الأحمر اللاتفي"
+},
+{
+  "iso_3": "MAR",
+  "iso_2": "MA",
+  "en": "Moroccan Red Crescent",
+  "fr": "Croissant-Rouge marocain",
+  "es": "Media Luna Roja Marroquí",
+  "ar": "الهلال الأحمر المغربي"
+},
+{
+  "iso_3": "MCO",
+  "iso_2": "MC",
+  "en": "Red Cross of Monaco",
+  "fr": "Croix-Rouge monégasque",
+  "es": "Cruz Roja Monegasca",
+  "ar": "الصليب الأحمر في موناكو"
+},
+{
+  "iso_3": "MDA",
+  "iso_2": "MD",
+  "en": "Red Cross Society of the Republic of Moldova",
+  "fr": "Société de la Croix-Rouge de la République de Moldova",
+  "es": "Sociedad de la Cruz Roja de la República de Moldova",
+  "ar": "الصليب الأحمر المولدوفي"
+},
+{
+  "iso_3": "MDG",
+  "iso_2": "MG",
+  "en": "Malagasy Red Cross Society",
+  "fr": "Croix-Rouge malagasy",
+  "es": "Cruz Roja Malgache",
+  "ar": "الصليب الأحمر الملغاشي"
+},
+{
+  "iso_3": "MDV",
+  "iso_2": "MV",
+  "en": "Maldivian Red Crescent",
+  "fr": "Croissant-Rouge des Maldives",
+  "es": "Media Luna Roja de Maldivas",
+  "ar": "الهلال الأحمر المالديفي"
+},
+{
+  "iso_3": "MEX",
+  "iso_2": "MX",
+  "en": "Mexican Red Cross",
+  "fr": "Croix-Rouge mexicaine",
+  "es": "Cruz Roja Mexicana",
+  "ar": "الصليب الأحمر المكسيكي"
+},
+{
+  "iso_3": "MKD",
+  "iso_2": "MK",
+  "en": "The Red Cross of The Former Yugoslav Republic of Macedonia",
+  "fr": "La Croix-Rouge de l'ex-République yougoslave de Macédoine",
+  "es": "La Cruz Roja de la ex República Yugoslava de Macedonia",
+  "ar": "الصليب الأحمر في جمهورية مقدونيا اليوغسلافية السابقة"
+},
+{
+  "iso_3": "MLI",
+  "iso_2": "ML",
+  "en": "Mali Red Cross",
+  "fr": "Croix-Rouge malienne",
+  "es": "Cruz Roja Maliense",
+  "ar": "الصليب الأحمر المالي"
+},
+{
+  "iso_3": "MLT",
+  "iso_2": "MT",
+  "en": "Malta Red Cross Society",
+  "fr": "Société de la Croix-Rouge de Malte",
+  "es": "Sociedad de la Cruz Roja de Malta",
+  "ar": "الصليب الأحمر المالطي"
+},
+{
+  "iso_3": "MMR",
+  "iso_2": "MM",
+  "en": "Myanmar Red Cross Society",
+  "fr": "Croix-Rouge du Myanmar",
+  "es": "Cruz Roja de Myanmar",
+  "ar": "الصليب الأحمر الميانماري"
+},
+{
+  "iso_3": "MNE",
+  "iso_2": "ME",
+  "en": "Red Cross of Montenegro",
+  "fr": "Croix-Rouge du Monténégro",
+  "es": "Cruz Roja de Montenegro",
+  "ar": "الصليب الأحمر في الجبل الأسود"
+},
+{
+  "iso_3": "MNG",
+  "iso_2": "MN",
+  "en": "Mongolian Red Cross Society",
+  "fr": "Croix-Rouge de Mongolie",
+  "es": "Cruz Roja de Mongolia",
+  "ar": "الصليب الأحمر المنغولي"
+},
+{
+  "iso_3": "MOZ",
+  "iso_2": "MZ",
+  "en": "Mozambique Red Cross Society",
+  "fr": "Croix-Rouge du Mozambique",
+  "es": "Cruz Roja de Mozambique",
+  "ar": "الصليب الأحمر الموزامبيقي"
+},
+{
+  "iso_3": "MRT",
+  "iso_2": "MR",
+  "en": "Mauritanian Red Crescent",
+  "fr": "Croissant-Rouge mauritanien",
+  "es": "Media Luna Roja de Mauritania",
+  "ar": "الهلال الأحمر الموريتاني"
+},
+{
+  "iso_3": "MUS",
+  "iso_2": "MU",
+  "en": "Mauritius Red Cross Society",
+  "fr": "Croix-Rouge de Maurice",
+  "es": "Cruz Roja de Mauricio",
+  "ar": "الصليب الأحمر في موريشيوس"
+},
+{
+  "iso_3": "MWI",
+  "iso_2": "MW",
+  "en": "Malawi Red Cross Society",
+  "fr": "Croix-Rouge du Malawi",
+  "es": "Cruz Roja de Malawi",
+  "ar": "الصليب الأحمر الملاوي"
+},
+{
+  "iso_3": "MYS",
+  "iso_2": "MY",
+  "en": "Malaysian Red Crescent Society",
+  "fr": "Croissant-Rouge de Malaisie",
+  "es": "Media Luna Roja de Malasia",
+  "ar": "الهلال الأحمر الماليزي"
+},
+{
+  "iso_3": "NAM",
+  "iso_2": "NA",
+  "en": "Namibia Red Cross",
+  "fr": "Croix-Rouge de Namibie",
+  "es": "Cruz Roja de Namibia",
+  "ar": "الصليب الأحمر الناميبي"
+},
+{
+  "iso_3": "NER",
+  "iso_2": "NE",
+  "en": "Red Cross Society of Niger",
+  "fr": "Croix-Rouge nigérienne",
+  "es": "Cruz Roja de Níger",
+  "ar": "الصليب الأحمر النيجري"
+},
+{
+  "iso_3": "NGA",
+  "iso_2": "NG",
+  "en": "Nigerian Red Cross Society",
+  "fr": "Croix-Rouge du Nigéria",
+  "es": "Cruz Roja de Nigeria",
+  "ar": "الصليب الأحمر النيجيري"
+},
+{
+  "iso_3": "NIC",
+  "iso_2": "NI",
+  "en": "Nicaraguan Red Cross",
+  "fr": "Croix-Rouge du Nicaragua",
+  "es": "Cruz Roja Nicaragüense",
+  "ar": "الصليب الأحمر النيكاراغوي"
+},
+{
+  "iso_3": "NLD",
+  "iso_2": "NL",
+  "en": "The Netherlands Red Cross",
+  "fr": "Croix-Rouge néerlandaise",
+  "es": "Cruz Roja Neerlandesa",
+  "ar": "الصليب الأحمر الهولندي"
+},
+{
+  "iso_3": "NOR",
+  "iso_2": "NO",
+  "en": "Norwegian Red Cross",
+  "fr": "Croix-Rouge de Norvège",
+  "es": "Cruz Roja Noruega",
+  "ar": "الصليب الأحمر النرويجي"
+},
+{
+  "iso_3": "NPL",
+  "iso_2": "NP",
+  "en": "Nepal Red Cross Society",
+  "fr": "Croix-Rouge du Népal",
+  "es": "Cruz Roja Nepalesa",
+  "ar": "الصليب الأحمر النيبالي"
+},
+{
+  "iso_3": "NZL",
+  "iso_2": "NZ",
+  "en": "New Zealand Red Cross",
+  "fr": "Croix-Rouge néo-zélandaise",
+  "es": "Cruz Roja Neozelandesa",
+  "ar": "الصليب الأحمر النيوزيلندي"
+},
+{
+  "iso_3": "PAK",
+  "iso_2": "PK",
+  "en": "Pakistan Red Crescent Society",
+  "fr": "Croissant-Rouge du Pakistan",
+  "es": "Media Luna Roja de Pakistán",
+  "ar": "الهلال الأحمر الباكستاني"
+},
+{
+  "iso_3": "PAN",
+  "iso_2": "PA",
+  "en": "Red Cross Society of Panama",
+  "fr": "Croix-Rouge de Panama",
+  "es": "Cruz Roja Panameña",
+  "ar": "الصليب الأحمر البنمي"
+},
+{
+  "iso_3": "PER",
+  "iso_2": "PE",
+  "en": "Peruvian Red Cross",
+  "fr": "Croix-Rouge péruvienne",
+  "es": "Cruz Roja Peruana",
+  "ar": "الصليب الأحمر البيروي"
+},
+{
+  "iso_3": "PHL",
+  "iso_2": "PH",
+  "en": "The Philippine Red Cross",
+  "fr": "Croix-Rouge philippine",
+  "es": "Cruz Roja de Filipinas",
+  "ar": "الصليب الأحمر الفلبيني"
+},
+{
+  "iso_3": "PLW",
+  "iso_2": "PW",
+  "en": "Palau Red Cross Society",
+  "fr": "Croix-Rouge des Palaos",
+  "es": "Cruz Roja de Palau",
+  "ar": "الصليب الأحمر في بالاو"
+},
+{
+  "iso_3": "PNG",
+  "iso_2": "PG",
+  "en": "Papua New Guinea Red Cross Society",
+  "fr": "Croix-Rouge de Papouasie-Nouvelle-Guinée",
+  "es": "Cruz Roja de Papua Nueva Guinea",
+  "ar": "الصليب الأحمر في بابوا غينيا الجديدة"
+},
+{
+  "iso_3": "POL",
+  "iso_2": "PL",
+  "en": "Polish Red Cross",
+  "fr": "Croix-Rouge polonaise",
+  "es": "Cruz Roja Polaca",
+  "ar": "الصليب الأحمر البولندي"
+},
+{
+  "iso_3": "PRK",
+  "iso_2": "KP",
+  "en": "Red Cross Society of the Democratic People's Republic of Korea",
+  "fr": "Société de la Croix-Rouge de la République populaire démocratique de Corée",
+  "es": "Sociedad de la Cruz Roja de la República Popular Democrática de Corea",
+  "ar": "الصليب الأحمر في جمهورية كوريا الديمقراطية"
+},
+{
+  "iso_3": "PRT",
+  "iso_2": "PT",
+  "en": "Portuguese Red Cross",
+  "fr": "Croix-Rouge portugaise",
+  "es": "Cruz Roja Portuguesa",
+  "ar": "الصليب الأحمر البرتغالي"
+},
+{
+  "iso_3": "PRY",
+  "iso_2": "PY",
+  "en": "Paraguayan Red Cross",
+  "fr": "Croix-Rouge paraguayenne",
+  "es": "Cruz Roja Paraguaya",
+  "ar": "الصليب الأحمر الباراغوايي"
+},
+{
+  "iso_3": "QAT",
+  "iso_2": "QA",
+  "en": "Qatar Red Crescent Society",
+  "fr": "Croissant-Rouge du Qatar",
+  "es": "Media Luna Roja de Qatar",
+  "ar": "الهلال الأحمر القطري"
+},
+{
+  "iso_3": "ROM",
+  "iso_2": "RO",
+  "en": "Romanian Red Cross",
+  "fr": "Croix-Rouge de Roumanie",
+  "es": "Cruz Roja de Rumanía",
+  "ar": "الصليب الأحمر الروماني"
+},
+{
+  "iso_3": "RUS",
+  "iso_2": "RU",
+  "en": "The Russian Red Cross Society",
+  "fr": "Croix-Rouge de la Fédération de Russie",
+  "es": "Sociedad de la Cruz Roja de la Federación de Rusia",
+  "ar": "الصليب الأحمر الروسي"
+},
+{
+  "iso_3": "RWA",
+  "iso_2": "RW",
+  "en": "Rwandan Red Cross",
+  "fr": "Croix-Rouge rwandaise",
+  "es": "Cruz Roja Ruandesa",
+  "ar": "الصليب الأحمر الرواندي"
+},
+{
+  "iso_3": "SAU",
+  "iso_2": "SA",
+  "en": "Saudi Red Crescent Authority",
+  "fr": "Croissant-Rouge de l'Arabie saoudite",
+  "es": "Media Luna Roja de Arabia Saudí",
+  "ar": "الهلال الأحمر السعودي"
+},
+{
+  "iso_3": "SDN",
+  "iso_2": "SD",
+  "en": "The Sudanese Red Crescent",
+  "fr": "Croissant-Rouge soudanais",
+  "es": "Media Luna Roja Sudanesa",
+  "ar": "الهلال الأحمر السوداني"
+},
+{
+  "iso_3": "SEN",
+  "iso_2": "SN",
+  "en": "Senegalese Red Cross Society",
+  "fr": "Croix-Rouge sénégalaise",
+  "es": "Cruz Roja Senegalesa",
+  "ar": "الصليب الأحمر السنغالي"
+},
+{
+  "iso_3": "SGP",
+  "iso_2": "SG",
+  "en": "Singapore Red Cross Society",
+  "fr": "Société de la Croix-Rouge de Singapour",
+  "es": "Sociedad de la Cruz Roja de Singapur",
+  "ar": "الصليب الأحمر السنغافوري"
+},
+{
+  "iso_3": "SLB",
+  "iso_2": "SB",
+  "en": "The Solomon Islands Red Cross",
+  "fr": "Croix-Rouge des Iles Salomon",
+  "es": "Cruz Roja de las Islas Salomón",
+  "ar": "الصليب الأحمر في جزر سليمان"
+},
+{
+  "iso_3": "SLE",
+  "iso_2": "SL",
+  "en": "Sierra Leone Red Cross Society",
+  "fr": "Croix-Rouge de Sierra Leone",
+  "es": "Cruz Roja de Sierra Leona",
+  "ar": "الصليب الأحمر السيراليوني"
+},
+{
+  "iso_3": "SLV",
+  "iso_2": "SV",
+  "en": "Salvadorean Red Cross Society",
+  "fr": "Croix-Rouge d'El Salvador",
+  "es": "Cruz Roja Salvadoreña",
+  "ar": "الصليب الأحمر السلفادوري"
+},
+{
+  "iso_3": "SMR",
+  "iso_2": "SM",
+  "en": "Red Cross of the Republic of San Marino",
+  "fr": "Croix-Rouge de la République de Saint-Marin",
+  "es": "Cruz Roja de la República de San Marino",
+  "ar": "الصليب الأحمر السان ماريني"
+},
+{
+  "iso_3": "SOM",
+  "iso_2": "SO",
+  "en": "Somali Red Crescent Society",
+  "fr": "Croissant-Rouge de Somalie",
+  "es": "Media Luna Roja Somalí",
+  "ar": "الهلال الأحمر الصومالي"
+},
+{
+  "iso_3": "SSD",
+  "iso_2": "SS",
+  "en": "South Sudan Red Cross",
+  "fr": "Croix-Rouge du Soudan du Sud",
+  "es": "Media Luna Roja de Sudán del Sur",
+  "ar": "الصليب الأحمر في جنوب السودان"
+},
+{
+  "iso_3": "STP",
+  "iso_2": "ST",
+  "en": "Sao Tome and Principe Red Cross",
+  "fr": "Croix-Rouge de Sao Tomé-et-Principe",
+  "es": "Cruz Roja de Santo Tomé y Príncipe",
+  "ar": "الصليب الأحمر في ساو تومي وبرنسيبي"
+},
+{
+  "iso_3": "SUR",
+  "iso_2": "SR",
+  "en": "Suriname Red Cross",
+  "fr": "Croix-Rouge du Suriname",
+  "es": "Cruz Roja de Surinam",
+  "ar": "الصليب الأحمر السورينامي"
+},
+{
+  "iso_3": "SVK",
+  "iso_2": "SK",
+  "en": "Slovak Red Cross",
+  "fr": "Croix-Rouge slovaque",
+  "es": "Cruz Roja Eslovaca",
+  "ar": "الصليب الأحمر السلوفاكي"
+},
+{
+  "iso_3": "SVN",
+  "iso_2": "SI",
+  "en": "Slovenian Red Cross",
+  "fr": "Croix-Rouge slovène",
+  "es": "Cruz Roja de Eslovenia",
+  "ar": "الصليب الأحمر السلوفيني"
+},
+{
+  "iso_3": "SWE",
+  "iso_2": "SE",
+  "en": "Swedish Red Cross",
+  "fr": "Croix-Rouge suédoise",
+  "es": "Cruz Roja Sueca",
+  "ar": "الصليب الأحمر السويدي"
+},
+{
+  "iso_3": "SWZ",
+  "iso_2": "SZ",
+  "en": "Baphalali Swaziland Red Cross Society",
+  "fr": "Croix-Rouge du Swaziland",
+  "es": "Cruz Roja de Suazilandia",
+  "ar": "الصليب الأحمر السوازيلاندي"
+},
+{
+  "iso_3": "SYC",
+  "iso_2": "SC",
+  "en": "Seychelles Red Cross Society",
+  "fr": "Croix-Rouge des Seychelles",
+  "es": "Cruz Roja de Seychelles",
+  "ar": "الصليب الأحمر السيشيلي"
+},
+{
+  "iso_3": "SYR",
+  "iso_2": "SY",
+  "en": "Syrian Arab Red Crescent",
+  "fr": "Croissant-Rouge arabe syrien",
+  "es": "Media Luna Roja Arabe Siria",
+  "ar": "الهلال الأحمر العربي السوري"
+},
+{
+  "iso_3": "TCD",
+  "iso_2": "TD",
+  "en": "Red Cross of Chad",
+  "fr": "Croix-Rouge du Tchad",
+  "es": "Cruz Roja de Chad",
+  "ar": "الصليب الأحمر التشادي"
+},
+{
+  "iso_3": "TGO",
+  "iso_2": "TG",
+  "en": "Togolese Red Cross",
+  "fr": "Croix-Rouge togolaise",
+  "es": "Cruz Roja Togolesa",
+  "ar": "الصليب الأحمر التوغوي"
+},
+{
+  "iso_3": "THA",
+  "iso_2": "TH",
+  "en": "The Thai Red Cross Society",
+  "fr": "Croix-Rouge thaïlandaise",
+  "es": "Cruz Roja Tailandesa",
+  "ar": "الصليب الأحمر التايلندي"
+},
+{
+  "iso_3": "TJK",
+  "iso_2": "TJ",
+  "en": "Red Crescent Society of Tajikistan",
+  "fr": "Société du Croissant-Rouge du Tadjikistan",
+  "es": "Sociedad de la Media Luna de Tayikistán",
+  "ar": "الهلال الأحمر الطاجيكستاني"
+},
+{
+  "iso_3": "TKM",
+  "iso_2": "TM",
+  "en": "Red Crescent Society of Turkmenistan",
+  "fr": "Société du Croissant-Rouge du Turkménistan",
+  "es": "Media Luna Roja de Turkmenistán",
+  "ar": "الهلال الأحمر التركمانستاني"
+},
+{
+  "iso_3": "TMP",
+  "iso_2": "TL",
+  "en": "Timor Leste Red Cross Society",
+  "fr": "Croix-Rouge du Timor-Leste",
+  "es": "Cruz Roja de Timor-Leste",
+  "ar": "الصليب الأحمر التيموري"
+},
+{
+  "iso_3": "TON",
+  "iso_2": "TO",
+  "en": "Tonga Red Cross Society",
+  "fr": "Croix-Rouge des Tonga",
+  "es": "Cruz Roja de Tonga",
+  "ar": "الصليب الأحمر التونغي"
+},
+{
+  "iso_3": "TTO",
+  "iso_2": "TT",
+  "en": "The Trinidad and Tobago Red Cross Society",
+  "fr": "Croix-Rouge de Trinité-et-Tobago",
+  "es": "Cruz Roja de Trinidad y Tabago",
+  "ar": "الصليب الأحمر في ترينيداد وتوباغو"
+},
+{
+  "iso_3": "TUN",
+  "iso_2": "TN",
+  "en": "Tunisian Red Crescent",
+  "fr": "Croissant-Rouge tunisien",
+  "es": "Media Luna Roja Tunecina",
+  "ar": "الهلال الأحمر التونسي"
+},
+{
+  "iso_3": "TUR",
+  "iso_2": "TR",
+  "en": "Turkish Red Crescent Society",
+  "fr": "Société du Croissant-Rouge turc",
+  "es": "Sociedad de la Media Luna Roja Turca",
+  "ar": "الهلال الأحمر التركي"
+},
+{
+  "iso_3": "TZA",
+  "iso_2": "TZ",
+  "en": "Tanzania Red Cross National Society",
+  "fr": "Croix-Rouge nationale de Tanzanie",
+  "es": "Cruz Roja Nacional de Tanzania",
+  "ar": "الصليب الأحمر التنزاني"
+},
+{
+  "iso_3": "UGA",
+  "iso_2": "UG",
+  "en": "The Uganda Red Cross Society",
+  "fr": "Croix-Rouge de l'Ouganda",
+  "es": "Cruz Roja de Uganda",
+  "ar": "الصليب الأحمر الأوغندي"
+},
+{
+  "iso_3": "UKR",
+  "iso_2": "UA",
+  "en": "Ukrainian Red Cross Society",
+  "fr": "Société de la Croix-Rouge d'Ukraine",
+  "es": "Sociedad de la Cruz Roja de Ucrania",
+  "ar": "الصليب الأحمر الأوكراني"
+},
+{
+  "iso_3": "URY",
+  "iso_2": "UY",
+  "en": "Uruguayan Red Cross",
+  "fr": "Croix-Rouge uruguayenne",
+  "es": "Cruz Roja Uruguaya",
+  "ar": "الصليب الأحمر الأوروغوايي"
+},
+{
+  "iso_3": "USA",
+  "iso_2": "US",
+  "en": "American Red Cross",
+  "fr": "Croix-Rouge américaine",
+  "es": "Cruz Roja Americana",
+  "ar": "الصليب الأحمر الأمريكي"
+},
+{
+  "iso_3": "UZB",
+  "iso_2": "UZ",
+  "en": "Red Crescent Society of Uzbekistan",
+  "fr": "Société du Croissant-Rouge de l'Ouzbékistan",
+  "es": "Media Luna Roja de Uzbekistán",
+  "ar": "الهلال الأحمر الأوزباكستاني"
+},
+{
+  "iso_3": "VCT",
+  "iso_2": "VC",
+  "en": "Saint Vincent and the Grenadines Red Cross",
+  "fr": "Croix-Rouge de Saint-Vincent-et-les-Grenadines",
+  "es": "Cruz Roja de San Vicente y las Granadinas",
+  "ar": "الصليب الأحمر في سانت فنست وغرينادين"
+},
+{
+  "iso_3": "VEN",
+  "iso_2": "VE",
+  "en": "Venezuelan Red Cross",
+  "fr": "Croix-Rouge vénézuélienne",
+  "es": "Cruz Roja Venezolana",
+  "ar": "الصليب الأحمر الفنزويلي"
+},
+{
+  "iso_3": "VNM",
+  "iso_2": "VN",
+  "en": "Red Cross of Viet Nam",
+  "fr": "Croix-Rouge du Viet Nam",
+  "es": "Cruz Roja de Viet Nam",
+  "ar": "الصليب الأحمر الفيتنامي"
+},
+{
+  "iso_3": "VUT",
+  "iso_2": "VU",
+  "en": "Vanuatu Red Cross Society",
+  "fr": "Croix-Rouge de Vanuatu",
+  "es": "Cruz Roja de Vanuatu",
+  "ar": "الصليب الأحمر الفانواتوي"
+},
+{
+  "iso_3": "WSM",
+  "iso_2": "WS",
+  "en": "Samoa Red Cross Society",
+  "fr": "Croix-Rouge de Samoa",
+  "es": "Cruz Roja de Samoa",
+  "ar": "الصليب الأحمر الساموي"
+},
+{
+  "iso_3": "YEM",
+  "iso_2": "YE",
+  "en": "Yemen Red Crescent Society",
+  "fr": "Croissant-Rouge du Yémen",
+  "es": "Media Luna Roja de Yemen",
+  "ar": "الهلال الأحمر اليمني"
+},
+{
+  "iso_3": "ZAF",
+  "iso_2": "ZA",
+  "en": "The South African Red Cross Society",
+  "fr": "Croix-Rouge sud-africaine",
+  "es": "Cruz Roja Sudafricana",
+  "ar": "الصليب الأحمر في جنوب إفريقيا"
+},
+{
+  "iso_3": "ZAR",
+  "iso_2": "CD",
+  "en": "Red Cross of the Democratic Republic of the Congo",
+  "fr": "Croix-Rouge de la République démocratique du Congo",
+  "es": "Cruz Roja de la República Democrática del Congo",
+  "ar": "الصليب الأحمر في جمهورية الكونغو الديمقراطية"
+},
+{
+  "iso_3": "ZMB",
+  "iso_2": "ZM",
+  "en": "Zambia Red Cross Society",
+  "fr": "Croix-Rouge de Zambie",
+  "es": "Cruz Roja de Zambia",
+  "ar": "الصليب الأحمر الزامبي"
+},
+{
+  "iso_3": "ZWE",
+  "iso_2": "ZW",
+  "en": "Zimbabwe Red Cross Society",
+  "fr": "Croix-Rouge du Zimbabwe",
+  "es": "Cruz Roja de Zimbabue",
+  "ar": "الصليب الأحمر الزمبابوي"
+}]

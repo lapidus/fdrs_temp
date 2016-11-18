@@ -1,0 +1,71 @@
+{
+  "chapter": "1",
+  "title": "Who we are",
+  "slug": "who-we-are",
+  "intro": "The global Red Cross and Red Crescent family has grown steadily since its earliest origins in 1863, reaching 189 National Societies in 2013 when two new members, the Cyprus and South Sudan Red Cross Societies, were admitted to the IFRC.",
+  "sections": [
+    {
+      "title": "Our Network",
+      "blocks": [
+        "Our National Societies organise their efforts through more than 160,000 local units – branches or chapters – located within the communities from which they arise and that they serve. Our communities come in various shapes and forms, and diversity is our particular strength. For us, the term community refers to:",
+        [
+          "People living in a defined geographical area",
+          "People sharing a common identity, culture, values, and norms that have emerged according to a social structure",
+          "People who are exposed to the same or similar risks and vulnerabilities, or political and economic factors",
+          "People who come together – including virtually – due to shared interests."
+        ],
+        "These are not exclusive categories and people may associate themselves with more than one community. Neither are communities static: they are constantly changing as internal and external circumstances influence their dynamics.",
+        "The regional and local branches of our National Societies are dispersed across numerous towns, villages, and neighbourhoods. Together with their headquarters, these constitute the world’s largest humanitarian network.",
+        "Connecting the National Societies and representing them globally is the IFRC secretariat headquartered in Geneva, and together they constitute the International Federation of Red Cross and Red Crescent Societies. In 2015, the IFRC secretariat has a decentralised worldwide presence through its headquarters, five regional offices, 19 country cluster support teams, 51 country offices, three international liaison offices, five hubs for our global logistics service, and several temporary field offices based on service requirements.",
+        {
+          "type": "case-study-simple",
+          "title": "A new red cross is born",
+          "content": "Under the new flag of the South Sudan Red Cross and wearing their new t-shirts, volunteers walked to the John Garang museum two-by-two singing their new anthem. “Our new Red Cross is born to shine in the heart of Africa, let’s work for humanity...” Their first task after some hard training was to be ready to give first aid help to anyone in need in the huge crowd assembled to celebrate the birth of the new nation. On 9 July 2011, the Republic of South Sudan became independent, triggering the formation of a new National Red Cross Society…"
+        },
+        {
+          "type": "chart",
+          "title": "National Societies Worldwide",
+          "caption": "Figure 1 shows the growth of National Societies within the past century."
+        }
+      ]
+    },
+    {
+      "title": "Our Resources",
+      "blocks": [
+        "Our greatest strength is in the people who are with us. In 2013, National Societies reported that they had a membership of 80 million. They had some 452,000 paid staff and mobilised a further 16 million volunteers, giving an overall volunteer to staff ratio of 35 to 1, with just under half of the volunteers being female",
+        {
+          "type": "chart",
+          "title": "Human Resources in National Societies",
+          "caption": "Figure 1 shows the growth of National Societies within the past century."
+        },
+        "National Societies received an income of about 30.8 billion Swiss francs and spent 30.4 billion Swiss francs in 2013. Most of the income of National Societies is raised and spent domestically on their own programmes. This does not capture the total value of Red Cross and Red Crescent work, because it does not include the many in-kind domestic contributions and services provided voluntarily.",
+        "National Societies gave 35.4 million Swiss francs in statutory membership fees to the IFRC secretariat. This, together with an additional 263 million Swiss francs in voluntary contributions, and services and other income of 47.1 million Swiss francs, made up the IFRC secretariat’s income of 345.5 million Swiss francs in 2013. During the same year, the IFRC secretariat spent 365.3 million Swiss francs and employed 2,920 staff.",
+        {
+          "type": "chart",
+          "title": "Income and Expenditure",
+          "caption": ""
+        },
+        "Our presence around the world is rooted in diverse demographical, social, and economic contexts. As expected, National Societies in the Asia Pacific region, the biggest and most populous part of the world, have the largest number of local units that provide the base for the biggest numbers of volunteers.",
+        {
+          "type": "chart",
+          "title": "Regional Resources",
+          "caption": ""
+        },
+        "The Japanese Red Cross Society has the largest income but, in aggregate, the wealthiest National Societies are in Europe. Expenditure mirrors this trend. The largest numbers of paid staff are also in Europe, reflecting the tendency of richer National Societies to rely more on paid workers than volunteers, especially for services that are paid for or subsidised by national and local authorities.",
+        "Each National Society is unique and its profile can be consulted on www.ifrc.org/data. At the same time, the IFRC is founded on the notion of mutually respectful solidarity among National Societies through sharing knowledge, practical expertise, other capacities, and financial resources.",
+        "However, we do not know the total magnitude of what National Societies spend in international assistance, as much of this is done bilaterally. The Federation-wide Databank and Reporting System will seek to reflect this in the future. Meanwhile, an indication can be found in the response to IFRC appeals. Between 2010 and 2014, National Societies, governments, and others contributed more than 1.5 billion Swiss francs. There are considerable year-on-year fluctuations, mostly due to the pattern of major emergencies.",
+        {
+          "type": "chart",
+          "title": "Worldwide Humanitarian Contributions",
+          "caption": "List of largest contributors in cash, kind and services, CHF millions."
+        },
+        "The location of major disasters also skews heavily where most international assistance is deployed (Figure 1.13). The bulk goes to emergency response, along with longer-term development type programmes to reduce risk and vulnerability. This may be responsible for crowding out investment in building the capacity of the National Societies themselves."
+      ]
+    }
+  ],
+  "nextChapter": {
+    "chapter": "2",
+    "subtitle": "Overview",
+    "title": "What we do"
+  }
+}

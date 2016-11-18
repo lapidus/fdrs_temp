@@ -1,0 +1,86 @@
+{
+    "chapter": "8",
+    "slug": "enabling-action-2",
+    "title": "Enabling action 2",
+    "subtitle": "Humanitarian diplomacy to prevent and reduce vulnerability in a globalised world",
+    "intro": "Our humanitarian diplomacy includes advocacy, social mobilisation, negotiation, communication, representation, formal agreements, fundraising, and other measures that enable the Red Cross and Red Crescent to do more, do better, and reach further in serving poor and vulnerable communities.",
+    "sections": [
+        {
+            "title": "The auxiliary role",
+            "blocks": [
+                "The auxiliary role of our National Societies is recognised in national laws, and provides the authority and access to pursue privileged dialogue with public authorities. The many ways in which several national authorities contribute to the success of their National Red Cross or Red Crescent Society include:",
+                [
+                    "Providing direct contributions through annual grants-in-aid or fee payments for service provision",
+                    "Providing indirect contributions through tax exemptions, fiscal concessions, in-kind support (office space, land), special benefits (e.g. preferable rates on telecommunications, share of revenue from major sporting events), and licences to run profit-making endeavours (e.g. charity shops, commercial first aid)",
+                    "Ensuring an enabling environment with policies and laws that incentivise volunteering and humanitarian access."
+                ],
+                "Typically, National Societies use the auxiliary role in humanitarian crises to try to overcome serious obstacles. This role also allows National Societies to advocate for longer-term policy reforms and legislative changes to tackle the root causes of discrimination, marginalisation, and other entrenched vulnerabilities."
+            ]
+        },
+        {
+            "title": "Our humanitarian diplomacy issue",
+            "blocks": [
+                "Our humanitarian diplomacy mission includes promoting the Red Cross and Red Crescent perspective on the major challenges that face humanity. We use our regular presence at global fora to do this, for example, at the United Nations General Assembly, World Economic Forum, World Health Assembly, World Conference on Disaster Risk Reduction, United Nations Conference on Climate Change, High Level Forum on aid effectiveness, and others."
+            ]
+        },
+        {
+            "title": "External partnerships",
+            "blocks": [
+                "Beyond governments, we welcome partnerships with others who share our values and objectives, and who acknowledge our distinctive mandate and independence of action. The range of partnerships that National Societies have with other agencies, corporations, academia, professional networks, and others has steadily expanded, reflecting the respect and regard with which they are held.",
+                {
+                    "type": "chart",
+                    "title": "Joint learning: partnership with the special olympics",
+                    "items": [
+                        {
+                            "country": "Peru",
+                            "text": "Special Olympics and the Peruvian Red Cross worked together with Peru\u2019s Regional Directorate of Education in the isolated town of Iquitos deep within the rain forest to introduce the sport of bocce. They trained 25 coaches and ten health promoters, involving five schools."
+                        },
+                        {
+                            "country": "Jamaica",
+                            "text": "Special Olympics, using their existing relationship with the Jamaican Association on Intellectual Disability, partnered with the Jamaica Red Cross to train on leadership and advocacy. The athletes raised issues such as teasing and bullying, discrimination on public transport, and self-doubt."
+                        },
+                        {
+                            "country": "Austria",
+                            "text": "Special Olympics and the youth of the Austrian Red Cross share a vision that culminates in the staging of the 2017 Special Olympics Winter Games in Styria, Austria."
+                        },
+                        {
+                            "country": "Indonesia",
+                            "text": "The Indonesian Red Cross Society volunteers have trained with 75 disabled athletes and their 50 mentors. While the athletes learned about first aid, the Red Cross counterparts learned about living with intellectual disability. \u201cThey always kept the spirit high with their laughs and smiles. It was fun learning together,\u201d said Istiansari of the Red Cross."
+                        }
+                    ]
+                },
+                "The Red Cross and Red Crescent mission to foster social inclusion, and the Special Olympics mission to help children and adults with intellectual disabilities to develop physical fitness, demonstrate courage, experience joy, and share through sport, makes us natural allies. The partnership was formalised in 2013 and has been extended to more than 15 countries."
+            ]
+        },
+        {
+            "title": "Our outreach",
+            "blocks": [
+                "The IFRC\u2019s global reach has steadily expanded in recent years. In 2014, the IFRC generated some 310,000 media hits in addition to the tens and thousands of daily print, broadcast, and online references around the world through the work of National Societies. The IFRC web site was viewed about 9 million times by nearly 3 million visitors in 2014, a noteworthy increase from 2010.",
+                {
+                    "type": "chart",
+                    "title": "Digital reach",
+                    "axisLabels": {
+                        "x": "Years"
+                    },
+                    "lineLabels": [
+                        "Views",
+                        "Users",
+                        "Twitter",
+                        "Facebook",
+                        "YouTube\\n",
+                        "Media hits"
+                    ],
+                    "caption": "Source: Communications Department"
+                },
+                "Digital media has created further opportunities to expand the community of the concerned by engaging more people from all backgrounds to share in our common humanitarian endeavour. In 2014, there were more than 530,000 viewings of the IFRC YouTube channel, and reach by Facebook and Twitter exceeded 11 million and 23 million, respectively"
+            ]
+        }
+    ],
+    "nextChapter": {
+        "heading": "Next chapter",
+        "chapter": "9",
+        "subtitle": "Enabling action 3",
+        "title": "Function effectively as the IFRC",
+        "slug": "enabling-action-3"
+    }
+}

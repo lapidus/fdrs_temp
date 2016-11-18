@@ -1,0 +1,343 @@
+{
+  "chapter": "5",
+  "slug": "strategic-aim-2",
+  "title": "Objectif stratégique 2",
+  "subtitle": "Promouvoir des modes de vie sains et sûrs",
+  "intro": "Pour la Fédération, l’approche fondée sur la résilience des communautés est, à bien des égards, simplement l’appellation moderne de la façon dont elle travaille avec les communautés depuis des décennies.",
+  "sections": [
+    {
+      "title": "Personnes ayant bénéficié de services à long terme",
+      "blocks": [
+        "Les Sociétés nationales s’efforcent de renforcer la résilience des communautés par le biais de leurs volontaires, qui mobilisent leur communauté au travers d’activités de sensibilisation et de formation. En apprenant à connaître les dangers propres à leur environnement et en analysant les risques et les vulnérabilités auxquels elles sont exposées, les communautés acquièrent la capacité de mettre au point des solutions adaptées à leur contexte local.",
+        {
+          "type": "chart",
+          "title": "People reached",
+          "axisLabels": {"x": "Années", "y": ""},
+          "caption": "Source: FDRS"
+        },
+        "De manière générale, le réseau de la Fédération a apporté une aide à près de 161 millions de personnes par le biais d’un ou de plusieurs services à long terme en 2013, ce qui représente une augmentation de 55 % par rapport aux 103,4 millions de personnes atteintes en 2012 (figure 5.1). Cette augmentation est due en partie au fait qu’un plus grand nombre de Sociétés nationales ont fourni des informations pour cet indicateur.",
+        "La région des Amériques est celle où la portée des programmes à long terme est la plus importante, ce qui reflète les racines historiques du travail de la Croix-Rouge dans la région. La communication de données ventilées par sexe constitue une importante faiblesse générale et sera améliorée dans les années à venir.",
+        {
+          "type": "chart",
+          "title": "Répartition géographique et par sexe des personnes ayant bénéficié de services à long terme",
+          "dataset": [
+            {
+              "name": "Amériques",
+              "index": 1,
+              "first": 24431270,
+              "second": 19398807,
+              "rest": 17024418,
+              "names": ["Argentine Red Cross", "Canadian Red Cross"]
+            },
+            {
+              "name": "Afrique",
+              "index": 2,
+              "first": 8640267,
+              "second": 7367549,
+              "rest": 14225882,
+              "names": ["Mali Red Cross", "Kenyan Red Cross"]
+            },
+            {
+              "name": "Asie-Pacifique",
+              "index": 3,
+              "first": 7525024,
+              "second": 7148247,
+              "rest": 11430773,
+              "names": ["The Republic of Korea National Red Cross", "Vietnam"]
+            },
+            {
+              "name": "Europe",
+              "index": 4,
+              "first": 7371570,
+              "second": 6264920,
+              "rest": 12191129,
+              "names": ["German Red Cross", "Spain"]
+            },
+            {
+              "name": "Moyen-Orient et Afrique du Nord",
+              "index": 5,
+              "first": 16179974,
+              "second": 670000,
+              "rest": 813308,
+              "names": ["Red Crescent Society of the Islamic Republic of Iran", "??"]
+            }
+          ],
+          "caption": "Source: FDRS"
+        },
+        "La cartographie annuelle des services liés à la réduction des risques de catastrophe élaborée par le Secrétariat de la Fédération montre l’intensification progressive des activités menées dans ce domaine depuis le début de la décennie. En 2014, 121 Sociétés nationales avaient dépensé 151,7 millions de francs suisses en faveur de 31,2 millions de personnes.",
+        {
+          "type": "chart",
+          "title": "Disaster risk reduction: reaching more with increased investment",
+          "axisLabels": {
+            "x": "Années",
+            "y": ""
+          },
+          "lineLabels": ["Dépenses\n(en millions de CHF)", "Personnes atteintes\n(en millions)"],
+          "dataset": [
+            [
+              {"year": 2010, "value": 17.6},
+              {"year": 2011, "value": 20.3},
+              {"year": 2012, "value": 23.3},
+              {"year": 2013, "value": 25.6},
+              {"year": 2014, "value": 31.2}
+            ],
+            [
+              {"year": 2010, "value": 88.1},
+              {"year": 2011, "value": 95.3},
+              {"year": 2012, "value": 109.8},
+              {"year": 2013, "value": 122.3},
+              {"year": 2014, "value": 151.7}
+            ]
+          ],
+          "caption": "Source: Community Preparedness and Risk Reduction Department"
+        }
+      ]
+    },
+    {
+      "title": "Les changements climatiques",
+      "blocks": [
+        "Le consensus international sur l’importance et l’urgence de s’attaquer aux changements climatiques s’est renforcé ces dernières années et la Fédération met l’accent sur le renforcement de la résilience. Nous favorisons l’adaptation aux changements climatiques en étendant nos activités de réduction des risques de catastrophe et nous considérons que notre rôle en matière d’atténuation des changements climatiques consiste à promouvoir un développement communautaire durable respectueux de l’environnement et optimisant l’empreinte carbone.",
+        {
+          "type": "image",
+          "title": "image title missing",
+          "caption": ""
+        },
+        "En commençant par «mettre à l’épreuve du climat», dans la mesure du possible, les programmes et les services existants, les Sociétés nationales participent de manière active à la mise en œuvre du Plan national d’adaptation de leur pays. La Croix-Rouge du Kenya contribue par exemple à la mise en place d’une politique climatiquement rationnelle en matière de sécurité alimentaire dans la province nord-est du pays, exposée à la sécheresse. La Croix-Rouge rwandaise travaille sur des projets de collecte de l’eau de pluie et la Croix-Rouge de l’Inde, sur la gestion des zones inondables des États du Bihar et de l’Odisha. La Croix-Rouge togolaise et la Croix-Rouge de l’Ouganda, avec le soutien de la CroixRouge allemande, ont fait œuvre de pionnières dans le domaine de l’alerte précoce en adoptant un système de financement fondé sur des prévisions. La Croix-Rouge néerlandaise et le Centre d’étude de la Croix-Rouge et du Croissant-Rouge sur le changement climatique sont à l’avant-garde d’un programme intitulé «Partenaires pour la résilience », qui a permis la mise en place d’actions climatiquement rationnelles de réduction des risques dans des centaines de communautés situées dans différents écosystèmes à travers le monde."
+      ]
+    },
+    {
+      "title": "La sécurité routière",
+      "blocks": [
+        "Chaque année, 1,24 million de personnes perdent la vie sur les routes et 50 millions d’autres sont gravement blessées. Les accidents de la route sont la 8e cause de mortalité dans le monde et la première cause de mortalité des individus âgés de 15 à 24 ans. La moitié des décès dus aux accidents de la route concernent des piétons, des cyclistes ou des motocyclistes et 75 % des victimes sont des hommes. Enfin, 92 % des décès dus aux accidents de la route surviennent dans les pays à revenu faible ou moyen, alors que le nombre de véhicules dans ces pays ne représente que 53 % du nombre total de véhicules dans le monde.",
+        {
+          "type": "tabs",
+          "title": "Activités de sécurité routière",
+          "tabs": [
+            {
+              "name": "Involvement",
+              "headers": [
+                "Région",
+                "Pourcentage de Sociétés nationales menant des activités de sécurité routière, par région",
+                "Pourcentage de Sociétés nationales souhaitant renforcer/étendre leurs activités de sécurité routière, par région"
+              ],
+              "dataset": [
+                {
+                  "region": "Afrique",
+                  "percentage1": 54,
+                  "percentage2": 73
+                },
+                {
+                  "region": "Europe",
+                  "percentage1": 49,
+                  "percentage2": 45
+                },
+                {
+                  "region": "Amériques",
+                  "percentage1": 57,
+                  "percentage2": 71
+                },
+                {
+                  "region": "Asie-Pacifique",
+                  "percentage1": 54,
+                  "percentage2": 66
+                },
+                {
+                  "region": "Moyen-Orient et Afrique du Nord",
+                  "percentage1": 44,
+                  "percentage2": 56
+                },
+                {
+                  "region": "Globale",
+                  "percentage1": 52,
+                  "percentage2": 62
+                }
+              ]
+            },
+            {
+              "name": "Activités",
+              "headers": ["Activités", "Nombre d’activités"],
+              "dataset": [
+                {
+                  "activity": "Education for groups (e.g. children, youth, novice, drivers, police officers)",
+                  "amount": 73
+                },
+                {
+                  "activity": "Road safety education for staff and volunteers",
+                  "amount": 47
+                },
+                {
+                  "activity": "Programmes for protection of road users",
+                  "amount": 46
+                },
+                {
+                  "activity": "Road safety capacity building or training (i.e. first aid training)",
+                  "amount": 46
+                },
+                {
+                  "activity": "Advocacy for road safety intervention",
+                  "amount": 45
+                },
+                {
+                  "activity": "Information dissemination/aweareness",
+                  "amount": 5
+                }
+              ]
+            }
+          ],
+          "caption": "Source: Global Road Safety Partnership"
+        }
+      ]
+    },
+    {
+      "title": "Des modes de vie sains",
+      "blocks": [
+        "Définissant la bonne santé comme un état de bien-être physique, mental et social, la Croix-Rouge et le CroissantRouge s’efforcent de lutter contre les inégalités dans le domaine de la santé et de la protection sociale :",
+        [
+          "en améliorant l’accès des personnes mal desservies aux services de santé publique de base, notamment dans les situations d’urgence;",
+          "en renforçant l’effet réparateur des soins médicaux grâce à des activités essentielles dans le domaine de la nutrition, de l’éducation, du soutien psychosocial et de la réadaptation;",
+          "en agissant sur les facteurs sociaux, comportementaux et environnementaux sous-jacents qui favorisent la bonne santé."
+        ],
+        "Le réseau de la Croix-Rouge et du Croissant-Rouge est reconnu comme le pionnier des premiers secours en temps de guerre comme en temps de paix et a sauvé d’innombrables vies au cours de ses décennies d’activité.",
+        "Les programmes intégrés de premiers secours et de santé à base communautaire sont la version moderne de cet effort et la base de toutes nos activités. Il ne s’agit pas seulement de soigner les blessures courantes, mais aussi d’aider les communautés à identifier et à résoudre les questions prioritaires en matière de santé, de promouvoir la santé et la prévention des maladies et de préparer les volontaires à faire face aux conséquences sanitaires des catastrophes ou d’autres situations d’urgence.",
+        "Les charges de morbidité aux niveaux national et local varient, de même que les activités des Sociétés nationales dans le domaine de la santé et de la protection sociale. La situation a évolué au fil du temps, les systèmes de santé nationaux s’étant développé de façon à assumer un rôle plus important, laissant les Sociétés nationales de la Croix-Rouge et du Croissant-Rouge en charge des zones mal desservies et des domaines auxiliaires. Selon une enquête, la Croix-Rouge et le Croissant-Rouge menaient 30 types d’activités dans le domaine de la santé en 2013.",
+        {
+          "type": "chart",
+          "title": "Poucentage de Sociétés nationales déclarant fournir des services de santé",
+          "dataset": [
+            { "y": 0,   "x": "100%" },
+            { "y": 100, "x": "First aid" },
+            { "y": 89,  "x": "HIV control" },
+            { "y": 86,  "x": "Psychosocial support" },
+            { "y": 82,  "x": "Blood donation" },
+            { "y": 0,   "x": "75%" },
+            { "y": 69,  "x": "Nutrition" },
+            { "y": 68,  "x": "Sexual and reproductive health" },
+            { "y": 67,  "x": "Community-based health and first aid" },
+            { "y": 66,  "x": "Water, sanitation and hygiene promotion" },
+            { "y": 58,  "x": "Tuberculosis" },
+            { "y": 56,  "x": "Control of noncummunicable diseases" },
+            { "y": 51,  "x": "Support of breastfeeding" },
+            { "y": 50,  "x": "Influenza control" },
+            { "y": 0,   "x": "50%" },
+            { "y": 48,  "x": "Family planning" },
+            { "y": 48,  "x": "Maternal and child nutrition" },
+            { "y": 47,  "x": "Harm reduction" },
+            { "y": 47,  "x": "Routine measles immunisation" },
+            { "y": 46,  "x": "Mental health" },
+            { "y": 44,  "x": "Malaria control" },
+            { "y": 44,  "x": "Antenatal care" },
+            { "y": 44,  "x": "Postnatal care" },
+            { "y": 44,  "x": "Routine polio immunisation" },
+            { "y": 43,  "x": "Measles immunisation campaigns" },
+            { "y": 41,  "x": "Active ageing" },
+            { "y": 39,  "x": "Polio immunisation campaigns" },
+            { "y": 34,  "x": "Other routine immunisation" },
+            { "y": 32,  "x": "Dengue control" },
+            { "y": 25,  "x": "Other disease control" },
+            { "y": 23,  "x": "Other immunisation campaigns" },
+            { "y": 14,  "x": "Other health and social activities" },
+            { "y": 8,   "x": "Other maternal, newborn and child health" }
+          ],
+          "caption": "Source: Health Department"
+        },
+        "En ce qui concerne les groupes spécifiques, la majorité des Sociétés nationales travaillent avec les jeunes, les enfants, les personnes âgées, les personnes vivant avec le VIH, les migrants et les personnes handicapées.",
+        {
+          "type": "chart",
+          "title": "Nombre de Sociétés nationales menant des activités axées sur les besoins de groupes spécifiques",
+          "dataset": [
+            {"y": 11, "x": "Personnes transgenres", "fill": "#C5C6C6"},
+            {"y": 13, "x": "Autres groupes", "fill": "#756661"},
+            {"y": 20, "x": "Hommes ayant des rapports sexuels avec d’autres hommes", "fill": "#FED02F"},
+            {"y": 32, "x": "Consommateurs de drogues", "fill": "#5A6122"},
+            {"y": 35, "x": "Professionnel(le)s du sexe", "fill": "#D5106E"},
+            {"y": 56, "x": "Migrants", "fill": "#1A9FE0"},
+            {"y": 56, "x": "Personnes handicapées", "fill": "#84BB23"},
+            {"y": 60, "x": "Personnes vivant avec le VIH", "fill": "#5B325D"},
+            {"y": 67, "x": "Enfants", "fill": "#E02726"},
+            {"y": 74, "x": "Personnes âgées", "fill": "#012A39"},
+            {"y": 83, "x": "Jeunes", "fill": "#682F26"}
+          ],
+          "caption": "Source: Health Department"
+        }
+      ]
+    },
+    {
+      "title": "Promouvoir des systèmes sûrs d’approvisionnement en sang",
+      "blocks": [
+        "Venir en aide aux autres en donnant de son argent, de son temps ou de ses compétences est louable. Faire don de sa propre personne est véritablement noble. Il n’est donc pas surprenant que la Croix-Rouge et le Croissant-Rouge aient été actifs dans le domaine de l’approvisionnement en sang depuis que les progrès technologiques l’ont rendu possible. Un approvisionnement en sang sûr et accessible est essentiel pour sauver des vies dans les établissements médicaux ou à la suite d’accidents, d’actes de violence ou de catastrophes.",
+        {
+          "type": "chart",
+          "title": "Nombre de donneurs de sang",
+          "dataset": [
+            {
+              "name": "Asie-Pacifique",
+              "index": 1,
+              "first": 5160000,
+              "second": 2708173,
+              "rest": 2168070,
+              "names": ["Japanese Red Cross Society", "The Republic of Korea National Red Cross"]
+            },
+            {
+              "name": "Europe",
+              "index": 2,
+              "first": 1723440,
+              "second": 1640882,
+              "rest": 2979272,
+              "names": ["German Red Cross", "Turkish Red Crescent society"]
+            },
+            {
+              "name": "Amériques",
+              "index": 3,
+              "first": 3349561,
+              "second": 145701,
+              "rest": 258180,
+              "names": ["American Red Cross", "??"]
+            },
+            {
+              "name": "Moyen-Orient et Afrique du Nord",
+              "index": 4,
+              "first": 223212,
+              "second": 121204,
+              "rest": 132964,
+              "names": ["??", "??"]
+            },
+            {
+              "name": "Afrique",
+              "index": 5,
+              "first": 65880,
+              "second": 27017,
+              "rest": 46593,
+              "names": ["??","??"]
+            }
+          ],
+          "caption": "Source: FDRS"
+        },
+        "Comme l’Organisation mondiale de la Santé, nous croyons fermement à l’approche fondée sur le don de sang entièrement volontaire et non rémunéré, car c’est l’approche la plus sûre. À ce jour, seuls 60 pays ont pleinement atteint cet objectif. Au vu des pénuries de sang et de ses composants dans le monde, il nous reste encore beaucoup à faire pour pouvoir garantir un approvisionnement en sang sûr à l’échelle mondiale. Les attitudes culturelles constituent indubitablement un obstacle dans certaines régions."
+      ]
+    },
+    {
+      "title": "L’eau et l’assainissement",
+      "blocks": [
+        "Les services d’approvisionnement en eau et d’assainissement sont un aspect clé des interventions d’urgence. En outre, nous nous sommes engagés depuis longtemps à contribuer à la réalisation du 7e objectif du Millénaire pour le développement, qui vise à réduire de moitié, d’ici à la fin de cette année, le pourcentage de la population n’ayant pas accès à un approvisionnement en eau potable ni à des services d’assainissement de base.",
+        {
+          "type": "chart",
+          "title": "L’eau et l’assainissement",
+          "translations": [
+            "de personnes ont accès\nà l’eau potable.",
+            "ont bénéficié de services\nd’approvisionnement en\neau et d’assainissement.",
+            "de personnes ont accès\nà des toilettes améliorées."
+          ],
+          "caption": "Source: Health Department"
+        },
+        "Nous sommes à mi-parcours de la période mise en œuvre de l’Initiative mondiale de la Fédération pour l’eau et l’assainissement, qui s’étend de 2005 à 2025. L’objectif initial de la Croix-Rouge et du CroissantRouge était d’atteindre 5 millions de personnes à l’échéance 2015. Cet objectif a été largement dépassé puisque nous pensons atteindre 15 millions de personnes à la fin 2015. Dans ce contexte, nous avons revu notre objectif final à la hausse et prévu de doubler ce chiffre d’ici à 2025."
+      ]
+    }
+  ],
+  "nextChapter": {
+    "heading": "Prochain chapitre",
+    "chapter": "6",
+    "subtitle": "Objectif stratégique 3",
+    "title": "Promouvoir l’intégration sociale et une culture de non-violence et de paix",
+    "slug": "strategic-aim-3"
+  }
+}

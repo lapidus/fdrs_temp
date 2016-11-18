@@ -1,0 +1,197 @@
+{
+  "chapter": "7",
+  "slug": "enabling-action-1",
+  "title": "Acción facilitadora 1",
+  "subtitle": "Construir Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja fuertes",
+  "intro": "Las Sociedades Nacionales nacen y cobran arraigo en su respectivo contexto. Una Sociedad Nacional sólida es aquella que, de manera constante y mientras sea necesario, presta servicios pertinentes en todo el país en beneficio de las personas vulnerables, a través de una red de unidades que recurren a voluntarios.",
+  "sections": [
+    {
+      "title": "Capacidades básicas de las Sociedades Nacionales",
+      "blocks": [
+        "La mayor fortaleza de la Federación Internacional y del Movimiento en su conjunto reside en la capacidad aunada de servicio de las Sociedades Nacionales.",
+        {
+          "type": "chart",
+          "title": "Capacidades básicas ",
+          "src": "/img/chapters/7/core-capacities-es.jpg",
+          "caption": "Fuente: Departamento de Desarrollo Institucional"
+        },
+        "Las Sociedades Nacionales nacen y cobran arraigo en su respectivo contexto. Una Sociedad Nacional sólida es aquella que, de manera constante y mientras sea necesario, presta servicios pertinentes en todo el país en beneficio de las personas vulnerables, a través de una red de unidades que recurren a voluntarios. De decenios de experiencia comprobada y verificada se desprende que la fortaleza de las Sociedades Nacionales surge de su propia dinámica institucional, que abarca diversas capacidades esenciales que guardan relación entre sí.",
+        "La evaluación de las capacidades se realiza a través del proceso de certificación y evaluación de la capacidad institucional que comienza con una fase de autoevaluación sistematizada en torno a ochenta y cinco (85) características calificadas conforme a una escala acumulativa de cinco niveles. Todos los miembros deben satisfacer un nivel medio mínimo.",
+        {
+          "type": "chart",
+          "title": "Evaluación de los atributos de la capacidad (ejemplo)",
+          "headings": [
+            "Inversión en aptitudes",
+            "Gestión del relevo"
+          ],
+          "dataset": [
+            ["A","Atributo no satisfecho", "Atributo no satisfecho"],
+            ["B","La Sociedad Nacional realiza un seguimiento de las aptitudes y de las características de los recursos humanos que necesita para la ejecución de sus actividades.", "La Sociedad Nacional realiza un seguimiento de las aptitudes de sus voluntarios y de los miembros de su personal. Las instancias directivas promueven y vigilan la transición a voluntario de los jóvenes de la Cruz Roja y de la Media Luna Roja."],
+            ["C","Los responsables de lograr la adhesión de los voluntarios diferencian entre la captación general de voluntarios y la captación de voluntarios pertenecientes a grupos específicos o con determinadas características.", "La Sociedad Nacional invierte en la formación de las personas con determinadas aptitudes y facilita su acceso a oportunidades de formación internas y externas."],
+            ["Normas promedio mínimas para todas las Sociedades Nacionales"],
+            ["D","La Sociedad Nacional ha identificado las aptitudes de los voluntarios y de los miembros del personal necesarias para ayudarle a “hacer más, hacerlo mejor y lograr más”. La Sociedad Nacional se dedica con determinación a fomentar esas aptitudes.", "La Sociedad Nacional facilita formación en materia de gestión y buen gobierno a los eventuales candidatos que podrían aspirar a cargos directivos en el futuro."],
+            ["E","La Sociedad Nacional cuenta con aptitudes yrecursos suficientes para emprender nuevas actividades o ampliar las que ya ejecuta en apoyo a las necesidades de la comunidad.", "La Sociedad Nacional dispone de un plan de relevo para sus principales cargos directivos."]
+          ],
+
+          "caption": "Fuente: Departamento de Desarrollo Institucional"
+        },
+        "Es interesante observar que la fortaleza de las Sociedades Nacionales no depende necesariamente de la riqueza del respectivo país, es decir que tanto aquellas de países pobres como ricos pueden consolidar su funcionamiento.",
+        {
+          "type": "chart",
+          "title": "Correlación entre fortaleza y riqueza",
+          "legend": [
+            { "color": "#82BC01", "name": "Africa" },
+            { "color": "#0F9EE3", "name": "Americas" },
+            { "color": "#EE3224", "name": "Asia Pacific" },
+            { "color": "#5C315E", "name": "Europe" },
+            { "color": "#7E6E69", "name": "Middle East and North Africa" }
+          ],
+          "dataset": [
+            { "region": "Africa", "x_regular_gdp": 251.0145229838, "x": 2.3996988492, "y": 94, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 268.0539113455, "x": 2.4282221487, "y": 39, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 394.775830896, "x": 2.5963505563, "y": 31, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 413.7574148529, "x": 2.6167457897, "y": 28, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 447.4371289135, "x": 2.6507320196, "y": 54, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 453.5689927392, "x": 2.6566433573, "y": 40, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 491.7899781002, "x": 2.6917796743, "y": 42, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 494.3146150632, "x": 2.6940034511, "y": 69, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 512.1031992238, "x": 2.709357489, "y": 36, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 574.1195223244, "x": 2.7590023148, "y": 53, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 634.3209745958, "x": 2.8023090721, "y": 59, "stroke": "#82BC01" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 687.2454749827, "x": 2.837111889, "y": 42, "stroke": "#EE3224" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 690.2053852927, "x": 2.8389783435, "y": 60, "stroke": "#EE3224" },
+            { "region": "Africa", "x_regular_gdp": 693.9843611994, "x": 2.8413496838, "y": 69, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 751.9163167908, "x": 2.8761695092, "y": 33, "stroke": "#82BC01" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 752.1560525138, "x": 2.8763079546, "y": 30, "stroke": "#EE3224" },
+            { "region": "Europe", "x_regular_gdp": 870.54210662, "x": 2.939789782, "y": 47, "stroke": "#5C315E" },
+            { "region": "Africa", "x_regular_gdp": 1023.2943547429, "x": 3.0100005782, "y": 63, "stroke": "#82BC01" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 1068.3893101576, "x": 3.028729534, "y": 72, "stroke": "#EE3224" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 1144, "x": 3.0584260245, "y": 31, "stroke": "#EE3224" },
+            { "region": "Europe", "x_regular_gdp": 1159.9297395354, "x": 3.0644316835, "y": 51, "stroke": "#5C315E" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 1243.986074645, "x": 3.0948155188, "y": 16, "stroke": "#EE3224" },
+            { "region": "Africa", "x_regular_gdp": 1469.1211622675, "x": 3.1670576147, "y": 33, "stroke": "#82BC01" },
+            { "region": "Africa", "x_regular_gdp": 1555.3606139083, "x": 3.1918310972, "y": 74, "stroke": "#82BC01" },
+            { "region": "Europe", "x_regular_gdp": 1716.5262836303, "x": 3.2346504578, "y": 40, "stroke": "#5C315E" },
+            { "region": "Americas", "x_regular_gdp": 1753.6423665158, "x": 3.2439410291, "y": 14, "stroke": "#0F9EE3" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 1755.2140164853, "x": 3.2443300784, "y": 30, "stroke": "#EE3224" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 2184.1634610913, "x": 3.3392851375, "y": 31, "stroke": "#EE3224" },
+            { "region": "Americas", "x_regular_gdp": 2322.8805603409, "x": 3.3660268795, "y": 38, "stroke": "#0F9EE3" },
+            { "region": "Americas", "x_regular_gdp": 2575.6836947783, "x": 3.4108925287, "y": 58, "stroke": "#0F9EE3" },
+            { "region": "Americas", "x_regular_gdp": 3330.5252303753, "x": 3.522512728, "y": 73, "stroke": "#0F9EE3" },
+            { "region": "Europe", "x_regular_gdp": 3490.2453158802, "x": 3.5428559529, "y": 79, "stroke": "#5C315E" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 3672.9669404092, "x": 3.5650170194, "y": 40, "stroke": "#EE3224" },
+            { "region": "Americas", "x_regular_gdp": 3789.5675576278, "x": 3.5785896538, "y": 42, "stroke": "#0F9EE3" },
+            { "region": "Europe", "x_regular_gdp": 3866.9897922327, "x": 3.5873730257, "y": 62, "stroke": "#5C315E" },
+            { "region": "Middle East and North Africa", "x_regular_gdp": 4236.793630997, "x": 3.6270373106, "y": 6, "stroke": "#7E6E69" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 4467.1037911876, "x": 3.6500260432, "y": 86, "stroke": "#EE3224" },
+            { "region": "Europe", "x_regular_gdp": 4565.2698841641, "x": 3.6594664567, "y": 99, "stroke": "#5C315E" },
+            { "region": "Americas", "x_regular_gdp": 4636, "x": 3.6661434273, "y": 49, "stroke": "#0F9EE3" },
+            { "region": "Middle East and North Africa", "x_regular_gdp": 4909.0280937704, "x": 3.6909955175, "y": 88, "stroke": "#7E6E69" },
+            { "region": "Americas", "x_regular_gdp": 5440.4524646364, "x": 3.7356350201, "y": 51, "stroke": "#0F9EE3" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 6091.0143517459, "x": 3.7846896228, "y": 80, "stroke": "#EE3224" },
+            { "region": "Middle East and North Africa", "x_regular_gdp": 6454.619627972, "x": 3.8098706543, "y": 67, "stroke": "#7E6E69" },
+            { "region": "Europe", "x_regular_gdp": 6685.0187489763, "x": 3.8251026296, "y": 76, "stroke": "#5C315E" },
+            { "region": "Americas", "x_regular_gdp": 6795.7724978042, "x": 3.8322388316, "y": 19, "stroke": "#0F9EE3" },
+            { "region": "Europe", "x_regular_gdp": 6797.7343069753, "x": 3.832364186, "y": 45, "stroke": "#5C315E" },
+            { "region": "Americas", "x_regular_gdp": 7747.8413209319, "x": 3.8891807176, "y": 63, "stroke": "#0F9EE3" },
+            { "region": "Europe", "x_regular_gdp": 9036.0361679301, "x": 3.9559779606, "y": 34, "stroke": "#5C315E" },
+            { "region": "Americas", "x_regular_gdp": 9386.3048352874, "x": 3.9724946545, "y": 58, "stroke": "#0F9EE3" },
+            { "region": "Middle East and North Africa", "x_regular_gdp": 9705.3922340726, "x": 3.9870130917, "y": 20, "stroke": "#7E6E69" },
+            { "region": "Europe", "x_regular_gdp": 12116.1546093196, "x": 4.0833648066, "y": 37, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 12707.8543136195, "x": 4.1040722273, "y": 46, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 14007.8775162772, "x": 4.1463723357, "y": 46, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 14037.015448307, "x": 4.1472747779, "y": 46, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 14183.01601695, "x": 4.1517685933, "y": 55, "stroke": "#5C315E" },
+            { "region": "Americas", "x_regular_gdp": 15452.1735981951, "x": 4.1889895786, "y": 47, "stroke": "#0F9EE3" },
+            { "region": "Middle East and North Africa", "x_regular_gdp": 19512, "x": 4.2903017873, "y": 72, "stroke": "#7E6E69" },
+            { "region": "Europe", "x_regular_gdp": 22000.0695671819, "x": 4.3424240541, "y": 66, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 33071.8393135065, "x": 4.5194583492, "y": 83, "stroke": "#5C315E" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 37749.4427226249, "x": 4.5769105447, "y": 62, "stroke": "#EE3224" },
+            { "region": "Europe", "x_regular_gdp": 45931.7247863052, "x": 4.662112754, "y": 43, "stroke": "#5C315E" },
+            { "region": "Asia and the Pacific", "x_regular_gdp": 46720.3566603016, "x": 4.6695061495, "y": 73, "stroke": "#EE3224" },
+            { "region": "Middle East and North Africa", "x_regular_gdp": 92682, "x": 4.9669953969, "y": 63, "stroke": "#7E6E69" }
+          ],
+
+          "caption": "Fuente: Departamento de Desarrollo Institucional"
+        },
+        "De los análisis en curso se desprende que entre los factores esenciales para el éxito se cuentan los dirigentes competentes que sean adecuados para el contexto y buenas asociaciones estratégicas a largo plazo que correspondan a las necesidades de desarrollo institucional de la Sociedad Nacional."
+      ]
+    },
+    {
+      "title": "Colmar la brecha digital",
+      "blocks": [
+        "A través de la iniciativa destinada a colmar la brecha digital, la secretaría de la Federación Internacional ha seguido de cerca la evolución de la capacidad de las Sociedades Nacionales en materia de comunicación y tecnologías de la información. Ciento cincuenta y cinco (155) Sociedades Nacionales respondieron a las encuestas realizadas en 2011 y 2013. En función de los resultados, se concedió prioridad a la asistencia destinada a veintiocho (28) Sociedades Nacionales. A menudo se trató de apoyo básico, por ejemplo la estabilización o la simplificación de sistemas, la conexión de secciones locales, la formación de jefes y de personal técnico, el suministro de antivirus y programas de informática,", "el establecimiento de redes de apoyo de proveedores de servicios, el aprovechamiento de la presencia mundial y de la reputación de la Federación Internacional para negociar acuerdos más favorables con empresas de tecnología. Merced a este apoyo, esas Sociedades Nacionales mejoraron en cerca de un treinta y tres por ciento (33%) su capacidad promedio en tecnologías de la información y la comunicación durante el periodo 2011-2013.",
+        {
+          "type": "image",
+          "title": "Image title",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "Servicio voluntario en un mundo en evolución",
+      "blocks": [
+        "En la República Democrática del Congo, los voluntarios ayudaron a proteger a más de dos millones personas de la poliomielitis. En Siria, los voluntarios prestan asistencia desesperadamente necesaria a más de tres millones y medio de personas cada mes. Los voluntarios de la organización estuvieron en la primera línea de combate contra el virus del ébola en África occidental y prestaron atención a cerca de siete millones de personas.",
+        "Estos ejemplos ilustrativos recuerdan que la capacidad para lograr la colaboración de voluntarios constituye uno de los pilares de la fortaleza, la eficacia y el alcance de la labor de las Sociedades Nacionales. La prueba de fuego viene cuando el voluntario interactúa con un beneficiario.",
+        "El servicio voluntario aporta considerables beneficios no pecuniarios personales y sociales a la persona concernida y a la comunidad. Para quienes se encuentran aislados y marginados, el servicio voluntario es un importante medio de inclusión social (ello incluye a las comunidades de migrantes). Se trata también de un medio esencial para la constitución del capital humano y social de las comunidades que así, pueden abogar por la satisfacción de sus necesidades y el respeto de sus derechos y fortalecer su capacidad de resistencia y recuperación ante las crisis. ",
+        "El servicio voluntario será una pieza clave en la consecución de los objetivos de desarrollo sostenible mediante el arraigo local y la intensificación de esfuerzos. El futuro apunta a la transformación del voluntario que limita su acción a la prestación de servicios al voluntario que se convierte en agente de desarrollo y, como tal, en un componente vital de acción cívica y del fomento de la capacidad de resistencia y recuperación.",
+        {
+          "type": "case-study-simple",
+          "title": "Un día en la vida de un voluntario",
+          "content": [
+            "A las seis y media de la mañana Daniel se levanta y se prepara para comenzar su turno en el servicio voluntario. El año anterior ayudó a terminar con el brote del ébola en Sierra Leona, y ahora dirige el grupo de la Cruz Roja de Sierra Leona responsable de que los cuerpos sospechosos de ser portadores de este virus sean enterrados con dignidad y en condiciones seguras. El trabajo es difícil y se han enfrentado a la oposición de las comunidades que les temen. Sus propias familias les han pedido que se vayan, los hoteles no les alquilan habitaciones y muchas tiendas se niegan a atenderles. Con todo, poco a poco, se han ganado el respeto de la población. Daniel es uno de los siete mil voluntarios de las organizaciones de la Cruz Roja y de la Media Luna Roja que trabaja en los países afectados por el ébola.",
+            "El 8 de mayo de 2015, Día Mundial de la Cruz Roja y de la Media Luna Roja, la Federación Internacional pidió a sus voluntarios de todo el mundo que ese día tomaran una instantánea de sus actividades. Se recibieron cerca de tres mil fotografías e historias de ciento diez países, que solo representan una pequeña parte de la increíble labor realizada por los voluntarios."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jóvenes afianzados para fortalecer Sociedades Nacionales sólidas",
+      "blocks": [
+        "La primera iniciativa oficial encaminada a favorecer la participación de los jóvenes en la labor de la Cruz Roja se planteó y se rechazó en 1892. Transcurrirían años antes de que, a raíz del terremoto ocurrido en San Francisco, en 1906, se registrara la primera colaboración oficial de la juventud por conducto de la Cruz Roja Americana. Desde entonces, los jóvenes han participado de manera destacada en los esfuerzos de la organización en distintas funciones, incluida su condición de precursores e innovadores en el uso de tecnologías de la comunicación, los medios sociales y otras tecnologías, embajadores interculturales y defensores de causas, instructores de homólogos, agentes de movilización de la comunidad y agentes del cambio de comportamiento.",
+        {
+          "type": "chart",
+          "title": "Jóvenes afianzados para fortalecer Sociedades Nacionales sólidas",
+          "captions": [
+            "de los voluntarios son jóvenes",
+            "del personal que trabaja en las oficinas centrales de las Sociedades Nacionales tiene menos de treinta años"
+          ],
+          "dataset": [
+            [
+              { "x": " ", "y": 50, "fill":"#EE3224" },
+              { "x": " ", "y": 50, "fill":"#F1F0EF" }
+            ],
+            [
+              { "x": " ", "y": 18, "fill":"#EE3224" },
+              { "x": " ", "y": 82, "fill":"#F1F0EF" }
+            ]
+          ],
+          "caption": ""
+        },
+        "La estrategia de la Federación Internacional para la participación significativa de la juventud centra su atención en tres dimensiones, a saber, los jóvenes en calidad de voluntarios, los jóvenes en calidad de dirigentes y los jóvenes en calidad de beneficiarios. Se estima que cerca de la mitad de los voluntarios son jóvenes y casi todas las Sociedades Nacionales incluyen la dinámica participación de los jóvenes en sus programas. El dieciocho por ciento del personal que trabaja en las oficinas centrales de las Sociedades Nacionales tiene menos de treinta años, que es la edad límite incluida en la definición de “joven” que consta en la política pertinente de la Federación Internacional, aunque los contextos culturales y las normas sociales brindan razonable margen para la variación.",
+        {
+          "type": "chart",
+          "title": "Participación significativa de la juventud",
+          "dataset": [
+            { "name": "Sociedades Nacionales cuentan con coordinadores de la juventud en sus órganos de gobierno", "number": 116 },
+            { "name": "Sociedades Nacionales cuentan con representantes de la juventud en su junta de gobierno", "number": 89 },
+            { "name": "Sociedades Nacionales cuentan con estructuras de gobiernos dirigidas por los jóvenes", "number": 69 },
+            { "name": "Sociedades Nacionales cuentan con los jóvenes para la prestación de sus servicios", "number": 108 },
+            { "name": "Sociedades Nacionales imparten a los jóvenes formación en aptitudes de dirección", "number": 76 },
+            { "name": "Sociedades Nacionales imparten formación a los jóvenes beneficiarios", "number": 110 },
+            { "name": "Sociedades Nacionales imparten formación a los jóvenes voluntarios", "number": 92 }
+          ],
+          "caption": "Fuente: Departamento de Actividades de la Juventud y Fomento del Servicio Voluntario"
+        },
+        "La organización invierte empeño en que los jóvenes beneficiarios se conviertan en voluntarios y los alienta a que asuman funciones de dirección en sus comunidades, además de mejorar sus capacidades para que puedan aspirar a empleo en su vida laboral. La educación, el fomento de la autonomía y la creación de entornos propicios son factores vitales para la participación significativa de los jóvenes en nuestra labor."
+      ]
+    }
+  ],
+  "nextChapter": {
+    "heading": "Capítulo siguiente",
+    "chapter": "8",
+    "subtitle": "Acción facilitadora 2",
+    "title": "Valernos de la diplomacia humanitaria para prevenir y reducir la vulnerabilidad en un mundo globalizado",
+    "slug": "enabling-action-2"
+  }
+}

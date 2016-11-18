@@ -1,0 +1,211 @@
+{
+  "chapter": "7",
+  "slug": "enabling-action-1",
+  "title": "Action facilitatrice 1",
+  "subtitle": "Bâtir des sociétés nationales de la croix-rouge et du croissant-rouge fortes",
+  "intro": "Les Sociétés nationales sont profondément enracinées dans le contexte dans lequel elles opèrent. Une Société nationale forte est capable de fournir, dans tout le pays, par le biais d’un réseau d’unités fonctionnant à l’aide de volontaires, un service approprié aux personnes vulnérables, aussi longtemps qu’elles en ont besoin.",
+  "sections": [
+    {
+      "title": "Capacités essentielles d'une Société nationale",
+      "blocks": [
+        "La capacité combinée des Sociétés nationales de fournir des services est la principale force de la Fédération et du Mouvement dans son ensemble.",
+        {
+          "type": "chart",
+          "title": "Capacités essentielles",
+          "src": "/img/chapters/7/core-capacities-fr.jpg",
+          "caption": "Source: Organisational Development Department"
+        },
+        "Les Sociétés nationales sont profondément enracinées dans le contexte dans lequel elles opèrent. Une Société nationale forte est capable de fournir, dans tout le pays, par le biais d’un réseau d’unités fonctionnant à l’aide de volontaires, un service approprié aux personnes vulnérables, aussi longtemps qu’elles en ont besoin.",
+        "Nous évaluons nos capacités au moyen de notre processus d’Évaluation et de certification des capacités organisationnelles (ECCO). Le processus débute par une auto-évaluation systématisée portant sur 85 caractéristiques. Chaque caractéristique est évaluée sur une échelle cumulative allant de un à cinq, l’objectif étant d’atteindre le niveau de référence pour chacune des caractéristiques.",
+        {
+          "type": "chart",
+          "title": "Évaluer les capacités au regard d’une série de caractéristiques (exemple)",
+          "headings": [
+            "Investing in skills",
+            "Succession management"
+          ],
+          "dataset": [
+            [ "A",
+              "Niveau B non atteint pour cette caractéristique",
+              "Niveau B non atteint pour cette caractéristique"
+            ],
+            [ "B",
+              "La Société nationale répertorie les compétences et les profils dont elle a besoin pour mettre en œuvre ses activités.",
+              "La Société nationale répertorie les meilleurs éléments dans sa base de volontaires et de membres du personnel. La direction encourage les jeunes de la Croix-Rouge et du Croissant-Rouge Jeunesse à devenir volontaires, et elle assure le suivi de ce processus."
+            ],
+            [ "C",
+              "La procédure de recrutement des volontaires fait une distinction entre le recrutement général et le recrutement de groupes et profils spécifiques.",
+              "La Société nationale investit dans la formation des personnes qu’elle a identifiées comme étant des talents et leur permet de bénéficier de possibilités d’apprentissage à l’intérieur et à l’extérieur de l’organisation."
+            ],
+            ["Niveau de référence pour toutes les Sociétés nationales"],
+            [ "D",
+              "La Société nationale a recensé les compétences des volontaires et du personnel qui sont nécessaires pour l’aider à faire plus, à faire mieux et à aller plus loin. Elle s’emploie à renforcer ces compétences.",
+              "La Société nationale offre une formation générale en matière de direction/ gouvernance aux futurs candidats potentiels à des postes clés."
+            ],
+            [ "E",
+              "La Société nationale dispose de suffisamment de compétences et de ressources pour se lancer dans de nouvelles activités ou élargir des activités existantes, afin de répondre aux besoins de la communauté.",
+              "La Société nationale a un plan relatif aux successions aux postes de direction."
+            ]
+          ],
+          "caption": "Source: département Développement organisationnel"
+        },
+        "Il est intéressant de noter que la force d’une Société nationale n’est pas nécessairement liée à la richesse de son pays; tant les Sociétés issues de pays riches que celles issues de pays plus pauvres peuvent devenir fortes.",
+        {
+          "type": "chart",
+          "title": "Force par rapport au niveau de richesse",
+          "legend": [
+            { "color": "#82BC01", "name": "Afrique" },
+            { "color": "#0F9EE3", "name": "Amériques" },
+            { "color": "#EE3224", "name": "Asie-Pacifique" },
+            { "color": "#5C315E", "name": "Europe" },
+            { "color": "#7E6E69", "name": "Moyen-Orient et Afrique du Nord" }
+          ],
+          "dataset": [
+            { "region": "Afrique", "x_regular_gdp": 251.0145229838, "x": 2.3996988492, "y": 94, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 268.0539113455, "x": 2.4282221487, "y": 39, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 394.775830896, "x": 2.5963505563, "y": 31, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 413.7574148529, "x": 2.6167457897, "y": 28, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 447.4371289135, "x": 2.6507320196, "y": 54, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 453.5689927392, "x": 2.6566433573, "y": 40, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 491.7899781002, "x": 2.6917796743, "y": 42, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 494.3146150632, "x": 2.6940034511, "y": 69, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 512.1031992238, "x": 2.709357489, "y": 36, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 574.1195223244, "x": 2.7590023148, "y": 53, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 634.3209745958, "x": 2.8023090721, "y": 59, "stroke": "#82BC01" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 687.2454749827, "x": 2.837111889, "y": 42, "stroke": "#EE3224" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 690.2053852927, "x": 2.8389783435, "y": 60, "stroke": "#EE3224" },
+            { "region": "Afrique", "x_regular_gdp": 693.9843611994, "x": 2.8413496838, "y": 69, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 751.9163167908, "x": 2.8761695092, "y": 33, "stroke": "#82BC01" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 752.1560525138, "x": 2.8763079546, "y": 30, "stroke": "#EE3224" },
+            { "region": "Europe", "x_regular_gdp": 870.54210662, "x": 2.939789782, "y": 47, "stroke": "#5C315E" },
+            { "region": "Afrique", "x_regular_gdp": 1023.2943547429, "x": 3.0100005782, "y": 63, "stroke": "#82BC01" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 1068.3893101576, "x": 3.028729534, "y": 72, "stroke": "#EE3224" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 1144, "x": 3.0584260245, "y": 31, "stroke": "#EE3224" },
+            { "region": "Europe", "x_regular_gdp": 1159.9297395354, "x": 3.0644316835, "y": 51, "stroke": "#5C315E" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 1243.986074645, "x": 3.0948155188, "y": 16, "stroke": "#EE3224" },
+            { "region": "Afrique", "x_regular_gdp": 1469.1211622675, "x": 3.1670576147, "y": 33, "stroke": "#82BC01" },
+            { "region": "Afrique", "x_regular_gdp": 1555.3606139083, "x": 3.1918310972, "y": 74, "stroke": "#82BC01" },
+            { "region": "Europe", "x_regular_gdp": 1716.5262836303, "x": 3.2346504578, "y": 40, "stroke": "#5C315E" },
+            { "region": "Amériques", "x_regular_gdp": 1753.6423665158, "x": 3.2439410291, "y": 14, "stroke": "#0F9EE3" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 1755.2140164853, "x": 3.2443300784, "y": 30, "stroke": "#EE3224" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 2184.1634610913, "x": 3.3392851375, "y": 31, "stroke": "#EE3224" },
+            { "region": "Amériques", "x_regular_gdp": 2322.8805603409, "x": 3.3660268795, "y": 38, "stroke": "#0F9EE3" },
+            { "region": "Amériques", "x_regular_gdp": 2575.6836947783, "x": 3.4108925287, "y": 58, "stroke": "#0F9EE3" },
+            { "region": "Amériques", "x_regular_gdp": 3330.5252303753, "x": 3.522512728, "y": 73, "stroke": "#0F9EE3" },
+            { "region": "Europe", "x_regular_gdp": 3490.2453158802, "x": 3.5428559529, "y": 79, "stroke": "#5C315E" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 3672.9669404092, "x": 3.5650170194, "y": 40, "stroke": "#EE3224" },
+            { "region": "Amériques", "x_regular_gdp": 3789.5675576278, "x": 3.5785896538, "y": 42, "stroke": "#0F9EE3" },
+            { "region": "Europe", "x_regular_gdp": 3866.9897922327, "x": 3.5873730257, "y": 62, "stroke": "#5C315E" },
+            { "region": "Moyen-Orient et Afrique du Nord", "x_regular_gdp": 4236.793630997, "x": 3.6270373106, "y": 6, "stroke": "#7E6E69" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 4467.1037911876, "x": 3.6500260432, "y": 86, "stroke": "#EE3224" },
+            { "region": "Europe", "x_regular_gdp": 4565.2698841641, "x": 3.6594664567, "y": 99, "stroke": "#5C315E" },
+            { "region": "Amériques", "x_regular_gdp": 4636, "x": 3.6661434273, "y": 49, "stroke": "#0F9EE3" },
+            { "region": "Moyen-Orient et Afrique du Nord", "x_regular_gdp": 4909.0280937704, "x": 3.6909955175, "y": 88, "stroke": "#7E6E69" },
+            { "region": "Amériques", "x_regular_gdp": 5440.4524646364, "x": 3.7356350201, "y": 51, "stroke": "#0F9EE3" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 6091.0143517459, "x": 3.7846896228, "y": 80, "stroke": "#EE3224" },
+            { "region": "Moyen-Orient et Afrique du Nord", "x_regular_gdp": 6454.619627972, "x": 3.8098706543, "y": 67, "stroke": "#7E6E69" },
+            { "region": "Europe", "x_regular_gdp": 6685.0187489763, "x": 3.8251026296, "y": 76, "stroke": "#5C315E" },
+            { "region": "Amériques", "x_regular_gdp": 6795.7724978042, "x": 3.8322388316, "y": 19, "stroke": "#0F9EE3" },
+            { "region": "Europe", "x_regular_gdp": 6797.7343069753, "x": 3.832364186, "y": 45, "stroke": "#5C315E" },
+            { "region": "Amériques", "x_regular_gdp": 7747.8413209319, "x": 3.8891807176, "y": 63, "stroke": "#0F9EE3" },
+            { "region": "Europe", "x_regular_gdp": 9036.0361679301, "x": 3.9559779606, "y": 34, "stroke": "#5C315E" },
+            { "region": "Amériques", "x_regular_gdp": 9386.3048352874, "x": 3.9724946545, "y": 58, "stroke": "#0F9EE3" },
+            { "region": "Moyen-Orient et Afrique du Nord", "x_regular_gdp": 9705.3922340726, "x": 3.9870130917, "y": 20, "stroke": "#7E6E69" },
+            { "region": "Europe", "x_regular_gdp": 12116.1546093196, "x": 4.0833648066, "y": 37, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 12707.8543136195, "x": 4.1040722273, "y": 46, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 14007.8775162772, "x": 4.1463723357, "y": 46, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 14037.015448307, "x": 4.1472747779, "y": 46, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 14183.01601695, "x": 4.1517685933, "y": 55, "stroke": "#5C315E" },
+            { "region": "Amériques", "x_regular_gdp": 15452.1735981951, "x": 4.1889895786, "y": 47, "stroke": "#0F9EE3" },
+            { "region": "Moyen-Orient et Afrique du Nord", "x_regular_gdp": 19512, "x": 4.2903017873, "y": 72, "stroke": "#7E6E69" },
+            { "region": "Europe", "x_regular_gdp": 22000.0695671819, "x": 4.3424240541, "y": 66, "stroke": "#5C315E" },
+            { "region": "Europe", "x_regular_gdp": 33071.8393135065, "x": 4.5194583492, "y": 83, "stroke": "#5C315E" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 37749.4427226249, "x": 4.5769105447, "y": 62, "stroke": "#EE3224" },
+            { "region": "Europe", "x_regular_gdp": 45931.7247863052, "x": 4.662112754, "y": 43, "stroke": "#5C315E" },
+            { "region": "Asie-Pacifique", "x_regular_gdp": 46720.3566603016, "x": 4.6695061495, "y": 73, "stroke": "#EE3224" },
+            { "region": "Moyen-Orient et Afrique du Nord", "x_regular_gdp": 92682, "x": 4.9669953969, "y": 63, "stroke": "#7E6E69" }
+          ],
+          "caption": "Source: département Développement organisationnel"
+        },
+        "Les analyses en cours laissent penser que les facteurs essentiels du succès incluent un leadership adapté au contexte et des partenariats à long terme solides et stratégiques, répondant aux besoins des Sociétés nationales en matière de développement organisationnel."
+      ]
+    },
+    {
+      "title": "Réduire la fracture numérique",
+      "blocks": [
+        "Dans le cadre de l’Initiative pour la réduction de la fracture numérique, le Secrétariat de la Fédération a recensé les capacités en matière de technologies de l’information et de la communication des 155 Sociétés nationales ayant participé aux enquêtes menées en 2011 et en 2013. Les résultats de ces enquêtes ont conduit à la décision d’apporter en priorité un soutien à 28 Sociétés nationales. Un appui souvent très élémentaire a été fourni en vue de stabiliser et simplifier des systèmes, raccorder des sections locales, former les employés et les responsables techniques, fournir des logiciels antivirus et de bureautique, mettre en place un réseau de soutien composé de prestataires de services",
+        "et mettre à profit la présence et la réputation mondiales de la Fédération pour négocier des accords plus avantageux avec les entreprises spécialisées dans les technologies. Cet appui a permis d’accroître d’un tiers en moyenne les capacités en matière de technologies de l’information et de la communication de ces 28 Sociétés nationales durant la période 2011 à 2013.",
+        {
+          "type": "image",
+          "title": "Image title",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "Le volontariat dans un monde en évolution",
+      "blocks": [
+        "En République démocratique du Congo, les volontaires ont aidé à protéger plus de deux millions de personnes de la poliomyélite. En Syrie, ils apportent chaque mois une aide vitale à plus de 3,5 millions de personnes. Nos volontaires ont été en première ligne de l’action contre l’Ebola en Afrique de l’Ouest, portant assistance à quelque 7 millions de personnes.",
+        "Ces exemples montrent que la force, l’efficacité et la portée des Sociétés nationales reposent sur leur capacité de mobiliser des volontaires et cette capacité s’exprime quand un volontaire interagit avec un bénéficiaire.",
+        "Le volontariat apporte des avantages personnels et sociaux non pécuniaires considérables aux individus et, par voie de conséquence, à leur communauté. Pour les personnes isolées et marginalisées (notamment les communautés de migrants), c’est un moyen important de parvenir à l’intégration sociale. En outre, c’est un moyen essentiel de renforcer le capital humain et social des communautés, de défendre leurs besoins et leurs droits, et de renforcer leur résilience face aux crises.",
+        "Le volontariat devra jouer un rôle central dans la réalisation des Objectifs de développement durable en en assurant la mise en œuvre au niveau local partout dans le monde. La voie à suivre consiste à considérer les volontaires non plus comme de simples prestataires de services, mais comme des acteurs du développement et donc comme des maillons essentiels de l’action civique et de la résilience.",
+        {
+          "type": "case-study-simple",
+          "title": "Une journée dans la vie d’un volontaire",
+          "content": [
+            "Il est 6 h 30 et Daniel se prépare à endosser son habit de volontaire. Depuis un an, il participe aux efforts déployés pour mettre fin à l’épidémie de maladie à virus Ebola en Sierra Leone. Il dirige aujourd’hui l’équipe de la Croix-Rouge de Sierra Leone qui procède à l’inhumation sûre et digne de dépouilles susceptibles d’être infectées par le virus. C’est un travail difficile et les membres de l’équipe se sont heurtés à une forte opposition des communautés qui avaient peur d’eux. Leurs propres familles leur ont demandé de quitter la maison, les hôtels ont refusé de leur louer des chambres et beaucoup de commerces de les servir. Mais progressivement, ils ont su gagner la confiance des communautés. Daniel est l’un des 7 000 volontaires de la Croix-Rouge à l’œuvre dans les pays touchés par le virus Ebola.",
+            "Le 8 mai 2015, Journée mondiale de la Croix-Rouge et du Croissant-Rouge, nous avons demandé à nos volontaires partout dans le monde de prendre une photo de ce qu’ils faisaient ce jour-là. Près de 3 000 photos et récits ont été présentés par 110 pays, ce qui ne représente qu’une petite partie de l’incroyable travail accompli par les volontaires."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Une jeunesse forte pour des Sociétés nationales fortes",
+      "blocks": [
+        "La première initiative formelle visant à associer les jeunes aux activités de la Croix-Rouge a vu le jour en 1892, mais a ensuite été rejetée. Ce n’est qu’en 1906, après le tremblement de terre de San Francisco, que la Croix-Rouge américaine fait état de la première contribution officielle de la jeunesse. Les jeunes sont depuis lors à l’avant-garde des efforts déployés partout dans le monde et assument de multiples rôles. Ils sont notamment des innovateurs et des adeptes précoces des moyens de communication, des réseaux sociaux et d’autres technologies ; des ambassadeurs et des défenseurs interculturels ; des éducateurs de pairs ; des agents de la mobilisation communautaire ; et des agents du changement de comportement.",
+        {
+          "type": "chart",
+          "title": "Jeunesse dans la FICR",
+          "captions": [
+            "des volontaires sont des jeunes",
+            "du personnel du siège des Sociétés nationales sont âgés de moins de 30 ans***"
+          ],
+          "dataset": [
+            [
+              { "x": " ", "y": 50, "fill":"#EE3224" },
+              { "x": " ", "y": 50, "fill":"#F1F0EF" }
+            ],
+            [
+              { "x": " ", "y": 18, "fill":"#EE3224" },
+              { "x": " ", "y": 82, "fill":"#F1F0EF" }
+            ]
+          ],
+          "caption": ""
+        },
+        "La Stratégie de la Fédération relative à la mobilisation de la jeunesse rapproche trois perspectives de la mobilisation des jeunes: les jeunes en tant que volontaires, les jeunes en tant que leaders et les jeunes en tant que bénéficiaires. Selon les estimations, la moitié de nos volontaires sont des jeunes et la quasi-totalité des Sociétés nationales favorisent une participation active de la jeunesse à leurs programmes. Environ 18% des employés des sièges des Sociétés nationales sont âgés de moins de 30 ans, ce qui correspond à la fourchette haute de la définition de la jeunesse adoptée par la Fédération, bien que les normes sociales locales et le contexte culturel autorisent certaines variations raisonnables.",
+        {
+          "type": "chart",
+          "title": "Participation de la jeunesse",
+          "dataset": [
+            { "name": "Sociétés nationales ont des coordonnateurs Jeunesse au sein de la gouvernance", "number": 116 },
+            { "name": "Sociétés nationales ont des représentants Jeunesse au sein de leur conseil de direction", "number": 89 },
+            { "name": "Sociétés nationales ont des structures de gouvernance dirigées par la jeunesse", "number": 69 },
+            { "name": "Sociétés nationales associent la jeunesse à la fourniture de services", "number": 108 },
+            { "name": "Sociétés nationales forment les jeunes aux compétences de direction", "number": 76 },
+            { "name": "Sociétés nationales forment les jeunes bénéficiaires", "number": 110 },
+            { "name": "Sociétés nationales forment les jeunes volontaires", "number": 92 }
+          ],
+          "caption": "Source: département Action Jeunesse et développement du volontariat"
+        },
+        "Nous nous attachons à donner aux jeunes bénéficiaires la possibilité de devenir des jeunes volontaires et nous les encourageons à jouer un rôle de premier plan au sein de leur communauté, tout en améliorant leurs capacités d’insertion professionnelle. L’éducation, l’autonomisation et la création d’environnements facilitateurs sont des éléments essentiels à l’optimisation de la participation des jeunes à nos activités."
+      ]
+    }
+  ],
+  "nextChapter": {
+    "heading": "Prochain chapitre",
+    "chapter": "8",
+    "subtitle": "Action facilitatrice 2",
+    "title": "Mener des activités de diplomatie humanitaire pour prévenir et réduire la vulnérabilité dans un monde interdépendant",
+    "slug": "enabling-action-2"
+  }
+}

@@ -1,0 +1,95 @@
+
+html {
+  box-sizing: border-box;
+  font-family: $font-family-base, sans-serif;
+  font-size: 100%;
+  line-height: $base-line-height;
+}
+
+.layout-rtl {
+  font-family: 'Droid Arabic Naskh';
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: $base-font-size;
+  color: $text-color-base;
+}
+
+img {
+  max-width: 100%;
+  image-rendering: optimizeQuality;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  outline: 0;
+  .icn {
+    transition: all 0.3s;
+  }
+
+  &:focus,
+  &:hover {
+    color: lighten($color-primary, 10%);
+    .icn {
+      transform: translateX(1rem);
+    }
+  }
+
+  &:active {}
+  &:visited {}
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+hr {
+  border-top: 0;
+  border-bottom: 4px solid $color-primary;
+  border-left: 0;
+  border-right: 0;
+
+  margin: 0;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 1rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+thead {
+  vertical-align: bottom;
+  text-align: left;
+  th {
+    border-top: 3px solid $color-secondary;
+  }
+}
+
+th,
+td {
+  padding: $base-unit 10 * $one;
+}
+
+tbody {
+  
+}
+
+tbody tr:nth-child(odd) {
+  background: $color-secondary;
+}
+

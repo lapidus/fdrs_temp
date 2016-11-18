@@ -1,0 +1,168 @@
+{
+    "site-title": "Everyone counts progress 2015",
+    "preTitle": "Everyone counts",
+    "reportType": "Progress Report",
+    "download": "Download the report",
+    "share": "share",
+    "signature": [
+        "website by:",
+        "Lapidus Interactive"
+    ],
+    "copyright": "@ 2016 IFRC",
+    "home": {
+        "title": [
+            "Everyone",
+            "counts",
+            "2015"
+        ],
+        "intro": [
+            "Halfway through this decade, and as we begin to close on the centenary of the International Federation of Red Cross and Red Crescent Societies (IFRC), it is timely to take stock of our delivery against the aspirations of Strategy 2020.",
+            "The picture presented in this report is encouraging. In 2013, you, the National Red Cross and Red Crescent Societies, reached more than 110 million people with disaster response and early recovery services."
+        ],
+        "signatures": [
+            {
+                "name": "Tadateru Kono\u00e9",
+                "title": "President"
+            },
+            {
+                "name": "Elhadj As Sy",
+                "title": "Secretary General"
+            }
+        ],
+        "section1": "Section 1",
+        "section2": "Section 2",
+        "section3": "Section 3",
+        "section4": "Section 4",
+        "overview": "Overview",
+        "strategicAims": "Strategic aims",
+        "enablingActions": "Enabling actions",
+        "downloadReportSection": {
+            "preTitle": "Report",
+            "title": "Want to read more?",
+            "body": "The Everyone Counts Progress Report 2015 is available in all four official languages of the IFRC. Choose a download from below.",
+            "buttons": [
+                "Download the report in English",
+                "Download the report in French",
+                "Download the report in Spanish",
+                "Download the report in Arabic"
+            ]
+        },
+        "sections": [
+            {
+                "id": "Section 1",
+                "title": "Overview",
+                "statistic": {
+                    "number": "80M",
+                    "text": "Members"
+                },
+                "fact": "The network of the International Federation of Red Cross and Red Crescent Societies spans 190 countries.",
+                "quote": "All that we do is guided by our Fundamental Principles, which are distilled from out collective experience accumulated over more than a century.",
+                "chapters": [
+                    {
+                        "title": "Who we are",
+                        "slug": "\/who-we-are"
+                    },
+                    {
+                        "title": "What we do",
+                        "slug": "\/what-we-do"
+                    },
+                    {
+                        "title": "Living our fundamental principles",
+                        "slug": "\/living-our-fundamental-principles"
+                    }
+                ]
+            },
+            {
+                "id": "Section 2",
+                "title": "Strategic aims",
+                "statistic": {
+                    "number": "110M",
+                    "text": "People reached by disaster response and early recovery programmes"
+                },
+                "fact": "The network of the International Federation of Red Cross and Red Crescent Societies spans 190 countries.",
+                "quote": "From our earliest days, the Red Cross and Red Crescent is best known for our mission to bring urgent help and comfort in moments of greatest need.",
+                "chapters": [
+                    {
+                        "pretitle": "Strategic aim 1",
+                        "title": "Save lives, protect livelihoods and strengthen recovery from disasters and crises",
+                        "slug": "\/strategic-aim-1"
+                    },
+                    {
+                        "pretitle": "Strategic aim 2",
+                        "title": "Healthy and safe living",
+                        "slug": "\/strategic-aim-2"
+                    },
+                    {
+                        "pretitle": "Strategic aim 3",
+                        "title": "Social inclusion and a culture of non-violence and peace",
+                        "slug": "\/strategic-aim-3"
+                    }
+                ]
+            },
+            {
+                "id": "Section 3",
+                "title": "Enabling actions",
+                "statistic": {
+                    "number": "190",
+                    "text": "National Societies"
+                },
+                "fact": "To inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world.",
+                "quote": "Since the adoption of Strategy 2020, the major effort seeking to improve our functioning as the IFRC has been on strengthening our governance, introducing a framework for accountability, and promoting a culture of learning.",
+                "chapters": [
+                    {
+                        "pretitle": "Enabling action 1",
+                        "title": "Strong national red cross and red crescent societies",
+                        "slug": "\/enabling-action-1"
+                    },
+                    {
+                        "pretitle": "Enabling action 2",
+                        "title": "Humanitarian diplomacy to prevent and reduce vulnerability in a globalised world",
+                        "slug": "\/enabling-action-2"
+                    },
+                    {
+                        "pretitle": "Enabling action 3",
+                        "title": "Function effectively as the IFRC",
+                        "slug": "\/enabling-action-3"
+                    }
+                ]
+            },
+            {
+                "id": "Section 4",
+                "title": "Annexes",
+                "chapters": [
+                    {
+                        "preTitle": "Data tools",
+                        "title": "Explore the data",
+                        "slug": "\/data",
+                        "body": [
+                            "See the seven key indicators across all National Societies",
+                            "Find information about your National Society"
+                        ],
+                        "button": "Explore the data from FDRS"
+                    },
+                    {
+                        "title": "Acknowledgements",
+                        "slug": "acknowledgements"
+                    }
+                ]
+            }
+        ]
+    },
+    "data": {
+        "title": "Data",
+        "subtitle": "From the Federation-Wide Databank and Reporting System",
+        "indicators-title": "Key Indicators",
+        "bubble-size": "Bubble size",
+        "national-society": "National society",
+        "guide": "Select a key indicator to see on the map",
+        "indicators": {
+            "KPI_Number_of_People_Volunteering": "Volunteers",
+            "KPI_Number_of_PaidStaff": "Paid Staff",
+            "KPI_Total_Number_of_People_Donating_Blood": "Blood Donors",
+            "KPI_Number_of_Local_Units": "Local Units",
+            "KPI_Number_of_People_Reached_AllServices": "People Reached",
+            "Total_Expenditure_CHF": "Expenditure",
+            "Total_Income_CHF": "Income"
+        }
+    }
+}

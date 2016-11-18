@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>Universality</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.197623762 39.8019802 0.197623762 39.8019802 39.9762376 0 39.9762376"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Universality">
+            <g id="icon-Universality">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M19.9009901,40 C30.8918812,40 39.8019802,31.089901 39.8019802,20.0990099 C39.8019802,9.10772277 30.8918812,0.197623762 19.9009901,0.197623762 C8.90970297,0.197623762 0,9.10772277 0,20.0990099 C0,31.089901 8.90970297,40 19.9009901,40" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <polygon id="Fill-4" fill="#CCCCCC" points="10.4118812 10.6289109 23.8839604 10.6289109 23.8839604 14.0233663 10.4118812 14.0233663"></polygon>
+                <polygon id="Fill-5" fill="#CCCCCC" points="15.9180198 26.1734653 29.390099 26.1734653 29.390099 29.5683168 15.9180198 29.5683168"></polygon>
+                <polygon id="Fill-6" fill="#CCCCCC" points="10.4118812 15.7877228 13.8063366 15.7877228 13.8063366 29.5683168 10.4118812 29.5683168"></polygon>
+                <polygon id="Fill-7" fill="#CCCCCC" points="25.9920792 10.6289109 29.3865347 10.6289109 29.3865347 24.409505 25.9920792 24.409505"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,88 @@
+
+$textfield-underline-weight: 2 * $one;
+
+.textfield-wrapper {
+  margin-top: $base-unit;
+  margin-bottom: $base-unit;
+}
+
+.textfield {
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100%;
+  background: transparent;
+  overflow: hidden;
+  padding: 0;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $textfield-underline-weight;
+    background: darken($color-secondary, 10%);
+  }
+  &:after {
+    background: $color-primary;
+    transform: scale(0, 1);
+    transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+}
+
+.textfield.is-focused {
+  .textfield__label { transform: scale(0.75) translateY(0); }
+  .textfield__input { opacity: 1; }
+  &:after { transform: scale(1, 1); }
+}
+
+.textfield.has-value {
+  .textfield__label { transform: scale(0.75) translateY(0); }
+  .textfield__input { opacity: 1; }
+}
+
+.textfield.is-highlighted {
+  .textfield__label { color: $color-primary; }
+}
+
+.textfield__label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: inherit;
+  background: transparent;
+
+  transform: scale(1) translateY(18px);
+  transform-origin: 0 0;
+
+  transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.textfield__input {
+  display: block;
+  line-height: inherit;
+  padding-top: $one * 6;
+  padding-bottom: $one * 5;
+  padding-left: 0;
+  padding-right: 0;
+
+  margin: 0;
+  margin-top: 12px;
+  width: 100%;
+
+  background: transparent;
+
+  // margin: (12 * $one) ($base-unit / 2) 0 ($base-unit / 2);
+
+  border: 0;
+  border-bottom: $textfield-underline-weight solid transparent;
+
+  outline: none;
+  opacity: 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

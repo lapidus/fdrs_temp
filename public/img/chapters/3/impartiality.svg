@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>Impartiality</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.0304950495 39.9691089 0.0304950495 39.9691089 39.9762376 0 39.9762376"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Impartiality">
+            <g id="icon-Impartiality">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M19.9841584,40 C31.0217822,40 39.9691089,31.0526733 39.9691089,20.0154455 C39.9691089,8.97782178 31.0217822,0.0304950495 19.9841584,0.0304950495 C8.94732673,0.0304950495 0,8.97782178 0,20.0154455 C0,31.0526733 8.94732673,40 19.9841584,40" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <polygon id="Fill-4" fill="#CCCCCC" points="7.54811881 18.2594059 14.6879208 18.2594059 14.6879208 21.770297 7.54811881 21.770297"></polygon>
+                <polygon id="Fill-5" fill="#CCCCCC" points="25.2807921 18.2594059 32.4205941 18.2594059 32.4205941 21.770297 25.2807921 21.770297"></polygon>
+                <polygon id="Fill-6" fill="#CCCCCC" points="18.2285149 9.36435644 21.740198 9.36435644 21.740198 30.6661386 18.2285149 30.6661386"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

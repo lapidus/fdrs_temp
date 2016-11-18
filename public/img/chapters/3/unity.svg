@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>Unity</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.197623762 39.8019802 0.197623762 39.8019802 39.9762376 0 39.9762376"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Unity">
+            <g id="icon-Unity">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M19.9009901,40 C30.8918812,40 39.8019802,31.089901 39.8019802,20.0990099 C39.8019802,9.10772277 30.8918812,0.197623762 19.9009901,0.197623762 C8.90970297,0.197623762 0,9.10772277 0,20.0990099 C0,31.089901 8.90970297,40 19.9009901,40" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <path d="M26.3516832,14.7540594 C28.4213861,16.9916832 29.2764356,20.2570297 28.3148515,23.4035644 C26.880396,28.0950495 21.9512871,30.7457426 17.3037624,29.3247525 C12.6570297,27.9045545 10.0530693,22.950495 11.4871287,18.2594059 C12.9211881,13.5683168 17.8510891,10.9172277 22.4974257,12.3378218" id="Stroke-4" stroke="#CCCCCC" stroke-width="3"></path>
+                <polyline id="Fill-5" fill="#CCCCCC" points="25.7493069 11.9556436 18.3516832 5.15445545 18.4712871 18.8847525 25.7493069 11.9556436"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

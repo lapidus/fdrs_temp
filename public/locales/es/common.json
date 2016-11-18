@@ -1,0 +1,167 @@
+{
+    "site-title": "Todos y cada uno tienen importancia - Progreso hasta 2015",
+    "preTitle": "Todos y cada uno tienen importancia",
+    "reportType": "Informe de Progreso",
+    "download": "Descargar el informe",
+    "share": "Compartir",
+    "signature": [
+        "P\u00e1gina web por:",
+        "Lapidus Interactive"
+    ],
+    "copyright": "@ 2016 IFRC",
+    "home": {
+        "title": [
+            "Todos y cada uno tienen",
+            "importancia",
+            "2015"
+        ],
+        "intro": [
+            "Una vez transcurridos los cinco primeros a\u00f1os del decenio y a medida que se aproxima el centenario de la Federaci\u00f3n Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja (Federaci\u00f3n Internacional) es oportuno establecer un balance de nuestros resultados con respecto a las aspiraciones enunciadas en la Estrategia 2020",
+            "El panorama que traza este informe es alentador. En 2013, las Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja prestaron ayuda a m\u00e1s de ciento diez (110) millones de personas mediante servicios de intervenci\u00f3n y de recuperaci\u00f3n temprana."
+        ],
+        "signatures": [
+            {
+                "name": "Tadateru Kono\u00e9",
+                "title": "Presidente"
+            },
+            {
+                "name": "Elhadj As Sy",
+                "title": "Secretario General"
+            }
+        ],
+        "section1": "Secci\u00f3n 1",
+        "section2": "Secci\u00f3n 2",
+        "section3": "Secci\u00f3n 3",
+        "section4": "Secci\u00f3n 4",
+        "overview": "Visi\u00f3n de conjunto",
+        "strategicAims": "Objetivos estrat\u00e9gicos",
+        "enablingActions": "Acci\u00f3nes facilitadores",
+        "downloadReportSection": {
+            "preTitle": "Informe",
+            "title": "Quieres leer m\u00e1s?",
+            "buttons": [
+                "Descargar en ingles",
+                "Descargar en franc\u00e9s",
+                "Descargar en espa\u00f1ol",
+                "Descargar en \u00e1rabe"
+            ]
+        },
+        "sections": [
+            {
+                "id": "Secci\u00f3n 1",
+                "title": "Visi\u00f3n de conjunto",
+                "statistic": {
+                    "number": "80M",
+                    "text": "Miembros"
+                },
+                "fact": "La Federaci\u00f3n Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja acusa constante crecimiento desde sus or\u00edgenes en 1863 y, desde 2015, cuenta con 190 Sociedades Nacionales.",
+                "quote": "Los principios fundamentales son la piedra angular de cuanto hacemos y emanan de nuestra experiencia colectiva acumulada a lo largo de m\u00e1s de un siglo de actividades.",
+                "chapters": [
+                    {
+                        "title": "Nuestra Identidad",
+                        "slug": "\/who-we-are"
+                    },
+                    {
+                        "title": "Nuestra Labor",
+                        "slug": "\/what-we-do"
+                    },
+                    {
+                        "title": "Los Principios Fundamentales En La Pr\u00e1ctica Cotidiana",
+                        "slug": "\/living-our-fundamental-principles"
+                    }
+                ]
+            },
+            {
+                "id": "Secci\u00f3n 2",
+                "title": "Objetivos estrat\u00e9gicos",
+                "statistic": {
+                    "number": "110M",
+                    "text": "Beneficiarios de las intervenciones motivadas por desastres y de programas en apoyo a la recuperaci\u00f3n inicial"
+                },
+                "fact": "La visi\u00f3n de la Federaci\u00f3n es: Inspirar, estimular, facilitar y promover en todo momento todas las formas de actividades humanitarias realizadas por las sociedades Nacionales, con el prop\u00f3sito de prevenir y aliviar el sufrimiento humano, con lo que se contribuye al mantenimiento y la promoci\u00f3n de la dignidad humana y la paz en el mundo.",
+                "quote": "Desde sus or\u00edgenes, se conoce a las organizaciones de la Cruz\ufffcRoja y de la Media Luna Roja por su cometido de prestar asistencia urgente y consuelo a las personas en momentos de gran necesidad",
+                "chapters": [
+                    {
+                        "pretitle": "Objetivo estrat\u00e9gico 1",
+                        "title": "Salvar vidas, proteger los medios de sustento y apoyar la recuperaci\u00f3n despu\u00e9s de desastres y crisis",
+                        "slug": "\/strategic-aim-1"
+                    },
+                    {
+                        "pretitle": "Objetivo estrat\u00e9gico 2",
+                        "title": "Posibilitar una vida sana y segura",
+                        "slug": "\/strategic-aim-2"
+                    },
+                    {
+                        "pretitle": "Objetivo estrat\u00e9gico 3",
+                        "title": "Promover la inclusi\u00f3n social y una cultura de no violencia y paz",
+                        "slug": "\/strategic-aim-3"
+                    }
+                ]
+            },
+            {
+                "id": "Secci\u00f3n 3",
+                "title": "Acci\u00f3nes facilitadores",
+                "statistic": {
+                    "number": "190",
+                    "text": "Sociedades Nacionales"
+                },
+                "fact": "La mayor fortaleza de la Federaci\u00f3n Internacional y del Movimiento en su conjunto reside en la capacidad aunada de servicio de las Sociedades Nacionales.",
+                "quote": "Desde la aprobaci\u00f3n de la Estrategia 2020, los esfuerzos encaminados a mejorar el funcionamiento de la Federaci\u00f3n Internacional en calidad de organizaci\u00f3n han girado en torno al fortalecimiento de los \u00f3rganos y las funciones de gobierno, el establecimiento de un marco para la rendici\u00f3n de cuentas y la promoci\u00f3n de una cultura de incorporaci\u00f3n de ense\u00f1anzas.",
+                "chapters": [
+                    {
+                        "pretitle": "Acci\u00f3n facilitadora 1 ",
+                        "title": "Construir Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja fuertes",
+                        "slug": "\/enabling-action-1"
+                    },
+                    {
+                        "pretitle": "Acci\u00f3n facilitadora 2",
+                        "title": "Valernos de la diplomacia humanitaria para prevenir y reducir la vulnerabilidad en un mundo globalizado",
+                        "slug": "\/enabling-action-2"
+                    },
+                    {
+                        "pretitle": "Acci\u00f3n facilitadora 3",
+                        "title": "Funcionar con eficacia como Federaci\u00f3n Internacional",
+                        "slug": "\/enabling-action-3"
+                    }
+                ]
+            },
+            {
+                "id": "Secci\u00f3n 4",
+                "title": "Ap\u00e9ndices",
+                "chapters": [
+                    {
+                        "preTitle": "Herramientas de datos",
+                        "title": "Explorar los datos",
+                        "slug": "\/data",
+                        "body": [
+                            "Las siete indicadores claves",
+                            "Informaci\u00f3n sobre su Sociedad Nacional"
+                        ],
+                        "button": "Explorar los datos"
+                    },
+                    {
+                        "title": "Agradecimiento",
+                        "slug": "acknowledgements"
+                    }
+                ]
+            }
+        ]
+    },
+    "data": {
+        "title": "Datos",
+        "subtitle": "Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional",
+        "indicators-title": "Indicadores claves",
+        "bubble-size": "Bubble size",
+        "national-society": "Sociedad Nacional",
+        "guide": "Seleccionar un indicador para ver en el mapa",
+        "indicators": {
+            "KPI_Number_of_People_Volunteering": "Voluntarios",
+            "KPI_Number_of_PaidStaff": "Personal remunerado",
+            "KPI_Total_Number_of_People_Donating_Blood": "Donantes de sangre",
+            "KPI_Number_of_Local_Units": "Unidades locales",
+            "KPI_Number_of_People_Reached_AllServices": "Beneficiarios",
+            "Total_Expenditure_CHF": "Gastos",
+            "Total_Income_CHF": "Ingresos"
+        }
+    }
+}
