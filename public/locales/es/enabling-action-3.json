@@ -1,313 +1,218 @@
 {
-    "chapter": "9",
-    "slug": "enabling-action-3",
-    "title": "Acci\u00f3n facilitadora 3",
-    "subtitle": "Funcionar con eficacia como Federaci\u00f3n Internacional",
-    "intro": "Desde la aprobaci\u00f3n de la Estrategia 2020, los esfuerzos encaminados a mejorar el funcionamiento de la Federaci\u00f3n Internacional en calidad de organizaci\u00f3n han girado en torno al fortalecimiento de los \u00f3rganos y las funciones de gobierno, el establecimiento de un marco para la rendici\u00f3n de cuentas y la promoci\u00f3n de una cultura de incorporaci\u00f3n de ense\u00f1anzas.",
-    "sections": [
+  "chapter": "9",
+  "slug": "enabling-action-3",
+  "title": "Acción facilitadora 3",
+  "subtitle": "Funcionar con eficacia como Federación Internacional",
+  "intro": "Desde la aprobación de la Estrategia 2020, los esfuerzos encaminados a mejorar el funcionamiento de la Federación Internacional en calidad de organización han girado en torno al fortalecimiento de los órganos y las funciones de gobierno, el establecimiento de un marco para la rendición de cuentas y la promoción de una cultura de incorporación de enseñanzas.",
+  "sections": [
+    {
+      "title": "Órganos de gobierno informados",
+      "blocks": [
+        "Un indicador de buen gobierno reside en el cumplimiento por parte de las Sociedades Nacionales de la obligación que les incumbe con respecto a la actualización de sus estatutos y demás instrumentos de base jurídica, de manera que guarden consonancia con la evolución del mundo. Por regla general, una Sociedad Nacional debería proceder a la revisión de sus estatutos cada diez años.",
+        "A finales de 2013, el veintiséis por ciento (26%) de las Sociedades Nacionales contaba con estatutos que satisfacían los requisitos mínimos y más del sesenta por ciento (60%) de ellas había emprendido la revisión de los instrumentos de base jurídica. Se trata de un proceso arduo pues las Sociedades Nacionales son entidades democráticas de pirámide ascendente en las que los miembros deben sentirse identificados con los cambios en esos textos y estos deben corresponder al contexto social y cultural local.",
         {
-            "title": "\u00d3rganos de gobierno informados",
-            "blocks": [
-                "Un indicador de buen gobierno reside en el cumplimiento por parte de las Sociedades Nacionales de la obligaci\u00f3n que les incumbe con respecto a la actualizaci\u00f3n de sus estatutos y dem\u00e1s instrumentos de base jur\u00eddica, de manera que guarden consonancia con la evoluci\u00f3n del mundo. Por regla general, una Sociedad Nacional deber\u00eda proceder a la revisi\u00f3n de sus estatutos cada diez a\u00f1os.",
-                "A finales de 2013, el veintis\u00e9is por ciento (26%) de las Sociedades Nacionales contaba con estatutos que satisfac\u00edan los requisitos m\u00ednimos y m\u00e1s del sesenta por ciento (60%) de ellas hab\u00eda emprendido la revisi\u00f3n de los instrumentos de base jur\u00eddica. Se trata de un proceso arduo pues las Sociedades Nacionales son entidades democr\u00e1ticas de pir\u00e1mide ascendente en las que los miembros deben sentirse identificados con los cambios en esos textos y estos deben corresponder al contexto social y cultural local.",
-                {
-                    "type": "chart",
-                    "title": "Examen de los estatutos de las Sociedades Nacionales",
-                    "dataset": [
-                        {
-                            "x": [
-                                "de los estatutos",
-                                " cumplen con",
-                                " los requisitos",
-                                " m\u00ednimos",
-                                "(26)"
-                            ],
-                            "y": "26",
-                            "fill": "#84BB23"
-                        },
-                        {
-                            "x": [
-                                "de los ",
-                                "procesos ",
-                                "de revisi\u00f3n",
-                                " todav\u00eda ",
-                                "sin iniciar",
-                                "(10)"
-                            ],
-                            "y": "10",
-                            "fill": "#012A39"
-                        },
-                        {
-                            "x": [
-                                "de los ",
-                                "estatutos ",
-                                "no cumplen con los ",
-                                "requisitos m\u00ednimos",
-                                " (2)"
-                            ],
-                            "y": "2",
-                            "fill": "#EE3224"
-                        },
-                        {
-                            "x": [
-                                "de los ",
-                                "estatutos est\u00e1n",
-                                "en proceso",
-                                " de revisi\u00f3n",
-                                "(62)"
-                            ],
-                            "y": "62",
-                            "fill": "#FED02F"
-                        }
-                    ],
-                    "caption": "Fuente: Cooperaci\u00f3n y Apoyo a \u00d3rganos de Gobierno"
-                },
-                "Al mismo tiempo, las Sociedades Nacionales son miembros de la Federaci\u00f3n Internacional y deben cumplir con requisitos m\u00ednimos. Para la mayor\u00eda de Sociedades Nacionales se trata de un proceso de desarrollo y la revisi\u00f3n de los estatutos pone al orden del d\u00eda importantes di\u00e1logos nacionales sobre el lugar de estas organizaciones en el entorno de sus pa\u00edses."
-            ]
+          "type": "chart",
+          "title": "Examen de los estatutos de las Sociedades Nacionales",
+          "dataset": [
+            { "x": "de los estatutos\n cumplen con\n los requisitos\n mínimos\n(26)", "y": 26, "fill":"#84BB23" },
+            { "x": "de los \nprocesos \nde revisión\n todavía \nsin iniciar\n(10)", "y": 10, "fill":"#012A39" },
+            { "x": "de los \nestatutos \nno cumplen con los \nrequisitos mínimos\n (2)", "y": 2, "fill":"#EE3224" },
+            { "x": "de los \nestatutos están\nen proceso\n de revisión\n(62)", "y": 62, "fill":"#FED02F" }
+          ],
+          "caption": "Fuente: Cooperación y Apoyo a Órganos de Gobierno"
+        },
+        "Al mismo tiempo, las Sociedades Nacionales son miembros de la Federación Internacional y deben cumplir con requisitos mínimos. Para la mayoría de Sociedades Nacionales se trata de un proceso de desarrollo y la revisión de los estatutos pone al orden del día importantes diálogos nacionales sobre el lugar de estas organizaciones en el entorno de sus países."
+      ]
+    },
+    {
+      "title": "Marco de rendición de cuentas",
+      "blocks": [
+        "Todos los miembros de la Federación Internacional comparten una identidad común a través de los emblemas de la cruz roja o de la media luna roja y de la adhesión a los principios fundamentales en toda circunstancia. Así, es importante que todos y cada uno de los miembros preserve su buena reputación para que el público no pierda fe y confianza tanto en los demás miembros como en la Federación Internacional en su conjunto.",
+        {
+          "type": "image",
+          "title": "Image title",
+          "caption": "Fuente: Departamento de Auditoría y Gestión del Riesgo"
+        },
+        "Se define internamente a la rendición de cuentas como un proceso constante que genera respeto mutuo entre los miembros y por parte de quienes se ven concernidos por nuestra labor. Mediante la rendición de cuentas se habilita a las partes interesadas para que sopesen nuestras acciones con respecto a expectativas y obligaciones claras de manera que puedan reaccionar e incorporar enseñanzas. Se adelanta con paso firme en la elaboración un plan de rendición de cuentas.",
+        "Las evaluaciones y auditorías periódicas son otro elemento importante de la rendición de cuentas."
+      ]
+    },
+    {
+      "title": "Evaluaciones",
+      "blocks": [
+        "Los informes narrativos y la información financiera operativa, junto con los informes de evaluación se encuentran libremente a disposición en el sitio web de la Federación Internacional. El marco para la evaluación es conforme a las normas del sector y se ha distribuido ampliamente una guía de orientación sobre los métodos, los módulos de formación y los cursos en línea.",
+        "Todo proyecto que emprende la organización debe ser objeto de una evaluación final, cuya magnitud guardará correlación con el tamaño del proyecto, con la finalidad de analizar los resultados y aprender de las enseñanzas que se extraigan. Existe obligación de realizar evaluaciones independientes cuando el presupuesto de la intervención supera un millón de francos suizos. Las evaluaciones en tiempo real son obligatorias en el caso de operaciones de emergencia que superan una duración de nueve (9) meses, abarcan a más de cien mil (100 000) beneficiarios, han sido objeto de un llamamiento de emergencia cuyo monto supera los diez (10) millones de francos suizos o han supuesto la participación de más de diez Sociedades Nacionales asociadas.",
+        {
+          "type": "chart",
+          "title": "Informes por tipo de evaluación",
+          "dataset": [
+            { "y": 3, "x": "Evaluación inicial" },
+            { "y": 7, "x": "Estudio de caso e investigación" },
+            { "y": 9, "x": "Evaluación final" },
+            { "y": 2, "x": "Evaluación de la incidencia" },
+            { "y": 1, "x": "Evaluación de la incidencia, el estudio de caso e investigació" },
+            { "y": 3, "x": "Evaluación intermedia" },
+            { "y": 1, "x": "Evaluación en tiempo real" },
+            { "y": 10, "x": "Examen" },
+            { "y": 2, "x": "Encuesta" }
+          ],
+          "caption": "Fuente: Departamento de Planificación y Evaluación"
+        },
+        "El archivo de las evaluaciones concluidas y demás estudios conexos realizados por la secretaría de la Federación Internacional está disponible para consulta pública e incluye más de trescientos cincuenta (350) informes de los cuales doscientos cinco (205) corresponden al periodo 2010-2014."
+      ]
+    },
+    {
+      "title": "Auditorías",
+      "blocks": [
+        "Parecería existir una correlación entre el envío de información financiera y los ingresos y el tamaño de las Sociedades Nacionales. En 2013, existía mayor probabilidad de recibir estados financieros de las Sociedades Nacionales con ingresos superiores a un millón de francos suizos y con más de veinticinco (25) miembros del personal. La probabilidad de que realizaran auditorías externas era también mayor si los ingresos excedían diez (10) millones de francos suizos y contaban con más de doscientos cincuenta (250) miembros del personal. Es razonable el establecimiento de cotas de referencia que guarden correlación con el tamaño de la Sociedad Nacional y su eventual exposición a riesgos, aunque todos los miembros deban satisfacer requisitos mínimos. Se podría invertir más en el apoyo a las Sociedades Nacionales más pequeñas, así, por ejemplo, la secretaría de la Federación Internacional podría facilitarles servicios de auditoría compartidos y consolidar sus cuentas cada dos o tres años para someterlas a auditoría externa.",
+        {
+          "type": "chart",
+          "title": "Porcentaje de Sociedades Nacionales que han presentado estados financieros",
+          "caption": "Fuente: Banco de datos y sistema de información general interno de la Federación Internacional"
         },
         {
-            "title": "Marco de rendici\u00f3n de cuentas",
-            "blocks": [
-                "Todos los miembros de la Federaci\u00f3n Internacional comparten una identidad com\u00fan a trav\u00e9s de los emblemas de la cruz roja o de la media luna roja y de la adhesi\u00f3n a los principios fundamentales en toda circunstancia. As\u00ed, es importante que todos y cada uno de los miembros preserve su buena reputaci\u00f3n para que el p\u00fablico no pierda fe y confianza tanto en los dem\u00e1s miembros como en la Federaci\u00f3n Internacional en su conjunto.",
-                {
-                    "type": "image",
-                    "title": "Image title",
-                    "caption": "Fuente: Departamento de Auditor\u00eda y Gesti\u00f3n del Riesgo"
-                },
-                "Se define internamente a la rendici\u00f3n de cuentas como un proceso constante que genera respeto mutuo entre los miembros y por parte de quienes se ven concernidos por nuestra labor. Mediante la rendici\u00f3n de cuentas se habilita a las partes interesadas para que sopesen nuestras acciones con respecto a expectativas y obligaciones claras de manera que puedan reaccionar e incorporar ense\u00f1anzas. Se adelanta con paso firme en la elaboraci\u00f3n un plan de rendici\u00f3n de cuentas.",
-                "Las evaluaciones y auditor\u00edas peri\u00f3dicas son otro elemento importante de la rendici\u00f3n de cuentas."
-            ]
+          "type": "chart",
+          "title": "Porcentaje de Sociedades Nacionales que han presentado estados financieros auditados externamente",
+          "caption": "Fuente: Banco de datos y sistema de información general interno de la Federación Internacional"
+        },
+        "En 2012, ochenta (80) Sociedades Nacionales suministraron estados financieros auditados por conducto del banco de datos y sistema de información general interno. En 2013, ochenta y ocho (88) lo hicieron."
+      ]
+    },
+    {
+      "title": "Cumplimiento normativo",
+      "blocks": [
+        "Las Sociedades Nacionales son órganos dinámicos que, de manera comprensible, acusan la influencia de factores internos y externos, que pueden cambiar ante la modificación de sus circunstancias. La Junta de Gobierno ha establecido un Comité de Cumplimiento y Mediación para prestar asistencia a las Sociedades Nacionales en la solución de desacuerdos que se someten a su consideración o para superar dificultades, por ejemplo con relación a eventuales infracciones de las normas de integridad.",
+        "Un grupo de miembros registrados en una Sociedad Nacional se empezó a preocupar seriamente por el daño que causaban a la reputación de la organización ciertas denuncias relacionadas con apropiación indebida de fondos, abuso del cargo en beneficio propio, incumplimiento de los principios fundamentales y ganancias personales. La junta de gobierno de la Sociedad Nacional no respondió a sus inquietudes y el grupo reclamante convocó una asamblea general extraordinaria que votó una moción de no confianza en contra de las instancias de gobierno y de gestión, y eligió a unos reemplazantes. El caso se sometió ante la corte suprema del país para que dictaminara acerca de la legitimidad de los dos mecanismos de gobierno enfrentados. La controversia llegó a alarmar a las autoridades públicas que solicitaron la intervención de la secretaría de la Federación Internacional.",
+        "El Comité de Cumplimiento y Mediación de la Federación Internacional recurrió a intermediarios fiables y puso en sus manos la negociación de un acuerdo que implicaba la designación de una nueva junta de gobierno provisional que tomara las riendas de la Sociedad Nacional. Además, la secretaría de la Federación Internacional proporcionó apoyo técnico para enmendar los estatutos e incorporar una disposición que obligara a celebrar una asamblea general al año. El proceso siguió su curso de forma apropiada y los órganos de gobierno recién elegidos permitieron finalizar las auditorías financieras del periodo objeto de controversia y solucionar los problemas planteados. La Sociedad Nacional se recuperó y ahora funciona adecuadamente.",
+        "Las enseñanzas extraídas de este caso ilustran la necesidad de que las Sociedades Nacionales permanezcan siempre vigilantes con respecto de su integridad y tomen la iniciativa de enfrentarse a los problemas y combatir toda resistencia con perseverancia. La secretaría de la Federación Internacional puede mediar para la búsqueda de soluciones y para asegurar la observancia de las normas de integridad a las que están sometidas las Sociedades Nacionales."
+      ]
+    },
+    {
+      "title": "Cultura de formación",
+      "blocks": [
+        "La formación es un elemento esencial que favorece la adaptación y la actualización de una institución sujeta a un mundo en transformación. Otro aspecto importante reside en el fomento de la profesionalidad de quienes colaboran con las organizaciones de la Cruz Roja y de la Media Luna Roja a fin de que gocen de mayor credibilidad al demostrar que cumplen con normas explícitas. Ello explica que se aliente una filosofía de formación y aprendizaje continuos. ",
+        {
+          "type": "chart",
+          "title": "Idiomas disponibles en la plataforma de formación",
+          "dataset": [
+            { "y": 108, "x": "Inglés" },
+            { "y": 85, "x": "Francés" },
+            { "y": 81, "x": "Español" },
+            { "y": 44, "x": "Italiano" },
+            { "y": 43, "x": "Portugués" },
+            { "y": 30, "x": "Alemán" },
+            { "y": 30, "x": "Chino" },
+            { "y": 28, "x": "Ruso" },
+            { "y": 20, "x": "Árabe" },
+            { "y": 63, "x": "Otros" }
+          ],
+          "caption": "Fuente: Departamento de Formación e Investigación"
+        },
+        "La formación es un elemento esencial que favorece la adaptación y la actualización de una institución sujeta a un mundo en transformación. Otro aspecto importante reside en el fomento de la profesionalidad de quienes colaboran con las organizaciones de la Cruz Roja y de la Media Luna Roja a fin de que gocen de mayor credibilidad al demostrar que cumplen con normas explícitas. ",
+        "La plataforma de formación de la Federación Internacional es una comunidad mundial en línea que, no obstante, guarda rasgos locales, en la que se encuentran disponibles ciento treinta y un (131) cursos en dieciséis (16) idiomas",
+        "En los últimos seis años, un promedio anual de 489 miembros del personal de las organizaciones de la Cruz Roja y de la Media Luna Roja han cursado la formación básica de preparación para la acción y la movilización internacional en el contexto de su preparación para una misión.",
+        {
+          "type": "chart",
+          "title": "Curso sobre movilización internacional y preparación para la acción (curso)",
+          "caption": "Fuente: Departamento de Formación e Investigación"
         },
         {
-            "title": "Evaluaciones",
-            "blocks": [
-                "Los informes narrativos y la informaci\u00f3n financiera operativa, junto con los informes de evaluaci\u00f3n se encuentran libremente a disposici\u00f3n en el sitio web de la Federaci\u00f3n Internacional. El marco para la evaluaci\u00f3n es conforme a las normas del sector y se ha distribuido ampliamente una gu\u00eda de orientaci\u00f3n sobre los m\u00e9todos, los m\u00f3dulos de formaci\u00f3n y los cursos en l\u00ednea.",
-                "Todo proyecto que emprende la organizaci\u00f3n debe ser objeto de una evaluaci\u00f3n final, cuya magnitud guardar\u00e1 correlaci\u00f3n con el tama\u00f1o del proyecto, con la finalidad de analizar los resultados y aprender de las ense\u00f1anzas que se extraigan. Existe obligaci\u00f3n de realizar evaluaciones independientes cuando el presupuesto de la intervenci\u00f3n supera un mill\u00f3n de francos suizos. Las evaluaciones en tiempo real son obligatorias en el caso de operaciones de emergencia que superan una duraci\u00f3n de nueve (9) meses, abarcan a m\u00e1s de cien mil (100 000) beneficiarios, han sido objeto de un llamamiento de emergencia cuyo monto supera los diez (10) millones de francos suizos o han supuesto la participaci\u00f3n de m\u00e1s de diez Sociedades Nacionales asociadas.",
-                {
-                    "type": "chart",
-                    "title": "Informes por tipo de evaluaci\u00f3n",
-                    "dataset": [
-                        {
-                            "y": "3",
-                            "x": "Evaluaci\u00f3n inicial"
-                        },
-                        {
-                            "y": "7",
-                            "x": "Estudio de caso e investigaci\u00f3n"
-                        },
-                        {
-                            "y": "9",
-                            "x": "Evaluaci\u00f3n final"
-                        },
-                        {
-                            "y": "2",
-                            "x": "Evaluaci\u00f3n de la incidencia"
-                        },
-                        {
-                            "y": "1",
-                            "x": "Evaluaci\u00f3n de la incidencia, el estudio de caso e investigaci\u00f3"
-                        },
-                        {
-                            "y": "3",
-                            "x": "Evaluaci\u00f3n intermedia"
-                        },
-                        {
-                            "y": "1",
-                            "x": "Evaluaci\u00f3n en tiempo real"
-                        },
-                        {
-                            "y": "10",
-                            "x": "Examen"
-                        },
-                        {
-                            "y": "2",
-                            "x": "Encuesta"
-                        }
-                    ],
-                    "caption": "Fuente: Departamento de Planificaci\u00f3n y Evaluaci\u00f3n"
-                },
-                "El archivo de las evaluaciones concluidas y dem\u00e1s estudios conexos realizados por la secretar\u00eda de la Federaci\u00f3n Internacional est\u00e1 disponible para consulta p\u00fablica e incluye m\u00e1s de trescientos cincuenta (350) informes de los cuales doscientos cinco (205) corresponden al periodo 2010-2014."
-            ]
+          "type": "chart",
+          "title": "Usuarios de la plataforma de formación",
+          "axisLabels": {
+            "x": "Años",
+            "y": ""
+          },
+          "lineLabels": [
+            "Inscripciones\nen los cursos",
+            "Cursos\ncompletados"
+          ],
+
+          "caption": ""
         },
-        {
-            "title": "Auditor\u00edas",
-            "blocks": [
-                "Parecer\u00eda existir una correlaci\u00f3n entre el env\u00edo de informaci\u00f3n financiera y los ingresos y el tama\u00f1o de las Sociedades Nacionales. En 2013, exist\u00eda mayor probabilidad de recibir estados financieros de las Sociedades Nacionales con ingresos superiores a un mill\u00f3n de francos suizos y con m\u00e1s de veinticinco (25) miembros del personal. La probabilidad de que realizaran auditor\u00edas externas era tambi\u00e9n mayor si los ingresos exced\u00edan diez (10) millones de francos suizos y contaban con m\u00e1s de doscientos cincuenta (250) miembros del personal. Es razonable el establecimiento de cotas de referencia que guarden correlaci\u00f3n con el tama\u00f1o de la Sociedad Nacional y su eventual exposici\u00f3n a riesgos, aunque todos los miembros deban satisfacer requisitos m\u00ednimos. Se podr\u00eda invertir m\u00e1s en el apoyo a las Sociedades Nacionales m\u00e1s peque\u00f1as, as\u00ed, por ejemplo, la secretar\u00eda de la Federaci\u00f3n Internacional podr\u00eda facilitarles servicios de auditor\u00eda compartidos y consolidar sus cuentas cada dos o tres a\u00f1os para someterlas a auditor\u00eda externa.",
-                {
-                    "type": "chart",
-                    "title": "Porcentaje de Sociedades Nacionales que han presentado estados financieros",
-                    "caption": "Fuente: Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
-                },
-                {
-                    "type": "chart",
-                    "title": "Porcentaje de Sociedades Nacionales que han presentado estados financieros auditados externamente",
-                    "caption": "Fuente: Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
-                },
-                "En 2012, ochenta (80) Sociedades Nacionales suministraron estados financieros auditados por conducto del banco de datos y sistema de informaci\u00f3n general interno. En 2013, ochenta y ocho (88) lo hicieron."
-            ]
-        },
-        {
-            "title": "Cumplimiento normativo",
-            "blocks": [
-                "Las Sociedades Nacionales son \u00f3rganos din\u00e1micos que, de manera comprensible, acusan la influencia de factores internos y externos, que pueden cambiar ante la modificaci\u00f3n de sus circunstancias. La Junta de Gobierno ha establecido un Comit\u00e9 de Cumplimiento y Mediaci\u00f3n para prestar asistencia a las Sociedades Nacionales en la soluci\u00f3n de desacuerdos que se someten a su consideraci\u00f3n o para superar dificultades, por ejemplo con relaci\u00f3n a eventuales infracciones de las normas de integridad.",
-                "Un grupo de miembros registrados en una Sociedad Nacional se empez\u00f3 a preocupar seriamente por el da\u00f1o que causaban a la reputaci\u00f3n de la organizaci\u00f3n ciertas denuncias relacionadas con apropiaci\u00f3n indebida de fondos, abuso del cargo en beneficio propio, incumplimiento de los principios fundamentales y ganancias personales. La junta de gobierno de la Sociedad Nacional no respondi\u00f3 a sus inquietudes y el grupo reclamante convoc\u00f3 una asamblea general extraordinaria que vot\u00f3 una moci\u00f3n de no confianza en contra de las instancias de gobierno y de gesti\u00f3n, y eligi\u00f3 a unos reemplazantes. El caso se someti\u00f3 ante la corte suprema del pa\u00eds para que dictaminara acerca de la legitimidad de los dos mecanismos de gobierno enfrentados. La controversia lleg\u00f3 a alarmar a las autoridades p\u00fablicas que solicitaron la intervenci\u00f3n de la secretar\u00eda de la Federaci\u00f3n Internacional.",
-                "El Comit\u00e9 de Cumplimiento y Mediaci\u00f3n de la Federaci\u00f3n Internacional recurri\u00f3 a intermediarios fiables y puso en sus manos la negociaci\u00f3n de un acuerdo que implicaba la designaci\u00f3n de una nueva junta de gobierno provisional que tomara las riendas de la Sociedad Nacional. Adem\u00e1s, la secretar\u00eda de la Federaci\u00f3n Internacional proporcion\u00f3 apoyo t\u00e9cnico para enmendar los estatutos e incorporar una disposici\u00f3n que obligara a celebrar una asamblea general al a\u00f1o. El proceso sigui\u00f3 su curso de forma apropiada y los \u00f3rganos de gobierno reci\u00e9n elegidos permitieron finalizar las auditor\u00edas financieras del periodo objeto de controversia y solucionar los problemas planteados. La Sociedad Nacional se recuper\u00f3 y ahora funciona adecuadamente.",
-                "Las ense\u00f1anzas extra\u00eddas de este caso ilustran la necesidad de que las Sociedades Nacionales permanezcan siempre vigilantes con respecto de su integridad y tomen la iniciativa de enfrentarse a los problemas y combatir toda resistencia con perseverancia. La secretar\u00eda de la Federaci\u00f3n Internacional puede mediar para la b\u00fasqueda de soluciones y para asegurar la observancia de las normas de integridad a las que est\u00e1n sometidas las Sociedades Nacionales."
-            ]
-        },
-        {
-            "title": "Cultura de formaci\u00f3n",
-            "blocks": [
-                "La formaci\u00f3n es un elemento esencial que favorece la adaptaci\u00f3n y la actualizaci\u00f3n de una instituci\u00f3n sujeta a un mundo en transformaci\u00f3n. Otro aspecto importante reside en el fomento de la profesionalidad de quienes colaboran con las organizaciones de la Cruz Roja y de la Media Luna Roja a fin de que gocen de mayor credibilidad al demostrar que cumplen con normas expl\u00edcitas. Ello explica que se aliente una filosof\u00eda de formaci\u00f3n y aprendizaje continuos. ",
-                {
-                    "type": "chart",
-                    "title": "Idiomas disponibles en la plataforma de formaci\u00f3n",
-                    "dataset": [
-                        {
-                            "y": "108",
-                            "x": "Ingl\u00e9s"
-                        },
-                        {
-                            "y": "85",
-                            "x": "Franc\u00e9s"
-                        },
-                        {
-                            "y": "81",
-                            "x": "Espa\u00f1ol"
-                        },
-                        {
-                            "y": "44",
-                            "x": "Italiano"
-                        },
-                        {
-                            "y": "43",
-                            "x": "Portugu\u00e9s"
-                        },
-                        {
-                            "y": "30",
-                            "x": "Alem\u00e1n"
-                        },
-                        {
-                            "y": "30",
-                            "x": "Chino"
-                        },
-                        {
-                            "y": "28",
-                            "x": "Ruso"
-                        },
-                        {
-                            "y": "20",
-                            "x": "\u00c1rabe"
-                        },
-                        {
-                            "y": "63",
-                            "x": "Otros"
-                        }
-                    ],
-                    "caption": "Fuente: Departamento de Formaci\u00f3n e Investigaci\u00f3n"
-                },
-                "La formaci\u00f3n es un elemento esencial que favorece la adaptaci\u00f3n y la actualizaci\u00f3n de una instituci\u00f3n sujeta a un mundo en transformaci\u00f3n. Otro aspecto importante reside en el fomento de la profesionalidad de quienes colaboran con las organizaciones de la Cruz Roja y de la Media Luna Roja a fin de que gocen de mayor credibilidad al demostrar que cumplen con normas expl\u00edcitas. ",
-                "La plataforma de formaci\u00f3n de la Federaci\u00f3n Internacional es una comunidad mundial en l\u00ednea que, no obstante, guarda rasgos locales, en la que se encuentran disponibles ciento treinta y un (131) cursos en diecis\u00e9is (16) idiomas",
-                "En los \u00faltimos seis a\u00f1os, un promedio anual de 489 miembros del personal de las organizaciones de la Cruz Roja y de la Media Luna Roja han cursado la formaci\u00f3n b\u00e1sica de preparaci\u00f3n para la acci\u00f3n y la movilizaci\u00f3n internacional en el contexto de su preparaci\u00f3n para una misi\u00f3n.",
-                {
-                    "type": "chart",
-                    "title": "Curso sobre movilizaci\u00f3n internacional y preparaci\u00f3n para la acci\u00f3n (curso)",
-                    "caption": "Fuente: Departamento de Formaci\u00f3n e Investigaci\u00f3n"
-                },
-                {
-                    "type": "chart",
-                    "title": "Usuarios de la plataforma de formaci\u00f3n",
-                    "axisLabels": {
-                        "x": "A\u00f1os"
-                    },
-                    "lineLabels": [
-                        "Inscripciones\\nen los cursos",
-                        "Cursos\\ncompletados"
-                    ]
-                },
-                "La plataforma de formaci\u00f3n adquiere r\u00e1pidamente titularidad por derecho propio en calidad de comunidad social con facilidades para la formaci\u00f3n colectiva y el di\u00e1logo entre hom\u00f3logos.",
-                "En 2014 se observ\u00f3 un r\u00e1pido aumento en la cantidad de inscripciones de usuarios (m\u00e1s de 140 000) que incidi\u00f3 en el vertiginoso incremento en el n\u00famero de inscripciones (m\u00e1s de 220 000), si bien algunos usuarios siguieron m\u00e1s de un curso. El porcentaje de cursos concluidos tambi\u00e9n aument\u00f3 situ\u00e1ndose ligeramente por debajo del cincuenta por ciento (50%) en un indicio de constante aumento en la percepci\u00f3n de utilidad por parte del usuario."
-            ]
-        },
-        {
-            "title": "Centros de pericia en el mundo",
-            "blocks": [
-                "Una singular ventaja de nuestra amplia red de colaboraci\u00f3n reside en el acceso a conocimientos especializados de alto nivel que se sistematizan por conducto de diversos centros de referencia de la Federaci\u00f3n Internacional dedicados a temas espec\u00edficos. Los centros realizan investigaciones, desarrollan enfoques innovadores, recopilan informaci\u00f3n sobre pr\u00e1cticas \u00f3ptimas, difunden conocimientos, promueven y defienden causas y, adem\u00e1s, brindan formaci\u00f3n y asistencia a las Sociedades Nacionales con el fin de que ampl\u00eden y perfeccionen su labor.",
-                [
-                    {
-                        "title": "Centro regional de informaci\u00f3n sobre desastres para el Caribe.",
-                        "slug": "http:\/\/www.cdema.org",
-                        "subtitle": "Cruz Roja de Barbados"
-                    },
-                    {
-                        "title": "Centro de referencia sobre pr\u00e1cticas sustentadas en pruebas.",
-                        "slug": "http:\/\/www.rodekruis.be\/en\/who-are-we\/research\/centre-for-evidence-based-practice\/",
-                        "subtitle": "Cruz Roja de B\u00e9lgica"
-                    },
-                    {
-                        "title": "Centro de informaci\u00f3n sobre cambio clim\u00e1tico.",
-                        "slug": "http:\/\/www.climatecentre.org\/",
-                        "subtitle": "Cruz Roja Neerlandesa"
-                    },
-                    {
-                        "title": "Centro mundial de referencia sobre preparaci\u00f3n para desastres.",
-                        "slug": "http:\/\/www.preparecenter.org\/",
-                        "subtitle": "Cruz Roja Americana"
-                    },
-                    {
-                        "title": "Centro mundial de referencia sobre primeros auxilios",
-                        "slug": "http:\/\/www.ifrc.org\/en\/get-involved\/learning-education-training\/reference-centres\/",
-                        "subtitle": "Cruz Roja Francesa"
-                    },
-                    {
-                        "title": "Centro de referencia para desarrollo econ\u00f3mico y medios de vida sostenibles.",
-                        "slug": "http:\/\/www.livelihoodscentre.org\/",
-                        "subtitle": "Cruz Roja Espa\u00f1ola"
-                    },
-                    {
-                        "title": "Centro de referencia sobre fomento de la capacidad de resistencia y recuperaci\u00f3n de las comunidades.",
-                        "slug": "http:\/\/www.crrec.cruzroja.org\/",
-                        "subtitle": "Cruz Roja Costarricense"
-                    },
-                    {
-                        "title": "Centro de referencia en preparaci\u00f3n institucional para desastres.",
-                        "slug": "http:\/\/www.crepd.cruzroja.org\/",
-                        "subtitle": "Cruz Roja Salvadore\u00f1a"
-                    },
-                    {
-                        "title": "Centro de referencia sobre apoyo psicol\u00f3gico.",
-                        "slug": "http:\/\/pscentre.org\/",
-                        "subtitle": "Cruz Roja Danesa"
-                    },
-                    {
-                        "title": "Unidad de investigaci\u00f3n sobre alojamiento provisional y de emergencia.",
-                        "slug": "http:\/\/ifrc-sru.org\/",
-                        "subtitle": "Cruz Roja de B\u00e9lgica, Cruz Roja de Luxemburgo, Cruz Roja Neerlandesa"
-                    },
-                    {
-                        "title": "Centro de referencia sobre servicio voluntario.",
-                        "slug": "http:\/\/www.cruzroja.es\/portal\/page?_pageid=478,1&_dad=portal30&_schema=PORTAL30",
-                        "subtitle": "Cruz Roja Espa\u00f1ola, Cruz Roja Brit\u00e1nica"
-                    },
-                    {
-                        "title": "Centro regional de referencia en emergencias m\u00e9dicas y atenci\u00f3n prehospitalaria.",
-                        "slug": "http:\/\/www.ifrc.org\/en\/news-and-media\/news-stories\/americas\/ecuador\/ecuadorian-red-cross-inaugurates-medical-emergencies-and-prehospital-care-reference-centre-67988\/",
-                        "subtitle": "Cruz Roja Ecuatoriana"
-                    },
-                    {
-                        "title": "Grupo mundial de asesores (programas de sangre).",
-                        "slug": "http:\/\/www.globaladvisorypanel.org\/",
-                        "subtitle": "Cruz Roja Australiana, Cruz Roja Suiza"
-                    }
-                ]
-            ]
-        }
-    ],
-    "nextChapter": {
-        "heading": "Cap\u00edtulo siguiente",
-        "chapter": "10",
-        "subtitle": "Data",
-        "title": "Explorar los datos",
-        "slug": "data"
+        "La plataforma de formación adquiere rápidamente titularidad por derecho propio en calidad de comunidad social con facilidades para la formación colectiva y el diálogo entre homólogos.",
+        "En 2014 se observó un rápido aumento en la cantidad de inscripciones de usuarios (más de 140 000) que incidió en el vertiginoso incremento en el número de inscripciones (más de 220 000), si bien algunos usuarios siguieron más de un curso. El porcentaje de cursos concluidos también aumentó situándose ligeramente por debajo del cincuenta por ciento (50%) en un indicio de constante aumento en la percepción de utilidad por parte del usuario."
+      ]
+    },
+    {
+      "title": "Centros de pericia en el mundo",
+      "blocks": [
+        "Una singular ventaja de nuestra amplia red de colaboración reside en el acceso a conocimientos especializados de alto nivel que se sistematizan por conducto de diversos centros de referencia de la Federación Internacional dedicados a temas específicos. Los centros realizan investigaciones, desarrollan enfoques innovadores, recopilan información sobre prácticas óptimas, difunden conocimientos, promueven y defienden causas y, además, brindan formación y asistencia a las Sociedades Nacionales con el fin de que amplíen y perfeccionen su labor.",
+        [
+          {
+            "title": "Centro regional de información sobre desastres para el Caribe.",
+            "slug": "http://www.cdema.org",
+            "subtitle": "Cruz Roja de Barbados"
+          },
+          {
+            "title": "Centro de referencia sobre prácticas sustentadas en pruebas.",
+            "slug": "http://www.rodekruis.be/en/who-are-we/research/centre-for-evidence-based-practice/",
+            "subtitle": "Cruz Roja de Bélgica"
+          },
+          {
+            "title": "Centro de información sobre cambio climático.",
+            "slug": "http://www.climatecentre.org/",
+            "subtitle": "Cruz Roja Neerlandesa"
+          },
+          {
+            "title": "Centro mundial de referencia sobre preparación para desastres.",
+            "slug": "http://www.preparecenter.org/",
+            "subtitle": "Cruz Roja Americana"
+          },
+          {
+            "title": "Centro mundial de referencia sobre primeros auxilios",
+            "slug": "http://www.ifrc.org/en/get-involved/learning-education-training/reference-centres/",
+            "subtitle": "Cruz Roja Francesa"
+          },
+          {
+            "title": "Centro de referencia para desarrollo económico y medios de vida sostenibles.",
+            "slug": "http://www.livelihoodscentre.org/",
+            "subtitle": "Cruz Roja Española"
+          },
+          {
+            "title": "Centro de referencia sobre fomento de la capacidad de resistencia y recuperación de las comunidades.",
+            "slug": "http://www.crrec.cruzroja.org/",
+            "subtitle": "Cruz Roja Costarricense"
+          },
+          {
+            "title": "Centro de referencia en preparación institucional para desastres.",
+            "slug": "http://www.crepd.cruzroja.org/",
+            "subtitle": "Cruz Roja Salvadoreña"
+          },
+          {
+            "title": "Centro de referencia sobre apoyo psicológico.",
+            "slug": "http://pscentre.org/",
+            "subtitle": "Cruz Roja Danesa"
+          },
+          {
+            "title": "Unidad de investigación sobre alojamiento provisional y de emergencia.",
+            "slug": "http://ifrc-sru.org/",
+            "subtitle": "Cruz Roja de Bélgica, Cruz Roja de Luxemburgo, Cruz Roja Neerlandesa"
+          },
+          {
+            "title": "Centro de referencia sobre servicio voluntario.",
+            "slug": "http://www.cruzroja.es/portal/page?_pageid=478,1&_dad=portal30&_schema=PORTAL30",
+            "subtitle": "Cruz Roja Española, Cruz Roja Británica"
+          },
+          {
+            "title": "Centro regional de referencia en emergencias médicas y atención prehospitalaria.",
+            "slug": "http://www.ifrc.org/en/news-and-media/news-stories/americas/ecuador/ecuadorian-red-cross-inaugurates-medical-emergencies-and-prehospital-care-reference-centre-67988/",
+            "subtitle": "Cruz Roja Ecuatoriana"
+          },
+          {
+            "title": "Grupo mundial de asesores (programas de sangre).",
+            "slug": "http://www.globaladvisorypanel.org/",
+            "subtitle": "Cruz Roja Australiana, Cruz Roja Suiza"
+          }
+        ]
+      ]
     }
+  ],
+  "nextChapter": {
+    "heading": "Capítulo siguiente",
+    "chapter": "10",
+    "subtitle": "Data",
+    "title": "Explorar los datos",
+    "slug": "data"
+  }
 }

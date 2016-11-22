@@ -1,222 +1,147 @@
 {
-    "chapter": "6",
-    "slug": "strategic-aim-3",
-    "title": "Objetivo estrat\u00e9gico 3",
-    "subtitle": "Promover la inclusi\u00f3n social y una cultura de no violencia y paz",
-    "intro": "La violencia es un fen\u00f3meno que nos concierne a todos y afecta a todos los pa\u00edses y continentes. Bajo diversas manifestaciones, la violencia \u2013autoinfligida, entre personas, a nivel interpersonal comunitario o colectivo\u2013 conlleva devastadoras consecuencias humanas, sociales y econ\u00f3micas",
-    "sections": [
+  "chapter": "6",
+  "slug": "strategic-aim-3",
+  "title": "Objetivo estratégico 3",
+  "subtitle": "Promover la inclusión social y una cultura de no violencia y paz",
+  "intro": "La violencia es un fenómeno que nos concierne a todos y afecta a todos los países y continentes. Bajo diversas manifestaciones, la violencia –autoinfligida, entre personas, a nivel interpersonal comunitario o colectivo– conlleva devastadoras consecuencias humanas, sociales y económicas",
+  "sections": [
+    {
+      "title": "Consecuencias de la violencia a nivel mundial",
+      "blocks": [
+        "Aunque la violencia se caracteriza por su naturaleza insidiosa y compleja, el secreto o el velo que la oculta, y la posibilidad de que pueda ocurrir en cualquier lugar y momento, no se trata de un fenómeno inevitable. A menudo se puede predecir, prevenir y mitigar. Desde la perspectiva de las organizaciones de la Cruz Roja y de la Media Luna Roja, resultan particularmente pertinentes cuatro consideraciones amplias:",
+        [
+          "la violencia interpersonal en manifestaciones tales como el trato abusivo, la explotación y la trata de personas supone un claro riesgo en toda circunstancia;",
+          "la contextualización de la violencia como un problema de salud pública puede ser útil para reducirla;",
+          "las intervenciones sustentadas en pruebas son necesarias para demostrar mejoramiento conmensurable en materia de seguridad;",
+          "la integración de actividades destinadas a la consideración de la violencia dentro de otros programas y servicios es fundamental para la prevención y la mitigación de este fenómeno a suficiente escala."
+        ],
         {
-            "title": "Consecuencias de la violencia a nivel mundial",
-            "blocks": [
-                "Aunque la violencia se caracteriza por su naturaleza insidiosa y compleja, el secreto o el velo que la oculta, y la posibilidad de que pueda ocurrir en cualquier lugar y momento, no se trata de un fen\u00f3meno inevitable. A menudo se puede predecir, prevenir y mitigar. Desde la perspectiva de las organizaciones de la Cruz Roja y de la Media Luna Roja, resultan particularmente pertinentes cuatro consideraciones amplias:",
-                [
-                    "la violencia interpersonal en manifestaciones tales como el trato abusivo, la explotaci\u00f3n y la trata de personas supone un claro riesgo en toda circunstancia;",
-                    "la contextualizaci\u00f3n de la violencia como un problema de salud p\u00fablica puede ser \u00fatil para reducirla;",
-                    "las intervenciones sustentadas en pruebas son necesarias para demostrar mejoramiento conmensurable en materia de seguridad;",
-                    "la integraci\u00f3n de actividades destinadas a la consideraci\u00f3n de la violencia dentro de otros programas y servicios es fundamental para la prevenci\u00f3n y la mitigaci\u00f3n de este fen\u00f3meno a suficiente escala."
-                ],
-                {
-                    "type": "chart",
-                    "title": "Consecuencias sobre la salud",
-                    "dataset": {
-                        "consequences": [
-                            "Muerte",
-                            "Lesiones f\u00edsicas",
-                            [
-                                "Embarazos",
-                                "involuntarios",
-                                "abortos provocados"
-                            ],
-                            [
-                                "Infecciones",
-                                "transmitidas por v\u00eda",
-                                "sexual, incluido",
-                                "el VIH"
-                            ],
-                            [
-                                "Depresi\u00f3n, ansiedad,",
-                                "trastornos de estr\u00e9s",
-                                "postraum\u00e1tico"
-                            ],
-                            [
-                                "Uso nocivo del",
-                                "abaco, las drogas",
-                                "y el alcohol"
-                            ]
-                        ],
-                        "summaries": [
-                            {
-                                "number": "1.3M",
-                                "text": "Muertes al a\u00f1o"
-                            },
-                            {
-                                "number": "16M",
-                                "text": "Hospitalizaciones al a\u00f1o"
-                            },
-                            {
-                                "number": "Desconocida",
-                                "text": "Lesiones"
-                            }
-                        ]
-                    },
-                    "caption": "The chart above shows..."
-                },
-                {
-                    "type": "chart",
-                    "title": "Repercusiones econ\u00f3micas",
-                    "dataset": [
-                        {
-                            "x": [
-                                "Violencia",
-                                "colectiva"
-                            ],
-                            "y": "6",
-                            "fill": "#012A39"
-                        },
-                        {
-                            "x": [
-                                "Violencia",
-                                "autoinfligida"
-                            ],
-                            "y": "58",
-                            "fill": "#EE3224"
-                        },
-                        {
-                            "x": [
-                                "Violencia",
-                                "interpersonal",
-                                ""
-                            ],
-                            "y": "36",
-                            "fill": "#FED02F"
-                        }
-                    ],
-                    "caption": "La violencia sexual y la violencia contra la pareja conllevan costos muy elevados para los pa\u00edses. Suponen la prestaci\u00f3n de servicios sanitarios, sociales y jur\u00eddicos y el valor correspondiente a la p\u00e9rdida de ganancias. La violencia puede tener una repercusi\u00f3n de hasta un 4% sobre el producto interno bruto."
-                }
+          "type": "chart",
+          "title": "Consecuencias sobre la salud",
+          "dataset": {
+            "consequences": [
+              "Muerte",
+              "Lesiones físicas",
+              ["Embarazos", "involuntarios", "abortos provocados"],
+              ["Infecciones", "transmitidas por vía", "sexual, incluido", "el VIH"],
+              ["Depresión, ansiedad,", "trastornos de estrés", "postraumático"],
+              ["Uso nocivo del", "abaco, las drogas", "y el alcohol"]
+            ],
+            "summaries": [
+              { "number": "1.3M", "text": "Muertes al año" },
+              { "number": "16M", "text": "Hospitalizaciones al año" },
+              { "number": "Desconocida", "text": "Lesiones" }
             ]
+          },
+          "caption": "The chart above shows..."
         },
         {
-            "title": "Progresos en materia de reducci\u00f3n de la violencia",
-            "blocks": [
-                "De las intervenciones pr\u00e1cticas de las Sociedades Nacionales se desprenden los temas comunes expuestos a continuaci\u00f3n.",
-                {
-                    "type": "chart",
-                    "title": "Progresos en materia de reducci\u00f3n de la violencia",
-                    "items": [
-                        {
-                            "img": "\/img\/chapters\/6\/child-protection.svg",
-                            "number": "78",
-                            "text": [
-                                "Sociedades Nacionales",
-                                "trabajan en la protecci\u00f3n de la infancia"
-                            ]
-                        },
-                        {
-                            "img": "\/img\/chapters\/6\/act-against-gender-based-violence.svg",
-                            "number": "52",
-                            "text": [
-                                "Sociedades Nacionales",
-                                "act\u00faan contra la violencia basada en el g\u00e9nero"
-                            ]
-                        },
-                        {
-                            "img": "\/img\/chapters\/6\/tackle-violence-against-migrants.svg",
-                            "number": "28",
-                            "text": [
-                                "Sociedades Nacionales",
-                                "combaten la violencia contra los migrantes"
-                            ]
-                        },
-                        {
-                            "img": "\/img\/chapters\/6\/address-self-directed-harm.svg",
-                            "number": "21",
-                            "text": [
-                                "Sociedades Nacionales",
-                                "abordan la violencia autoinfligida"
-                            ]
-                        }
-                    ],
-                    "caption": "Fuente: Departamento de Principios y Valores"
-                },
-                [
-                    "Protecci\u00f3n infantil \u2013 se trata de proyectos usualmente ejecutados en contextos escolares y bajo el impulso de j\u00f3venes cuando estos son el grupo concernido. Entre los temas, figuran el acoso y la intimidaci\u00f3n, el maltrato f\u00edsico o psicol\u00f3gico, el abuso sexual, la trata y los conflictos entre j\u00f3venes.",
-                    "Violencia por motivos de g\u00e9nero \u2013 estas actividades se centran en la prevenci\u00f3n de la violencia dom\u00e9stica, la violencia f\u00edsica y sexual contra mujeres y ni\u00f1as, la mutilaci\u00f3n genital de mujeres, la violencia contra hombres que tienen sexo con hombres, y la creciente violencia en situaciones de desastre y conflicto.",
-                    "Violencia contra los migrantes \u2013 se trata de una esfera de prevenci\u00f3n que se ampl\u00eda e incluye el apoyo a los refugiados y los desplazados internos durante crisis y despu\u00e9s de estas, as\u00ed como la prestaci\u00f3n de servicios para los migrantes y los refugiados que llegan a un nuevo pa\u00eds con el fin de favorecer su integraci\u00f3n en las comunidades de acogida, y esfuerzos relativos a la trata de personas.",
-                    " Violencia comunitaria \u2013 se trata de un nuevo \u00e1mbito de trabajo para las organizaciones de la Cruz Roja y de la Media Luna Roja cuya importancia se reconoce en las intervenciones a ra\u00edz de desastres pues las tensiones que pudieran existir o surgir pueden obstaculizar las operaciones de socorro. En otros contextos, algunas Sociedades Nacionales intentan disminuir la violencia en lugares p\u00fablicos mediante la disipaci\u00f3n o la eliminaci\u00f3n de elementos de divisi\u00f3n entre grupos que se enfrentan. Por ejemplo, la labor para reducir conflictos entre grupos \u00e9tnicos, o la violencia en multitudes, entre otros, durante elecciones o acontecimientos deportivos, la violencia urbana y de pandillas.",
-                    "Violencia autoinfligida \u2013 se trata de un fen\u00f3menos que cobra cariz epid\u00e9mico. El cincuenta y ocho por ciento (58%) de las muertes violentas en el mundo corresponden a suicidios. Resulta imperioso inspirarse del ejemplo de ciertas Sociedades Nacionales y redoblar esfuerzos para salvar los obst\u00e1culos asociados a tab\u00faes culturales o religiosos y a la estigmatizaci\u00f3n que conllevan. Otras Sociedades Nacionales abordan el problema de la violencia autoinfligida mediante iniciativas directas encaminadas a reducir el consumo indebido de alcohol y otras substancias, o de forma indirecta, a trav\u00e9s de servicios de acompa\u00f1amiento psicosocial y de atenci\u00f3n de salud mental."
-                ],
-                {
-                    "type": "case-study-simple",
-                    "title": "\u201cQuer\u00edan matarlos\u201d",
-                    "content": [
-                        "En 2012, en la regi\u00f3n de Delta Tana, en Kenia, se vivieron situaciones de extrema violencia entre comunidades de granjeros y de pastores, a ra\u00edz de desacuerdos relativos al reparto de las escasas tierras y del limitado abastecimiento de agua. Como consecuencia, murieron ciento seis personas y otras ciento doce mil fueron desplazadas. Kony, un colegial de primaria recuerda \u201cest\u00e1bamos en clase cuando o\u00edmos la primera explosi\u00f3n. Uno de mis compa\u00f1eros dijo que se trataba de un disparo de arma de fuego. Era terror\u00edfico y empezamos a correr hacia la aldea situada a unos pocos metros de la escuela\u201d.",
-                        " Para hacer frente al problema, la Cruz Roja de Kenia puso en marcha un proyecto de reducci\u00f3n de riesgos destinado a frenar el peligro de violencia en el futuro. En este proyecto se incluyen comit\u00e9s locales de paz, proyectos conjuntos para la generaci\u00f3n de ingresos dirigidos por mujeres, el di\u00e1logo con dirigentes religiosos y actividades escolares. La Cruz Roja de Kenia desempe\u00f1a una funci\u00f3n crucial pues asume la coordinaci\u00f3n de las actividades con neutralidad, independencia e imparcialidad."
-                    ]
-                }
-            ]
-        },
-        {
-            "title": "Agentes del cambio de comportamiento",
-            "blocks": [
-                "Los j\u00f3venes encabezan una cantidad considerable de proyectos relativos a la violencia en unas cincuenta y dos (52) Sociedades Nacionales (28%) los j\u00f3venes como agentes del cambio de comportamiento es la iniciativa emblem\u00e1tica de la Federaci\u00f3n Internacional para la promoci\u00f3n de una cultura de no violencia y paz. Desde su establecimiento en 2008, est\u00e1 orientada a la habilitaci\u00f3n de personas que sienten el norte \u00e9tico en sus comunidades. En la actualidad existen m\u00e1s de 1 450 educadores de hom\u00f3logos de ciento veinticinco (125) Sociedades Nacionales que han recibido formaci\u00f3n espec\u00edfica.",
-                "Esta iniciativa busca un cambio de mentalidades a trav\u00e9s de los corazones. Se fundamenta en la educaci\u00f3n entre hom\u00f3logos, centrada en los participantes, que privilegia un enfoque vivencial en el cual los sentimientos, las experiencias o las sensaciones corporales \u2013y no el an\u00e1lisis intelectual\u2013 son los portales para favorecer la concienciaci\u00f3n y la adquisici\u00f3n de destrezas que permitan comprender fen\u00f3menos de sociedad tales como la discriminaci\u00f3n, la exclusi\u00f3n y la violencia.",
-                "Se recurre a juegos, dramatizaciones, simulaciones, ejercicios de visualizaci\u00f3n, relatos, plataformas art\u00edsticas y el arte para extraer a los participantes de su zona de comodidad y situarlos en un ambiente seguro y de respeto en donde nadie les dice lo que deben hacer o pensar, sino en donde examinan juntos soluciones. Se trata de un aprendizaje interno y que emana del intercambio de ideas en medio de la confianza, de manera que las personas forjan sus propios objetivos a trav\u00e9s de la reflexi\u00f3n cr\u00edtica.",
-                "El contexto es importante. As\u00ed, la incorporaci\u00f3n de la perspectiva de esta iniciativa en otras actividades de las organizaciones de la Cruz Roja y de la Media Luna Roja tales como los primeros auxilios, la gesti\u00f3n de desastres y emergencias, la migraci\u00f3n, el alojamiento provisional y de emergencia, la seguridad vial y el apoyo psicol\u00f3gico, fortalecer\u00e1 tanto nuestra labor como nuestra forma de ejecutarla. ",
-                {
-                    "type": "case-study-simple",
-                    "title": "Cambi\u00e9 much\u00edsimo en muy poco tiempo",
-                    "content": [
-                        "Un formador de hom\u00f3logos que trabaja en el marco de la iniciativa sobre los j\u00f3venes como agentes del cambio de comportamiento explicaba: \u201cla experiencia supuso para m\u00ed un punto de inflexi\u00f3n. Sin esta formaci\u00f3n, me habr\u00eda tomado toda la vida entender determinadas cuestiones y cambiar mi actitud\u201d.",
-                        "La iniciativa de los j\u00f3venes como agentes del cambio de comportamiento suscita en instructores y formadores de hom\u00f3logos una transformaci\u00f3n interna que incide en las motivaciones, la identidad, el vocabulario y las actitudes, y adem\u00e1s fomenta los comportamientos positivos. A menudo, su eventual efecto domin\u00f3 suscita mejores relaciones familiares, profesionales, y con los pares.",
-                        "En un estudio sobre los efectos a cinco a\u00f1os se concluye que \u201cla iniciativa sobre los j\u00f3venes como agentes del cambio de comportamiento se sustenta en los principios fundamentales y los valores humanitarios de las organizaciones de la Cruz Roja y de la Media Luna Roja, y fomenta en muy poco tiempo, en diversos \u00e1mbitos culturales y a escala mundial, transformaciones duraderas a largo plazo de actitudes y comportamientos. Estas caracter\u00edsticas hacen de la iniciativa un modelo notable de pr\u00e1cticas \u00f3ptimas en materia de educaci\u00f3n entre hom\u00f3logos que ofrece una referencia tangible para las intervenciones destinadas a impulsar el cambio de comportamiento, tanto en el interior como en el exterior del Movimiento Internacional de la Cruz Roja y de la Media Luna Roja\u201d."
-                    ]
-                }
-            ]
-        },
-        {
-            "title": "A\u00f1os llenos de vida: la contribuci\u00f3n de los adultos mayores",
-            "blocks": [
-                "El mundo envejece a medida que se prolonga la expectativa de vida. Conforme a las tendencias actuales, la cantidad de personas de sesenta a\u00f1os y edades superiores habr\u00e1 triplicado con creces hasta 2050, situ\u00e1ndose en cerca de dos mil millones de seres humanos que, en un ochenta por ciento (80%), vivir\u00e1n en pa\u00edses de ingresos medios y bajos. Se observa ya las profundas consecuencias sociales y econ\u00f3micas de esta curva demogr\u00e1fica.",
-                "Las organizaciones de la Cruz Roja y de la Media Luna Roja desean consolidar una imagen positiva del envejecimiento en la cual se reconozca la importancia de los adultos mayores en la sociedad, en virtud de los conocimientos y destrezas que poseen y que pueden ser de gran beneficio para las generaciones m\u00e1s j\u00f3venes. Ello supone la promoci\u00f3n de entornos sociales inclusivos que propicien la participaci\u00f3n de las personas de edad y fortalezcan su autonom\u00eda.",
-                "Entre otras actividades figuran iniciativas para que los adultos mayores se mantengan saludables y en buen estado f\u00edsico, as\u00ed como para prevenir el maltrato y zanjarlo. Se aboga en favor de servicios de transporte, alojamiento y cuidado que correspondan mejor a las necesidades de los adultos mayores, aunado al apoyo pr\u00e1ctico de voluntarios para que puedan acceder a esos servicios. Plantea particular dificultad la situaci\u00f3n de los adultos mayores en casos de emergencia, en los cuales sus necesidades especiales suelen ser pasadas por alto.",
-                "Las organizaciones de la Cruz Roja y de la Media Luna Roja ejecutan actividades en favor de los adultos mayores y colaboran con ellos de diversa manera. Para trazar un panorama m\u00e1s completo a este respecto, en futuras recopilaciones de informaci\u00f3n se incorporar\u00e1 un indicador de edad para favorecer el desglose de datos por edad y sexo."
-            ]
-        },
-        {
-            "title": "Migraci\u00f3n",
-            "blocks": [
-                "La migraci\u00f3n ha sido un fen\u00f3meno constante a lo largo de la historia y los migrantes representan el tres por ciento (3%) de la poblaci\u00f3n mundial. Ello significa que, aproximadamente, uno de cada treinta y cinco habitantes del planeta es un migrante. Los migrantes son personas que abandonan sus hogares o se ven obligados a huir de ellos en busca de lugares \u2013generalmente en el extranjero\u2013 en donde gocen de mejores condiciones de vida y mayor seguridad. La migraci\u00f3n puede ser voluntaria o forzosa aunque usualmente se trata de una combinaci\u00f3n de elecciones y factores limitantes.",
-                "Si bien muchos migrantes se establecen con \u00e9xito en nuevas comunidades, otros enfrentan dificultades y son, ellos, el centro de nuestra preocupaci\u00f3n. Sin poder contar con sistemas tradicionales de apoyo, los migrantes no logran a menudo acceder a los servicios de atenci\u00f3n de salud primaria ni de bienestar. Podr\u00edan perder contacto con sus familias y comunidades, caer presas del contrabando o la trata de personas, o ser objeto de explotaci\u00f3n bajo arreglos de trabajo informal.",
-                "En el proceso de migraci\u00f3n, podr\u00edan ser detenidos o verse privados de libertad. Deben, adem\u00e1s, superar otras dificultades tales como las barreras culturales y el desconocimiento de idiomas, la discriminaci\u00f3n, la exclusi\u00f3n e incluso la violencia. Las mujeres, los ni\u00f1os y los menores no acompa\u00f1ados corren particular riesgo.",
-                "Las organizaciones de la Cruz Roja y de la Media Luna Roja no est\u00e1n ni a favor ni en contra de la migraci\u00f3n; no obstante, est\u00e1n determinadas en la atenci\u00f3n de las necesidades de los migrantes vulnerables, independientemente de la condici\u00f3n jur\u00eddica o administrativa de estos. Ello supone la defensa del principio de acceso humanitario as\u00ed como del \u201crostro humano\u201d de los migrantes, en lugar de que sean objeto de exclusi\u00f3n o estigmatizaci\u00f3n, y la asistencia a los migrantes para que puedan encontrar soluciones duraderas a su situaci\u00f3n en cooperaci\u00f3n con las comunidades de origen y de acogida. Los migrantes aportan muchas contribuciones positivas de \u00edndole social, econ\u00f3mica, cultural y demogr\u00e1fica en los pa\u00edses de acogida. Su contribuci\u00f3n es igualmente significativa en los pa\u00edses de origen, por ejemplo, a trav\u00e9s de las remesas cuyo valor agregado supera aquel de la asistencia mundial para el desarrollo.",
-                "En los pa\u00edses donde las presiones migratorias se originan en situaciones sociales y econ\u00f3micas adversas debido a la degradaci\u00f3n del medio ambiente, las repercusiones de desastres o de conflictos, las organizaciones de la Cruz Roja y de la Media Luna Roja se esfuerzan por consolidar la capacidad de resistencia y recuperaci\u00f3n para aligerar las presiones que inducen a las personas a que migren contra su deseo y voluntad.",
-                "Exhortamos a los gobiernos de todo el mundo a que respeten los derechos de los migrantes. Ciento sesenta y cuatro (164) de los ciento noventa y cuatro (194) Estados participantes en la XXXI Conferencia Internacional de la Cruz Roja y de la Media Luna Roja (2011) aprobaron una resoluci\u00f3n sobre migraci\u00f3n en la que se garantiza el acceso, el respeto de la dignidad y de la diversidad, as\u00ed como la inclusi\u00f3n social.",
-                {
-                    "type": "chart",
-                    "title": "\u201cHumanizaci\u00f3n\u201d de los migrantes: una cuesti\u00f3n de principios",
-                    "caption": "Principios generales que sustentan la acci\u00f3n de las organizaciones de la Cruz Roja y de la Media Luna Roja",
-                    "items": [
-                        "Centrarse en las necesidades y la vulnerabilidad de los migrantes.",
-                        "Incluir a los migrantes en los programas humanitarios.",
-                        "Ayudar a los migrantes a realizar sus aspiraciones.",
-                        "Reconocer los derechos de los migrantes.",
-                        "Vincular la asistencia, la protecci\u00f3n de los migrantes y la intercesi\u00f3n humanitaria en su favor.",
-                        "Establecer asociaciones a favor de los migrantes.",
-                        "Trabajar a lo largo de las rutas de migraci\u00f3n.",
-                        "Ayudar a los migrantes que regresan a sus pa\u00edses.",
-                        "Intervenir ante los desplazamientos de poblaci\u00f3n.",
-                        "Aliviar las presiones que determinan la migraci\u00f3n en las comunidades de origen."
-                    ]
-                },
-                "La labor de las organizaciones de la Cruz Roja y de la Media Luna Roja junto a los migrantes abarca la ayuda humanitaria, as\u00ed como otro tipo de asistencia social individual, protecci\u00f3n jur\u00eddica y apoyo personal. Las Sociedades Nacionales se ocupan de asuntos relativos a la migraci\u00f3n en todas las regiones."
-            ]
+          "type": "chart",
+          "title": "Repercusiones económicas",
+          "dataset": [
+            { "x": "Violencia\ncolectiva", "y": 6, "fill":"#012A39" },
+            { "x": "Violencia\nautoinfligida", "y": 58, "fill":"#EE3224" },
+            { "x": "Violencia\ninterpersonal\n", "y": 36, "fill":"#FED02F" }
+          ],
+          "caption": "La violencia sexual y la violencia contra la pareja conllevan costos muy elevados para los países. Suponen la prestación de servicios sanitarios, sociales y jurídicos y el valor correspondiente a la pérdida de ganancias. La violencia puede tener una repercusión de hasta un 4% sobre el producto interno bruto."
         }
-    ],
-    "nextChapter": {
-        "heading": "Cap\u00edtulo siguiente",
-        "chapter": "7",
-        "subtitle": "Acci\u00f3n facilitadora 1",
-        "title": "Construir Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja fuertes",
-        "slug": "enabling-action-1"
+      ]
+    },
+
+    {
+      "title": "Progresos en materia de reducción de la violencia",
+      "blocks": [
+        "De las intervenciones prácticas de las Sociedades Nacionales se desprenden los temas comunes expuestos a continuación.",
+        {
+          "type": "chart",
+          "title": "Progresos en materia de reducción de la violencia",
+          "items": [
+            { "img": "/img/chapters/6/child-protection.svg", "number": 78, "text": ["Sociedades Nacionales", "trabajan en la protección de la infancia"] },
+            { "img": "/img/chapters/6/act-against-gender-based-violence.svg", "number": 52, "text": ["Sociedades Nacionales", "actúan contra la violencia basada en el género"] },
+            { "img": "/img/chapters/6/tackle-violence-against-migrants.svg", "number": 28, "text": ["Sociedades Nacionales", "combaten la violencia contra los migrantes"] },
+            { "img": "/img/chapters/6/address-self-directed-harm.svg", "number": 21, "text": ["Sociedades Nacionales", "abordan la violencia autoinfligida"] }
+          ],
+          "caption": "Fuente: Departamento de Principios y Valores"
+        },
+        [
+          "Protección infantil – se trata de proyectos usualmente ejecutados en contextos escolares y bajo el impulso de jóvenes cuando estos son el grupo concernido. Entre los temas, figuran el acoso y la intimidación, el maltrato físico o psicológico, el abuso sexual, la trata y los conflictos entre jóvenes.",
+          "Violencia por motivos de género – estas actividades se centran en la prevención de la violencia doméstica, la violencia física y sexual contra mujeres y niñas, la mutilación genital de mujeres, la violencia contra hombres que tienen sexo con hombres, y la creciente violencia en situaciones de desastre y conflicto.",
+          "Violencia contra los migrantes – se trata de una esfera de prevención que se amplía e incluye el apoyo a los refugiados y los desplazados internos durante crisis y después de estas, así como la prestación de servicios para los migrantes y los refugiados que llegan a un nuevo país con el fin de favorecer su integración en las comunidades de acogida, y esfuerzos relativos a la trata de personas.",
+          " Violencia comunitaria – se trata de un nuevo ámbito de trabajo para las organizaciones de la Cruz Roja y de la Media Luna Roja cuya importancia se reconoce en las intervenciones a raíz de desastres pues las tensiones que pudieran existir o surgir pueden obstaculizar las operaciones de socorro. En otros contextos, algunas Sociedades Nacionales intentan disminuir la violencia en lugares públicos mediante la disipación o la eliminación de elementos de división entre grupos que se enfrentan. Por ejemplo, la labor para reducir conflictos entre grupos étnicos, o la violencia en multitudes, entre otros, durante elecciones o acontecimientos deportivos, la violencia urbana y de pandillas.",
+          "Violencia autoinfligida – se trata de un fenómenos que cobra cariz epidémico. El cincuenta y ocho por ciento (58%) de las muertes violentas en el mundo corresponden a suicidios. Resulta imperioso inspirarse del ejemplo de ciertas Sociedades Nacionales y redoblar esfuerzos para salvar los obstáculos asociados a tabúes culturales o religiosos y a la estigmatización que conllevan. Otras Sociedades Nacionales abordan el problema de la violencia autoinfligida mediante iniciativas directas encaminadas a reducir el consumo indebido de alcohol y otras substancias, o de forma indirecta, a través de servicios de acompañamiento psicosocial y de atención de salud mental."
+        ],
+        {
+          "type": "case-study-simple",
+          "title": "“Querían matarlos”",
+          "content": [
+            "En 2012, en la región de Delta Tana, en Kenia, se vivieron situaciones de extrema violencia entre comunidades de granjeros y de pastores, a raíz de desacuerdos relativos al reparto de las escasas tierras y del limitado abastecimiento de agua. Como consecuencia, murieron ciento seis personas y otras ciento doce mil fueron desplazadas. Kony, un colegial de primaria recuerda “estábamos en clase cuando oímos la primera explosión. Uno de mis compañeros dijo que se trataba de un disparo de arma de fuego. Era terrorífico y empezamos a correr hacia la aldea situada a unos pocos metros de la escuela”.",
+            " Para hacer frente al problema, la Cruz Roja de Kenia puso en marcha un proyecto de reducción de riesgos destinado a frenar el peligro de violencia en el futuro. En este proyecto se incluyen comités locales de paz, proyectos conjuntos para la generación de ingresos dirigidos por mujeres, el diálogo con dirigentes religiosos y actividades escolares. La Cruz Roja de Kenia desempeña una función crucial pues asume la coordinación de las actividades con neutralidad, independencia e imparcialidad."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agentes del cambio de comportamiento",
+      "blocks": [
+        "Los jóvenes encabezan una cantidad considerable de proyectos relativos a la violencia en unas cincuenta y dos (52) Sociedades Nacionales (28%) los jóvenes como agentes del cambio de comportamiento es la iniciativa emblemática de la Federación Internacional para la promoción de una cultura de no violencia y paz. Desde su establecimiento en 2008, está orientada a la habilitación de personas que sienten el norte ético en sus comunidades. En la actualidad existen más de 1 450 educadores de homólogos de ciento veinticinco (125) Sociedades Nacionales que han recibido formación específica.",
+        "Esta iniciativa busca un cambio de mentalidades a través de los corazones. Se fundamenta en la educación entre homólogos, centrada en los participantes, que privilegia un enfoque vivencial en el cual los sentimientos, las experiencias o las sensaciones corporales –y no el análisis intelectual– son los portales para favorecer la concienciación y la adquisición de destrezas que permitan comprender fenómenos de sociedad tales como la discriminación, la exclusión y la violencia.",
+        "Se recurre a juegos, dramatizaciones, simulaciones, ejercicios de visualización, relatos, plataformas artísticas y el arte para extraer a los participantes de su zona de comodidad y situarlos en un ambiente seguro y de respeto en donde nadie les dice lo que deben hacer o pensar, sino en donde examinan juntos soluciones. Se trata de un aprendizaje interno y que emana del intercambio de ideas en medio de la confianza, de manera que las personas forjan sus propios objetivos a través de la reflexión crítica.",
+        "El contexto es importante. Así, la incorporación de la perspectiva de esta iniciativa en otras actividades de las organizaciones de la Cruz Roja y de la Media Luna Roja tales como los primeros auxilios, la gestión de desastres y emergencias, la migración, el alojamiento provisional y de emergencia, la seguridad vial y el apoyo psicológico, fortalecerá tanto nuestra labor como nuestra forma de ejecutarla. ",
+        {
+          "type": "case-study-simple",
+          "title": "Cambié muchísimo en muy poco tiempo",
+          "content": [
+            "Un formador de homólogos que trabaja en el marco de la iniciativa sobre los jóvenes como agentes del cambio de comportamiento explicaba: “la experiencia supuso para mí un punto de inflexión. Sin esta formación, me habría tomado toda la vida entender determinadas cuestiones y cambiar mi actitud”.",
+            "La iniciativa de los jóvenes como agentes del cambio de comportamiento suscita en instructores y formadores de homólogos una transformación interna que incide en las motivaciones, la identidad, el vocabulario y las actitudes, y además fomenta los comportamientos positivos. A menudo, su eventual efecto dominó suscita mejores relaciones familiares, profesionales, y con los pares.",
+            "En un estudio sobre los efectos a cinco años se concluye que “la iniciativa sobre los jóvenes como agentes del cambio de comportamiento se sustenta en los principios fundamentales y los valores humanitarios de las organizaciones de la Cruz Roja y de la Media Luna Roja, y fomenta en muy poco tiempo, en diversos ámbitos culturales y a escala mundial, transformaciones duraderas a largo plazo de actitudes y comportamientos. Estas características hacen de la iniciativa un modelo notable de prácticas óptimas en materia de educación entre homólogos que ofrece una referencia tangible para las intervenciones destinadas a impulsar el cambio de comportamiento, tanto en el interior como en el exterior del Movimiento Internacional de la Cruz Roja y de la Media Luna Roja”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Años llenos de vida: la contribución de los adultos mayores",
+      "blocks": [
+        "El mundo envejece a medida que se prolonga la expectativa de vida. Conforme a las tendencias actuales, la cantidad de personas de sesenta años y edades superiores habrá triplicado con creces hasta 2050, situándose en cerca de dos mil millones de seres humanos que, en un ochenta por ciento (80%), vivirán en países de ingresos medios y bajos. Se observa ya las profundas consecuencias sociales y económicas de esta curva demográfica.",
+        "Las organizaciones de la Cruz Roja y de la Media Luna Roja desean consolidar una imagen positiva del envejecimiento en la cual se reconozca la importancia de los adultos mayores en la sociedad, en virtud de los conocimientos y destrezas que poseen y que pueden ser de gran beneficio para las generaciones más jóvenes. Ello supone la promoción de entornos sociales inclusivos que propicien la participación de las personas de edad y fortalezcan su autonomía.",
+        "Entre otras actividades figuran iniciativas para que los adultos mayores se mantengan saludables y en buen estado físico, así como para prevenir el maltrato y zanjarlo. Se aboga en favor de servicios de transporte, alojamiento y cuidado que correspondan mejor a las necesidades de los adultos mayores, aunado al apoyo práctico de voluntarios para que puedan acceder a esos servicios. Plantea particular dificultad la situación de los adultos mayores en casos de emergencia, en los cuales sus necesidades especiales suelen ser pasadas por alto.",
+        "Las organizaciones de la Cruz Roja y de la Media Luna Roja ejecutan actividades en favor de los adultos mayores y colaboran con ellos de diversa manera. Para trazar un panorama más completo a este respecto, en futuras recopilaciones de información se incorporará un indicador de edad para favorecer el desglose de datos por edad y sexo."
+      ]
+    },
+    {
+      "title": "Migración",
+      "blocks": [
+        "La migración ha sido un fenómeno constante a lo largo de la historia y los migrantes representan el tres por ciento (3%) de la población mundial. Ello significa que, aproximadamente, uno de cada treinta y cinco habitantes del planeta es un migrante. Los migrantes son personas que abandonan sus hogares o se ven obligados a huir de ellos en busca de lugares –generalmente en el extranjero– en donde gocen de mejores condiciones de vida y mayor seguridad. La migración puede ser voluntaria o forzosa aunque usualmente se trata de una combinación de elecciones y factores limitantes.",
+        "Si bien muchos migrantes se establecen con éxito en nuevas comunidades, otros enfrentan dificultades y son, ellos, el centro de nuestra preocupación. Sin poder contar con sistemas tradicionales de apoyo, los migrantes no logran a menudo acceder a los servicios de atención de salud primaria ni de bienestar. Podrían perder contacto con sus familias y comunidades, caer presas del contrabando o la trata de personas, o ser objeto de explotación bajo arreglos de trabajo informal.",
+        "En el proceso de migración, podrían ser detenidos o verse privados de libertad. Deben, además, superar otras dificultades tales como las barreras culturales y el desconocimiento de idiomas, la discriminación, la exclusión e incluso la violencia. Las mujeres, los niños y los menores no acompañados corren particular riesgo.",
+        "Las organizaciones de la Cruz Roja y de la Media Luna Roja no están ni a favor ni en contra de la migración; no obstante, están determinadas en la atención de las necesidades de los migrantes vulnerables, independientemente de la condición jurídica o administrativa de estos. Ello supone la defensa del principio de acceso humanitario así como del “rostro humano” de los migrantes, en lugar de que sean objeto de exclusión o estigmatización, y la asistencia a los migrantes para que puedan encontrar soluciones duraderas a su situación en cooperación con las comunidades de origen y de acogida. Los migrantes aportan muchas contribuciones positivas de índole social, económica, cultural y demográfica en los países de acogida. Su contribución es igualmente significativa en los países de origen, por ejemplo, a través de las remesas cuyo valor agregado supera aquel de la asistencia mundial para el desarrollo.",
+        "En los países donde las presiones migratorias se originan en situaciones sociales y económicas adversas debido a la degradación del medio ambiente, las repercusiones de desastres o de conflictos, las organizaciones de la Cruz Roja y de la Media Luna Roja se esfuerzan por consolidar la capacidad de resistencia y recuperación para aligerar las presiones que inducen a las personas a que migren contra su deseo y voluntad.",
+        "Exhortamos a los gobiernos de todo el mundo a que respeten los derechos de los migrantes. Ciento sesenta y cuatro (164) de los ciento noventa y cuatro (194) Estados participantes en la XXXI Conferencia Internacional de la Cruz Roja y de la Media Luna Roja (2011) aprobaron una resolución sobre migración en la que se garantiza el acceso, el respeto de la dignidad y de la diversidad, así como la inclusión social.",
+        {
+          "type": "chart",
+          "title": "“Humanización” de los migrantes: una cuestión de principios",
+          "caption": "Principios generales que sustentan la acción de las organizaciones de la Cruz Roja y de la Media Luna Roja",
+          "items": [
+            "Centrarse en las necesidades y la vulnerabilidad de los migrantes.",
+            "Incluir a los migrantes en los programas humanitarios.",
+            "Ayudar a los migrantes a realizar sus aspiraciones.",
+            "Reconocer los derechos de los migrantes.",
+            "Vincular la asistencia, la protección de los migrantes y la intercesión humanitaria en su favor.",
+            "Establecer asociaciones a favor de los migrantes.",
+            "Trabajar a lo largo de las rutas de migración.",
+            "Ayudar a los migrantes que regresan a sus países.",
+            "Intervenir ante los desplazamientos de población.",
+            "Aliviar las presiones que determinan la migración en las comunidades de origen."
+          ]
+        },
+        "La labor de las organizaciones de la Cruz Roja y de la Media Luna Roja junto a los migrantes abarca la ayuda humanitaria, así como otro tipo de asistencia social individual, protección jurídica y apoyo personal. Las Sociedades Nacionales se ocupan de asuntos relativos a la migración en todas las regiones."
+      ]
     }
+  ],
+  "nextChapter": {
+    "heading": "Capítulo siguiente",
+    "chapter": "7",
+    "subtitle": "Acción facilitadora 1",
+    "title": "Construir Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja fuertes",
+    "slug": "enabling-action-1"
+  }
 }

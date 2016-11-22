@@ -1,74 +1,68 @@
 {
-    "chapter": "3",
-    "slug": "living-our-fundamental-principles",
-    "title": "Living our fundamental principles",
-    "intro": "All that we do is guided by our Fundamental Principles, which are distilled from our collective experience accumulated over more than a century.",
-    "general": [
-        [
+  "chapter": "3",
+  "slug": "living-our-fundamental-principles",
+  "title": "Living our fundamental principles",
+  "intro": "All that we do is guided by our Fundamental Principles, which are distilled from our collective experience accumulated over more than a century.",
+  "general": [
+    [
+      "Humanity",
+      "Impartiality",
+      "Neutrality",
+      "Independence",
+      "Voluntary Service",
+      "Unity",
+      "Universality"
+    ],
+    "While they are an interconnected and indivisible package, the principle of humanity is the substantive motivation for doing our work, the principles of impartiality, neutrality, and independence are how we must operate to be effective, and the principles of voluntary service, unity, and universality are how we organise ourselves for maximum impact."
+  ],
+  "sections": [
+    {
+      "title": "Introduction Section",
+      "blocks": [
+        "The Fundamental Principles are central to our common identity and purpose. They translate into the values that underpin our efforts and the personal skills expected from Red Cross and Red Crescent volunteers and staff.",
+        {
+          "type": "chart",
+          "title": "",
+          "name": "7 Fundamental\nprinciples",
+          "items": [
             "Humanity",
             "Impartiality",
             "Neutrality",
             "Independence",
-            "Voluntary Service",
+            "Voluntary\nservice",
             "Unity",
             "Universality"
-        ],
-        "While they are an interconnected and indivisible package, the principle of humanity is the substantive motivation for doing our work, the principles of impartiality, neutrality, and independence are how we must operate to be effective, and the principles of voluntary service, unity, and universality are how we organise ourselves for maximum impact."
-    ],
-    "sections": [
+          ],
+          "src": "/img/chapters/3/principles.svg",
+          "caption": ""
+        },
+        "The year 2015 marks the 50th anniversary of the official adoption of the Fundamental Principles. In the intervening decades, much has changed in the world. Consultations with members, volunteers, and staff from 115 National Societies and other stakeholders were held in all regions, to find out how they feel about the Fundamental Principles. There was remarkable unanimity in their conclusions.",
+        "The Fundamental Principles are seen to be as relevant today as they have ever been in the past. Indeed, more so, because a clear ethical framework is even more necessary to navigate through the dilemmas created by the much greater complexity of the current humanitarian landscape.",
         {
-            "title": "Introduction Section",
-            "blocks": [
-                "The Fundamental Principles are central to our common identity and purpose. They translate into the values that underpin our efforts and the personal skills expected from Red Cross and Red Crescent volunteers and staff.",
-                {
-                    "type": "chart",
-                    "title": "",
-                    "name": [
-                        "7 Fundamental",
-                        "principles"
-                    ],
-                    "items": [
-                        "Humanity",
-                        "Impartiality",
-                        "Neutrality",
-                        "Independence",
-                        "Voluntary\\nservice",
-                        "Unity",
-                        "Universality"
-                    ],
-                    "src": "\/img\/chapters\/3\/principles.svg",
-                    "caption": ""
-                },
-                "The year 2015 marks the 50th anniversary of the official adoption of the Fundamental Principles. In the intervening decades, much has changed in the world. Consultations with members, volunteers, and staff from 115 National Societies and other stakeholders were held in all regions, to find out how they feel about the Fundamental Principles. There was remarkable unanimity in their conclusions.",
-                "The Fundamental Principles are seen to be as relevant today as they have ever been in the past. Indeed, more so, because a clear ethical framework is even more necessary to navigate through the dilemmas created by the much greater complexity of the current humanitarian landscape.",
-                {
-                    "type": "chart",
-                    "title": "",
-                    "name": [
-                        "7 Personal",
-                        "skills"
-                    ],
-                    "items": [
-                        "Empathy",
-                        "Active Listening",
-                        "Critical Thinking\\nand Non-\\nJudgement",
-                        "Nonviolent\\nCommunication",
-                        "Collaborative\\nNegotiation\\nand Mediation",
-                        "Personal\\nResilience",
-                        "Inner Peace"
-                    ],
-                    "src": "\/img\/chapters\/3\/skills.svg",
-                    "caption": ""
-                },
-                "Download Full Table"
-            ]
-        }
-    ],
-    "nextChapter": {
-        "heading": "Next chapter",
-        "chapter": "4",
-        "subtitle": "Strategic Aim 1",
-        "title": "Save lives, protect livelihoods and strengthen recovery from disasters and crises",
-        "slug": "strategic-aim-1"
+          "type": "chart",
+          "title": "",
+          "name": "7 Personal\nskills",
+          "items": [
+            "Empathy",
+            "Active Listening",
+            "Critical Thinking\nand Non-\nJudgement",
+            "Nonviolent\nCommunication",
+            "Collaborative\nNegotiation\nand Mediation",
+            "Personal\nResilience",
+            "Inner Peace"
+          ],
+          "src": "/img/chapters/3/skills.svg",
+          "caption": ""
+        },
+        "Download Full Table"
+      ]
     }
+  ],
+  "nextChapter": {
+    "heading": "Next chapter",
+    "chapter": "4",
+    "subtitle": "Strategic Aim 1",
+    "title": "Save lives, protect livelihoods and strengthen recovery from disasters and crises",
+    "slug": "strategic-aim-1"
+  }
 }

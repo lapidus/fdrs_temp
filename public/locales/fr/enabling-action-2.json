@@ -1,86 +1,69 @@
 {
-    "chapter": "8",
-    "slug": "enabling-action-2",
-    "title": "Action facilitatrice 2",
-    "subtitle": "Mener des activite\u0301s de diplomatie humanitaire pour pre\u0301venir et re\u0301duire la vulne\u0301rabilite\u0301 dans un monde interde\u0301pendant",
-    "intro": "Nos activite\u0301s de diplomatie humanitaire comprennent la sensibilisation, la mobilisation sociale, la ne\u0301gociation, la communication, la repre\u0301sentation, l\u2019e\u0301tablissement d\u2019accords formels, la collecte de fonds et d\u2019autres mesures qui permettent a\u0300 la Croix-Rouge et au Croissant-Rouge de faire plus, de le faire mieux et d\u2019aller plus loin dans les efforts de\u0301ploye\u0301s pour porter assistance aux communaute\u0301s pauvres et vulne\u0301rables.",
-    "sections": [
+  "chapter": "8",
+  "slug": "enabling-action-2",
+  "title": "Action facilitatrice 2",
+  "subtitle": "Mener des activités de diplomatie humanitaire pour prévenir et réduire la vulnérabilité dans un monde interdépendant",
+  "intro": "Nos activités de diplomatie humanitaire comprennent la sensibilisation, la mobilisation sociale, la négociation, la communication, la représentation, l’établissement d’accords formels, la collecte de fonds et d’autres mesures qui permettent à la Croix-Rouge et au Croissant-Rouge de faire plus, de le faire mieux et d’aller plus loin dans les efforts déployés pour porter assistance aux communautés pauvres et vulnérables.",
+  "sections": [
+    {
+      "title": "Le rôle d’auxiliaire",
+      "blocks": [
+        "Le rôle d’auxiliaire, qui est inclus dans le droit national, confère aux Sociétés nationales l’autorité et l’accès nécessaires pour mener un dialogue privilégié avec les autorités publiques. Nombre de gouvernements contribuent au succès de la Société nationale de leur pays et ce, par différents biais, dont font partie :",
+        [
+          "le versement de contributions directes sous forme de subventions annuelles ou de remboursement des frais liés à la fourniture de services ;",
+          "l’apport de contributions indirectes sous forme d’exonérations et d’allègements fiscaux, d’aides en nature (locaux, terrains), d’avantages spéciaux (par exemple, des tarifs préférentiels sur les télécommunications, une part des revenus tirés des grandes manifestations sportives) et de permis autorisant la conduite d’activités à but lucratif (par exemple, des magasins caritatifs ou des formations payantes aux premiers secours);",
+          "la garantie d’un environnement facilitateur, avec l’adoption de politiques et de lois favorisant le volontariat et l’accès humanitaire."
+        ],
+        "De manière générale, les Sociétés nationales utilisent leur rôle d’auxiliaire dans les situations de crise humanitaire pour tenter d’éliminer des obstacles majeurs. Ce rôle leur permet également de plaider en faveur de réformes politiques et législatives à plus long terme aux fins de lutter contre les causes profondes de la discrimination, de la marginalisation et d’autres formes de vulnérabilité sous-jacente."
+      ]
+    },
+    {
+      "title": "Notre mission en matière de diplomatie humanitaire",
+      "blocks": [
+        "Notre mission en matière de diplomatie humanitaire consiste notamment à promouvoir le positionnement de la Croix-Rouge et du Croissant-Rouge au sujet des défis majeurs auxquels l’humanité est confrontée. Pour ce faire, nous mettons à profit notre présence régulière au sein des instances mondiales de discussion, telles que l’Assemblée générale des Nations Unies, le Forum économique mondial, l’Assemblée mondiale de la Santé, la Conférence mondiale sur la réduction des risques de catastrophes, la Conférence des Nations Unies sur les changements climatiques et le Forum de haut niveau sur l’efficacité de l’aide."
+      ]
+    },
+    {
+      "title": "Partenariats externes",
+      "blocks": [
+        "Outre notre collaboration avec les gouvernements, nous accueillons favorablement les possibilités de partenariats avec d’autres acteurs qui partagent nos valeurs et nos objectifs, et qui reconnaissent notre mandat et notre indépendance d’action. Le nombre de partenariats établis entre des Sociétés nationales et des organisations, des entreprises, des établissements universitaires, des réseaux professionnels ou d’autres entités est en constante augmentation, reflétant le respect et l’estime portés aux Sociétés nationales.",
         {
-            "title": "Le ro\u0302le d\u2019auxiliaire",
-            "blocks": [
-                "Le ro\u0302le d\u2019auxiliaire, qui est inclus dans le droit national, confe\u0300re aux Socie\u0301te\u0301s nationales l\u2019autorite\u0301 et l\u2019acce\u0300s ne\u0301cessaires pour mener un dialogue privile\u0301gie\u0301 avec les autorite\u0301s publiques. Nombre de gouvernements contribuent au succe\u0300s de la Socie\u0301te\u0301 nationale de leur pays et ce, par diffe\u0301rents biais, dont font partie :",
-                [
-                    "le versement de contributions directes sous forme de subventions annuelles ou de remboursement des frais lie\u0301s a\u0300 la fourniture de services ;",
-                    "l\u2019apport de contributions indirectes sous forme d\u2019exone\u0301rations et d\u2019alle\u0300gements fiscaux, d\u2019aides en nature (locaux, terrains), d\u2019avantages spe\u0301ciaux (par exemple, des tarifs pre\u0301fe\u0301rentiels sur les te\u0301le\u0301communications, une part des revenus tire\u0301s des grandes manifestations sportives) et de permis autorisant la conduite d\u2019activite\u0301s a\u0300 but lucratif (par exemple, des magasins caritatifs ou des formations payantes aux premiers secours);",
-                    "la garantie d\u2019un environnement facilitateur, avec l\u2019adoption de politiques et de lois favorisant le volontariat et l\u2019acce\u0300s humanitaire."
-                ],
-                "De manie\u0300re ge\u0301ne\u0301rale, les Socie\u0301te\u0301s nationales utilisent leur ro\u0302le d\u2019auxiliaire dans les situations de crise humanitaire pour tenter d\u2019e\u0301liminer des obstacles majeurs. Ce ro\u0302le leur permet e\u0301galement de plaider en faveur de re\u0301formes politiques et le\u0301gislatives a\u0300 plus long terme aux fins de lutter contre les causes profondes de la discrimination, de la marginalisation et d\u2019autres formes de vulne\u0301rabilite\u0301 sous-jacente."
-            ]
+          "type": "chart",
+          "title": "Formation conjointe : partenariat avec special olympics",
+          "items": [
+            { "country": "Pérou", "text": "Special Olympics et la Croix-Rouge péruvienne ont travaillé avec la Direction régionale de l’éducation au Pérou dans la ville d’Iquitos, perdue dans l’Amazonie, afin d’y introduire la pétanque. Ils ont formé 25 entraîneurs et dix promoteurs de la santé en partenariat avec cinq écoles." },
+            { "country": "Jamaïque", "text": "S’appuyant sur ses relations avec l’Association jamaïcaine sur le handicap mental, Special Olympics a noué un partenariat avec la Croix-Rouge de la Jamaïque pour la formation au leadership et à la sensibilisation. Les athlètes ont évoqué des problèmes tels que les moqueries et les brimades, la discrimination dans les transports publics, et le manque de confiance de soi." },
+            { "country": "Autriche", "text": "Special Olympics et la jeunesse de la Croix-Rouge autrichienne partagent une vision commune qui trouvera son aboutissement dans l’organisation des Jeux paralympiques d’hiver qui auront lieu en Styrie (Autriche), en 2017." },
+            { "country": "Indonésie", "text": "Les volontaires de la Croix-Rouge indonésienne ont suivi une formation avec 75 athlètes handicapés et leurs 50 mentors. Si les athlètes ont appris les premiers secours, les volontaires de la Croix-Rouge ont appris à vivre avec une déficience intellectuelle. « Ils ont toujours maintenu un climat de convivialité avec leurs rires et sourires. Il était amusant d’apprendre ensemble», explique Istiansari de la Croix-Rouge." }
+          ],
+          "caption": ""
         },
+        "La mission de la Croix-Rouge et du Croissant-Rouge, qui est de favoriser l’intégration sociale, et celle de Special Olympics, qui est de donner aux enfants et aux adultes présentant un handicap intellectuel la possibilité de développer leur condition physique, de démontrer leur courage, d’éprouver de la joie et de partager par le sport, font de ces deux organisations des alliés naturels."
+      ]
+    },
+    {
+      "title": "Notre portée",
+      "blocks": [
+        "La portée mondiale de la Fédération n’a cessé de croître ces dernières années. En 2014, la Fédération a fait l’objet de quelque 310 000 mentions dans les médias, en plus des dizaines de milliers d’émissions, d’articles dans la presse écrite et de références en ligne sur le travail des Sociétés nationales, diffusés chaque jour à travers le monde. Le site Internet de la Fédération a été consulté environ neuf millions de fois par près de trois millions de personnes en 2014, une remarquable progression depuis 2010.",
         {
-            "title": "Notre mission en matie\u0300re de diplomatie humanitaire",
-            "blocks": [
-                "Notre mission en matie\u0300re de diplomatie humanitaire consiste notamment a\u0300 promouvoir le positionnement de la Croix-Rouge et du Croissant-Rouge au sujet des de\u0301fis majeurs auxquels l\u2019humanite\u0301 est confronte\u0301e. Pour ce faire, nous mettons a\u0300 profit notre pre\u0301sence re\u0301gulie\u0300re au sein des instances mondiales de discussion, telles que l\u2019Assemble\u0301e ge\u0301ne\u0301rale des Nations Unies, le Forum e\u0301conomique mondial, l\u2019Assemble\u0301e mondiale de la Sante\u0301, la Confe\u0301rence mondiale sur la re\u0301duction des risques de catastrophes, la Confe\u0301rence des Nations Unies sur les changements climatiques et le Forum de haut niveau sur l\u2019efficacite\u0301 de l\u2019aide."
-            ]
+          "type": "chart",
+          "title": "Aller plus loin grâce aux médias traditionnels et numériques",
+          "axisLabels": {
+            "x": "Années",
+            "y": ""
+          },
+          "lineLabels": ["Visites", "Utilisateurs", "Twitter", "Facebook", "YouTube\n", "\nMentions dans\nles médias"],
+          "caption": "Source: département Communications"
         },
-        {
-            "title": "Partenariats externes",
-            "blocks": [
-                "Outre notre collaboration avec les gouvernements, nous accueillons favorablement les possibilite\u0301s de partenariats avec d\u2019autres acteurs qui partagent nos valeurs et nos objectifs, et qui reconnaissent notre mandat et notre inde\u0301pendance d\u2019action. Le nombre de partenariats e\u0301tablis entre des Socie\u0301te\u0301s nationales et des organisations, des entreprises, des e\u0301tablissements universitaires, des re\u0301seaux professionnels ou d\u2019autres entite\u0301s est en constante augmentation, refle\u0301tant le respect et l\u2019estime porte\u0301s aux Socie\u0301te\u0301s nationales.",
-                {
-                    "type": "chart",
-                    "title": "Formation conjointe : partenariat avec special olympics",
-                    "items": [
-                        {
-                            "country": "P\u00e9rou",
-                            "text": "Special Olympics et la Croix-Rouge pe\u0301ruvienne ont travaille\u0301 avec la Direction re\u0301gionale de l\u2019e\u0301ducation au Pe\u0301rou dans la ville d\u2019Iquitos, perdue dans l\u2019Amazonie, afin d\u2019y introduire la pe\u0301tanque. Ils ont forme\u0301 25 entrai\u0302neurs et dix promoteurs de la sante\u0301 en partenariat avec cinq e\u0301coles."
-                        },
-                        {
-                            "country": "Jama\u00efque",
-                            "text": "S\u2019appuyant sur ses relations avec l\u2019Association jamai\u0308caine sur le handicap mental, Special Olympics a noue\u0301 un partenariat avec la Croix-Rouge de la Jamai\u0308que pour la formation au leadership et a\u0300 la sensibilisation. Les athle\u0300tes ont e\u0301voque\u0301 des proble\u0300mes tels que les moqueries et les brimades, la discrimination dans les transports publics, et le manque de confiance de soi."
-                        },
-                        {
-                            "country": "Autriche",
-                            "text": "Special Olympics et la jeunesse de la Croix-Rouge autrichienne partagent une vision commune qui trouvera son aboutissement dans l\u2019organisation des Jeux paralympiques d\u2019hiver qui auront lieu en Styrie (Autriche), en 2017."
-                        },
-                        {
-                            "country": "Indon\u00e9sie",
-                            "text": "Les volontaires de la Croix-Rouge indone\u0301sienne ont suivi une formation avec 75 athle\u0300tes handicape\u0301s et leurs 50 mentors. Si les athle\u0300tes ont appris les premiers secours, les volontaires de la Croix-Rouge ont appris a\u0300 vivre avec une de\u0301ficience intellectuelle. \u00ab Ils ont toujours maintenu un climat de convivialite\u0301 avec leurs rires et sourires. Il e\u0301tait amusant d\u2019apprendre ensemble\u00bb, explique Istiansari de la Croix-Rouge."
-                        }
-                    ]
-                },
-                "La mission de la Croix-Rouge et du Croissant-Rouge, qui est de favoriser l\u2019inte\u0301gration sociale, et celle de Special Olympics, qui est de donner aux enfants et aux adultes pre\u0301sentant un handicap intellectuel la possibilite\u0301 de de\u0301velopper leur condition physique, de de\u0301montrer leur courage, d\u2019e\u0301prouver de la joie et de partager par le sport, font de ces deux organisations des allie\u0301s naturels."
-            ]
-        },
-        {
-            "title": "Notre porte\u0301e",
-            "blocks": [
-                "La porte\u0301e mondiale de la Fe\u0301de\u0301ration n\u2019a cesse\u0301 de croi\u0302tre ces dernie\u0300res anne\u0301es. En 2014, la Fe\u0301de\u0301ration a fait l\u2019objet de quelque 310 000 mentions dans les me\u0301dias, en plus des dizaines de milliers d\u2019e\u0301missions, d\u2019articles dans la presse e\u0301crite et de re\u0301fe\u0301rences en ligne sur le travail des Socie\u0301te\u0301s nationales, diffuse\u0301s chaque jour a\u0300 travers le monde. Le site Internet de la Fe\u0301de\u0301ration a e\u0301te\u0301 consulte\u0301 environ neuf millions de fois par pre\u0300s de trois millions de personnes en 2014, une remarquable progression depuis 2010.",
-                {
-                    "type": "chart",
-                    "title": "Aller plus loin gra\u0302ce aux me\u0301dias traditionnels et nume\u0301riques",
-                    "axisLabels": {
-                        "x": "Anne\u0301es"
-                    },
-                    "lineLabels": [
-                        "Visites",
-                        "Utilisateurs",
-                        "Twitter",
-                        "Facebook",
-                        "YouTube\\n",
-                        "\\nMentions dans\\nles me\u0301dias"
-                    ],
-                    "caption": "Source: de\u0301partement Communications"
-                },
-                "Les me\u0301dias nume\u0301riques offrent de nouvelles possibilite\u0301s d\u2019e\u0301tendre notre re\u0301seau, car ils permettent d\u2019encourager un plus grand nombre de personnes de tous horizons a\u0300 se joindre a\u0300 notre action humanitaire commune. En 2014, la chai\u0302ne YouTube de la Fe\u0301de\u0301ration a obtenu plus de 530 000 vues, et nos comptes Facebook et Twitter ont permis d\u2019atteindre plus de 11 millions et de 23 millions de personnes respectivement."
-            ]
-        }
-    ],
-    "nextChapter": {
-        "heading": "Prochain chapitre",
-        "chapter": "9",
-        "subtitle": "Action facilitatrice 3",
-        "title": "Fonctionner efficacement en tant que fe\u0301de\u0301ration internationale",
-        "slug": "enabling-action-3"
+        "Les médias numériques offrent de nouvelles possibilités d’étendre notre réseau, car ils permettent d’encourager un plus grand nombre de personnes de tous horizons à se joindre à notre action humanitaire commune. En 2014, la chaîne YouTube de la Fédération a obtenu plus de 530 000 vues, et nos comptes Facebook et Twitter ont permis d’atteindre plus de 11 millions et de 23 millions de personnes respectivement."
+      ]
     }
+  ],
+  "nextChapter": {
+    "heading": "Prochain chapitre",
+    "chapter": "9",
+    "subtitle": "Action facilitatrice 3",
+    "title": "Fonctionner efficacement en tant que fédération internationale",
+    "slug": "enabling-action-3"
+  }
 }

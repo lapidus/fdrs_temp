@@ -1,0 +1,126 @@
+{
+  "site-title": "Tout le monde compte Bilan jusqu’en 2015",
+  "preTitle": "Tout le monde compte",
+  "reportType": "Bilan",
+  "download": "Télécharger le bilan",
+  "share": "partager",
+  "signature": [
+    "site par:",
+    "Lapidus Interactive"
+  ],
+  "copyright": "@ 2016 IFRC",
+  "home": {
+    "title": ["Tout le monde", "compte", "2015"],
+    "intro": [
+      "À mi-parcours de cette décennie, et à quelques années du centenaire de la Fédération internationale des Sociétés de la Croix-Rouge et du Croissant-Rouge (Fédération), le moment est venu de dresser le bilan de nos réalisations à la lumière des aspirations de la Stratégie 2020.",
+      "Le tableau présenté dans ce rapport est encourageant. En 2013, vous, les Sociétés nationales de la Croix-Rouge et du Croissant-Rouge, avez porté assistance à plus de 110 millions de personnes dans le cadre de vos opérations d'urgence en cas de catastrophe et de vos programmes de relèvement précoce."
+    ],
+    "signatures": [
+      {
+        "name": "Tadateru Konoé",
+        "title": "Président"
+      },
+      {
+        "name": "Elhadj As Sy",
+        "title": "Secrétaire général"
+      }
+    ],
+    "section1": "Section 1",
+    "section2": "Section 2",
+    "section3": "Section 3",
+    "section4": "Section 4",
+    "overview": "Aperçu",
+    "strategicAims": "Objectifs stratégiques",
+    "enablingActions": "Actions facilitatrices",
+    "downloadReportSection": {
+      "preTitle": "Bilan",
+      "title": "Vous voulez en savoir plus?",
+      "body": "Le bilan 2015 est disponible dans les quatre langues officielles de la FICR. Choisissez un téléchargement à partir ci-dessous .",
+      "buttons": ["Télécharger le bilan en anglais", "Télécharger le bilan en français", "Télécharger le bilan en espagnol", "Télécharger le bilan en arabe"]
+    },
+    "sections": [
+      {
+        "id": "Section 1",
+        "title": "Aperçu",
+        "statistic": {
+          "number": "80M",
+          "text": "Membres"
+        },
+        "fact": "Le réseau mondial de la Croix-Rouge et du Croissant- Rouge s’est étendu de manière continue depuis sa naissance en 1863. Il compte 190 Sociétés nationales depuis 2015.",
+        "quote": "Toutes nos actions sont guidées par nos Principes fondamentaux, lesquels s’inspirent de l’expérience collective accumulée depuis plus d’un siècle.",
+        "chapters": [
+          { "title": "Qui nous sommes", "slug": "/who-we-are" },
+          { "title": "Ce que nous faisons", "slug": "/what-we-do" },
+          { "title": "Nos principes fondamentaux en action", "slug": "/living-our-fundamental-principles" }
+        ]
+      },
+      {
+        "id": "Section 2",
+        "title": "Objectifs stratégiques",
+        "statistic": {
+          "number": "110M",
+          "text": "de personnes ont bénéficié des programmes d’intervention en cas de catastrophe et de relèvement précoce"
+        },
+        "fact": "La vision de la Fédération est: Inspirer, encourager, faciliter et promouvoir en tout moment toutes les formes d'activités humanitaires des Sociétées Nationales, en visant à prévenir et appaiser les souffrances humaines, ce qui contribue a maintenir et promouvoir le respect de la dignité et la paix dans le monde.",
+        "quote": "Depuis leurs débuts, la Croix-Rouge et le Croissant-Rouge sont surtout connus pour leur mission, qui est d’apporter une aide d’urgence et un réconfort aux personnes en détresse.",
+        "chapters": [
+          { "pretitle": "Objectif stratégique 1", "title": "Sauver des views, protéger les moyens d'existence et renforcer le relèvement après les catastrophes et les crises", "slug": "/strategic-aim-1" },
+          { "pretitle": "Objectif stratégique 2", "title": "Promouvoir des modes de vie sains et sûrs", "slug": "/strategic-aim-2" },
+          { "pretitle": "Objectif stratégique 3", "title": "Promouvoir l'intégration sociale et une culture de non-violence et de paix", "slug": "/strategic-aim-3" }
+        ]
+      },
+      {
+        "id": "Section 3",
+        "title": "Actions facilitatrices",
+        "statistic": {
+          "number": "190",
+          "text": "Sociétés nationales"
+        },
+        "fact": "La capacité combinée des Sociétés nationales de fournir des services est la principale force de la Fédération et du Mouvement dans son ensemble.",
+        "quote": "Depuis l’adoption de la Stratégie 2020, les principales mesures prises pour améliorer notre fonctionnement en tant que Fédération ont consisté à renforcer notre gouvernance, à mettre en place un cadre de redevabilité et à promouvoir une culture de l’apprentissage.",
+        "chapters": [
+          { "pretitle": "Action facilitatrice 1", "title": "Bâtir des sociétés nationales de la croix-rouge et du croissant-rouge fortes", "slug": "/enabling-action-1" },
+          { "pretitle": "Action facilitatrice 2", "title": "Mener des activités de diplomatie humanitaire pour prévenir et réduire la vulnérabilité dans un monde interdépendant", "slug": "/enabling-action-2" },
+          { "pretitle": "Action facilitatrice 3", "title": "Fonctionner de manière efficace en tant que fédération internationale", "slug": "/enabling-action-3" }
+        ]
+      },
+      {
+        "id": "Section 4",
+        "title": "Annexes",
+        "chapters": [
+          {
+            "preTitle": "Outils de données",
+            "title": "Explorez les données",
+            "slug": "/data",
+            "body": [
+              "Voir les sept indicateurs clés dans toutes les Sociétés nationales",
+              "Trouvez des informations sur votre Société nationale"
+            ],
+            "button": "Explorez les données"
+          },
+          {
+            "title": "Remerciements",
+            "slug": "/acknowledgements"
+          }
+        ]
+      }
+    ]
+  },
+  "data": {
+    "title": "Données",
+    "subtitle": "Base de données et du système de compte rendu à l’échelle de la Fédération",
+    "indicators-title": "Indicateurs clé de performance",
+    "bubble-size": "Bubble size",
+    "national-society": "Société nationale",
+    "guide": "Sélectionnez un indicateur clé pour voir sur la carte",
+    "indicators": {
+      "KPI_Number_of_People_Volunteering": "Volontaires",
+      "KPI_Number_of_PaidStaff": "Employés rémunérés",
+      "KPI_Total_Number_of_People_Donating_Blood": "Donneurs du sang",
+      "KPI_Number_of_Local_Units": "Unités locales",
+      "KPI_Number_of_People_Reached_AllServices": "Personnes touchées par tous les services",
+      "Total_Expenditure_CHF": "Dépenses totales",
+      "Total_Income_CHF": "Recettes totales"
+    }
+  }
+}
