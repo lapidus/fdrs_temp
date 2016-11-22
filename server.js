@@ -1,10 +1,21 @@
 "use strict"
 
-const serverConf = require(__dirname + "/backend/config/server.json")
 const log = require("winston")
 const each = require("lodash/each")
 
 process.cwd(__dirname)
+
+const serverConf = {
+  "port": process.env.PORT || 3000,
+  "log": {
+    "Console": {
+      "level": "verbose",
+      "json": false,
+      "timestamp": true,
+      "colorize": true,
+    },
+  },
+}
 
 // Add support for daily rotate file
 log.transports.DailyRotateFile = require("winston-daily-rotate-file")
