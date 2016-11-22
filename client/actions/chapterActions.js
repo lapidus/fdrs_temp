@@ -1,4 +1,4 @@
-
+import Promise from "promise-polyfill"
 import request from 'superagent';
 
 export const REQUEST_CHAPTER = 'REQUEST_CHAPTER';
@@ -26,7 +26,7 @@ function receiveChapter(chapter, language) {
 }
 
 export function fetchChapter(params, pathname) {
-  
+
   var pathnameArray = pathname.split('/');
   var cleanedPathname = pathnameArray[pathnameArray.length - 1]
 
@@ -35,7 +35,7 @@ export function fetchChapter(params, pathname) {
 
     if(shouldFetchChapter(appState, cleanedPathname)) {
       dispatch(requestChapter());
-      
+
       var promise = new Promise((resolve, reject) => {
         var currentLanguage = appState.appReducer.language;
         request(`/api/${currentLanguage}/${cleanedPathname}.json`)
@@ -50,7 +50,7 @@ export function fetchChapter(params, pathname) {
             }
           });
       });
-      
+
       return promise;
     }
   };

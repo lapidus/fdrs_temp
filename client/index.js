@@ -15,8 +15,6 @@ import {
   fetchLanguage,
 } from "./actions/appActions"
 
-require("promise-polyfill")
-
 const store = configureStore()
 window.store = store
 const history = browserHistory

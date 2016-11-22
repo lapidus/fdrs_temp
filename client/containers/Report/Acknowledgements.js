@@ -2,6 +2,9 @@ import React from "react"
 import BreadCrumbs from "../../components/Breadcrumbs"
 
 class Acknowledgements extends React.Component {
+  componentWillMount() {
+    document.body.classList.add("html-ready")
+  }
   render() {
     return (
       <div>

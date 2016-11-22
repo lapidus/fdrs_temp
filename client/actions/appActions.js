@@ -1,4 +1,4 @@
-
+import Promise from "promise-polyfill"
 import request from 'superagent';
 
 export const START_LOAD = 'START_LOAD';

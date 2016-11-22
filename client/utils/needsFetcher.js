@@ -1,3 +1,4 @@
+import Promise from "promise-polyfill"
 
 export default function fetchNeededData(dispatch, components, params, renderProps) {
   const needs = components.reduce((prev, current) => {

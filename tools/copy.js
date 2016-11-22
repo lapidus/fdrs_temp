@@ -1,13 +1,16 @@
 const ncp = require("ncp").ncp
 
 const buildDir = "./build"
-const srcDestPairs = [
-  [ "./server.js", `${buildDir}/server.js` ],
-  [ "./backend", `${buildDir}/backend` ],
-  [ "./public", `${buildDir}/public` ],
+const sources = [
+  [ "server.js" ],
+  [ "backend" ],
+  [ "controllers" ],
+  [ "public" ],
 ]
-const copy = p => ncp(p[0], p[1], err =>
-  console.log(err || `Copied ${p[0]} to ${p[1]}`)
+const copy = p => ncp(
+  `./${p}`,
+  `${buildDir}/${p}`,
+  err => console.log(err || `Copied ${p}`)
 )
 
-srcDestPairs.map(copy)
+sources.map(copy)

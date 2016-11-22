@@ -28,6 +28,10 @@ class Chapter4 extends React.Component {
     const sameData = this.props.content[this.context.language].chapters["strategic-aim-1"] === newProps.content[newContext.language].chapters["who-we-are"]
     return newDataAvailable && !sameData
   }
+  componentDidUpdate() {
+    if (i18n.store.data[i18n.language]["strategic-aim-1"])
+      document.body.classList.add("html-ready")
+  }
   render() {
     const { t } = this.props
     const { language } = i18n
