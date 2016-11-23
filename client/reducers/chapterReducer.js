@@ -1,5 +1,5 @@
 
-import objectAssign from 'object-assign';
+import assign from 'lodash/assign';
 
 import { REQUEST_CHAPTER, RECEIVE_CHAPTER, INVALIDATE_REQUEST } from '../actions/chapterActions';
 
@@ -20,7 +20,7 @@ export default function storyReducer(state = {
 }, action) {
   switch(action.type) {
     case REQUEST_CHAPTER:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         isFetching: true
       });
     case RECEIVE_CHAPTER:
@@ -29,11 +29,11 @@ export default function storyReducer(state = {
       var chapterAddition = {};
       chapterAddition[action.chapter.slug] = action.chapter
       changes[action.language] = {
-        chapters: objectAssign({}, state[action.language].chapters, chapterAddition)
+        chapters: assign({}, state[action.language].chapters, chapterAddition)
       };
-      return objectAssign({}, state, changes);
+      return assign({}, state, changes);
     case INVALIDATE_REQUEST:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         isFetching: false
       });
     default:

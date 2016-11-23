@@ -1,7 +1,10 @@
 import React from "react"
 import { connect } from "react-redux"
 import Datamap from "datamaps"
-import { isNumber, groupBy, each, find } from "lodash"
+import isNumber from "lodash/isNumber"
+import groupBy from "lodash/groupBy"
+import each from "lodash/each"
+import find from "lodash/find"
 import Select from "react-select"
 
 import { fetchNationalSocieties } from "../../actions/appActions"

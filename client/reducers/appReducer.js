@@ -1,5 +1,5 @@
 
-import objectAssign from 'object-assign';
+import assign from 'lodash/assign';
 
 import { START_LOAD, PROGRESS_LOAD, END_LOAD, TOGGLE_NAV, CLOSE_NAV, REQUEST_LANGUAGE, RECEIVE_LANGUAGE, REQUEST_NATIONAL_SOCIETIES, RECEIVE_NATIONAL_SOCIETIES } from '../actions/appActions';
 
@@ -18,29 +18,29 @@ export default function storyReducer(state = {
 }, action) {
   switch(action.type) {
     case START_LOAD:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         showLoader: true
       });
     case PROGRESS_LOAD:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         loadProgress: action.progress
       });
     case END_LOAD:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         showLoader: false
       });
     case TOGGLE_NAV:
       document.getElementsByTagName('body')[0].style.overflow = !state.navOpen ? 'hidden' : 'auto';
-      return objectAssign({}, state, {
+      return assign({}, state, {
         navOpen: !state.navOpen
       });
     case CLOSE_NAV:
       document.getElementsByTagName('body')[0].style.overflow = 'auto';
-      return objectAssign({}, state, {
+      return assign({}, state, {
         navOpen: false
       });
     case REQUEST_LANGUAGE:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         fetchingLanguage: true
       });
     case RECEIVE_LANGUAGE:
@@ -52,13 +52,13 @@ export default function storyReducer(state = {
       console.log('Adding changes ', action.languageData);
       changes[action.lang] = action.languageData;
       console.log('The changed item looks like this: ', changes);
-      return objectAssign({}, state, changes);
+      return assign({}, state, changes);
     case REQUEST_NATIONAL_SOCIETIES:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         fetchingNationalSocieties: true
       });
     case RECEIVE_NATIONAL_SOCIETIES:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         nationalSocieties: action.nationalSocieties,
         fetchingNationalSocieties: false
       });

@@ -1,5 +1,5 @@
 
-import objectAssign from 'object-assign';
+import assign from 'lodash/assign';
 
 import { CHANGE_DATASET, REQUEST_DATASETS, RECEIVE_DATASETS, INVALIDATE_REQUEST } from '../actions/storyActions';
 
@@ -10,20 +10,20 @@ export default function storyReducer(state = {
 }, action) {
   switch(action.type) {
     case CHANGE_DATASET:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         currentDataset: action.newDataset
       });
     case REQUEST_DATASETS:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         isFetching: true
       });
     case RECEIVE_DATASETS:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         isFetching: false,
         datasets: action.datasets
       });
     case INVALIDATE_REQUEST:
-      return objectAssign({}, state, {
+      return assign({}, state, {
         isFetching: false
       });
     default:
