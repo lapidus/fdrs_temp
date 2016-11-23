@@ -107,7 +107,7 @@ export function fetchLanguage(lang) {
     dispatch(requestLanguage(lang));
 
     var promise = new Promise((resolve, reject) => {
-        request(`/api/${lang}/application.json`)
+        request(`/locales/${lang}/report-common.json`)
           .end((err, res) => {
             if(err) {
               // dispatch(invalidateRequest());
