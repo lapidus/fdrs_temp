@@ -5,8 +5,8 @@ i18n
   .use(XHR)
   .init({
     fallbackLng: "en",
-    ns: ["common"],
-    defaultNS: "common",
+    ns: ["report-common"],
+    defaultNS: "report-common",
     debug: true,
     returnObjects: true,
   })
