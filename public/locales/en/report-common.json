@@ -47,12 +47,7 @@
           "text": "Members"
         },
         "fact": "The network of the International Federation of Red Cross and Red Crescent Societies spans 190 countries.",
-        "quote": "All that we do is guided by our Fundamental Principles, which are distilled from out collective experience accumulated over more than a century.",
-        "chapters": [
-          { "title": "Who we are" },
-          { "title": "What we do" },
-          { "title": "Living our fundamental principles" }
-        ]
+        "quote": "All that we do is guided by our Fundamental Principles, which are distilled from out collective experience accumulated over more than a century."
       },
       {
         "id": "Section 2",
@@ -62,12 +57,7 @@
           "text": "People reached by disaster response and early recovery programmes"
         },
         "fact": "The network of the International Federation of Red Cross and Red Crescent Societies spans 190 countries.",
-        "quote": "From our earliest days, the Red Cross and Red Crescent is best known for our mission to bring urgent help and comfort in moments of greatest need.",
-        "chapters": [
-          { "pretitle": "Strategic aim 1", "title": "Save lives, protect livelihoods and strengthen recovery from disasters and crises" },
-          { "pretitle": "Strategic aim 2", "title": "Healthy and safe living" },
-          { "pretitle": "Strategic aim 3", "title": "Social inclusion and a culture of non-violence and peace" }
-        ]
+        "quote": "From our earliest days, the Red Cross and Red Crescent is best known for our mission to bring urgent help and comfort in moments of greatest need."
       },
       {
         "id": "Section 3",
@@ -77,31 +67,35 @@
           "text": "National Societies"
         },
         "fact": "To inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world.",
-        "quote": "Since the adoption of Strategy 2020, the major effort seeking to improve our functioning as the IFRC has been on strengthening our governance, introducing a framework for accountability, and promoting a culture of learning.",
-        "chapters": [
-          { "pretitle": "Enabling action 1", "title": "Strong national red cross and red crescent societies" },
-          { "pretitle": "Enabling action 2", "title": "Humanitarian diplomacy to prevent and reduce vulnerability in a globalised world" },
-          { "pretitle": "Enabling action 3", "title": "Function effectively as the IFRC" }
-        ]
+        "quote": "Since the adoption of Strategy 2020, the major effort seeking to improve our functioning as the IFRC has been on strengthening our governance, introducing a framework for accountability, and promoting a culture of learning."
       },
       {
         "id": "Section 4",
-        "title": "Annexes",
-        "chapters": [
-          {
-            "preTitle": "Data tools",
-            "title": "Explore the data",
-            "body": [
-              "See the seven key indicators across all National Societies",
-              "Find information about your National Society"
-            ],
-            "button": "Explore the data from FDRS"
-          },
-          {
-            "title": "Acknowledgements"
-          }
-        ]
+        "title": "Annexes"
       }
     ]
+  },
+  "chapters": {
+    "chapter1": { "title": "Who we are" },
+    "chapter2": { "title": "What we do" },
+    "chapter3": { "title": "Living our fundamental principles" },
+    "chapter4": { "pretitle": "Strategic aim 1", "title": "Save lives, protect livelihoods and strengthen recovery from disasters and crises" },
+    "chapter5": { "pretitle": "Strategic aim 2", "title": "Healthy and safe living" },
+    "chapter6": { "pretitle": "Strategic aim 3", "title": "Social inclusion and a culture of non-violence and peace" },
+    "chapter7": { "pretitle": "Enabling action 1", "title": "Strong national red cross and red crescent societies" },
+    "chapter8": { "pretitle": "Enabling action 2", "title": "Humanitarian diplomacy to prevent and reduce vulnerability in a globalised world" },
+    "chapter9": { "pretitle": "Enabling action 3", "title": "Function effectively as the IFRC" },
+    "data": {
+      "pretitle": "Data tools",
+      "title": "Explore the data",
+      "body": [
+        "See the seven key indicators across all National Societies",
+        "Find information about your National Society"
+      ],
+      "button": "Explore the data from FDRS"
+    },
+    "acknowledgements": {
+      "title": "Acknowledgements"
+    }
   }
 }

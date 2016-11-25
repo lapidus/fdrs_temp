@@ -64,17 +64,7 @@ class Report extends React.Component {
                 </a>
               </div>
             </div>
-            <Navigation
-              navOpen={ navOpen }
-              toggleNav={ toggleNav }
-              language={ language }
-              navigationContent={{
-                en: this.props.en,
-                fr: this.props.fr,
-                es: this.props.es,
-                ar: this.props.ar,
-              }}
-            />
+            <Navigation navOpen={ navOpen } />
           </div>
         </header>
 

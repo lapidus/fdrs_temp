@@ -15,20 +15,24 @@ import Chapter7 from "../containers/Report/chapters/Chapter7"
 import Chapter8 from "../containers/Report/chapters/Chapter8"
 import Chapter9 from "../containers/Report/chapters/Chapter9"
 
+import { report } from "./config"
+
+const { routes } = report
+
 const ReportRoutes = () =>
-  <Route path="report" component={ Report }>
+  <Route path={ report.slug } component={ Report }>
     <IndexRoute component={ Home } />
-    <Route path="data" component={ DataView } />
-    <Route path="acknowledgements" component={ Acknowledgements } />
-    <Route path="who-we-are" component={ Chapter1 } />
-    <Route path="what-we-do" component={ Chapter2 } />
-    <Route path="living-our-fundamental-principles" component={ Chapter3 } />
-    <Route path="strategic-aim-1" component={ Chapter4 } />
-    <Route path="strategic-aim-2" component={ Chapter5 } />
-    <Route path="strategic-aim-3" component={ Chapter6 } />
-    <Route path="enabling-action-1" component={ Chapter7 } />
-    <Route path="enabling-action-2" component={ Chapter8 } />
-    <Route path="enabling-action-3" component={ Chapter9 } />
+    <Route path={ routes.data.slug } component={ DataView } />
+    <Route path={ routes.acknowledgements.slug } component={ Acknowledgements } />
+    <Route path={ routes.chapter1.slug } component={ Chapter1 } />
+    <Route path={ routes.chapter2.slug } component={ Chapter2 } />
+    <Route path={ routes.chapter3.slug } component={ Chapter3 } />
+    <Route path={ routes.chapter4.slug } component={ Chapter4 } />
+    <Route path={ routes.chapter5.slug } component={ Chapter5 } />
+    <Route path={ routes.chapter6.slug } component={ Chapter6 } />
+    <Route path={ routes.chapter7.slug } component={ Chapter7 } />
+    <Route path={ routes.chapter8.slug } component={ Chapter8 } />
+    <Route path={ routes.chapter9.slug } component={ Chapter9 } />
   </Route>
 
 export default ReportRoutes
