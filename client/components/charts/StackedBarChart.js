@@ -17,28 +17,33 @@ class StackedBarChart extends React.Component {
       tooltipParentPosition: [],
     }
 
-    this.resizeChart = this.resizeChart.bind(this)
+    this.resize = this.resize.bind(this)
+    this.getWrapperRef = this.getWrapperRef.bind(this)
   }
 
   componentDidMount() {
     this.setState({
       tooltipParentPosition: [
-        this.refs.visualizationWrapper.getBoundingClientRect().top,
-        this.refs.visualizationWrapper.getBoundingClientRect().left,
+        this.wrapper.getBoundingClientRect().top,
+        this.wrapper.getBoundingClientRect().left,
       ],
     })
-    this.resizeChart()
-    window.addEventListener("resize", this.resizeChart)
+    this.resize()
+    window.addEventListener("resize", this.resize)
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.resizeChart)
+    window.removeEventListener("resize", this.resize)
   }
 
-  resizeChart() {
+  getWrapperRef(wrapper) {
+    this.wrapper = wrapper
+  }
+
+  resize() {
     console.log("Resizing line chart")
     this.setState({
-      width: this.refs.visualizationWrapper.clientWidth,
+      width: this.wrapper.clientWidth,
     })
   }
 
@@ -66,7 +71,7 @@ class StackedBarChart extends React.Component {
     return (
       <div className="simple-bar-chart">
         { title && <h4 className="title strong">{ title }</h4> }
-        <div ref="visualizationWrapper" style={{ position:"relative" }}>
+        <div ref={ this.getWrapperRef } style={{ position:"relative" }}>
           <svg
             width={ width }
             height={ height }
@@ -79,14 +84,13 @@ class StackedBarChart extends React.Component {
                   style={{
                     fontFamily: "inherit",
                     fontSize: "13px",
-                    fontWeight:"700",
+                    fontWeight: "700",
                   }}
                   x={ 30 }
                   y={ (((height - 22) / 5) * (i + 1)) - 30 }
                   key={ i }
-                >
-                  { label.text }
-                </VictoryLabel>
+                  text={ label.text }
+                />
               )
             }
             <VictoryStack
@@ -115,16 +119,16 @@ class StackedBarChart extends React.Component {
                       dataset[i].name ? [ {
                         target: "data",
                         eventHandlers: {
-                          onMouseEnter: (evt, props) => {
+                          onMouseEnter: (evt, { datum, position }) => {
                             this.setState({
-                              tooltipTitle: props.datum.name,
+                              tooltipTitle: datum.name,
                               tooltipContent: numberFormatter.addCommas(
-                                Math.round(props.datum.y)
+                                Math.round(datum.y)
                               ),
                               tooltipVisible: true,
                               tooltipPosition: [
-                                props.position.x,
-                                props.position.y0 + ((props.position.y1 - props.position.y0) / 2),
+                                position.x,
+                                position.y0 + ((position.y1 - position.y0) / 2),
                               ],
                             })
                           },

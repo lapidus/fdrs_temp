@@ -35,7 +35,7 @@ class Chapter4 extends React.Component {
   render() {
     const { t } = this.props
     const { language } = i18n
-    const chapter = i18n.store.data[language]["strategic-aim-1"]
+    const chapter = i18n.store.data[language]["report-strategic-aim-1"]
     const [
       section0,
       section1,
@@ -43,8 +43,10 @@ class Chapter4 extends React.Component {
       section3,
       section4,
       section5,
-      section6
+      section6,
     ] = chapter.sections
+
+    console.log("wwwww", section5.blocks[1].dataset)
 
     return (
       <div>
@@ -56,14 +58,14 @@ class Chapter4 extends React.Component {
 
         <div className="clearfix bg-primary pt1">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-            <h2 className="display-2">{t("strategic-aim-1:title")}</h2>
-            <p className="title">{t("strategic-aim-1:subtitle")}</p>
+            <h2 className="display-2">{t("report-strategic-aim-1:title")}</h2>
+            <p className="title">{t("report-strategic-aim-1:subtitle")}</p>
           </div>
         </div>
 
         <div className="clearfix bg-dark chapter-banner" style={{backgroundImage:"url(/img/chapters/chapter-4.jpg)",backgroundSize: "cover",backgroundPosition:"center 50%",backgroundRepeat:"no-repeat"}}>
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-            <p className="lead">{t("strategic-aim-1:intro")}</p>
+            <p className="lead">{t("report-strategic-aim-1:intro")}</p>
             <hr />
           </div>
         </div>
@@ -71,7 +73,7 @@ class Chapter4 extends React.Component {
         <div className="clearfix body-text" style={{position:"relative"}}>
 
           <SideNavigation
-            title={t("strategic-aim-1:title")}
+            title={t("report-strategic-aim-1:title")}
             sections={chapter.sections}
             sectionReferences={[
               "scroll-target-section0",
@@ -86,11 +88,11 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p>{t("strategic-aim-1:general.0")}</p>
+              <p>{t("report-strategic-aim-1:general.0")}</p>
 
               <LineChart
-                title={t("strategic-aim-1:general.1.title")}
-                caption={t("strategic-aim-1:general.1.caption")}
+                title={t("report-strategic-aim-1:general.1.title")}
+                caption={t("report-strategic-aim-1:general.1.caption")}
                 height={300}
                 padding={{
                   top: 30,
@@ -102,8 +104,8 @@ class Chapter4 extends React.Component {
                   x: [new Date(2009,1,1), new Date(2015,1,1)],
                   y: [200,410]
                 }}
-                axisLabels={t("strategic-aim-1:general.1.axisLabels")}
-                labels={t("strategic-aim-1:general.1.lineLabels")}
+                axisLabels={t("report-strategic-aim-1:general.1.axisLabels")}
+                labels={t("report-strategic-aim-1:general.1.lineLabels")}
                 dataset={[
                   chapter.general[1].dataset.map((item, i) => {
                     return {x: new Date(+item.year,1,1), y: +item.disasters}
@@ -115,22 +117,22 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section0">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("strategic-aim-1:sections.0.title")}</h3>
+              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="headline">{t("report-strategic-aim-1:sections.0.title")}</h3>
               <HeadlineDivider />
-              <p>{t("strategic-aim-1:sections.0.blocks.0")}</p>
+              <p>{t("report-strategic-aim-1:sections.0.blocks.0")}</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-3 md-offset-3 lg-3 lg-offset-3 sm-pr1">
-              <p>{t("strategic-aim-1:sections.0.blocks.1")}</p>
+              <p>{t("report-strategic-aim-1:sections.0.blocks.1")}</p>
             </div>
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-0 lg-3">
 
               <StackedBarChart
-                title={t("strategic-aim-1:sections.0.blocks.2.title")}
-                caption={t("strategic-aim-1:sections.0.blocks.2.caption")}
+                title={t("report-strategic-aim-1:sections.0.blocks.2.title")}
+                caption={t("report-strategic-aim-1:sections.0.blocks.2.caption")}
                 height={360}
                 width={480}
                 padding={{
@@ -165,8 +167,8 @@ class Chapter4 extends React.Component {
 
 
               { /* <SimpleBarChart
-                title={t("strategic-aim-1:sections.0.blocks.2.title")}
-                caption={t("strategic-aim-1:sections.0.blocks.2.caption")}
+                title={t("report-strategic-aim-1:sections.0.blocks.2.title")}
+                caption={t("report-strategic-aim-1:sections.0.blocks.2.caption")}
                 horizontal={true}
                 height={240}
                 padding={{
@@ -175,7 +177,7 @@ class Chapter4 extends React.Component {
                   left: 40,
                   right: 210
                 }}
-                data={t("strategic-aim-1:sections.0.blocks.2.dataset")}
+                data={t("report-strategic-aim-1:sections.0.blocks.2.dataset")}
                 labels={
                   section0.blocks[2].dataset.map((item, i) => {
                     return `${item.x} (${numberFormatter.addCommas(item.y)})`
@@ -187,12 +189,12 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section1">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("strategic-aim-1:sections.1.title")}</h3>
+              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="headline">{t("report-strategic-aim-1:sections.1.title")}</h3>
               <HeadlineDivider />
-              <p>{t("strategic-aim-1:sections.1.blocks.0")}</p>
+              <p>{t("report-strategic-aim-1:sections.1.blocks.0")}</p>
               <div>
-                <h4 className="title strong">{t("strategic-aim-1:sections.1.blocks.1.title")}</h4>
+                <h4 className="title strong">{t("report-strategic-aim-1:sections.1.blocks.1.title")}</h4>
                 <table>
                   <thead>
                     <tr className="small">
@@ -215,33 +217,33 @@ class Chapter4 extends React.Component {
                     })}
                   </tbody>
                 </table>
-                <p className="small">{t("strategic-aim-1:sections.1.blocks.1.caption")}</p>
+                <p className="small">{t("report-strategic-aim-1:sections.1.blocks.1.caption")}</p>
               </div>
             </div>
           </div>
 
           <div className="clearfix" id="scroll-target-section2">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("strategic-aim-1:sections.2.title")}</h3>
+              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="headline">{t("report-strategic-aim-1:sections.2.title")}</h3>
               <HeadlineDivider />
-              <p>{t("strategic-aim-1:sections.2.blocks.0")}</p>
+              <p>{t("report-strategic-aim-1:sections.2.blocks.0")}</p>
             </div>
 
             <div className="clearfix">
               <div className="col px1 sm-px0 sm-6 md-4 md-offset-3 lg-4 lg-offset-2">
                 <div className="col sm-8 sm-offset-4 md-11 md-offset-0 lg-9 lg-offset-3 sm-pr1">
-                  <p>{t("strategic-aim-1:sections.2.blocks.1")}</p>
+                  <p>{t("report-strategic-aim-1:sections.2.blocks.1")}</p>
                 </div>
                 <div className="col sm-8 sm-offset-4 md-11 md-offset-0 lg-9 lg-offset-3 sm-pr1">
-                  <p>{t("strategic-aim-1:sections.2.blocks.2")}</p>
+                  <p>{t("report-strategic-aim-1:sections.2.blocks.2")}</p>
                 </div>
               </div>
               <div className="col px1 sm-px0 sm-5 md-4 md-offset-0 lg-4">
-                <h4 className="title strong">{t("strategic-aim-1:sections.2.blocks.3.title")}</h4>
+                <h4 className="title strong">{t("report-strategic-aim-1:sections.2.blocks.3.title")}</h4>
 
                 <Tabs activeTab={0}>
-                  <TabPanel title={t("strategic-aim-1:sections.2.blocks.3.tabs.0.name")}>
+                  <TabPanel title={t("report-strategic-aim-1:sections.2.blocks.3.tabs.0.name")}>
                     <table>
                       <thead>
                         <tr>
@@ -262,7 +264,7 @@ class Chapter4 extends React.Component {
                       </tbody>
                     </table>
                   </TabPanel>
-                  <TabPanel title={t("strategic-aim-1:sections.2.blocks.3.tabs.1.name")}>
+                  <TabPanel title={t("report-strategic-aim-1:sections.2.blocks.3.tabs.1.name")}>
                     <table>
                       <thead>
                         <tr>
@@ -285,39 +287,40 @@ class Chapter4 extends React.Component {
                   </TabPanel>
                 </Tabs>
 
-                <p className="small">{t("strategic-aim-1:sections.2.blocks.3.caption")}</p>
+                <p className="small">{t("report-strategic-aim-1:sections.2.blocks.3.caption")}</p>
               </div>
             </div>
           </div>
 
           <div className="clearfix" id="scroll-target-section3">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("strategic-aim-1:sections.3.title")}</h3>
+              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="headline">{t("report-strategic-aim-1:sections.3.title")}</h3>
               <HeadlineDivider />
-              <p>{t("strategic-aim-1:sections.3.blocks.0")}</p>
+              <p>{t("report-strategic-aim-1:sections.3.blocks.0")}</p>
               <DonutChart
-                title={t("strategic-aim-1:sections.3.blocks.1.title")}
-                caption={t("strategic-aim-1:sections.3.blocks.1.caption")}
-                maxSize={480}
-                dataset={section3.blocks[1].dataset.map(d => ({x: d.x, y: +d.y, fill: d.fill}))}/>
-              <p>{t("strategic-aim-1:sections.3.blocks.2")}</p>
+                title={ t("report-strategic-aim-1:sections.3.blocks.1.title") }
+                caption={ t("report-strategic-aim-1:sections.3.blocks.1.caption") }
+                maxSize={ 480 }
+                dataset={ section3.blocks[1].dataset }
+              />
+              <p>{t("report-strategic-aim-1:sections.3.blocks.2")}</p>
             </div>
           </div>
 
           <div className="clearfix" id="scroll-target-section4">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("strategic-aim-1:sections.4.title")}</h3>
+              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="headline">{t("report-strategic-aim-1:sections.4.title")}</h3>
               <HeadlineDivider />
-              <p>{t("strategic-aim-1:sections.4.blocks.0")}</p>
+              <p>{t("report-strategic-aim-1:sections.4.blocks.0")}</p>
             </div>
 
             <div className="clearfix">
               <div className="col px1 sm-px0 sm-5 sm-offset-1 md-4 md-offset-3 lg-4 lg-offset-2">
                 <LineChart
-                  title={t("strategic-aim-1:sections.4.blocks.1.title")}
-                  caption={t("strategic-aim-1:sections.4.blocks.1.caption")}
+                  title={t("report-strategic-aim-1:sections.4.blocks.1.title")}
+                  caption={t("report-strategic-aim-1:sections.4.blocks.1.caption")}
                   height={480}
                   padding={{
                     top: 30,
@@ -342,26 +345,26 @@ class Chapter4 extends React.Component {
                 />
               </div>
               <div className="col px1 sm-px0 sm-5 md-4 md-offset-0 lg-4">
-                <p>{t("strategic-aim-1:sections.4.blocks.2")}</p>
-                <p>{t("strategic-aim-1:sections.4.blocks.3")}</p>
+                <p>{t("report-strategic-aim-1:sections.4.blocks.2")}</p>
+                <p>{t("report-strategic-aim-1:sections.4.blocks.3")}</p>
               </div>
             </div>
           </div>
 
           <div className="clearfix" id="scroll-target-section5">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("strategic-aim-1:sections.5.title")}</h3>
+              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="headline">{t("report-strategic-aim-1:sections.5.title")}</h3>
               <HeadlineDivider />
-              <p>{t("strategic-aim-1:sections.5.blocks.0")}</p>
+              <p>{t("report-strategic-aim-1:sections.5.blocks.0")}</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2">
               <WorldMap
-                title={t("strategic-aim-1:sections.5.blocks.1.title")}
-                caption={t("strategic-aim-1:sections.5.blocks.1.caption")}
+                title={t("report-strategic-aim-1:sections.5.blocks.1.title")}
+                caption={t("report-strategic-aim-1:sections.5.blocks.1.caption")}
                 choroplethDataset={section5.blocks[1].dataset}
                 />
             </div>
@@ -369,7 +372,7 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-              <p>{t("strategic-aim-1:sections.5.blocks.2")}</p>
+              <p>{t("report-strategic-aim-1:sections.5.blocks.2")}</p>
             </div>
           </div>
 
@@ -528,13 +531,13 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section6">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("strategic-aim-1:sections.6.title")}</h3>
+              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="headline">{t("report-strategic-aim-1:sections.6.title")}</h3>
               <HeadlineDivider />
-              <p>{t("strategic-aim-1:sections.6.blocks.0")}</p>
+              <p>{t("report-strategic-aim-1:sections.6.blocks.0")}</p>
               <SimpleBarChart
-                title={t("strategic-aim-1:sections.6.blocks.1.title")}
-                caption={t("strategic-aim-1:sections.6.blocks.1.caption")}
+                title={t("report-strategic-aim-1:sections.6.blocks.1.title")}
+                caption={t("report-strategic-aim-1:sections.6.blocks.1.caption")}
                 horizontal={false}
                 height={300}
                 data={section6.blocks[1].dataset.map((item, i) => {
@@ -547,26 +550,26 @@ class Chapter4 extends React.Component {
                 tickFormat={(x) => x.getFullYear()}
                 axisLabels={section6.blocks[1].axisLabels}
                 />
-              <p>{t("strategic-aim-1:sections.6.blocks.2")}</p>
+              <p>{t("report-strategic-aim-1:sections.6.blocks.2")}</p>
               <div>
-                <h4 className="title strong">{t("strategic-aim-1:sections.6.blocks.3.title")}</h4>
+                <h4 className="title strong">{t("report-strategic-aim-1:sections.6.blocks.3.title")}</h4>
                 <Tabs activeTab={0}>
-                  <TabPanel title={t("strategic-aim-1:sections.6.blocks.3.tabs.0.name")}>
+                  <TabPanel title={t("report-strategic-aim-1:sections.6.blocks.3.tabs.0.name")}>
                     <DonutChart
                       maxSize={480}
                       dataset={section6.blocks[3].tabs[0].dataset}
                     />
                   </TabPanel>
-                  <TabPanel title={t("strategic-aim-1:sections.6.blocks.3.tabs.1.name")}>
+                  <TabPanel title={t("report-strategic-aim-1:sections.6.blocks.3.tabs.1.name")}>
                     <DonutChart
                       maxSize={480}
                       dataset={section6.blocks[3].tabs[1].dataset}
                     />
                   </TabPanel>
                 </Tabs>
-                <p className="small">{t("strategic-aim-1:sections.6.blocks.3.caption")}</p>
+                <p className="small">{t("report-strategic-aim-1:sections.6.blocks.3.caption")}</p>
               </div>
-              <p>{t("strategic-aim-1:sections.6.blocks.4")}</p>
+              <p>{t("report-strategic-aim-1:sections.6.blocks.4")}</p>
             </div>
           </div>
 
@@ -604,4 +607,4 @@ function mapStateToProps(state) {
 //   }
 // }
 
-export default translate(["strategic-aim-1"], {wait: true})(connect(mapStateToProps)(Chapter4))
+export default translate(["report-strategic-aim-1"], {wait: true})(connect(mapStateToProps)(Chapter4))
