@@ -1,17 +1,21 @@
 
-import React from 'react';
-import { Link } from 'react-router';
+import React from "react"
+import { Link } from "react-router"
 
-import prefixLanguageToRoute from '../utils/prefixLanguageToRoute';
+import prefixLanguageToRoute from "../utils/prefixLanguageToRoute"
 
-class BreadCrumbs extends React.Component {
-  render() {
-    return (
-      <div>
-        <Link to={prefixLanguageToRoute(this.props.language,'/')}><span>Home</span></Link>&nbsp;&nbsp;&nbsp;›&nbsp;&nbsp;&nbsp;{this.props.chapter.title}
-      </div>
-    );
-  }
+const BreadCrumbs = ({ language, chapter }) =>
+  <div>
+    <Link to={ prefixLanguageToRoute(language, "/") }>
+      <span>{ "Home" }</span>
+    </Link>
+    <span style={{ padding: "0 1em" }}>{ "›" }</span>
+    { chapter.title }
+  </div>
+
+BreadCrumbs.propTypes = {
+  language: React.PropTypes.string.isRequired,
+  chapter: React.PropTypes.object.isRequired,
 }
 
-module.exports = BreadCrumbs;
+export default BreadCrumbs

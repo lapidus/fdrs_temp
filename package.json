@@ -7,7 +7,7 @@
     "start": "concurrently --kill-others \"node server\" \"npm run development\"",
     "development": "webpack --progress --colors --watch",
     "clean": "rm -rf ./build",
-    "build": "npm run clean && webpack --progress -p && npm run copy",
+    "build": "npm run clean && webpack -p config=webpack.build.config.js && npm run copy",
     "copy": "mkdir build && node ./tools/copy",
     "scss": "node_modules/.bin/node-sass client/styles/styles.scss public/styles/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"

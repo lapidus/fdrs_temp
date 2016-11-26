@@ -1,8 +1,6 @@
 import React from "react"
-import { connect } from "react-redux"
-import { VictoryPie } from "victory"
+import { translate } from "react-i18next"
 
-import { fetchChapter } from "../../../actions/chapterActions"
 import NextChapter from "../../../utils/NextChapter"
 import BreadCrumbs from "../../../components/Breadcrumbs"
 import HeadlineDivider from "../../../components/HeadlineDivider"
@@ -12,34 +10,35 @@ import LineChart from "../../../components/charts/LineChart"
 import DonutChart from "../../../components/charts/DonutChart"
 
 class Chapter9 extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   componentDidMount() {
     console.log("Mounted Enabling Action 3")
   }
-  shouldComponentUpdate(newProps, newState, newContext) {
-    var newDataAvailable = newProps.content[newContext.language].chapters["enabling-action-3"] !== undefined
-    var sameData = this.props.content[this.context.language].chapters["enabling-action-3"] === newProps.content[newContext.language].chapters["who-we-are"]
-    return newDataAvailable && !sameData
+
+  shouldComponentUpdate(nextProps, nextState, nextContext) {
+    return this.context.i18n.language !== nextContext.i18n.language
   }
+
   render() {
+    const { t } = this.props
+    const { i18n } = this.context
+    const { language } = i18n
+    const chapter = i18n.store.data[language]["report-enabling-action-3"]
 
-    var chapter = this.props.content[this.context.language].chapters["enabling-action-3"]
-
-    var section1 = chapter.sections[0]
-    var section2 = chapter.sections[1]
-    var section3 = chapter.sections[2]
-    var section4 = chapter.sections[3]
-    var section5 = chapter.sections[4]
-    var section6 = chapter.sections[5]
-    var section7 = chapter.sections[6]
+    const [
+      section0,
+      section1,
+      section2,
+      section3,
+      section4,
+      section5,
+      section6,
+    ] = chapter.sections
 
     return (
       <div>
         <div className="clearfix bg-primary-dark">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={chapter} language={this.context.language}/>
+            <BreadCrumbs chapter={chapter} language={language}/>
           </div>
         </div>
 
@@ -59,17 +58,39 @@ class Chapter9 extends React.Component {
 
         <div className="clearfix body-text" style={{position:"relative"}}>
 
-          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section1","scroll-target-section2","scroll-target-section3","scroll-target-section4","scroll-target-section5","scroll-target-section6","scroll-target-section7"]}/>
+          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section0","scroll-target-section1","scroll-target-section2","scroll-target-section3","scroll-target-section4","scroll-target-section5","scroll-target-section6"]}/>
+
+          <div className="clearfix" id="scroll-target-section0">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p>{section0.blocks[0]}</p>
+              <p>{section0.blocks[1]}</p>
+              <DonutChart
+                title={section0.blocks[2].title}
+                caption={section0.blocks[2].caption}
+                maxSize={480}
+                dataset={section0.blocks[2].dataset}/>
+              <p>{section0.blocks[3]}</p>
+            </div>
+          </div>
 
           <div className="clearfix" id="scroll-target-section1">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p className="small strong color-primary caps">{chapter.title}</p>
+              <h3 className="headline">{section1.title}</h3>
+              <HeadlineDivider />
               <p>{section1.blocks[0]}</p>
-              <p>{section1.blocks[1]}</p>
-              <DonutChart
-                title={section1.blocks[2].title}
-                caption={section1.blocks[2].caption}
-                maxSize={480}
-                dataset={section1.blocks[2].dataset}/>
+            </div>
+          </div>
+
+          <div className="clearfix">
+            <div className="col px1 sm-px2 sm-8 sm-offset-2 md-4 md-offset-3 lg-4 lg-offset-2 pb2">
+              { /* <h4 className="title strong">{section1.blocks[1].title}</h4> */ }
+              <img src={`/img/chapters/9/accountability-wheel${this.context.language != "en" ? "-" + this.context.language : ""}.jpg`} />
+              { /* <img src="/img/chapters/9/accountability-wheel.jpg" /> */ }
+              <p className="small">{section1.blocks[1].caption}</p>
+            </div>
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-0 lg-4 lg-offset-0 pb2">
+              <p>{section1.blocks[2]}</p>
               <p>{section1.blocks[3]}</p>
             </div>
           </div>
@@ -80,18 +101,15 @@ class Chapter9 extends React.Component {
               <h3 className="headline">{section2.title}</h3>
               <HeadlineDivider />
               <p>{section2.blocks[0]}</p>
-            </div>
-          </div>
-
-          <div className="clearfix">
-            <div className="col px1 sm-px2 sm-8 sm-offset-2 md-4 md-offset-3 lg-4 lg-offset-2 pb2">
-              { /* <h4 className="title strong">{section2.blocks[1].title}</h4> */ }
-              <img src={`/img/chapters/9/accountability-wheel${this.context.language != "en" ? "-" + this.context.language : ""}.jpg`} />
-              { /* <img src="/img/chapters/9/accountability-wheel.jpg" /> */ }
-              <p className="small">{section2.blocks[1].caption}</p>
-            </div>
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-0 lg-4 lg-offset-0 pb2">
-              <p>{section2.blocks[2]}</p>
+              <p>{section2.blocks[1]}</p>
+              <SimpleBarChart
+                title={section2.blocks[2].title}
+                caption={section2.blocks[2].caption}
+                horizontal={true}
+                height={300}
+                data={section2.blocks[2].dataset}
+                labels={(datum) => `${datum.xName} (${String(datum.y)})`}
+                />
               <p>{section2.blocks[3]}</p>
             </div>
           </div>
@@ -102,31 +120,12 @@ class Chapter9 extends React.Component {
               <h3 className="headline">{section3.title}</h3>
               <HeadlineDivider />
               <p>{section3.blocks[0]}</p>
-              <p>{section3.blocks[1]}</p>
-              <SimpleBarChart
-                title={section3.blocks[2].title}
-                caption={section3.blocks[2].caption}
-                horizontal={true}
-                height={300}
-                data={section3.blocks[2].dataset}
-                labels={(datum) => `${datum.xName} (${String(datum.y)})`}
-                />
-              <p>{section3.blocks[3]}</p>
-            </div>
-          </div>
-
-          <div className="clearfix" id="scroll-target-section4">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section4.title}</h3>
-              <HeadlineDivider />
-              <p>{section4.blocks[0]}</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2">
-              <h4 className="title strong">{section4.blocks[1].title}</h4>
+              <h4 className="title strong">{section3.blocks[1].title}</h4>
               <table>
                 <thead>
                   <tr className="small">
@@ -158,11 +157,11 @@ class Chapter9 extends React.Component {
                 </tbody>
               </table>
 
-              <p className="small">{section4.blocks[1].caption}</p>
+              <p className="small">{section3.blocks[1].caption}</p>
             </div>
 
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2">
-              <h4 className="title strong">{section4.blocks[2].title}</h4>
+              <h4 className="title strong">{section3.blocks[2].title}</h4>
               <table>
                 <thead>
                   <tr className="small">
@@ -194,13 +193,32 @@ class Chapter9 extends React.Component {
                 </tbody>
               </table>
 
-              <p className="small">{section4.blocks[2].caption}</p>
+              <p className="small">{section3.blocks[2].caption}</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p>{section4.blocks[3]}</p>
+              <p>{section3.blocks[3]}</p>
+            </div>
+          </div>
+
+          <div className="clearfix" id="scroll-target-section4">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p className="small strong color-primary caps">{chapter.title}</p>
+              <h3 className="headline">{section4.title}</h3>
+              <HeadlineDivider />
+              <p>{section4.blocks[0]}</p>
+            </div>
+          </div>
+
+          <div className="clearfix">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 pb2">
+              <div className="bg-secondary p2">
+                <h4 className="title strong">{section4.blocks[1]}</h4>
+                <p>{section4.blocks[2]}</p>
+                <p>{section4.blocks[3]}</p>
+              </div>
             </div>
           </div>
 
@@ -214,50 +232,31 @@ class Chapter9 extends React.Component {
           </div>
 
           <div className="clearfix">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 pb2">
-              <div className="bg-secondary p2">
-                <h4 className="title strong">{section5.blocks[1]}</h4>
-                <p>{section5.blocks[2]}</p>
-                <p>{section5.blocks[3]}</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="clearfix" id="scroll-target-section6">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section6.title}</h3>
-              <HeadlineDivider />
-              <p>{section6.blocks[0]}</p>
-            </div>
-          </div>
-
-          <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-4 lg-offset-2 pb2">
               <SimpleBarChart
-                title={section6.blocks[1].title}
-                caption={section6.blocks[1].caption}
+                title={section5.blocks[1].title}
+                caption={section5.blocks[1].caption}
                 horizontal={true}
                 height={360}
-                data={section6.blocks[1].dataset}
+                data={section5.blocks[1].dataset}
                 labels={(datum) => `${datum.xName} ${String(datum.y)}`}
                 />
             </div>
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-4 lg-offset-0 pb2">
-              <p>{section6.blocks[2]}</p>
-              <p>{section6.blocks[3]}</p>
+              <p>{section5.blocks[2]}</p>
+              <p>{section5.blocks[3]}</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p>{section6.blocks[4]}</p>
+              <p>{section5.blocks[4]}</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-6 lg-offset-3 pb2">
-              <h4 className="title strong">{section6.blocks[5].title}</h4>
+              <h4 className="title strong">{section5.blocks[5].title}</h4>
               <table>
                 <thead>
                   <tr className="small">
@@ -300,16 +299,16 @@ class Chapter9 extends React.Component {
                 </tbody>
               </table>
 
-              <p className="small">{section6.blocks[5].caption}</p>
+              <p className="small">{section5.blocks[5].caption}</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p>{section6.blocks[7]}</p>
+              <p>{section5.blocks[7]}</p>
               <LineChart
-                title={section6.blocks[6].title}
-                caption={section6.blocks[6].caption}
+                title={section5.blocks[6].title}
+                caption={section5.blocks[6].caption}
                 height={480}
                 padding={{
                   top: 30,
@@ -321,7 +320,7 @@ class Chapter9 extends React.Component {
                   x: [new Date(2008,1,1), new Date(2015,1,1)],
                   y: [0,250000]
                 }}
-                axisLabels={section6.blocks[6].axisLabels}
+                axisLabels={section5.blocks[6].axisLabels}
                 dataset={[[
                   {x: new Date(2009,1,1), y: 1170 },
                   {x: new Date(2010,1,1), y: 9909 },
@@ -337,24 +336,24 @@ class Chapter9 extends React.Component {
                   {x: new Date(2013,1,1), y: 58657},
                   {x: new Date(2014,1,1), y: 109930}
                 ]]}
-                labels={section6.blocks[6].lineLabels}
+                labels={section5.blocks[6].lineLabels}
               />
-              <p>{section6.blocks[8]}</p>
+              <p>{section5.blocks[8]}</p>
             </div>
           </div>
 
-          <div className="clearfix" id="scroll-target-section7">
+          <div className="clearfix" id="scroll-target-section6">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
               <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section7.title}</h3>
+              <h3 className="headline">{section6.title}</h3>
               <HeadlineDivider />
-              <p>{section7.blocks[0]}</p>
+              <p>{section6.blocks[0]}</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-8 md-offset-3 lg-offset-2 pb2">
-              {section7.blocks[1].map((item, k) => {
+              {section6.blocks[1].map((item, k) => {
                 return (
                   <div className="col xs-6 sm-4 lg-3 py1 pr2" key={k}>
                     <div style={{height:"200px",overflow:"hidden"}}>
@@ -378,30 +377,8 @@ class Chapter9 extends React.Component {
   }
 }
 
-Chapter9.needs = [ fetchChapter ]
-
 Chapter9.contextTypes = {
-  language: React.PropTypes.string
+  i18n: React.PropTypes.object.isRequired,
 }
 
-function mapStateToProps(state) {
-  return {
-    // language: state.appReducer.language,
-    content: {
-      en: state.chapterReducer.en,
-      fr: state.chapterReducer.fr,
-      es: state.chapterReducer.es,
-      ar: state.chapterReducer.ar
-    }
-  }
-}
-
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     changeDataset: (id) => {
-//       dispatch(changeDataset(id))
-//     }
-//   }
-// }
-
-export default connect(mapStateToProps)(Chapter9)
+export default translate([ "report-enabling-action-3" ], { wait: true })(Chapter9)

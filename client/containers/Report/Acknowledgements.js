@@ -1,4 +1,7 @@
 import React from "react"
+import { translate } from "react-i18next"
+
+import i18n from "../../i18n"
 import BreadCrumbs from "../../components/Breadcrumbs"
 
 class Acknowledgements extends React.Component {
@@ -6,11 +9,12 @@ class Acknowledgements extends React.Component {
     document.body.classList.add("html-ready")
   }
   render() {
+    const { language } = i18n
     return (
       <div>
         <div className="clearfix bg-primary-dark">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={{title: "Acknowledgements"}} language={this.props.language}/>
+            <BreadCrumbs chapter={{ title: "Acknowledgements" }} language={ language } />
           </div>
         </div>
 
@@ -54,4 +58,4 @@ class Acknowledgements extends React.Component {
   }
 }
 
-export default Acknowledgements
+export default translate()(Acknowledgements)

@@ -72,8 +72,8 @@ class WorldMap extends React.Component {
 
     this.worldMap = new Datamap(mapOptions);
 
-    if(this.props.bubbleSource) {
-      d3.json(this.props.bubbleSource, (response) => {
+    if (this.props.bubbleSource) {
+      d3.json(this.props.bubbleSource, response => {
         this.worldMap.bubbles(this.props.bubbleCallback(response), {
           popupTemplate: this.props.bubblePopupTemplate
         });

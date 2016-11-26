@@ -1,36 +1,32 @@
 import React from "react"
-import { connect } from "react-redux"
+import { translate } from "react-i18next"
 
-import { fetchChapter } from "../../../actions/chapterActions"
 import NextChapter from "../../../utils/NextChapter"
 import BreadCrumbs from "../../../components/Breadcrumbs"
 import HeadlineDivider from "../../../components/HeadlineDivider"
 import SideNavigation from "../../../components/Report/SideNavigation"
 
 class Chapter2 extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   componentDidMount() {
     console.log("Mounted What we do")
   }
-  shouldComponentUpdate(newProps, newState, newContext) {
-    var newDataAvailable = newProps.content[newContext.language].chapters["what-we-do"] !== undefined
-    var sameData = this.props.content[this.context.language].chapters["what-we-do"] === newProps.content[newContext.language].chapters["who-we-are"]
-    return newDataAvailable && !sameData
+
+  shouldComponentUpdate(nextProps, nextState, nextContext) {
+    return this.context.i18n.language !== nextContext.i18n.language
   }
+
   render() {
-
-    var chapter = this.props.content[this.context.language].chapters["what-we-do"]
-
-    var section1 = chapter.sections[0]
-    var section2 = chapter.sections[1]
+    const { t } = this.props
+    const { i18n } = this.context
+    const { language } = i18n
+    const chapter = i18n.store.data[language]["report-what-we-do"]
+    const [ section0, section1 ] = chapter.sections
 
     return (
       <div>
         <div className="clearfix bg-primary-dark">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={chapter} language={this.context.language}/>
+            <BreadCrumbs chapter={ chapter } language={ language } />
           </div>
         </div>
 
@@ -49,35 +45,35 @@ class Chapter2 extends React.Component {
 
         <div className="clearfix body-text" style={{position:"relative"}}>
 
-          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section1", "scroll-target-section2"]}/>
+          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section0", "scroll-target-section1"]}/>
 
-          <div className="clearfix" id="scroll-target-section1">
+          <div className="clearfix" id="scroll-target-section0">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p><strong>{section1.blocks[0]}</strong></p>
+              <p><strong>{section0.blocks[0]}</strong></p>
               <ol>
-                {section1.blocks[1].map((item, i) => {
+                {section0.blocks[1].map((item, i) => {
                   return (<li key={i}>{item}</li>)
                 })}
               </ol>
-              <p><strong>{section1.blocks[2]}</strong></p>
+              <p><strong>{section0.blocks[2]}</strong></p>
               <ol>
-                {section1.blocks[3].map((item, i) => {
+                {section0.blocks[3].map((item, i) => {
                   return (<li key={i}>{item}</li>)
                 })}
               </ol>
-              <p>{section1.blocks[4]}</p>
-              <a href={section1.blocks[5]} target="_blank">
-                <button className="btn bg-primary p1">{section1.blocks[6]}</button>
+              <p>{section0.blocks[4]}</p>
+              <a href={section0.blocks[5]} target="_blank">
+                <button className="btn bg-primary p1">{section0.blocks[6]}</button>
               </a>
             </div>
           </div>
 
-          <div className="clearfix" style={{position:"relative"}} id="scroll-target-section2">
+          <div className="clearfix" style={{position:"relative"}} id="scroll-target-section1">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
               <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section2.title}</h3>
+              <h3 className="headline">{section1.title}</h3>
               <HeadlineDivider />
-              <p>{section2.blocks[0]}</p>
+              <p>{section1.blocks[0]}</p>
             </div>
           </div>
 
@@ -86,7 +82,7 @@ class Chapter2 extends React.Component {
         <div className="center pb3" style={{position:"relative"}}>
           <img src="/img/chapters/2/flickr.jpg" style={{opacity:0.3}}/>
           <div className="vertical-center" style={{position:"absolute",width:"100%"}}>
-            <a className="btn bg-primary p1" href="https://www.flickr.com/photos/ifrc/albums" target="_blank">{section2.blocks[1]}</a>
+            <a className="btn bg-primary p1" href="https://www.flickr.com/photos/ifrc/albums" target="_blank">{section1.blocks[1]}</a>
           </div>
         </div>
 
@@ -97,30 +93,8 @@ class Chapter2 extends React.Component {
   }
 }
 
-Chapter2.needs = [ fetchChapter ]
-
 Chapter2.contextTypes = {
-  language: React.PropTypes.string
+  i18n: React.PropTypes.object.isRequired,
 }
 
-function mapStateToProps(state) {
-  return {
-    // language: state.appReducer.language,
-    content: {
-      en: state.chapterReducer.en,
-      fr: state.chapterReducer.fr,
-      es: state.chapterReducer.es,
-      ar: state.chapterReducer.ar
-    }
-  }
-}
-
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     changeDataset: (id) => {
-//       dispatch(changeDataset(id))
-//     }
-//   }
-// }
-
-export default connect(mapStateToProps)(Chapter2)
+export default translate([ "report-what-we-do" ], { wait: true })(Chapter2)

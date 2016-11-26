@@ -6,7 +6,7 @@ import i18n from "../../i18n"
 import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
 import { report } from "../../routes/config"
 
-const Navigation = ({ navOpen }) => {
+const Navigation = ({ navOpen, t }) => {
   const { language } = i18n
   const content = i18n.store.data[language]["report-common"]
   const langRoute = prefixLanguageToRoute(language)
@@ -46,9 +46,8 @@ const Navigation = ({ navOpen }) => {
                         </div>
                         <div className="pl2">
                           <Link to={ `${langRoute}/report/${routes[chapter].slug}` }>
-                            <div className="title">{ content.chapters[chapter].title }</div>
+                            <div className="title">{ t(`report-common:chapters.${chapter}.title`) }</div>
                             <hr style={{ marginBottom: "8px", marginTop: "4px" }} />
-                            <div style={{ color: "#222" }}>{ content.chapters[chapter].subtitle || "" }</div>
                           </Link>
                         </div>
                       </li>
@@ -63,7 +62,7 @@ const Navigation = ({ navOpen }) => {
         <div className="col md-5 lg-5 lg-offset-1">
           <li className="site-nav__section clearfix pb2">
             <div className="strong caps">
-              { `${content.home.sections[3].id} — ${content.home.sections[3].title}` }
+              { `${t("report-common:home.sections.3.id")} — ${t("report-common:home.sections.3.title")}` }
             </div>
             <ul>
               <li className="site-nav__chapter col md-12">
@@ -80,7 +79,7 @@ const Navigation = ({ navOpen }) => {
                 </div>
                 <div className="pl3">
                   <Link to={ `${langRoute}/report/${routes.data.slug}` }>
-                    <div className="title">{ content.chapters.data.pretitle }</div>
+                    <div className="title">{ t("report-common:chapters.data.pretitle") }</div>
                     <hr style={{ marginBottom: "8px", marginTop: "4px" }} />
                   </Link>
                 </div>
@@ -104,7 +103,7 @@ const Navigation = ({ navOpen }) => {
                 </div>
                 <div className="pl3">
                   <Link to={ `${langRoute}/report/${routes.acknowledgements.slug}` }>
-                    <div className="title">{ content.chapters.acknowledgements.title }</div>
+                    <div className="title">{ t("report-common:chapters.acknowledgements.title") }</div>
                     <hr style={{ marginBottom: "8px", marginTop: "4px" }} />
                   </Link>
                 </div>
@@ -123,4 +122,4 @@ Navigation.propTypes = {
   navOpen: React.PropTypes.bool,
 }
 
-export default translate()(Navigation)
+export default translate([], { wait: true })(Navigation)

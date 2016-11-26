@@ -1,9 +1,6 @@
 import React from "react"
-import { connect } from "react-redux"
 import { translate } from "react-i18next"
 
-import i18n from "../../../i18n"
-import { fetchChapter } from "../../../actions/chapterActions"
 import NextChapter from "../../../utils/NextChapter"
 import numberFormatter from "../../../utils/numberFormatter"
 import BreadCrumbs from "../../../components/Breadcrumbs"
@@ -17,25 +14,21 @@ import WorldMap from "../../../components/charts/WorldMap"
 import StackedBarChart from "../../../components/charts/StackedBarChart"
 
 class Chapter4 extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   componentDidMount() {
     console.log("Mounted Strategic Aim 1")
   }
-  shouldComponentUpdate(newProps, newState, newContext) {
-    const newDataAvailable = newProps.content[newContext.language].chapters["strategic-aim-1"] !== undefined
-    const sameData = this.props.content[this.context.language].chapters["strategic-aim-1"] === newProps.content[newContext.language].chapters["who-we-are"]
-    return newDataAvailable && !sameData
+
+  shouldComponentUpdate(nextProps, nextState, nextContext) {
+    return this.context.i18n.language !== nextContext.i18n.language
   }
-  componentDidUpdate() {
-    if (i18n.store.data[i18n.language]["strategic-aim-1"])
-      document.body.classList.add("html-ready")
-  }
+
+
   render() {
     const { t } = this.props
+    const { i18n } = this.context
     const { language } = i18n
     const chapter = i18n.store.data[language]["report-strategic-aim-1"]
+
     const [
       section0,
       section1,
@@ -46,13 +39,11 @@ class Chapter4 extends React.Component {
       section6,
     ] = chapter.sections
 
-    console.log("wwwww", section5.blocks[1].dataset)
-
     return (
       <div>
         <div className="clearfix bg-primary-dark">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={chapter} language={language}/>
+            <BreadCrumbs chapter={ chapter } language={ language } />
           </div>
         </div>
 
@@ -70,10 +61,10 @@ class Chapter4 extends React.Component {
           </div>
         </div>
 
-        <div className="clearfix body-text" style={{position:"relative"}}>
+        <div className="clearfix body-text" style={{ position:"relative" }}>
 
           <SideNavigation
-            title={t("report-strategic-aim-1:title")}
+            title={ t("report-strategic-aim-1:title") }
             sections={chapter.sections}
             sectionReferences={[
               "scroll-target-section0",
@@ -242,7 +233,7 @@ class Chapter4 extends React.Component {
               <div className="col px1 sm-px0 sm-5 md-4 md-offset-0 lg-4">
                 <h4 className="title strong">{t("report-strategic-aim-1:sections.2.blocks.3.title")}</h4>
 
-                <Tabs activeTab={0}>
+                <Tabs active={0}>
                   <TabPanel title={t("report-strategic-aim-1:sections.2.blocks.3.tabs.0.name")}>
                     <table>
                       <thead>
@@ -553,7 +544,7 @@ class Chapter4 extends React.Component {
               <p>{t("report-strategic-aim-1:sections.6.blocks.2")}</p>
               <div>
                 <h4 className="title strong">{t("report-strategic-aim-1:sections.6.blocks.3.title")}</h4>
-                <Tabs activeTab={0}>
+                <Tabs active={0}>
                   <TabPanel title={t("report-strategic-aim-1:sections.6.blocks.3.tabs.0.name")}>
                     <DonutChart
                       maxSize={480}
@@ -575,36 +566,14 @@ class Chapter4 extends React.Component {
 
         </div>
 
-        <NextChapter nextChapter={chapter.nextChapter} />
+        <NextChapter nextChapter={ chapter.nextChapter } />
       </div>
     )
   }
 }
 
-Chapter4.needs = [ fetchChapter ]
-
 Chapter4.contextTypes = {
-  language: React.PropTypes.string
+  i18n: React.PropTypes.object.isRequired,
 }
 
-function mapStateToProps(state) {
-  return {
-    // language: state.appReducer.language,
-    content: {
-      en: state.chapterReducer.en,
-      fr: state.chapterReducer.fr,
-      es: state.chapterReducer.es,
-      ar: state.chapterReducer.ar
-    }
-  }
-}
-
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     changeDataset: (id) => {
-//       dispatch(changeDataset(id))
-//     }
-//   }
-// }
-
-export default translate(["report-strategic-aim-1"], {wait: true})(connect(mapStateToProps)(Chapter4))
+export default translate([ "report-strategic-aim-1" ], { wait: true })(Chapter4)

@@ -1,7 +1,9 @@
 import React, { PropTypes } from "react"
 import { Link } from "react-router"
+import { translate } from "react-i18next"
 import { connect } from "react-redux"
 
+import i18n from "../../i18n"
 import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
 import { toggleNav } from "../../actions/appActions"
 import Icon from "../../components/Icon"
@@ -15,7 +17,8 @@ class Report extends React.Component {
   }
 
   render() {
-    const { language, navOpen, toggleNav } = this.props
+    const { language } = i18n
+    const { t, navOpen, toggleNav } = this.props
     const headerClassName = navOpen ?
                             "site-header clearfix level-5 is-extended" :
                             "site-header clearfix level-5"
@@ -48,7 +51,7 @@ class Report extends React.Component {
                   }
                 </button>
                 <span className="caps">
-                  { this.props[language]["site-title"] }
+                  { t("report-common:site-title") }
                 </span>
               </div>
               <div
@@ -60,7 +63,7 @@ class Report extends React.Component {
                   href={ `/downloads/Everyone_counts_2013_${language.toUpperCase()}.pdf` }
                 >
                   &nbsp;&nbsp;&nbsp;
-                  <span className="caps">{ this.props[language].download}</span>
+                  <span className="caps">{ t("report-common:download") }</span>
                 </a>
               </div>
             </div>
@@ -117,38 +120,23 @@ class Report extends React.Component {
 }
 
 Report.propTypes = {
+  t: PropTypes.func.isRequired,
   children: PropTypes.element,
-  language: PropTypes.string,
   location: PropTypes.object,
   navOpen: PropTypes.bool,
   toggleNav: PropTypes.func,
-  en: PropTypes.object,
-  fr: PropTypes.object,
-  es: PropTypes.object,
-  ar: PropTypes.object,
 }
 
 Report.contextTypes = {
   router: PropTypes.object.isRequired,
 }
 
-function mapStateToProps(state) {
-  return {
-    navOpen: state.appReducer.navOpen,
-    language: state.appReducer.language,
-    en: state.appReducer.en,
-    fr: state.appReducer.fr,
-    es: state.appReducer.es,
-    ar: state.appReducer.ar,
-  }
-}
+const mapStateToProps = state => ({
+  navOpen: state.appReducer.navOpen,
+})
 
-function mapDispatchToProps(dispatch) {
-  return {
-    toggleNav: () => {
-      dispatch(toggleNav())
-    },
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  toggleNav: () => dispatch(toggleNav()),
+})
 
-export default connect(mapStateToProps, mapDispatchToProps)(Report)
+export default translate()(connect(mapStateToProps, mapDispatchToProps)(Report))

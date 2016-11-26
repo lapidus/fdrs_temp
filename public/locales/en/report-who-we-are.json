@@ -91,7 +91,7 @@
         {
           "type": "chart",
           "title": "A decentralised IFRC secretariat to serve its members",
-          "dataset": "/api/data/headquarters.json",
+          "dataset": "/api/data/report/headquarters.json",
           "caption": "Source: Human Resources Department; The maps used do not imply the expression of any opinion on the part of the International Federation of Red Cross and Red Crescent Societies or National Societies concerning the legal status of a territory or of its authorities."
         }
       ]

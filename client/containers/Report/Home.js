@@ -129,7 +129,7 @@ class Home extends React.Component {
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
                     <Link to={prefixLanguageToRoute(this.context.language,"/who-we-are")}>
-                      <span>{t("report-common:home.sections.0.chapters.0.title")} </span>
+                      <span>{t("report-common:chapters.chapter1.title")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
                   </h3>
@@ -157,7 +157,7 @@ class Home extends React.Component {
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
                     <Link to={prefixLanguageToRoute(this.context.language,"/what-we-do")}>
-                      <span>{t("report-common:home.sections.0.chapters.1.title")} </span>
+                      <span>{t("report-common:chapters.chapter2.title")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
                   </h3>
@@ -171,7 +171,7 @@ class Home extends React.Component {
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
                     <Link to={prefixLanguageToRoute(this.context.language,"/living-our-fundamental-principles")}>
-                      <span>{t("report-common:home.sections.0.chapters.2.title")} </span>
+                      <span>{t("report-common:chapters.chapter3.title")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
                   </h3>
@@ -209,11 +209,11 @@ class Home extends React.Component {
                 <RatioCard ratio="60" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-1.jpg"}>
                   <p className="display-1 m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(this.context.language,"/strategic-aim-1")}>
-                      <span>{t("report-common:home.sections.1.chapters.0.pretitle")} </span>
+                      <span>{t("report-common:chapters.chapter4.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
                   </p>
-                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:home.sections.1.chapters.0.title")}</h3>
+                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:chapters.chapter4.title")}</h3>
                 </RatioCard>
               </div>
               <div className="col sm-5 md-3">
@@ -237,11 +237,11 @@ class Home extends React.Component {
                 <RatioCard ratio="60" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-2.jpg"}>
                   <p className="display-1 m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(this.context.language,"/strategic-aim-2")}>
-                      <span>{t("report-common:home.sections.1.chapters.1.pretitle")} </span>
+                      <span>{t("report-common:chapters.chapter5.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
                   </p>
-                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:home.sections.1.chapters.1.title")}</h3>
+                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:chapters.chapter5.title")}</h3>
                 </RatioCard>
               </div>
             </div>
@@ -251,11 +251,11 @@ class Home extends React.Component {
                 <RatioCard ratio="60" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-3.jpg"}>
                   <p className="display-1 m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(this.context.language,"/strategic-aim-3")}>
-                      <span>{t("report-common:home.sections.1.chapters.2.pretitle")} </span>
+                      <span>{t("report-common:chapters.chapter6.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
                   </p>
-                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:home.sections.1.chapters.2.title")}</h3>
+                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:chapters.chapter6.title")}</h3>
                 </RatioCard>
               </div>
               <div className="col sm-10 sm-offset-1 md-5 md-offset-0 px2 py2">
@@ -290,11 +290,11 @@ class Home extends React.Component {
                 <RatioCard ratio="60" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-7.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(this.context.language,"/enabling-action-1")}>
-                      <span>{t("report-common:home.sections.2.chapters.0.pretitle")} </span>
+                      <span>{t("report-common:chapters.chapter7.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
                   </p>
-                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:home.sections.2.chapters.0.title")}</h3>
+                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:chapters.chapter7.title")}</h3>
                 </RatioCard>
               </div>
               <div className="col sm-5 md-3">
@@ -318,11 +318,11 @@ class Home extends React.Component {
                 <RatioCard ratio="60" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-8.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(this.context.language,"/enabling-action-2")}>
-                      <span>{t("report-common:home.sections.2.chapters.1.pretitle")} </span>
+                      <span>{t("report-common:chapters.chapter8.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
                   </p>
-                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:home.sections.2.chapters.1.title")}</h3>
+                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:chapters.chapter8.title")}</h3>
                 </RatioCard>
               </div>
             </div>
@@ -332,11 +332,11 @@ class Home extends React.Component {
                 <RatioCard ratio="60" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-9.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(this.context.language,"/enabling-action-3")}>
-                      <span>{t("report-common:home.sections.2.chapters.2.pretitle")} </span>
+                      <span>{t("report-common:chapters.chapter9.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
                   </p>
-                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:home.sections.2.chapters.2.title")}</h3>
+                  <h3 className="subhead m0 px2" style={{maxWidth:"360px"}}>{t("report-common:chapters.chapter9.title")}</h3>
                 </RatioCard>
               </div>
               <div className="col sm-10 sm-offset-1 md-5 md-offset-0 px2 py2">
@@ -355,8 +355,8 @@ class Home extends React.Component {
           <div className="clearfix bg-data pb2" style={{background:"rgba(0,0,0,0.4)"}}>
             <div className="clearfix pt3 px1 sm-px0">
               <div className="col sm-3 sm-offset-2">
-                <p className="small strong caps color-primary m0">{t("report-common:home.sections.3.chapters.0.preTitle")}</p>
-                <h2 className="display-1 mt0">{t("report-common:home.sections.3.chapters.0.title")}</h2>
+                <p className="small strong caps color-primary m0">{t("report-common:chapters.data.preTitle")}</p>
+                <h2 className="display-1 mt0">{t("report-common:chapters.data.title")}</h2>
                 <HeadlineDivider />
                 <br />
                 <br />
@@ -366,11 +366,11 @@ class Home extends React.Component {
 
             <div className="clearfix pb3 px1 sm-px0">
               <div className="col sm-6 sm-offset-2 pr2">
-                <p className="lead">{t("report-common:home.sections.3.chapters.0.body.0")} <Icon name="goto" width="24px" height="24px"/></p>
-                <p className="lead">{t("report-common:home.sections.3.chapters.0.body.1")} <Icon name="goto" width="24px" height="24px"/></p>
+                <p className="lead">{t("report-common:chapters.data.body.0")} <Icon name="goto" width="24px" height="24px"/></p>
+                <p className="lead">{t("report-common:chapters.data.body.1")} <Icon name="goto" width="24px" height="24px"/></p>
                 <br />
                 <br />
-                <Link to={prefixLanguageToRoute(this.context.language,"/data")} className="btn bg-primary p1">{t("report-common:home.sections.3.chapters.0.button")} <Icon name="goto" width="24px" height="24px"/></Link>
+                <Link to={prefixLanguageToRoute(this.context.language,"/data")} className="btn bg-primary p1">{t("report-common:chapters.data.button")} <Icon name="goto" width="24px" height="24px"/></Link>
               </div>
             </div>
           </div>

@@ -4,9 +4,6 @@ import request from 'superagent';
 export const START_LOAD = 'START_LOAD';
 export const PROGRESS_LOAD = 'PROGRESS_LOAD';
 export const END_LOAD = 'END_LOAD';
-// export const SWITCH_LANGUAGE = 'SWITCH_LANGUAGE';
-export const REQUEST_LANGUAGE = 'REQUEST_LANGUAGE';
-export const RECEIVE_LANGUAGE = 'RECEIVE_LANGUAGE';
 
 export const TOGGLE_NAV = 'TOGGLE_NAV';
 export const CLOSE_NAV = 'CLOSE_NAV';
@@ -79,56 +76,6 @@ export function closeNav() {
     type: CLOSE_NAV
   };
 }
-
-// export function switchLanguage(lang) {
-//   return {
-//     type: SWITCH_LANGUAGE,
-//     lang: lang
-//   };
-// }
-
-function requestLanguage() {
-  return {
-    type: REQUEST_LANGUAGE
-  };
-}
-
-function receiveLanguage(lang, languageData) {
-  return {
-    type: RECEIVE_LANGUAGE,
-    lang: lang,
-    languageData: languageData
-  };
-}
-
-export function fetchLanguage(lang) {
-  return (dispatch, getState) => {
-
-    dispatch(requestLanguage(lang));
-
-    var promise = new Promise((resolve, reject) => {
-        request(`/locales/${lang}/report-common.json`)
-          .end((err, res) => {
-            if(err) {
-              // dispatch(invalidateRequest());
-              console.log('Failed at fetching language!');
-              reject(err);
-            }
-            else {
-              console.log('Received language');
-              dispatch(receiveLanguage(lang, JSON.parse(res.text)));
-              resolve(lang);
-            }
-          });
-      });
-
-    return promise;
-  }
-}
-
-
-
-
 
 export function requestNationalSocieties() {
   return {

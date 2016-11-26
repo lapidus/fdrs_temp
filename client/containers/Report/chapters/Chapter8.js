@@ -1,8 +1,7 @@
 import React from "react"
-import { connect } from "react-redux"
+import { translate } from "react-i18next"
 
 import NextChapter from "../../../utils/NextChapter"
-import { fetchChapter } from "../../../actions/chapterActions"
 import BreadCrumbs from "../../../components/Breadcrumbs"
 import HeadlineDivider from "../../../components/HeadlineDivider"
 import SideNavigation from "../../../components/Report/SideNavigation"
@@ -10,17 +9,14 @@ import LineChart from "../../../components/charts/LineChart"
 import WorldMap from "../../../components/charts/WorldMap"
 
 class Chapter8 extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   componentDidMount() {
     console.log("Mounted Enabling Action 2")
   }
-  shouldComponentUpdate(newProps, newState, newContext) {
-    var newDataAvailable = newProps.content[newContext.language].chapters["enabling-action-2"] !== undefined
-    var sameData = this.props.content[this.context.language].chapters["enabling-action-2"] === newProps.content[newContext.language].chapters["who-we-are"]
-    return newDataAvailable && !sameData
+
+  shouldComponentUpdate(nextProps, nextState, nextContext) {
+    return this.context.i18n.language !== nextContext.i18n.language
   }
+
   bubbleCallback(response) {
     return [
       {
@@ -50,23 +46,27 @@ class Chapter8 extends React.Component {
         longitude: 106.845599,
         radius: 6,
         fillKey: "bubbleFill"
-      }
+      },
     ]
   }
   render() {
+    const { t } = this.props
+    const { i18n } = this.context
+    const { language } = i18n
+    const chapter = i18n.store.data[language]["report-enabling-action-2"]
 
-    var chapter = this.props.content[this.context.language].chapters["enabling-action-2"]
-
-    var section1 = chapter.sections[0]
-    var section2 = chapter.sections[1]
-    var section3 = chapter.sections[2]
-    var section4 = chapter.sections[3]
+    const [
+      section0,
+      section1,
+      section2,
+      section3,
+    ] = chapter.sections
 
     return (
       <div>
         <div className="clearfix bg-primary-dark">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={chapter} language={this.context.language}/>
+            <BreadCrumbs chapter={chapter} language={language}/>
           </div>
         </div>
 
@@ -86,17 +86,26 @@ class Chapter8 extends React.Component {
 
         <div className="clearfix body-text" style={{position:"relative"}}>
 
-          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section1","scroll-target-section2","scroll-target-section3","scroll-target-section4"]}/>
+          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section0","scroll-target-section1","scroll-target-section2","scroll-target-section3"]}/>
 
-          <div className="clearfix" id="scroll-target-section1">
+          <div className="clearfix" id="scroll-target-section0">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p>{section1.blocks[0]}</p>
+              <p>{section0.blocks[0]}</p>
               <ul>
-                {section1.blocks[1].map((item, i) => {
+                {section0.blocks[1].map((item, i) => {
                   return <li key={i}>{item}</li>
                 })}
               </ul>
-              <p>{section1.blocks[2]}</p>
+              <p>{section0.blocks[2]}</p>
+            </div>
+          </div>
+
+          <div className="clearfix" id="scroll-target-section1">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+              <p className="small strong color-primary caps">{chapter.title}</p>
+              <h3 className="headline">{section1.title}</h3>
+              <HeadlineDivider />
+              <p>{section1.blocks[0]}</p>
             </div>
           </div>
 
@@ -109,25 +118,16 @@ class Chapter8 extends React.Component {
             </div>
           </div>
 
-          <div className="clearfix" id="scroll-target-section3">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section3.title}</h3>
-              <HeadlineDivider />
-              <p>{section3.blocks[0]}</p>
-            </div>
-          </div>
-
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2">
               <WorldMap
-                title={section3.blocks[1].title}
-                caption={section3.blocks[1].caption}
+                title={section2.blocks[1].title}
+                caption={section2.blocks[1].caption}
                 bubbleSource={false}
                 bubbleCallback={this.bubbleCallback}
                 />
               <div className="clearfix">
-                {section3.blocks[1].items.map((item, i) => {
+                {section2.blocks[1].items.map((item, i) => {
                   return (
                     <div key={i} className="col md-6 lg-3 pr2">
                       <p className="subhead strong">{item.country}</p>
@@ -141,25 +141,25 @@ class Chapter8 extends React.Component {
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p>{section3.blocks[2]}</p>
+              <p>{section2.blocks[2]}</p>
             </div>
           </div>
 
 
-          <div className="clearfix" id="scroll-target-section4">
+          <div className="clearfix" id="scroll-target-section3">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
               <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section4.title}</h3>
+              <h3 className="headline">{section3.title}</h3>
               <HeadlineDivider />
-              <p>{section4.blocks[0]}</p>
+              <p>{section3.blocks[0]}</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-4 lg-offset-2 pb2">
               <LineChart
-                title={section4.blocks[1].title}
-                caption={section4.blocks[1].caption}
+                title={section3.blocks[1].title}
+                caption={section3.blocks[1].caption}
                 height={480}
                 padding={{
                   top: 30,
@@ -171,7 +171,7 @@ class Chapter8 extends React.Component {
                   x: [new Date(2009,1,1), new Date(2015,1,1)],
                   y: [0,25000000]
                 }}
-                axisLabels={section4.blocks[1].axisLabels}
+                axisLabels={section3.blocks[1].axisLabels}
                 dataset={[[
                   {x: new Date(2010,1,1), y: 7444228},
                   {x: new Date(2011,1,1), y: 8561015},
@@ -200,11 +200,11 @@ class Chapter8 extends React.Component {
                   {x: new Date(2013,1,1), y: 145000},
                   {x: new Date(2014,1,1), y: 310000}
                 ]]}
-                labels={section4.blocks[1].lineLabels}
+                labels={section3.blocks[1].lineLabels}
               />
             </div>
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-4 lg-offset-0 pb2">
-              <p>{section4.blocks[2]}</p>
+              <p>{section3.blocks[2]}</p>
             </div>
           </div>
 
@@ -216,30 +216,8 @@ class Chapter8 extends React.Component {
   }
 }
 
-Chapter8.needs = [ fetchChapter ]
-
 Chapter8.contextTypes = {
-  language: React.PropTypes.string
+  i18n: React.PropTypes.object.isRequired,
 }
 
-function mapStateToProps(state) {
-  return {
-    // language: state.appReducer.language,
-    content: {
-      en: state.chapterReducer.en,
-      fr: state.chapterReducer.fr,
-      es: state.chapterReducer.es,
-      ar: state.chapterReducer.ar
-    }
-  }
-}
-
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     changeDataset: (id) => {
-//       dispatch(changeDataset(id))
-//     }
-//   }
-// }
-
-export default connect(mapStateToProps)(Chapter8)
+export default translate([ "report-enabling-action-2" ], { wait: true })(Chapter8)
