@@ -1,13 +1,15 @@
 import React, { PropTypes } from "react"
 import { Link } from "react-router"
-import Select from "react-select"
 import { connect } from "react-redux"
+import { translate } from "react-i18next"
+import Select from "react-select"
 
 import constructLanguageRoute from "../utils/constructLanguageRoute"
 import prefixLanguageToRoute from "../utils/prefixLanguageToRoute"
 import { toggleNav } from "../actions/appActions"
 import Icon from "../components/Icon"
 import Loader from "../components/Loader"
+import i18n from "../i18n"
 
 require("../utils/d3GeoMinimal")
 
@@ -23,11 +25,6 @@ class App extends React.Component {
     super(props)
     this.goToLanguage = this.goToLanguage.bind(this)
   }
-  getChildContext() {
-    return {
-      language: this.props.language,
-    }
-  }
   componentDidMount() {
     console.log("Mounting app: ", this.props.location)
   }
@@ -40,7 +37,9 @@ class App extends React.Component {
     )
   }
   render() {
-    const { language, navOpen } = this.props
+    const { t } = this.props
+    const { language } = i18n
+    const { navOpen } = this.props
     const headerClassName = navOpen ?
                             "site-header clearfix level-5 is-extended" :
                             "site-header clearfix level-5"
@@ -88,14 +87,14 @@ class App extends React.Component {
                 </div>
                 <Link
                   className="btn px1 py15"
-                  to={ prefixLanguageToRoute(this.props.language, "/report") }
+                  to={ prefixLanguageToRoute(language, "/report") }
                 >
-                  <span className="caps">{ this.props[language].home.downloadReportSection.preTitle }</span>
+                  <span className="caps">{ t("report-common:home.downloadReportSection.preTitle") }</span>
                 </Link>
                 <button className="btn px1 py15">
                   <Icon name="share" height="20px" />
                   &nbsp;&nbsp;&nbsp;
-                  <span className="caps">{this.props[language].share}</span>
+                  <span className="caps">{ t("report-common:share") }</span>
                 </button>
               </div>
             </div>
@@ -134,44 +133,28 @@ class App extends React.Component {
 }
 
 App.propTypes = {
+  t: PropTypes.func.isRequired,
   children: PropTypes.element,
-  language: PropTypes.string,
   location: PropTypes.object,
   navOpen: PropTypes.bool,
   toggleNav: PropTypes.func,
-  en: PropTypes.object,
-  fr: PropTypes.object,
-  es: PropTypes.object,
-  ar: PropTypes.object,
 }
 
 App.childContextTypes = {
   location: PropTypes.object,
-  language: PropTypes.string,
 }
 
 App.contextTypes = {
   router: PropTypes.object.isRequired,
 }
 
-function mapStateToProps(state) {
-  return {
-    navOpen: state.appReducer.navOpen,
-    language: state.appReducer.language,
-    en: state.appReducer.en,
-    fr: state.appReducer.fr,
-    es: state.appReducer.es,
-    ar: state.appReducer.ar,
-  }
-}
+const mapStateToProps = state => ({
+  navOpen: state.appReducer.navOpen,
+})
 
-function mapDispatchToProps(dispatch) {
-  return {
-    toggleNav: () => {
-      dispatch(toggleNav())
-    },
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  toggleNav: () => dispatch(toggleNav()),
+})
 
 // export default App
-module.exports = connect(mapStateToProps, mapDispatchToProps)(App)
+module.exports = translate()(connect(mapStateToProps, mapDispatchToProps)(App))

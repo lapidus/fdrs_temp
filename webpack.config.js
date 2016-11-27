@@ -26,13 +26,5 @@ module.exports = {
       /* chunkName= */"vendor",
       /* filename= */"vendor.js"
     ),
-    new webpack.DefinePlugin({
-      "process.env": {
-        "NODE_ENV": JSON.stringify("production"),
-      },
-    }),
   ],
-  stats: {
-    warngings: false,
-  },
 }
