@@ -18,9 +18,10 @@ class Chapter1 extends React.Component {
     console.log("Mounted Who we are")
   }
 
-  // shouldComponentUpdate(nextProps, nextState, nextContext) {
-  //   return this.context.i18n.language !== nextContext.i18n.language
-  // }
+  shouldComponentUpdate(nextProps, nextState, nextContext) {
+    const { language } = nextContext.i18n
+    return !!nextContext.i18n.store.data[language]["report-who-we-are"]
+  }
 
   bubbleCallback(response) {
     const officeReference = {

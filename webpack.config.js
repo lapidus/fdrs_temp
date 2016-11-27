@@ -2,6 +2,9 @@ const webpack = require("webpack")
 
 const pkg = require("./package.json")
 
+const nodeEnv = process.env.NODE_ENV || "development"
+const isProd = nodeEnv === "production"
+
 const serverDeps = [
   "larvitbase",
   "larvitfs",
@@ -12,6 +15,44 @@ const serverDeps = [
 
 const vendor = Object.keys(pkg.dependencies)
                 .filter(v => serverDeps.indexOf(v) === -1)
+
+const plugins = [
+  new webpack.optimize.CommonsChunkPlugin({
+    name: "vendor",
+    filename: "vendor.js",
+  }),
+  new webpack.DefinePlugin({
+    "process.env": {
+      "NODE_ENV": JSON.stringify(nodeEnv),
+    },
+  }),
+]
+
+if (isProd) {
+  plugins.push(
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false,
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+        screw_ie8: true,
+        conditionals: true,
+        unused: true,
+        comparisons: true,
+        sequences: true,
+        dead_code: true,
+        evaluate: true,
+        if_return: true,
+        join_vars: true,
+      },
+      output: {
+        comments: false,
+      },
+    })
+  )
+}
 
 module.exports = {
   entry: {
@@ -28,10 +69,5 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
     ],
   },
-  plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      name: "vendor",
-      filename: "vendor.js",
-    }),
-  ],
+  plugins: plugins,
 }

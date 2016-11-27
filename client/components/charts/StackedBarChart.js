@@ -68,8 +68,6 @@ class StackedBarChart extends React.Component {
 
     const width = this.state.width || this.props.width
 
-    console.log("dddddddd", title, data)
-
     return (
       <div className="simple-bar-chart">
         { title && <h4 className="title strong">{ title }</h4> }

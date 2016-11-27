@@ -15,7 +15,8 @@ class Chapter9 extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState, nextContext) {
-    return this.context.i18n.language !== nextContext.i18n.language
+    const { language } = nextContext.i18n
+    return !!nextContext.i18n.store.data[language]["report-enabling-action-3"]
   }
 
   render() {

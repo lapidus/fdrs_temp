@@ -9,3 +9,7 @@ npm-debug.log
 .idea/*
 .DS_Store
 public/client.js
+public/*.client.js
+public/app.js
+public/vendor.js
+public/*.app.js

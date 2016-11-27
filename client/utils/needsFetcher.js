@@ -1,8 +1,9 @@
 import Promise from "promise-polyfill"
 
 export default function fetchNeededData(dispatch, components, params, renderProps) {
+  console.log("lllll", components)
   const needs = components.reduce((prev, current) => {
-    return (current.needs || [])
+    return (current && current.needs ? current.needs : [])
       // Not sure this is necessary anymore, or perhaps this depends on how the routes
       // are set up. This seems to lead to redundant needs...
       // .concat((current.WrappedComponent ? current.WrappedComponent.needs : []) || [])

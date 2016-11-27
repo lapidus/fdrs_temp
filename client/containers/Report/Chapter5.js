@@ -17,7 +17,8 @@ class Chapter5 extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState, nextContext) {
-    return this.context.i18n.language !== nextContext.i18n.language
+    const { language } = nextContext.i18n
+    return !!nextContext.i18n.store.data[language]["report-strategic-aim-2"]
   }
 
   render() {

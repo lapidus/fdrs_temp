@@ -1,37 +1,37 @@
 export const report = {
   slug: "report",
   routes: {
-    DataView: {
+    data: {
       slug: "data",
     },
-    Acknowledgements: {
+    acknowledgements: {
       slug: "acknowledgements",
     },
-    Chapter1: {
+    chapter1: {
       slug: "who-we-are",
     },
-    Chapter2: {
+    chapter2: {
       slug: "what-we-do",
     },
-    Chapter3: {
+    chapter3: {
       slug: "living-our-fundamental-principles",
     },
-    Chapter4: {
+    chapter4: {
       slug: "strategic-aim-1",
     },
-    Chapter5: {
+    chapter5: {
       slug: "strategic-aim-2",
     },
-    Chapter6: {
+    chapter6: {
       slug: "strategic-aim-3",
     },
-    Chapter7: {
+    chapter7: {
       slug: "enabling-action-1",
     },
-    Chapter8: {
+    chapter8: {
       slug: "enabling-action-2",
     },
-    Chapter9: {
+    chapter9: {
       slug: "enabling-action-3",
     },
   },
