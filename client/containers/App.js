@@ -157,4 +157,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 // export default App
-module.exports = translate()(connect(mapStateToProps, mapDispatchToProps)(App))
+export default translate()(connect(mapStateToProps, mapDispatchToProps)(App))

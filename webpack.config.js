@@ -2,7 +2,14 @@ const webpack = require("webpack")
 
 const pkg = require("./package.json")
 
-const serverDeps = [ "larvitbase", "larvitfs", "larviturltopdf", "winston", "winston-daily-rotate-file" ]
+const serverDeps = [
+  "larvitbase",
+  "larvitfs",
+  "larviturltopdf",
+  "winston",
+  "winston-daily-rotate-file",
+]
+
 const vendor = Object.keys(pkg.dependencies)
                 .filter(v => serverDeps.indexOf(v) === -1)
 
@@ -22,9 +29,9 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin(
-      /* chunkName= */"vendor",
-      /* filename= */"vendor.js"
-    ),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "vendor",
+      filename: "vendor.js",
+    }),
   ],
 }
