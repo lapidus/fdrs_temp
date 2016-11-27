@@ -1,7 +1,6 @@
 import React from "react"
 import { translate } from "react-i18next"
 
-import i18n from "../../i18n"
 import BreadCrumbs from "../../components/Breadcrumbs"
 
 class Acknowledgements extends React.Component {
@@ -9,7 +8,7 @@ class Acknowledgements extends React.Component {
     document.body.classList.add("html-ready")
   }
   render() {
-    const { language } = i18n
+    const { language } = this.context.i18n
     return (
       <div>
         <div className="clearfix bg-primary-dark">
@@ -56,6 +55,10 @@ class Acknowledgements extends React.Component {
       </div>
     )
   }
+}
+
+Acknowledgements.contextTypes = {
+  i18n: React.PropTypes.object.isRequired,
 }
 
 export default translate()(Acknowledgements)

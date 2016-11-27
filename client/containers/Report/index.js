@@ -3,7 +3,6 @@ import { Link } from "react-router"
 import { translate } from "react-i18next"
 import { connect } from "react-redux"
 
-import i18n from "../../i18n"
 import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
 import { toggleNav } from "../../actions/appActions"
 import Icon from "../../components/Icon"
@@ -17,7 +16,7 @@ class Report extends React.Component {
   }
 
   render() {
-    const { language } = i18n
+    const { language } = this.context.i18n
     const { t, navOpen, toggleNav } = this.props
     const headerClassName = navOpen ?
                             "site-header clearfix level-5 is-extended" :
@@ -128,6 +127,7 @@ Report.propTypes = {
 }
 
 Report.contextTypes = {
+  i18n: React.PropTypes.object.isRequired,
   router: PropTypes.object.isRequired,
 }
 

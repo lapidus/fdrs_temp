@@ -2,11 +2,10 @@ import React from "react"
 import { Link } from "react-router"
 import { translate } from "react-i18next"
 
-import i18n from "../../i18n"
 import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
 import { report } from "../../routes/config"
 
-const Navigation = ({ navOpen, t }) => {
+const Navigation = ({ navOpen, t }, { i18n }) => {
   const { language } = i18n
   const content = i18n.store.data[language]["report-common"]
   const langRoute = prefixLanguageToRoute(language)
@@ -120,6 +119,10 @@ const Navigation = ({ navOpen, t }) => {
 Navigation.propTypes = {
   t: React.PropTypes.func.isRequired,
   navOpen: React.PropTypes.bool,
+}
+
+Navigation.contextTypes = {
+  i18n: React.PropTypes.object.isRequired,
 }
 
 export default translate([], { wait: true })(Navigation)
