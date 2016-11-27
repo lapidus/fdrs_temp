@@ -9,7 +9,6 @@ import prefixLanguageToRoute from "../utils/prefixLanguageToRoute"
 import { toggleNav } from "../actions/appActions"
 import Icon from "../components/Icon"
 import Loader from "../components/Loader"
-import i18n from "../i18n"
 
 require("../utils/d3GeoMinimal")
 
@@ -37,9 +36,8 @@ class App extends React.Component {
     )
   }
   render() {
-    const { t } = this.props
-    const { language } = i18n
-    const { navOpen } = this.props
+    const { language } = this.context.i18n
+    const { t, navOpen } = this.props
     const headerClassName = navOpen ?
                             "site-header clearfix level-5 is-extended" :
                             "site-header clearfix level-5"
@@ -146,6 +144,7 @@ App.childContextTypes = {
 
 App.contextTypes = {
   router: PropTypes.object.isRequired,
+  i18n: React.PropTypes.object.isRequired,
 }
 
 const mapStateToProps = state => ({
