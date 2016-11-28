@@ -18,7 +18,7 @@
   },
   "engines": {
     "node": "5.9.1",
-    "npm": "2.13.3"
+    "npm": "4.0.2"
   },
   "authors": [
     "Arek Mytych",
