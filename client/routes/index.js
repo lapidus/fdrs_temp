@@ -73,6 +73,7 @@ routes.childRoutes = routes.childRoutes.concat(childRoutes)
 routes.childRoutes.push(
   langPrefixedRoutes("fr"),
   langPrefixedRoutes("es"),
+  langPrefixedRoutes("ar"),
 )
 
 export default routes

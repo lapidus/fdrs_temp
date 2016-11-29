@@ -1,0 +1,19 @@
+{
+  "indicators": {
+    "KPI_Number_of_People_Volunteering": "المتطوعين",
+    "KPI_Number_of_PaidStaff": "الموظفين المأجورين",
+    "KPI_Total_Number_of_People_Donating_Blood": "المتبرعين بالدم",
+    "KPI_Number_of_Local_Units": "الوحدات المحلية",
+    "KPI_Number_of_People_Reached_AllServices": "الأشخاص الذين تم الوصول إليهم",
+    "Total_Expenditure_CHF": "النفقات",
+    "Total_Income_CHF": "الإيرادات"
+  },
+
+  "regions": {
+    "asia" : "Asia and the Pacific",
+    "americas" : "Americas",
+    "europe" : "Europe",
+    "middleeast" : "Middle East and North Africa",
+    "africa" : "Africa"
+  }
+}

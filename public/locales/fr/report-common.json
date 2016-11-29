@@ -1,73 +1,73 @@
 {
-  "site-title": "Tout le monde compte progrès 2015",
-  "preTitle": "Everyone counts",
-  "reportType": "Progress Report",
-  "download": "Download the report",
-  "share": "share",
+  "site-title": "Tout le monde compte Bilan jusqu’en 2015",
+  "preTitle": "Tout le monde compte",
+  "reportType": "Bilan",
+  "download": "Télécharger le bilan",
+  "share": "partager",
   "signature": [
-    "website by:",
+    "site par:",
     "Lapidus Interactive"
   ],
   "copyright": "@ 2016 IFRC",
   "home": {
-    "title": ["Everyone", "counts", "2015"],
+    "title": ["Tout le monde", "compte", "2015"],
     "intro": [
-      "Halfway through this decade, and as we begin to close on the centenary of the International Federation of Red Cross and Red Crescent Societies (IFRC), it is timely to take stock of our delivery against the aspirations of Strategy 2020.",
-      "The picture presented in this report is encouraging. In 2013, you, the National Red Cross and Red Crescent Societies, reached more than 110 million people with disaster response and early recovery services."
+      "À mi-parcours de cette décennie, et à quelques années du centenaire de la Fédération internationale des Sociétés de la Croix-Rouge et du Croissant-Rouge (Fédération), le moment est venu de dresser le bilan de nos réalisations à la lumière des aspirations de la Stratégie 2020.",
+      "Le tableau présenté dans ce rapport est encourageant. En 2013, vous, les Sociétés nationales de la Croix-Rouge et du Croissant-Rouge, avez porté assistance à plus de 110 millions de personnes dans le cadre de vos opérations d'urgence en cas de catastrophe et de vos programmes de relèvement précoce."
     ],
     "signatures": [
       {
         "name": "Tadateru Konoé",
-        "title": "President"
+        "title": "Président"
       },
       {
         "name": "Elhadj As Sy",
-        "title": "Secretary General"
+        "title": "Secrétaire général"
       }
     ],
     "section1": "Section 1",
     "section2": "Section 2",
     "section3": "Section 3",
     "section4": "Section 4",
-    "overview": "Overview",
-    "strategicAims": "Strategic aims",
-    "enablingActions": "Enabling actions",
+    "overview": "Aperçu",
+    "strategicAims": "Objectifs stratégiques",
+    "enablingActions": "Actions facilitatrices",
     "downloadReportSection": {
-      "preTitle": "Report",
-      "title": "Want to read more?",
-      "body": "The Everyone Counts Progress Report 2015 is available in all four official languages of the IFRC. Choose a download from below.",
-      "buttons": ["Download the report in English", "Download the report in French", "Download the report in Spanish", "Download the report in Arabic"]
+      "preTitle": "Bilan",
+      "title": "Vous voulez en savoir plus?",
+      "body": "Le bilan 2015 est disponible dans les quatre langues officielles de la FICR. Choisissez un téléchargement à partir ci-dessous .",
+      "buttons": ["Télécharger le bilan en anglais", "Télécharger le bilan en français", "Télécharger le bilan en espagnol", "Télécharger le bilan en arabe"]
     },
     "sections": [
       {
         "id": "Section 1",
-        "title": "Overview",
+        "title": "Aperçu",
         "statistic": {
           "number": "80M",
-          "text": "Members"
+          "text": "Membres"
         },
-        "fact": "The network of the International Federation of Red Cross and Red Crescent Societies spans 190 countries.",
-        "quote": "All that we do is guided by our Fundamental Principles, which are distilled from out collective experience accumulated over more than a century."
+        "fact": "Le réseau mondial de la Croix-Rouge et du Croissant- Rouge s’est étendu de manière continue depuis sa naissance en 1863. Il compte 190 Sociétés nationales depuis 2015.",
+        "quote": "Toutes nos actions sont guidées par nos Principes fondamentaux, lesquels s’inspirent de l’expérience collective accumulée depuis plus d’un siècle."
       },
       {
         "id": "Section 2",
-        "title": "Strategic aims",
+        "title": "Objectifs stratégiques",
         "statistic": {
           "number": "110M",
-          "text": "People reached by disaster response and early recovery programmes"
+          "text": "de personnes ont bénéficié des programmes d’intervention en cas de catastrophe et de relèvement précoce"
         },
-        "fact": "The network of the International Federation of Red Cross and Red Crescent Societies spans 190 countries.",
-        "quote": "From our earliest days, the Red Cross and Red Crescent is best known for our mission to bring urgent help and comfort in moments of greatest need."
+        "fact": "La vision de la Fédération est: Inspirer, encourager, faciliter et promouvoir en tout moment toutes les formes d'activités humanitaires des Sociétées Nationales, en visant à prévenir et appaiser les souffrances humaines, ce qui contribue a maintenir et promouvoir le respect de la dignité et la paix dans le monde.",
+        "quote": "Depuis leurs débuts, la Croix-Rouge et le Croissant-Rouge sont surtout connus pour leur mission, qui est d’apporter une aide d’urgence et un réconfort aux personnes en détresse."
       },
       {
         "id": "Section 3",
-        "title": "Enabling actions",
+        "title": "Actions facilitatrices",
         "statistic": {
           "number": "190",
-          "text": "National Societies"
+          "text": "Sociétés nationales"
         },
-        "fact": "To inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world.",
-        "quote": "Since the adoption of Strategy 2020, the major effort seeking to improve our functioning as the IFRC has been on strengthening our governance, introducing a framework for accountability, and promoting a culture of learning."
+        "fact": "La capacité combinée des Sociétés nationales de fournir des services est la principale force de la Fédération et du Mouvement dans son ensemble.",
+        "quote": "Depuis l’adoption de la Stratégie 2020, les principales mesures prises pour améliorer notre fonctionnement en tant que Fédération ont consisté à renforcer notre gouvernance, à mettre en place un cadre de redevabilité et à promouvoir une culture de l’apprentissage."
       },
       {
         "id": "Section 4",
@@ -76,26 +76,26 @@
     ]
   },
   "chapters": {
-    "chapter1": { "title": "Who we are" },
-    "chapter2": { "title": "What we do" },
-    "chapter3": { "title": "Living our fundamental principles" },
-    "chapter4": { "pretitle": "Strategic aim 1", "title": "Save lives, protect livelihoods and strengthen recovery from disasters and crises" },
-    "chapter5": { "pretitle": "Strategic aim 2", "title": "Healthy and safe living" },
-    "chapter6": { "pretitle": "Strategic aim 3", "title": "Social inclusion and a culture of non-violence and peace" },
-    "chapter7": { "pretitle": "Enabling action 1", "title": "Strong national red cross and red crescent societies" },
-    "chapter8": { "pretitle": "Enabling action 2", "title": "Humanitarian diplomacy to prevent and reduce vulnerability in a globalised world" },
-    "chapter9": { "pretitle": "Enabling action 3", "title": "Function effectively as the IFRC" },
+    "chapter1": { "title": "Qui nous sommes" },
+    "chapter2": { "title": "Ce que nous faisons" },
+    "chapter3": { "title": "Nos principes fondamentaux en action" },
+    "chapter4": { "pretitle": "Objectif stratégique 1", "title": "Sauver des views, protéger les moyens d'existence et renforcer le relèvement après les catastrophes et les crises" },
+    "chapter5": { "pretitle": "Objectif stratégique 2", "title": "Promouvoir des modes de vie sains et sûrs" },
+    "chapter6": { "pretitle": "Objectif stratégique 3", "title": "Promouvoir l'intégration sociale et une culture de non-violence et de paix" },
+    "chapter7": { "pretitle": "Action facilitatrice 1", "title": "Bâtir des sociétés nationales de la croix-rouge et du croissant-rouge fortes" },
+    "chapter8": { "pretitle": "Action facilitatrice 2", "title": "Mener des activités de diplomatie humanitaire pour prévenir et réduire la vulnérabilité dans un monde interdépendant" },
+    "chapter9": { "pretitle": "Action facilitatrice 3", "title": "Fonctionner de manière efficace en tant que fédération internationale" },
     "data": {
-      "pretitle": "Data tools",
-      "title": "Explore the data",
+      "preTitle": "Outils de données",
+      "title": "Explorez les données",
       "body": [
-        "See the seven key indicators across all National Societies",
-        "Find information about your National Society"
+        "Voir les sept indicateurs clés dans toutes les Sociétés nationales",
+        "Trouvez des informations sur votre Société nationale"
       ],
-      "button": "Explore the data from FDRS"
+      "button": "Explorez les données"
     },
     "acknowledgements": {
-      "title": "Acknowledgements"
+      "title": "Remerciements"
     }
   }
 }

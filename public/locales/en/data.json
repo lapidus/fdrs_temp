@@ -8,12 +8,7 @@
     "Total_Expenditure_CHF": "Expenditure",
     "Total_Income_CHF": "Income"
   },
-  "disaster_types" : {
-    "geophysical" : "Geophysical",
-    "hydrometeorological" : "Hydrometeorological",
-    "biological" : "Biological",
-    "Various" : "Various"
-  },
+
   "regions": {
     "asia" : "Asia and the Pacific",
     "americas" : "Americas",

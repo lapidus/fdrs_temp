@@ -16,7 +16,7 @@ const languageOptions = [
   { value: "en", label: "English" },
   { value: "fr", label: "French" },
   { value: "es", label: "Spanish" },
-  // { value: "ar", label: "Arabic" }
+  { value: "ar", label: "Arabic" }
 ]
 
 class App extends React.Component {
