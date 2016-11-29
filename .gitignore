@@ -9,5 +9,4 @@ npm-debug.log
 .idea/*
 .DS_Store
 public/js
-public/tmpl/default.tmpl
-stats.json
+public/index.html

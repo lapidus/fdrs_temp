@@ -11,11 +11,11 @@ const isProd = nodeEnv === "production"
 const filename = isProd ? "[name].[chunkhash].js" : "[name].js"
 
 const serverDeps = [
-  "larvitbase",
-  "larvitfs",
+  "express",
+  "morgan",
+  "cookie-parser",
+  "body-parser",
   "larviturltopdf",
-  "winston",
-  "winston-daily-rotate-file",
 ]
 
 const vendor = Object.keys(pkg.dependencies)
@@ -35,7 +35,7 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     template: "index.ejs",
-    filename: path.join(__dirname, "public/tmpl/default.tmpl"),
+    filename: path.join(__dirname, "public/index.html"),
     inject: "body",
   }),
 ]

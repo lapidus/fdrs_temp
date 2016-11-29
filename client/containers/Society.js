@@ -1,6 +1,9 @@
 import React from "react"
 
 class Society extends React.Component {
+  componentDidMount() {
+    document.body.classList.add("html-ready")
+  }
 
   render() {
     const { id } = this.props.params
