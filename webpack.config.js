@@ -38,13 +38,6 @@ const plugins = [
     filename: path.join(__dirname, "public/tmpl/default.tmpl"),
     inject: "body",
   }),
-  function() {
-    this.plugin("done", function(stats) {
-      require("fs").writeFileSync(
-        path.join(__dirname, "stats.json"),
-        JSON.stringify(stats.toJson()))
-    })
-  },
 ]
 
 if (isProd) {
