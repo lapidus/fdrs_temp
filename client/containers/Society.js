@@ -7,7 +7,7 @@ class Society extends React.Component {
     return (
       <div className="py4 pl2">
         <h1>{ "Society profile page" }</h1>
-        <div>{ id }</div>
+        <div>{ `Society id: ${id}` }</div>
       </div>
     )
   }

@@ -8,8 +8,6 @@ ncp-debug.log
 npm-debug.log
 .idea/*
 .DS_Store
-public/client.js
-public/*.client.js
-public/app.js
-public/vendor.js
-public/*.app.js
+public/js
+public/tmpl/default.tmpl
+stats.json
