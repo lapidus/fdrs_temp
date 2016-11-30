@@ -1,0 +1,119 @@
+
+:root {
+  --sans-serif:        "Helvetica Neue", sans-serif;
+  --one:               0.0625rem;
+  --one-relative:      0.0625em;
+  --base-font-size:    1rem;
+  --base-unit:         var(--base-font-size);
+  --base-line-height:  1.5;
+
+  --base-space:        var(--base-font-size);
+
+  --color-red:         #F44336;
+  --color-pink:        #E91E63;
+  --color-purple:      #9C27B0;
+  --color-deep-purple: #673AB7;
+  --color-indigo:      #3F51B5;
+  --color-blue:        #2196F3;
+  --color-light-blue:  #03A9F4;
+  --color-cyan:        #00BCD4;
+  --color-teal:        #009688;
+  --color-green:       #4CAF50;
+  --color-light-green: #8BC34A;
+  --color-lime:        #CDDC39;
+  --color-yellow:      #FFEB3B;
+  --color-amber:       #FFC107;
+  --color-orange:      #FF9800;
+  --color-deep-orange: #FF5722;
+  --color-brown:       #795548;
+  --color-grey:        #9E9E9E;
+  --color-blue-grey:   #607D8B;
+
+  --color-white:       #FFFFFF;
+  /*--color-grey-light:  #EFEBE9;*/
+  --color-grey-light:  #F6F4F2;
+  --color-grey-dark:   #263238;
+
+  --text-color-base:   var(--color-grey-dark);
+
+  /*--color-primary:            var(--color-pink);*/
+  /*--color-primary:            var(--color-red);*/
+  --color-primary:            #D0021B;
+  --color-primary-contrast:   var(--color-white);
+  --color-secondary:          var(--color-grey-light);
+  --color-secondary-contrast: inherit;
+
+  --button-dark-factor-hover:      0.15;
+  --button-dark-factor-focus:      0.10;
+  --button-dark-factor-active:     0.20;
+
+  --shadow-key-umbra-opacity:      0.16;
+  --shadow-key-penumbra-opacity:   0.10;
+  --shadow-ambient-shadow-opacity: 0.08;
+
+}
+
+@custom-media --xs-viewport (min-width: 30em);
+@custom-media --sm-viewport (min-width: 48em);
+@custom-media --md-viewport (min-width: 62em);
+@custom-media --lg-viewport (min-width: 75em);
+@custom-media --xl-viewport (min-width: 91em);
+
+@import '../node_modules/normalize.css/normalize.css';
+@import 'base.css';
+@import 'typography.css';
+@import 'grid.css';
+@import 'paddings.css';
+@import 'margins.css';
+@import 'buttons.css';
+@import 'shadows.css';
+@import 'utils.css';
+
+
+.t0 { top: 0;    }
+.b0 { bottom: 0; }
+.r0 { right: 0;  }
+.l0 { left: 0;   }
+
+.t1 { top:    calc(1 * var(--base-unit)); }
+.b1 { bottom: calc(1 * var(--base-unit)); }
+.r1 { right:  calc(1 * var(--base-unit)); }
+.l1 { left:   calc(1 * var(--base-unit)); }
+
+.t2 { top:    calc(2 * var(--base-unit)); }
+.b2 { bottom: calc(2 * var(--base-unit)); }
+.r2 { right:  calc(2 * var(--base-unit)); }
+.l2 { left:   calc(2 * var(--base-unit)); }
+
+.t50 { top:    50%; }
+.b50 { bottom: 50%; }
+.r50 { right:  50%; }
+.l50 { left:   50%; }
+
+.y-center-self { transform: translateY(-50%); }
+.x-center-self { transform: translateX(-50%); }
+
+.card__overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  background: #fff;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.card__overlay > div {
+  opacity: 0;
+  transform: translateY(-160px);
+  transition: all 0.3s;
+}
+.card__overlay--active {
+  pointer-events: all;
+  transform: translateY(-100%);
+}
+.card__overlay--active > div {
+  transform: translateY(0);
+  opacity: 1;
+}

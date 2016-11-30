@@ -1,0 +1,84 @@
+
+.p0  { padding:        0; }
+.pt0 { padding-top:    0; }
+.pr0 { padding-right:  0; }
+.pb0 { padding-bottom: 0; }
+.pl0 { padding-left:   0; }
+.px0 { padding-left:   0; padding-right:  0; }
+.py0 { padding-top:    0; padding-bottom: 0; }
+
+.p05  { padding:        calc(.5 * var(--base-unit)); }
+.pt05 { padding-top:    calc(.5 * var(--base-unit)); }
+.pr05 { padding-right:  calc(.5 * var(--base-unit)); }
+.pb05 { padding-bottom: calc(.5 * var(--base-unit)); }
+.pl05 { padding-left:   calc(.5 * var(--base-unit)); }
+.px05 { padding-left:   calc(.5 * var(--base-unit)); padding-right:  calc(.5 * var(--base-unit)); }
+.py05 { padding-top:    calc(.5 * var(--base-unit)); padding-bottom: calc(.5 * var(--base-unit)); }
+
+.p1  { padding:        calc(1 * var(--base-unit)); }
+.pt1 { padding-top:    calc(1 * var(--base-unit)); }
+.pr1 { padding-right:  calc(1 * var(--base-unit)); }
+.pb1 { padding-bottom: calc(1 * var(--base-unit)); }
+.pl1 { padding-left:   calc(1 * var(--base-unit)); }
+.px1 { padding-left:   calc(1 * var(--base-unit)); padding-right:  calc(1 * var(--base-unit)); }
+.py1 { padding-top:    calc(1 * var(--base-unit)); padding-bottom: calc(1 * var(--base-unit)); }
+
+.p2  { padding:        calc(2 * var(--base-unit)); }
+.pt2 { padding-top:    calc(2 * var(--base-unit)); }
+.pr2 { padding-right:  calc(2 * var(--base-unit)); }
+.pb2 { padding-bottom: calc(2 * var(--base-unit)); }
+.pl2 { padding-left:   calc(2 * var(--base-unit)); }
+.px2 { padding-left:   calc(2 * var(--base-unit)); padding-right:  calc(2 * var(--base-unit)); }
+.py2 { padding-top:    calc(2 * var(--base-unit)); padding-bottom: calc(2 * var(--base-unit)); }
+
+.p3  { padding:        calc(3 * var(--base-unit)); }
+.pt3 { padding-top:    calc(3 * var(--base-unit)); }
+.pr3 { padding-right:  calc(3 * var(--base-unit)); }
+.pb3 { padding-bottom: calc(3 * var(--base-unit)); }
+.pl3 { padding-left:   calc(3 * var(--base-unit)); }
+.px3 { padding-left:   calc(3 * var(--base-unit)); padding-right:  calc(3 * var(--base-unit)); }
+.py3 { padding-top:    calc(3 * var(--base-unit)); padding-bottom: calc(3 * var(--base-unit)); }
+
+.p4  { padding:        calc(4 * var(--base-unit)); }
+.pt4 { padding-top:    calc(4 * var(--base-unit)); }
+.pr4 { padding-right:  calc(4 * var(--base-unit)); }
+.pb4 { padding-bottom: calc(4 * var(--base-unit)); }
+.pl4 { padding-left:   calc(4 * var(--base-unit)); }
+.px4 { padding-left:   calc(4 * var(--base-unit)); padding-right:  calc(4 * var(--base-unit)); }
+.py4 { padding-top:    calc(4 * var(--base-unit)); padding-bottom: calc(4 * var(--base-unit)); }
+
+@media (--xs-viewport) {
+  .xs-px0 { padding-left:   0;                          padding-right:  0;              }
+  .xs-px1 { padding-left:   calc(1 * var(--base-unit)); padding-right:  calc(1 * var(--base-unit)); }
+  .xs-px2 { padding-left:   calc(2 * var(--base-unit)); padding-right:  calc(2 * var(--base-unit)); }
+  .xs-px3 { padding-left:   calc(3 * var(--base-unit)); padding-right:  calc(3 * var(--base-unit)); }
+  .xs-px4 { padding-left:   calc(4 * var(--base-unit)); padding-right:  calc(4 * var(--base-unit)); }
+}
+@media (--sm-viewport) {
+  .sm-px0 { padding-left:   0;                          padding-right:  0;              }
+  .sm-px1 { padding-left:   calc(1 * var(--base-unit)); padding-right:  calc(1 * var(--base-unit)); }
+  .sm-px2 { padding-left:   calc(2 * var(--base-unit)); padding-right:  calc(2 * var(--base-unit)); }
+  .sm-px3 { padding-left:   calc(3 * var(--base-unit)); padding-right:  calc(3 * var(--base-unit)); }
+  .sm-px4 { padding-left:   calc(4 * var(--base-unit)); padding-right:  calc(4 * var(--base-unit)); }
+}
+@media (--md-viewport) {
+  .md-px0 { padding-left:   0;                          padding-right:  0;              }
+  .md-px1 { padding-left:   calc(1 * var(--base-unit)); padding-right:  calc(1 * var(--base-unit)); }
+  .md-px2 { padding-left:   calc(2 * var(--base-unit)); padding-right:  calc(2 * var(--base-unit)); }
+  .md-px3 { padding-left:   calc(3 * var(--base-unit)); padding-right:  calc(3 * var(--base-unit)); }
+  .md-px4 { padding-left:   calc(4 * var(--base-unit)); padding-right:  calc(4 * var(--base-unit)); }
+}
+@media (--lg-viewport) {
+  .lg-px0 { padding-left:   0;                          padding-right:  0;              }
+  .lg-px1 { padding-left:   calc(1 * var(--base-unit)); padding-right:  calc(1 * var(--base-unit)); }
+  .lg-px2 { padding-left:   calc(2 * var(--base-unit)); padding-right:  calc(2 * var(--base-unit)); }
+  .lg-px3 { padding-left:   calc(3 * var(--base-unit)); padding-right:  calc(3 * var(--base-unit)); }
+  .lg-px4 { padding-left:   calc(4 * var(--base-unit)); padding-right:  calc(4 * var(--base-unit)); }
+}
+@media (--xl-viewport) {
+  .xl-px0 { padding-left:   0;                          padding-right:  0;              }
+  .xl-px1 { padding-left:   calc(1 * var(--base-unit)); padding-right:  calc(1 * var(--base-unit)); }
+  .xl-px2 { padding-left:   calc(2 * var(--base-unit)); padding-right:  calc(2 * var(--base-unit)); }
+  .xl-px3 { padding-left:   calc(3 * var(--base-unit)); padding-right:  calc(3 * var(--base-unit)); }
+  .xl-px4 { padding-left:   calc(4 * var(--base-unit)); padding-right:  calc(4 * var(--base-unit)); }
+}

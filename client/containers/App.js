@@ -48,7 +48,55 @@ class App extends React.Component {
         className={ language === "ar" ? "layout-rtl" : "" }
       >
         <Loader />
-        <header className={ headerClassName }>
+
+        <header className='relative shadow-4 px1'>
+          <div className='clearfix mxn1'>
+            <div className='col xs-4 sm-5'>
+              <a href="http://www.ifrc.org" target="_blank"><img
+                src="/img/ifrc-logo-2.png"
+                height={ 68 }
+                className="inline-block align-middle mx1"
+              /></a>
+              <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px'}}>
+                <Link to="/" className='color-regular'><span className='color-primary'>FEDERATION-WIDE</span> DATABANK<br />
+                AND REPORTING SYSTEM</Link>
+              </h1>
+            </div>
+            <div className='col xs-8 sm-7 text-right'>
+              <nav className='inline-block'>
+                <ul className='m0 p0'>
+                  <li className='inline-block'>
+                    <Link to='/societies/Burundi' className='btn'>
+                      <span className='block py1 px05'>Burundi</span>
+                    </Link>
+                  </li>
+                  <li className='inline-block'>
+                    <Link to='/Societies' className='btn'>
+                      <span className='block py1 px05'>Societies</span>
+                    </Link>
+                  </li>
+                  <li className='inline-block'>
+                    <Link to='/report' className='btn'>
+                      <span className='block py1 px05'>Report</span>
+                    </Link>
+                  </li>
+                  <li className='inline-block'>
+                    <button className='btn bg-secondary'>
+                      <span className='block p1'>EN</span>
+                    </button>
+                  </li>
+                  <li className='inline-block'>
+                    <button className='btn bg-primary'>
+                      <span className='block p1'>Login</span>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        {/* <header className={ headerClassName }>
           <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
             <div
               className="clearfix bg-white"
@@ -97,10 +145,10 @@ class App extends React.Component {
               </div>
             </div>
           </div>
-        </header>
+        </header> */}
 
         <div className={ "main-content-wrapper" }>
-          <div style={{ paddingTop:"72px" }}>
+          <div>
             { this.props.children }
           </div>
 

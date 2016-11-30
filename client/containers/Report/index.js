@@ -28,7 +28,7 @@ class Report extends React.Component {
         className={ language === "ar" ? "layout-rtl" : "" }
       >
         <Loader />
-        <header className={ headerClassName } style={{ top: "72px", zIndex: 10 }}>
+        {/* <header className={ headerClassName } style={{ top: "72px", zIndex: 10 }}>
           <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
             <div
               className="clearfix bg-white"
@@ -68,10 +68,10 @@ class Report extends React.Component {
             </div>
             <Navigation navOpen={ navOpen } />
           </div>
-        </header>
+        </header> */}
 
         <div className={ navOpen ? "main-content-wrapper removed" : "main-content-wrapper" }>
-          <div style={{ paddingTop:"72px" }}>
+          <div>
             { this.props.children }
           </div>
 
