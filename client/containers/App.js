@@ -85,6 +85,12 @@ class App extends React.Component {
                 </div>
                 <Link
                   className="btn px1 py15"
+                  to={ prefixLanguageToRoute(language, "/societies") }
+                >
+                  <span className="caps">{ t("report-common:societis") }</span>
+                </Link>
+                <Link
+                  className="btn px1 py15"
                   to={ prefixLanguageToRoute(language, "/report") }
                 >
                   <span className="caps">{ t("report-common:home.downloadReportSection.preTitle") }</span>

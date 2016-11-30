@@ -1,16 +1,16 @@
 import React from "react"
+import { connect } from "react-redux"
+
+import { fetchNationalSocieties } from "../actions/appActions"
 
 class Society extends React.Component {
-  componentDidMount() {
-    document.body.classList.add("html-ready")
-  }
-
   render() {
-    const { id } = this.props.params
+    const society = this.props.nationalSocieties
+      .find(s => s.slug === this.props.params.id)
     return (
       <div className="py4 pl2">
-        <h1>{ "Society profile page" }</h1>
-        <div>{ `Society id: ${id}` }</div>
+        <h1>{ "National Society" }</h1>
+        <div>{ `${society.NSO_DON_name} (${society.KPI_DON_Code}) joined ${society.admission_date}` }</div>
       </div>
     )
   }
@@ -18,10 +18,17 @@ class Society extends React.Component {
 
 Society.propTypes = {
   params: React.PropTypes.object.isRequired,
+  nationalSocieties: React.PropTypes.array,
 }
 
 Society.contextTypes = {
   i18n: React.PropTypes.object.isRequired,
 }
 
-export default Society
+Society.needs = [ fetchNationalSocieties ]
+
+const mapStateToProps = state => ({
+  nationalSocieties: state.appReducer.nationalSocieties,
+})
+
+export default connect(mapStateToProps)(Society)
