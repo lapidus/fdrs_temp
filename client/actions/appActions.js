@@ -13,6 +13,9 @@ export const CLOSE_NAV = "CLOSE_NAV"
 export const REQUEST_NATIONAL_SOCIETIES = "REQUEST_NATIONAL_SOCIETIES"
 export const RECEIVE_NATIONAL_SOCIETIES = "RECEIVE_NATIONAL_SOCIETIES"
 
+export const REQUEST_TIME_SERIES = "REQUEST_TIME_SERIES"
+export const RECEIVE_TIME_SERIES = "RECEIVE_TIME_SERIES"
+
 let counter
 
 const startLoad = () => ({ type: START_LOAD })
@@ -63,20 +66,18 @@ export const requestNationalSocieties = () => ({
 
 export const receiveNationalSocieties = nationalSocieties => ({
   type: RECEIVE_NATIONAL_SOCIETIES,
-  nationalSocieties: nationalSocieties,
+  nationalSocieties,
 })
 
 export function fetchNationalSocieties() {
   console.log("FETCHING NATIONAL SOCIEITES")
   return (dispatch, getState) => {
     const store = getState().appReducer
+
+    if (store.nationalSocieties.length)
+      return dispatch(receiveNationalSocieties(store.nationalSocieties))
+
     dispatch(requestNationalSocieties())
-
-    if (store.nationalSocieties.length) {
-      dispatch(receiveNationalSocieties(store.nationalSocieties))
-      return
-    }
-
     return new Promise((resolve, reject) => {
       csv("/api/meta/national_societies.csv", (err, res) => {
         if (err) {
@@ -86,6 +87,40 @@ export function fetchNationalSocieties() {
         else {
           console.log("Received National Societies")
           dispatch(receiveNationalSocieties(parseNationalSocieties(res)))
+          resolve()
+        }
+      })
+    })
+  }
+}
+
+export const requestTimeSeries = () => ({
+  type: REQUEST_TIME_SERIES,
+})
+
+export const receiveTimeSeries = timeSeries => ({
+  type: RECEIVE_TIME_SERIES,
+  timeSeries,
+})
+
+export function fetchTimeSeries() {
+  console.log("FETCHING TIME SERIES")
+  return (dispatch, getState) => {
+    const store = getState().appReducer
+
+    if (store.timeSeries.length)
+      return dispatch(receiveTimeSeries(store.timeSeries))
+
+    dispatch(requestTimeSeries())
+    return new Promise((resolve, reject) => {
+      csv("/api/indicators/time_series.csv", (err, res) => {
+        if (err) {
+          console.log("Failed at fetching national societies")
+          reject(err)
+        }
+        else {
+          console.log("Received National Societies")
+          dispatch(receiveTimeSeries(res))
           resolve()
         }
       })

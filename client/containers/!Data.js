@@ -7,11 +7,11 @@ import each from "lodash/each"
 import find from "lodash/find"
 import Select from "react-select"
 
-import { fetchNationalSocieties } from "../../actions/appActions"
-import numberFormatter from "../../utils/numberFormatter"
-import niceNum from "../../utils/niceNum"
-import BreadCrumbs from "../../components/Breadcrumbs"
-import Icon from "../../components/Icon"
+import { fetchNationalSocieties } from "../actions/appActions"
+import numberFormatter from "../utils/numberFormatter"
+import niceNum from "../utils/niceNum"
+import BreadCrumbs from "../components/Breadcrumbs"
+import Icon from "../components/Icon"
 
 class DataView extends React.Component {
   constructor(props) {
@@ -35,6 +35,8 @@ class DataView extends React.Component {
       year : undefined
     }
 
+    this.content = this.context.i18n.store.data[this.context.i18n.language]["report-common"]
+
     this.logChange = this.logChange.bind(this)
     // this.handleClick = this.handleClick.bind(this)
     this.setSociety = this.setSociety.bind(this)
@@ -48,7 +50,7 @@ class DataView extends React.Component {
     this.loadKPIData = this.loadKPIData.bind(this)
 
     this.niceNum = niceNum
-    this.t = this.props.content[this.props.language].data
+    this.t = this.content[this.context.i18n.language].data
     this.name = "data"
 
     this.setupIndicators(undefined)
@@ -347,18 +349,19 @@ class DataView extends React.Component {
   }
 
   render() {
+    const { language } = this.context.i18n
 
     return (
       <div>
         <div className="clearfix bg-primary-dark">
           <div className="col sm-6 sm-offset-3 py1">
-            <BreadCrumbs chapter={{title:"Data"}} language={this.props.language}/>
+            <BreadCrumbs chapter={{title:"Data"}} language={language}/>
           </div>
         </div>
         <div className="clearfix bg-primary pt1">
           <div className="col sm-6 sm-offset-3">
-            <h2 className="display-2">{this.props.content[this.props.language].data.title}</h2>
-            <p className="title">{this.props.content[this.props.language].data.subtitle}</p>
+            <h2 className="display-2">{this.content[language].data.title}</h2>
+            <p className="title">{this.content[language].data.subtitle}</p>
           </div>
         </div>
         <div className="clearfix" style={{overflow:"hidden",position:"relative"}}>
@@ -405,7 +408,7 @@ class DataView extends React.Component {
               </div>
 
               <p className="px2">
-                {this.props.content[this.props.language].data.guide}:
+                {this.content[language].data.guide}:
               </p>
 
               <ul className="indicator-list pt0 pb3">
@@ -414,7 +417,7 @@ class DataView extends React.Component {
                     <li key={i} onClick={() => this.setIndicator(item)} className={item.key == this.state.indicator.key ? "indicator is-active clearfix px2" : "indicator clearfix px2"}>
                       <div className="col md-8 indicator-label">
                         <Icon name={item.icon} height="20px" />&nbsp
-                        { this.props.content[this.props.language].data.indicators[item.key] }
+                        { this.content[language].data.indicators[item.key] }
                       </div>
                       <div className="col md-4 indicator-value">
                         { numberFormatter.addCommas(this.niceNum(this.state.society[item.key])) } { item.currency }
@@ -433,20 +436,18 @@ class DataView extends React.Component {
 
 }
 
+DataView.propTypes = {
+  nationalSocieties: React.PropTypes.array,
+}
+
+DataView.contextTypes = {
+  i18n: React.PropTypes.object.isRequired,
+}
+
 DataView.needs = [ fetchNationalSocieties ]
 
-function mapStateToProps(state) {
-  return {
-    language: state.appReducer.language,
-    translations: state.appReducer.data,
-    content: {
-      en: state.appReducer.en,
-      fr: state.appReducer.fr,
-      es: state.appReducer.es,
-      ar: state.appReducer.ar,
-    },
-    nationalSocieties: state.appReducer.nationalSocieties
-  }
-}
+const mapStateToProps = state => ({
+  nationalSocieties: state.appReducer.nationalSocieties,
+})
 
 export default connect(mapStateToProps)(DataView)
