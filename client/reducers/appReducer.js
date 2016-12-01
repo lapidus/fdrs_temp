@@ -10,6 +10,8 @@ import {
   RECEIVE_NATIONAL_SOCIETIES,
   REQUEST_TIME_SERIES,
   RECEIVE_TIME_SERIES,
+  REQUEST_DOCUMENTS,
+  RECEIVE_DOCUMENTS,
 } from "../actions/appActions"
 
 export default function storyReducer(state = {
@@ -20,6 +22,8 @@ export default function storyReducer(state = {
   fetchingNationalSocieties: false,
   timeSeries: [],
   fetchingTimeSeries: false,
+  documents: [],
+  fetchingDocuments: false,
 }, action) {
   switch (action.type) {
   case START_LOAD:
@@ -61,6 +65,15 @@ export default function storyReducer(state = {
     return assign({}, state, {
       timeSeries: action.timeSeries,
       fetchingTimeSeries: false,
+    })
+  case REQUEST_DOCUMENTS:
+    return assign({}, state, {
+      fetchingDocuments: true,
+    })
+  case RECEIVE_DOCUMENTS:
+    return assign({}, state, {
+      documents: action.documents,
+      fetchingDocuments: false,
     })
   default:
     return state

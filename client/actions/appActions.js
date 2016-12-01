@@ -1,5 +1,5 @@
 import Promise from "promise-polyfill"
-import { csv } from "d3"
+import { csv, json } from "d3"
 import kebabCase from "lodash/kebabCase"
 import map from "lodash/fp/map"
 
@@ -15,6 +15,9 @@ export const RECEIVE_NATIONAL_SOCIETIES = "RECEIVE_NATIONAL_SOCIETIES"
 
 export const REQUEST_TIME_SERIES = "REQUEST_TIME_SERIES"
 export const RECEIVE_TIME_SERIES = "RECEIVE_TIME_SERIES"
+
+export const REQUEST_DOCUMENTS = "REQUEST_DOCUMENTS"
+export const RECEIVE_DOCUMENTS = "RECEIVE_DOCUMENTS"
 
 let counter
 
@@ -115,12 +118,46 @@ export function fetchTimeSeries() {
     return new Promise((resolve, reject) => {
       csv("/api/indicators/time_series.csv", (err, res) => {
         if (err) {
-          console.log("Failed at fetching national societies")
+          console.log("Failed at fetching documents")
           reject(err)
         }
         else {
-          console.log("Received National Societies")
+          console.log("RECEIVED TIME SERIES")
           dispatch(receiveTimeSeries(res))
+          resolve()
+        }
+      })
+    })
+  }
+}
+
+export const requestDocuments = () => ({
+  type: REQUEST_DOCUMENTS,
+})
+
+export const receiveDocuments = documents => ({
+  type: RECEIVE_DOCUMENTS,
+  documents,
+})
+
+export function fetchDocuments() {
+  console.log("FETCHING DOCUMENTS")
+  return (dispatch, getState) => {
+    const store = getState().appReducer
+
+    if (store.documents.length)
+      return dispatch(receiveDocuments(store.documents))
+
+    dispatch(requestDocuments())
+    return new Promise((resolve, reject) => {
+      json("/api/documents/documents.json", (err, res) => {
+        if (err) {
+          console.log("Failed at fetching documents")
+          reject(err)
+        }
+        else {
+          console.log("RECEIVED DOCUMENTS")
+          dispatch(receiveDocuments(res))
           resolve()
         }
       })
