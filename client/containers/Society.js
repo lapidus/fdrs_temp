@@ -1,10 +1,10 @@
 import React from "react"
 import { connect } from "react-redux"
-import assign from "lodash/assign"
 
 import {
-  dataByNS,
-} from "../utils/dataHelpers"
+  makeGetSociety,
+  makeGetSocietyData,
+} from "../selectors"
 import {
   fetchNationalSocieties,
   fetchTimeSeries,
@@ -18,10 +18,8 @@ class Society extends React.Component {
       <div className="py4 pl2">
         <h1>{ "National Society" }</h1>
         <div>{ `${society.NSO_DON_name} (${society.KPI_DON_Code}) joined ${society.admission_date}` }</div>
-        <h2>{ "Data" }</h2>
-        <pre>
-          { JSON.stringify(data, null, 2) }
-        </pre>
+        <h2>{ "Data" } <small>{ `(${data.length} records)` }</small></h2>
+        <pre>{ JSON.stringify(data, null, 2) }</pre>
       </div>
     )
   }
@@ -39,20 +37,13 @@ Society.contextTypes = {
 
 Society.needs = [ fetchNationalSocieties, fetchTimeSeries ]
 
-const mapStateToProps = ({ appReducer }, { params: { id } }) => ({
-  society: appReducer.nationalSocieties.find(s => s.slug === id),
-  timeSeries: appReducer.timeSeries,
-})
-
-const mergeProps = (stateProps, dispatchProps, ownProps) => {
-  return assign({}, ownProps, {
-    society: stateProps.society,
-    data: dataByNS(stateProps.society.KPI_DON_Code, stateProps.timeSeries),
+const makeMapStateToProps = () => {
+  const getSociety = makeGetSociety()
+  const getSocietyData = makeGetSocietyData()
+  return (state, props) => ({
+    society: getSociety(state, props),
+    data: getSocietyData(state, props),
   })
 }
 
-export default connect(
-  mapStateToProps,
-  undefined,
-  mergeProps,
-)(Society)
+export default connect(makeMapStateToProps)(Society)
