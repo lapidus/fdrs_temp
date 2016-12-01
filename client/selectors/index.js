@@ -18,9 +18,9 @@ const getData = state => state.appReducer.timeSeries
 const getIndicatorData = (state, { indicator }) =>
   map(d => ({
     [nsIdProp]: d[nsIdProp],
-    value: +d[indicator],
+    value: +d[indicator.id],
     year: +d.KPI_Year,
-  }), emptyFilter(indicator, state.appReducer.timeSeries))
+  }), emptyFilter(indicator.id, state.appReducer.timeSeries))
 
 // exported selector generators, so they can use props
 // and still utilise memoization

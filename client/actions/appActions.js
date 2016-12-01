@@ -16,6 +16,9 @@ export const RECEIVE_NATIONAL_SOCIETIES = "RECEIVE_NATIONAL_SOCIETIES"
 export const REQUEST_TIME_SERIES = "REQUEST_TIME_SERIES"
 export const RECEIVE_TIME_SERIES = "RECEIVE_TIME_SERIES"
 
+export const REQUEST_TIME_SERIES_META = "REQUEST_TIME_SERIES_META"
+export const RECEIVE_TIME_SERIES_META = "RECEIVE_TIME_SERIES_META"
+
 export const REQUEST_DOCUMENTS = "REQUEST_DOCUMENTS"
 export const RECEIVE_DOCUMENTS = "RECEIVE_DOCUMENTS"
 
@@ -158,6 +161,40 @@ export function fetchDocuments() {
         else {
           console.log("RECEIVED DOCUMENTS")
           dispatch(receiveDocuments(res))
+          resolve()
+        }
+      })
+    })
+  }
+}
+
+export const requestTimeSeriesMeta = () => ({
+  type: REQUEST_TIME_SERIES_META,
+})
+
+export const receiveTimeSeriesMeta = timeSeriesMeta => ({
+  type: RECEIVE_TIME_SERIES_META,
+  timeSeriesMeta,
+})
+
+export function fetchTimeSeriesMeta() {
+  console.log("FETCHING TIME_SERIES_META")
+  return (dispatch, getState) => {
+    const { timeSeriesMeta } = getState().appReducer
+
+    if (timeSeriesMeta.length)
+      return dispatch(receiveTimeSeriesMeta(timeSeriesMeta))
+
+    dispatch(requestTimeSeriesMeta())
+    return new Promise((resolve, reject) => {
+      csv("/api/meta/time_series_meta.csv", (err, res) => {
+        if (err) {
+          console.log("Failed at fetching timeSeriesMeta")
+          reject(err)
+        }
+        else {
+          console.log("RECEIVED TIME_SERIES_META")
+          dispatch(receiveTimeSeriesMeta(res))
           resolve()
         }
       })

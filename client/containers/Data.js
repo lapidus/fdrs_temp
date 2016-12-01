@@ -1,10 +1,14 @@
 import React from "react"
+import { connect } from "react-redux"
 import Select from "react-select"
 import map from "lodash/fp/map"
+import filter from "lodash/fp/filter"
+import find from "lodash/fp/find"
 
 import Map from "../components/Data/Map"
 import {
   fetchTimeSeries,
+  fetchTimeSeriesMeta,
 } from "../actions/appActions"
 
 const keyIndicatorIds = [
@@ -14,41 +18,51 @@ const keyIndicatorIds = [
   "KPI_noLocalUnits",
   "KPI_noPeopleReachedServices",
 ]
+const isKeyIndicator = i => keyIndicatorIds.indexOf(i.id) !== -1
 
 class DataView extends React.Component {
   constructor(props, context) {
     super(props, context)
 
+    const keyIndicators = filter(isKeyIndicator, props.meta)
+
     this.state = {
-      indicator: keyIndicatorIds[0],
+      indicator: keyIndicators[0],
+      keyIndicators,
     }
 
     this.handleIndicatorChange = this.handleIndicatorChange.bind(this)
   }
 
-  handleIndicatorChange(indicator) {
-    this.setState({ indicator: indicator.value })
+  handleIndicatorChange(event) {
+    event.preventDefault()
+
+    const id = event.target.id
+    const { keyIndicators } = this.state
+
+    this.setState({
+      indicator: find(i => i.id === id, keyIndicators),
+    })
   }
 
   render() {
-    const { indicator } = this.state
-    const indicatorOption = d => ({ value: d, label: d })
-    const indicatorOptions = map(indicatorOption, keyIndicatorIds)
+    const { indicator, keyIndicators } = this.state
+    const indicatorItem = i => <li key={ i.id }>
+      <a href id={ i.id } onClick={ this.handleIndicatorChange }>{ i.id }</a>
+    </li>
+    const indicatorItems = map(indicatorItem, keyIndicators)
 
     return (
-      <div className="py4 pl2">
-        <h2 style={{ float: "left" }}>{ "Indicator" }</h2>
-        <div style={{ float: "left", minWidth: "300px" }}>
-          <Select
-            searchable={ false }
-            clearable={ false }
-            name="indicator-selector"
-            value={ indicator }
-            options={ indicatorOptions }
-            onChange={ this.handleIndicatorChange }
-          />
+      <div className="py4 clearfix container">
+        <div className="col md-3">
+          <h4>{ "Key indicator" }</h4>
+          <ul className="p0 m0">
+            { indicatorItems }
+          </ul>
         </div>
-        <Map indicator={ indicator } />
+        <div className="col md-9">
+          <Map indicator={ indicator } />
+        </div>
       </div>
     )
   }
@@ -56,15 +70,17 @@ class DataView extends React.Component {
 
 DataView.propTypes = {
   params: React.PropTypes.object.isRequired,
-  society: React.PropTypes.object,
-  data: React.PropTypes.array,
-  documents: React.PropTypes.array,
+  meta: React.PropTypes.array,
 }
 
 DataView.contextTypes = {
   i18n: React.PropTypes.object.isRequired,
 }
 
-DataView.needs = [ fetchTimeSeries ]
+DataView.needs = [ fetchTimeSeries, fetchTimeSeriesMeta ]
 
-export default DataView
+const mapStateToProps = (state) => ({
+  meta: state.appReducer.timeSeriesMeta,
+})
+
+export default connect(mapStateToProps)(DataView)

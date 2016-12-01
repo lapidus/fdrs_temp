@@ -10,6 +10,8 @@ import {
   RECEIVE_NATIONAL_SOCIETIES,
   REQUEST_TIME_SERIES,
   RECEIVE_TIME_SERIES,
+  REQUEST_TIME_SERIES_META,
+  RECEIVE_TIME_SERIES_META,
   REQUEST_DOCUMENTS,
   RECEIVE_DOCUMENTS,
 } from "../actions/appActions"
@@ -22,6 +24,8 @@ export default function storyReducer(state = {
   fetchingNationalSocieties: false,
   timeSeries: [],
   fetchingTimeSeries: false,
+  timeSeriesMeta: [],
+  fetchingTimeSeriesMeta: false,
   documents: [],
   fetchingDocuments: false,
 }, action) {
@@ -65,6 +69,15 @@ export default function storyReducer(state = {
     return assign({}, state, {
       timeSeries: action.timeSeries,
       fetchingTimeSeries: false,
+    })
+  case REQUEST_TIME_SERIES_META:
+    return assign({}, state, {
+      fetchingTimeSeriesMeta: true,
+    })
+  case RECEIVE_TIME_SERIES_META:
+    return assign({}, state, {
+      timeSeriesMeta: action.timeSeriesMeta,
+      fetchingTimeSeriesMeta: false,
     })
   case REQUEST_DOCUMENTS:
     return assign({}, state, {
