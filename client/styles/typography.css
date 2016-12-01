@@ -28,13 +28,14 @@ p:last-child  { margin-bottom: 0; }
 
 .lead { font-size: calc(1.25 * var(--base-font-size)); }
 
-.display-4 { font-size: calc(72 * var(--one)); }
-.display-3 { font-size: calc(56 * var(--one)); }
-.display-2 { font-size: calc(44 * var(--one)); }
-.display-1 { font-size: calc(34 * var(--one)); }
-.headline  { font-size: calc(24 * var(--one)); }
-.title     { font-size: calc(20 * var(--one)); }
-.subhead   { font-size: calc(16 * var(--one)); }
+.display-5 { font-size: calc(272 * var(--one)); }
+.display-4 { font-size: calc(72 * var(--one));  }
+.display-3 { font-size: calc(56 * var(--one));  }
+.display-2 { font-size: calc(44 * var(--one));  }
+.display-1 { font-size: calc(34 * var(--one));  }
+.headline  { font-size: calc(24 * var(--one));  }
+.title     { font-size: calc(20 * var(--one));  }
+.subhead   { font-size: calc(16 * var(--one));  }
 
 .text-left,.align-left     { text-align: left;  }
 .text-right,.align-right   { text-align: right; }
@@ -48,6 +49,14 @@ strong,
 .strong { font-weight: 700; }
 
 .light  { font-weight: 300 !important; }
+
+.caps   { text-transform: uppercase;   }
+
+.lh-base { line-height: var(--base-line-height); }
+.lh-1    { line-height: 1; }
+
+.ls-base { letter-spacing: 0; }
+.ls-1    { letter-spacing: var(--one); }
 
 @media (--xs-viewport) {
   .xs-display-4 { font-size: calc(72 * var(--one)); }

@@ -70,6 +70,12 @@ class Report extends React.Component {
           </div>
         </header> */}
 
+        <div className="bg-secondary px1">
+          <div className="clearfix mxn1">
+            <div className="col sm-6 sm-offset-2 px1 py1">Breadcrumbs</div>
+          </div>
+        </div>
+
         <div className={ navOpen ? "main-content-wrapper removed" : "main-content-wrapper" }>
           <div>
             { this.props.children }

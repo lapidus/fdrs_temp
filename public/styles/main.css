@@ -541,6 +541,9 @@ p:last-child { margin-bottom: 0;
 .lead { font-size: 1.25rem;
 
 }
+.display-5 { font-size: 17rem;
+
+}
 .display-4 { font-size: 4.5rem;
 
 }
@@ -581,6 +584,21 @@ strong,
 
 }
 .light { font-weight: 300 !important;
+
+}
+.caps { text-transform: uppercase;
+
+}
+.lh-base { line-height: 1.5;
+
+}
+.lh-1 { line-height: 1;
+
+}
+.ls-base { letter-spacing: 0;
+
+}
+.ls-1 { letter-spacing: 0.0625rem;
 
 }
 @media (min-width: 30em) {
@@ -2040,4 +2058,8 @@ strong,
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+.Select {
+  
 }
