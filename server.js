@@ -1,39 +1,47 @@
-"use strict"
+const path = require("path")
 
-const log = require("winston")
-const each = require("lodash/each")
+const express = require("express")
+const logger = require("morgan")
+const cookieParser = require("cookie-parser")
+const bodyParser = require("body-parser")
+const urltopdf = require("larviturltopdf")
 
-process.cwd(__dirname)
+const app = express()
+const port = process.env.PORT || 3000
 
-const serverConf = {
-  "port": process.env.PORT || 3000,
-  "log": {
-    "Console": {
-      "level": "verbose",
-      "json": false,
-      "timestamp": true,
-      "colorize": true,
-    },
-  },
-}
+app.use(logger("dev"))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cookieParser())
+app.use(express.static(path.join(__dirname, "public")))
 
-// Add support for daily rotate file
-log.transports.DailyRotateFile = require("winston-daily-rotate-file")
+app.get("/societies/:id.pdf", (req, res, next) => {
+  const options = {
+    url: `${req.protocol}://${req.get("host")}${req.originalUrl.replace(".pdf", "")}`,
+    waitForHtmlReadyClass: true,
+  }
 
-// Handle logging from server.json config file
-log.remove(log.transports.Console)
-if (serverConf.log !== undefined) {
-  each(serverConf.log, (logInstances, logName) => {
-    if (typeof logInstances !== Array) logInstances = [ logInstances ]
-
-    each(logInstances, logInstance =>
-      log.add(log.transports[logName], logInstance)
-    )
+  urltopdf(options, function(err, pdfBuffer) {
+    if (err) return next(err, req, res)
+    res.end(pdfBuffer)
   })
-}
+})
 
-serverConf.customRoutes = [
-  { "regex": "(\.pdf$|\.pdf\?)", "controllerName": "urltopdf" },
-]
+app.use("*", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/index.html"))
+})
 
-require("larvitbase")(serverConf)
+// error handler
+app.use(function(err, req, res) {
+  // set locals, only providing error in development
+  res.locals.message = err.message
+  res.locals.error = req.app.get("env") === "development" ? err : {}
+
+  // render the error page
+  res.status(err.status || 500)
+  res.render("error")
+})
+
+app.listen(port, () => {
+  console.log("App listening on port", 3000)
+})

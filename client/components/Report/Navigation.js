@@ -70,30 +70,6 @@ const Navigation = ({ navOpen, t }, { i18n }) => {
                     position: "absolute",
                     width: "2rem",
                     top: 0,
-                    left:0,
-                  }}
-                  className="display-2 center strong"
-                >
-                  { "10" }
-                </div>
-                <div className="pl3">
-                  <Link to={ `${langRoute}/report/${routes.data.slug}` }>
-                    <div className="title">{ t("report-common:chapters.data.pretitle") }</div>
-                    <hr style={{ marginBottom: "8px", marginTop: "4px" }} />
-                  </Link>
-                </div>
-                <div>
-                  <Link to={ `${langRoute}/report/${routes.data.slug}` }>
-                    <img src="/img/data-view-preview.png" />
-                  </Link>
-                </div>
-              </li>
-              <li className="site-nav__chapter col md-12">
-                <div
-                  style={{
-                    position: "absolute",
-                    width: "2rem",
-                    top: 0,
                     left: 0,
                   }}
                   className="display-2 center strong"

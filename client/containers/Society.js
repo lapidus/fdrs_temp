@@ -1,4 +1,22 @@
 import React from "react"
+import { connect } from "react-redux"
+import { Link } from "react-router"
+import Select from "react-select"
+import maxBy from "lodash/fp/maxBy"
+import map from "lodash/fp/map"
+import filter from "lodash/fp/filter"
+import uniqBy from "lodash/fp/uniqBy"
+
+import {
+  makeGetSociety,
+  makeGetSocietyData,
+  makeGetSocietyDocuments,
+} from "../selectors"
+import {
+  fetchNationalSocieties,
+  fetchTimeSeries,
+  fetchDocuments,
+} from "../actions/appActions"
 
 import Card from "../components/cards/Card";
 import CardView from "../components/cards/CardView";
@@ -16,46 +34,71 @@ import CardOverlay from "../components/cards/CardOverlay";
 //   }
 // }
 class Society extends React.Component {
+  constructor(props, context) {
+    super(props, context)
+
+    this.state = {
+      year: +maxBy(d => +d.year, props.documents).year,
+    }
+
+    this.handleYearChange = this.handleYearChange.bind(this)
+  }
+
+  handleYearChange(year) {
+    this.setState({ year: year.value })
+  }
+  componentDidMount() {
+    const { society, data, documents, nationalSocieties } = this.props
+
+    console.log('Data: ', data);
+    console.log('Docs: ', documents);
+    console.log('Society: ', society);
+    console.log('Societies: ', nationalSocieties);
+  }
   render() {
+
+    const { year } = this.state
+    const { society, data, documents, nationalSocieties } = this.props
+    const yearOption = d => ({ value: +d.year, label: d.year })
+    const yearOptions = uniqBy("value", map(yearOption, documents))
+    const yearFilter = d => +d.year === +year
+    const yearDocuments = filter(yearFilter, documents)
+
     return (
       <section>
 
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-8 sm-offset-3 px1 py1">
-              <p className="color-primary strong m0 small">Sub-Saharan Africa</p>
-              <h1 className="display-2 light m0">{ this.props.params.id }</h1>
+              <p className="color-primary strong m0 small">{ society.NSO_ZON_name }</p>
+              <h1 className="display-2 light m0">{ society.NSO_DON_name }</h1>
             </header>
           </div>
 
           <div className="clearfix mxn1">
             <aside className="col sm-3 md-2 md-offset-1 pr1">
-              { /* <StickySidebar>
+              {/* <StickySidebar>
                 <h1 className="title">National Societies</h1>
                 <ul className="m0 p0">
-                  <li className="block mb1 color-primary">Burundi Red Cross</li>
-                  <li className="block mb1">Cambodian Red Cross Society</li>
-                  <li className="block mb1">Cameroon Red Cross Society</li>
-                  <li className="block mb1">Colombian Red Cross Society</li>
-                  <li className="block mb1">Red Crescent Society of Djibouti</li>
-                  <li className="block mb1">Ethiopian Red Cross Society</li>
-                  <li className="block mb1">French Red Cross</li>
-                  <li className="block mb1">Gabonese Red Cross Society</li>
-                  <li className="block mb1">The Gambia Red Cross Society</li>
-                  <li className="block mb1">German Red Cross</li>
-                  <li className="block mb1">Honduran Red Cross</li>
-                  <li className="block mb1">Icelandic Red Cross</li>
-                  <li className="block mb1">Red Cross Society of the Democratic People’s Republic of Korea</li>
+                  <li>Hi</li>
+                  {
+                    nationalSocieties.map((ns, i) => (
+                      <li className="block mb1" key={i}>
+                        <Link to=`/societies/${ ns.slug }`>{ ns.NSO_DON_name }</Link>
+                      </li>
+                    ))
+                  }
                 </ul>
-              </StickySidebar> */ }
-              { "Sidebar" }
+              </StickySidebar> */}
             </aside>
 
             <div className="col sm-9 md-8 px1">
 
               <div className="clearfix mxn1 pb2">
                 <div className="col sm-8 px1 pb1">
-                  <p className="lead">Burundi Red Cross was admitted to the IFRC in 1977.  In 2015, it counted 12,400 active volunteers (up from 10,000 in 2011), of which 60% were male and 40% female.</p>
+                  <p className="lead">
+                    { `Burundi Red Cross was admitted to the IFRC in ${society.admission_date}.  In 2015, it counted 12,400 active volunteers (up from 10,000 in 2011), of which 60% were male and 40% female.` }
+                  </p>
                   <p className="lead">Key proxy indicators reported by the National Society since 2012 are available below, as well as copies of additional key documents.</p>
                 </div>
                 <div className="col sm-4 px1">
@@ -211,18 +254,57 @@ class Society extends React.Component {
             </div>
           </div>
         </div>
+
+        <hr />
+
+        <div className="py4 pl2">
+          <h1>{ "National Society" }</h1>
+          <div>{ `${society.NSO_DON_name} (${society.KPI_DON_Code}) joined ${society.admission_date}` }</div>
+          <h2 style={{ float: "left" }}>{ "Documents" }</h2>
+          <div style={{ float: "left", minWidth: "110px" }}>
+            <Select
+              searchable={ false }
+              clearable={ false }
+              name="year-selector"
+              value={ year }
+              options={ yearOptions }
+              onChange={ this.handleYearChange }
+            />
+          </div>
+          <pre style={{ clear: "left" }}>{ JSON.stringify(yearDocuments, null, 2) }</pre>
+          <h2>{ "Data" } <small>{ `(${data.length} records)` }</small></h2>
+          <pre>{ JSON.stringify(data, null, 2) }</pre>
+        </div>
       </section>
-    );
+    )
   }
 }
 
 
 Society.propTypes = {
   params: React.PropTypes.object.isRequired,
+  society: React.PropTypes.object,
+  nationalSocieties: React.PropTypes.array,
+  data: React.PropTypes.array,
+  documents: React.PropTypes.array,
 }
 
 Society.contextTypes = {
   i18n: React.PropTypes.object.isRequired,
 }
 
-export default Society
+Society.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchDocuments ]
+
+const makeMapStateToProps = () => {
+  const getSociety = makeGetSociety()
+  const getSocietyData = makeGetSocietyData()
+  const getSocietyDocuments = makeGetSocietyDocuments()
+  return (state, props) => ({
+    society: getSociety(state, props),
+    data: getSocietyData(state, props),
+    documents: getSocietyDocuments(state, props),
+    nationalSocieties: state.appReducer.nationalSocieties,
+  })
+}
+
+export default connect(makeMapStateToProps)(Society)

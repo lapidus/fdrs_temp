@@ -1,9 +1,6 @@
 export const report = {
   slug: "report",
   routes: {
-    data: {
-      slug: "data",
-    },
     acknowledgements: {
       slug: "acknowledgements",
     },

@@ -33,6 +33,11 @@ const langPrefixedRoutes = lang => ({
 // our main child routes, extracted to reuse in the language prefixed routes
 const childRoutes = [
   {
+    path: "data",
+    getComponent(location, cb) {
+      System.import("../containers/Data").then(loadRoute(cb)).catch(errorLoading)
+    },
+  }, {
     path: "societies",
     getComponent(location, cb) {
       System.import("../containers/Societies").then(loadRoute(cb)).catch(errorLoading)

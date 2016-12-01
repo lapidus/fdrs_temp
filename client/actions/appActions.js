@@ -1,115 +1,203 @@
 import Promise from "promise-polyfill"
-import request from 'superagent';
+import { csv, json } from "d3"
+import kebabCase from "lodash/kebabCase"
+import map from "lodash/fp/map"
 
-export const START_LOAD = 'START_LOAD';
-export const PROGRESS_LOAD = 'PROGRESS_LOAD';
-export const END_LOAD = 'END_LOAD';
+export const START_LOAD = "START_LOAD"
+export const PROGRESS_LOAD = "PROGRESS_LOAD"
+export const END_LOAD = "END_LOAD"
 
-export const TOGGLE_NAV = 'TOGGLE_NAV';
-export const CLOSE_NAV = 'CLOSE_NAV';
+export const TOGGLE_NAV = "TOGGLE_NAV"
+export const CLOSE_NAV = "CLOSE_NAV"
 
-export const REQUEST_NATIONAL_SOCIETIES = 'REQUEST_NATIONAL_SOCIETIES';
-export const RECEIVE_NATIONAL_SOCIETIES = 'RECEIVE_NATIONAL_SOCIETIES';
+export const REQUEST_NATIONAL_SOCIETIES = "REQUEST_NATIONAL_SOCIETIES"
+export const RECEIVE_NATIONAL_SOCIETIES = "RECEIVE_NATIONAL_SOCIETIES"
 
-var counter;
+export const REQUEST_TIME_SERIES = "REQUEST_TIME_SERIES"
+export const RECEIVE_TIME_SERIES = "RECEIVE_TIME_SERIES"
 
-function startLoad() {
-  return {
-    type: START_LOAD
-  };
-}
+export const REQUEST_TIME_SERIES_META = "REQUEST_TIME_SERIES_META"
+export const RECEIVE_TIME_SERIES_META = "RECEIVE_TIME_SERIES_META"
 
-function endLoad() {
-  return {
-    type: END_LOAD
-  };
-}
+export const REQUEST_DOCUMENTS = "REQUEST_DOCUMENTS"
+export const RECEIVE_DOCUMENTS = "RECEIVE_DOCUMENTS"
 
-function progressLoad(progress) {
-  return {
-    type: PROGRESS_LOAD,
-    progress: progress
-  };
-}
+let counter
+
+const startLoad = () => ({ type: START_LOAD })
+const endLoad = () => ({ type: END_LOAD })
+
+const progressLoad = progress => ({
+  type: PROGRESS_LOAD,
+  progress: progress,
+})
 
 export function startMainLoad() {
   return (dispatch, getState) => {
-    var store = getState();
-    var loaderState = store.appReducer.showLoader;
-
-    dispatch(startLoad());
-    dispatch(progressLoad(0));
+    dispatch(startLoad())
+    dispatch(progressLoad(0))
 
     counter = setInterval(() => {
-      // console.log('progress');
-      var store = getState();
-      var lastProgress = store.appReducer.loadProgress;
-      dispatch(progressLoad(lastProgress + ((75 - lastProgress) / 4)));
-    }, 300);
-  };
+      const store = getState()
+      const lastProgress = store.appReducer.loadProgress
+      dispatch(progressLoad(lastProgress + ((75 - lastProgress) / 4)))
+    }, 300)
+  }
 }
 
 export function endMainLoad() {
-  console.log('Ending main load');
-  return (dispatch, getState) => {
-    // console.log('clearInterval');
-    clearInterval(counter);
-    counter = undefined;
-    // console.log('progress 100');
-    dispatch(progressLoad(100));
+  console.log("Ending main load")
+  return dispatch => {
+    clearInterval(counter)
+    counter = undefined
+    dispatch(progressLoad(100))
     setTimeout(() => {
-      // console.log('end load');
-      dispatch(endLoad());
-      dispatch(progressLoad(0));
-    }, 500);
-  };
+      dispatch(endLoad())
+      dispatch(progressLoad(0))
+    }, 500)
+  }
 }
 
-export function toggleNav() {
-  return {
-    type: TOGGLE_NAV
-  };
-}
+export const toggleNav = () => ({ type: TOGGLE_NAV })
+export const closeNav = () => ({ type: CLOSE_NAV })
 
-export function closeNav() {
-  return {
-    type: CLOSE_NAV
-  };
-}
+const parseNationalSocieties = map(s => {
+  s.slug = kebabCase(s.NSO_DON_name)
+  return s
+})
 
-export function requestNationalSocieties() {
-  return {
-    type: REQUEST_NATIONAL_SOCIETIES
-  };
-}
+export const requestNationalSocieties = () => ({
+  type: REQUEST_NATIONAL_SOCIETIES,
+})
 
-export function receiveNationalSocieties(nationalSocieties) {
-  return {
-    type: RECEIVE_NATIONAL_SOCIETIES,
-    nationalSocieties: nationalSocieties
-  };
-}
+export const receiveNationalSocieties = nationalSocieties => ({
+  type: RECEIVE_NATIONAL_SOCIETIES,
+  nationalSocieties,
+})
 
 export function fetchNationalSocieties() {
-  console.log('FETCHING NATIONAL SOCIEITES');
+  console.log("FETCHING NATIONAL SOCIEITES")
   return (dispatch, getState) => {
-    dispatch(requestNationalSocieties());
+    const store = getState().appReducer
 
-    var promise = new Promise((resolve, reject) => {
-        request('/api/data/national-societies.json')
-          .end((err, res) => {
-            if(err) {
-              console.log('Failed at fetching national societies');
-              reject(err);
-            }
-            else {
-              console.log('Received National Societies');
-              dispatch(receiveNationalSocieties(JSON.parse(res.text)));
-              resolve();
-            }
-          })
-      });
+    if (store.nationalSocieties.length)
+      return dispatch(receiveNationalSocieties(store.nationalSocieties))
 
-    return promise;
+    dispatch(requestNationalSocieties())
+    return new Promise((resolve, reject) => {
+      csv("/api/meta/national_societies.csv", (err, res) => {
+        if (err) {
+          console.log("Failed at fetching national societies")
+          reject(err)
+        }
+        else {
+          console.log("Received National Societies")
+          dispatch(receiveNationalSocieties(parseNationalSocieties(res)))
+          resolve()
+        }
+      })
+    })
+  }
+}
+
+export const requestTimeSeries = () => ({
+  type: REQUEST_TIME_SERIES,
+})
+
+export const receiveTimeSeries = timeSeries => ({
+  type: RECEIVE_TIME_SERIES,
+  timeSeries,
+})
+
+export function fetchTimeSeries() {
+  console.log("FETCHING TIME SERIES")
+  return (dispatch, getState) => {
+    const store = getState().appReducer
+
+    if (store.timeSeries.length)
+      return dispatch(receiveTimeSeries(store.timeSeries))
+
+    dispatch(requestTimeSeries())
+    return new Promise((resolve, reject) => {
+      csv("/api/indicators/time_series.csv", (err, res) => {
+        if (err) {
+          console.log("Failed at fetching documents")
+          reject(err)
+        }
+        else {
+          console.log("RECEIVED TIME SERIES")
+          dispatch(receiveTimeSeries(res))
+          resolve()
+        }
+      })
+    })
+  }
+}
+
+export const requestDocuments = () => ({
+  type: REQUEST_DOCUMENTS,
+})
+
+export const receiveDocuments = documents => ({
+  type: RECEIVE_DOCUMENTS,
+  documents,
+})
+
+export function fetchDocuments() {
+  console.log("FETCHING DOCUMENTS")
+  return (dispatch, getState) => {
+    const store = getState().appReducer
+
+    if (store.documents.length)
+      return dispatch(receiveDocuments(store.documents))
+
+    dispatch(requestDocuments())
+    return new Promise((resolve, reject) => {
+      json("/api/documents/documents.json", (err, res) => {
+        if (err) {
+          console.log("Failed at fetching documents")
+          reject(err)
+        }
+        else {
+          console.log("RECEIVED DOCUMENTS")
+          dispatch(receiveDocuments(res))
+          resolve()
+        }
+      })
+    })
+  }
+}
+
+export const requestTimeSeriesMeta = () => ({
+  type: REQUEST_TIME_SERIES_META,
+})
+
+export const receiveTimeSeriesMeta = timeSeriesMeta => ({
+  type: RECEIVE_TIME_SERIES_META,
+  timeSeriesMeta,
+})
+
+export function fetchTimeSeriesMeta() {
+  console.log("FETCHING TIME_SERIES_META")
+  return (dispatch, getState) => {
+    const { timeSeriesMeta } = getState().appReducer
+
+    if (timeSeriesMeta.length)
+      return dispatch(receiveTimeSeriesMeta(timeSeriesMeta))
+
+    dispatch(requestTimeSeriesMeta())
+    return new Promise((resolve, reject) => {
+      csv("/api/meta/time_series_meta.csv", (err, res) => {
+        if (err) {
+          console.log("Failed at fetching timeSeriesMeta")
+          reject(err)
+        }
+        else {
+          console.log("RECEIVED TIME_SERIES_META")
+          dispatch(receiveTimeSeriesMeta(res))
+          resolve()
+        }
+      })
+    })
   }
 }
