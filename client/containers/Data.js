@@ -1,6 +1,5 @@
 import React from "react"
 import { connect } from "react-redux"
-import Select from "react-select"
 import map from "lodash/fp/map"
 import filter from "lodash/fp/filter"
 import find from "lodash/fp/find"

@@ -1,18 +1,8 @@
-import Promise from "promise-polyfill"
+const fetchNeededData = (dispatch, { components, params, location }) =>
+  Promise.all(
+    components
+    .reduce((p, c) => (c && c.needs ? c.needs : []).concat(p), [])
+    .map(n => dispatch(n(params, location.pathname)))
+  )
 
-export default function fetchNeededData(dispatch, components, params, renderProps) {
-  console.log("lllll", components)
-  const needs = components.reduce((prev, current) => {
-    return (current && current.needs ? current.needs : [])
-      // Not sure this is necessary anymore, or perhaps this depends on how the routes
-      // are set up. This seems to lead to redundant needs...
-      // .concat((current.WrappedComponent ? current.WrappedComponent.needs : []) || [])
-      .concat(prev);
-  }, []);
-  const promises = needs.map((need) => {
-    return dispatch(need(params, renderProps.location.pathname));
-  });
-  console.log(promises);
-
-  return Promise.all(promises);
-}
+export default fetchNeededData

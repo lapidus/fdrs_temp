@@ -24,25 +24,9 @@ import {
 import Card from "../components/cards/Card";
 import CardView from "../components/cards/CardView";
 import CardOverlay from "../components/cards/CardOverlay";
-//
-// class Society extends React.Component {
-//   render() {
-//     const { id } = this.props.params
-//     return (
-//       <div className="py4 pl2">
-//         <h1>{ "Society profile page" }</h1>
-//         <div>{ `Society id: ${id}` }</div>
-//       </div>
-//     )
-//   }
-// }
 
 function roundIt(n) {
   const factor = Math.pow(10, String(n).length - 1);
-  console.log('======');
-  console.log(n);
-  console.log(Math.ceil(n/factor) * factor);
-  console.log('======');
   return Math.ceil(n/factor) * factor;
 }
 
@@ -57,12 +41,14 @@ class Society extends React.Component {
     this.handleYearChange = this.handleYearChange.bind(this)
   }
 
+  componentDidMount() {
+    document.body.classList.add("html-ready")
+  }
+
   handleYearChange(year) {
     this.setState({ year: year.value })
   }
-  componentDidMount() {
-    const { society, data, documents, nationalSocieties } = this.props
-  }
+
   render() {
 
     const { year } = this.state
@@ -425,14 +411,11 @@ class Society extends React.Component {
             />
           </div>
           <pre style={{ clear: "left" }}>{ JSON.stringify(yearDocuments, null, 2) }</pre>
-          <h2>{ "Data" } <small>{ `(${data.length} records)` }</small></h2>
-          <pre>{ JSON.stringify(data, null, 2) }</pre>
         </div>
       </section>
     )
   }
 }
-
 
 Society.propTypes = {
   params: React.PropTypes.object.isRequired,

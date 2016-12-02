@@ -9,7 +9,7 @@ const emptyFilter = (id, data) => filter(d => isNumeric(d[id]), data)
 
 // selectors
 const getSociety = (state, props) =>
-  state.appReducer.nationalSocieties.find(s => s.slug === props.params.id)
+  find(s => s.slug === props.params.id, state.appReducer.nationalSocieties)
 
 const getDocuments = state => state.appReducer.documents
 
