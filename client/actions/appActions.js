@@ -1,4 +1,3 @@
-import Promise from "promise-polyfill"
 import { csv, json } from "d3"
 import kebabCase from "lodash/kebabCase"
 import map from "lodash/fp/map"

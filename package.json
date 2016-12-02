@@ -57,7 +57,6 @@
     "larviturltopdf": "0.0.2",
     "lodash": "^4.17.2",
     "morgan": "^1.7.0",
-    "promise-polyfill": "^6.0.2",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
     "react-i18next": "^1.10.1",
