@@ -28,17 +28,11 @@ function beforeTransitionHandler(location, callback) {
 
   match({ routes, location }, (error, redirectLocation, renderProps) => {
     store.dispatch(startMainLoad())
-    const dataFetchingPromise = fetchNeededData(
-      store.dispatch,
-      renderProps.components,
-      renderProps.params,
-      renderProps
-    )
-    dataFetchingPromise
+    fetchNeededData(store.dispatch, renderProps)
       .then(() => {
         store.dispatch(endMainLoad())
         setTimeout(() => {
-          window.scroll(0,0)
+          window.scroll(0, 0)
           callback()
         }, 300)
       })
