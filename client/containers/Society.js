@@ -8,6 +8,7 @@ import map from "lodash/fp/map"
 import filter from "lodash/fp/filter"
 import uniqBy from "lodash/fp/uniqBy"
 import StickySidebar from "../components/StickySidebar"
+import LineChart from "../components/charts/LineChart"
 
 import {
   makeGetSociety,
@@ -35,6 +36,16 @@ import CardOverlay from "../components/cards/CardOverlay";
 //     )
 //   }
 // }
+
+function roundIt(n) {
+  const factor = Math.pow(10, String(n).length - 1);
+  console.log('======');
+  console.log(n);
+  console.log(Math.ceil(n/factor) * factor);
+  console.log('======');
+  return Math.ceil(n/factor) * factor;
+}
+
 class Society extends React.Component {
   constructor(props, context) {
     super(props, context)
@@ -105,6 +116,11 @@ class Society extends React.Component {
                   <p className="lead">
                     { `Key proxy indicators reported by the National Society since ${earliestData.KPI_Year} are available below, as well as copies of additional key documents.` }
                   </p>
+                  <div>
+                    <button className="btn bg-secondary mr1"><span className="px1">f</span></button>
+                    <button className="btn bg-secondary mr1"><span className="px1">t</span></button>
+                    <button className="btn bg-secondary mr1"><span className="px1">m</span></button>
+                  </div>
                 </div>
                 <div className="col sm-4 px1">
                   <svg width="318px" height="345px" viewBox="0 0 318 345">
@@ -123,13 +139,31 @@ class Society extends React.Component {
                   <Card>
                     <CardView>
                       <div className="p1">
-                        <ul className="m0 p0">
-                          {
-                            data.map((d, i) => (
-                              <li className="block" key={i}>{ d.KPI_noPeopleVolunteering } - { d.KPI_Year }</li>
-                            ))
-                          }
-                        </ul>
+                        <h1 className="subhead mt0 mb1">People volunteering their time</h1>
+                        <LineChart
+                          height={150}
+                          padding={{
+                            top: 10,
+                            bottom: 30,
+                            left: 40,
+                            right: 16,
+                          }}
+                          domain={{
+                            x: [new Date(earliestData.KPI_Year,1,1), new Date(latestData.KPI_Year,1,1)],
+                            y: [
+                              0,
+                              roundIt(_.maxBy(data, (d) => Number(d.KPI_noPeopleVolunteering) || 0).KPI_noPeopleVolunteering),
+                            ],
+                          }}
+                          dataset={[
+                            data.map((d, i) => {
+                              return {
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d.KPI_noPeopleVolunteering),
+                              }
+                            })
+                          ]}
+                        />
                       </div>
                     </CardView>
                     <CardView>
@@ -147,9 +181,14 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card>
+                  <Card initialView={1} bgColor="bg-beige">
                     <CardView>View 0</CardView>
-                    <CardView>View 1</CardView>
+                    <CardView>
+                      <div className="pt3 px1">
+                        <p className="display-2 strong mb0">12.6m</p>
+                        <p className="m0">population of XX in 2015</p>
+                      </div>
+                    </CardView>
                     <CardView>View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
@@ -162,13 +201,31 @@ class Society extends React.Component {
                   <Card>
                     <CardView>
                       <div className="p1">
-                        <ul className="m0 p0">
-                          {
-                            data.map((d, i) => (
-                              <li className="block" key={i}>{ d.KPI_noLocalUnits } - { d.KPI_Year }</li>
-                            ))
-                          }
-                        </ul>
+                        <h1 className="subhead mt0 mb1">Local units</h1>
+                        <LineChart
+                          height={150}
+                          padding={{
+                            top: 10,
+                            bottom: 30,
+                            left: 40,
+                            right: 16,
+                          }}
+                          domain={{
+                            x: [new Date(earliestData.KPI_Year,1,1), new Date(latestData.KPI_Year,1,1)],
+                            y: [
+                              0,
+                              roundIt(_.maxBy(data, (d) => Number(d.KPI_noLocalUnits) || 0).KPI_noLocalUnits),
+                            ],
+                          }}
+                          dataset={[
+                            data.map((d, i) => {
+                              return {
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d.KPI_noLocalUnits),
+                              }
+                            })
+                          ]}
+                        />
                       </div>
                     </CardView>
                     <CardView>
@@ -201,13 +258,31 @@ class Society extends React.Component {
                   <Card>
                     <CardView>
                       <div className="p1">
-                        <ul className="m0 p0">
-                          {
-                            data.map((d, i) => (
-                              <li className="block" key={i}>{ d.KPI_noPaidStaff } - { d.KPI_Year }</li>
-                            ))
-                          }
-                        </ul>
+                        <h1 className="subhead mt0 mb1">Paid staff</h1>
+                        <LineChart
+                          height={150}
+                          padding={{
+                            top: 10,
+                            bottom: 30,
+                            left: 40,
+                            right: 16,
+                          }}
+                          domain={{
+                            x: [new Date(earliestData.KPI_Year,1,1), new Date(latestData.KPI_Year,1,1)],
+                            y: [
+                              0,
+                              roundIt(_.maxBy(data, (d) => Number(d.KPI_noPaidStaff) || 0).KPI_noPaidStaff),
+                            ],
+                          }}
+                          dataset={[
+                            data.map((d, i) => {
+                              return {
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d.KPI_noPaidStaff),
+                              }
+                            })
+                          ]}
+                        />
                       </div>
                     </CardView>
                     <CardView>
@@ -250,7 +325,35 @@ class Society extends React.Component {
 
                 <div className="col sm-6 lg-4 px1 pb2">
                   <Card>
-                    <CardView>View 0</CardView>
+                    <CardView>
+                      <div className="p1">
+                        <h1 className="subhead mt0 mb1">People donating blood</h1>
+                        <LineChart
+                          height={150}
+                          padding={{
+                            top: 10,
+                            bottom: 30,
+                            left: 40,
+                            right: 16,
+                          }}
+                          domain={{
+                            x: [new Date(earliestData.KPI_Year,1,1), new Date(latestData.KPI_Year,1,1)],
+                            y: [
+                              0,
+                              roundIt(_.maxBy(data, (d) => Number(d.KPI_noPeopleDonatingBlood) || 0).KPI_noPeopleDonatingBlood),
+                            ],
+                          }}
+                          dataset={[
+                            data.map((d, i) => {
+                              return {
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d.KPI_noPeopleDonatingBlood),
+                              }
+                            })
+                          ]}
+                        />
+                      </div>
+                    </CardView>
                     <CardView>View 1</CardView>
                     <CardView>View 2</CardView>
                     <CardOverlay>

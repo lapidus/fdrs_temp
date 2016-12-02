@@ -6,7 +6,7 @@ class Card extends React.Component {
     super(props);
 
     this.state = {
-      cardView: 0,
+      cardView: this.props.initialView || 0,
       overlay: false,
     };
 
@@ -25,7 +25,7 @@ class Card extends React.Component {
   }
   render() {
     return (
-      <article className='relative overflow-hidden shadow-2'>
+      <article className={`relative overflow-hidden shadow-2 ${this.props.bgColor || ''}`}>
         <div>
           {
             this.props.children.map((child, i) => {
@@ -40,7 +40,7 @@ class Card extends React.Component {
           }
         </div>
         <footer className='relative pt2 pb05 px1'>
-          <button className='btn btn--raised btn--circle absolute t0 r1 y-center-self' onClick={this.toggleOverlay}>
+          <button className='btn btn--raised btn--circle bg-white absolute t0 r1 y-center-self' onClick={this.toggleOverlay}>
             <svg width="2rem" height="2rem" viewBox="0 0 36 36">
               <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g>
@@ -55,7 +55,7 @@ class Card extends React.Component {
               this.props.children.map((child, i) => {
                 if(child.type.name === 'CardView') {
                   return (
-                    <button key={i} onClick={() => this.switchView(i)} className='btn'>
+                    <button key={i} onClick={() => this.switchView(i)} className={this.state.cardView === i ? 'btn bg-primary' : 'btn bg-white'}>
                       <span className='px05'>{i}</span>
                     </button>
                   )
@@ -69,7 +69,7 @@ class Card extends React.Component {
           this.props.children.map((child, i) => {
             if(child.type.name == 'CardOverlay') {
               return (
-                <div key={i} className={this.state.overlay ? 'card__overlay card__overlay--active' : 'card__overlay'}>
+                <div key={i} className={this.state.overlay ? 'card__overlay card__overlay--active bg-white color-regular' : 'card__overlay bg-white color-regular'}>
                   <div>
                     {child.props.children}
                   </div>

@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React from 'react'
 
 class StickySidebar extends React.Component {
   constructor(props) {

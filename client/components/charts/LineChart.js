@@ -50,7 +50,7 @@ class LineChart extends React.Component {
   render() {
     return (
       <div ref='visualizationWrapper'>
-        <h4 className='title strong'>{this.props.title}</h4>
+        { this.props.title ? <h4 className='title strong'>{this.props.title}</h4> : '' }
         <svg width={this.state.width} height={this.props.height}>
           <VictoryAxis
             dependentAxis
@@ -84,6 +84,7 @@ class LineChart extends React.Component {
               ticks: {stroke: 'transparent'}
             }}
             orientation='left'
+            tickFormat={(y) => y >= 1000000 ? y/1000000 + 'm' : (y >= 1000 ? y/1000 + 'k' : y) }
           />
           <VictoryAxis
             label={this.props.axisLabels ? (this.props.axisLabels.x || '') : ''}
@@ -146,7 +147,7 @@ class LineChart extends React.Component {
             );
           })}
         </svg>
-        <p className='small mt0 pt1'>{this.props.caption}</p>
+        { this.props.caption ? <p className='small mt0 pt1'>{this.props.caption}</p> : '' }
       </div>
     );
   }
