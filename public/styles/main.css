@@ -1405,6 +1405,10 @@ strong,
 
   }
 
+  .md-pl0 { padding-left: 0;
+
+  }
+
 }
 @media (min-width: 75em) {
 

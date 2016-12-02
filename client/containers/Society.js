@@ -76,7 +76,7 @@ class Society extends React.Component {
           </div>
 
           <div className="clearfix mxn1">
-            <aside className="col sm-3 md-2 md-offset-1 pr1">
+            <aside className="col sm-3 pl1 md-pl0 md-2 md-offset-1 pr1">
               <StickySidebar>
                 <h1 className="title">National Societies</h1>
                 <ul className="m0 p0">
@@ -99,7 +99,7 @@ class Society extends React.Component {
                     { `${society.NSO_DON_name} was admitted to the IFRC in ${society.admission_date}.` }
                     { latestData.KPI_noPeopleVolunteering ? ` In ${latestData.KPI_Year}, it counted ${latestData.KPI_noPeopleVolunteering} active volunteers` : '' }
                     { earliestData.KPI_noPeopleVolunteering ? ` (up from ${earliestData.KPI_noPeopleVolunteering} in ${earliestData.KPI_Year})` : '' }
-                    { latestData.KPI_noPeopleVolunteeringM && latestData.KPI_noPeopleVolunteeringF ? `, of which ${100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringM}% were male and ${100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringF}% female` : '' }
+                    { latestData.KPI_noPeopleVolunteeringM && latestData.KPI_noPeopleVolunteeringF ? `, of which ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringM)}% were male and ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringF)}% female` : '' }
                     { '.' }
                   </p>
                   <p className="lead">
