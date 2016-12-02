@@ -1,5 +1,4 @@
 import React from "react"
-import { connect } from "react-redux"
 import { translate } from "react-i18next"
 import { Link } from "react-router"
 
@@ -56,19 +55,9 @@ class RatioCard extends React.Component {
 }
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      loaded: 0,
-      parsedData: {},
-      showLoader: false
-    }
-  }
-  shouldComponentUpdate(nextProps, nextState, nextContext) {
-    return this.context.language !== nextContext.language
-  }
   render() {
     const { t } = this.props
+    const { language } = this.context.i18n
     return (
       <div>
         <div className="text-center overflow-hidden" style={{ boxShadow:"inset 0 100px 100px #fff,inset 0 -100px 100px #fff",backgroundImage: "url(/img/ifrc-progress-report-2015-bg.jpg)", backgroundSize: 'cover'}}>
@@ -128,7 +117,7 @@ class Home extends React.Component {
                 <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-1.jpg">
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
-                    <Link to={prefixLanguageToRoute(this.context.language,"/who-we-are")}>
+                    <Link to={prefixLanguageToRoute(language,"/report/who-we-are")}>
                       <span>{t("report-common:chapters.chapter1.title")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -156,7 +145,7 @@ class Home extends React.Component {
                 <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-2.jpg">
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
-                    <Link to={prefixLanguageToRoute(this.context.language,"/what-we-do")}>
+                    <Link to={prefixLanguageToRoute(language,"/report/what-we-do")}>
                       <span>{t("report-common:chapters.chapter2.title")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -170,7 +159,7 @@ class Home extends React.Component {
                 <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-3.jpg">
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
-                    <Link to={prefixLanguageToRoute(this.context.language,"/living-our-fundamental-principles")}>
+                    <Link to={prefixLanguageToRoute(language,"/report/living-our-fundamental-principles")}>
                       <span>{t("report-common:chapters.chapter3.title")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -208,7 +197,7 @@ class Home extends React.Component {
               <div className="col sm-5 sm-offset-1">
                 <RatioCard ratio="3:2" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-1.jpg"}>
                   <p className="display-1 m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(this.context.language,"/strategic-aim-1")}>
+                    <Link to={prefixLanguageToRoute(language,"/report/strategic-aim-1")}>
                       <span>{t("report-common:chapters.chapter4.pretitle")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -236,7 +225,7 @@ class Home extends React.Component {
               <div className="col sm-5">
                 <RatioCard ratio="3:2" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-2.jpg"}>
                   <p className="display-1 m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(this.context.language,"/strategic-aim-2")}>
+                    <Link to={prefixLanguageToRoute(language,"/report/strategic-aim-2")}>
                       <span>{t("report-common:chapters.chapter5.pretitle")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -250,7 +239,7 @@ class Home extends React.Component {
               <div className="col sm-5 sm-offset-1">
                 <RatioCard ratio="3:2" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-3.jpg"}>
                   <p className="display-1 m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(this.context.language,"/strategic-aim-3")}>
+                    <Link to={prefixLanguageToRoute(language,"/report/strategic-aim-3")}>
                       <span>{t("report-common:chapters.chapter6.pretitle")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -289,7 +278,7 @@ class Home extends React.Component {
               <div className="col sm-5 sm-offset-1">
                 <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-7.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(this.context.language,"/enabling-action-1")}>
+                    <Link to={prefixLanguageToRoute(language,"/report/enabling-action-1")}>
                       <span>{t("report-common:chapters.chapter7.pretitle")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -317,7 +306,7 @@ class Home extends React.Component {
               <div className="col sm-5">
                 <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-8.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(this.context.language,"/enabling-action-2")}>
+                    <Link to={prefixLanguageToRoute(language,"/report/enabling-action-2")}>
                       <span>{t("report-common:chapters.chapter8.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
@@ -331,7 +320,7 @@ class Home extends React.Component {
               <div className="col sm-5 sm-offset-1">
                 <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-9.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(this.context.language,"/enabling-action-3")}>
+                    <Link to={prefixLanguageToRoute(language,"/report/enabling-action-3")}>
                       <span>{t("report-common:chapters.chapter9.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
@@ -370,7 +359,7 @@ class Home extends React.Component {
                 <p className="lead">{t("report-common:chapters.data.body.1")} <Icon name="goto" width="24px" height="24px"/></p>
                 <br />
                 <br />
-                <Link to={prefixLanguageToRoute(this.context.language,"/data")} className="btn bg-primary p1">{t("report-common:chapters.data.button")} <Icon name="goto" width="24px" height="24px"/></Link>
+                <Link to={prefixLanguageToRoute(language,"/data")} className="btn bg-primary p1">{t("report-common:chapters.data.button")} <Icon name="goto" width="24px" height="24px"/></Link>
               </div>
             </div>
           </div>
@@ -383,22 +372,12 @@ class Home extends React.Component {
   }
 }
 
+Home.propTypes = {
+  t: React.PropTypes.func.isRequired,
+}
+
 Home.contextTypes = {
-  language: React.PropTypes.string
+  i18n: React.PropTypes.object,
 }
 
-function mapStateToProps(state) {
-  return {
-    language: state.appReducer.language,
-    content: {
-      en: state.appReducer.en,
-      fr: state.appReducer.fr,
-      es: state.appReducer.es,
-      ar: state.appReducer.ar
-    }
-  }
-}
-
-// Home.defaultProps = {}
-
-export default translate()(connect(mapStateToProps)(Home))
+export default translate()(Home)
