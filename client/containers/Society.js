@@ -2,10 +2,12 @@ import React from "react"
 import { connect } from "react-redux"
 import { Link } from "react-router"
 import Select from "react-select"
+import minBy from "lodash/fp/minBy"
 import maxBy from "lodash/fp/maxBy"
 import map from "lodash/fp/map"
 import filter from "lodash/fp/filter"
 import uniqBy from "lodash/fp/uniqBy"
+import StickySidebar from "../components/StickySidebar"
 
 import {
   makeGetSociety,
@@ -49,11 +51,6 @@ class Society extends React.Component {
   }
   componentDidMount() {
     const { society, data, documents, nationalSocieties } = this.props
-
-    console.log('Data: ', data);
-    console.log('Docs: ', documents);
-    console.log('Society: ', society);
-    console.log('Societies: ', nationalSocieties);
   }
   render() {
 
@@ -63,6 +60,9 @@ class Society extends React.Component {
     const yearOptions = uniqBy("value", map(yearOption, documents))
     const yearFilter = d => +d.year === +year
     const yearDocuments = filter(yearFilter, documents)
+
+    const earliestData = _.minBy(data, (o) => o.KPI_Year)
+    const latestData = _.maxBy(data, (o) => o.KPI_Year)
 
     return (
       <section>
@@ -77,19 +77,18 @@ class Society extends React.Component {
 
           <div className="clearfix mxn1">
             <aside className="col sm-3 md-2 md-offset-1 pr1">
-              {/* <StickySidebar>
+              <StickySidebar>
                 <h1 className="title">National Societies</h1>
                 <ul className="m0 p0">
-                  <li>Hi</li>
                   {
                     nationalSocieties.map((ns, i) => (
                       <li className="block mb1" key={i}>
-                        <Link to=`/societies/${ ns.slug }`>{ ns.NSO_DON_name }</Link>
+                        <Link to={`/societies/${ ns.slug }`}>{ ns.NSO_DON_name }</Link>
                       </li>
                     ))
                   }
                 </ul>
-              </StickySidebar> */}
+              </StickySidebar>
             </aside>
 
             <div className="col sm-9 md-8 px1">
@@ -97,9 +96,15 @@ class Society extends React.Component {
               <div className="clearfix mxn1 pb2">
                 <div className="col sm-8 px1 pb1">
                   <p className="lead">
-                    { `Burundi Red Cross was admitted to the IFRC in ${society.admission_date}.  In 2015, it counted 12,400 active volunteers (up from 10,000 in 2011), of which 60% were male and 40% female.` }
+                    { `${society.NSO_DON_name} was admitted to the IFRC in ${society.admission_date}.` }
+                    { latestData.KPI_noPeopleVolunteering ? ` In ${latestData.KPI_Year}, it counted ${latestData.KPI_noPeopleVolunteering} active volunteers` : '' }
+                    { earliestData.KPI_noPeopleVolunteering ? ` (up from ${earliestData.KPI_noPeopleVolunteering} in ${earliestData.KPI_Year})` : '' }
+                    { latestData.KPI_noPeopleVolunteeringM && latestData.KPI_noPeopleVolunteeringF ? `, of which ${100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringM}% were male and ${100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringF}% female` : '' }
+                    { '.' }
                   </p>
-                  <p className="lead">Key proxy indicators reported by the National Society since 2012 are available below, as well as copies of additional key documents.</p>
+                  <p className="lead">
+                    { `Key proxy indicators reported by the National Society since ${earliestData.KPI_Year} are available below, as well as copies of additional key documents.` }
+                  </p>
                 </div>
                 <div className="col sm-4 px1">
                   <svg width="318px" height="345px" viewBox="0 0 318 345">
@@ -116,8 +121,23 @@ class Society extends React.Component {
 
                 <div className="col sm-6 lg-4 px1 pb2">
                   <Card>
-                    <CardView>View 0</CardView>
-                    <CardView>View 1</CardView>
+                    <CardView>
+                      <div className="p1">
+                        <ul className="m0 p0">
+                          {
+                            data.map((d, i) => (
+                              <li className="block" key={i}>{ d.KPI_noPeopleVolunteering } - { d.KPI_Year }</li>
+                            ))
+                          }
+                        </ul>
+                      </div>
+                    </CardView>
+                    <CardView>
+                      <div className="p1">
+                        <p className="display-1 strong m0">{ latestData.KPI_noPeopleVolunteering }</p>
+                        <p className="m0">{ `people volunteering time for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                      </div>
+                    </CardView>
                     <CardView>View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
@@ -140,8 +160,23 @@ class Society extends React.Component {
 
                 <div className="col sm-12 lg-4 px1 pb2">
                   <Card>
-                    <CardView>View 0</CardView>
-                    <CardView>View 1</CardView>
+                    <CardView>
+                      <div className="p1">
+                        <ul className="m0 p0">
+                          {
+                            data.map((d, i) => (
+                              <li className="block" key={i}>{ d.KPI_noLocalUnits } - { d.KPI_Year }</li>
+                            ))
+                          }
+                        </ul>
+                      </div>
+                    </CardView>
+                    <CardView>
+                      <div className="p1">
+                        <p className="display-1 strong m0">{ latestData.KPI_noLocalUnits }</p>
+                        <p className="m0">{ `local units for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                      </div>
+                    </CardView>
                     <CardView>View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
@@ -164,8 +199,23 @@ class Society extends React.Component {
 
                 <div className="col sm-6 lg-4 px1 pb2">
                   <Card>
-                    <CardView>View 0</CardView>
-                    <CardView>View 1</CardView>
+                    <CardView>
+                      <div className="p1">
+                        <ul className="m0 p0">
+                          {
+                            data.map((d, i) => (
+                              <li className="block" key={i}>{ d.KPI_noPaidStaff } - { d.KPI_Year }</li>
+                            ))
+                          }
+                        </ul>
+                      </div>
+                    </CardView>
+                    <CardView>
+                      <div className="p1">
+                        <p className="display-1 strong m0">{ latestData.KPI_noPaidStaff }</p>
+                        <p className="m0">{ `paid staff for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                      </div>
+                    </CardView>
                     <CardView>View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
