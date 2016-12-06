@@ -1839,7 +1839,24 @@ strong,
               0 1px 5px 0 rgba(0, 0, 0, .08); -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1);
 
 }
-.textfield { position: relative; display: inline-block; font-family: inherit; font-size: inherit; font-weight: inherit; line-height: 1.25; border: 0; color: inherit; background-color: transparent; outline: 0; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 0; padding-right: 0; width: 100%; border-bottom: 0.125rem solid #D0021B;
+.textfield { position: relative; display: inline-block; font-family: inherit; font-size: inherit; font-weight: inherit; line-height: 1.25; border: 0; color: inherit; background-color: transparent; outline: 0; width: 100%; border-bottom: 0.125rem solid #CECECE; -webkit-transition: border 0.3s; transition: border 0.3s;
+
+}
+.textfield--focused { border-bottom: 0.125rem solid #D0021B;
+
+}
+::-webkit-input-placeholder { color: #9E9E9E;
+
+}
+:-moz-placeholder {
+  /* Firefox 18- */ color: #9E9E9E;
+
+}
+::-moz-placeholder {
+  /* Firefox 19+ */ color: #9E9E9E;
+
+}
+:-ms-input-placeholder { color: #9E9E9E;
 
 }
 .shadow-1 { box-shadow: 0 2px 8px rgba(0, 0, 0, .20);
@@ -2073,4 +2090,13 @@ strong,
 
 .area {
   height: 100%;
+}
+
+.iScrollVerticalScrollbar {
+  background: #F6F4F2;
+}
+.iScrollIndicator {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #D0021B !important;
 }

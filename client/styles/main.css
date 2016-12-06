@@ -126,3 +126,12 @@
 .area {
   height: 100%;
 }
+
+.iScrollVerticalScrollbar {
+  background: var(--color-secondary);
+}
+.iScrollIndicator {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: var(--color-primary) !important;
+}

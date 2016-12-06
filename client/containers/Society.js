@@ -10,6 +10,9 @@ import uniqBy from "lodash/fp/uniqBy"
 import StickySidebar from "../components/StickySidebar"
 import LineChart from "../components/charts/LineChart"
 
+import Textfield from "../components/Textfield"
+import ShareBtn from "../components/socialMedia/ShareBtn"
+
 import ReactIScroll from 'react-iscroll'
 var iScroll = require('iscroll');
 
@@ -89,16 +92,16 @@ class Society extends React.Component {
           <div className="clearfix mxn1">
             <aside className="col sm-3 pl1 md-pl0 md-2 md-offset-1 pr1 sm-visible">
               <StickySidebar>
-                <div className="px1 pb1">
-                  <h1 className="title">National Societies</h1>
-                  <input type="text" className="textfield" placeholder="Search..." onChange={this.filterSocieties} />
+                <div className="pb1">
+                  <h1 className="title mt0">National Societies</h1>
+                  <Textfield placeholder="Search..." onChange={this.filterSocieties} />
                 </div>
-                <ReactIScroll iScroll={iScroll} options={{ mouseWheel: true, scrollbars: true, fadeScrollbars: true }} onScrollStart={this.onScrollStart}>
-                  <div className="px1 pb3">
+                <ReactIScroll iScroll={iScroll} options={{ mouseWheel: true, scrollbars: true, fadeScrollbars: false }} onScrollStart={this.onScrollStart}>
+                  <div className="pr2 pb3">
                     {
                       this.state.filteredSocieties.length === 0 ? 'No societies found' : ''
                     }
-                    <ul className="m0 p0">
+                    <ul className="my1 mx0 p0">
                     {
                       this.state.filteredSocieties.map((ns, i) => (
                         <li className="block mb1" key={i}>
@@ -127,12 +130,12 @@ class Society extends React.Component {
                     { `Key proxy indicators reported by the National Society since ${earliestData.KPI_Year} are available below, as well as copies of additional key documents.` }
                   </p>
                   <div>
-                    <button className="btn bg-secondary mr1"><span className="px1">f</span></button>
-                    <button className="btn bg-secondary mr1"><span className="px1">t</span></button>
-                    <button className="btn bg-secondary mr1"><span className="px1">m</span></button>
+                    <ShareBtn service="twitter" />
+                    <ShareBtn service="facebook" />
+                    <ShareBtn service="mail" />
                   </div>
                 </div>
-                <div className="col sm-4 px1">
+                <div className="col base-8 base-offset-2 xs-6 xs-offset-3 sm-4 sm-offset-0 px1">
                   <svg width="318px" height="345px" viewBox="0 0 318 345">
                     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                       <g fill="#F6F4F4">
@@ -191,15 +194,13 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card initialView={1} bgColor="bg-beige">
-                    <CardView>View 0</CardView>
+                  <Card initialView={0} basicCard={true} bgColor="bg-beige">
                     <CardView>
                       <div className="pt3 px1">
                         <p className="display-2 strong mb0">12.6m</p>
                         <p className="m0">population of XX in 2015</p>
                       </div>
                     </CardView>
-                    <CardView>View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
                       <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>

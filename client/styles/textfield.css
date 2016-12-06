@@ -10,10 +10,26 @@
   color: inherit;
   background-color: transparent;
   outline: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0;
-  padding-right: 0;
   width: 100%;
+  border-bottom: calc(2 * var(--one)) solid #CECECE;
+  transition: border 0.3s;
+}
+.textfield--focused {
   border-bottom: calc(2 * var(--one)) solid var(--color-primary);
+}
+
+::-webkit-input-placeholder {
+   color: var(--color-grey);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: var(--color-grey);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: var(--color-grey);
+}
+
+:-ms-input-placeholder {
+   color: var(--color-grey);
 }

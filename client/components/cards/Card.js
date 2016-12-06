@@ -50,19 +50,25 @@ class Card extends React.Component {
               </g>
             </svg>
           </button>
-          <div className='t0 l1 y-center-self absolute btn-group btn-group--raised'>
-            {
-              this.props.children.map((child, i) => {
-                if(child.type.name === 'CardView') {
-                  return (
-                    <button key={i} onClick={() => this.switchView(i)} className={this.state.cardView === i ? 'btn bg-primary' : 'btn bg-white'}>
-                      <span className='px05'>{i}</span>
-                    </button>
-                  )
+          {
+            !this.props.basicCard ? (
+              <div className='t0 l1 y-center-self absolute btn-group btn-group--raised'>
+                {
+                  this.props.children.map((child, i) => {
+                    if(child.type.name === 'CardView') {
+                      return (
+                        <button key={i} onClick={() => this.switchView(i)} className={this.state.cardView === i ? 'btn bg-primary' : 'btn bg-white'}>
+                          <span className='px05'>{i}</span>
+                        </button>
+                      )
+                    }
+                  })
                 }
-              })
-            }
-          </div>
+              </div>
+            ) : (
+              ""
+            )
+          }
           <a href='#' className='btn'><span className='small'>show on map</span></a>
         </footer>
         {
