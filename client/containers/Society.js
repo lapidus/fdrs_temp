@@ -10,6 +10,9 @@ import uniqBy from "lodash/fp/uniqBy"
 import StickySidebar from "../components/StickySidebar"
 import LineChart from "../components/charts/LineChart"
 
+import ReactIScroll from 'react-iscroll'
+var iScroll = require('iscroll');
+
 import {
   makeGetSociety,
   makeGetSocietyData,
@@ -36,9 +39,11 @@ class Society extends React.Component {
 
     this.state = {
       year: +maxBy(d => +d.year, props.documents).year,
+      filteredSocieties: this.props.nationalSocieties,
     }
 
     this.handleYearChange = this.handleYearChange.bind(this)
+    this.filterSocieties = this.filterSocieties.bind(this)
   }
 
   componentDidMount() {
@@ -47,6 +52,15 @@ class Society extends React.Component {
 
   handleYearChange(year) {
     this.setState({ year: year.value })
+  }
+
+  filterSocieties(e) {
+    e.preventDefault()
+    const regex = new RegExp(e.target.value, "i")
+    const filteredSocieties = this.props.nationalSocieties.filter((d) => {
+      return (d.NSO_DON_name.search(regex) > -1)
+    })
+    this.setState({ filteredSocieties: filteredSocieties })
   }
 
   render() {
@@ -73,18 +87,28 @@ class Society extends React.Component {
           </div>
 
           <div className="clearfix mxn1">
-            <aside className="col sm-3 pl1 md-pl0 md-2 md-offset-1 pr1">
+            <aside className="col sm-3 pl1 md-pl0 md-2 md-offset-1 pr1 sm-visible">
               <StickySidebar>
-                <h1 className="title">National Societies</h1>
-                <ul className="m0 p0">
-                  {
-                    nationalSocieties.map((ns, i) => (
-                      <li className="block mb1" key={i}>
-                        <Link to={`/societies/${ ns.slug }`}>{ ns.NSO_DON_name }</Link>
-                      </li>
-                    ))
-                  }
-                </ul>
+                <div className="px1 pb1">
+                  <h1 className="title">National Societies</h1>
+                  <input type="text" className="textfield" placeholder="Search..." onChange={this.filterSocieties} />
+                </div>
+                <ReactIScroll iScroll={iScroll} options={{ mouseWheel: true, scrollbars: true, fadeScrollbars: true }} onScrollStart={this.onScrollStart}>
+                  <div className="px1 pb3">
+                    {
+                      this.state.filteredSocieties.length === 0 ? 'No societies found' : ''
+                    }
+                    <ul className="m0 p0">
+                    {
+                      this.state.filteredSocieties.map((ns, i) => (
+                        <li className="block mb1" key={i}>
+                          <Link to={`/societies/${ ns.slug }`}>{ ns.NSO_DON_name }</Link>
+                        </li>
+                      ))
+                    }
+                    </ul>
+                  </div>
+                </ReactIScroll>
               </StickySidebar>
             </aside>
 

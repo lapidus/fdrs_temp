@@ -1,5 +1,18 @@
 
 import React from 'react'
+import ReactIScroll from 'react-iscroll'
+// import iScroll from 'iscroll'
+var iScroll = require('iscroll');
+
+// style={{
+//   position: this.state.isSticky ? 'fixed' : (this.state.bottomStick ? 'absolute' : 'relative'),
+//   left: this.state.isSticky ? this.state.left : 0,
+//   width: this.state.width,
+//   height: this.state.height,
+//   overflow: 'scroll',
+//   borderBottom: '32px solid rgb(246, 244, 242)',
+//   borderTop: '16px solid rgb(246, 244, 242)'
+// }}
 
 class StickySidebar extends React.Component {
   constructor(props) {
@@ -79,6 +92,9 @@ class StickySidebar extends React.Component {
     window.addEventListener('scroll', this.affixSidebar);
     window.addEventListener('resize', this.resizeHandler);
   }
+  onScrollStart() {
+    console.log("iScroll starts scrolling")
+  }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.affixSidebar);
     window.removeEventListener('scroll', this.defixSidebar);
@@ -93,15 +109,13 @@ class StickySidebar extends React.Component {
            }}
         >
         <div ref={(stickyElement) => { this.stickyElement = stickyElement; }}
-          className={this.props.className + ' ' + (this.state.bottomStick ? 'bg-secondary px1 pb2 b0' : 'bg-secondary px1 pb2 t1')}
+          className={this.props.className + ' ' + (this.state.bottomStick ? 'bg-secondary pb2 b0' : 'bg-secondary pb2 t1')}
           style={{
             position: this.state.isSticky ? 'fixed' : (this.state.bottomStick ? 'absolute' : 'relative'),
             left: this.state.isSticky ? this.state.left : 0,
             width: this.state.width,
             height: this.state.height,
-            overflow: 'scroll',
-            borderBottom: '32px solid rgb(246, 244, 242)',
-            borderTop: '16px solid rgb(246, 244, 242)'
+            overflow: 'hidden',
           }}
           >
           {this.props.children}
