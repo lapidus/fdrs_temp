@@ -49,10 +49,12 @@ class Society extends React.Component {
     this.state = {
       year: getLatestYearDocuments(props),
       filteredSocieties: this.props.nationalSocieties,
+      filterValue: "",
     }
 
     this.handleYearChange = this.handleYearChange.bind(this)
     this.filterSocieties = this.filterSocieties.bind(this)
+    this.resetFilter = this.resetFilter.bind(this)
   }
 
   componentWillUpdate() {
@@ -73,7 +75,10 @@ class Society extends React.Component {
     const filteredSocieties = this.props.nationalSocieties.filter((d) => {
       return (d.NSO_DON_name.search(regex) > -1)
     })
-    this.setState({ filteredSocieties: filteredSocieties })
+    this.setState({ filteredSocieties: filteredSocieties, filterValue: e.target.value })
+  }
+  resetFilter() {
+    this.setState({ filteredSocieties: this.props.nationalSocieties, filterValue: "" })
   }
 
   render() {
@@ -137,7 +142,7 @@ class Society extends React.Component {
               <StickySidebar>
                 <div className="pb1">
                   <h1 className="title mt0">National Societies</h1>
-                  <Textfield placeholder="Search..." onChange={this.filterSocieties} />
+                  <Textfield placeholder="Search..." onChange={this.filterSocieties} value={this.state.filterValue}/>
                 </div>
                 <ReactIScroll iScroll={iScroll} options={{ mouseWheel: true, scrollbars: true, fadeScrollbars: false }} onScrollStart={this.onScrollStart}>
                   <div className="pr2 pb3">
@@ -148,7 +153,7 @@ class Society extends React.Component {
                     {
                       this.state.filteredSocieties.map((ns, i) => (
                         <li className="block mb1" key={i}>
-                          <Link to={`/societies/${ ns.slug }`}>{ ns.NSO_DON_name }</Link>
+                          <Link to={`/societies/${ ns.slug }`} onClick={ this.resetFilter }>{ ns.NSO_DON_name }</Link>
                         </li>
                       ))
                     }

@@ -28,6 +28,7 @@ class Textfield extends React.Component {
                onChange={this.props.onChange}
                onFocus={this.handleFocus}
                onBlur={this.handleBlur}
+               value={this.props.value}
                />
       </div>
     )
