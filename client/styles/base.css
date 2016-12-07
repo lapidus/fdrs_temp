@@ -28,7 +28,8 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  /*color: var(--color-primary);*/
+  color: inherit;
   text-decoration: none;
 }
 a:hover,
@@ -36,10 +37,10 @@ a:focus {
   color: var(--color-primary);
 }
 
-nav a,
+/*nav a,
 .bg-primary a {
   color: inherit;
-}
+}*/
 
 hr {
   margin: 0;

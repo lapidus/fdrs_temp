@@ -94,7 +94,7 @@ class Society extends React.Component {
 
         <div className="clearfix bg-secondary px1">
           <div className="col sm-8 sm-offset-2">
-            <ul className="m0 py1 px0 small">
+            <ul className="m0 py1 px0 small strong">
               <li className="inline-block caps mr1">
                 <Link to="/">{ "Home" }</Link>
               </li>
@@ -128,7 +128,7 @@ class Society extends React.Component {
           <div className="clearfix mxn1">
             <header className="col sm-8 sm-offset-3 px1 py1">
               <p className="color-primary strong m0 small">{ society.NSO_ZON_name }</p>
-              <h1 className="display-2 light m0">{ society.NSO_DON_name }</h1>
+              <h1 className="display-2 m0 thin">{ society.NSO_DON_name }</h1>
             </header>
           </div>
 
@@ -148,7 +148,7 @@ class Society extends React.Component {
                     {
                       this.state.filteredSocieties.map((ns, i) => (
                         <li className="block mb1" key={i}>
-                          <Link to={`/societies/${ ns.slug }`} className="color-regular">{ ns.NSO_DON_name }</Link>
+                          <Link to={`/societies/${ ns.slug }`}>{ ns.NSO_DON_name }</Link>
                         </li>
                       ))
                     }

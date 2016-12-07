@@ -164,7 +164,7 @@ class App extends React.Component {
           </div>
         </header> */}
 
-        <div className={ "main-content-wrapper" }>
+        <div className={ "main-content-wrapper light" }>
           <div>
             { this.props.children }
           </div>

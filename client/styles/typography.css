@@ -50,6 +50,7 @@ strong,
 .strong { font-weight: 700; }
 
 .light  { font-weight: 300 !important; }
+.thin   { font-weight: 100 !important; }
 
 .caps   { text-transform: uppercase;   }
 
