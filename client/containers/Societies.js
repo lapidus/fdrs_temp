@@ -29,10 +29,23 @@ class Societies extends React.Component {
           </div>
         </div>
 
+        <div className="clearfix bg-secondary px1">
+          <div className="col sm-10 sm-offset-1 align-right">
+            <ul className="p0 m0">
+              <li className="inline-block">
+                <Link to="/overview" className="block p1">{ "IFRC Global Overview" }</Link>
+              </li>
+              <li className="inline-block">
+                <Link to="/societies" className="block bg-white p1">{ "National Society profiles" }</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <header className="px1">
           <div className="clearfix mxn1">
             <div className="col sm-8 sm-offset-2 px1 py1">
-              <h1 className="display-2 m0 thin">{ "National Societies" }</h1>
+              <h1 className="display-2 m0 thin">{ "National Society" } <span className="color-primary">{ "profiles" }</span></h1>
             </div>
           </div>
         </header>

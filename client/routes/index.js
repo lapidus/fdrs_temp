@@ -38,6 +38,11 @@ const childRoutes = [
       System.import("../containers/Data").then(loadRoute(cb)).catch(errorLoading)
     },
   }, {
+    path: "overview",
+    getComponent(location, cb) {
+      System.import("../containers/Overview").then(loadRoute(cb)).catch(errorLoading)
+    },
+  }, {
     path: "societies",
     getComponent(location, cb) {
       System.import("../containers/Societies").then(loadRoute(cb)).catch(errorLoading)

@@ -115,7 +115,7 @@ class Society extends React.Component {
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/" className="block p1">{ "IFRC Global Overview" }</Link>
+                <Link to="/overview" className="block p1">{ "IFRC Global Overview" }</Link>
               </li>
               <li className="inline-block">
                 <Link to="/societies" className="block bg-white p1">{ "National Society profiles" }</Link>

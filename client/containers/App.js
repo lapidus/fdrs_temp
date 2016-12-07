@@ -66,7 +66,12 @@ class App extends React.Component {
               <nav className='inline-block'>
                 <ul className='m0 p0'>
                   <li className='inline-block'>
-                    <Link to='/Societies' className='btn'>
+                    <Link to='/overview' className='btn'>
+                      <span className='block py1 px05'>Overview</span>
+                    </Link>
+                  </li>
+                  <li className='inline-block'>
+                    <Link to='/societies' className='btn'>
                       <span className='block py1 px05'>Societies</span>
                     </Link>
                   </li>
