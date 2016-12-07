@@ -36,17 +36,27 @@ function roundIt(n) {
   return Math.ceil(n/factor) * factor;
 }
 
+function getLatestYearDocuments(props) {
+  console.log('NOT DOING THIS AGAIN!');
+  const latestDocuments = maxBy(d => +d.year, props.documents)
+  return latestDocuments ? +latestDocuments.year : undefined
+}
+
 class Society extends React.Component {
   constructor(props, context) {
     super(props, context)
 
     this.state = {
-      year: +maxBy(d => +d.year, props.documents).year,
+      year: getLatestYearDocuments(props),
       filteredSocieties: this.props.nationalSocieties,
     }
 
     this.handleYearChange = this.handleYearChange.bind(this)
     this.filterSocieties = this.filterSocieties.bind(this)
+  }
+
+  componentWillUpdate() {
+    // Update latest year manually here... and later do this through mapstatetoprops...
   }
 
   componentDidMount() {
@@ -69,6 +79,7 @@ class Society extends React.Component {
   render() {
 
     const { year } = this.state
+    console.log("THIS IS THE YEAR!", this.state.year)
     const { society, data, documents, nationalSocieties } = this.props
     const yearOption = d => ({ value: +d.year, label: d.year })
     const yearOptions = uniqBy("value", map(yearOption, documents))
@@ -392,8 +403,8 @@ class Society extends React.Component {
                     <CardView>View 1</CardView>
                     <CardView>View 2</CardView>
                     <CardOverlay>
-                      <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
-                      <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>
+                      <p>{ "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }</p>
+                      <p>{ "The data comes from this source:" }<br /> <a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -402,24 +413,43 @@ class Society extends React.Component {
                   <hr />
                 </div>
 
-                <div className="col sm-12 px1 pb2">
-                  <Card>
-                    <CardView>View 0</CardView>
-                    <CardView>View 1</CardView>
-                    <CardView>View 2</CardView>
-                    <CardOverlay>
-                      <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
-                      <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>
-                    </CardOverlay>
-                  </Card>
-                </div>
-
+                {
+                  yearDocuments.length > 0 ? (
+                    <div className="col sm-12 px1 pb2">
+                      <div className="relative overflow-hidden shadow-2 pt1 px1 pb2">
+                        <h2 className="subhead mt0">{ "Documents" }</h2>
+                        <div className="clearfix">
+                          <Select
+                            searchable={ false }
+                            clearable={ false }
+                            name="year-selector"
+                            value={ year }
+                            options={ yearOptions }
+                            onChange={ this.handleYearChange }
+                          />
+                        </div>
+                        <div className="clearfix mxn1">
+                          {
+                            yearDocuments.map((doc, i) => (
+                              <div className="col sm-4 px1" key={i}>
+                                { doc.document_type } - { doc.year }<br />
+                                <a href={doc.url} target="_blank">{ "Download" }</a>
+                              </div>
+                            ))
+                          }
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="px1">{ "No documents" }</div>
+                  )
+                }
               </div>
             </div>
           </div>
         </div>
 
-        <hr />
+        { /* <hr />
 
         <div className="py4 pl2">
           <h1>{ "National Society" }</h1>
@@ -436,7 +466,7 @@ class Society extends React.Component {
             />
           </div>
           <pre style={{ clear: "left" }}>{ JSON.stringify(yearDocuments, null, 2) }</pre>
-        </div>
+        </div> */ }
       </section>
     )
   }
