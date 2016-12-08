@@ -1,6 +1,7 @@
 
 import React from "react"
 import { Link } from "react-router"
+import Breadcrumbs from "../components/Breadcrumbs"
 
 import StickySidebar from "../components/StickySidebar"
 import ReactIScroll from 'react-iscroll'
@@ -10,21 +11,12 @@ class Overview extends React.Component {
   render() {
     return (
       <section>
-        <div className="clearfix bg-secondary px1">
-          <div className="col sm-8 sm-offset-2">
-            <ul className="m0 py1 px0 small strong">
-              <li className="inline-block caps mr1">
-                <Link to="/">{ "Home" }</Link>
-              </li>
-              <li className="inline-block caps mr1">
-                <Link to="/">{ "Services" }</Link>
-              </li>
-              <li className="inline-block caps mr1">
-                <Link to="/societies">{ "IFRC overview" }</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+
+        <Breadcrumbs links={[
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/" },
+          { name: "IFRC Overview", path: undefined }
+        ]}/>
 
         <div className="clearfix bg-secondary px1">
           <div className="col sm-10 sm-offset-1 align-right">

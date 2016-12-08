@@ -13,6 +13,8 @@ import LineChart from "../components/charts/LineChart"
 import Textfield from "../components/Textfield"
 import ShareBtn from "../components/socialMedia/ShareBtn"
 
+import Breadcrumbs from "../components/Breadcrumbs"
+
 import ReactIScroll from 'react-iscroll'
 var iScroll = require('iscroll');
 
@@ -97,24 +99,12 @@ class Society extends React.Component {
     return (
       <section>
 
-        <div className="clearfix bg-secondary px1">
-          <div className="col sm-8 sm-offset-2">
-            <ul className="m0 py1 px0 small strong">
-              <li className="inline-block caps mr1">
-                <Link to="/">{ "Home" }</Link>
-              </li>
-              <li className="inline-block caps mr1">
-                <Link to="/">{ "Services" }</Link>
-              </li>
-              <li className="inline-block caps mr1">
-                <Link to="/societies">{ "National Society Profiles" }</Link>
-              </li>
-              <li className="inline-block caps color-primary">
-                { society.NSO_DON_name }
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Breadcrumbs links={[
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/" },
+          { name: "National Society Profiles", path: "/societies" },
+          { name: society.NSO_DON_name, path: undefined }
+        ]}/>
 
         <div className="clearfix bg-secondary px1">
           <div className="col sm-10 sm-offset-1 align-right">
