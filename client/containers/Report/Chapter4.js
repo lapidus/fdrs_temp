@@ -3,7 +3,7 @@ import { translate } from "react-i18next"
 
 import NextChapter from "../../utils/NextChapter"
 import numberFormatter from "../../utils/numberFormatter"
-import BreadCrumbs from "../../components/Breadcrumbs"
+import BreadCrumbs from "../../components/Report/Breadcrumbs"
 import HeadlineDivider from "../../components/HeadlineDivider"
 import LineChart from "../../components/charts/LineChart"
 import { Tabs, TabPanel } from "../../components/Tabs"

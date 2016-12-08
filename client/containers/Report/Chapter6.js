@@ -2,7 +2,7 @@ import React from "react"
 import { translate } from "react-i18next"
 
 import NextChapter from "../../utils/NextChapter"
-import BreadCrumbs from "../../components/Breadcrumbs"
+import BreadCrumbs from "../../components/Report/Breadcrumbs"
 import HeadlineDivider from "../../components/HeadlineDivider"
 import DonutChart from "../../components/charts/DonutChart"
 import SideNavigation from "../../components/Report/SideNavigation"
@@ -393,4 +393,3 @@ Chapter6.contextTypes = {
 }
 
 export default translate([ "report-strategic-aim-3" ], { wait: true })(Chapter6)
-

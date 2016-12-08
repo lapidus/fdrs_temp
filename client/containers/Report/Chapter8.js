@@ -2,7 +2,7 @@ import React from "react"
 import { translate } from "react-i18next"
 
 import NextChapter from "../../utils/NextChapter"
-import BreadCrumbs from "../../components/Breadcrumbs"
+import BreadCrumbs from "../../components/Report/Breadcrumbs"
 import HeadlineDivider from "../../components/HeadlineDivider"
 import SideNavigation from "../../components/Report/SideNavigation"
 import LineChart from "../../components/charts/LineChart"

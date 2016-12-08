@@ -2,7 +2,7 @@
 import React from "react"
 import { Link } from "react-router"
 
-import prefixLanguageToRoute from "../utils/prefixLanguageToRoute"
+import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
 
 const BreadCrumbs = ({ language, chapter }) =>
   <div>

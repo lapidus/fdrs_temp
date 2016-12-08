@@ -1,7 +1,7 @@
 import React from "react"
 import { translate } from "react-i18next"
 
-import BreadCrumbs from "../../components/Breadcrumbs"
+import BreadCrumbs from "../../components/Report/Breadcrumbs"
 
 class Acknowledgements extends React.Component {
   componentWillMount() {
