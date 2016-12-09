@@ -49,6 +49,7 @@
     "classnames": "^2.2.5",
     "cookie-parser": "^1.4.3",
     "d3": "^4.3.0",
+    "d3-geo": "^1.4.0",
     "d3-geo-projection": "^1.2.1",
     "datamaps": "^0.5.8",
     "express": "^4.14.0",
@@ -70,6 +71,8 @@
     "redux-thunk": "^2.1.0",
     "reselect": "^2.5.4",
     "superagent": "^2.3.0",
+    "topojson": "^2.0.0",
+    "topojson-client": "^2.1.0",
     "victory": "^0.13.7"
   },
   "devDependencies": {

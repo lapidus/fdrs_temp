@@ -7,7 +7,9 @@
 .bg-dark      { background: var(--color-grey-dark);  color: var(--color-white);     }
 .bg-beige     { background: #8D8070;                 color: var(--color-white);     }
 
+.fill-primary { fill: var(--color-primary); }
 .fill-beige   { fill: #8D8070; }
+
 
 .color-primary   { color: var(--color-primary);   }
 .color-secondary { color: var(--color-secondary); }
