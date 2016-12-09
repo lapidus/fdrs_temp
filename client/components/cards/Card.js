@@ -1,5 +1,6 @@
 
-import React from 'react'
+import React from "react"
+import { Link } from "react-router"
 
 class Card extends React.Component {
   constructor(props) {
@@ -69,7 +70,7 @@ class Card extends React.Component {
               ""
             )
           }
-          <a href='#' className='btn'><span className='small'>show on map</span></a>
+          <Link to='/overview' className='btn'><span className='small'>show on map</span></Link>
         </footer>
         {
           this.props.children.map((child, i) => {

@@ -408,8 +408,13 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card>
-                    <CardView>View 0</CardView>
+                  <Card initialView={0} basicCard={true} bgColor="bg-beige">
+                    <CardView>
+                      <div className="pt3 px1">
+                        <p className="display-2 strong mb0">64.6%</p>
+                        <p className="m0">percentage of Burundi’s population living below the poverty line in 2015</p>
+                      </div>
+                    </CardView>
                     <CardView>View 1</CardView>
                     <CardView>View 2</CardView>
                     <CardOverlay>
@@ -472,8 +477,14 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card>
-                    <CardView>View 0</CardView>
+                  <Card initialView={0} basicCard={true} bgColor="bg-beige">
+                    <CardView>
+                      <div className="pt3 px1">
+                        <p className="small strong m0">CHF</p>
+                        <p className="display-2 strong my0">2.715Bn</p>
+                        <p className="m0">Burundi’s GDP in 2013</p>
+                      </div>
+                    </CardView>
                     <CardView>View 1</CardView>
                     <CardView>View 2</CardView>
                     <CardOverlay>
@@ -484,10 +495,14 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card>
-                    <CardView>View 0</CardView>
-                    <CardView>View 1</CardView>
-                    <CardView>View 2</CardView>
+                  <Card initialView={0} basicCard={true} bgColor="bg-primary">
+                    <CardView>
+                      <div className="pt3 px2">
+                        <p className="display-1 lh-1 strong mt0 mb1">What would you like to see here?</p>
+                        <p className="m0">Help us improve data.ifrc.org</p>
+                        <p className="m0">Send your ideas to:<br />ideas@ifrc.org</p>
+                      </div>
+                    </CardView>
                     <CardOverlay>
                       <p>{ "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }</p>
                       <p>{ "The data comes from this source:" }<br /> <a href="#">{ "source of the data" }</a></p>

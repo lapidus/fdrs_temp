@@ -17,7 +17,7 @@ class Globe extends React.Component {
     super(props)
 
     this.state = {
-      countries: [],
+      countries: null,
       loading: true,
     }
 
@@ -40,7 +40,7 @@ class Globe extends React.Component {
     })
   }
   shouldComponentUpdate(nextProps, nextState) {
-    return nextProps.selectedCountry !== this.props.selectedCountry
+    return nextProps.selectedCountry !== this.props.selectedCountry || !this.state.countries
   }
   componentDidMount() {
     this.loadCountries()
