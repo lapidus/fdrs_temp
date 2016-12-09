@@ -25,6 +25,49 @@ class Card extends React.Component {
     });
   }
   render() {
+
+    const lineChartIcon = (
+      <svg width="16px" height="16px" viewBox="0 0 16 16" className="block" style={{width: 20, height: 20}}>
+          <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+              <g stroke="#4A4A4A">
+                  <path d="M2,12 L14,12"></path>
+                  <polyline points="3 9 5.85714286 6.2 8 8.5 13 3.4"></polyline>
+                  <polyline points="11 3 13.4 3 13.4 5.4"></polyline>
+              </g>
+          </g>
+      </svg>
+    )
+
+    const genderChartIcon = (
+      <svg width="16px" height="16px" viewBox="0 0 16 16" className="block" style={{width: 20, height: 20}}>
+          <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+              <g stroke="#4A4A4A">
+                  <ellipse cx="5.27272727" cy="6.90909091" rx="3.27272727" ry="3.27272727"></ellipse>
+                  <path d="M5,10 L5,13.5"></path>
+                  <path d="M3.67999268,12 L6.36000061,12"></path>
+                  <path d="M11.3818182,4.61818182 L14,2"></path>
+                  <ellipse cx="9.09090909" cy="6.90909091" rx="3.27272727" ry="3.27272727"></ellipse>
+                  <polyline points="11.8181818 2 14 2 14 4.18181818"></polyline>
+              </g>
+          </g>
+      </svg>
+    )
+
+    const plainNumber = (
+      <svg width="16px" height="16px" viewBox="0 0 16 16" className="block" style={{width: 20, height: 20}}>
+        <g stroke="#4A4A4A" strokeWidth="1" fill="none" fillRule="evenodd">
+          <path d="M4,7.68181818 L7.27272727,7.68181818 L7.27272727,11.7727273 L4,11.7727273 L4,7.68181818 C4,5.75568318 4.71590909,4.54971591 6.04545455,4"></path>
+          <path d="M9.72727273,7.68181818 L13,7.68181818 L13,11.7727273 L9.72727273,11.7727273 L9.72727273,7.68181818 C9.72727273,5.75568318 10.4431818,4.54971591 11.7727273,4"></path>
+        </g>
+      </svg>
+    )
+
+    const viewIcons = {
+      lineChart: lineChartIcon,
+      genderChart: genderChartIcon,
+      plainNumber: plainNumber,
+    }
+
     return (
       <article className={`relative overflow-hidden shadow-2 ${this.props.bgColor || ''}`}>
         <div>
@@ -59,7 +102,14 @@ class Card extends React.Component {
                     if(child.type.name === 'CardView') {
                       return (
                         <button key={i} onClick={() => this.switchView(i)} className={this.state.cardView === i ? 'btn bg-primary' : 'btn bg-white'}>
-                          <span className='px05'>{i}</span>
+                          {/* <span className='px05'>{i}</span> */}
+                          {
+                            child.props.viewIcon ? (
+                              viewIcons[child.props.viewIcon]
+                            ) : (
+                              <span className='px05'>{i}</span>
+                            )
+                          }
                         </button>
                       )
                     }

@@ -210,7 +210,7 @@ class Society extends React.Component {
 
                 <div className="col sm-6 lg-4 px1 pb2">
                   <Card>
-                    <CardView>
+                    <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">People volunteering their time</h1>
                         <LineChart
@@ -239,13 +239,13 @@ class Society extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView>
+                    <CardView viewIcon="plainNumber">
                       <div className="p1">
                         <p className="display-1 strong m0">{ latestData.KPI_noPeopleVolunteering }</p>
                         <p className="m0">{ `people volunteering time for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
-                    <CardView>View 2</CardView>
+                    <CardView viewIcon="genderChart">View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
                       <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>
@@ -255,7 +255,7 @@ class Society extends React.Component {
 
                 <div className="col sm-6 lg-4 px1 pb2">
                   <Card initialView={0} basicCard={true} bgColor="bg-beige">
-                    <CardView>
+                    <CardView viewIcon="plainNumber">
                       <div className="pt3 px1">
                         <p className="display-2 strong mb0">12.6m</p>
                         <p className="m0">population of XX in 2015</p>
@@ -270,7 +270,7 @@ class Society extends React.Component {
 
                 <div className="col sm-12 lg-4 px1 pb2">
                   <Card>
-                    <CardView>
+                    <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">Local units</h1>
                         <LineChart
@@ -299,13 +299,12 @@ class Society extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView>
+                    <CardView viewIcon="plainNumber">
                       <div className="p1">
                         <p className="display-1 strong m0">{ latestData.KPI_noLocalUnits }</p>
                         <p className="m0">{ `local units for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
-                    <CardView>View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
                       <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>
@@ -315,7 +314,7 @@ class Society extends React.Component {
 
                 <div className="col sm-12 lg-8 px1 pb2">
                   <Card>
-                    <CardView>
+                    <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">Income and Expenditure</h1>
                         <LineChart
@@ -350,8 +349,7 @@ class Society extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView>View 1</CardView>
-                    <CardView>View 2</CardView>
+                    <CardView viewIcon="plainNumber">View 1</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
                       <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>
@@ -361,7 +359,7 @@ class Society extends React.Component {
 
                 <div className="col sm-6 lg-4 px1 pb2">
                   <Card>
-                    <CardView>
+                    <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">Paid staff</h1>
                         <LineChart
@@ -390,13 +388,13 @@ class Society extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView>
+                    <CardView viewIcon="plainNumber">
                       <div className="p1">
                         <p className="display-1 strong m0">{ latestData.KPI_noPaidStaff }</p>
                         <p className="m0">{ `paid staff for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
-                    <CardView>View 2</CardView>
+                    <CardView viewIcon="genderChart">View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
                       <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>
@@ -406,14 +404,12 @@ class Society extends React.Component {
 
                 <div className="col sm-6 lg-4 px1 pb2">
                   <Card initialView={0} basicCard={true} bgColor="bg-beige">
-                    <CardView>
+                    <CardView viewIcon="plainNumber">
                       <div className="pt3 px1">
                         <p className="display-2 strong mb0">64.6%</p>
                         <p className="m0">percentage of Burundi’s population living below the poverty line in 2015</p>
                       </div>
                     </CardView>
-                    <CardView>View 1</CardView>
-                    <CardView>View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
                       <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>
@@ -423,9 +419,8 @@ class Society extends React.Component {
 
                 <div className="col sm-12 lg-8 px1 pb2">
                   <Card>
-                    <CardView>View 0</CardView>
-                    <CardView>View 1</CardView>
-                    <CardView>View 2</CardView>
+                    <CardView viewIcon="lineChart">View 0</CardView>
+                    <CardView viewIcon="plainNumber">View 1</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
                       <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>
@@ -435,7 +430,7 @@ class Society extends React.Component {
 
                 <div className="col sm-6 lg-4 px1 pb2">
                   <Card>
-                    <CardView>
+                    <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">People donating blood</h1>
                         <LineChart
@@ -464,8 +459,13 @@ class Society extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView>View 1</CardView>
-                    <CardView>View 2</CardView>
+                    <CardView viewIcon="plainNumber">
+                      <div className="p1">
+                        <p className="display-1 strong m0">{ latestData.KPI_noPeopleDonatingBlood }</p>
+                        <p className="m0">{ `people donating blood for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                      </div>
+                    </CardView>
+                    <CardView viewIcon="genderChart">View 2</CardView>
                     <CardOverlay>
                       <p>This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics.</p>
                       <p>The data comes from this source: <br /> <a href="#">source of the data</a></p>
