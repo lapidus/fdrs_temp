@@ -2003,35 +2003,35 @@ strong,
 }
 @media (min-width: 30em) {
 
-  .xs-visible { display: inherit;
+  .xs-visible { display: inline; display: initial;
 
   }
 
 }
 @media (min-width: 48em) {
 
-  .sm-visible { display: inherit;
+  .sm-visible { display: inline; display: initial;
 
   }
 
 }
 @media (min-width: 62em) {
 
-  .md-visible { display: inherit;
+  .md-visible { display: inline; display: initial;
 
   }
 
 }
 @media (min-width: 75em) {
 
-  .lg-visible { display: inherit;
+  .lg-visible { display: inline; display: initial;
 
   }
 
 }
 @media (min-width: 91em) {
 
-  .xl-visible { display: inherit;
+  .xl-visible { display: inline; display: initial;
 
   }
 

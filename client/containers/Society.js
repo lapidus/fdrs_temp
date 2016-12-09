@@ -16,8 +16,8 @@ import ShareBtn from "../components/socialMedia/ShareBtn"
 import Breadcrumbs from "../components/Breadcrumbs"
 import Globe from "../components/Globe"
 
-import ReactIScroll from 'react-iscroll'
-var iScroll = require('iscroll');
+import ReactIScroll from "react-iscroll"
+var iScroll = require("iscroll");
 
 import {
   makeGetSociety,
@@ -40,7 +40,7 @@ function roundIt(n) {
 }
 
 function getLatestYearDocuments(props) {
-  console.log('NOT DOING THIS AGAIN!');
+  console.log("NOT DOING THIS AGAIN!");
   const latestDocuments = maxBy(d => +d.year, props.documents)
   return latestDocuments ? +latestDocuments.year : undefined
 }
@@ -135,10 +135,10 @@ class Society extends React.Component {
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/overview" className="block p1">{ "IFRC Global Overview" }</Link>
+                <Link to="/overview" className="block p1"><span className="xs-visible">{ "IFRC Global " }</span>{ "Overview" }</Link>
               </li>
               <li className="inline-block">
-                <Link to="/societies" className="block bg-white p1">{ "National Society profiles" }</Link>
+                <Link to="/societies" className="block bg-white p1"><span className="xs-visible">{ "National Society " }</span>{ "Profiles" }</Link>
               </li>
             </ul>
           </div>
@@ -162,7 +162,7 @@ class Society extends React.Component {
                 <ReactIScroll iScroll={iScroll} options={{ mouseWheel: true, scrollbars: true, fadeScrollbars: false }} onScrollStart={this.onScrollStart}>
                   <div className="pr2 pb3">
                     {
-                      this.state.filteredSocieties.length === 0 ? 'No societies found' : ''
+                      this.state.filteredSocieties.length === 0 ? "No societies found" : ""
                     }
                     <ul className="my1 mx0 p0">
                     {
@@ -184,10 +184,10 @@ class Society extends React.Component {
                 <div className="col sm-8 px1 pb1">
                   <p className="lead">
                     { `${society.NSO_DON_name} was admitted to the IFRC in ${society.admission_date}.` }
-                    { latestData.KPI_noPeopleVolunteering ? ` In ${latestData.KPI_Year}, it counted ${latestData.KPI_noPeopleVolunteering} active volunteers` : '' }
-                    { earliestData.KPI_noPeopleVolunteering ? ` (up from ${earliestData.KPI_noPeopleVolunteering} in ${earliestData.KPI_Year})` : '' }
-                    { latestData.KPI_noPeopleVolunteeringM && latestData.KPI_noPeopleVolunteeringF ? `, of which ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringM)}% were male and ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringF)}% female` : '' }
-                    { '.' }
+                    { latestData.KPI_noPeopleVolunteering ? ` In ${latestData.KPI_Year}, it counted ${latestData.KPI_noPeopleVolunteering} active volunteers` : "" }
+                    { earliestData.KPI_noPeopleVolunteering ? ` (up from ${earliestData.KPI_noPeopleVolunteering} in ${earliestData.KPI_Year})` : "" }
+                    { latestData.KPI_noPeopleVolunteeringM && latestData.KPI_noPeopleVolunteeringF ? `, of which ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringM)}% were male and ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringF)}% female` : "" }
+                    { "." }
                   </p>
                   <p className="lead">
                     { `Key proxy indicators reported by the National Society since ${earliestData.KPI_Year} are available below, as well as copies of additional key documents.` }
@@ -200,6 +200,7 @@ class Society extends React.Component {
                 </div>
                 <div className="col base-8 base-offset-2 xs-6 xs-offset-3 sm-4 sm-offset-0 px1">
                   <Globe
+                    selectedCountry={ society.iso_2 }
                     center={[
                       society.lat ? (society.lat.search(society.lat.match(/\d+/g)[0]) === 1 ? -(society.lat.match(/\d+/g)[0]) : +society.lat.match(/\d+/g)[0]) : 0,
                       society.long ? (society.long.search(society.long.match(/\d+/g)[0]) === 1 ? -(society.long.match(/\d+/g)[0]) : +society.long.match(/\d+/g)[0]) : 0,
@@ -561,25 +562,25 @@ class Society extends React.Component {
         </div>
         </div>
 
-        <div className='px1 py4 bg-beige'>
-          <div className='clearfix mxn1'>
-            <div className='col sm-4 sm-offset-6 px1'>
-              <h2 className='headline sm-display-1 light mt0'>{ "The IFRC at a glance" }</h2>
-              <p className='lead'>{ "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks." }</p>
-              <Link to='/' className='btn btn--raised bg-primary'>
-                <span className='block py05 px1'>{ "Explore the IFRC" }</span>
+        <div className="px1 py4 bg-beige">
+          <div className="clearfix mxn1">
+            <div className="col sm-4 sm-offset-6 px1">
+              <h2 className="headline sm-display-1 light mt0">{ "The IFRC at a glance" }</h2>
+              <p className="lead">{ "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks." }</p>
+              <Link to="/" className="btn btn--raised bg-primary">
+                <span className="block py05 px1">{ "Explore the IFRC" }</span>
               </Link>
             </div>
           </div>
         </div>
 
-        <div className='px1 py4 bg-secondary'>
-          <div className='clearfix mxn1'>
-            <div className='col sm-10 sm-offset-1 px1'>
-              <h2 className='headline sm-display-1 light mt0'>{ "For data collectors" }</h2>
-              <p className='lead'>{ "To get started with the data collection for your National Society, please log in." }</p>
-              <Link to='/' className='btn btn--raised bg-primary'>
-                <span className='block py05 px1'>{ "Login as data collector" }</span>
+        <div className="px1 py4 bg-secondary">
+          <div className="clearfix mxn1">
+            <div className="col sm-10 sm-offset-1 px1">
+              <h2 className="headline sm-display-1 light mt0">{ "For data collectors" }</h2>
+              <p className="lead">{ "To get started with the data collection for your National Society, please log in." }</p>
+              <Link to="/" className="btn btn--raised bg-primary">
+                <span className="block py05 px1">{ "Login as data collector" }</span>
               </Link>
             </div>
           </div>

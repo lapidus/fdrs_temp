@@ -4,8 +4,8 @@ import { Link } from "react-router"
 import Breadcrumbs from "../components/Breadcrumbs"
 
 import StickySidebar from "../components/StickySidebar"
-import ReactIScroll from 'react-iscroll'
-var iScroll = require('iscroll');
+import ReactIScroll from "react-iscroll"
+var iScroll = require("iscroll");
 
 class Overview extends React.Component {
   render() {
@@ -15,17 +15,17 @@ class Overview extends React.Component {
         <Breadcrumbs links={[
           { name: "Home", path: "/" },
           { name: "Services", path: "/" },
-          { name: "IFRC Overview", path: undefined }
+          { name: "IFRC Overview", path: undefined },
         ]}/>
 
         <div className="clearfix bg-secondary px1">
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/overview" className="block bg-white p1">{ "IFRC Global Overview" }</Link>
+                <Link to="/overview" className="block bg-white p1"><span className="xs-visible">{ "IFRC Global " }</span>{ "Overview" }</Link>
               </li>
               <li className="inline-block">
-                <Link to="/societies" className="block p1">{ "National Society profiles" }</Link>
+                <Link to="/societies" className="block p1"><span className="xs-visible">{ "National Society " }</span>{ "Profiles" }</Link>
               </li>
             </ul>
           </div>

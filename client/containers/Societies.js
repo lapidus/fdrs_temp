@@ -24,10 +24,10 @@ class Societies extends React.Component {
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/overview" className="block p1">{ "IFRC Global Overview" }</Link>
+                <Link to="/overview" className="block p1"><span className="xs-visible">{ "IFRC Global " }</span>{ "Overview" }</Link>
               </li>
               <li className="inline-block">
-                <Link to="/societies" className="block bg-white p1">{ "National Society profiles" }</Link>
+                <Link to="/societies" className="block bg-white p1"><span className="xs-visible">{ "National Society " }</span>{ "Profiles" }</Link>
               </li>
             </ul>
           </div>

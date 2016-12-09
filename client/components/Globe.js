@@ -39,6 +39,9 @@ class Globe extends React.Component {
       })
     })
   }
+  shouldComponentUpdate(nextProps, nextState) {
+    return nextProps.selectedCountry !== this.props.selectedCountry
+  }
   componentDidMount() {
     this.loadCountries()
   }

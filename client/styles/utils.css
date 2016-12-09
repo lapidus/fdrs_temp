@@ -81,17 +81,17 @@
 }
 
 @media (--xs-viewport) {
-  .xs-visible { display: inherit; }
+  .xs-visible { display: initial; }
 }
 @media (--sm-viewport) {
-  .sm-visible { display: inherit; }
+  .sm-visible { display: initial; }
 }
 @media (--md-viewport) {
-  .md-visible { display: inherit; }
+  .md-visible { display: initial; }
 }
 @media (--lg-viewport) {
-  .lg-visible { display: inherit; }
+  .lg-visible { display: initial; }
 }
 @media (--xl-viewport) {
-  .xl-visible { display: inherit; }
+  .xl-visible { display: initial; }
 }

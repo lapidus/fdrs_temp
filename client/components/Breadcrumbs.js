@@ -5,27 +5,29 @@ import { Link } from "react-router"
 class Breadcrumbs extends React.Component {
   render() {
     return (
-      <div className="clearfix bg-secondary px1">
-        <div className="col sm-8 sm-offset-2">
-          <ul className="m0 py1 px0 small strong">
-            {
-              this.props.links.map((item, i) => (
-                <li className="inline-block mr1" key={ i }>
-                  {
-                    item.path ? (
-                      <Link to={ item.path }>
-                        { item.name }
-                      </Link>
-                    ) : (
-                      <span className={ i === (this.props.links.length - 1) ? "color-primary" : "" }>
-                        { item.name }
-                      </span>
-                    )
-                  }
-                </li>
-              ))
-            }
-          </ul>
+      <div className="sm-visible">
+        <div className="clearfix bg-secondary px1">
+          <div className="col sm-8 sm-offset-0 md-offset-2">
+            <ul className="m0 py1 px0 small strong">
+              {
+                this.props.links.map((item, i) => (
+                  <li className="inline-block mr1" key={ i }>
+                    {
+                      item.path ? (
+                        <Link to={ item.path }>
+                          { item.name }
+                        </Link>
+                      ) : (
+                        <span className={ i === (this.props.links.length - 1) ? "color-primary" : "" }>
+                          { item.name }
+                        </span>
+                      )
+                    }
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
         </div>
       </div>
     )
