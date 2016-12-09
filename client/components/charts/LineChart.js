@@ -39,7 +39,7 @@ class LineChart extends React.Component {
     window.addEventListener('resize', this.resizeChart);
   }
   resizeChart() {
-    console.log('Resizing line chart');
+    // console.log('Resizing line chart');
     this.setState({
       width: this.refs.visualizationWrapper.clientWidth
     });

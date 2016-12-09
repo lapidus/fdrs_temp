@@ -40,7 +40,6 @@ function roundIt(n) {
 }
 
 function getLatestYearDocuments(props) {
-  console.log("NOT DOING THIS AGAIN!");
   const latestDocuments = maxBy(d => +d.year, props.documents)
   return latestDocuments ? +latestDocuments.year : undefined
 }
@@ -70,7 +69,6 @@ class Society extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if(this.props.society.iso_2 !== nextProps.society.iso_2) {
-      console.log("CHANGING YEAR!")
       this.setState({
         year: getLatestYearDocuments(nextProps)
       })
@@ -89,7 +87,6 @@ class Society extends React.Component {
   }
 
   componentDidMount() {
-    console.log("DATA: ", this.props.data)
     document.body.classList.add("html-ready")
   }
 
