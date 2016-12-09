@@ -69,9 +69,12 @@ class Society extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({
-      year: getLatestYearDocuments(nextProps)
-    })
+    if(this.props.society.iso_2 !== nextProps.society.iso_2) {
+      console.log("CHANGING YEAR!")
+      this.setState({
+        year: getLatestYearDocuments(nextProps)
+      })
+    }
     // if(nextProps.society.iso_2 !== this.props.society.iso_2) {
     //   const selectedCountry = {}
     //   selectedCountry[nextProps.society.iso_3] = { fillKey: "red" }
@@ -86,6 +89,7 @@ class Society extends React.Component {
   }
 
   componentDidMount() {
+    console.log("DATA: ", this.props.data)
     document.body.classList.add("html-ready")
   }
 
@@ -108,7 +112,6 @@ class Society extends React.Component {
   render() {
 
     const { year } = this.state
-    console.log("THIS IS THE YEAR!", this.state.year)
     const { society, data, documents, nationalSocieties } = this.props
     const yearOption = d => ({ value: +d.year, label: d.year })
     const yearOptions = uniqBy("value", map(yearOption, documents))
@@ -314,7 +317,41 @@ class Society extends React.Component {
 
                 <div className="col sm-12 lg-8 px1 pb2">
                   <Card>
-                    <CardView>View 0</CardView>
+                    <CardView>
+                      <div className="p1">
+                        <h1 className="subhead mt0 mb1">Income and Expenditure</h1>
+                        <LineChart
+                          height={150}
+                          padding={{
+                            top: 10,
+                            bottom: 30,
+                            left: 50,
+                            right: 16,
+                          }}
+                          domain={{
+                            x: [new Date(earliestData.KPI_Year,1,1), new Date(latestData.KPI_Year,1,1)],
+                            y: [
+                              0,
+                              roundIt(_.maxBy(data, (d) => Number(d.KPI_expenditureLC) || 0).KPI_expenditureLC),
+                            ],
+                          }}
+                          dataset={[
+                            data.map((d, i) => {
+                              return {
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d.KPI_expenditureLC),
+                              }
+                            }),
+                            data.map((d, i) => {
+                              return {
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d.KPI_IncomeLC),
+                              }
+                            })
+                          ]}
+                        />
+                      </div>
+                    </CardView>
                     <CardView>View 1</CardView>
                     <CardView>View 2</CardView>
                     <CardOverlay>
