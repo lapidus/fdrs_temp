@@ -36,7 +36,7 @@ class Societies extends React.Component {
         <header className="px1">
           <div className="clearfix mxn1">
             <div className="col sm-8 sm-offset-2 px1 py1">
-              <h1 className="display-2 m0 thin">{ "National Society" } <span className="color-primary">{ "profiles" }</span></h1>
+              <h1 className="display-1 md-display-2 m0 light">{ "National Society" } <span className="color-primary">{ "profiles" }</span></h1>
             </div>
           </div>
         </header>

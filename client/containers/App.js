@@ -49,9 +49,9 @@ class App extends React.Component {
       >
         <Loader />
 
-        <header className='relative shadow-4 px1'>
+        <header className='relative shadow-4 px1 z-index-1000'>
           <div className='clearfix mxn1'>
-            <div className='col xs-4 sm-5'>
+            <div className='col sm-5'>
               <a href="http://www.ifrc.org" target="_blank"><img
                 src="/img/ifrc-logo-2.png"
                 height={ 68 }
@@ -62,7 +62,7 @@ class App extends React.Component {
                 AND REPORTING SYSTEM</Link>
               </h1>
             </div>
-            <div className='col xs-8 sm-7 text-right'>
+            <div className='col sm-7 text-right sm-visible'>
               <nav className='inline-block'>
                 <ul className='m0 p0'>
                   <li className='inline-block'>

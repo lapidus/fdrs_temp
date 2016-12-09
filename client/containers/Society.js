@@ -145,7 +145,7 @@ class Society extends React.Component {
           <div className="clearfix mxn1">
             <header className="col sm-8 sm-offset-3 px1 py1">
               <p className="color-primary strong m0 small">{ society.NSO_ZON_name }</p>
-              <h1 className="display-2 m0 thin">{ society.NSO_DON_name }</h1>
+              <h1 className="display-1 md-display-2 m0 light">{ society.NSO_DON_name }</h1>
             </header>
           </div>
 

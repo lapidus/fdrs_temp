@@ -34,7 +34,7 @@ class Overview extends React.Component {
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-8 sm-offset-3 px1 py1">
-              <h1 className="display-2 m0 thin">{ "IFRC" } <span className="color-primary">{ "at a glance" }</span></h1>
+              <h1 className="display-1 md-display-2 m0 light">{ "IFRC" } <span className="color-primary">{ "at a glance" }</span></h1>
             </header>
           </div>
 
