@@ -69,6 +69,9 @@ class Society extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    this.setState({
+      year: getLatestYearDocuments(nextProps)
+    })
     // if(nextProps.society.iso_2 !== this.props.society.iso_2) {
     //   const selectedCountry = {}
     //   selectedCountry[nextProps.society.iso_3] = { fillKey: "red" }
