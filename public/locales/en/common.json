@@ -1,3 +1,17 @@
 {
-  "name": "Rio Grande"
+  "name": "Rio Grande",
+  "indicators": {
+    "KPI_noPeopleVolunteering": "People volunteering time",
+    "KPI_noPaidStaff": "Paid staff",
+    "KPI_noPeopleDonatingBlood": "People donating blood",
+    "KPI_noLocalUnits": "Local units",
+    "KPI_IncomeLC": "Income",
+    "KPI_expenditureLC": "Expenditure",
+    "KPI_noPeopleReachedDisaster": "People reached by disaster response and early recovery programmes",
+    "KPI_noPeopleReachedAllServices": "People reached by all services",
+    "KPI_noPeopleReachedHealth": "People reached by health services",
+    "KPI_noPeopleReachedDevelopment": "People reached by development",
+    "KPI_noPeopleReachedServices": "People reached by services",
+    "KPI_noPeopleCoveredPreparedness": "People covered"
+  }
 }

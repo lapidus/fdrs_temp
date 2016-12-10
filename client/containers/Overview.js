@@ -1,14 +1,23 @@
 
 import React from "react"
+import { connect } from "react-redux"
 import { Link } from "react-router"
 import Breadcrumbs from "../components/Breadcrumbs"
+import Textfield from "../components/Textfield"
 
 import StickySidebar from "../components/StickySidebar"
 import ReactIScroll from "react-iscroll"
-var iScroll = require("iscroll");
+var iScroll = require("iscroll")
+
+import { fetchNationalSocieties } from "../actions/appActions"
 
 class Overview extends React.Component {
   render() {
+
+    const { i18n } = this.context
+    const { language } = i18n
+    const pageData = i18n.store.data[language]["common"]
+
     return (
       <section>
 
@@ -41,27 +50,28 @@ class Overview extends React.Component {
           <div className="clearfix mxn1">
             <aside className="col sm-3 pl1 md-pl0 md-2 md-offset-1 pr1 sm-visible">
               <StickySidebar>
-                <div className="pb1">
-                  <h1 className="title mt0">Indicators</h1>
-                  {/* <Textfield placeholder="Search..." onChange={this.filterSocieties} /> */}
+                <div className="pb2">
+                  <h1 className="title mt0">National Societies</h1>
+                  <Textfield placeholder="Select societies..." />
                 </div>
-                <ReactIScroll iScroll={iScroll} options={{ mouseWheel: true, scrollbars: true, fadeScrollbars: false }} onScrollStart={this.onScrollStart}>
-                  <div className="pr2 pb3">
-                    <ul>
-                      <li>Indicator</li>
-                      <li>Indicator</li>
-                      <li>Indicator</li>
-                      <li>Indicator</li>
-                      <li>Indicator</li>
-                      <li>Indicator</li>
-                      <li>Indicator</li>
-                    </ul>
-                  </div>
-                </ReactIScroll>
+                <div>
+                  <h1 className="title my0">Indicators</h1>
+                  <ReactIScroll iScroll={iScroll} options={{ mouseWheel: true, scrollbars: true, fadeScrollbars: false }} onScrollStart={this.onScrollStart}>
+                    <div className="pr2 pb3">
+                      <ul className="p0">
+                        {
+                          Object.keys(pageData.indicators).map((indicatorKey, i) => (
+                            <li key={ i } className="block py05">{ pageData.indicators[indicatorKey] }</li>
+                          ))
+                        }
+                      </ul>
+                    </div>
+                  </ReactIScroll>
+                </div>
               </StickySidebar>
             </aside>
 
-            <div className="col sm-9 md-8 px1">
+            <div className="col sm-9 md-8 px1 pb3">
               <svg width="960px" height="460px" viewBox="0 0 960 460">
                 <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g>
@@ -109,24 +119,47 @@ class Overview extends React.Component {
                 </g>
               </svg>
 
-              <ul>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-                <li>Society</li>
-              </ul>
+              <table className="base-12 text-left mb2">
+                <tbody>
+                  <tr className="shadow-2">
+                    <th className="p1 sm-4">{ "National Society" }</th>
+                    <th className="p1 sm-4">{ "Trend" }</th>
+                    <th className="p1 sm-4">{ "Latest number" }</th>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table className="base-12 text-left">
+                <tbody>
+                  <tr className="shadow-2">
+                    <td className="p1 sm-4">{ "IFRC (all National Societies)" }</td>
+                    <td className="p1 sm-4">{ "Trendline" }</td>
+                    <td className="p1 sm-4">{ "16,031,869" }</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div className="clearfix relative my2">
+                <hr />
+                <div className="absolute t0 l0 y-center-self px1 bg-white color-primary small strong">
+                  { "Select National Societies" }
+                </div>
+              </div>
+
+              <table className="base-12 text-left shadow-2">
+                <tbody>
+                  {
+                    this.props.nationalSocieties.map((NS, i) => (
+                      <tr key={i}>
+                        <td className="p1 sm-4">{ NS.NSO_DON_name }</td>
+                        <td className="p1 sm-4">{ "Trendline" }</td>
+                        <td className="p1 sm-4">{ "16,031,869" }</td>
+                      </tr>
+                    ))
+                  }
+                </tbody>
+              </table>
+
             </div>
 
           </div>
@@ -137,4 +170,17 @@ class Overview extends React.Component {
   }
 }
 
-export default Overview
+Overview.contextTypes = {
+  i18n: React.PropTypes.object.isRequired,
+}
+
+Overview.propTypes = {
+  nationalSocieties: React.PropTypes.array,
+}
+Overview.needs = [ fetchNationalSocieties ]
+
+const mapStateToProps = state => ({
+  nationalSocieties: state.appReducer.nationalSocieties,
+})
+
+export default connect(mapStateToProps)(Overview)

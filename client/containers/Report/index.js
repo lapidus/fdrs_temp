@@ -145,4 +145,4 @@ const mapDispatchToProps = dispatch => ({
   toggleNav: () => dispatch(toggleNav()),
 })
 
-export default translate()(connect(mapStateToProps, mapDispatchToProps)(Report))
+export default translate([ "report-common" ], { wait: true })(connect(mapStateToProps, mapDispatchToProps)(Report))
