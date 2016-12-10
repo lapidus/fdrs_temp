@@ -142,7 +142,29 @@ class Overview extends React.Component {
               <div className="clearfix relative my2">
                 <hr />
                 <div className="absolute t0 l0 y-center-self px1 bg-white color-primary small strong">
-                  { "Select National Societies" }
+                  { "Selected National Societies" }
+                </div>
+              </div>
+
+              <table className="base-12 text-left shadow-2">
+                <tbody>
+                  <tr>
+                    <td className="p1 sm-4">{ "Selected society" }</td>
+                    <td className="p1 sm-4">{ "Trendline" }</td>
+                    <td className="p1 sm-4">{ "16,031,869" }</td>
+                  </tr>
+                  <tr>
+                    <td className="p1 sm-4">{ "Selected society" }</td>
+                    <td className="p1 sm-4">{ "Trendline" }</td>
+                    <td className="p1 sm-4">{ "16,031,869" }</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div className="clearfix relative my2">
+                <hr />
+                <div className="absolute t0 l0 y-center-self px1 bg-white color-primary small strong">
+                  { "All National Societies" }
                 </div>
               </div>
 
