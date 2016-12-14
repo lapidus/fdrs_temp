@@ -82,14 +82,14 @@ class App extends React.Component {
                   </li>
                   <li className='inline-block'>
                     <span className='inline-block'>
-                      <Select
+                      {/* <Select
                         searchable={ false }
                         clearable={ false }
                         name="language-selector"
                         value={ language }
                         options={ languageOptions }
                         onChange={ this.goToLanguage }
-                      />
+                      /> */}
                     </span>
                     {/* <button className='btn bg-secondary'>
                       <span className='block p1'>EN</span>

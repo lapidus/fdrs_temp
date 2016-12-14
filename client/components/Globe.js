@@ -1,6 +1,6 @@
 
 import React from "react"
-import Datamap from "datamaps"
+// import Datamap from "datamaps"
 import {
   // select,
   // selectAll,
