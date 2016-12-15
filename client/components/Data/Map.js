@@ -55,10 +55,8 @@ class Map extends React.Component {
     this.loadCountries = this.loadCountries.bind(this)
   }
   componentWillReceiveProps(nextProps) {
+    console.log("ADDING PROPS!")
     if(nextProps.indicator.id !== this.props.indicator.id) {
-      console.log("Changing indicator")
-      console.log("from: ", this.props.indicator)
-      console.log("to: ", nextProps.indicator)
     }
     const { groupedTimeSeries, currentYear, indicator } = nextProps
     const currentYearData = groupedTimeSeries[currentYear]
@@ -106,12 +104,21 @@ class Map extends React.Component {
     const { data, indicator, nationalSocieties } = this.props
 
     return (
-      <div className="" style={{ clear: "left" }}>
+      <div className="" style={{ clear: "left", minHeight: '10rem' }}>
         {/* <h2>{ indicator.id } — { indicator.description }</h2> */}
-        <div>
+        {
+          this.state.loading ? (
+            <div>
+              <p className="text-center">{ "Loading map..." }</p>
+            </div>
+          ) : (
+            ""
+          )
+        }
+        <div style={{opacity: this.state.loading ? 0 : 1, transform: `translateY(${this.state.loading ? '30px' : '0'})`, transition: "all 0.75s"}}>
           {
             this.state.loading ? (
-              <p className="text-center">{ "Loading map..." }</p>
+              ""
             ) : (
               <svg width={800} height={520} viewBox="0 0 800 520">
                 <Countries countries={this.state.countries} projection={this.projection} />
@@ -128,7 +135,7 @@ class Map extends React.Component {
                         <circle key={i} cx={this.projection()(coords)[0]} cy={this.projection()(coords)[1]} r={this.state.scale(Number(bubbleData[this.props.indicator.id]))} style={{
                           fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
                           stroke: "#fff",
-                          strokeWidth: "2px"
+                          strokeWidth: "1.5px"
                         }} />
                       )
                     }
