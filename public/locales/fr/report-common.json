@@ -1,101 +1,113 @@
 {
-  "site-title": "Tout le monde compte Bilan jusqu’en 2015",
-  "preTitle": "Tout le monde compte",
-  "reportType": "Bilan",
-  "download": "Télécharger le bilan",
-  "share": "partager",
-  "signature": [
-    "site par:",
-    "Lapidus Interactive"
-  ],
-  "copyright": "@ 2016 IFRC",
-  "home": {
-    "title": ["Tout le monde", "compte", "2015"],
-    "intro": [
-      "À mi-parcours de cette décennie, et à quelques années du centenaire de la Fédération internationale des Sociétés de la Croix-Rouge et du Croissant-Rouge (Fédération), le moment est venu de dresser le bilan de nos réalisations à la lumière des aspirations de la Stratégie 2020.",
-      "Le tableau présenté dans ce rapport est encourageant. En 2013, vous, les Sociétés nationales de la Croix-Rouge et du Croissant-Rouge, avez porté assistance à plus de 110 millions de personnes dans le cadre de vos opérations d'urgence en cas de catastrophe et de vos programmes de relèvement précoce."
+    "site-title": "Tout le monde compte Bilan jusqu\u2019en 2015",
+    "preTitle": "Tout le monde compte",
+    "reportType": "Bilan",
+    "download": "T\u00e9l\u00e9charger le bilan",
+    "share": "partager",
+    "signature": [
+        "site par:",
+        "Lapidus Interactive"
     ],
-    "signatures": [
-      {
-        "name": "Tadateru Konoé",
-        "title": "Président"
-      },
-      {
-        "name": "Elhadj As Sy",
-        "title": "Secrétaire général"
-      }
-    ],
-    "section1": "Section 1",
-    "section2": "Section 2",
-    "section3": "Section 3",
-    "section4": "Section 4",
-    "overview": "Aperçu",
-    "strategicAims": "Objectifs stratégiques",
-    "enablingActions": "Actions facilitatrices",
-    "downloadReportSection": {
-      "preTitle": "Bilan",
-      "title": "Vous voulez en savoir plus?",
-      "body": "Le bilan 2015 est disponible dans les quatre langues officielles de la FICR. Choisissez un téléchargement à partir ci-dessous .",
-      "buttons": ["Télécharger le bilan en anglais", "Télécharger le bilan en français", "Télécharger le bilan en espagnol", "Télécharger le bilan en arabe"]
+    "copyright": "@ 2016 IFRC",
+    "home": {
+        "title": [
+            "Tout le monde",
+            "compte",
+            "2015"
+        ],
+        "intro": [
+            "\u00c0 mi-parcours de cette de\u0301cennie, et a\u0300 quelques anne\u0301es du centenaire de la Fe\u0301de\u0301ration internationale des Socie\u0301te\u0301s de la Croix-Rouge et du Croissant-Rouge (Fe\u0301de\u0301ration), le moment est venu de dresser le bilan de nos re\u0301alisations a\u0300 la lumie\u0300re des aspirations de la Strate\u0301gie 2020.",
+            "Le tableau pr\u00e9sent\u00e9 dans ce rapport est encourageant. En 2013, vous, les Soci\u00e9t\u00e9s nationales de la Croix-Rouge et du Croissant-Rouge, avez port\u00e9 assistance \u00e0 plus de 110 millions de personnes dans le cadre de vos op\u00e9rations d'urgence en cas de catastrophe et de vos programmes de rele\u0300vement pre\u0301coce."
+        ],
+        "signatures": [
+            {
+                "name": "Tadateru Kono\u00e9",
+                "title": "Pre\u0301sident"
+            },
+            {
+                "name": "Elhadj As Sy",
+                "title": "Secre\u0301taire ge\u0301ne\u0301ral"
+            }
+        ],
+        "section1": "Section 1",
+        "section2": "Section 2",
+        "section3": "Section 3",
+        "section4": "Section 4",
+        "overview": "Aper\u00e7u",
+        "strategicAims": "Objectifs strat\u00e9giques",
+        "enablingActions": "Actions facilitatrices",
+        "downloadReportSection": {
+            "preTitle": "Bilan",
+            "title": "Vous voulez en savoir plus?",
+            "body": "Le bilan 2015 est disponible dans les quatre langues officielles de la FICR. Choisissez un t\u00e9l\u00e9chargement \u00e0 partir ci-dessous .",
+            "buttons": [
+                "T\u00e9l\u00e9charger le bilan en anglais",
+                "T\u00e9l\u00e9charger le bilan en fran\u00e7ais",
+                "T\u00e9l\u00e9charger le bilan en espagnol",
+                "T\u00e9l\u00e9charger le bilan en arabe"
+            ]
+        },
+        "sections": [
+            {
+                "id": "Section 1",
+                "title": "Aper\u00e7u",
+                "statistic": {
+                    "number": "80M",
+                    "text": "Membres"
+                },
+                "fact": "Le r\u00e9seau mondial de la Croix-Rouge et du Croissant- Rouge s\u2019est \u00e9tendu de mani\u00e8re continue depuis sa naissance en 1863. Il compte 190 Soci\u00e9t\u00e9s nationales depuis 2015.",
+                "quote": "Toutes nos actions sont guide\u0301es par nos Principes fondamentaux, lesquels s\u2019inspirent de l\u2019expe\u0301rience collective accumule\u0301e depuis plus d\u2019un sie\u0300cle."
+            },
+            {
+                "id": "Section 2",
+                "title": "Objectifs strat\u00e9giques",
+                "statistic": {
+                    "number": "110M",
+                    "text": "de personnes ont b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce"
+                },
+                "fact": "La vision de la F\u00e9d\u00e9ration est: Inspirer, encourager, faciliter et promouvoir en tout moment toutes les formes d'activit\u00e9s humanitaires des Soci\u00e9t\u00e9es Nationales, en visant \u00e0 pr\u00e9venir et appaiser les souffrances humaines, ce qui contribue a maintenir et promouvoir le respect de la dignit\u00e9 et la paix dans le monde.",
+                "quote": "Depuis leurs d\u00e9buts, la Croix-Rouge et le Croissant-Rouge sont surtout connus pour leur mission, qui est d\u2019apporter une aide d\u2019urgence et un r\u00e9confort aux personnes en d\u00e9tresse."
+            },
+            {
+                "quote": "Depuis l\u2019adoption de la Strat\u00e9gie 2020, les principales mesures prises pour am\u00e9liorer notre fonctionnement en tant que F\u00e9d\u00e9ration ont consist\u00e9 \u00e0 renforcer notre gouvernance, \u00e0 mettre en place un cadre de redevabilit\u00e9 et \u00e0 promouvoir une culture de l\u2019apprentissage."
+            }
+        ]
     },
-    "sections": [
-      {
-        "id": "Section 1",
-        "title": "Aperçu",
-        "statistic": {
-          "number": "80M",
-          "text": "Membres"
+    "chapters": {
+        "chapter2": {
+            "title": "Ce que nous faisons"
         },
-        "fact": "Le réseau mondial de la Croix-Rouge et du Croissant- Rouge s’est étendu de manière continue depuis sa naissance en 1863. Il compte 190 Sociétés nationales depuis 2015.",
-        "quote": "Toutes nos actions sont guidées par nos Principes fondamentaux, lesquels s’inspirent de l’expérience collective accumulée depuis plus d’un siècle."
-      },
-      {
-        "id": "Section 2",
-        "title": "Objectifs stratégiques",
-        "statistic": {
-          "number": "110M",
-          "text": "de personnes ont bénéficié des programmes d’intervention en cas de catastrophe et de relèvement précoce"
+        "chapter3": {
+            "title": "Nos principes fondamentaux en action"
         },
-        "fact": "La vision de la Fédération est: Inspirer, encourager, faciliter et promouvoir en tout moment toutes les formes d'activités humanitaires des Sociétées Nationales, en visant à prévenir et appaiser les souffrances humaines, ce qui contribue a maintenir et promouvoir le respect de la dignité et la paix dans le monde.",
-        "quote": "Depuis leurs débuts, la Croix-Rouge et le Croissant-Rouge sont surtout connus pour leur mission, qui est d’apporter une aide d’urgence et un réconfort aux personnes en détresse."
-      },
-      {
-        "id": "Section 3",
-        "title": "Actions facilitatrices",
-        "statistic": {
-          "number": "190",
-          "text": "Sociétés nationales"
+        "chapter4": {
+            "pretitle": "Objectif strat\u00e9gique 1",
+            "title": "Sauver des views, prot\u00e9ger les moyens d'existence et renforcer le rel\u00e8vement apr\u00e8s les catastrophes et les crises"
         },
-        "fact": "La capacité combinée des Sociétés nationales de fournir des services est la principale force de la Fédération et du Mouvement dans son ensemble.",
-        "quote": "Depuis l’adoption de la Stratégie 2020, les principales mesures prises pour améliorer notre fonctionnement en tant que Fédération ont consisté à renforcer notre gouvernance, à mettre en place un cadre de redevabilité et à promouvoir une culture de l’apprentissage."
-      },
-      {
-        "id": "Section 4",
-        "title": "Annexes"
-      }
-    ]
-  },
-  "chapters": {
-    "chapter1": { "title": "Qui nous sommes" },
-    "chapter2": { "title": "Ce que nous faisons" },
-    "chapter3": { "title": "Nos principes fondamentaux en action" },
-    "chapter4": { "pretitle": "Objectif stratégique 1", "title": "Sauver des views, protéger les moyens d'existence et renforcer le relèvement après les catastrophes et les crises" },
-    "chapter5": { "pretitle": "Objectif stratégique 2", "title": "Promouvoir des modes de vie sains et sûrs" },
-    "chapter6": { "pretitle": "Objectif stratégique 3", "title": "Promouvoir l'intégration sociale et une culture de non-violence et de paix" },
-    "chapter7": { "pretitle": "Action facilitatrice 1", "title": "Bâtir des sociétés nationales de la croix-rouge et du croissant-rouge fortes" },
-    "chapter8": { "pretitle": "Action facilitatrice 2", "title": "Mener des activités de diplomatie humanitaire pour prévenir et réduire la vulnérabilité dans un monde interdépendant" },
-    "chapter9": { "pretitle": "Action facilitatrice 3", "title": "Fonctionner de manière efficace en tant que fédération internationale" },
-    "data": {
-      "preTitle": "Outils de données",
-      "title": "Explorez les données",
-      "body": [
-        "Voir les sept indicateurs clés dans toutes les Sociétés nationales",
-        "Trouvez des informations sur votre Société nationale"
-      ],
-      "button": "Explorez les données"
-    },
-    "acknowledgements": {
-      "title": "Remerciements"
+        "chapter5": {
+            "pretitle": "Objectif strat\u00e9gique 2",
+            "title": "Promouvoir des modes de vie sains et s\u00fbrs"
+        },
+        "chapter6": {
+            "pretitle": "Objectif strat\u00e9gique 3",
+            "title": "Promouvoir l'int\u00e9gration sociale et une culture de non-violence et de paix"
+        },
+        "chapter7": {
+            "pretitle": "Action facilitatrice 1",
+            "title": "B\u00e2tir des soci\u00e9t\u00e9s nationales de la croix-rouge et du croissant-rouge fortes"
+        },
+        "chapter8": {
+            "pretitle": "Action facilitatrice 2",
+            "title": "Mener des activit\u00e9s de diplomatie humanitaire pour pr\u00e9venir et r\u00e9duire la vuln\u00e9rabilit\u00e9 dans un monde interd\u00e9pendant"
+        },
+        "chapter9": {
+            "pretitle": "Action facilitatrice 3"
+        },
+        "data": {
+            "title": "Explorez les donn\u00e9es"
+        },
+        "acknowledgements": {
+            "title": "Remerciements"
+        }
     }
-  }
 }

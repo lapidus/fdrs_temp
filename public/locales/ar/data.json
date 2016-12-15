@@ -1,19 +1,18 @@
 {
-  "indicators": {
-    "KPI_Number_of_People_Volunteering": "المتطوعين",
-    "KPI_Number_of_PaidStaff": "الموظفين المأجورين",
-    "KPI_Total_Number_of_People_Donating_Blood": "المتبرعين بالدم",
-    "KPI_Number_of_Local_Units": "الوحدات المحلية",
-    "KPI_Number_of_People_Reached_AllServices": "الأشخاص الذين تم الوصول إليهم",
-    "Total_Expenditure_CHF": "النفقات",
-    "Total_Income_CHF": "الإيرادات"
-  },
-
-  "regions": {
-    "asia" : "Asia and the Pacific",
-    "americas" : "Americas",
-    "europe" : "Europe",
-    "middleeast" : "Middle East and North Africa",
-    "africa" : "Africa"
-  }
+    "indicators": {
+        "KPI_Number_of_People_Volunteering": "\u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646",
+        "KPI_Number_of_PaidStaff": "\u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0627\u0644\u0645\u0623\u062c\u0648\u0631\u064a\u0646",
+        "KPI_Total_Number_of_People_Donating_Blood": "\u0627\u0644\u0645\u062a\u0628\u0631\u0639\u064a\u0646 \u0628\u0627\u0644\u062f\u0645",
+        "KPI_Number_of_Local_Units": "\u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u064a\u0629",
+        "KPI_Number_of_People_Reached_AllServices": "\u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0627\u0644\u0630\u064a\u0646 \u062a\u0645 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u064a\u0647\u0645",
+        "Total_Expenditure_CHF": "\u0627\u0644\u0646\u0641\u0642\u0627\u062a",
+        "Total_Income_CHF": "\u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a"
+    },
+    "regions": {
+        "asia": "Asia and the Pacific",
+        "americas": "Americas",
+        "europe": "Europe",
+        "middleeast": "Middle East and North Africa",
+        "africa": "Africa"
+    }
 }

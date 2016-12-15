@@ -1,6 +1,6 @@
 {
-  "intro" : {
-    "title" : "Data insights for National Societies",
-    "lead" : "FDRS provides crucial insights, reports and analytical tools for National Societies and the IFRC secretariat."
-  }
+    "intro": {
+        "title": "Data insights for National Societies",
+        "lead": "FDRS provides crucial insights, reports and analytical tools for National Societies and the IFRC secretariat."
+    }
 }

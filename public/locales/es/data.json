@@ -1,19 +1,18 @@
 {
-  "indicators": {
-    "KPI_Number_of_People_Volunteering": "Voluntarios",
-    "KPI_Number_of_PaidStaff": "Personal remunerado",
-    "KPI_Total_Number_of_People_Donating_Blood": "Donantes de sangre",
-    "KPI_Number_of_Local_Units": "Unidades locales",
-    "KPI_Number_of_People_Reached_AllServices": "Beneficiarios",
-    "Total_Expenditure_CHF": "Gastos",
-    "Total_Income_CHF": "Ingresos"
-  },
-
-  "regions": {
-    "asia" : "Asia and the Pacific",
-    "americas" : "Americas",
-    "europe" : "Europe",
-    "middleeast" : "Middle East and North Africa",
-    "africa" : "Africa"
-  }
+    "indicators": {
+        "KPI_Number_of_People_Volunteering": "Voluntarios",
+        "KPI_Number_of_PaidStaff": "Personal remunerado",
+        "KPI_Total_Number_of_People_Donating_Blood": "Donantes de sangre",
+        "KPI_Number_of_Local_Units": "Unidades locales",
+        "KPI_Number_of_People_Reached_AllServices": "Beneficiarios",
+        "Total_Expenditure_CHF": "Gastos",
+        "Total_Income_CHF": "Ingresos"
+    },
+    "regions": {
+        "asia": "Asia and the Pacific",
+        "americas": "Americas",
+        "europe": "Europe",
+        "middleeast": "Middle East and North Africa",
+        "africa": "Africa"
+    }
 }
