@@ -88,8 +88,8 @@ class Overview extends React.Component {
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-8 sm-offset-3 px1 py1">
-              <h1 className="display-1 md-display-2 m0 light">{ "IFRC" } <span className="color-primary">{ "at a glance" }</span></h1>
-              <p>{ pageData.indicators[this.state.currentIndicator.id] }</p>
+              <h1 className="color-primary strong m0 small">{ "IFRC" } <span className="color-primary">{ "at a glance" }</span></h1>
+              <p className="display-1 md-display-2 m0 light">{ pageData.indicators[this.state.currentIndicator.id] }</p>
             </header>
           </div>
 
@@ -138,6 +138,8 @@ class Overview extends React.Component {
               <div className="relative">
                 <Map indicator={this.state.currentIndicator}
                      data={this.props.data}
+                     groupedTimeSeries={this.state.groupedTimeSeries}
+                     currentYear={this.state.currentYear}
                      nationalSocieties={this.props.nationalSocieties}
                      societiesBlacklist={this.state.societiesBlacklist}
                      />
@@ -160,7 +162,7 @@ class Overview extends React.Component {
                 </tbody>
               </table>
 
-              <table className="base-12 text-left">
+              {/* <table className="base-12 text-left">
                 <tbody>
                   <tr className="shadow-2">
                     <td className="p1 sm-4">{ "IFRC (all National Societies)" }</td>
@@ -168,7 +170,7 @@ class Overview extends React.Component {
                     <td className="p1 sm-4">{ "16,031,869" }</td>
                   </tr>
                 </tbody>
-              </table>
+              </table> */}
 
               {
                 this.state.selectedSocieties.length > 0 ? (
@@ -216,15 +218,26 @@ class Overview extends React.Component {
                 )
               }
 
-              <div className="clearfix relative my2">
-                <hr />
-                <div className="absolute t0 l0 y-center-self px1 bg-white color-primary small strong">
-                  { "All National Societies" }
-                </div>
-              </div>
+              {
+                this.state.selectedSocieties.length > 0 ? (
+                  <div className="clearfix relative my2">
+                    <hr />
+                    <div className="absolute t0 l0 y-center-self px1 bg-white color-primary small strong">
+                      { "All National Societies" }
+                    </div>
+                  </div>
+                ) : (
+                  ""
+                )
+              }
 
               <table className="base-12 text-left shadow-2">
                 <tbody>
+                  <tr>
+                    <td className="p1 sm-4">{ "IFRC (all National Societies)" }</td>
+                    <td className="p1 sm-4">{ "Trendline" }</td>
+                    <td className="p1 sm-4">{ "16,031,869" }</td>
+                  </tr>
                   {
                     this.props.nationalSocieties.map((NS, i) => {
                       return this.state.societiesBlacklist.indexOf(NS.KPI_DON_Code) == -1 ? (

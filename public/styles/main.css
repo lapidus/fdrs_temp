@@ -2221,3 +2221,8 @@ tr:last-of-type > td {
   .Select-option {
     padding: 0.25rem 1rem;
   }
+
+  circle {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }

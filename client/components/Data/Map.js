@@ -1,11 +1,14 @@
 import React from "react"
 import { connect } from "react-redux"
 import groupBy from "lodash/groupBy"
+import minBy from "lodash/minBy"
+import maxBy from "lodash/maxBy"
 
 import Countries from "./Countries"
 
 import {
-  json
+  json,
+  scaleLinear
 } from "d3"
 import {
   geoPath,
@@ -29,12 +32,49 @@ class Map extends React.Component {
   constructor(props) {
     super(props)
 
+    const { groupedTimeSeries, currentYear, indicator } = this.props
+    const currentYearData = groupedTimeSeries[currentYear]
+
+    const maxArray = Object.keys(groupedTimeSeries).map(year => {
+      const { id } = indicator
+      return Number(maxBy(groupedTimeSeries[year], o => Number(o[id]))[id])
+    })
+
+    const min = 0
+    const max = Number(maxBy(maxArray))
+
     this.state = {
       countries: null,
       loading: true,
+      currentYearData: currentYearData,
+      minData: min,
+      maxData: max,
+      scale: scaleLinear().domain([min, max]).range([4,40])
     }
 
     this.loadCountries = this.loadCountries.bind(this)
+  }
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.indicator.id !== this.props.indicator.id) {
+      console.log("Changing indicator")
+      console.log("from: ", this.props.indicator)
+      console.log("to: ", nextProps.indicator)
+    }
+    const { groupedTimeSeries, currentYear, indicator } = nextProps
+    const currentYearData = groupedTimeSeries[currentYear]
+    const maxArray = Object.keys(groupedTimeSeries).map(year => {
+      const { id } = indicator
+      return Number(maxBy(groupedTimeSeries[year], o => Number(o[id]))[id])
+    })
+    const min = 0
+    const max = maxBy(maxArray)
+
+    this.setState({
+      currentYearData: currentYearData,
+      minData: min,
+      maxData: max,
+      scale: scaleLinear().domain([min, max]).range([4,40])
+    })
   }
   projection() {
     return geoNaturalEarth()
@@ -77,14 +117,22 @@ class Map extends React.Component {
                 <Countries countries={this.state.countries} projection={this.projection} />
                 {
                   nationalSocieties.map((bubble, i) => {
+
                     const lat  = Number(bubble.lat)
                     const long = Number(bubble.long)
                     const coords = long && lat ? [long, lat] : undefined
-                    return coords ? <circle key={i} cx={this.projection()(coords)[0]} cy={this.projection()(coords)[1]} r={8} style={{
-                      fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
-                      stroke: "#fff",
-                      strokeWidth: "2px"
-                    }} /> : false
+                    const bubbleData = this.state.currentYearData.find((d) => d.KPI_DON_Code == bubble.KPI_DON_Code)
+
+                    if(bubbleData && coords) {
+                      return (
+                        <circle key={i} cx={this.projection()(coords)[0]} cy={this.projection()(coords)[1]} r={this.state.scale(Number(bubbleData[this.props.indicator.id]))} style={{
+                          fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
+                          stroke: "#fff",
+                          strokeWidth: "2px"
+                        }} />
+                      )
+                    }
+
                   })
                 }
               </svg>
