@@ -1,343 +1,552 @@
 {
-  "chapter": "5",
-  "slug": "strategic-aim-2",
-  "title": "Strategic aim 2",
-  "subtitle": "Healthy and safe living",
-  "intro": "For the IFRC, the community resilience approach is, in many ways, just the modern designation of how we have worked with communities for many decades.",
-  "sections": [
-    {
-      "title": "People reached by long-term services",
-      "blocks": [
-        "Our National Societies achieve this through their volunteers, who engage their own communities via education and training. By getting to know their own specific hazards and by analysing their risks and vulnerabilities, they are able to develop the appropriate solutions for their local context.",
+    "chapter": "5",
+    "slug": "strategic-aim-2",
+    "title": "Strategic aim 2",
+    "subtitle": "Healthy and safe living",
+    "intro": "For the IFRC, the community resilience approach is, in many ways, just the modern designation of how we have worked with communities for many decades.",
+    "sections": [
         {
-          "type": "chart",
-          "title": "People reached",
-          "axisLabels": {"x": "Years", "y": ""},
-          "caption": "Source: FDRS"
-        },
-        "Overall, the IFRC network reached nearly 161 million people with one or more long-term services in 2013, an increase of 55 per cent on the 103.4 million reported in 2012. This increase is partly due to more National Societies reporting on this indicator.",
-        "The Americas region has the largest outreach with  long-term programmes reflecting the historical roots of Red Cross work there. Gender-disaggregated reporting is a significant general weakness and will be strengthened in future years.",
-        {
-          "type": "chart",
-          "title": "People reached by region and gender",
-          "dataset": [
-            {
-              "name": "Americas",
-              "index": 1,
-              "first": 24431270,
-              "second": 19398807,
-              "rest": 17024418,
-              "names": ["Argentine Red Cross", "Canadian Red Cross"]
-            },
-            {
-              "name": "Africa",
-              "index": 2,
-              "first": 8640267,
-              "second": 7367549,
-              "rest": 14225882,
-              "names": ["Mali Red Cross", "Kenyan Red Cross"]
-            },
-            {
-              "name": "Asia and the Pacific",
-              "index": 3,
-              "first": 7525024,
-              "second": 7148247,
-              "rest": 11430773,
-              "names": ["The Republic of Korea National Red Cross", "Vietnam"]
-            },
-            {
-              "name": "Europe",
-              "index": 4,
-              "first": 7371570,
-              "second": 6264920,
-              "rest": 12191129,
-              "names": ["German Red Cross", "Spain"]
-            },
-            {
-              "name": "Middle East and North Africa",
-              "index": 5,
-              "first": 16179974,
-              "second": 670000,
-              "rest": 813308,
-              "names": ["Red Crescent Society of the Islamic Republic of Iran", "??"]
-            }
-          ],
-          "caption": "Source: FDRS"
-        },
-        "The IFRC secretariat’s annual mapping of disaster risk reduction services indicates a progressive scaling-up since the beginning of the decade. By 2014, 151.7 million Swiss francs were being spent in 121 National Societies to reach 31.2 million people.",
-        {
-          "type": "chart",
-          "title": "Disaster risk reduction: reaching more with increased investment",
-          "axisLabels": {
-            "x": "Years",
-            "y": ""
-          },
-          "lineLabels": ["Expenditure\n(CHF millions)", "People reached\n(millions)"],
-          "dataset": [
-            [
-              {"year": 2010, "value": 17.6},
-              {"year": 2011, "value": 20.3},
-              {"year": 2012, "value": 23.3},
-              {"year": 2013, "value": 25.6},
-              {"year": 2014, "value": 31.2}
-            ],
-            [
-              {"year": 2010, "value": 88.1},
-              {"year": 2011, "value": 95.3},
-              {"year": 2012, "value": 109.8},
-              {"year": 2013, "value": 122.3},
-              {"year": 2014, "value": 151.7}
+            "title": "People reached by long-term services",
+            "blocks": [
+                "Our National Societies achieve this through their volunteers, who engage their own communities via education and training. By getting to know their own specific hazards and by analysing their risks and vulnerabilities, they are able to develop the appropriate solutions for their local context.",
+                {
+                    "type": "chart",
+                    "title": "People reached",
+                    "axisLabels": {
+                        "x": "Years"
+                    },
+                    "caption": "Source: FDRS"
+                },
+                "Overall, the IFRC network reached nearly 161 million people with one or more long-term services in 2013, an increase of 55 per cent on the 103.4 million reported in 2012. This increase is partly due to more National Societies reporting on this indicator.",
+                "The Americas region has the largest outreach with  long-term programmes reflecting the historical roots of Red Cross work there. Gender-disaggregated reporting is a significant general weakness and will be strengthened in future years.",
+                {
+                    "type": "chart",
+                    "title": "People reached by region and gender",
+                    "dataset": [
+                        {
+                            "name": "Americas",
+                            "index": "1",
+                            "first": "24431270",
+                            "second": "19398807",
+                            "rest": "17024418",
+                            "names": [
+                                "Argentine Red Cross",
+                                "Canadian Red Cross"
+                            ]
+                        },
+                        {
+                            "name": "Africa",
+                            "index": "2",
+                            "first": "8640267",
+                            "second": "7367549",
+                            "rest": "14225882",
+                            "names": [
+                                "Mali Red Cross",
+                                "Kenyan Red Cross"
+                            ]
+                        },
+                        {
+                            "name": "Asia and the Pacific",
+                            "index": "3",
+                            "first": "7525024",
+                            "second": "7148247",
+                            "rest": "11430773",
+                            "names": [
+                                "The Republic of Korea National Red Cross",
+                                "Vietnam"
+                            ]
+                        },
+                        {
+                            "name": "Europe",
+                            "index": "4",
+                            "first": "7371570",
+                            "second": "6264920",
+                            "rest": "12191129",
+                            "names": [
+                                "German Red Cross",
+                                "Spain"
+                            ]
+                        },
+                        {
+                            "name": "Middle East and North Africa",
+                            "index": "5",
+                            "first": "16179974",
+                            "second": "670000",
+                            "rest": "813308",
+                            "names": [
+                                "Red Crescent Society of the Islamic Republic of Iran",
+                                "??"
+                            ]
+                        }
+                    ],
+                    "caption": "Source: FDRS"
+                },
+                "The IFRC secretariat\u2019s annual mapping of disaster risk reduction services indicates a progressive scaling-up since the beginning of the decade. By 2014, 151.7 million Swiss francs were being spent in 121 National Societies to reach 31.2 million people.",
+                {
+                    "type": "chart",
+                    "title": "Disaster risk reduction: reaching more with increased investment",
+                    "axisLabels": {
+                        "x": "Years"
+                    },
+                    "lineLabels": [
+                        "Expenditure\\n(CHF millions)",
+                        "People reached\\n(millions)"
+                    ],
+                    "dataset": [
+                        [
+                            {
+                                "year": "2010",
+                                "value": "17.6"
+                            },
+                            {
+                                "year": "2011",
+                                "value": "20.3"
+                            },
+                            {
+                                "year": "2012",
+                                "value": "23.3"
+                            },
+                            {
+                                "year": "2013",
+                                "value": "25.6"
+                            },
+                            {
+                                "year": "2014",
+                                "value": "31.2"
+                            }
+                        ],
+                        [
+                            {
+                                "year": "2010",
+                                "value": "88.1"
+                            },
+                            {
+                                "year": "2011",
+                                "value": "95.3"
+                            },
+                            {
+                                "year": "2012",
+                                "value": "109.8"
+                            },
+                            {
+                                "year": "2013",
+                                "value": "122.3"
+                            },
+                            {
+                                "year": "2014",
+                                "value": "151.7"
+                            }
+                        ]
+                    ],
+                    "caption": "Source: Community Preparedness and Risk Reduction Department"
+                }
             ]
-          ],
-          "caption": "Source: Community Preparedness and Risk Reduction Department"
-        }
-      ]
-    },
-    {
-      "title": "Climate change",
-      "blocks": [
-        "International consensus on the importance and urgency of tackling climate change has grown over recent years, and the IFRC focus is on building resilience. We contribute to climate change adaptation through scaling up our disaster risk reduction work, and we see our role in climate change mitigation through promoting sustainable community development that is respectful of the environment and optimises communities’ carbon footprints.",
-        {
-          "type": "image",
-          "title": "image title missing",
-          "caption": ""
         },
-        "Starting by “climate proofing” existing programmes and services where feasible, National Societies are proactively engaging with their countries’ National Adaptation Plans on a range of actions. For example, the Kenya Red Cross Society has been helping to build “climate-smart” food security in the drought-prone North Eastern province, the Rwandan Red Cross has been working on rainwater harvesting, and the Indian Red Cross Society on flood plains management in Bihar and Odisha states. The Red Cross societies in Togo and Uganda have been breaking new ground, with German Red Cross support, in early warning early action with forecast-based financing. The Netherlands Red Cross and the Red Cross and Red Crescent Climate Centre are in the vanguard of a Partners for Resilience programme that has reached out to hundreds of local communities across several ecosystems around the world with local climate-smart risk reduction interventions."
-      ]
-    },
-    {
-      "title": "Road safety",
-      "blocks": [
-        "Each year 1.24 million lives are lost on our roads and a further 50 million people suffer serious injuries. Road traffic deaths are the 8th biggest killer in the world, and the biggest killer of those aged 15-24. Fifty per cent of all road traffic deaths are among pedestrians, cyclists, or motorcycle riders. Seventy-five per cent of road traffic deaths are men. Low and middle-income countries account for only 53 per cent of the world’s vehicles, yet suffer 92 per cent of the world’s road fatalities.",
         {
-          "type": "tabs",
-          "title": "Road Safety Involvement and Activities",
-          "tabs": [
-            {
-              "name": "Involvement",
-              "headers": [
-                "Region",
-                "Percentage of National Societies in each region carrying out road safety activities",
-                "Percentage of National Societies in each region interested in strengthening/expanding road safety activities"
-              ],
-              "dataset": [
+            "title": "Climate change",
+            "blocks": [
+                "International consensus on the importance and urgency of tackling climate change has grown over recent years, and the IFRC focus is on building resilience. We contribute to climate change adaptation through scaling up our disaster risk reduction work, and we see our role in climate change mitigation through promoting sustainable community development that is respectful of the environment and optimises communities\u2019 carbon footprints.",
                 {
-                  "region": "Africa",
-                  "percentage1": 54,
-                  "percentage2": 73
+                    "type": "image",
+                    "title": "image title missing"
                 },
+                "Starting by \u201cclimate proofing\u201d existing programmes and services where feasible, National Societies are proactively engaging with their countries\u2019 National Adaptation Plans on a range of actions. For example, the Kenya Red Cross Society has been helping to build \u201cclimate-smart\u201d food security in the drought-prone North Eastern province, the Rwandan Red Cross has been working on rainwater harvesting, and the Indian Red Cross Society on flood plains management in Bihar and Odisha states. The Red Cross societies in Togo and Uganda have been breaking new ground, with German Red Cross support, in early warning early action with forecast-based financing. The Netherlands Red Cross and the Red Cross and Red Crescent Climate Centre are in the vanguard of a Partners for Resilience programme that has reached out to hundreds of local communities across several ecosystems around the world with local climate-smart risk reduction interventions."
+            ]
+        },
+        {
+            "title": "Road safety",
+            "blocks": [
+                "Each year 1.24 million lives are lost on our roads and a further 50 million people suffer serious injuries. Road traffic deaths are the 8th biggest killer in the world, and the biggest killer of those aged 15-24. Fifty per cent of all road traffic deaths are among pedestrians, cyclists, or motorcycle riders. Seventy-five per cent of road traffic deaths are men. Low and middle-income countries account for only 53 per cent of the world\u2019s vehicles, yet suffer 92 per cent of the world\u2019s road fatalities.",
                 {
-                  "region": "Europe",
-                  "percentage1": 49,
-                  "percentage2": 45
-                },
-                {
-                  "region": "Americas",
-                  "percentage1": 57,
-                  "percentage2": 71
-                },
-                {
-                  "region": "Asia Pacific",
-                  "percentage1": 54,
-                  "percentage2": 66
-                },
-                {
-                  "region": "Middle East and North Africa",
-                  "percentage1": 44,
-                  "percentage2": 56
-                },
-                {
-                  "region": "Global",
-                  "percentage1": 52,
-                  "percentage2": 62
+                    "type": "tabs",
+                    "title": "Road Safety Involvement and Activities",
+                    "tabs": [
+                        {
+                            "name": "Involvement",
+                            "headers": [
+                                "Region",
+                                "Percentage of National Societies in each region carrying out road safety activities",
+                                "Percentage of National Societies in each region interested in strengthening\/expanding road safety activities"
+                            ],
+                            "dataset": [
+                                {
+                                    "region": "Africa",
+                                    "percentage1": "54",
+                                    "percentage2": "73"
+                                },
+                                {
+                                    "region": "Europe",
+                                    "percentage1": "49",
+                                    "percentage2": "45"
+                                },
+                                {
+                                    "region": "Americas",
+                                    "percentage1": "57",
+                                    "percentage2": "71"
+                                },
+                                {
+                                    "region": "Asia Pacific",
+                                    "percentage1": "54",
+                                    "percentage2": "66"
+                                },
+                                {
+                                    "region": "Middle East and North Africa",
+                                    "percentage1": "44",
+                                    "percentage2": "56"
+                                },
+                                {
+                                    "region": "Global",
+                                    "percentage1": "52",
+                                    "percentage2": "62"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Activities",
+                            "headers": [
+                                "Activities",
+                                "No. of activities"
+                            ],
+                            "dataset": [
+                                {
+                                    "activity": "Education for groups (e.g. children, youth, novice, drivers, police officers)",
+                                    "amount": "73"
+                                },
+                                {
+                                    "activity": "Road safety education for staff and volunteers",
+                                    "amount": "47"
+                                },
+                                {
+                                    "activity": "Programmes for protection of road users",
+                                    "amount": "46"
+                                },
+                                {
+                                    "activity": "Road safety capacity building or training (i.e. first aid training)",
+                                    "amount": "46"
+                                },
+                                {
+                                    "activity": "Advocacy for road safety intervention",
+                                    "amount": "45"
+                                },
+                                {
+                                    "activity": "Information dissemination\/aweareness",
+                                    "amount": "5"
+                                }
+                            ]
+                        }
+                    ],
+                    "caption": "Source: Global Road Safety Partnership"
                 }
-              ]
-            },
-            {
-              "name": "Activities",
-              "headers": ["Activities", "No. of activities"],
-              "dataset": [
+            ]
+        },
+        {
+            "title": "Healthy living",
+            "blocks": [
+                "Noting that good health is a state of physical, mental, and social wellbeing, the Red Cross and Red Crescent work in health and social care focuses on tackling inequalities by:",
+                [
+                    "Expanding access of underserved people to primary and public health services including during emergencies",
+                    "Enhancing the healing benefits of edical care through essential nutritional, educational, psychosocial, and rehabilitative interventions",
+                    "Tackling underlying social, behavioural, and environmental factors that determine good health"
+                ],
+                "The Red Cross and Red Crescent is known as the pioneer of first aid in both war and peace, and has undoubtedly saved countless lives over many decades.",
+                "The modern version of this is our integrated Community-based Health and First Aid package, the basic platform for all we do. Going beyond the handling of common injuries, it helps communities to identify and address their priority health issues, advocates health promotion and disease prevention, and prepares volunteers to respond to the health consequences of disasters and other emergencies.",
+                "The national and local burdens of disease vary, and so do the health and social care activities of National Societies. This has shifted over time, as national government health systems have developed to take on more, leaving National Red Cross and Red Crescent Societies to support under-served and auxiliary areas. A sample survey indicated 30 types of health work in 2013",
                 {
-                  "activity": "Education for groups (e.g. children, youth, novice, drivers, police officers)",
-                  "amount": 73
+                    "type": "chart",
+                    "title": "Percentage of National Societies reporting on health services",
+                    "dataset": [
+                        {
+                            "y": "0",
+                            "x": "100%"
+                        },
+                        {
+                            "y": "100",
+                            "x": "First aid"
+                        },
+                        {
+                            "y": "89",
+                            "x": "HIV control"
+                        },
+                        {
+                            "y": "86",
+                            "x": "Psychosocial support"
+                        },
+                        {
+                            "y": "82",
+                            "x": "Blood donation"
+                        },
+                        {
+                            "y": "0",
+                            "x": "75%"
+                        },
+                        {
+                            "y": "69",
+                            "x": "Nutrition"
+                        },
+                        {
+                            "y": "68",
+                            "x": "Sexual and reproductive health"
+                        },
+                        {
+                            "y": "67",
+                            "x": "Community-based health and first aid"
+                        },
+                        {
+                            "y": "66",
+                            "x": "Water, sanitation and hygiene promotion"
+                        },
+                        {
+                            "y": "58",
+                            "x": "Tuberculosis"
+                        },
+                        {
+                            "y": "56",
+                            "x": "Control of noncummunicable diseases"
+                        },
+                        {
+                            "y": "51",
+                            "x": "Support of breastfeeding"
+                        },
+                        {
+                            "y": "50",
+                            "x": "Influenza control"
+                        },
+                        {
+                            "y": "0",
+                            "x": "50%"
+                        },
+                        {
+                            "y": "48",
+                            "x": "Family planning"
+                        },
+                        {
+                            "y": "48",
+                            "x": "Maternal and child nutrition"
+                        },
+                        {
+                            "y": "47",
+                            "x": "Harm reduction"
+                        },
+                        {
+                            "y": "47",
+                            "x": "Routine measles immunisation"
+                        },
+                        {
+                            "y": "46",
+                            "x": "Mental health"
+                        },
+                        {
+                            "y": "44",
+                            "x": "Malaria control"
+                        },
+                        {
+                            "y": "44",
+                            "x": "Antenatal care"
+                        },
+                        {
+                            "y": "44",
+                            "x": "Postnatal care"
+                        },
+                        {
+                            "y": "44",
+                            "x": "Routine polio immunisation"
+                        },
+                        {
+                            "y": "43",
+                            "x": "Measles immunisation campaigns"
+                        },
+                        {
+                            "y": "41",
+                            "x": "Active ageing"
+                        },
+                        {
+                            "y": "39",
+                            "x": "Polio immunisation campaigns"
+                        },
+                        {
+                            "y": "34",
+                            "x": "Other routine immunisation"
+                        },
+                        {
+                            "y": "32",
+                            "x": "Dengue control"
+                        },
+                        {
+                            "y": "25",
+                            "x": "Other disease control"
+                        },
+                        {
+                            "y": "23",
+                            "x": "Other immunisation campaigns"
+                        },
+                        {
+                            "y": "14",
+                            "x": "Other health and social activities"
+                        },
+                        {
+                            "y": "8",
+                            "x": "Other maternal, newborn and child health"
+                        }
+                    ],
+                    "caption": "Source: Health Department"
                 },
+                "In terms of targeting, the majority of National Societies work with youth, children, elderly, people living with HIV, migrants, and people with disabilities",
                 {
-                  "activity": "Road safety education for staff and volunteers",
-                  "amount": 47
-                },
-                {
-                  "activity": "Programmes for protection of road users",
-                  "amount": 46
-                },
-                {
-                  "activity": "Road safety capacity building or training (i.e. first aid training)",
-                  "amount": 46
-                },
-                {
-                  "activity": "Advocacy for road safety intervention",
-                  "amount": 45
-                },
-                {
-                  "activity": "Information dissemination/aweareness",
-                  "amount": 5
+                    "type": "chart",
+                    "title": "Number of National Societies targeting the health needs of specific groups",
+                    "dataset": [
+                        {
+                            "y": "11",
+                            "x": "Transgender persons",
+                            "fill": "#C5C6C6"
+                        },
+                        {
+                            "y": "13",
+                            "x": "Other groups",
+                            "fill": "#756661"
+                        },
+                        {
+                            "y": "20",
+                            "x": "Men who have sex with men",
+                            "fill": "#FED02F"
+                        },
+                        {
+                            "y": "32",
+                            "x": "Drug users",
+                            "fill": "#5A6122"
+                        },
+                        {
+                            "y": "35",
+                            "x": "Sex workers",
+                            "fill": "#D5106E"
+                        },
+                        {
+                            "y": "56",
+                            "x": "Migrants",
+                            "fill": "#1A9FE0"
+                        },
+                        {
+                            "y": "56",
+                            "x": "Persons living with disabilities",
+                            "fill": "#84BB23"
+                        },
+                        {
+                            "y": "60",
+                            "x": "People living with HIV",
+                            "fill": "#5B325D"
+                        },
+                        {
+                            "y": "67",
+                            "x": "Children",
+                            "fill": "#E02726"
+                        },
+                        {
+                            "y": "74",
+                            "x": "Elderly",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "y": "83",
+                            "x": "Youth",
+                            "fill": "#682F26"
+                        }
+                    ],
+                    "caption": "Source: Health Department"
                 }
-              ]
-            }
-          ],
-          "caption": "Source: Global Road Safety Partnership"
+            ]
+        },
+        {
+            "title": "Promoting safe blood systems",
+            "blocks": [
+                "To serve others by donating your spare money, time, or skills is commendable. To give of your own self is truly noble. It is, therefore, unsurprising that the Red Cross and Red Crescent has been associated with blood services ever since the technology became available. Safe and accessible blood supplies are crucial to save or preserve life in medical care and in the aftermath of accidents, violence, and disasters.",
+                {
+                    "type": "chart",
+                    "title": "Number of blood donors",
+                    "dataset": [
+                        {
+                            "name": "Asia and The Pacific",
+                            "index": "1",
+                            "first": "5160000",
+                            "second": "2708173",
+                            "rest": "2168070",
+                            "names": [
+                                "Japanese Red Cross Society",
+                                "The Republic of Korea National Red Cross"
+                            ]
+                        },
+                        {
+                            "name": "Europe",
+                            "index": "2",
+                            "first": "1723440",
+                            "second": "1640882",
+                            "rest": "2979272",
+                            "names": [
+                                "German Red Cross",
+                                "Turkish Red Crescent society"
+                            ]
+                        },
+                        {
+                            "name": "Americas",
+                            "index": "3",
+                            "first": "3349561",
+                            "second": "145701",
+                            "rest": "258180",
+                            "names": [
+                                "American Red Cross",
+                                "??"
+                            ]
+                        },
+                        {
+                            "name": "Middle East and North Africa",
+                            "index": "4",
+                            "first": "223212",
+                            "second": "121204",
+                            "rest": "132964",
+                            "names": [
+                                "??",
+                                "??"
+                            ]
+                        },
+                        {
+                            "name": "Africa",
+                            "index": "5",
+                            "first": "65880",
+                            "second": "27017",
+                            "rest": "46593",
+                            "names": [
+                                "??",
+                                "??"
+                            ]
+                        }
+                    ],
+                    "caption": "Source: FDRS"
+                },
+                "Alongside the World Health Organisation, we strongly believe in a policy of 100 per cent voluntary non-remunerated blood donation, because that is safest. At present, only 60 countries have fully achieved this norm. Given worldwide shortages of blood and its components, there is a long way to go to achieve global blood security. Cultural attitudes are an undoubted constraint in some places. Of the 108 million blood donations collected globally, about 21 million or a fifth are associated with Red Cross and Red Crescent blood services. Males tend to dominate as donors, and the Asia Pacific and Europe regions make the most donations"
+            ]
+        },
+        {
+            "title": "Water and sanitation",
+            "blocks": [
+                "Water and sanitation services are a key part of our emergency response interventions. Additionally, we have a long-term commitment to contribute towards the achievement of Millennium Development Goal 7 that aims to halve, by this year, the proportion of the population without sustainable access to safe drinking water and basic sanitation.",
+                {
+                    "type": "chart",
+                    "title": "Water and sanitation predictions",
+                    "translations": [
+                        "people have access to\\nsafe drinking water",
+                        "people benefited from\\nwater and sanitation\\nservices",
+                        "people have access to an\\nimproved toilet"
+                    ],
+                    "caption": "Source: Health Department"
+                },
+                "We are halfway through the period of the IFRC\u2019s Global Water and Sanitation Initiative 2005\u20132025. The initial target for the Red Cross and Red Crescent was to benefit 5 million people by the end of 2015, but this has been greatly exceeded as we reach towards 15 million this year and set a higher ambition to double this within the next ten years"
+            ]
         }
-      ]
-    },
-    {
-      "title": "Healthy living",
-      "blocks": [
-        "Noting that good health is a state of physical, mental, and social wellbeing, the Red Cross and Red Crescent work in health and social care focuses on tackling inequalities by:",
-        [
-          "Expanding access of underserved people to primary and public health services including during emergencies",
-          "Enhancing the healing benefits of edical care through essential nutritional, educational, psychosocial, and rehabilitative interventions",
-          "Tackling underlying social, behavioural, and environmental factors that determine good health"
-        ],
-        "The Red Cross and Red Crescent is known as the pioneer of first aid in both war and peace, and has undoubtedly saved countless lives over many decades.",
-        "The modern version of this is our integrated Community-based Health and First Aid package, the basic platform for all we do. Going beyond the handling of common injuries, it helps communities to identify and address their priority health issues, advocates health promotion and disease prevention, and prepares volunteers to respond to the health consequences of disasters and other emergencies.",
-        "The national and local burdens of disease vary, and so do the health and social care activities of National Societies. This has shifted over time, as national government health systems have developed to take on more, leaving National Red Cross and Red Crescent Societies to support under-served and auxiliary areas. A sample survey indicated 30 types of health work in 2013",
-        {
-          "type": "chart",
-          "title": "Percentage of National Societies reporting on health services",
-          "dataset": [
-            { "y": 0,   "x": "100%" },
-            { "y": 100, "x": "First aid" },
-            { "y": 89,  "x": "HIV control" },
-            { "y": 86,  "x": "Psychosocial support" },
-            { "y": 82,  "x": "Blood donation" },
-            { "y": 0,   "x": "75%" },
-            { "y": 69,  "x": "Nutrition" },
-            { "y": 68,  "x": "Sexual and reproductive health" },
-            { "y": 67,  "x": "Community-based health and first aid" },
-            { "y": 66,  "x": "Water, sanitation and hygiene promotion" },
-            { "y": 58,  "x": "Tuberculosis" },
-            { "y": 56,  "x": "Control of noncummunicable diseases" },
-            { "y": 51,  "x": "Support of breastfeeding" },
-            { "y": 50,  "x": "Influenza control" },
-            { "y": 0,   "x": "50%" },
-            { "y": 48,  "x": "Family planning" },
-            { "y": 48,  "x": "Maternal and child nutrition" },
-            { "y": 47,  "x": "Harm reduction" },
-            { "y": 47,  "x": "Routine measles immunisation" },
-            { "y": 46,  "x": "Mental health" },
-            { "y": 44,  "x": "Malaria control" },
-            { "y": 44,  "x": "Antenatal care" },
-            { "y": 44,  "x": "Postnatal care" },
-            { "y": 44,  "x": "Routine polio immunisation" },
-            { "y": 43,  "x": "Measles immunisation campaigns" },
-            { "y": 41,  "x": "Active ageing" },
-            { "y": 39,  "x": "Polio immunisation campaigns" },
-            { "y": 34,  "x": "Other routine immunisation" },
-            { "y": 32,  "x": "Dengue control" },
-            { "y": 25,  "x": "Other disease control" },
-            { "y": 23,  "x": "Other immunisation campaigns" },
-            { "y": 14,  "x": "Other health and social activities" },
-            { "y": 8,   "x": "Other maternal, newborn and child health" }
-          ],
-          "caption": "Source: Health Department"
-        },
-        "In terms of targeting, the majority of National Societies work with youth, children, elderly, people living with HIV, migrants, and people with disabilities",
-        {
-          "type": "chart",
-          "title": "Number of National Societies targeting the health needs of specific groups",
-          "dataset": [
-            {"y": 11, "x": "Transgender persons", "fill": "#C5C6C6"},
-            {"y": 13, "x": "Other groups", "fill": "#756661"},
-            {"y": 20, "x": "Men who have sex with men", "fill": "#FED02F"},
-            {"y": 32, "x": "Drug users", "fill": "#5A6122"},
-            {"y": 35, "x": "Sex workers", "fill": "#D5106E"},
-            {"y": 56, "x": "Migrants", "fill": "#1A9FE0"},
-            {"y": 56, "x": "Persons living with disabilities", "fill": "#84BB23"},
-            {"y": 60, "x": "People living with HIV", "fill": "#5B325D"},
-            {"y": 67, "x": "Children", "fill": "#E02726"},
-            {"y": 74, "x": "Elderly", "fill": "#012A39"},
-            {"y": 83, "x": "Youth", "fill": "#682F26"}
-          ],
-          "caption": "Source: Health Department"
-        }
-      ]
-    },
-    {
-      "title": "Promoting safe blood systems",
-      "blocks": [
-        "To serve others by donating your spare money, time, or skills is commendable. To give of your own self is truly noble. It is, therefore, unsurprising that the Red Cross and Red Crescent has been associated with blood services ever since the technology became available. Safe and accessible blood supplies are crucial to save or preserve life in medical care and in the aftermath of accidents, violence, and disasters.",
-        {
-          "type": "chart",
-          "title": "Number of blood donors",
-          "dataset": [
-            {
-              "name": "Asia and The Pacific",
-              "index": 1,
-              "first": 5160000,
-              "second": 2708173,
-              "rest": 2168070,
-              "names": ["Japanese Red Cross Society", "The Republic of Korea National Red Cross"]
-            },
-            {
-              "name": "Europe",
-              "index": 2,
-              "first": 1723440,
-              "second": 1640882,
-              "rest": 2979272,
-              "names": ["German Red Cross", "Turkish Red Crescent society"]
-            },
-            {
-              "name": "Americas",
-              "index": 3,
-              "first": 3349561,
-              "second": 145701,
-              "rest": 258180,
-              "names": ["American Red Cross", "??"]
-            },
-            {
-              "name": "Middle East and North Africa",
-              "index": 4,
-              "first": 223212,
-              "second": 121204,
-              "rest": 132964,
-              "names": ["??", "??"]
-            },
-            {
-              "name": "Africa",
-              "index": 5,
-              "first": 65880,
-              "second": 27017,
-              "rest": 46593,
-              "names": ["??","??"]
-            }
-          ],
-          "caption": "Source: FDRS"
-        },
-        "Alongside the World Health Organisation, we strongly believe in a policy of 100 per cent voluntary non-remunerated blood donation, because that is safest. At present, only 60 countries have fully achieved this norm. Given worldwide shortages of blood and its components, there is a long way to go to achieve global blood security. Cultural attitudes are an undoubted constraint in some places. Of the 108 million blood donations collected globally, about 21 million or a fifth are associated with Red Cross and Red Crescent blood services. Males tend to dominate as donors, and the Asia Pacific and Europe regions make the most donations"
-      ]
-    },
-    {
-      "title": "Water and sanitation",
-      "blocks": [
-        "Water and sanitation services are a key part of our emergency response interventions. Additionally, we have a long-term commitment to contribute towards the achievement of Millennium Development Goal 7 that aims to halve, by this year, the proportion of the population without sustainable access to safe drinking water and basic sanitation.",
-        {
-          "type": "chart",
-          "title": "Water and sanitation predictions",
-          "translations": [
-            "people have access to\nsafe drinking water",
-            "people benefited from\nwater and sanitation\nservices",
-            "people have access to an\nimproved toilet"
-          ],
-          "caption": "Source: Health Department"
-        },
-        "We are halfway through the period of the IFRC’s Global Water and Sanitation Initiative 2005–2025. The initial target for the Red Cross and Red Crescent was to benefit 5 million people by the end of 2015, but this has been greatly exceeded as we reach towards 15 million this year and set a higher ambition to double this within the next ten years"
-      ]
+    ],
+    "nextChapter": {
+        "heading": "Next chapter",
+        "chapter": "6",
+        "subtitle": "Strategic Aim 3",
+        "title": "Social inclusion and a culture of non-violence and peace",
+        "slug": "strategic-aim-3"
     }
-  ],
-  "nextChapter": {
-    "heading": "Next chapter",
-    "chapter": "6",
-    "subtitle": "Strategic Aim 3",
-    "title": "Social inclusion and a culture of non-violence and peace",
-    "slug": "strategic-aim-3"
-  }
 }

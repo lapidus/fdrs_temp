@@ -1,218 +1,310 @@
 {
-  "chapter": "9",
-  "slug": "enabling-action-3",
-  "title": "Enabling action 3",
-  "subtitle": "Function effectively as the IFRC",
-  "intro": "Since the adoption of Strategy 2020, the major effort seeking to improve our functioning as the IFRC has been on strengthening our governance, introducing a framework for accountability, and promoting a culture of learning.",
-  "sections": [
-    {
-      "title": "Keeping our governance up to date",
-      "blocks": [
-        "An indicator of good governance is the obligation of National Societies to keep their statutes and legal base up to date, consistent with the expectations and requirements of a changing world. Our norm is that a National Society should revise its statutes at least every ten years.",
-        "At the end of 2013, some 26 per cent of National Societies had statutes that met minimum requirements and more than 60 per cent were engaged in the revision of their statutory base instruments. Such revisions are an arduous process as National Societies are bottom-up democratic bodies, and changes have to be owned by members and reflect local social and cultural contexts.",
+    "title": "Enabling action 3",
+    "subtitle": "Function effectively as the IFRC",
+    "chapter": "9",
+    "sections": [
         {
-          "type": "chart",
-          "title": "National Society statutes revision",
-          "dataset": [
-            { "x": "Statutes conforming\nwith the minimum\nrequirements\n(26)", "y": 26, "fill":"#84BB23" },
-            { "x": "Revision\nprocess not yet\nstarted\n(10)", "y": 10, "fill":"#012A39" },
-            { "x": "Statutes\ndon't meet\nthe minimum\nrequirements (2)", "y": 2, "fill":"#EE3224" },
-            { "x": "Statutes in\nprocess of\nrevision\n(62)", "y": 62, "fill":"#FED02F" }
-          ],
-          "caption": "Source: Cooperation and Governance Support Department"
-        },
-        "However, National Societies are members of the IFRC and are expected to meet global minimum requirements. This continues to be a development journey for most National Societies and the process of revision evokes important national conversations on the place of a National Society in its own environment"
-      ]
-    },
-    {
-      "title": "Our accountability framework",
-      "blocks": [
-        "All members of the IFRC share a community identity in terms of the symbols of the Red Cross or Red Crescent and adherence to the Fundamental Principles at all times. Maintaining the good reputation of each member is, therefore, vital for retaining public trust and confidence in other members, and in the IFRC as a whole.",
-        {
-          "type": "image",
-          "title": "Image title",
-          "caption": "Source: Risk Management and Audit Department"
-        },
-        "We define accountability as the ongoing process that creates respect among us and with all those who are affected by our work. In being accountable, we seek to enable our stakeholders to assess our actions against defined commitments and expectations, and to respond and learn accordingly. An accountability action plan is making steady progress.",
-        "Regular evaluations and audits are also an important part of our accountability."
-      ]
-    },
-    {
-      "title": "Evaluations",
-      "blocks": [
-        "Operational financial and narrative information, as well as evaluation reports are openly available on the IFRC web site. The IFRC framework for evaluation follows industry standards and guidance on methods, and a package of classroom and online training tools are widely disseminated.",
-        "All projects are asked to conduct a final evaluation, proportionate to the size of the project, so that results can be assessed and lessons learned. Mandatory independent evaluations are required for interventions exceeding 1 million Swiss francs. Real-time evaluations are also mandatory for emergency operations that exceed nine months duration, target more than 100,000 beneficiaries, involve an emergency appeal of more than 10 million Swiss francs, or have more than ten National Society partners involved.",
-        {
-          "type": "chart",
-          "title": "Reports by evaluation type",
-          "dataset": [
-            { "y": 3, "x": "Baseline" },
-            { "y": 7, "x": "Case study/research" },
-            { "y": 9, "x": "Final evaluation" },
-            { "y": 2, "x": "Impact evaluation" },
-            { "y": 1, "x": "Impact evaluation/case study/research" },
-            { "y": 3, "x": "Mid-term evaluation" },
-            { "y": 1, "x": "Real-time evaluation" },
-            { "y": 10, "x": "Review" },
-            { "y": 2, "x": "Survey" }
-          ],
-          "caption": "Source: Planning and Evaluation Department"
-        },
-        "The archive of completed IFRC secretariat evaluations and related studies is available for public viewing, with more than 350 reports available of which 205 cover the period 2010–2014. "
-      ]
-    },
-    {
-      "title": "Audits",
-      "blocks": [
-        "Financial reporting appears to relate to the income and size of the National Society. In 2013, National Societies with income of more than one million Swiss francs and more than 25 staff were more likely to provide financial statements. They were also more likely to carry out external audits if they had an income greater than 10 million Swiss francs and more than 250 staff. It is reasonable to set accountability benchmarks commensurate with the size of a National Society, and therefore their potential risk exposure, although minimum standards must be met by all. More could be done to support the smaller National Societies, for example, the IFRC secretariat could provide them with shared auditing services and help to consolidate their accounts over two to three years for external auditing.",
-        {
-          "type": "chart",
-          "title": "Percentage of National Societies providing financial statements",
-          "caption": "Source: FDRS"
+            "title": "Keeping our governance up to date",
+            "blocks": {
+                "0": "An indicator of good governance is the obligation of National Societies to keep their statutes and legal base up to date, consistent with the expectations and requirements of a changing world. Our norm is that a National Society should revise its statutes at least every ten years.",
+                "2": {
+                    "type": "chart",
+                    "title": "National Society statutes revision",
+                    "dataset": [
+                        {
+                            "x": [
+                                "Statutes conforming",
+                                "with the minimum",
+                                "requirements",
+                                "(26)"
+                            ],
+                            "fill": "#84BB23",
+                            "y": "26"
+                        },
+                        {
+                            "y": "10",
+                            "x": [
+                                "Revision",
+                                "process not yet",
+                                "started",
+                                "(10)"
+                            ],
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": [
+                                "Statutes",
+                                "don't meet",
+                                "the minimum",
+                                "requirements (2)"
+                            ],
+                            "y": "2",
+                            "fill": "#EE3224"
+                        },
+                        {
+                            "x": [
+                                "Statutes in",
+                                "process of",
+                                "revision",
+                                "(62)"
+                            ],
+                            "fill": "#FED02F",
+                            "y": "62"
+                        }
+                    ],
+                    "caption": "Source: Cooperation and Governance Support Department"
+                },
+                "1": "At the end of 2013, some 26 per cent of National Societies had statutes that met minimum requirements and more than 60 per cent were engaged in the revision of their statutory base instruments. Such revisions are an arduous process as National Societies are bottom-up democratic bodies, and changes have to be owned by members and reflect local social and cultural contexts.",
+                "3": "However, National Societies are members of the IFRC and are expected to meet global minimum requirements. This continues to be a development journey for most National Societies and the process of revision evokes important national conversations on the place of a National Society in its own environment"
+            }
         },
         {
-          "type": "chart",
-          "title": "Percentage of National Societies providing externally audited financial statements",
-          "caption": "Source: FDRS"
-        },
-        "In 2012, there were 80 National Societies providing audited financial statements through the Federationwide Databank and Reporting System. This increased to 88 in 2013."
-      ]
-    },
-    {
-      "title": "Complying with standards",
-      "blocks": [
-        "National Societies are dynamic bodies understandably influenced by internal and external factors that can change with shifts in their circumstances. The IFRC Governing Board has established a Compliance and Mediation Committee to assist National Societies in resolving any disagreements submitted to it or difficulties that can arise, for example, with potential breaches of integrity.",
-        "Dealing with a breach of integrity",
-        "A group of registered members within a National Society became seriously concerned about its loss of reputation following allegations related to the misappropriation of funds, abuse of position for advancement of personal interests, breach of Fundamental Principles, and personal gain. The governing board of the National Society did not respond to their concerns and the complaining group convened an extraordinary general assembly that passed a motion of no confidence in the governance and management, and elected new replacements. The country’s Supreme Court was invoked to rule over the legitimacy of the two competing governance arrangements. The dispute also alarmed the government, which asked the IFRC secretariat to intervene.",
-        "The Compliance and Mediation Committee of the IFRC used trusted intermediaries to negotiate a settlement that involved setting up a new transitional governing board for the National Society. The IFRC secretariat also provided technical support to amend the statutes of the National Society to ensure provision for an annual general assembly. This duly occurred, and the newly elected governance enabled the financial audits of the disputed period to be completed and the issues to be addressed. The National Society recovered and is functioning well again.",
-        "The key lessons learned from this case are that a National Society must remain constantly vigilant over its own integrity and take the initiative to tackle problems by countering resistance with persistence. The IFRC secretariat can help to mediate solutions and ensure compliance."
-      ]
-    },
-    {
-      "title": "Culture of learning",
-      "blocks": [
-        "Learning is essential to adapt and keep up to date with the changing world. Also important is the professionalisation of Red Cross and Red Crescent workers to enhance their credibility by showing that they adhere to explicit standards. That is why we encourage the ethos of continuous life-long learning. Creating learning opportunities is also an important way to motivate our volunteers and staff by investing in their future progression.",
-        {
-          "type": "chart",
-          "title": "Learning platform courses by languages",
-          "dataset": [
-            { "y": 108, "x": "English" },
-            { "y": 85, "x": "French" },
-            { "y": 81, "x": "Spanish" },
-            { "y": 44, "x": "Italian" },
-            { "y": 43, "x": "Portuguese" },
-            { "y": 30, "x": "German" },
-            { "y": 30, "x": "Chinese" },
-            { "y": 28, "x": "Russian" },
-            { "y": 20, "x": "Arabic" },
-            { "y": 63, "x": "Others" }
-          ],
-          "caption": "Source: Learning and Research Department"
-        },
-        "The IFRC Learning Passport scheme encourages people to take responsibility for their own development, and fosters the portability of the learning they undertake while moving between institutions and employers.",
-        "The IFRC Learning Platform is a global yet local online learning community offering 131 courses available in 16 languages.",
-        "Over the past six years, an average of 489 Red Cross and Red Crescent staff have taken the International Mobilisation and Preparation for Action (IMPACT) training annually, in preparation for international deployments",
-        {
-          "type": "chart",
-          "title": "International Mobilisation and Preparation for Action (IMPACT) course",
-          "caption": "Sources: Learning and Research Department"
+            "blocks": [
+                "All members of the IFRC share a community identity in terms of the symbols of the Red Cross or Red Crescent and adherence to the Fundamental Principles at all times. Maintaining the good reputation of each member is, therefore, vital for retaining public trust and confidence in other members, and in the IFRC as a whole.",
+                {
+                    "type": "image",
+                    "title": "Image title",
+                    "caption": "Source: Risk Management and Audit Department"
+                },
+                "We define accountability as the ongoing process that creates respect among us and with all those who are affected by our work. In being accountable, we seek to enable our stakeholders to assess our actions against defined commitments and expectations, and to respond and learn accordingly. An accountability action plan is making steady progress.",
+                "Regular evaluations and audits are also an important part of our accountability."
+            ],
+            "title": "Our accountability framework"
         },
         {
-          "type": "chart",
-          "title": "Learning platform users",
-          "axisLabels": {
-            "x": "Years",
-            "y": ""
-          },
-          "lineLabels": [
-            "Course\nregistrations",
-            "Course\ncompletions"
-          ],
-          "caption": "The graph above shows the number of users who registered for courses vs. the number of students who completed courses."
+            "blocks": {
+                "2": {
+                    "type": "chart",
+                    "dataset": [
+                        {
+                            "x": "Baseline",
+                            "y": "3"
+                        },
+                        {
+                            "y": "7",
+                            "x": "Case study\/research"
+                        },
+                        {
+                            "y": "9",
+                            "x": "Final evaluation"
+                        },
+                        {
+                            "y": "2",
+                            "x": "Impact evaluation"
+                        },
+                        {
+                            "y": "1",
+                            "x": "Impact evaluation\/case study\/research"
+                        },
+                        {
+                            "x": "Mid-term evaluation",
+                            "y": "3"
+                        },
+                        {
+                            "y": "1",
+                            "x": "Real-time evaluation"
+                        },
+                        {
+                            "y": "10",
+                            "x": "Review"
+                        },
+                        {
+                            "y": "2",
+                            "x": "Survey"
+                        }
+                    ],
+                    "title": "Reports by evaluation type",
+                    "caption": "Source: Planning and Evaluation Department"
+                },
+                "0": "Operational financial and narrative information, as well as evaluation reports are openly available on the IFRC web site. The IFRC framework for evaluation follows industry standards and guidance on methods, and a package of classroom and online training tools are widely disseminated.",
+                "1": "All projects are asked to conduct a final evaluation, proportionate to the size of the project, so that results can be assessed and lessons learned. Mandatory independent evaluations are required for interventions exceeding 1 million Swiss francs. Real-time evaluations are also mandatory for emergency operations that exceed nine months duration, target more than 100,000 beneficiaries, involve an emergency appeal of more than 10 million Swiss francs, or have more than ten National Society partners involved.",
+                "3": "The archive of completed IFRC secretariat evaluations and related studies is available for public viewing, with more than 350 reports available of which 205 cover the period 2010\u20132014. "
+            },
+            "title": "Evaluations"
         },
-        "The Learning Platform is rapidly becoming a social community in its own right with encouragement for group learning and peer-to-peer sharing.",
-        "With the rapid growth in overall registered users to more than 140,000 in 2014, course registrations have soared to over 220,000 with some users signed up to take more than one course. Course completion rates have also increased to just under 50 per cent, indicating steadily increasing customer utility."
-      ]
-    },
-    {
-      "title": "Centres of expertise around the world",
-      "blocks": [
-        "A unique advantage of our extensive network is the access to world-class expertise, organised through Red Cross and Red Crescent reference centres that focus on specific subjects. The centres conduct research, develop innovative approaches, consolidate best practices, share knowledge, conduct advocacy, and offer training and technical assistance to National Societies, thus enabling them to do more and better.",
-        [
-          {
-            "title": "Caribbean Disaster Risk Management Centre",
-            "slug": "http://www.cdema.org",
-            "subtitle": "The Barbados Red Cross Society"
-          },
-          {
-            "title": "Centre for Evidence-Based Practice",
-            "slug": "http://www.rodekruis.be/en/who-are-we/research/centre-for-evidence-based-practice/",
-            "subtitle": "Belgian Red Cross"
-          },
-          {
-            "title": "Climate Center",
-            "slug": "http://www.climatecentre.org/",
-            "subtitle": "The Netherlands Red Cross"
-          },
-          {
-            "title": "Global Disaster Preparedness Centre",
-            "slug": "http://www.preparecenter.org/",
-            "subtitle": "American Red Cross"
-          },
-          {
-            "title": "Global First Aid Reference Centre",
-            "slug": "http://www.ifrc.org/en/get-involved/learning-education-training/reference-centres/",
-            "subtitle": "French Red Cross"
-          },
-          {
-            "title": "Livelihoods Resource Centre",
-            "slug": "http://www.livelihoodscentre.org/",
-            "subtitle": "Spanish Red Cross"
-          },
-          {
-            "title": "Reference Centre for Community Resilience",
-            "slug": "http://www.crrec.cruzroja.org/",
-            "subtitle": "Costa Rican Red Cross"
-          },
-          {
-            "title": "Reference Centre for Institutional Disaster Preparedness",
-            "slug": "http://www.crepd.cruzroja.org/",
-            "subtitle": "Salvadorean Red Cross Society"
-          },
-          {
-            "title": "Reference Centre for Psychosocial Support",
-            "slug": "http://pscentre.org/",
-            "subtitle": "Danish Red Cross"
-          },
-          {
-            "title": "Shelter Research Unit",
-            "slug": "http://ifrc-sru.org/",
-            "subtitle": "Belgian Red Cross, Luxembourg Red Cross, The Netherlands Red Cross"
-          },
-          {
-            "title": "Reference Centre on Volunteering",
-            "slug": "http://www.cruzroja.es/portal/page?_pageid=478,1&_dad=portal30&_schema=PORTAL30",
-            "subtitle": "Spanish Red Cross, British Red Cross"
-          },
-          {
-            "title": "Regional Referene Centre for Medical Emergencies and Pre-hospital Care",
-            "slug": "http://www.ifrc.org/en/news-and-media/news-stories/americas/ecuador/ecuadorian-red-cross-inaugurates-medical-emergencies-and-prehospital-care-reference-centre-67988/",
-            "subtitle": "Ecuadorian Red Cross"
-          },
-          {
-            "title": "Global Advisory Panel (Blood)",
-            "slug": "http://www.globaladvisorypanel.org/",
-            "subtitle": "Australian Red Cross, Swiss Red Cross"
-          }
-        ]
-      ]
+        {
+            "title": "Audits",
+            "blocks": [
+                "Financial reporting appears to relate to the income and size of the National Society. In 2013, National Societies with income of more than one million Swiss francs and more than 25 staff were more likely to provide financial statements. They were also more likely to carry out external audits if they had an income greater than 10 million Swiss francs and more than 250 staff. It is reasonable to set accountability benchmarks commensurate with the size of a National Society, and therefore their potential risk exposure, although minimum standards must be met by all. More could be done to support the smaller National Societies, for example, the IFRC secretariat could provide them with shared auditing services and help to consolidate their accounts over two to three years for external auditing.",
+                {
+                    "type": "chart",
+                    "title": "Percentage of National Societies providing financial statements",
+                    "caption": "Source: FDRS"
+                },
+                {
+                    "type": "chart",
+                    "title": "Percentage of National Societies providing externally audited financial statements",
+                    "caption": "Source: FDRS"
+                },
+                "In 2012, there were 80 National Societies providing audited financial statements through the Federationwide Databank and Reporting System. This increased to 88 in 2013."
+            ]
+        },
+        {
+            "title": "Complying with standards",
+            "blocks": [
+                "National Societies are dynamic bodies understandably influenced by internal and external factors that can change with shifts in their circumstances. The IFRC Governing Board has established a Compliance and Mediation Committee to assist National Societies in resolving any disagreements submitted to it or difficulties that can arise, for example, with potential breaches of integrity.",
+                "Dealing with a breach of integrity",
+                "A group of registered members within a National Society became seriously concerned about its loss of reputation following allegations related to the misappropriation of funds, abuse of position for advancement of personal interests, breach of Fundamental Principles, and personal gain. The governing board of the National Society did not respond to their concerns and the complaining group convened an extraordinary general assembly that passed a motion of no confidence in the governance and management, and elected new replacements. The country\u2019s Supreme Court was invoked to rule over the legitimacy of the two competing governance arrangements. The dispute also alarmed the government, which asked the IFRC secretariat to intervene.",
+                "The Compliance and Mediation Committee of the IFRC used trusted intermediaries to negotiate a settlement that involved setting up a new transitional governing board for the National Society. The IFRC secretariat also provided technical support to amend the statutes of the National Society to ensure provision for an annual general assembly. This duly occurred, and the newly elected governance enabled the financial audits of the disputed period to be completed and the issues to be addressed. The National Society recovered and is functioning well again.",
+                "The key lessons learned from this case are that a National Society must remain constantly vigilant over its own integrity and take the initiative to tackle problems by countering resistance with persistence. The IFRC secretariat can help to mediate solutions and ensure compliance."
+            ]
+        },
+        {
+            "title": "Culture of learning",
+            "blocks": {
+                "0": "Learning is essential to adapt and keep up to date with the changing world. Also important is the professionalisation of Red Cross and Red Crescent workers to enhance their credibility by showing that they adhere to explicit standards. That is why we encourage the ethos of continuous life-long learning. Creating learning opportunities is also an important way to motivate our volunteers and staff by investing in their future progression.",
+                "1": {
+                    "dataset": {
+                        "0": {
+                            "y": "108",
+                            "x": "English"
+                        },
+                        "1": {
+                            "y": "85",
+                            "x": "French"
+                        },
+                        "2": {
+                            "y": "81",
+                            "x": "Spanish"
+                        },
+                        "3": {
+                            "y": "44",
+                            "x": "Italian"
+                        },
+                        "4": {
+                            "y": "43",
+                            "x": "Portuguese"
+                        },
+                        "6": {
+                            "x": "Chinese",
+                            "y": "30"
+                        },
+                        "5": {
+                            "y": "30",
+                            "x": "German"
+                        },
+                        "7": {
+                            "y": "28",
+                            "x": "Russian"
+                        },
+                        "8": {
+                            "y": "20",
+                            "x": "Arabic"
+                        },
+                        "9": {
+                            "x": "Others",
+                            "y": "63"
+                        }
+                    },
+                    "type": "chart",
+                    "title": "Learning platform courses by languages",
+                    "caption": "Source: Learning and Research Department"
+                },
+                "3": "The IFRC Learning Platform is a global yet local online learning community offering 131 courses available in 16 languages.",
+                "2": "The IFRC Learning Passport scheme encourages people to take responsibility for their own development, and fosters the portability of the learning they undertake while moving between institutions and employers.",
+                "4": "Over the past six years, an average of 489 Red Cross and Red Crescent staff have taken the International Mobilisation and Preparation for Action (IMPACT) training annually, in preparation for international deployments",
+                "5": {
+                    "type": "chart",
+                    "title": "International Mobilisation and Preparation for Action (IMPACT) course",
+                    "caption": "Sources: Learning and Research Department"
+                },
+                "6": {
+                    "type": "chart",
+                    "title": "Learning platform users",
+                    "axisLabels": {
+                        "x": "Years"
+                    },
+                    "lineLabels": {
+                        "1": "Course\\ncompletions",
+                        "0": "Course\\nregistrations"
+                    },
+                    "caption": "The graph above shows the number of users who registered for courses vs. the number of students who completed courses."
+                },
+                "8": "With the rapid growth in overall registered users to more than 140,000 in 2014, course registrations have soared to over 220,000 with some users signed up to take more than one course. Course completion rates have also increased to just under 50 per cent, indicating steadily increasing customer utility.",
+                "7": "The Learning Platform is rapidly becoming a social community in its own right with encouragement for group learning and peer-to-peer sharing."
+            }
+        },
+        {
+            "title": "Centres of expertise around the world",
+            "blocks": [
+                "A unique advantage of our extensive network is the access to world-class expertise, organised through Red Cross and Red Crescent reference centres that focus on specific subjects. The centres conduct research, develop innovative approaches, consolidate best practices, share knowledge, conduct advocacy, and offer training and technical assistance to National Societies, thus enabling them to do more and better.",
+                [
+                    {
+                        "title": "Caribbean Disaster Risk Management Centre",
+                        "subtitle": "The Barbados Red Cross Society",
+                        "slug": "http:\/\/www.cdema.org"
+                    },
+                    {
+                        "title": "Centre for Evidence-Based Practice",
+                        "slug": "http:\/\/www.rodekruis.be\/en\/who-are-we\/research\/centre-for-evidence-based-practice\/",
+                        "subtitle": "Belgian Red Cross"
+                    },
+                    {
+                        "title": "Climate Center",
+                        "subtitle": "The Netherlands Red Cross",
+                        "slug": "http:\/\/www.climatecentre.org\/"
+                    },
+                    {
+                        "title": "Global Disaster Preparedness Centre",
+                        "slug": "http:\/\/www.preparecenter.org\/",
+                        "subtitle": "American Red Cross"
+                    },
+                    {
+                        "title": "Global First Aid Reference Centre",
+                        "slug": "http:\/\/www.ifrc.org\/en\/get-involved\/learning-education-training\/reference-centres\/",
+                        "subtitle": "French Red Cross"
+                    },
+                    {
+                        "title": "Livelihoods Resource Centre",
+                        "slug": "http:\/\/www.livelihoodscentre.org\/",
+                        "subtitle": "Spanish Red Cross"
+                    },
+                    {
+                        "title": "Reference Centre for Community Resilience",
+                        "slug": "http:\/\/www.crrec.cruzroja.org\/",
+                        "subtitle": "Costa Rican Red Cross"
+                    },
+                    {
+                        "title": "Reference Centre for Institutional Disaster Preparedness",
+                        "slug": "http:\/\/www.crepd.cruzroja.org\/",
+                        "subtitle": "Salvadorean Red Cross Society"
+                    },
+                    {
+                        "title": "Reference Centre for Psychosocial Support",
+                        "subtitle": "Danish Red Cross",
+                        "slug": "http:\/\/pscentre.org\/"
+                    },
+                    {
+                        "title": "Shelter Research Unit",
+                        "slug": "http:\/\/ifrc-sru.org\/",
+                        "subtitle": "Belgian Red Cross, Luxembourg Red Cross, The Netherlands Red Cross"
+                    },
+                    {
+                        "slug": "http:\/\/www.cruzroja.es\/portal\/page?_pageid=478,1&_dad=portal30&_schema=PORTAL30",
+                        "title": "Reference Centre on Volunteering",
+                        "subtitle": "Spanish Red Cross, British Red Cross"
+                    },
+                    {
+                        "slug": "http:\/\/www.ifrc.org\/en\/news-and-media\/news-stories\/americas\/ecuador\/ecuadorian-red-cross-inaugurates-medical-emergencies-and-prehospital-care-reference-centre-67988\/",
+                        "title": "Regional Referene Centre for Medical Emergencies and Pre-hospital Care",
+                        "subtitle": "Ecuadorian Red Cross"
+                    },
+                    {
+                        "title": "Global Advisory Panel (Blood)",
+                        "slug": "http:\/\/www.globaladvisorypanel.org\/",
+                        "subtitle": "Australian Red Cross, Swiss Red Cross"
+                    }
+                ]
+            ]
+        }
+    ],
+    "slug": "enabling-action-3",
+    "intro": "Since the adoption of Strategy 2020, the major effort seeking to improve our functioning as the IFRC has been on strengthening our governance, introducing a framework for accountability, and promoting a culture of learning.",
+    "nextChapter": {
+        "heading": "Next chapter",
+        "chapter": "10",
+        "subtitle": "Data",
+        "slug": "data",
+        "title": "Explore the data"
     }
-  ],
-  "nextChapter": {
-    "heading": "Next chapter",
-    "chapter": "10",
-    "subtitle": "Data",
-    "title": "Explore the data",
-    "slug": "data"
-  }
 }

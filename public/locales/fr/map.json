@@ -1,8 +1,8 @@
 {
-  "title": "Data",
-  "subtitle": "From the Federation-Wide Databank and Reporting System",
-  "indicators-title": "Key Indicators",
-  "bubble-size": "Bubble size",
-  "national-society": "National society",
-  "guide": "Select a key indicator to see on the map"
+    "title": "Data",
+    "subtitle": "From the Federation-Wide Databank and Reporting System",
+    "indicators-title": "Key Indicators",
+    "bubble-size": "Bubble size",
+    "national-society": "National society",
+    "guide": "Select a key indicator to see on the map"
 }
