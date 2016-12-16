@@ -4,6 +4,7 @@
 
 .bg-white     { background: var(--color-white);      color: var(--text-color-base); }
 .bg-light     { background: var(--color-grey-light); color: var(--text-color-base); }
+.bg-lighter   { background: #FBFBFB; color: var(--text-color-base); }
 .bg-dark      { background: var(--color-grey-dark);  color: var(--color-white);     }
 .bg-beige     { background: #8D8070;                 color: var(--color-white);     }
 

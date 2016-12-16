@@ -6,6 +6,7 @@ import Breadcrumbs from "../components/Breadcrumbs"
 import Textfield from "../components/Textfield"
 import Map from "../components/Data/Map"
 import Select from "react-select"
+import remove from "lodash/remove"
 
 import StickySidebar from "../components/StickySidebar"
 import ReactIScroll from "react-iscroll"
@@ -37,6 +38,7 @@ class Overview extends React.Component {
     this.handleIndicatorSelect = this.handleIndicatorSelect.bind(this)
     this.handleNSSelect = this.handleNSSelect.bind(this)
     this.handleYearSelect = this.handleYearSelect.bind(this)
+    this.handleUnselectSociety = this.handleUnselectSociety.bind(this)
   }
   componentDidMount() {
   }
@@ -46,16 +48,38 @@ class Overview extends React.Component {
       currentIndicator: this.props.timeSeriesMeta.filter(obj => obj.id === indicator)[0],
     })
   }
-  handleNSSelect(a,b,c) {
+  handleNSSelect(selectedSociety) {
     this.setState({
-      selectedSocieties: a,
-      societiesBlacklist: a.map(ns => ns.value),
+      selectedSocieties: this.state.selectedSocieties.concat([selectedSociety]),
+      societiesBlacklist: this.state.societiesBlacklist.concat([selectedSociety.value]),
     })
   }
   handleYearSelect(year, e) {
     this.setState({
       currentYear: year,
     })
+  }
+  handleUnselectSociety(society, e) {
+    console.log(remove)
+    console.log(this.state.societiesBlacklist)
+    console.log(this.state.selectedSocieties)
+    const newSelectedSocieties = remove(this.state.selectedSocieties, (n) => {
+      return n.value !== society.value
+    })
+    console.log("New selected societies: ", newSelectedSocieties)
+    console.log("New blacklist: ", newSelectedSocieties.map(o => o.value))
+    this.setState({
+      selectedSocieties: newSelectedSocieties,
+      societiesBlacklist: newSelectedSocieties.map(o => o.value)
+    })
+    // const i = this.state.societiesBlacklist.indexOf(society.value)
+    // const a = this.state.soceitiesBlacklist.slice(0, i)
+    // const b = this.state.soceitiesBlacklist.slice(i+1)
+
+    // this.setState({
+    //   selectedSocieties: ,
+    //   societiesBlacklist: a.concat(b),
+    // })
   }
   render() {
 
@@ -102,9 +126,9 @@ class Overview extends React.Component {
                   <Select
                     searchable={ true }
                     clearable={ false }
-                    multi={ true }
+                    placeholder="Select a NS..."
+                    multi={ false }
                     name="ns-selector"
-                    value={this.state.selectedSocieties}
                     options={this.props.nationalSocieties.map(ns => {
                       return {
                         value: ns.KPI_DON_Code,
@@ -114,6 +138,18 @@ class Overview extends React.Component {
                     })}
                     onChange={ this.handleNSSelect }
                   />
+                  <ul className="mt1 mb0 p0">
+                    {
+                      this.state.selectedSocieties.map((society, i) => {
+                        return (
+                          <li key={i} className="block relative bg-secondary overflow-hidden py05 px1" style={{marginBottom: "0.5rem", textAlign: "left"}}>
+                            <span className="block overflow-hidden pr1" style={{whiteSpace: "nowrap", textOverflow: "ellipsis"}}>{society.label}</span>
+                            <div onClick={(e) => this.handleUnselectSociety(society, e)} className="btn absolute t0 b0 r0 bg-primary p05">x</div>
+                          </li>
+                        )
+                      })
+                    }
+                  </ul>
                 </div>
                 <div>
                   <h1 className="title my0">Indicators</h1>
@@ -192,7 +228,7 @@ class Overview extends React.Component {
                       {
                         this.state.selectedSocieties.map((ns, i) => {
                           return (
-                            <tr key={ i }>
+                            <tr key={ i } className="relative">
                               <td className="p1 sm-4">
                                 <Link to={`/societies/${ns.slug}`}>
                                   { ns.label }
@@ -200,12 +236,17 @@ class Overview extends React.Component {
                               </td>
                               <td className="p1 sm-4">{ "Trendline" }</td>
                               <td className="p1 sm-4">
-                                {(() => {
-                                  var latestData = this.state.groupedTimeSeries[this.state.currentYear]
-                                                       .filter(obj => obj.KPI_DON_Code === ns.value)
-                                  var latestNumber = latestData.length > 0 ? latestData[0][this.state.currentIndicator.id] : "N/A"
-                                  return <span>{ latestNumber }</span>
-                                })()}
+                                  {(() => {
+                                    var latestData = this.state.groupedTimeSeries[this.state.currentYear]
+                                                         .filter(obj => obj.KPI_DON_Code === ns.value)
+                                    var latestNumber = latestData.length > 0 ? latestData[0][this.state.currentIndicator.id] : "N/A"
+                                    return (
+                                      <div className="relative">
+                                        <span>{ latestNumber }</span>
+                                        <div onClick={(e) => this.handleUnselectSociety(ns, e)} className="btn absolute r0 t50 y-center-self bg-primary">x</div>
+                                      </div>
+                                    )
+                                  })()}
                               </td>
                             </tr>
                           )
@@ -241,7 +282,7 @@ class Overview extends React.Component {
                   {
                     this.props.nationalSocieties.map((NS, i) => {
                       return this.state.societiesBlacklist.indexOf(NS.KPI_DON_Code) == -1 ? (
-                        <tr key={i}>
+                        <tr key={i} className={i % 2 == 0 ? "bg-lighter" : ""}>
                           <td className="p1 sm-4">
                             <Link to={`/societies/${NS.slug}`}>
                               { NS.NSO_DON_name }
