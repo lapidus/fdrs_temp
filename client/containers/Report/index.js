@@ -9,6 +9,7 @@ import Icon from "../../components/Icon"
 import Loader from "../../components/Loader"
 import Navigation from "../../components/Report/Navigation"
 import ReadMore from "../../components/Report/ReadMore"
+import Breadcrumbs from "../../components/Breadcrumbs"
 
 class Report extends React.Component {
   componentDidMount() {
@@ -70,11 +71,18 @@ class Report extends React.Component {
           </div>
         </header> */}
 
-        <div className="bg-secondary px1">
+        {/* <div className="bg-secondary px1">
           <div className="clearfix mxn1">
-            <div className="col sm-6 sm-offset-2 px1 py1">Breadcrumbs</div>
+            <div className="col sm-6 sm-offset-2 px1 py1"></div>
           </div>
-        </div>
+        </div> */}
+
+        <Breadcrumbs links={[
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/" },
+          { name: "Report", path: undefined },
+          { name: "Introduction", path: undefined },
+        ]}/>
 
         <div className={ navOpen ? "main-content-wrapper removed" : "main-content-wrapper" }>
           <div>
