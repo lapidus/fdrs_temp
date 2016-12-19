@@ -10,8 +10,9 @@ class Home extends React.Component {
   // }
   render() {
     return (
-      <section>
-        <header className='px1 py4'>
+      <section className="relative">
+        <img src="/img/ipads2.png" className="absolute t0 r0 base-12 xs-8 sm-7 lg-6" style={{ transform: "translateY(-20%)" }}/>
+        <header className='block relative px1 py4'>
           <div className='clearfix mxn1'>
             <div className='col sm-8 sm-offset-1 md-6 md-offset-2 lg-5 px1'>
               <h1 className='display-1 sm-display-2 md-display-3 light'>
@@ -21,6 +22,7 @@ class Home extends React.Component {
               <p className='lead'>FDRS provides crucial insights, reports, and analytical tools for National Societies and the IFRC secretariat.</p>
             </div>
           </div>
+
         </header>
 
         <Slant slantType='start' />
@@ -64,8 +66,8 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className='px1 py4 bg-secondary'>
-          <div className='clearfix mxn1'>
+        <div className='px1 bg-secondary' style={{backgroundImage:"url(/img/worldmap.jpeg)", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center"}}>
+          <div className='clearfix mxn1 py4' style={{background: "rgba(255,255,255,0.5)"}}>
             <div className='col sm-10 sm-offset-1 px1'>
               <h2 className='headline sm-display-1 light mt0'>For data collectors</h2>
               <p className='lead'>To get started with the data collection for your National Society, please log in.</p>

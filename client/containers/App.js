@@ -49,7 +49,7 @@ class App extends React.Component {
       >
         <Loader />
 
-        <header className='relative shadow-4 px1 z-index-1000'>
+        <header className='relative shadow-4 px1 z-index-1000 bg-white'>
           <div className='clearfix mxn1'>
             <div className='col sm-5'>
               <a href="http://www.ifrc.org" target="_blank"><img
