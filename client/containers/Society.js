@@ -280,8 +280,8 @@ class Society extends React.Component {
                   <Card bgColor="bg-beige" basicCard>
                     <CardView viewIcon="plainNumber">
                       <div className="pt3 px1">
-                        <p className="display-2 strong mb0">{ "12.6m" }</p>
-                        <p className="m0">{ "population of XX in 2015" }</p>
+                        <p className="display-2 strong mb0">{ latestData.Population }</p>
+                        <p className="m0">{ `population of ${society.NSO_DON_name} in 2015` }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
@@ -467,8 +467,8 @@ class Society extends React.Component {
                   <Card initialView={ 0 } bgColor="bg-beige" basicCard>
                     <CardView viewIcon="plainNumber">
                       <div className="pt3 px1">
-                        <p className="display-2 strong mb0">{ "64.6%" }</p>
-                        <p className="m0">{ "percentage of Burundi’s population living below the poverty line in 2015" }</p>
+                        <p className="display-2 strong mb0">{ latestData.Poverty }</p>
+                        <p className="m0">{ `percentage of ${society.NSO_DON_name} population living below the poverty line in 2015` }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
@@ -485,7 +485,41 @@ class Society extends React.Component {
 
                 <div className="col sm-12 lg-8 px1 pb2">
                   <Card>
-                    <CardView viewIcon="lineChart">{ "View 0" }</CardView>
+                    <CardView viewIcon="lineChart">
+                      <div className="p1">
+                        <h1 className="subhead mt0 mb1">{ "People Reached" }</h1>
+                        <LineChart
+                          height={ 150 }
+                          padding={{
+                            top: 10,
+                            bottom: 30,
+                            left: 40,
+                            right: 16,
+                          }}
+                          domain={{
+                            x: [
+                              new Date(earliestData.KPI_Year,1 , 1),
+                              new Date(latestData.KPI_Year, 1, 1),
+                            ],
+                            y: [
+                              0,
+                              roundIt(
+                                maxBy(
+                                  data,
+                                  d => +d.KPI_noPeopleReachedDisaster || 0
+                                ).KPI_noPeopleReachedDisaster
+                              ),
+                            ],
+                          }}
+                          dataset={ [
+                            data.map(d => ({
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleReachedDisaster),
+                            })),
+                          ] }
+                        />
+                      </div>
+                    </CardView>
                     <CardView viewIcon="plainNumber">{ "View 1" }</CardView>
                     <CardOverlay>
                       <p>
@@ -560,8 +594,8 @@ class Society extends React.Component {
                     <CardView>
                       <div className="pt3 px1">
                         <p className="small strong m0">{ "CHF" }</p>
-                        <p className="display-2 strong my0">{ "2.715Bn" }</p>
-                        <p className="m0">{ "Burundi’s GDP in 2013" }</p>
+                        <p className="display-1 strong m0">{ latestData.GDP }</p>
+                        <p className="m0">{ `${society.NSO_DON_name} GDP in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
                     <CardView>{ "View 1" }</CardView>

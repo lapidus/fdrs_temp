@@ -73,7 +73,8 @@
     "superagent": "^2.3.0",
     "topojson": "^2.0.0",
     "topojson-client": "^2.1.0",
-    "victory": "^0.13.7"
+    "victory": "^0.13.7",
+    "wsdm-slider": "^1.5.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",

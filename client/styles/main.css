@@ -288,3 +288,33 @@ tr:last-of-type > td {
     top: 100%;
     margin-top: 4px;
   }
+
+
+
+
+  .wsdm-slider-track {
+    fill: #ddd;
+    stroke: #000;
+    stroke-opacity: 0.3;
+    stroke-width: 0.5px;
+  }
+  .wsdm-slider-handle {
+    fill: #fff;
+    stroke: #000;
+    stroke-opacity: .5;
+    stroke-width: 1.25px;
+    cursor: pointer;
+  }
+  .wsdm-slider-play-background {
+    cursor: pointer;
+  }
+  .wsdm-slider-play {
+    fill: #333;
+    cursor: pointer;
+  }
+  .wsdm-slider-value-tip {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.15);
+    font-size: .71em;
+    padding: 0 2px;
+  }

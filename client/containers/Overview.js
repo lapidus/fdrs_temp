@@ -13,6 +13,7 @@ import ReactIScroll from "react-iscroll"
 var iScroll = require("iscroll")
 
 import groupBy from "lodash/groupBy"
+import wsdmSlider from "wsdm-slider"
 
 import {
   makeGetSocietyData
@@ -41,6 +42,30 @@ class Overview extends React.Component {
     this.handleUnselectSociety = this.handleUnselectSociety.bind(this)
   }
   componentDidMount() {
+    // const slider1 = wsdmSlider()
+    // console.log('slider: ', slider1)
+    // console.log('sliderEl: ', this.slider)
+    // slider1.create(this.slider, {
+    //   onChange: value => {
+    //     console.log(value)
+    //   },
+    //   onPlayStart: () => {
+    //     console.log('Started')
+    //   },
+    //   onPlayEnd: () => {
+    //     console.log('Ended')
+    //   },
+    //   valueFormat: Math.round,
+    //   barHeight: 15,
+    //   tipPosition: "top",
+    //   showTip: true,
+    //   handleRadius: 5,
+    // })
+    //
+    // slider1.update({
+    //   domain: [ 2009, 2015 ],
+    //   value: 2015,
+    // })
   }
   handleIndicatorSelect(indicator, e) {
     e.preventDefault()
@@ -196,6 +221,9 @@ class Overview extends React.Component {
 
                   </div>
                 </div>
+
+                {/* <div ref={slider => this.slider = slider} style={{height:80}}></div> */}
+
               </div>
 
               <table className="base-12 text-left mb2">
