@@ -57,7 +57,7 @@ class App extends React.Component {
                 height={ 68 }
                 className="inline-block align-middle mx1"
               /></a>
-              <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px'}}>
+              <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
                 <Link to="/" className='color-regular'><span className='color-primary'>FEDERATION-WIDE</span> DATABANK<br />
                 AND REPORTING SYSTEM</Link>
               </h1>
