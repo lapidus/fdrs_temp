@@ -47,7 +47,8 @@ class Globe extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="relative ratio-1-1 overflow-hidden">
+        <div className="absolute t0 l0 r0 b0 overflow-hidden">
         {
           this.state.loading ? (
             <p className="text-center">{ "Loading map..." }</p>
@@ -60,6 +61,7 @@ class Globe extends React.Component {
             </svg>
           )
         }
+        </div>
       </div>
     )
   }
