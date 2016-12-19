@@ -1,5 +1,8 @@
 
 .bg-primary   { background: var(--color-primary);   color: var(--color-primary-contrast);   }
+.bg-primary g {
+  stroke: var(--color-primary-contrast);
+}
 .bg-secondary { background: var(--color-secondary); color: var(--color-secondary-contrast); }
 
 .bg-white     { background: var(--color-white);      color: var(--text-color-base); }

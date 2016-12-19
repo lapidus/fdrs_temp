@@ -1878,6 +1878,9 @@ strong,
 .bg-primary { background: #D0021B; color: #FFFFFF;
 
 }
+.bg-primary g { stroke: #FFFFFF;
+
+}
 .bg-secondary { background: #F6F4F2; color: inherit;
 
 }
