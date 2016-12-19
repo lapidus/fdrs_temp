@@ -7,6 +7,8 @@ import Textfield from "../components/Textfield"
 import Map from "../components/Data/Map"
 import Select from "react-select"
 import remove from "lodash/remove"
+import max from "lodash/max"
+import { VictoryLine } from "victory"
 
 import StickySidebar from "../components/StickySidebar"
 import ReactIScroll from "react-iscroll"
@@ -326,7 +328,31 @@ class Overview extends React.Component {
                               { NS.NSO_DON_name }
                             </Link>
                           </td>
-                          <td className="p1 sm-4">{ "Trendline" }</td>
+                          <td className="p1 sm-4">
+                            {(() => {
+                              const yearValues = Object.keys(this.state.groupedTimeSeries).map((year, i) => {
+                                return this.state.groupedTimeSeries[year]
+                                           .filter(obj => obj.KPI_DON_Code === NS.KPI_DON_Code)[0]
+                              })
+                              const dataPoints = yearValues.map(yearValue => {
+                                return yearValue ? Number(yearValue[this.state.currentIndicator.id]) : 0
+                              })
+
+                              return (<VictoryLine
+                                        domain={{
+                                          x: [0,10],
+                                          y: [0,max(dataPoints)]
+                                        }}
+                                        height={120}
+                                        standalone={true}
+                                        data={
+                                          dataPoints.map((point, i) => {
+                                            return { x: i, y: point }
+                                          })
+                                        }
+                                      />)
+                            })()}
+                          </td>
                           <td className="p1 sm-4">{(() => {
                               var latestData = this.state.groupedTimeSeries[this.state.currentYear]
                                                    .filter(obj => obj.KPI_DON_Code === NS.KPI_DON_Code)
