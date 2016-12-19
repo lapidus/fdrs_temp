@@ -55,7 +55,7 @@ class Globe extends React.Component {
           ) : (
             <svg width={200} height={200} viewBox="0 0 200 200">
               {this.state.countries.map((country, i) => (
-                <path key={ i } d={geoPath().projection(this.projection())(country)} className="fill-beige" />
+                <path key={ i } d={geoPath().projection(this.projection())(country)} style={{fill: "#EFEBE9"}} />
               ))}
               <circle cx={100} cy={100} r={8} style={{fill: "rgba(208,2,27,0.8)", stroke: "#fff", strokeWidth: "2px"}} />
             </svg>

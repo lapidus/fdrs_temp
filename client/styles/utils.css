@@ -12,6 +12,8 @@
 .bg-beige     { background: #8D8070;                 color: var(--color-white);     }
 
 .fill-primary { fill: var(--color-primary); }
+.fill-secondary { fill: var(--color-secondary); }
+.fill-grey { fill: var(--color-grey); }
 .fill-beige   { fill: #8D8070; }
 
 
