@@ -125,10 +125,17 @@ class Home extends React.Component {
 
         <Slant slantType='end' />
 
-        <div className='px1 pb4'>
+        <div className='px1 pb4' style={{ backgroundImage: "url(/img/report-preview.png)",backgroundSize: "auto 100%", backgroundRepeat: "no-repeat", backgroundPosition: "left" }}>
           <div className='clearfix mxn1'>
             <div className='col sm-10 sm-offset-1 px1'>
-              <h2 className='headline sm-display-1 light mt0'>Latest insights</h2>
+              <h2 className='headline sm-display-1 light mt0 color-primary'>Latest insights</h2>
+              <div className="clearfix mxn1">
+                <div className="col base-6 base-offset-6 px1 py4">
+                  <h2>{ "Exceptional Coverage" }</h2>
+                  <p>{ "In 2015, all 190 National Societies have reported to FDRS on at least 1 key indicator. We thank the National Societies worldwide for their efforts to improve transparency and accountability of the IFRC." }</p>
+                  <Link to="/" className="btn bg-primary">{ "Explore the data" }</Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
