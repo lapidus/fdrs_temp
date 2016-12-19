@@ -66,6 +66,11 @@ class App extends React.Component {
               <nav className='inline-block'>
                 <ul className='m0 p0'>
                   <li className='inline-block'>
+                    <Link to='/' className='btn'>
+                      <span className='block py1 px05'>Services</span>
+                    </Link>
+                  </li>
+                  {/* <li className='inline-block'>
                     <Link to='/overview' className='btn'>
                       <span className='block py1 px05'>Overview</span>
                     </Link>
@@ -74,12 +79,27 @@ class App extends React.Component {
                     <Link to='/societies' className='btn'>
                       <span className='block py1 px05'>Societies</span>
                     </Link>
+                  </li> */}
+                  <li className='inline-block'>
+                    <Link to='/' className='btn'>
+                      <span className='block py1 px05'>About</span>
+                    </Link>
                   </li>
                   <li className='inline-block'>
+                    <Link to='/' className='btn'>
+                      <span className='block py1 px05'>FAQ</span>
+                    </Link>
+                  </li>
+                  <li className='inline-block'>
+                    <Link to='/' className='btn bg-secondary'>
+                      <span className='block py1 px1'>EN</span>
+                    </Link>
+                  </li>
+                  {/* <li className='inline-block'>
                     <Link to='/report' className='btn'>
                       <span className='block py1 px05'>Report</span>
                     </Link>
-                  </li>
+                  </li> */}
                   <li className='inline-block'>
                     <span className='inline-block'>
                       {/* <Select
