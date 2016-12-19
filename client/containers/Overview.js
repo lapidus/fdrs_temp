@@ -111,7 +111,7 @@ class Overview extends React.Component {
 
         <div className="px1">
           <div className="clearfix mxn1">
-            <header className="col sm-8 sm-offset-3 px1 py1">
+            <header className="col sm-8 sm-offset-3 px1 pt1">
               <h1 className="color-primary strong m0 small">{ "IFRC" } <span className="color-primary">{ "at a glance" }</span></h1>
               <p className="display-1 md-display-2 m0 light">{ pageData.indicators[this.state.currentIndicator.id] }</p>
             </header>
@@ -179,12 +179,22 @@ class Overview extends React.Component {
                      nationalSocieties={this.props.nationalSocieties}
                      societiesBlacklist={this.state.societiesBlacklist}
                      />
-                <div className="absolute b0 base-12 text-center pb2">
-                  {
-                    Object.keys(this.state.groupedTimeSeries).map((year, i) => (
-                      <button key={i} onClick={(e) => this.handleYearSelect(year, e)} className={this.state.currentYear == year ? "btn bg-primary mr1" : "btn bg-secondary mr1"}>{ year }</button>
-                    ))
-                  }
+                <div className="absolute b0 text-center pb4 l50 x-center-self">
+                  <div className="year-slider">
+                    { /*
+                      Object.keys(this.state.groupedTimeSeries).map((year, i) => (
+                        <button key={i} onClick={(e) => this.handleYearSelect(year, e)} className={this.state.currentYear == year ? "btn bg-primary year-slider__year" : "btn bg-secondary year-slider__year"}>{ year }</button>
+                      )) */
+                    }
+                    {
+                      Object.keys(this.state.groupedTimeSeries).map((year, i) => (
+                        <div key={i} onClick={(e) => this.handleYearSelect(year, e)} className={this.state.currentYear == year ? "year-slider__year year-slider__year--active" : "year-slider__year"}>
+                          { year }
+                        </div>
+                      ))
+                    }
+
+                  </div>
                 </div>
               </div>
 

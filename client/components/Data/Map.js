@@ -77,7 +77,7 @@ class Map extends React.Component {
   projection() {
     return geoNaturalEarth()
             .scale(160)
-            .translate([800 / 2, 520 / 2])
+            .translate([800 / 2, 480 / 2])
             // .rotate([this.props.center ? -this.props.center[1] : 0, this.props.center ? -this.props.center[0] : 0,0])
             .rotate([-10,0,0])
             .precision(.1)
@@ -120,7 +120,7 @@ class Map extends React.Component {
             this.state.loading ? (
               ""
             ) : (
-              <svg width={800} height={520} viewBox="0 0 800 520">
+              <svg width={800} height={480} viewBox="0 0 800 480">
                 <Countries countries={this.state.countries} projection={this.projection} />
                 {
                   nationalSocieties.map((bubble, i) => {
