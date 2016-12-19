@@ -8,7 +8,7 @@ import Map from "../components/Data/Map"
 import Select from "react-select"
 import remove from "lodash/remove"
 import max from "lodash/max"
-import { VictoryLine } from "victory"
+import { VictoryLine, VictoryScatter, VictoryChart } from "victory"
 
 import StickySidebar from "../components/StickySidebar"
 import ReactIScroll from "react-iscroll"
@@ -338,19 +338,88 @@ class Overview extends React.Component {
                                 return yearValue ? Number(yearValue[this.state.currentIndicator.id]) : 0
                               })
 
-                              return (<VictoryLine
-                                        domain={{
-                                          x: [0,10],
-                                          y: [0,max(dataPoints)]
-                                        }}
-                                        height={60}
-                                        standalone={true}
-                                        data={
-                                          dataPoints.map((point, i) => {
-                                            return { x: i, y: point }
-                                          })
-                                        }
-                                      />)
+                              // return (
+                              //   <VictoryLine
+                              //     domain={{
+                              //       x: [0,10],
+                              //       y: [0,max(dataPoints)]
+                              //     }}
+                              //     padding={{
+                              //       top: 5,
+                              //       bottom: 5,
+                              //       left: 0,
+                              //       right: 0
+                              //     }}
+                              //     height={60}
+                              //     standalone={true}
+                              //     data={
+                              //       dataPoints.map((point, i) => {
+                              //         return { x: i, y: point }
+                              //       })
+                              //     }
+                              //   />
+                              // )
+
+                              // return (
+                              //   <VictoryLine
+                              //     padding={{top: 5, bottom: 5, left: 0, right: 0}}
+                              //     responsive={false}
+                              //     height={60}
+                              //     data={
+                              //       dataPoints.map((point, i) => {
+                              //         return { x: i, y: point }
+                              //       })
+                              //     }
+                              //     style={{
+                              //       data: { stroke: "#D0021B" }
+                              //     }}
+                              //   />
+                              // )
+
+                              return (
+                                <div className="relative my1">
+                                  <div className="absolute t100 l0 small">
+                                    {
+                                      dataPoints[0]
+                                    }
+                                  </div>
+                                  <div className="absolute b100 r0 small">
+                                    {
+                                      dataPoints[dataPoints.length - 1]
+                                    }
+                                  </div>
+                                  <svg width="450" height="60" viewBox="0 0 450 60">
+                                    <VictoryLine
+                                      standalone={false}
+                                      height={60}
+                                      padding={{top: 5, bottom: 5, left: 5, right: 5}}
+                                      data={
+                                        dataPoints.map((point, i) => {
+                                          return { x: i, y: point }
+                                        })
+                                      }
+                                      style={{
+                                        data: { stroke: "#D0021B" }
+                                      }}
+                                    />
+                                    <VictoryScatter
+                                      standalone={false}
+                                      height={60}
+                                      padding={{top: 5, bottom: 5, left: 5, right: 5}}
+                                      data={
+                                        dataPoints.map((point, i) => {
+                                          return { x: i, y: point }
+                                        })
+                                      }
+                                      size={4}
+                                      style={{
+                                        data: { fill: "#D0021B", stroke: "#FFF", strokeWidth: 2 }
+                                      }}
+                                    />
+                                  </svg>
+                                </div>
+                              )
+
                             })()}
                           </td>
                           <td className="p1 sm-4">{(() => {

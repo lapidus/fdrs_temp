@@ -2091,6 +2091,10 @@ strong,
 .b50 { bottom: 50%; }
 .r50 { right:  50%; }
 .l50 { left:   50%; }
+.t100 { top:    100%; }
+.b100 { bottom: 100%; }
+.r100 { right:  100%; }
+.l100 { left:   100%; }
 
 .y-center-self { -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .x-center-self { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
