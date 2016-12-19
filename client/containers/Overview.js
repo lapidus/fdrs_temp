@@ -343,7 +343,7 @@ class Overview extends React.Component {
                                           x: [0,10],
                                           y: [0,max(dataPoints)]
                                         }}
-                                        height={120}
+                                        height={60}
                                         standalone={true}
                                         data={
                                           dataPoints.map((point, i) => {
