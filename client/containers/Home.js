@@ -15,11 +15,11 @@ class Home extends React.Component {
         <header className='block relative px1 py4'>
           <div className='clearfix mxn1'>
             <div className='col sm-8 sm-offset-1 md-6 md-offset-2 lg-5 px1'>
-              <h1 className='display-1 sm-display-2 md-display-3 light'>
-                Data insights for<br />
-                <span className='color-primary'>National Societies</span>
+              <h1 className='display-1 sm-display-2 md-display-2 light'>
+                Data insights on <br />the world's largest<br />
+                <span className='color-primary'>humanitarian organization</span>
               </h1>
-              <p className='lead'>FDRS provides crucial insights, reports, and analytical tools for National Societies and the IFRC secretariat.</p>
+              <p className='lead pr4'>The Federation-wide Databank and Reporting System (FDRS) provides crucial reports and analytical tools based on data from National Societies.</p>
             </div>
           </div>
 
@@ -55,8 +55,8 @@ class Home extends React.Component {
                         </g>
                     </svg>
                   </div>
-                  <h3 className='title sm-headline light'>The Federation<br />at a glance</h3>
-                  <p>Explore the whole Federation at a glance, and see our work in numbers. This tool will give you an overview of what the entire Federation looks like.</p>
+                  <h3 className='title sm-headline light'>The IFRC<br />at a glance</h3>
+                  <p>See our work in numbers. This tool will give you an overview of what the entire Federation looks like.</p>
                   <Link to='/overview' className="strong">Explore the IFRC</Link>
                 </div>
                 <div className='col sm-4 px1 md-px3'>
