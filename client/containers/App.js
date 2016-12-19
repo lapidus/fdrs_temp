@@ -196,22 +196,39 @@ class App extends React.Component {
 
           <footer className="site-footer bg-dark clearfix">
             <div className="clearfix py2" style={{ background:"rgba(0,0,0,0.2)" }}>
-              <div className="col sm-9 sm-offset-3 md-9 md-offset-2 px2" style={{ opacity:0.8 }}>
-                <p className="small">
-                  { "Website by:" }&nbsp;
-                  <a
-                    href="http://www.lapidus.se"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>{ "Lapidus Interactive" }</span>
-                  </a>
+
+              <div className="col sm-3 sm-offset-1">
+                <p className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
+                  <Link to="/" className='color-regular'><span className='color-primary'>FEDERATION-WIDE</span> DATABANK<br />
+                  AND REPORTING SYSTEM</Link>
                 </p>
-                <p className="small">
-                  &copy;
-                  { " 2016 FDRS" }
-                </p>
+                <p>website by Lapidus Interactive</p>
               </div>
+
+              <div className="col sm-3">
+                <p className="subhead strong">Services</p>
+                <ul className="m0 p0">
+                  <li className="block">
+                    <Link to="/overview">The IFRC at a glance</Link>
+                  </li>
+                  <li className="block">
+                    <Link to="/societies">National Society profiles</Link>
+                  </li>
+                  <li className="block">
+                    <Link to="/report">“Everyone Counts” report</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="col sm-3">
+                <p className="subhead strong">Contact</p>
+                <p>If you have feedback, questions and/or corrections, please write to the FDRS team.</p>
+                <a href="#">fdrs@ifrc.org</a>
+              </div>
+
+              <div className="col base-10 base-offset-1 small">
+                <p>&copy; { "2016 FDRS" }</p>
+              </div>
+
             </div>
           </footer>
         </div>
