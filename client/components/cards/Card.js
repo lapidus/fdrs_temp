@@ -87,7 +87,7 @@ class Card extends React.Component {
         <div>
           {
             children.map((child, i) =>
-              child.type.name === "CardView" && cardView === i &&
+              child.props.componentIdentifier === "CardView" && cardView === i &&
                 <div style={{ height:240 }} key={ i }>
                   { child.props.children }
                 </div>
@@ -118,7 +118,7 @@ class Card extends React.Component {
             <div className="t0 l1 y-center-self absolute btn-group btn-group--raised">
               {
                 children.map((child, i) =>
-                  child.type.name === "CardView" &&
+                  child.props.componentIdentifier === "CardView" &&
                   <button
                     key={ i }
                     onClick={ () => this.switchView(i) }
@@ -140,7 +140,7 @@ class Card extends React.Component {
         </footer>
         {
           children.map((child, i) =>
-            child.type.name == "CardOverlay" &&
+            child.props.componentIdentifier == "CardOverlay" &&
             <div
               key={ i }
               className={ `card__overlay bg-white color-regular ${overlay && "card__overlay--active"}` }
