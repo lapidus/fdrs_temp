@@ -350,9 +350,6 @@ class Overview extends React.Component {
                                   <div className="absolute b100 r0 small">
                                     {
                                       niceNum(dataPoints[dataPoints.length - 1])
-
-                                      // niceNum(dataPoints[dataPoints.length - 1], 0)
-                                      // niceNum(dataPoints[dataPoints.length - 1], 0, null, true)
                                     }
                                   </div>
                                   <svg width="450" height="60" viewBox="0 0 450 60">
