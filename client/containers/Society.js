@@ -8,6 +8,7 @@ import map from "lodash/fp/map"
 import filter from "lodash/fp/filter"
 import uniqBy from "lodash/fp/uniqBy"
 import ReactIScroll from "react-iscroll"
+import niceNum from "../utils/niceNum"
 
 import StickySidebar from "../components/StickySidebar"
 import LineChart from "../components/charts/LineChart"
@@ -33,7 +34,9 @@ const iScroll = require("iscroll")
 
 function roundIt(n) {
   const factor = Math.pow(10, String(n).length - 1)
-  return Math.ceil(n/factor) * factor
+  const finalNumber = Math.ceil(n/factor) * factor
+  // return finalNumber === 0 ? 10 : finalNumber
+  return finalNumber
 }
 
 function getLatestYearDocuments(props) {
@@ -251,7 +254,7 @@ class Society extends React.Component {
                           dataset={ [
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_noPeopleVolunteering),
+                              y: Number(d.KPI_noPeopleVolunteering) || null,
                             })),
                           ] }
                         />
@@ -259,7 +262,7 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="plainNumber">
                       <div className="p1">
-                        <p className="display-1 strong m0">{ latestData.KPI_noPeopleVolunteering }</p>
+                        <p className="display-1 strong m0">{ niceNum(latestData.KPI_noPeopleVolunteering) }</p>
                         <p className="m0">{ `people volunteering time for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
@@ -280,13 +283,27 @@ class Society extends React.Component {
                   <Card bgColor="bg-beige" basicCard>
                     <CardView viewIcon="plainNumber">
                       <div className="pt3 px1">
-                        <p className="display-2 strong mb0">{ latestData.Population }</p>
-                        <p className="m0">{ `population of ${society.NSO_DON_name} in 2015` }</p>
+                        <p className="display-2 strong mb0">{ niceNum(latestData.Population, 2) }</p>
+                        <p className="m0">
+                          {
+                            niceNum(latestData.Population, 2) == "N/A" ? (
+                              `There is no population data available for ${society.NSO_DON_name} for ${latestData.KPI_Year}`
+                            ) : (
+                              `population of ${society.NSO_DON_name} in 2015`
+                            )
+                          }
+                        </p>
                       </div>
                     </CardView>
                     <CardOverlay>
                       <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
+                        {
+                          niceNum(latestData.Population, 2) == "N/A" ? (
+                            `There is no population data for ${society.NSO_DON_name}`
+                          ) : (
+                            "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics."
+                          )
+                        }
                       </p>
                       <p>
                         { "The data comes from this source:" } <br />
@@ -327,7 +344,10 @@ class Society extends React.Component {
                           dataset={ [
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_noLocalUnits),
+                              y: (() => {
+                                console.log("DataPoints of major interest: ", d.KPI_Year, d.KPI_noLocalUnits)
+                                return d.KPI_noLocalUnits ? Number(d.KPI_noLocalUnits) : null
+                              })(),
                             })),
                           ] }
                         />
@@ -335,7 +355,7 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="plainNumber">
                       <div className="p1">
-                        <p className="display-1 strong m0">{ latestData.KPI_noLocalUnits }</p>
+                        <p className="display-1 strong m0">{ niceNum(latestData.KPI_noLocalUnits) }</p>
                         <p className="m0">{ `local units for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
@@ -438,7 +458,10 @@ class Society extends React.Component {
                           dataset={ [
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_noPaidStaff),
+                              y: (() => {
+                                console.log("DataPoints of major interest (Paid staff): ", d.KPI_Year, d.KPI_noPaidStaff)
+                                return d.KPI_noPaidStaff ? Number(d.KPI_noPaidStaff) : null
+                              })(),
                             })),
                           ] }
                         />
@@ -446,7 +469,7 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="plainNumber">
                       <div className="p1">
-                        <p className="display-1 strong m0">{ latestData.KPI_noPaidStaff }</p>
+                        <p className="display-1 strong m0">{ niceNum(latestData.KPI_noPaidStaff) }</p>
                         <p className="m0">{ `paid staff for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
@@ -467,8 +490,14 @@ class Society extends React.Component {
                   <Card initialView={ 0 } bgColor="bg-beige" basicCard>
                     <CardView viewIcon="plainNumber">
                       <div className="pt3 px1">
-                        <p className="display-2 strong mb0">{ latestData.Poverty }</p>
-                        <p className="m0">{ `percentage of ${society.NSO_DON_name} population living below the poverty line in 2015` }</p>
+                        <p className="display-2 strong mb0">{ niceNum(latestData.Poverty) }</p>
+                        <p className="m0">{
+                          niceNum(latestData.Poverty) === "N/A" ? (
+                            `There is no poverty data avilable for ${society.NSO_DON_name}`
+                          ) : (
+                            `percentage of ${society.NSO_DON_name} population living below the poverty line in 2015`
+                          )
+                        }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
@@ -514,7 +543,7 @@ class Society extends React.Component {
                           dataset={ [
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_noPeopleReachedDisaster),
+                              y: Number(d.KPI_noPeopleReachedDisaster) || null,
                             })),
                           ] }
                         />
@@ -564,7 +593,7 @@ class Society extends React.Component {
                           dataset={ [
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_noPeopleDonatingBlood),
+                              y: Number(d.KPI_noPeopleDonatingBlood) || null,
                             })),
                           ] }
                         />
@@ -572,8 +601,12 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="plainNumber">
                       <div className="p1">
-                        <p className="display-1 strong m0">{ latestData.KPI_noPeopleDonatingBlood }</p>
-                        <p className="m0">{ `people donating blood for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                        <p className="display-1 strong m0">{ niceNum(latestData.KPI_noPeopleDonatingBlood) }</p>
+                        <p className="m0">
+                          {
+                            `people donating blood for ${society.NSO_DON_name} in ${latestData.KPI_Year}`
+                          }
+                        </p>
                       </div>
                     </CardView>
                     <CardView viewIcon="genderChart">{ "View 2" }</CardView>
@@ -593,9 +626,19 @@ class Society extends React.Component {
                   <Card bgColor="bg-beige" basicCard>
                     <CardView>
                       <div className="pt3 px1">
-                        <p className="small strong m0">{ "CHF" }</p>
-                        <p className="display-1 strong m0">{ latestData.GDP }</p>
-                        <p className="m0">{ `${society.NSO_DON_name} GDP in ${latestData.KPI_Year}` }</p>
+                        <p className="small strong m0">
+                          { niceNum(latestData.GDP) === "N/A" ? "" : "CHF" }
+                        </p>
+                        <p className="display-1 strong m0">{ niceNum(latestData.GDP) }</p>
+                        <p className="m0">
+                          {
+                            niceNum(latestData.GDP) === "N/A" ? (
+                              `There is no GDP data available for ${society.NSO_DON_name} for ${latestData.KPI_Year}`
+                            ) : (
+                              `${society.NSO_DON_name} GDP in ${latestData.KPI_Year}`
+                            )
+                          }
+                        </p>
                       </div>
                     </CardView>
                     <CardView>{ "View 1" }</CardView>

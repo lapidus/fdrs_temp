@@ -9,6 +9,7 @@ import Select from "react-select"
 import remove from "lodash/remove"
 import max from "lodash/max"
 import { VictoryLine, VictoryScatter, VictoryChart } from "victory"
+import niceNum from "../utils/niceNum"
 
 import StickySidebar from "../components/StickySidebar"
 import ReactIScroll from "react-iscroll"
@@ -334,47 +335,10 @@ class Overview extends React.Component {
                                 return this.state.groupedTimeSeries[year]
                                            .filter(obj => obj.KPI_DON_Code === NS.KPI_DON_Code)[0]
                               })
-                              const dataPoints = yearValues.map(yearValue => {
-                                return yearValue ? Number(yearValue[this.state.currentIndicator.id]) : 0
+                              const dataPoints = yearValues.map(yearSociety => {
+                                const yearValue = yearSociety ? yearSociety[this.state.currentIndicator.id] : null
+                                return yearValue ? Number(yearValue) : null
                               })
-
-                              // return (
-                              //   <VictoryLine
-                              //     domain={{
-                              //       x: [0,10],
-                              //       y: [0,max(dataPoints)]
-                              //     }}
-                              //     padding={{
-                              //       top: 5,
-                              //       bottom: 5,
-                              //       left: 0,
-                              //       right: 0
-                              //     }}
-                              //     height={60}
-                              //     standalone={true}
-                              //     data={
-                              //       dataPoints.map((point, i) => {
-                              //         return { x: i, y: point }
-                              //       })
-                              //     }
-                              //   />
-                              // )
-
-                              // return (
-                              //   <VictoryLine
-                              //     padding={{top: 5, bottom: 5, left: 0, right: 0}}
-                              //     responsive={false}
-                              //     height={60}
-                              //     data={
-                              //       dataPoints.map((point, i) => {
-                              //         return { x: i, y: point }
-                              //       })
-                              //     }
-                              //     style={{
-                              //       data: { stroke: "#D0021B" }
-                              //     }}
-                              //   />
-                              // )
 
                               return (
                                 <div className="relative my1">
@@ -385,6 +349,7 @@ class Overview extends React.Component {
                                   </div>
                                   <div className="absolute b100 r0 small">
                                     {
+                                      // niceNum(dataPoints[dataPoints.length - 1], 0)
                                       dataPoints[dataPoints.length - 1]
                                     }
                                   </div>
@@ -413,7 +378,15 @@ class Overview extends React.Component {
                                       }
                                       size={4}
                                       style={{
-                                        data: { fill: "#D0021B", stroke: "#FFF", strokeWidth: 2 }
+                                        data: {
+                                          fill: (d) => {
+                                            return d.y ? "#D0021B" : "transparent"
+                                          },
+                                          stroke: "#FFF",
+                                          strokeWidth: (d) => {
+                                            return d.y ? 2 : 0
+                                          }
+                                        }
                                       }}
                                     />
                                   </svg>
@@ -426,7 +399,7 @@ class Overview extends React.Component {
                               var latestData = this.state.groupedTimeSeries[this.state.currentYear]
                                                    .filter(obj => obj.KPI_DON_Code === NS.KPI_DON_Code)
                               var latestNumber = latestData.length > 0 ? latestData[0][this.state.currentIndicator.id] : "N/A"
-                              return <span>{ latestNumber }</span>
+                              return <span>{ niceNum(latestNumber, 0, null, true) }</span>
                             })()}
                           </td>
                         </tr>
