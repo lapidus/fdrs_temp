@@ -9,7 +9,8 @@ const isNumeric = n => !isNaN(parseFloat(n)) && isFinite(n)
  * @return {String}
  */
 const niceNum = (input, precision, format, fullNumber) => {
-  if (input === "N/A" || input === "#N/A" || input === "") return "N/A"
+
+  if (input === "N/A" || input === "#N/A" || input === "" || input === null) return "N/A"
 
   input = Number(input);
   if (!isNumeric(input)) return "…"
@@ -28,7 +29,8 @@ const niceNum = (input, precision, format, fullNumber) => {
       precision = 0
   }
 
-  if (Math.abs(input) < 1000) return input.toFixed(precision)
+  // if (Math.abs(input) < 1000) return input.toFixed(precision)
+  if (Math.abs(input) < 1000) return input.toFixed()
 
   if(fullNumber) {
     return String(input)
