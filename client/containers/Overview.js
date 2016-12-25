@@ -89,7 +89,7 @@ class Overview extends React.Component {
   }
   handleYearSelect(year, e) {
     this.setState({
-      currentYear: year,
+      currentYear: Number(year),
     })
   }
   handleUnselectSociety(society, e) {
