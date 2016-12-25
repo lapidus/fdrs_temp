@@ -79,7 +79,11 @@ class Overview extends React.Component {
   }
   handleNSSelect(selectedSociety) {
     this.setState({
-      selectedSocieties: this.state.selectedSocieties.concat([selectedSociety]),
+      selectedSocieties: this.state.selectedSocieties.concat([{
+        KPI_DON_Code: selectedSociety.value,
+        NSO_DON_name: selectedSociety.label,
+        slug: selectedSociety.slug,
+      }]),
       societiesBlacklist: this.state.societiesBlacklist.concat([selectedSociety.value]),
     })
   }
@@ -89,26 +93,13 @@ class Overview extends React.Component {
     })
   }
   handleUnselectSociety(society, e) {
-    console.log(remove)
-    console.log(this.state.societiesBlacklist)
-    console.log(this.state.selectedSocieties)
     const newSelectedSocieties = remove(this.state.selectedSocieties, (n) => {
-      return n.value !== society.value
+      return n.KPI_DON_Code !== society.KPI_DON_Code
     })
-    console.log("New selected societies: ", newSelectedSocieties)
-    console.log("New blacklist: ", newSelectedSocieties.map(o => o.value))
     this.setState({
       selectedSocieties: newSelectedSocieties,
-      societiesBlacklist: newSelectedSocieties.map(o => o.value)
+      societiesBlacklist: newSelectedSocieties.map(o => o.KPI_DON_Code)
     })
-    // const i = this.state.societiesBlacklist.indexOf(society.value)
-    // const a = this.state.soceitiesBlacklist.slice(0, i)
-    // const b = this.state.soceitiesBlacklist.slice(i+1)
-
-    // this.setState({
-    //   selectedSocieties: ,
-    //   societiesBlacklist: a.concat(b),
-    // })
   }
   render() {
 
@@ -151,7 +142,6 @@ class Overview extends React.Component {
               <StickySidebar>
                 <div className="pb2">
                   <h1 className="title mt0">National Societies</h1>
-                  {/* <Textfield placeholder="Select societies..." /> */}
                   <Select
                     searchable={ true }
                     clearable={ false }
@@ -171,9 +161,11 @@ class Overview extends React.Component {
                     {
                       this.state.selectedSocieties.map((society, i) => {
                         return (
-                          <li key={i} className="block relative bg-secondary overflow-hidden py05 px1" style={{marginBottom: "0.5rem", textAlign: "left"}}>
-                            <span className="block overflow-hidden pr1" style={{whiteSpace: "nowrap", textOverflow: "ellipsis"}}>{society.label}</span>
-                            <div onClick={(e) => this.handleUnselectSociety(society, e)} className="btn absolute t0 b0 r0 bg-primary p05">x</div>
+                          <li key={ i } className="block relative bg-secondary overflow-hidden py05 px1" style={{marginBottom: "0.5rem", textAlign: "left"}}>
+                            <span className="block overflow-hidden pr1" style={{whiteSpace: "nowrap", textOverflow: "ellipsis"}}>
+                              { society.NSO_DON_name }
+                            </span>
+                            <div onClick={ (e) => this.handleUnselectSociety(society, e) } className="btn absolute t0 b0 r0 bg-primary p05">x</div>
                           </li>
                         )
                       })
@@ -210,11 +202,6 @@ class Overview extends React.Component {
                      />
                 <div className="absolute b0 text-center pb4 l50 x-center-self">
                   <div className="year-slider">
-                    { /*
-                      Object.keys(this.state.groupedTimeSeries).map((year, i) => (
-                        <button key={i} onClick={(e) => this.handleYearSelect(year, e)} className={this.state.currentYear == year ? "btn bg-primary year-slider__year" : "btn bg-secondary year-slider__year"}>{ year }</button>
-                      )) */
-                    }
                     {
                       Object.keys(this.state.groupedTimeSeries).map((year, i) => (
                         <div key={i} onClick={(e) => this.handleYearSelect(year, e)} className={this.state.currentYear == year ? "year-slider__year year-slider__year--active" : "year-slider__year"}>
@@ -224,8 +211,6 @@ class Overview extends React.Component {
                     }
                   </div>
                 </div>
-
-                {/* <div ref={slider => this.slider = slider} style={{height:80}}></div> */}
 
               </div>
 
