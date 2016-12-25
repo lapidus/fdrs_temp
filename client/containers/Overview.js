@@ -10,6 +10,7 @@ import remove from "lodash/remove"
 import max from "lodash/max"
 import { VictoryLine, VictoryScatter, VictoryChart } from "victory"
 import niceNum from "../utils/niceNum"
+import SocietiesTable from "../components/SocietiesTable"
 
 import StickySidebar from "../components/StickySidebar"
 import ReactIScroll from "react-iscroll"
@@ -221,7 +222,6 @@ class Overview extends React.Component {
                         </div>
                       ))
                     }
-
                   </div>
                 </div>
 
@@ -229,184 +229,17 @@ class Overview extends React.Component {
 
               </div>
 
-              <table className="base-12 text-left mb2">
-                <tbody>
-                  <tr className="shadow-2">
-                    <th className="p1 sm-4">{ "National Society name" }</th>
-                    <th className="p1 sm-4">{ "Trend" }</th>
-                    <th className="p1 sm-4">{ "Data for" } { this.state.currentYear }</th>
-                  </tr>
-                </tbody>
-              </table>
-
-              {/* <table className="base-12 text-left">
-                <tbody>
-                  <tr className="shadow-2">
-                    <td className="p1 sm-4">{ "IFRC (all National Societies)" }</td>
-                    <td className="p1 sm-4">{ "Trendline" }</td>
-                    <td className="p1 sm-4">{ "16,031,869" }</td>
-                  </tr>
-                </tbody>
-              </table> */}
-
-              {
-                this.state.selectedSocieties.length > 0 ? (
-                  <div className="clearfix relative my2">
-                    <hr />
-                    <div className="absolute t0 l0 y-center-self px1 bg-white color-primary small strong">
-                      { "Selected National Societies" }
-                    </div>
-                  </div>
-                ) : (
-                  ""
-                )
-              }
-
-              {
-                this.state.selectedSocieties.length > 0 ? (
-                  <table className="base-12 text-left shadow-2">
-                    <tbody>
-                      {
-                        this.state.selectedSocieties.map((ns, i) => {
-                          return (
-                            <tr key={ i } className="relative">
-                              <td className="p1 sm-4">
-                                <Link to={`/societies/${ns.slug}`}>
-                                  { ns.label }
-                                </Link>
-                              </td>
-                              <td className="p1 sm-4">{ "Trendline" }</td>
-                              <td className="p1 sm-4">
-                                  {(() => {
-                                    var latestData = this.state.groupedTimeSeries[this.state.currentYear]
-                                                         .filter(obj => obj.KPI_DON_Code === ns.value)
-                                    var latestNumber = latestData.length > 0 ? latestData[0][this.state.currentIndicator.id] : "N/A"
-                                    return (
-                                      <div className="relative">
-                                        <span>{ latestNumber }</span>
-                                        <div onClick={(e) => this.handleUnselectSociety(ns, e)} className="btn absolute r0 t50 y-center-self bg-primary">x</div>
-                                      </div>
-                                    )
-                                  })()}
-                              </td>
-                            </tr>
-                          )
-                        })
-                      }
-                    </tbody>
-                  </table>
-                ) : (
-                  ""
-                )
-              }
-
-              {
-                this.state.selectedSocieties.length > 0 ? (
-                  <div className="clearfix relative my2">
-                    <hr />
-                    <div className="absolute t0 l0 y-center-self px1 bg-white color-primary small strong">
-                      { "All National Societies" }
-                    </div>
-                  </div>
-                ) : (
-                  ""
-                )
-              }
-
-              <table className="base-12 text-left shadow-2">
-                <tbody>
-                  <tr>
-                    <td className="p1 sm-4">{ "IFRC (all National Societies)" }</td>
-                    <td className="p1 sm-4">{ "Trendline" }</td>
-                    <td className="p1 sm-4">{ "16,031,869" }</td>
-                  </tr>
-                  {
-                    this.props.nationalSocieties.map((NS, i) => {
-                      return this.state.societiesBlacklist.indexOf(NS.KPI_DON_Code) == -1 ? (
-                        <tr key={i} className={i % 2 == 0 ? "bg-lighter" : ""}>
-                          <td className="p1 sm-4">
-                            <Link to={`/societies/${NS.slug}`}>
-                              { NS.NSO_DON_name }
-                            </Link>
-                          </td>
-                          <td className="p1 sm-4">
-                            {(() => {
-                              const yearValues = Object.keys(this.state.groupedTimeSeries).map((year, i) => {
-                                return this.state.groupedTimeSeries[year]
-                                           .filter(obj => obj.KPI_DON_Code === NS.KPI_DON_Code)[0]
-                              })
-                              const dataPoints = yearValues.map(yearSociety => {
-                                const yearValue = yearSociety ? yearSociety[this.state.currentIndicator.id] : null
-                                return yearValue ? Number(yearValue) : null
-                              })
-
-                              return (
-                                <div className="relative my1">
-                                  <div className="absolute t100 l0 small">
-                                    {
-                                      dataPoints[0]
-                                    }
-                                  </div>
-                                  <div className="absolute b100 r0 small">
-                                    {
-                                      niceNum(dataPoints[dataPoints.length - 1])
-                                    }
-                                  </div>
-                                  <svg width="450" height="60" viewBox="0 0 450 60">
-                                    <VictoryLine
-                                      standalone={false}
-                                      height={60}
-                                      padding={{top: 5, bottom: 5, left: 5, right: 5}}
-                                      data={
-                                        dataPoints.map((point, i) => {
-                                          return { x: i, y: point }
-                                        })
-                                      }
-                                      style={{
-                                        data: { stroke: "#D0021B" }
-                                      }}
-                                    />
-                                    <VictoryScatter
-                                      standalone={false}
-                                      height={60}
-                                      padding={{top: 5, bottom: 5, left: 5, right: 5}}
-                                      data={
-                                        dataPoints.map((point, i) => {
-                                          return { x: i, y: point }
-                                        })
-                                      }
-                                      size={4}
-                                      style={{
-                                        data: {
-                                          fill: (d) => {
-                                            return d.y ? "#D0021B" : "transparent"
-                                          },
-                                          stroke: "#FFF",
-                                          strokeWidth: (d) => {
-                                            return d.y ? 2 : 0
-                                          }
-                                        }
-                                      }}
-                                    />
-                                  </svg>
-                                </div>
-                              )
-
-                            })()}
-                          </td>
-                          <td className="p1 sm-4">{(() => {
-                              var latestData = this.state.groupedTimeSeries[this.state.currentYear]
-                                                   .filter(obj => obj.KPI_DON_Code === NS.KPI_DON_Code)
-                              var latestNumber = latestData.length > 0 ? latestData[0][this.state.currentIndicator.id] : "N/A"
-                              return <span>{ niceNum(latestNumber, 0, null, true) }</span>
-                            })()}
-                          </td>
-                        </tr>
-                      ) : ( <tr key={i}></tr> )
-                    })
-                  }
-                </tbody>
-              </table>
+              <SocietiesTable
+                currentYear={ this.state.currentYear }
+                currentIndicator={ this.state.currentIndicator }
+                selectedSocieties={ this.state.selectedSocieties }
+                societiesBlacklist={ this.state.societiesBlacklist }
+                groupedTimeSeries={ this.state.groupedTimeSeries }
+                handleIndicatorSelect={ this.handleIndicatorSelect }
+                handleUnselectSociety={ this.handleUnselectSociety }
+                handleNSSelect={ this.handleNSSelect }
+                handleYearSelect={ this.handleYearSelect }
+              />
 
             </div>
 

@@ -21,6 +21,9 @@ export const RECEIVE_TIME_SERIES_META = "RECEIVE_TIME_SERIES_META"
 export const REQUEST_DOCUMENTS = "REQUEST_DOCUMENTS"
 export const RECEIVE_DOCUMENTS = "RECEIVE_DOCUMENTS"
 
+export const SHOW_TOOLTIP = "SHOW_TOOLTIP"
+export const HIDE_TOOLTIP = "HIDE_TOOLTIP"
+
 let counter
 
 const startLoad = () => ({ type: START_LOAD })
@@ -59,6 +62,9 @@ export function endMainLoad() {
 
 export const toggleNav = () => ({ type: TOGGLE_NAV })
 export const closeNav = () => ({ type: CLOSE_NAV })
+
+export const showTooltip = () => ({ type: SHOW_TOOLTIP })
+export const hideTooltip = () => ({ type: HIDE_TOOLTIP })
 
 const parseNationalSocieties = map(s => {
   s.slug = kebabCase(s.NSO_DON_name)

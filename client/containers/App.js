@@ -232,6 +232,8 @@ class App extends React.Component {
             </div>
           </footer>
         </div>
+
+        {/* <div style={{display: this.props.tooltipVisible ? "block" : "none" }}>{ "Tooltip" }</div> */}
       </div>
     )
   }
@@ -256,6 +258,7 @@ App.contextTypes = {
 
 const mapStateToProps = state => ({
   navOpen: state.appReducer.navOpen,
+  // tooltipVisible: state.appReducer.tooltipVisible,
 })
 
 const mapDispatchToProps = dispatch => ({

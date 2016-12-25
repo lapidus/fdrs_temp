@@ -14,6 +14,8 @@ import {
   RECEIVE_TIME_SERIES_META,
   REQUEST_DOCUMENTS,
   RECEIVE_DOCUMENTS,
+  SHOW_TOOLTIP,
+  HIDE_TOOLTIP
 } from "../actions/appActions"
 
 export default function storyReducer(state = {
@@ -28,6 +30,7 @@ export default function storyReducer(state = {
   fetchingTimeSeriesMeta: false,
   documents: [],
   fetchingDocuments: false,
+  tooltipVisible: false
 }, action) {
   switch (action.type) {
   case START_LOAD:
@@ -87,6 +90,14 @@ export default function storyReducer(state = {
     return assign({}, state, {
       documents: action.documents,
       fetchingDocuments: false,
+    })
+  case SHOW_TOOLTIP:
+    return assign({}, state, {
+      tooltipVisible: true
+    })
+  case HIDE_TOOLTIP:
+    return({}, state, {
+      tooltipVisible: false
     })
   default:
     return state
