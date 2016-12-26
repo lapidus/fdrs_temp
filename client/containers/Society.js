@@ -55,11 +55,18 @@ class Society extends React.Component {
       year: getLatestYearDocuments(props),
       filteredSocieties: props.nationalSocieties,
       filterValue: "",
+      earliestData: minBy(props.data, (o) => o.KPI_Year),
+      latestData: maxBy(props.data, (o) => o.KPI_Year),
+      filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(props), props.documents)
     }
 
     this.handleYearChange = this.handleYearChange.bind(this)
     this.handleSocietiesFiltering = this.handleSocietiesFiltering.bind(this)
     this.handleFilterReset = this.handleFilterReset.bind(this)
+    this.getParsed = this.getParsed.bind(this)
+    this.yearFilter = this.yearFilter.bind(this)
+    this.yearOption = this.yearOption.bind(this)
+    this.yearOptions = this.yearOptions.bind(this)
   }
 
   componentDidMount() {
@@ -70,12 +77,18 @@ class Society extends React.Component {
     if (this.props.society.iso_2 !== nextProps.society.iso_2) {
       this.setState({
         year: getLatestYearDocuments(nextProps),
+        earliestData: minBy(nextProps.data, (o) => o.KPI_Year),
+        latestData: maxBy(nextProps.data, (o) => o.KPI_Year),
+        filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(nextProps), nextProps.documents),
       })
     }
   }
 
   handleYearChange(year) {
-    this.setState({ year: year.value })
+    this.setState({
+      year: year.value,
+      filteredDocuments: filter(d => +d.year === +year.value, this.props.documents),
+    })
   }
 
   handleSocietiesFiltering(e) {
@@ -97,23 +110,34 @@ class Society extends React.Component {
     })
   }
 
+  getParsed(v) {
+    const m = v.match(/\d+/g)
+    return !m ? 0 : v.search(m[0]) === 1 ? -m[0] : +m[0]
+  }
+
+  yearFilter(year) {
+    return d => +d.year === +year
+  }
+
+  yearOption(d) {
+    return { value: +d.year, label: d.year }
+  }
+
+  yearOptions() {
+    return uniqBy("value", map(this.yearOption, this.props.documents))
+  }
+
   render() {
 
-    const { year, filteredSocieties, filterValue } = this.state
-    const { society, data, documents } = this.props
-    const yearOption = d => ({ value: +d.year, label: d.year })
-    const yearOptions = uniqBy("value", map(yearOption, documents))
-    const yearFilter = d => +d.year === +year
-    const yearDocuments = filter(yearFilter, documents)
-    console.log("yyyyyy", year, yearDocuments, documents)
+    const {
+      year,
+      filteredSocieties,
+      filterValue,
+      earliestData,
+      latestData
+    } = this.state
 
-    const earliestData = minBy(data, (o) => o.KPI_Year)
-    const latestData = maxBy(data, (o) => o.KPI_Year)
-
-    const getParsed = v => {
-      const m = v.match(/\d+/g)
-      return !m ? 0 : v.search(m[0]) === 1 ? -m[0] : +m[0]
-    }
+    const { society, data } = this.props
 
     return (
       <section>
@@ -194,7 +218,7 @@ class Society extends React.Component {
               <div className="clearfix mxn1 pb2">
                 <div className="col sm-8 px1 pb1">
                   <p className="lead">
-                    { `${society.NSO_DON_name} was admitted to the IFRC in ${society.admission_date}.` }
+                    { `${society.NSO_DON_name} was admitted to the IFRC in ${society.admission_date.split(".")[2]}.` }
                     { latestData.KPI_noPeopleVolunteering ? ` In ${latestData.KPI_Year}, it counted ${latestData.KPI_noPeopleVolunteering} active volunteers` : "" }
                     { earliestData.KPI_noPeopleVolunteering ? ` (up from ${earliestData.KPI_noPeopleVolunteering} in ${earliestData.KPI_Year})` : "" }
                     { latestData.KPI_noPeopleVolunteeringM && latestData.KPI_noPeopleVolunteeringF ? `, of which ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringM)}% were male and ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringF)}% female` : "" }
@@ -213,8 +237,8 @@ class Society extends React.Component {
                   <Globe
                     selectedCountry={ society.iso_2 }
                     center={ [
-                      getParsed(society.lat),
-                      getParsed(society.long),
+                      this.getParsed(society.lat),
+                      this.getParsed(society.long),
                     ] }
                   />
                 </div>
@@ -681,7 +705,7 @@ class Society extends React.Component {
                 </div>
 
                 {
-                  yearDocuments.length > 0 ? (
+                  this.state.filteredDocuments.length > 0 ? (
                     <div className="col sm-12 px1 pb2">
                       <div className="relative overflow-hidden shadow-2 pt1 px1 pb2">
                         <h2 className="subhead mt0">{ "Documents" }</h2>
@@ -691,13 +715,13 @@ class Society extends React.Component {
                             clearable={ false }
                             name="year-selector"
                             value={ year }
-                            options={ yearOptions }
+                            options={ this.yearOptions() }
                             onChange={ this.handleYearChange }
                           />
                         </div>
                         <div className="clearfix mxn1">
                           {
-                            yearDocuments.map((doc, i) =>
+                            this.state.filteredDocuments.map((doc, i) =>
                               <div className="col sm-4 px1" key={ i }>
                                 { `${doc.document_type} - ${doc.year}` }<br />
                                 <a

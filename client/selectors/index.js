@@ -2,6 +2,7 @@ import { createSelector } from "reselect"
 import filter from "lodash/fp/filter"
 import find from "lodash/fp/find"
 import map from "lodash/fp/map"
+import groupBy from "lodash/groupBy"
 
 const nsIdProp = "KPI_DON_Code"
 const isNumeric = n => !isNaN(parseFloat(n)) && isFinite(n)
@@ -21,6 +22,9 @@ const getIndicatorData = (state, { indicator }) =>
     value: +d[indicator.id],
     year: +d.KPI_Year,
   }), emptyFilter(indicator.id, state.appReducer.timeSeries))
+
+const groupTimeSeriesByYear = state => groupBy(state.appReducer.timeSeries, "KPI_Year")
+const groupTimeSeriesBySociety = state => groupBy(state.appReducer.timeSeries, "KPI_DON_Code")
 
 // exported selector generators, so they can use props
 // and still utilise memoization
@@ -45,3 +49,9 @@ export const makeGetSocietyDocuments = () =>
 
 export const makeGetIndicatorData = () =>
   createSelector(getIndicatorData, data => data)
+
+export const makeGroupTimeSeriesByYear = () =>
+  createSelector(groupTimeSeriesByYear, data => data)
+
+  export const makeGroupTimeSeriesBySociety = () =>
+    createSelector(groupTimeSeriesBySociety, data => data)

@@ -2330,3 +2330,8 @@ tr:last-of-type > td {
     font-size: .71em;
     padding: 0 2px;
   }
+
+
+  tr:nth-child(even) {
+    background: #FBFBFB;
+  }

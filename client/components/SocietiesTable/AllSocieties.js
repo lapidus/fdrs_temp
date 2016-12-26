@@ -29,7 +29,7 @@ class AllSocieties extends React.Component {
               </div>
             </div>
           ) : (
-            ""
+            null
           )
         }
 
@@ -44,15 +44,17 @@ class AllSocieties extends React.Component {
               nationalSocieties.map((NS, i) => {
                 return societiesBlacklist.indexOf(NS.KPI_DON_Code) == -1 ? (
                   <SocietyRow
-                    nationalSociety={NS}
-                    key={i}
-                    rowKey={i}
-                    groupedTimeSeries={groupedTimeSeries}
-                    currentIndicator={currentIndicator}
-                    currentYear={currentYear}
-                    societiesBlacklist={societiesBlacklist}
+                    nationalSociety={ NS }
+                    key={ i }
+                    rowKey={ i }
+                    groupedTimeSeries={ groupedTimeSeries }
+                    currentIndicator={ currentIndicator }
+                    currentYear={ currentYear }
+                    societiesBlacklist={ societiesBlacklist }
                   />
-                ) : ( <tr key={i}></tr> )
+                ) : (
+                  null
+                )
               })
             }
           </tbody>
@@ -62,6 +64,8 @@ class AllSocieties extends React.Component {
     )
   }
 }
+
+// <tr key={ i }></tr>
 
 const mapStateToProps = state => ({
   nationalSocieties: state.appReducer.nationalSocieties

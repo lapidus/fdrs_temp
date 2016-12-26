@@ -17,10 +17,11 @@ import ReactIScroll from "react-iscroll"
 var iScroll = require("iscroll")
 
 import groupBy from "lodash/groupBy"
-import wsdmSlider from "wsdm-slider"
+// import wsdmSlider from "wsdm-slider"
 
 import {
-  makeGetSocietyData
+  makeGetSocietyData,
+  makeGroupTimeSeriesByYear,
 } from "../selectors"
 import {
   fetchNationalSocieties,
@@ -46,6 +47,7 @@ class Overview extends React.Component {
     this.handleUnselectSociety = this.handleUnselectSociety.bind(this)
   }
   componentDidMount() {
+    console.log("Grouping: ", this.props.grouping)
     // const slider1 = wsdmSlider()
     // console.log('slider: ', slider1)
     // console.log('sliderEl: ', this.slider)
@@ -277,14 +279,28 @@ Overview.propTypes = {
   nationalSocieties: React.PropTypes.array,
   timeSeriesMeta: React.PropTypes.array,
   data: React.PropTypes.array,
+  grouping: React.PropTypes.object,
 }
 Overview.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
 
-const mapStateToProps = state => ({
-  nationalSocieties: state.appReducer.nationalSocieties,
-  timeSeriesMeta: state.appReducer.timeSeriesMeta,
-  data: state.appReducer.timeSeries,
-})
+// const mapStateToProps = state => ({
+//   nationalSocieties: state.appReducer.nationalSocieties,
+//   timeSeriesMeta: state.appReducer.timeSeriesMeta,
+//   data: state.appReducer.timeSeries,
+// })
+
+const makeMapStateToProps = () => {
+  // const getSociety = makeGetSociety()
+  // const getSocietyData = makeGetSocietyData()
+  // const getSocietyDocuments = makeGetSocietyDocuments()
+  const groupTimeSeriesByYear = makeGroupTimeSeriesByYear()
+  return (state, props) => ({
+    grouping: groupTimeSeriesByYear(state, props),
+    nationalSocieties: state.appReducer.nationalSocieties,
+    timeSeriesMeta: state.appReducer.timeSeriesMeta,
+    data: state.appReducer.timeSeries,
+  })
+}
 
 // const makeMapStateToProps = () => {
 //   const getSocietyData = makeGetSocietyData()
@@ -295,4 +311,4 @@ const mapStateToProps = state => ({
 //   })
 // }
 
-export default connect(mapStateToProps)(Overview)
+export default connect(makeMapStateToProps)(Overview)

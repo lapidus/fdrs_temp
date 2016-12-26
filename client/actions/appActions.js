@@ -130,7 +130,7 @@ export function fetchTimeSeries() {
           reject(err)
         }
         else {
-          console.log("RECEIVED TIME SERIES")
+          console.log("RECEIVED TIME SERIES", res)
           dispatch(receiveTimeSeries(res))
           resolve()
         }

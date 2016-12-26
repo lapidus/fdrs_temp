@@ -10,13 +10,9 @@ class SocietyRow extends React.Component {
   constructor(props) {
     super(props)
   }
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   console.log("Wants to update")
-  //   if(nextProps.societiesBlacklist.length != this.props.societiesBlacklist || nextProps.currentIndicator.id != this.props.currentIndicator.id || nextProps.currentYear != this.props.currentYear) {
-  //     console.log("Is updating")
-  //     return true
-  //   }
-  // }
+  shouldComponentUpdate() {
+    return false
+  }
   render() {
 
     const { nationalSociety, rowKey, groupedTimeSeries, currentIndicator, currentYear } = this.props
@@ -35,7 +31,7 @@ class SocietyRow extends React.Component {
     const latestNumber = latestData.length > 0 ? latestData[0][currentIndicator.id] : "N/A"
 
     return (
-      <tr className={rowKey % 2 == 0 ? "bg-lighter" : ""}>
+      <tr>
         <td className="p1 sm-4">
           <Link to={`/societies/${nationalSociety.slug}`}>
             { nationalSociety.NSO_DON_name }
@@ -95,6 +91,8 @@ class SocietyRow extends React.Component {
     )
   }
 }
+
+// className={rowKey % 2 == 0 ? "bg-lighter" : ""}
 
 // const mapStateToProps = state => ({
 //   tooltipVisible: state.appReducer.tooltipVisible

@@ -25,7 +25,7 @@ const SelectedSocieties = ({
           </div>
         </div>
       ) : (
-        ""
+        null
       )
     }
 
