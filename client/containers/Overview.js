@@ -17,7 +17,6 @@ import ReactIScroll from "react-iscroll"
 var iScroll = require("iscroll")
 
 import groupBy from "lodash/groupBy"
-// import wsdmSlider from "wsdm-slider"
 
 import {
   makeGetSocietyData,
@@ -46,33 +45,9 @@ class Overview extends React.Component {
     this.handleYearSelect = this.handleYearSelect.bind(this)
     this.handleUnselectSociety = this.handleUnselectSociety.bind(this)
   }
-  componentDidMount() {
-    console.log("Grouping: ", this.props.grouping)
-    // const slider1 = wsdmSlider()
-    // console.log('slider: ', slider1)
-    // console.log('sliderEl: ', this.slider)
-    // slider1.create(this.slider, {
-    //   onChange: value => {
-    //     console.log(value)
-    //   },
-    //   onPlayStart: () => {
-    //     console.log('Started')
-    //   },
-    //   onPlayEnd: () => {
-    //     console.log('Ended')
-    //   },
-    //   valueFormat: Math.round,
-    //   barHeight: 15,
-    //   tipPosition: "top",
-    //   showTip: true,
-    //   handleRadius: 5,
-    // })
-    //
-    // slider1.update({
-    //   domain: [ 2009, 2015 ],
-    //   value: 2015,
-    // })
-  }
+  // componentDidMount() {
+  //   console.log("Grouping: ", this.props.grouping)
+  // }
   handleIndicatorSelect(indicator, e) {
     e.preventDefault()
     this.setState({
@@ -281,18 +256,10 @@ Overview.propTypes = {
   data: React.PropTypes.array,
   grouping: React.PropTypes.object,
 }
+
 Overview.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
 
-// const mapStateToProps = state => ({
-//   nationalSocieties: state.appReducer.nationalSocieties,
-//   timeSeriesMeta: state.appReducer.timeSeriesMeta,
-//   data: state.appReducer.timeSeries,
-// })
-
 const makeMapStateToProps = () => {
-  // const getSociety = makeGetSociety()
-  // const getSocietyData = makeGetSocietyData()
-  // const getSocietyDocuments = makeGetSocietyDocuments()
   const groupTimeSeriesByYear = makeGroupTimeSeriesByYear()
   return (state, props) => ({
     grouping: groupTimeSeriesByYear(state, props),
@@ -301,14 +268,5 @@ const makeMapStateToProps = () => {
     data: state.appReducer.timeSeries,
   })
 }
-
-// const makeMapStateToProps = () => {
-//   const getSocietyData = makeGetSocietyData()
-//   return (state, props) => ({
-//     data: getSocietyData(state, props),
-//     timeSeriesMeta: state.appReducer.timeSeriesMeta,
-//     nationalSocieties: state.appReducer.nationalSocieties,
-//   })
-// }
 
 export default connect(makeMapStateToProps)(Overview)
