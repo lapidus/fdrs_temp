@@ -21,8 +21,7 @@ class Report extends React.Component {
   }
 
   goToChapter(chapter) {
-    console.log("Switching Chapter")
-    // Use router to switch to a specific chapter
+    this.context.router.push(chapter.value)
   }
 
   render() {
@@ -112,17 +111,23 @@ class Report extends React.Component {
                     {"Report"}
                   </Link>
                 </li>
-                <li className="inline-block align-middle mr1 select-no-underline" style={{width:120}}>
+                <li className="inline-block align-middle mr1 select-no-underline" style={{width:140}}>
                   <Select
                     searchable={ false }
                     clearable={ false }
                     name="chapter-selector"
-                    value={"introduction"}
+                    value={this.context.router.getCurrentLocation().pathname}
                     options={[
-                      { value: "introduction", label: "Introduction" },
-                      { value: "chapter-1", label: "Chapter 1" },
-                      { value: "chapter-2", label: "Chapter 2" },
-                      { value: "chapter-3", label: "Chapter 3" },
+                      { value: "/report", label: "Introduction" },
+                      { value: "/report/who-we-are", label: "Who we are" },
+                      { value: "/report/what-we-do", label: "What we do" },
+                      { value: "/report/living-our-fundamental-principles", label: "Living our fundamental principles" },
+                      { value: "/report/strategic-aim-1", label: "Strategic aim 1" },
+                      { value: "/report/strategic-aim-2", label: "Strategic aim 2" },
+                      { value: "/report/strategic-aim-3", label: "Strategic aim 3" },
+                      { value: "/report/enabling-action-1", label: "Enabling action 1" },
+                      { value: "/report/enabling-action-2", label: "Enabling action 2" },
+                      { value: "/report/enabling-action-3", label: "Enabling action 3" },
                     ]}
                     onChange={ this.goToChapter }
                   />
