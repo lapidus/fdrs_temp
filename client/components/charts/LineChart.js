@@ -60,7 +60,7 @@ class LineChart extends React.Component {
                       return this.props.domain.y
                     })()}
                     standalone={false}
-                    tickCount={3}
+                    tickCount={this.props.tickCount || 3}
                     height={this.props.height}
                     width={this.state.width}
                     style={{

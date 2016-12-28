@@ -356,6 +356,15 @@ class Society extends React.Component {
                             left: 40,
                             right: 16,
                           }}
+                          tickCount={(() => {
+                            const domainValue = roundIt(
+                              maxBy(
+                                data,
+                                d => +d.KPI_noLocalUnits || 0
+                              ).KPI_noLocalUnits
+                            )
+                            return domainValue === 1 ? 2 : 3
+                          })()}
                           domain={{
                             x: [
                               new Date(earliestData.KPI_Year, 1, 1),
@@ -363,12 +372,15 @@ class Society extends React.Component {
                             ],
                             y: [
                               0,
-                              roundIt(
-                                maxBy(
-                                  data,
-                                  d => +d.KPI_noLocalUnits || 0
-                                ).KPI_noLocalUnits
-                              ),
+                              (() => {
+                                const domainValue = roundIt(
+                                  maxBy(
+                                    data,
+                                    d => +d.KPI_noLocalUnits || 0
+                                  ).KPI_noLocalUnits
+                                )
+                                return domainValue === 1 ? 2 : domainValue
+                              })(),
                             ],
                           }}
                           dataset={ [
