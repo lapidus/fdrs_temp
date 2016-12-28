@@ -726,30 +726,35 @@ class Society extends React.Component {
                   this.state.filteredDocuments.length > 0 ? (
                     <div className="col sm-12 px1 pb2">
                       <div className="relative overflow-hidden shadow-2 pt1 px1 pb2">
-                        <h2 className="subhead mt0">{ "Documents" }</h2>
-                        <div className="clearfix">
-                          <Select
-                            searchable={ false }
-                            clearable={ false }
-                            name="year-selector"
-                            value={ year }
-                            options={ this.yearOptions() }
-                            onChange={ this.handleYearChange }
-                          />
-                        </div>
+                        <h2 className="subhead mt0">
+                          { "Documents" }
+                          <span className="inline-block align-middle mx1" style={{width:80}}>
+                            <Select
+                              searchable={ false }
+                              clearable={ false }
+                              name="year-selector"
+                              value={ year }
+                              options={ this.yearOptions() }
+                              onChange={ this.handleYearChange }
+                            />
+                          </span>
+                        </h2>
                         <div className="clearfix mxn1">
                           {
                             this.state.filteredDocuments.map((doc, i) =>
-                              <div className="col sm-4 px1" key={ i }>
-                                { `${doc.document_type} - ${doc.year}` }<br />
-                                <a
-                                  href={ doc.url }
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  { "Download" }
-                                </a>
-                              </div>
+                              <article className="col sm-4 px1 py05" key={ i }>
+                                <div className="clearfix mxn1">
+                                  <div className="inline-block align-top sm-12 px1">
+                                    <div className="bg-secondary" style={{width:60,height:60}}></div>
+                                  </div>
+                                  <div className="inline-block align-top sm-12 px1">
+                                    <h1 className="strong subhead mt0 sm-my1">{ `${doc.document_type} - ${doc.year}` }</h1>
+                                    <a href={ doc.url } target="_blank" rel="noopener noreferrer" className="btn bg-primary">
+                                      { "Download" }
+                                    </a>
+                                  </div>
+                                </div>
+                              </article>
                             )
                           }
                         </div>

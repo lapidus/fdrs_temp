@@ -1618,6 +1618,10 @@ strong,
 }
 @media (min-width: 48em) {
 
+  .sm-my1 { margin-top: 1rem; margin-bottom: 1rem;
+
+  }
+
   .sm-mx0 { margin-left: 0; margin-right: 0;
 
   }

@@ -60,6 +60,9 @@
   .xs-mxn4 { margin-left: calc(-4 * var(--base-unit)); margin-right: calc(-4 * var(--base-unit)); }
 }
 @media (--sm-viewport) {
+
+  .sm-my1 { margin-top:    calc(1 * var(--base-unit)); margin-bottom: calc(1 * var(--base-unit)); }
+
   .sm-mx0 { margin-left:   0;                          margin-right:  0;              }
   .sm-mx1 { margin-left:   calc(1 * var(--base-unit)); margin-right:  calc(1 * var(--base-unit)); }
   .sm-mx2 { margin-left:   calc(2 * var(--base-unit)); margin-right:  calc(2 * var(--base-unit)); }
