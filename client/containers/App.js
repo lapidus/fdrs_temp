@@ -226,6 +226,20 @@ class App extends React.Component {
                     <Link to="/report">“Everyone Counts” report</Link>
                   </li>
                 </ul>
+
+                <br />
+
+                <ul className="m0 p0">
+                  <li className="block">
+                    <Link to="/about">Acknowledgements</Link>
+                  </li>
+                  <li className="block">
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li className="block">
+                    <Link to="/faq">FAQ</Link>
+                  </li>
+                </ul>
               </div>
               <div className="col sm-3">
                 <p className="subhead strong">Contact</p>
