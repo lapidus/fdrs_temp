@@ -170,6 +170,47 @@ class Overview extends React.Component {
 
             <div className="col sm-9 md-8 px1 pb3">
               <div className="relative">
+                <Select
+                  searchable={ true }
+                  clearable={ false }
+                  placeholder="Select a NS..."
+                  multi={ false }
+                  name="ns-selector"
+                  options={this.props.nationalSocieties.map(ns => {
+                    return {
+                      value: ns.KPI_DON_Code,
+                      label: ns.NSO_DON_name,
+                      slug: ns.slug,
+                    }
+                  })}
+                  onChange={ this.handleNSSelect }
+                />
+
+                {/* <div className="Select Select--single is-focused is-open is-searchable">
+                  <div className="Select-control">
+                    <span className="Select-multi-value-wrapper">
+                      <div className="Select-placeholder">Select a society...</div>
+                      <div className="Select-input">
+                        <input />
+                      </div>
+                    </span>
+                    <span className="Select-arrow-zone">
+                      <span className="Select-arrow"></span>
+                    </span>
+                  </div>
+                  <div className="Select-menu-outer">
+                    <div className="Select-menu">
+                      <div className="Select-option">Andorra</div>
+                      <div className="Select-option">Afghanistan</div>
+                      <div className="Select-option">Azerbaijan</div>
+                      <div className="Select-option">Andorra</div>
+                      <div className="Select-option">Afghanistan</div>
+                      <div className="Select-option">Azerbaijan</div>
+                    </div>
+                  </div>
+                </div> */}
+
+
                 <Map indicator={this.state.currentIndicator}
                      data={this.props.data}
                      groupedTimeSeries={this.state.groupedTimeSeries}

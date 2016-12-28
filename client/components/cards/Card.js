@@ -94,7 +94,7 @@ class Card extends React.Component {
             )
           }
         </div>
-        <footer className="relative pt2 pb05 px1">
+        <footer className="relative pt2 pb05 px1" style={{opacity: this.props.controlsVisible ? 1 : 0, pointerEvents: this.props.controlsVisible ? "all" : "none"}}>
           <button
             className="btn btn--raised btn--circle bg-white absolute t0 r1 y-center-self"
             onClick={ this.handleOverlayToggle }
@@ -167,12 +167,14 @@ Card.propTypes = {
   initialView: React.PropTypes.number,
   bgColor: React.PropTypes.string,
   basicCard: React.PropTypes.bool,
+  controlsVisible: React.PropTypes.bool,
 }
 
 Card.defaultProps = {
   initialView: 0,
   bgColor: "",
   basicCard: false,
+  controlsVisible: true,
 }
 
 export default Card

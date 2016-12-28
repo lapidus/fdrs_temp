@@ -1,13 +1,9 @@
-/**
- * React Select
- * ============
- * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
- * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
- * MIT License: https://github.com/JedWatson/react-select
-*/
 .Select {
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+  /*width: 100%;*/
   position: relative;
-  margin: 0 1rem;
+  z-index: 9999;
 }
 .Select,
 .Select div,
@@ -17,20 +13,14 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.Select.is-disabled > .Select-control {
-  background-color: #f9f9f9;
-}
-.Select.is-disabled > .Select-control:hover {
-  box-shadow: none;
-}
+.Select.is-disabled > .Select-control { background-color: #f9f9f9; }
+.Select.is-disabled > .Select-control:hover { box-shadow: none; }
 .Select.is-disabled .Select-arrow-zone {
   cursor: default;
   pointer-events: none;
   opacity: 0.35;
 }
 .Select-control {
-  background-color: #fff;
-  border-radius: 0;
   border: 0;
   border-bottom: 2px solid #ccc;
   color: #333;
@@ -38,26 +28,23 @@
   display: table;
   border-spacing: 0;
   border-collapse: separate;
+  height: var(--select-height);
   outline: none;
   overflow: hidden;
   position: relative;
   width: 100%;
+  z-index: 1;
 }
-.Select-control:hover {
-  /*box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);*/
-}
+.Select-control:hover {}
 .Select-control .Select-input:focus {
   outline: none;
 }
 .is-searchable.is-open > .Select-control {
   cursor: text;
 }
-.is-open {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-}
 .is-open > .Select-control {
   background: #fff;
-  border-bottom: 2px solid transparent;
+  border-color: transparent;
 }
 .is-open > .Select-control > .Select-arrow {
   border-color: transparent transparent #999;
@@ -66,23 +53,22 @@
 .is-searchable.is-focused:not(.is-open) > .Select-control {
   cursor: text;
 }
-.is-focused:not(.is-open) > .Select-control {
-  border-color: #007eff;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(0, 126, 255, 0.1);
-}
+.is-focused:not(.is-open) > .Select-control {}
+
 .Select-placeholder,
 .Select--single > .Select-control .Select-value {
-  position: absolute;
-  bottom: 0;
-  color: #aaa;
-  left: 0;
-  /*line-height: 34px;*/
-  /*padding-left: 10px;*/
-  /*padding-right: 10px;*/
-  padding-right: 3rem;
-  right: 0;
   top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #aaa;
+  /*line-height: 36px;*/
+  line-height: var(--select-height);
+  height: 100%;
   max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -105,14 +91,15 @@
   text-decoration: underline;
 }
 .Select-input {
-  /*height: 34px;*/
-  /*padding-left: 10px;*/
-  /*padding-right: 10px;*/
+  /*height: 36px;*/
+  height: var(--select-height);
+  padding-left: 10px;
+  padding-right: 10px;
   vertical-align: middle;
-  height:60px;
 }
 .Select-input > input {
   width: 100%;
+  height: 100%;
   background: none transparent;
   border: 0 none;
   box-shadow: none;
@@ -122,43 +109,14 @@
   font-size: inherit;
   margin: 0;
   outline: none;
-  line-height: 14px;
-  /* For IE 8 compatibility */
-  padding: 8px 0 12px;
-  /* For IE 8 compatibility */
-  -webkit-appearance: none;
+  padding: 0;
+  height: var(--select-height);
+  line-height: var(--select-height);
 }
-.is-focused .Select-input > input {
-  cursor: text;
-}
-.has-value.is-pseudo-focused .Select-input {
-  opacity: 0;
-}
-.Select-control:not(.is-searchable) > .Select-input {
-  outline: none;
-}
-.Select-loading-zone {
-  cursor: pointer;
-  display: table-cell;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  width: 16px;
-}
-.Select-loading {
-  -webkit-animation: Select-animation-spin 400ms infinite linear;
-  -o-animation: Select-animation-spin 400ms infinite linear;
-  animation: Select-animation-spin 400ms infinite linear;
-  width: 16px;
-  height: 16px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  border-right-color: #333;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-}
+.is-focused .Select-input > input { cursor: text; }
+.has-value.is-pseudo-focused .Select-input { opacity: 0; }
+.Select-control:not(.is-searchable) > .Select-input { outline: none; }
+
 .Select-clear-zone {
   -webkit-animation: Select-animation-fadeIn 200ms;
   -o-animation: Select-animation-fadeIn 200ms;
@@ -214,38 +172,24 @@
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
-@-webkit-keyframes Select-animation-fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes Select-animation-fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 .Select-menu-outer {
   background-color: #fff;
-  border: 0;
-  border-top-color: #e6e6e6;
+  box-shadow: 0 0 16px rgba(0,0,0,0.2);
   box-sizing: border-box;
-  margin-top: -1px;
-  max-height: 200px;
+  /*max-height: 200px;*/
+  max-height: 12.5rem;
+  overflow: hidden;
   position: absolute;
-  top: 100%;
+  top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 0;
   -webkit-overflow-scrolling: touch;
-  box-shadow: 0 -6px 0 #fff, 0 4px 16px rgba(0,0,0,0.2);
+  padding-top: var(--select-height);
 }
 .Select-menu {
-  max-height: 198px;
+  /*max-height: 164px;*/
+  max-height: calc(12.5rem - var(--select-height));
   overflow-y: auto;
 }
 .Select-option {
@@ -256,20 +200,12 @@
   display: block;
   padding: 8px 10px;
 }
-.Select-option:last-child {
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
+.Select-option:last-child {}
 .Select-option.is-selected {
-  background-color: #f5faff;
-  /* Fallback color for IE 8 */
   background-color: rgba(0, 126, 255, 0.04);
   color: #333;
 }
 .Select-option.is-focused {
-  background-color: #ebf5ff;
-  /* Fallback color for IE 8 */
-  background-color: rgba(0, 126, 255, 0.08);
   color: #333;
 }
 .Select-option.is-disabled {
@@ -283,91 +219,38 @@
   display: block;
   padding: 8px 10px;
 }
-.Select--multi .Select-input {
-  vertical-align: middle;
-  margin-left: 10px;
-  padding: 0;
+
+
+
+
+
+
+.select-xl .Select-placeholder,
+.select-xl .Select--single > .Select-control .Select-value {
+  line-height: 4.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.Select--multi.has-value .Select-input {
-  margin-left: 5px;
+.select-xl .Select-control { height: 4.25rem; }
+.select-xl .Select-input   {
+  height: 4.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.Select--multi .Select-value {
-  background-color: #ebf5ff;
-  /* Fallback color for IE 8 */
-  background-color: rgba(0, 126, 255, 0.08);
-  border-radius: 2px;
-  border: 1px solid #c2e0ff;
-  /* Fallback color for IE 8 */
-  border: 1px solid rgba(0, 126, 255, 0.24);
-  color: #007eff;
-  display: inline-block;
-  font-size: 0.9em;
-  line-height: 1.4;
-  margin-left: 5px;
-  margin-top: 5px;
-  vertical-align: top;
+.select-xl .Select-input > input {
+  height: 4.25rem;
+  line-height: 4.25rem;
 }
-.Select--multi .Select-value-icon,
-.Select--multi .Select-value-label {
-  display: inline-block;
-  vertical-align: middle;
+.select-xl .Select-menu-outer { padding-top: 4.25rem;                }
+.select-xl .Select-menu       { max-height: calc(12.5rem - 4.25rem); }
+.select-xl .Select-option {
+  padding: 0.5rem 1rem;
 }
-.Select--multi .Select-value-label {
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-  cursor: default;
-  padding: 2px 5px;
-}
-.Select--multi a.Select-value-label {
-  color: #007eff;
-  cursor: pointer;
-  text-decoration: none;
-}
-.Select--multi a.Select-value-label:hover {
-  text-decoration: underline;
-}
-.Select--multi .Select-value-icon {
-  cursor: pointer;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
-  border-right: 1px solid #c2e0ff;
-  /* Fallback color for IE 8 */
-  border-right: 1px solid rgba(0, 126, 255, 0.24);
-  padding: 1px 5px 3px;
-}
-.Select--multi .Select-value-icon:hover,
-.Select--multi .Select-value-icon:focus {
-  background-color: #d8eafd;
-  /* Fallback color for IE 8 */
-  background-color: rgba(0, 113, 230, 0.08);
-  color: #0071e6;
-}
-.Select--multi .Select-value-icon:active {
-  background-color: #c2e0ff;
-  /* Fallback color for IE 8 */
-  background-color: rgba(0, 126, 255, 0.24);
-}
-.Select--multi.is-disabled .Select-value {
-  background-color: #fcfcfc;
-  border: 1px solid #e3e3e3;
-  color: #333;
-}
-.Select--multi.is-disabled .Select-value-icon {
-  cursor: not-allowed;
-  border-right: 1px solid #e3e3e3;
-}
-.Select--multi.is-disabled .Select-value-icon:hover,
-.Select--multi.is-disabled .Select-value-icon:focus,
-.Select--multi.is-disabled .Select-value-icon:active {
-  background-color: #fcfcfc;
-}
-@keyframes Select-animation-spin {
-  to {
-    transform: rotate(1turn);
-  }
-}
-@-webkit-keyframes Select-animation-spin {
-  to {
-    -webkit-transform: rotate(1turn);
-  }
+
+.select-no-underline .Select-control { border-bottom: 0; }
+
+.select-no-scroll .Select-menu-outer,
+.select-no-scroll .Select-menu {
+  max-height: none;
+  overflow: hidden;
 }

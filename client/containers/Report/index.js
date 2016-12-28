@@ -3,6 +3,8 @@ import { Link } from "react-router"
 import { translate } from "react-i18next"
 import { connect } from "react-redux"
 
+import Select from "react-select"
+
 import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
 import { toggleNav } from "../../actions/appActions"
 import Icon from "../../components/Icon"
@@ -14,6 +16,13 @@ import Breadcrumbs from "../../components/Breadcrumbs"
 class Report extends React.Component {
   componentDidMount() {
     console.log("Mounting app: ", this.props.location)
+
+    this.goToChapter = this.goToChapter.bind(this)
+  }
+
+  goToChapter(chapter) {
+    console.log("Switching Chapter")
+    // Use router to switch to a specific chapter
   }
 
   render() {
@@ -77,12 +86,52 @@ class Report extends React.Component {
           </div>
         </div> */}
 
-        <Breadcrumbs links={[
+        {/* <Breadcrumbs links={[
           { name: "Home", path: "/" },
           { name: "Services", path: "/" },
           { name: "Report", path: undefined },
           { name: "Introduction", path: undefined },
-        ]}/>
+        ]}/> */}
+
+        <div className="sm-visible">
+          <div className="clearfix bg-secondary px1">
+            <div className="col sm-8 sm-offset-0 md-offset-2">
+              <ul className="m0 py1 px0 small strong">
+                <li className="inline-block mr1">
+                  <Link to="/">
+                    {"Home"}
+                  </Link>
+                </li>
+                <li className="inline-block mr1">
+                  <Link to="/">
+                    {"Services"}
+                  </Link>
+                </li>
+                <li className="inline-block mr1">
+                  <Link to="/">
+                    {"Report"}
+                  </Link>
+                </li>
+                <li className="inline-block align-middle mr1 select-no-underline" style={{width:120}}>
+                  <Select
+                    searchable={ false }
+                    clearable={ false }
+                    name="chapter-selector"
+                    value={"introduction"}
+                    options={[
+                      { value: "introduction", label: "Introduction" },
+                      { value: "chapter-1", label: "Chapter 1" },
+                      { value: "chapter-2", label: "Chapter 2" },
+                      { value: "chapter-3", label: "Chapter 3" },
+                    ]}
+                    onChange={ this.goToChapter }
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
 
         <div className={ navOpen ? "main-content-wrapper removed" : "main-content-wrapper" }>
           <div>

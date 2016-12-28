@@ -13,10 +13,10 @@ import Loader from "../components/Loader"
 require("../utils/d3GeoMinimal")
 
 const languageOptions = [
-  { value: "en", label: "English" },
-  { value: "fr", label: "French" },
-  { value: "es", label: "Spanish" },
-  { value: "ar", label: "Arabic" }
+  { value: "en", label: "EN" },
+  { value: "fr", label: "FR" },
+  { value: "es", label: "ES" },
+  { value: "ar", label: "AR" }
 ]
 
 class App extends React.Component {
@@ -90,10 +90,18 @@ class App extends React.Component {
                       <span className='block py1 px05'>FAQ</span>
                     </Link>
                   </li>
-                  <li className='inline-block'>
-                    <Link to='/' className='btn bg-secondary'>
+                  <li className='inline-block align-middle text-left select-xl select-no-underline select-no-scroll bg-secondary' style={{ width: 68 }}>
+                    <Select
+                      searchable={ false }
+                      clearable={ false }
+                      name="language-selector"
+                      value={ language }
+                      options={ languageOptions }
+                      onChange={ this.goToLanguage }
+                    />
+                    {/* <Link to='/' className='btn bg-secondary'>
                       <span className='block py1 px1'>EN</span>
-                    </Link>
+                    </Link> */}
                   </li>
                   {/* <li className='inline-block'>
                     <Link to='/report' className='btn'>

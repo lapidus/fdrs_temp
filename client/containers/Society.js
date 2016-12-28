@@ -23,6 +23,7 @@ import {
   makeGetSociety,
   makeGetSocietyData,
   makeGetSocietyDocuments,
+  makeGroupTimeSeriesBySociety,
 } from "../selectors"
 import {
   fetchNationalSocieties,
@@ -42,6 +43,10 @@ function roundIt(n) {
 function getLatestYearDocuments(props) {
   const latestDocuments = maxBy(props.documents, d => +d.year)
   return latestDocuments ? +latestDocuments.year : undefined
+}
+
+function missingDataString(dataType, countryName, year) {
+  return `There is no ${dataType} data available for ${countryName} for ${year}`
 }
 
 class Society extends React.Component {
@@ -71,6 +76,7 @@ class Society extends React.Component {
 
   componentDidMount() {
     document.body.classList.add("html-ready")
+    console.log("THIS IS THE NEW GROUPING: ", this.props.grouping, this.props.society, this.props.data)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -304,14 +310,14 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card bgColor="bg-beige" basicCard>
+                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(latestData.Population, 2) !== "N/A"}>
                     <CardView viewIcon="plainNumber">
                       <div className="pt3 px1">
                         <p className="display-2 strong mb0">{ niceNum(latestData.Population, 2) }</p>
                         <p className="m0">
                           {
                             niceNum(latestData.Population, 2) == "N/A" ? (
-                              `There is no population data available for ${society.NSO_DON_name} for ${latestData.KPI_Year}`
+                              missingDataString("population", society.NSO_DON_name, latestData.KPI_Year)
                             ) : (
                               `population of ${society.NSO_DON_name} in 2015`
                             )
@@ -323,7 +329,7 @@ class Society extends React.Component {
                       <p>
                         {
                           niceNum(latestData.Population, 2) == "N/A" ? (
-                            `There is no population data for ${society.NSO_DON_name}`
+                            missingDataString("population", society.NSO_DON_name, latestData.KPI_Year)
                           ) : (
                             "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics."
                           )
@@ -511,13 +517,13 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card initialView={ 0 } bgColor="bg-beige" basicCard>
+                  <Card initialView={ 0 } bgColor="bg-beige" basicCard controlsVisible={niceNum(latestData.Poverty) !== "N/A"}>
                     <CardView viewIcon="plainNumber">
                       <div className="pt3 px1">
                         <p className="display-2 strong mb0">{ niceNum(latestData.Poverty) }</p>
                         <p className="m0">{
                           niceNum(latestData.Poverty) === "N/A" ? (
-                            `There is no poverty data avilable for ${society.NSO_DON_name}`
+                            missingDataString("poverty", society.NSO_DON_name, latestData.KPI_Year)
                           ) : (
                             `percentage of ${society.NSO_DON_name} population living below the poverty line in 2015`
                           )
@@ -647,7 +653,7 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card bgColor="bg-beige" basicCard>
+                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(latestData.GDP) !== "N/A"}>
                     <CardView>
                       <div className="pt3 px1">
                         <p className="small strong m0">
@@ -657,7 +663,7 @@ class Society extends React.Component {
                         <p className="m0">
                           {
                             niceNum(latestData.GDP) === "N/A" ? (
-                              `There is no GDP data available for ${society.NSO_DON_name} for ${latestData.KPI_Year}`
+                              missingDataString("GDP", society.NSO_DON_name, latestData.KPI_Year)
                             ) : (
                               `${society.NSO_DON_name} GDP in ${latestData.KPI_Year}`
                             )
@@ -680,7 +686,7 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card bgColor="bg-primary" basicCard>
+                  <Card bgColor="bg-primary" basicCard controlsVisible={false}>
                     <CardView>
                       <div className="pt3 px2">
                         <p className="display-1 lh-1 strong mt0 mb1">{ "What would you like to see here?" }</p>
@@ -800,7 +806,9 @@ const makeMapStateToProps = () => {
   const getSociety = makeGetSociety()
   const getSocietyData = makeGetSocietyData()
   const getSocietyDocuments = makeGetSocietyDocuments()
+  const groupTimeSeriesBySociety = makeGroupTimeSeriesBySociety()
   return (state, props) => ({
+    grouping: groupTimeSeriesBySociety(state, props),
     society: getSociety(state, props),
     data: getSocietyData(state, props),
     documents: getSocietyDocuments(state, props),
