@@ -33,11 +33,11 @@ class Chapter6 extends React.Component {
 
     return (
       <div>
-        <div className="clearfix bg-primary-dark">
+        {/* <div className="clearfix bg-primary-dark">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
             <BreadCrumbs chapter={chapter} language={language}/>
           </div>
-        </div>
+        </div> */}
 
         <div className="clearfix bg-primary pt1">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">

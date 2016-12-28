@@ -107,11 +107,11 @@ class Report extends React.Component {
                   </Link>
                 </li>
                 <li className="inline-block mr1">
-                  <Link to="/">
+                  <Link to="/report">
                     {"Report"}
                   </Link>
                 </li>
-                <li className="inline-block align-middle mr1 select-no-underline" style={{width:140}}>
+                <li className="inline-block align-middle mr1 select-no-underline select-no-scroll" style={{width:160}}>
                   <Select
                     searchable={ false }
                     clearable={ false }
@@ -139,7 +139,7 @@ class Report extends React.Component {
 
 
         <div className={ navOpen ? "main-content-wrapper removed" : "main-content-wrapper" }>
-          <div>
+          <div style={{minHeight:"100vh"}}>
             { this.props.children }
           </div>
 

@@ -3,7 +3,6 @@ import { translate } from "react-i18next"
 
 import NextChapter from "../../utils/NextChapter"
 import numberFormatter from "../../utils/numberFormatter"
-import BreadCrumbs from "../../components/Report/Breadcrumbs"
 import HeadlineDivider from "../../components/HeadlineDivider"
 import LineChart from "../../components/charts/LineChart"
 import { Tabs, TabPanel } from "../../components/Tabs"
@@ -65,28 +64,25 @@ class Chapter1 extends React.Component {
 
     return (
       <div>
-        <div className="clearfix bg-primary-dark">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={ chapter } language={ language } />
-          </div>
-        </div>
 
-        <div className="clearfix bg-primary pt1">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-            <h2 className="display-2">{chapter.title}</h2>
+        <div className="clearfix bg-primary">
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+            <p className="m0 caps small strong">{ "Everyone counts" }</p>
+            <h2 className="display-2 light m0">{chapter.title}</h2>
           </div>
         </div>
 
         <div
-          className="clearfix bg-dark chapter-banner"
+          className="clearfix bg-dark overflow-hidden"
           style={{
             backgroundImage: "url(/img/chapters/chapter-1.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center 20%",
             backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
           }}
         >
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
             <p className="lead">{chapter.intro}</p>
             <hr />
           </div>

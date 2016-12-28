@@ -1413,6 +1413,10 @@ strong,
 
   }
 
+  .md-py6 { padding-top: 6rem; padding-bottom: 6rem;
+
+  }
+
 }
 @media (min-width: 75em) {
 
@@ -1915,6 +1919,9 @@ strong,
 .fill-beige { fill: #8D8070;
 
 }
+.stroke-primary { stroke: #D0021B;
+
+}
 .color-primary { color: #D0021B;
 
 }
@@ -1930,6 +1937,7 @@ strong,
 .ratio-wide,
 .ratio-16-9,
 .ratio-3-2,
+.ratio-10-6,
 .ratio-4-3,
 .ratio-1-1, {
   /*position: relative;*/ height: 0;
@@ -1944,6 +1952,9 @@ strong,
 
 }
 .ratio-3-2 { padding-bottom: 66.666666%;
+
+}
+.ratio-10-6 { padding-bottom: 60%;
 
 }
 .ratio-4-3 { padding-bottom: 75%;
@@ -2420,3 +2431,25 @@ tr:last-of-type > td {
   tr:nth-child(even) {
     background: #FBFBFB;
   }
+
+
+.headline-divider {
+  position: relative;
+  width: 30px;
+}
+.headline-divider:before,
+.headline-divider:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 0.25rem;
+  background: #D0021B;
+}
+.headline-divider:before {
+  right: 100%;
+  width: 2rem;
+}
+.headline-divider:after {
+  left: 100%;
+  width: 8rem;
+}

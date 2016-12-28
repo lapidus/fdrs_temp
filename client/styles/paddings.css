@@ -69,6 +69,8 @@
   .md-px4 { padding-left:   calc(4 * var(--base-unit)); padding-right:  calc(4 * var(--base-unit)); }
 
   .md-pl0 { padding-left: 0; }
+
+  .md-py6 { padding-top:    calc(6 * var(--base-unit)); padding-bottom: calc(6 * var(--base-unit)); }
 }
 @media (--lg-viewport) {
   .lg-px0 { padding-left:   0;                          padding-right:  0;              }

@@ -112,6 +112,6 @@ var icons = {
   }
 };
 
-const Icon = (props) => <svg className='icn' width={props.width || icons[props.name].width} height={props.height || icons[props.name].height} viewBox={props.viewBox || icons[props.name].viewBox} dangerouslySetInnerHTML={{__html: icons[props.name].path}}></svg>;
+const Icon = (props) => <svg className='icn' style={{width:props.width, height:props.height}} width={props.width || icons[props.name].width} height={props.height || icons[props.name].height} viewBox={props.viewBox || icons[props.name].viewBox} dangerouslySetInnerHTML={{__html: icons[props.name].path}}></svg>;
 
 export default Icon;

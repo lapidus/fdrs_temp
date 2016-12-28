@@ -2,7 +2,6 @@ import React from "react"
 import { translate } from "react-i18next"
 
 import NextChapter from "../../utils/NextChapter"
-import BreadCrumbs from "../../components/Report/Breadcrumbs"
 import HeadlineDivider from "../../components/HeadlineDivider"
 import SideNavigation from "../../components/Report/SideNavigation"
 
@@ -25,20 +24,16 @@ class Chapter2 extends React.Component {
 
     return (
       <div>
-        <div className="clearfix bg-primary-dark">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={ chapter } language={ language } />
-          </div>
-        </div>
 
         <div className="clearfix bg-primary pt1">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-            <h2 className="display-2">{chapter.title}</h2>
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+            <p className="caps small strong m0">{ "Everyone counts" }</p>
+            <h2 className="display-2 light m0">{chapter.title}</h2>
           </div>
         </div>
 
-        <div className="clearfix bg-dark chapter-banner" style={{backgroundImage:"url(/img/chapters/chapter-2.jpg)",backgroundSize: "cover",backgroundPosition:"center 40%",backgroundRepeat: "no-repeat"}}>
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
+        <div className="clearfix bg-dark overflow-hidden" style={{backgroundImage:"url(/img/chapters/chapter-2.jpg)",backgroundSize: "cover",backgroundPosition:"center 40%",backgroundRepeat: "no-repeat", backgroundAttachment: "fixed"}}>
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
             <p className="lead">{chapter.intro}</p>
             <hr />
           </div>

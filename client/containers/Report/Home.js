@@ -11,7 +11,7 @@ class Quote extends React.Component {
   render() {
     return (
       <blockquote style={{marginTop:"72px",fontSize:"1.5rem"}}>
-        <Icon name="quote" width="72px" height="72px" />
+        <Icon name="quote" width="72px" height="72px" /><br />
         {this.props.children}
       </blockquote>
     )
@@ -20,32 +20,21 @@ class Quote extends React.Component {
 
 class RatioCard extends React.Component {
   render() {
-
-     var styling = {
+     const styling = {
       wrapper: {
         position:"relative",
-        // height:0,
-        // paddingBottom:this.props.ratio
       },
       content: {
-        // position:"absolute",
-        // width:"100%",
-        // height:"100%",
         backgroundImage:`url(${this.props.backgroundImage})`,
         backgroundRepeat:"no-repeat",
         backgroundSize:"cover"
       }
     }
-
-    //  + (this.props.wrapperClass || "")
-
-    var ratio = this.props.ratio.split(':');
-
+    const ratio = this.props.ratio.split(':');
     return (
       <div className={`ratio-${ratio[0]}-${ratio[1]}`} style={styling.wrapper}>
-        {/* <div className={this.props.gradient ? "ratio-card__content with-gradient--dark " + (this.props.contentClass || "") : "ratio-card__content " + (this.props.contentClass || "")} style={styling.content}> */}
         <div className={`ratio-content ${this.props.contentClass || ''}`} style={styling.content}>
-          <div className="vertical-center">
+          <div className="relative t50 y-center-self">
             {this.props.children}
           </div>
         </div>
@@ -62,7 +51,6 @@ class Home extends React.Component {
       <div>
         <div className="text-center overflow-hidden" style={{ boxShadow:"inset 0 100px 100px #fff,inset 0 -100px 100px #fff",backgroundImage: "url(/img/ifrc-progress-report-2015-bg.jpg)", backgroundSize: 'cover'}}>
           <h1 style={{paddingTop:"96px"}} className="bg-gradient--white m0 pb4">
-            { /* <div className="display-2 caps"><strong>Everyone <span className="color-primary">Counts</span></strong></div> */ }
             <div className="display-3 light">{ t("report-common:home.title.0") } <span className="color-primary"> { t("report-common:home.title.1") }</span></div>
             <div className="display-5 color-primary lh-1">{ t("report-common:home.title.2") }</div>
             <div className="headline">{t("report-common:reportType")}</div>
@@ -74,9 +62,7 @@ class Home extends React.Component {
 
         <div className="clearfix text-center px1 sm-px0">
           <div className="col sm-6 sm-offset-3 pt2 pb3">
-            { /* <Reveal offset={10}> */ }
-              <p className="lead">{t("report-common:home.intro.0")}</p>
-            { /* </Reveal> */ }
+            <p className="lead">{t("report-common:home.intro.0")}</p>
             <Reveal offset={600}>
               <p className="body-text">{t("report-common:home.intro.1")}</p>
             </Reveal>
@@ -101,7 +87,7 @@ class Home extends React.Component {
             <div className="clearfix px1 sm-px0">
               <div className="col sm-3 sm-offset-2">
                 <p className="small strong caps color-primary m0">{t("report-common:home.sections.0.id")}</p>
-                <h2 className="display-1 mt0">{t("report-common:home.sections.0.title")}</h2>
+                <h2 className="display-1 mt0 light">{t("report-common:home.sections.0.title")}</h2>
                 <HeadlineDivider />
                 <br />
                 <br />
@@ -114,9 +100,9 @@ class Home extends React.Component {
           { /* Section 1 */ }
             <div className="clearfix px1 sm-px0">
               <div className="col sm-5 sm-offset-1">
-                <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-1.jpg">
+                <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-1.jpg">
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
-                  <h3 className="display-1 m0 px2">
+                  <h3 className="display-1 m0 px2 light">
                     <Link to={prefixLanguageToRoute(language,"/report/who-we-are")}>
                       <span>{t("report-common:chapters.chapter1.title")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
@@ -125,9 +111,9 @@ class Home extends React.Component {
                 </RatioCard>
               </div>
               <div className="col sm-5 md-3">
-                <RatioCard ratio="1:1" contentClass="px1 bg-white center">
+                <RatioCard ratio="1:1" contentClass="px1 bg-white text-center">
                   <Icon name="usergroup" width="56px" height="56px" />
-                  <p className="display-3 color-primary">{t("report-common:home.sections.0.statistic.number")}</p>
+                  <p className="display-3 color-primary m0">{t("report-common:home.sections.0.statistic.number")}</p>
                   <p className="caps">{t("report-common:home.sections.0.statistic.text")}</p>
                 </RatioCard>
               </div>
@@ -142,7 +128,7 @@ class Home extends React.Component {
                 </RatioCard>
               </div>
               <div className="col sm-5">
-                <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-2.jpg">
+                <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-2.jpg">
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
                     <Link to={prefixLanguageToRoute(language,"/report/what-we-do")}>
@@ -156,7 +142,7 @@ class Home extends React.Component {
 
             <div className="clearfix px1 sm-px0">
               <div className="col sm-5 sm-offset-1">
-                <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-3.jpg">
+                <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-3.jpg">
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
                     <Link to={prefixLanguageToRoute(language,"/report/living-our-fundamental-principles")}>
@@ -195,7 +181,7 @@ class Home extends React.Component {
 
             <div className="clearfix px1 sm-px0">
               <div className="col sm-5 sm-offset-1">
-                <RatioCard ratio="3:2" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-1.jpg"}>
+                <RatioCard ratio="10:6" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-1.jpg"}>
                   <p className="display-1 m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(language,"/report/strategic-aim-1")}>
                       <span>{t("report-common:chapters.chapter4.pretitle")} </span>
@@ -223,7 +209,7 @@ class Home extends React.Component {
                 </RatioCard>
               </div>
               <div className="col sm-5">
-                <RatioCard ratio="3:2" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-2.jpg"}>
+                <RatioCard ratio="10:6" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-2.jpg"}>
                   <p className="display-1 m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(language,"/report/strategic-aim-2")}>
                       <span>{t("report-common:chapters.chapter5.pretitle")} </span>
@@ -237,7 +223,7 @@ class Home extends React.Component {
 
             <div className="clearfix px1 sm-px0">
               <div className="col sm-5 sm-offset-1">
-                <RatioCard ratio="3:2" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-3.jpg"}>
+                <RatioCard ratio="10:6" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-3.jpg"}>
                   <p className="display-1 m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(language,"/report/strategic-aim-3")}>
                       <span>{t("report-common:chapters.chapter6.pretitle")} </span>
@@ -276,7 +262,7 @@ class Home extends React.Component {
 
             <div className="clearfix px1 sm-px0">
               <div className="col sm-5 sm-offset-1">
-                <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-7.jpg">
+                <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-7.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(language,"/report/enabling-action-1")}>
                       <span>{t("report-common:chapters.chapter7.pretitle")} </span>
@@ -304,7 +290,7 @@ class Home extends React.Component {
                 </RatioCard>
               </div>
               <div className="col sm-5">
-                <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-8.jpg">
+                <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-8.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(language,"/report/enabling-action-2")}>
                       <span>{t("report-common:chapters.chapter8.pretitle")} </span>
@@ -318,7 +304,7 @@ class Home extends React.Component {
 
             <div className="clearfix px1 sm-px0">
               <div className="col sm-5 sm-offset-1">
-                <RatioCard ratio="3:2" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-9.jpg">
+                <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-9.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
                     <Link to={prefixLanguageToRoute(language,"/report/enabling-action-3")}>
                       <span>{t("report-common:chapters.chapter9.pretitle")} </span>

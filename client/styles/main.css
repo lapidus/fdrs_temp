@@ -254,3 +254,25 @@ tr:last-of-type > td {
   tr:nth-child(even) {
     background: #FBFBFB;
   }
+
+
+.headline-divider {
+  position: relative;
+  width: 30px;
+}
+.headline-divider:before,
+.headline-divider:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 0.25rem;
+  background: var(--color-primary);
+}
+.headline-divider:before {
+  right: 100%;
+  width: 2rem;
+}
+.headline-divider:after {
+  left: 100%;
+  width: 8rem;
+}
