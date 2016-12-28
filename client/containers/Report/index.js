@@ -145,7 +145,7 @@ class Report extends React.Component {
 
           <ReadMore />
 
-          <footer className="site-footer bg-dark clearfix">
+          {/* <footer className="site-footer bg-dark clearfix">
             <div className="clearfix py3">
               <div
                 className="col xs-6 sm-5 sm-offset-2 md-3 px1"
@@ -179,7 +179,8 @@ class Report extends React.Component {
                 { "e-mail: fdrs@ifrc.org"}
               </div>
             </div>
-          </footer>
+          </footer> */}
+
         </div>
       </div>
     )

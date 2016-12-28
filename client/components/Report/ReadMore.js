@@ -15,7 +15,7 @@ const ReadMore = ({ t }) => {
       >
         { t(`report-common:home.downloadReportSection.buttons.${i}`) }
         &nbsp;
-        <Icon name="goto" />
+        {/* <Icon name="goto" /> */}
       </a>
     </li>
   )
