@@ -52,7 +52,7 @@ class SocietyRow extends React.Component {
         <td className="py05 px1 sm-4">
           <div className="relative">
             <div className="absolute b0 l0 small">
-              { dataPoints[0] }
+              { niceNum(dataPoints[0]) }
             </div>
             <div className="absolute t0 r0 small">
               { niceNum(dataPoints[dataPoints.length - 1]) }
