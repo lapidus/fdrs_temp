@@ -19,6 +19,36 @@ const languageOptions = [
   { value: "ar", label: "AR" }
 ]
 
+
+class Dropdown extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      showDropdown: false
+    }
+
+    this.showDropdown = this.showDropdown.bind(this)
+    this.hideDropdown = this.hideDropdown.bind(this)
+  }
+  showDropdown() {
+    this.setState({ showDropdown: true })
+  }
+  hideDropdown() {
+    this.setState({ showDropdown: false })
+  }
+  render() {
+    return (
+      <span onMouseEnter={ this.showDropdown } onMouseLeave={ this.hideDropdown } onClick={ this.hideDropdown }>
+        { this.props.children[0] }
+        <span style={{ opacity: this.state.showDropdown ? 1 : 0, pointerEvents: this.state.showDropdown ? "all" : "none" }}>
+          { this.props.children[1] }
+        </span>
+      </span>
+    )
+  }
+}
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -62,35 +92,43 @@ class App extends React.Component {
                 AND REPORTING SYSTEM</Link>
               </h1>
             </div>
-            <div className='col sm-7 text-right sm-visible'>
+            <div className="absolute t0 r0">
+              <button className='btn bg-secondary'>
+                <span className='block p1'>menu</span>
+              </button>
+            </div>
+            <div className='col absolute t0 r0 base-12 sm-7 text-right sm-relative bg-white'>
               <nav className='inline-block'>
                 <ul className='m0 p0'>
-                  <li className='inline-block'>
-                    <Link to='/' className='btn'>
-                      <span className='block py1 px05'>Services</span>
-                    </Link>
+                  <li className='block sm-inline-block relative'>
+                    <Dropdown>
+                      <Link to='/' className='btn bg-white z-index-1'>
+                        <span className='block py1 px05'>Services</span>
+                      </Link>
+                      <ul className="absolute t100 l0 bg-white m0 py1 px0 shadow-4" style={{minWidth:280}}>
+                        <li className="block px1 py05 text-left">
+                          <Link to="/overview">{ "The IFRC at a glance" }</Link>
+                        </li>
+                        <li className="block px1 py05 text-left">
+                          <Link to="/societies">{ "National Society profiles" }</Link>
+                        </li>
+                        <li className="block px1 py05 text-left">
+                          <Link to="/report">{ "\"Everyone Counts\" annual report" }</Link>
+                        </li>
+                      </ul>
+                    </Dropdown>
                   </li>
-                  {/* <li className='inline-block'>
-                    <Link to='/overview' className='btn'>
-                      <span className='block py1 px05'>Overview</span>
-                    </Link>
-                  </li>
-                  <li className='inline-block'>
-                    <Link to='/societies' className='btn'>
-                      <span className='block py1 px05'>Societies</span>
-                    </Link>
-                  </li> */}
-                  <li className='inline-block'>
+                  <li className='block sm-inline-block'>
                     <Link to='/' className='btn'>
                       <span className='block py1 px05'>About</span>
                     </Link>
                   </li>
-                  <li className='inline-block'>
+                  <li className='block sm-inline-block'>
                     <Link to='/' className='btn'>
                       <span className='block py1 px05'>FAQ</span>
                     </Link>
                   </li>
-                  <li className='inline-block align-middle text-left select-xl select-no-underline select-no-scroll bg-secondary' style={{ width: 68 }}>
+                  <li className='block sm-inline-block align-middle text-left select-xl select-no-underline select-no-scroll bg-secondary' style={{ width: 68 }}>
                     <Select
                       searchable={ false }
                       clearable={ false }
@@ -99,31 +137,8 @@ class App extends React.Component {
                       options={ languageOptions }
                       onChange={ this.goToLanguage }
                     />
-                    {/* <Link to='/' className='btn bg-secondary'>
-                      <span className='block py1 px1'>EN</span>
-                    </Link> */}
                   </li>
-                  {/* <li className='inline-block'>
-                    <Link to='/report' className='btn'>
-                      <span className='block py1 px05'>Report</span>
-                    </Link>
-                  </li> */}
-                  <li className='inline-block'>
-                    <span className='inline-block'>
-                      {/* <Select
-                        searchable={ false }
-                        clearable={ false }
-                        name="language-selector"
-                        value={ language }
-                        options={ languageOptions }
-                        onChange={ this.goToLanguage }
-                      /> */}
-                    </span>
-                    {/* <button className='btn bg-secondary'>
-                      <span className='block p1'>EN</span>
-                    </button> */}
-                  </li>
-                  <li className='inline-block'>
+                  <li className='block sm-inline-block'>
                     <button className='btn bg-primary'>
                       <span className='block p1'>Login</span>
                     </button>

@@ -2041,6 +2041,9 @@ strong,
 .xl-visible { display: none;
 
 }
+.sm-hidden { display: inline; display: initial;
+
+}
 .z-index-1 { z-index: 1;
 
 }
@@ -2069,6 +2072,42 @@ strong,
 @media (min-width: 48em) {
 
   .sm-visible { display: inline; display: initial;
+
+  }
+
+  .sm-hidden { display: none;
+
+  }
+
+  .sm-relative { position: relative;
+
+  }
+
+  .sm-absolute { position: absolute;
+
+  }
+
+  .sm-fixed { position: fixed;
+
+  }
+
+  .sm-inline { display: inline;
+
+  }
+
+  .sm-block { display: block;
+
+  }
+
+  .sm-inline-block { display: inline-block;
+
+  }
+
+  .sm-table { display: table;
+
+  }
+
+  .sm-table-cell { display: table-cell;
 
   }
 
