@@ -15,7 +15,9 @@ class AllSocieties extends React.Component {
       societiesBlacklist,
       groupedTimeSeries,
       currentIndicator,
-      currentYear
+      currentYear,
+      currentDataset,
+      sum
     } = this.props
 
     return (
@@ -38,16 +40,18 @@ class AllSocieties extends React.Component {
             <tr>
               <td className="p1 sm-4">{ "IFRC (all National Societies)" }</td>
               <td className="p1 sm-4">{ "Trendline" }</td>
-              <td className="p1 sm-4">{ "16,031,869" }</td>
+              <td className="p1 sm-4">{ niceNum(sum, 0, null, true) }</td>
             </tr>
             {
-              nationalSocieties.map((NS, i) => {
+              currentDataset.map((NS, i) => {
                 return societiesBlacklist.indexOf(NS.KPI_DON_Code) == -1 ? (
                   <SocietyRow
                     nationalSociety={ NS }
+                    nationalSocieties={ nationalSocieties }
                     key={ i }
                     rowKey={ i }
                     groupedTimeSeries={ groupedTimeSeries }
+                    currentDataset={ currentDataset }
                     currentIndicator={ currentIndicator }
                     currentYear={ currentYear }
                     societiesBlacklist={ societiesBlacklist }
@@ -67,8 +71,9 @@ class AllSocieties extends React.Component {
 
 // <tr key={ i }></tr>
 
-const mapStateToProps = state => ({
-  nationalSocieties: state.appReducer.nationalSocieties
-})
+// const mapStateToProps = state => ({
+//   nationalSocieties: state.appReducer.nationalSocieties
+// })
 
-export default connect(mapStateToProps)(AllSocieties)
+// export default connect(mapStateToProps)(AllSocieties)
+export default AllSocieties

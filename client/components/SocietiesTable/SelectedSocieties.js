@@ -7,12 +7,13 @@ import { VictoryLine, VictoryScatter } from "victory"
 import SocietyRow from "./SocietyRow"
 
 const SelectedSocieties = ({
-  nationalSocieties,
   selectedSocieties,
   societiesBlacklist,
   groupedTimeSeries,
   currentIndicator,
   currentYear,
+  currentDataset,
+  nationalSocieties,
   handleUnselectSociety
 }) => (
   <div>
@@ -35,59 +36,29 @@ const SelectedSocieties = ({
           <tbody>
             {
               selectedSocieties.map((NS, i) => {
+                const nationalSociety = currentDataset.filter(o => o.KPI_DON_Code === NS.KPI_DON_Code)[0]
                 return (
                   <SocietyRow
-                    nationalSociety={NS}
-                    key={i}
-                    rowKey={i}
-                    groupedTimeSeries={groupedTimeSeries}
-                    currentIndicator={currentIndicator}
-                    currentYear={currentYear}
-                    societiesBlacklist={societiesBlacklist}
+                    nationalSociety={ nationalSociety }
+                    nationalSocieties={ nationalSocieties }
+                    key={ i }
+                    rowKey={ i }
+                    groupedTimeSeries={ groupedTimeSeries }
+                    currentDataset={ currentDataset }
+                    currentIndicator={ currentIndicator }
+                    currentYear={ currentYear }
+                    societiesBlacklist={ societiesBlacklist }
                   />
                 )
               })
             }
-
-            { /*
-              selectedSocieties.map((ns, i) => {
-                return (
-                  <tr key={ i } className="relative">
-                    <td className="p1 sm-4">
-                      <Link to={`/societies/${ns.slug}`}>
-                        { ns.label }
-                      </Link>
-                    </td>
-                    <td className="p1 sm-4">{ "Trendline" }</td>
-                    <td className="p1 sm-4">
-                        {(() => {
-                          var latestData = groupedTimeSeries[currentYear]
-                                               .filter(obj => obj.KPI_DON_Code === ns.value)
-                          var latestNumber = latestData.length > 0 ? latestData[0][currentIndicator.id] : "N/A"
-                          return (
-                            <div className="relative">
-                              <span>{ latestNumber }</span>
-                              <div onClick={(e) => handleUnselectSociety(ns, e)} className="btn absolute r0 t50 y-center-self bg-primary">x</div>
-                            </div>
-                          )
-                        })()}
-                    </td>
-                  </tr>
-                )
-              })
-            */ }
           </tbody>
         </table>
       ) : (
-        ""
+        null
       )
     }
-
   </div>
 )
 
-const mapStateToProps = state => ({
-  nationalSocieties: state.appReducer.nationalSocieties
-})
-
-export default connect(mapStateToProps)(SelectedSocieties)
+export default SelectedSocieties

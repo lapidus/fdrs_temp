@@ -55,13 +55,15 @@ class Overview extends React.Component {
     })
   }
   handleNSSelect(selectedSociety) {
+    let newSelectedSocieties = []
+    let newSelectedSocietiesBlacklist = []
     this.setState({
-      selectedSocieties: this.state.selectedSocieties.concat([{
+      selectedSocieties: newSelectedSocieties.concat(this.state.selectedSocieties, [{
         KPI_DON_Code: selectedSociety.value,
         NSO_DON_name: selectedSociety.label,
         slug: selectedSociety.slug,
       }]),
-      societiesBlacklist: this.state.societiesBlacklist.concat([selectedSociety.value]),
+      societiesBlacklist: newSelectedSocietiesBlacklist.concat(this.state.societiesBlacklist, [selectedSociety.value])
     })
   }
   handleYearSelect(year, e) {
@@ -72,6 +74,7 @@ class Overview extends React.Component {
   handleUnselectSociety(society, e) {
     const newSelectedSocieties = remove(this.state.selectedSocieties, (n) => {
       return n.KPI_DON_Code !== society.KPI_DON_Code
+      // return n.KPI_DON_Code !== society.value
     })
     this.setState({
       selectedSocieties: newSelectedSocieties,
@@ -170,7 +173,7 @@ class Overview extends React.Component {
 
             <div className="col sm-9 md-8 px1 pb3">
               <div className="relative">
-                <Select
+                {/* <Select
                   searchable={ true }
                   clearable={ false }
                   placeholder="Select a NS..."
@@ -184,7 +187,7 @@ class Overview extends React.Component {
                     }
                   })}
                   onChange={ this.handleNSSelect }
-                />
+                /> */}
 
                 {/* <div className="Select Select--single is-focused is-open is-searchable">
                   <div className="Select-control">
@@ -209,7 +212,6 @@ class Overview extends React.Component {
                     </div>
                   </div>
                 </div> */}
-
 
                 <Map indicator={this.state.currentIndicator}
                      data={this.props.data}

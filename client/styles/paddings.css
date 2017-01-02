@@ -60,6 +60,8 @@
   .sm-px2 { padding-left:   calc(2 * var(--base-unit)); padding-right:  calc(2 * var(--base-unit)); }
   .sm-px3 { padding-left:   calc(3 * var(--base-unit)); padding-right:  calc(3 * var(--base-unit)); }
   .sm-px4 { padding-left:   calc(4 * var(--base-unit)); padding-right:  calc(4 * var(--base-unit)); }
+
+  .sm-pr1 { padding-right:  calc(1 * var(--base-unit)); }
 }
 @media (--md-viewport) {
   .md-px0 { padding-left:   0;                          padding-right:  0;              }

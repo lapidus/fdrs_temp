@@ -67,7 +67,7 @@ class Chapter1 extends React.Component {
 
         <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-            <p className="m0 caps small strong">{ "Everyone counts" }</p>
+            <p className="caps small strong m0">{ "Everyone counts" }</p>
             <h2 className="display-2 light m0">{chapter.title}</h2>
           </div>
         </div>
@@ -282,18 +282,19 @@ class Chapter1 extends React.Component {
                     labels={
                       section1.blocks[6].tabs[0].dataset.map((item, i) => {
                         // return `${item.name} — ${numberFormatter.addCommas(item.first + item.second + item.rest)}`
-                        return { text: item.name, number: numberFormatter.addCommas(Math.round(item.first + item.second + item.rest)) }
+                        const sum = Number(item.first) + Number(item.second) + Number(item.rest)
+                        return { text: item.name, number: numberFormatter.addCommas(Math.round(sum)) }
                       })
                     }
                     data={[
                       section1.blocks[6].tabs[0].dataset.map((item, i) => {
-                        return { x: item.index, y: item.first, name: item.names[0] }
+                        return { x: item.index, y: Number(item.first), name: item.names[0] }
                       }),
                       section1.blocks[6].tabs[0].dataset.map((item, i) => {
-                        return { x: item.index, y: item.second, name: item.names[1] }
+                        return { x: item.index, y: Number(item.second), name: item.names[1] }
                       }),
                       section1.blocks[6].tabs[0].dataset.map((item, i) => {
-                        return { x: item.index, y: item.rest }
+                        return { x: item.index, y: Number(item.rest) }
                       })
                     ]}
                     />
@@ -314,18 +315,19 @@ class Chapter1 extends React.Component {
                     labels={
                       section1.blocks[6].tabs[1].dataset.map((item, i) => {
                         // return `${item.name} (${numberFormatter.addCommas(item.first + item.second + item.rest)})`
-                        return { text: item.name, number: numberFormatter.addCommas(Math.round(item.first + item.second + item.rest)) }
+                        const sum = Number(item.first) + Number(item.second) + Number(item.rest)
+                        return { text: item.name, number: numberFormatter.addCommas(Math.round(sum)) }
                       })
                     }
                     data={[
                       section1.blocks[6].tabs[1].dataset.map((item, i) => {
-                        return { x: item.index, y: item.first, name: item.names[0] }
+                        return { x: item.index, y: Number(item.first), name: item.names[0] }
                       }),
                       section1.blocks[6].tabs[1].dataset.map((item, i) => {
-                        return { x: item.index, y: item.second, name: item.names[1] }
+                        return { x: item.index, y: Number(item.second), name: item.names[1] }
                       }),
                       section1.blocks[6].tabs[1].dataset.map((item, i) => {
-                        return { x: item.index, y: item.rest }
+                        return { x: item.index, y: Number(item.rest) }
                       })
                     ]}
                     />
@@ -346,18 +348,18 @@ class Chapter1 extends React.Component {
                     labels={
                       section1.blocks[6].tabs[2].dataset.map((item, i) => {
                         // return `${item.name} (${numberFormatter.addCommas(item.first + item.second + item.rest)})`
-                        return { text: item.name, number: numberFormatter.addCommas(Math.round(item.first + item.second + item.rest)) }
+                        return { text: item.name, number: numberFormatter.addCommas(Math.round(Number(item.first) + Number(item.second) + Number(item.rest))) }
                       })
                     }
                     data={[
                       section1.blocks[6].tabs[2].dataset.map((item, i) => {
-                        return { x: item.index, y: item.first, name: item.names[0] }
+                        return { x: item.index, y: Number(item.first), name: item.names[0] }
                       }),
                       section1.blocks[6].tabs[2].dataset.map((item, i) => {
-                        return { x: item.index, y: item.second, name: item.names[1] }
+                        return { x: item.index, y: Number(item.second), name: item.names[1] }
                       }),
                       section1.blocks[6].tabs[2].dataset.map((item, i) => {
-                        return { x: item.index, y: item.rest }
+                        return { x: item.index, y: Number(item.rest) }
                       })
                     ]}
                     />
@@ -385,18 +387,18 @@ class Chapter1 extends React.Component {
                     labels={
                       section1.blocks[8].tabs[0].dataset.map((item, i) => {
                         // return `${item.name} (${numberFormatter.addCommas(Math.round(item.first + item.second + item.rest))})`
-                        return { text: item.name, number: numberFormatter.addCommas(Math.round(item.first + item.second + item.rest)) }
+                        return { text: item.name, number: numberFormatter.addCommas(Math.round(Number(item.first) + Number(item.second) + Number(item.rest))) }
                       })
                     }
                     data={[
                       section1.blocks[8].tabs[0].dataset.map((item, i) => {
-                        return { x: item.index, y: item.first, name: item.names[0] }
+                        return { x: Number(item.index), y: Number(item.first), name: item.names[0] }
                       }),
                       section1.blocks[8].tabs[0].dataset.map((item, i) => {
-                        return { x: item.index, y: item.second, name: item.names[1] }
+                        return { x: Number(item.index), y: Number(item.second), name: item.names[1] }
                       }),
                       section1.blocks[8].tabs[0].dataset.map((item, i) => {
-                        return { x: item.index, y: item.rest }
+                        return { x: Number(item.index), y: Number(item.rest) }
                       })
                     ]}
                     />
@@ -417,18 +419,19 @@ class Chapter1 extends React.Component {
                     labels={
                       section1.blocks[8].tabs[1].dataset.map((item, i) => {
                         // return `${item.name} (${numberFormatter.addCommas(Math.round(item.first + item.second + item.rest))})`
-                        return { text: item.name, number: numberFormatter.addCommas(Math.round(item.first + item.second + item.rest)) }
+                        const sum = Number(item.first) + Number(item.second) + Number(item.rest)
+                        return { text: item.name, number: numberFormatter.addCommas(Math.round(sum)) }
                       })
                     }
                     data={[
                       section1.blocks[8].tabs[1].dataset.map((item, i) => {
-                        return { x: item.index, y: item.first, name: item.names[0] }
+                        return { x: Number(item.index), y: Number(item.first), name: item.names[0] }
                       }),
                       section1.blocks[8].tabs[1].dataset.map((item, i) => {
-                        return { x: item.index, y: item.second, name: item.names[1] }
+                        return { x: Number(item.index), y: Number(item.second), name: item.names[1] }
                       }),
                       section1.blocks[8].tabs[1].dataset.map((item, i) => {
-                        return { x: item.index, y: item.rest }
+                        return { x: Number(item.index), y: Number(item.rest) }
                       })
                     ]}
                     />
@@ -443,11 +446,11 @@ class Chapter1 extends React.Component {
 
             <Tabs active={0}>
               <TabPanel title={section1.blocks[11].tabs[0].name}>
-                <table>
+                <table className="base-12">
                   <thead>
-                    <tr className="small">
+                    <tr className="small bg-dark">
                       {section1.blocks[11].tabs[0].headers.map((item, i) => {
-                        return (<th key={i}>{item}</th>)
+                        return (<th key={i} className="p05">{item}</th>)
                       })}
                     </tr>
                   </thead>
@@ -455,10 +458,10 @@ class Chapter1 extends React.Component {
                     {section1.blocks[11].tabs[0].dataset.map((item, i) => {
                       return (
                         <tr key={i}>
-                          <td>{item.rank}</td>
-                          <td>{item.donor}</td>
-                          <td>{item.total}</td>
-                          <td>{item.percent}%</td>
+                          <td className="p05 text-center">{item.rank}</td>
+                          <td className="p05">{item.donor}</td>
+                          <td className="p05">{item.total}</td>
+                          <td className="p05 text-center">{item.percent}%</td>
                         </tr>
                       )
                     })}
@@ -467,11 +470,11 @@ class Chapter1 extends React.Component {
                 <p className="small">{section1.blocks[11].tabs[0].caption}</p>
               </TabPanel>
               <TabPanel title={section1.blocks[11].tabs[1].name}>
-                <table>
+                <table className="base-12">
                   <thead>
-                    <tr className="small">
+                    <tr className="small bg-dark">
                       {section1.blocks[11].tabs[1].headers.map((item, i) => {
-                        return (<th key={i}>{item}</th>)
+                        return (<th key={i} className="p05">{item}</th>)
                       })}
                     </tr>
                   </thead>
@@ -479,10 +482,10 @@ class Chapter1 extends React.Component {
                     {section1.blocks[11].tabs[1].dataset.map((item, i) => {
                       return (
                         <tr key={i}>
-                          <td>{item.rank}</td>
-                          <td>{item.nationalSociety}</td>
-                          <td>{item.total}</td>
-                          <td>{item.percent}%</td>
+                          <td className="p05 text-center">{item.rank}</td>
+                          <td className="p05">{item.nationalSociety}</td>
+                          <td className="p05">{item.total}</td>
+                          <td className="p05 text-center">{item.percent}%</td>
                         </tr>
                       )
                     })}

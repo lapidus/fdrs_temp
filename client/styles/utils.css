@@ -82,6 +82,9 @@
 }
 .clearfix:after { clear: both; }
 
+.opacity-0 { opacity: 0; }
+.opacity-1 { opacity: 1; }
+
 .xs-visible,
 .sm-visible,
 .md-visible,

@@ -1386,6 +1386,10 @@ strong,
 
   }
 
+  .sm-pr1 { padding-right: 1rem;
+
+  }
+
 }
 @media (min-width: 62em) {
 
@@ -2022,6 +2026,12 @@ strong,
 
 }
 .clearfix:after { clear: both;
+
+}
+.opacity-0 { opacity: 0;
+
+}
+.opacity-1 { opacity: 1;
 
 }
 .xs-visible,

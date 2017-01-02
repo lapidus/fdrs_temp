@@ -25,7 +25,7 @@ class Chapter2 extends React.Component {
     return (
       <div>
 
-        <div className="clearfix bg-primary pt1">
+        <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
             <p className="caps small strong m0">{ "Everyone counts" }</p>
             <h2 className="display-2 light m0">{chapter.title}</h2>

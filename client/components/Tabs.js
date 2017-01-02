@@ -1,15 +1,34 @@
 import React from "react"
+import max from "lodash/max"
 
 export class Tabs extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       active: this.props.active,
+      height: 0,
     }
+
+    this.computeHeights = this.computeHeights.bind(this)
   }
 
   switchTab(i) {
     this.setState({ active: i })
+  }
+
+  computeHeights() {
+    var els = []
+    for (var i = 0, len = this.tabPanelWrapper.childElementCount; i < len; i++) {
+      els[i] = this.tabPanelWrapper.children[i]
+    }
+    const heights = els.map(function(item) {
+      return Number(window.getComputedStyle(item).height.split("px")[0])
+    })
+    this.setState({height: max(heights)})
+  }
+
+  componentDidMount() {
+    this.computeHeights()
   }
 
   render() {
@@ -22,7 +41,7 @@ export class Tabs extends React.Component {
           {
             tabs.map((tab, i) =>
               <button
-                className={ active === i ? "tab-navigation__item active" : "tab-navigation__item"}
+                className={ active === i ? "btn bg-secondary" : "btn"}
                 key={ i }
                 onClick={ this.switchTab.bind(this, i) }
               >
@@ -31,7 +50,8 @@ export class Tabs extends React.Component {
             )
           }
         </div>
-        <div>
+        <hr />
+        <div ref={tabPanelWrapper => this.tabPanelWrapper = tabPanelWrapper} style={{position:"relative",height: this.state.height}}>
           {
             tabs.map((tabpanel, j) =>
               <TabPanel
@@ -49,4 +69,4 @@ export class Tabs extends React.Component {
 }
 
 export const TabPanel = ({ active, children }) =>
-  <div className={ active ? "tab-panel active" : "tab-panel" }>{children}</div>
+  <div className={ active ? "absolute t0 l0 base-12 opacity-1" : "absolute t0 l0 base-12 opacity-0" }>{children}</div>

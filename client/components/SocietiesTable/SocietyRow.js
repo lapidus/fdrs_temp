@@ -10,12 +10,28 @@ class SocietyRow extends React.Component {
   constructor(props) {
     super(props)
   }
-  shouldComponentUpdate() {
-    return false
+  shouldComponentUpdate(nextProps) {
+
+    // TODO:
+    // When the indicatorData changes, or the sort direction/parameter changes,
+    // these components should update
+    return true
+    // if (nextProps.currentIndicator !== this.props.currentIndicator || nextProps.currentYear !== this.props.currentYear) {
+    //   console.log("Updating component!")
+    //   return true
+    // }
+    // else {
+    //   console.log("NOT Updating component!")
+    //   return false
+    // }
   }
   render() {
 
-    const { nationalSociety, rowKey, groupedTimeSeries, currentIndicator, currentYear } = this.props
+    const {
+      nationalSociety,
+      groupedTimeSeries,
+      currentIndicator,
+    } = this.props
 
     const yearValues = Object.keys(groupedTimeSeries).map((year, i) => {
       return groupedTimeSeries[year].filter(obj => obj.KPI_DON_Code === nationalSociety.KPI_DON_Code)[0]
@@ -25,10 +41,6 @@ class SocietyRow extends React.Component {
       const yearValue = yearSociety ? yearSociety[currentIndicator.id] : null
       return yearValue ? Number(yearValue) : null
     })
-
-    const latestData = groupedTimeSeries[currentYear]
-                         .filter(obj => obj.KPI_DON_Code === nationalSociety.KPI_DON_Code)
-    const latestNumber = latestData.length > 0 ? latestData[0][currentIndicator.id] : "N/A"
 
     return (
       <tr>
@@ -85,7 +97,8 @@ class SocietyRow extends React.Component {
           </div>
         </td>
         <td className="p1 sm-4">
-          <span>{ niceNum(latestNumber, 0, null, true) }</span>
+          {/* <span>{ niceNum(latestNumber, 0, null, true) }</span> */}
+          <span>{ niceNum(nationalSociety.value, 0, null, true) }</span>
         </td>
       </tr>
     )
