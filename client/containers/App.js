@@ -119,12 +119,12 @@ class App extends React.Component {
                     </Dropdown>
                   </li>
                   <li className='block sm-inline-block'>
-                    <Link to='/' className='btn'>
+                    <Link to='/about' className='btn'>
                       <span className='block py1 px05'>About</span>
                     </Link>
                   </li>
                   <li className='block sm-inline-block'>
-                    <Link to='/' className='btn'>
+                    <Link to='/faq' className='btn'>
                       <span className='block py1 px05'>FAQ</span>
                     </Link>
                   </li>

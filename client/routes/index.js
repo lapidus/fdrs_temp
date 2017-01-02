@@ -43,6 +43,16 @@ const childRoutes = [
       System.import("../containers/Overview").then(loadRoute(cb)).catch(errorLoading)
     },
   }, {
+    path: "faq",
+    getComponent(location, cb) {
+      System.import("../containers/FAQ").then(loadRoute(cb)).catch(errorLoading)
+    },
+  }, {
+    path: "about",
+    getComponent(location, cb) {
+      System.import("../containers/About").then(loadRoute(cb)).catch(errorLoading)
+    },
+  }, {
     path: "societies",
     getComponent(location, cb) {
       System.import("../containers/Societies").then(loadRoute(cb)).catch(errorLoading)
