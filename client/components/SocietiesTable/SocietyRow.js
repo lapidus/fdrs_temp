@@ -6,27 +6,14 @@ import niceNum from "../../utils/niceNum"
 import { VictoryLine, VictoryScatter, Point } from "victory"
 import { showTooltip, hideTooltip } from "../../actions/appActions"
 
-class SocietyRow extends React.Component {
+class Trendline extends React.Component {
   constructor(props) {
     super(props)
   }
-  shouldComponentUpdate(nextProps) {
-
-    // TODO:
-    // When the indicatorData changes, or the sort direction/parameter changes,
-    // these components should update
-    return true
-    // if (nextProps.currentIndicator !== this.props.currentIndicator || nextProps.currentYear !== this.props.currentYear) {
-    //   console.log("Updating component!")
-    //   return true
-    // }
-    // else {
-    //   console.log("NOT Updating component!")
-    //   return false
-    // }
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   return this.props.nationalSociety.KPI_DON_Code !== nextProps.nationalSociety.KPI_DON_Code
+  // }
   render() {
-
     const {
       nationalSociety,
       groupedTimeSeries,
@@ -43,6 +30,68 @@ class SocietyRow extends React.Component {
     })
 
     return (
+      <div className="relative">
+        <div className="absolute b0 l0 small">
+          { niceNum(dataPoints[0]) }
+        </div>
+        <div className="absolute t0 r0 small">
+          { niceNum(dataPoints[dataPoints.length - 1]) }
+        </div>
+        <svg width="450" height="110" viewBox="0 0 450 110">
+          <VictoryLine
+            standalone={false}
+            height={110}
+            padding={{top: 40, bottom: 30, left: 5, right: 5}}
+            data={
+              dataPoints.map((point, i) => {
+                return { x: i, y: point }
+              })
+            }
+            style={{
+              data: { stroke: "#D0021B" }
+            }}
+          />
+          <VictoryScatter
+            standalone={false}
+            height={110}
+            padding={{top: 40, bottom: 30, left: 5, right: 5}}
+            data={
+              dataPoints.map((point, i) => {
+                return { x: i, y: point }
+              })
+            }
+            size={4}
+            style={{
+              data: {
+                fill: (d) => {
+                  return (d.y || d.y === 0) ? "#D0021B" : "transparent"
+                },
+                stroke: "#FFF",
+                strokeWidth: (d) => {
+                  return (d.y || d.y === 0) ? 2 : 0
+                }
+              }
+            }}
+          />
+        </svg>
+      </div>
+    )
+  }
+}
+
+class SocietyRow extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+
+    const {
+      nationalSociety,
+      groupedTimeSeries,
+      currentIndicator,
+    } = this.props
+
+    return (
       <tr>
         <td className="p1 sm-4">
           <Link to={`/societies/${nationalSociety.slug}`}>
@@ -50,70 +99,18 @@ class SocietyRow extends React.Component {
           </Link>
         </td>
         <td className="py05 px1 sm-4">
-          <div className="relative">
-            <div className="absolute b0 l0 small">
-              { niceNum(dataPoints[0]) }
-            </div>
-            <div className="absolute t0 r0 small">
-              { niceNum(dataPoints[dataPoints.length - 1]) }
-            </div>
-            <svg width="450" height="110" viewBox="0 0 450 110">
-              <VictoryLine
-                standalone={false}
-                height={110}
-                padding={{top: 40, bottom: 30, left: 5, right: 5}}
-                data={
-                  dataPoints.map((point, i) => {
-                    return { x: i, y: point }
-                  })
-                }
-                style={{
-                  data: { stroke: "#D0021B" }
-                }}
-              />
-              <VictoryScatter
-                standalone={false}
-                height={110}
-                padding={{top: 40, bottom: 30, left: 5, right: 5}}
-                data={
-                  dataPoints.map((point, i) => {
-                    return { x: i, y: point }
-                  })
-                }
-                size={4}
-                style={{
-                  data: {
-                    fill: (d) => {
-                      return (d.y || d.y === 0) ? "#D0021B" : "transparent"
-                    },
-                    stroke: "#FFF",
-                    strokeWidth: (d) => {
-                      return (d.y || d.y === 0) ? 2 : 0
-                    }
-                  }
-                }}
-              />
-            </svg>
-          </div>
+          <Trendline
+            nationalSociety={nationalSociety}
+            groupedTimeSeries={groupedTimeSeries}
+            currentIndicator={currentIndicator}
+          />
         </td>
         <td className="p1 sm-4">
-          {/* <span>{ niceNum(latestNumber, 0, null, true) }</span> */}
           <span>{ niceNum(nationalSociety.value, 0, null, true) }</span>
         </td>
       </tr>
     )
   }
 }
-
-// className={rowKey % 2 == 0 ? "bg-lighter" : ""}
-
-// const mapStateToProps = state => ({
-//   tooltipVisible: state.appReducer.tooltipVisible
-// })
-//
-// const mapDispatchToProps = dispatch => ({
-//   showTooltip: () => dispatch(showTooltip()),
-//   hideTooltip: () => dispatch(hideTooltip()),
-// })
 
 export default SocietyRow
