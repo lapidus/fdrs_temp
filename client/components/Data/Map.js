@@ -8,7 +8,9 @@ import Countries from "./Countries"
 
 import {
   json,
-  scaleLinear
+  scaleLinear,
+  scalePow,
+  scaleLog,
 } from "d3"
 import {
   geoPath,
@@ -55,7 +57,6 @@ class Map extends React.Component {
     this.loadCountries = this.loadCountries.bind(this)
   }
   componentWillReceiveProps(nextProps) {
-    console.log("ADDING PROPS!")
     if(nextProps.indicator.id !== this.props.indicator.id) {
     }
     const { groupedTimeSeries, currentYear, indicator } = nextProps
@@ -118,7 +119,7 @@ class Map extends React.Component {
         <div style={{opacity: this.state.loading ? 0 : 1, transform: `translateY(${this.state.loading ? '30px' : '0'})`, transition: "all 0.75s"}}>
           {
             this.state.loading ? (
-              ""
+              null
             ) : (
               <svg width={800} height={480} viewBox="0 0 800 480">
                 <Countries countries={this.state.countries} projection={this.projection} />
@@ -132,11 +133,17 @@ class Map extends React.Component {
 
                     if(bubbleData && coords) {
                       return (
-                        <circle key={i} cx={this.projection()(coords)[0]} cy={this.projection()(coords)[1]} r={this.state.scale(Number(bubbleData[this.props.indicator.id]))} style={{
-                          fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
-                          stroke: "#fff",
-                          strokeWidth: "1.5px"
-                        }} />
+                        <circle
+                          key={bubble.KPI_DON_Code}
+                          cx={this.projection()(coords)[0]}
+                          cy={this.projection()(coords)[1]}
+                          r={bubbleData[this.props.indicator.id] ? this.state.scale(Number(bubbleData[this.props.indicator.id])) : 0}
+                          style={{
+                            fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
+                            stroke: "#fff",
+                            strokeWidth: "1.5px"
+                          }}
+                        />
                       )
                     }
 

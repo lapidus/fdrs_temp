@@ -5,48 +5,65 @@ import { Link } from "react-router"
 import niceNum from "../../utils/niceNum"
 import { VictoryLine, VictoryScatter, Point } from "victory"
 import { showTooltip, hideTooltip } from "../../actions/appActions"
+import sortBy from "lodash/sortBy"
+
+function recalculateDataPoints(allYears, nsData, currentIndicator) {
+  return allYears.map(year => {
+    const filtered = nsData.filter(obj => obj.KPI_Year === year)[0]
+    return {
+      x: new Date(year, 1, 1),
+      y: filtered ? (filtered[currentIndicator.id] ? Number(filtered[currentIndicator.id]) : null) : null
+    }
+  })
+}
 
 class Trendline extends React.Component {
   constructor(props) {
     super(props)
-  }
-  // shouldComponentUpdate(nextProps) {
-  //   return this.props.nationalSociety.KPI_DON_Code !== nextProps.nationalSociety.KPI_DON_Code
-  // }
-  render() {
+
     const {
       nationalSociety,
       groupedTimeSeries,
+      groupedByCode,
       currentIndicator,
-    } = this.props
+    } = props
 
-    const yearValues = Object.keys(groupedTimeSeries).map((year, i) => {
-      return groupedTimeSeries[year].filter(obj => obj.KPI_DON_Code === nationalSociety.KPI_DON_Code)[0]
-    })
+    const allYears = Object.keys(groupedTimeSeries)
+    const nsData = sortBy(groupedByCode[nationalSociety.KPI_DON_Code], "KPI_Year")
 
-    const dataPoints = yearValues.map(yearSociety => {
-      const yearValue = yearSociety ? yearSociety[currentIndicator.id] : null
-      return yearValue ? Number(yearValue) : null
-    })
+    this.state = {
+      allYears: allYears,
+      nsData: nsData,
+      dataPoints: recalculateDataPoints(allYears, nsData, currentIndicator),
+    }
+  }
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.currentIndicator.id !== this.props.currentIndicator.id) {
+      this.setState({
+        dataPoints: recalculateDataPoints(this.state.allYears, this.state.nsData, nextProps.currentIndicator)
+      })
+    }
+  }
+  render() {
+    const { dataPoints } = this.state
 
     return (
       <div className="relative">
         <div className="absolute b0 l0 small">
-          { niceNum(dataPoints[0]) }
+          {/* { niceNum(dataPoints[0].y) } */}
         </div>
         <div className="absolute t0 r0 small">
-          { niceNum(dataPoints[dataPoints.length - 1]) }
+          { niceNum(dataPoints[dataPoints.length - 1].y) }
         </div>
         <svg width="450" height="110" viewBox="0 0 450 110">
           <VictoryLine
             standalone={false}
             height={110}
             padding={{top: 40, bottom: 30, left: 5, right: 5}}
-            data={
-              dataPoints.map((point, i) => {
-                return { x: i, y: point }
-              })
-            }
+            domain={{
+              x: [new Date(2010,1,1), new Date(2015,1,1)]
+            }}
+            data={ dataPoints }
             style={{
               data: { stroke: "#D0021B" }
             }}
@@ -55,11 +72,10 @@ class Trendline extends React.Component {
             standalone={false}
             height={110}
             padding={{top: 40, bottom: 30, left: 5, right: 5}}
-            data={
-              dataPoints.map((point, i) => {
-                return { x: i, y: point }
-              })
-            }
+            domain={{
+              x: [new Date(2010,1,1), new Date(2015,1,1)]
+            }}
+            data={ dataPoints }
             size={4}
             style={{
               data: {
@@ -88,6 +104,7 @@ class SocietyRow extends React.Component {
     const {
       nationalSociety,
       groupedTimeSeries,
+      groupedByCode,
       currentIndicator,
     } = this.props
 
@@ -102,6 +119,7 @@ class SocietyRow extends React.Component {
           <Trendline
             nationalSociety={nationalSociety}
             groupedTimeSeries={groupedTimeSeries}
+            groupedByCode={groupedByCode}
             currentIndicator={currentIndicator}
           />
         </td>

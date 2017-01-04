@@ -36,6 +36,7 @@ class Overview extends React.Component {
       currentIndicator: this.props.timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleVolunteering")[0],
       currentYear: 2015,
       groupedTimeSeries: groupBy(this.props.data, "KPI_Year"),
+      groupedByCode: groupBy(this.props.data, "KPI_DON_Code"),
       selectedSocieties: [],
       societiesBlacklist: [],
     }
@@ -240,6 +241,7 @@ class Overview extends React.Component {
                 selectedSocieties={ this.state.selectedSocieties }
                 societiesBlacklist={ this.state.societiesBlacklist }
                 groupedTimeSeries={ this.state.groupedTimeSeries }
+                groupedByCode={this.state.groupedByCode}
                 handleIndicatorSelect={ this.handleIndicatorSelect }
                 handleUnselectSociety={ this.handleUnselectSociety }
                 handleNSSelect={ this.handleNSSelect }

@@ -10,6 +10,7 @@ const SelectedSocieties = ({
   selectedSocieties,
   societiesBlacklist,
   groupedTimeSeries,
+  groupedByCode,
   currentIndicator,
   currentYear,
   currentDataset,
@@ -41,9 +42,10 @@ const SelectedSocieties = ({
                   <SocietyRow
                     nationalSociety={ nationalSociety }
                     nationalSocieties={ nationalSocieties }
-                    key={ i }
-                    rowKey={ i }
+                    key={NS.KPI_DON_Code}
+                    rowKey={NS.KPI_DON_Code}
                     groupedTimeSeries={ groupedTimeSeries }
+                    groupedByCode={ groupedByCode }
                     currentDataset={ currentDataset }
                     currentIndicator={ currentIndicator }
                     currentYear={ currentYear }

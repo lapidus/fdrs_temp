@@ -86,6 +86,7 @@ class SocietiesTable extends React.Component {
           selectedSocieties={this.props.selectedSocieties}
           societiesBlacklist={this.props.societiesBlacklist}
           groupedTimeSeries={this.props.groupedTimeSeries}
+          groupedByCode={this.props.groupedByCode}
           currentDataset={this.state.currentDataset}
           handleUnselectSociety={this.props.handleUnselectSociety}
         />
@@ -96,6 +97,7 @@ class SocietiesTable extends React.Component {
           selectedSocieties={this.props.selectedSocieties}
           societiesBlacklist={this.props.societiesBlacklist}
           groupedTimeSeries={this.props.groupedTimeSeries}
+          groupedByCode={this.props.groupedByCode}
           currentDataset={this.state.currentDataset}
         />
       </div>
@@ -109,6 +111,7 @@ SocietiesTable.propTypes = {
   selectedSocieties: React.PropTypes.array,
   societiesBlacklist: React.PropTypes.array,
   groupedTimeSeries: React.PropTypes.object,
+  groupedByCode: React.PropTypes.object,
   handleIndicatorSelect: React.PropTypes.func,
   handleUnselectSociety: React.PropTypes.func,
   handleNSSelect: React.PropTypes.func,
