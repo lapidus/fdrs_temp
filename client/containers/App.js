@@ -103,7 +103,7 @@ class App extends React.Component {
                   <li className='block sm-inline-block relative'>
                     <Dropdown>
                       <Link to='/' className='btn bg-white z-index-1'>
-                        <span className='block py1 px05'>Services</span>
+                        <span className='block py1 px05'>{ "All services" }</span>
                       </Link>
                       <ul className="absolute t100 l0 bg-white m0 py1 px0 shadow-4" style={{minWidth:280}}>
                         <li className="block px1 py05 text-left">
@@ -115,13 +115,11 @@ class App extends React.Component {
                         <li className="block px1 py05 text-left">
                           <Link to="/report">{ "\"Everyone Counts\" annual report" }</Link>
                         </li>
+                        <li className="block px1 py05 text-left">
+                          <Link to="/data-download">{ "Data download" }</Link>
+                        </li>
                       </ul>
                     </Dropdown>
-                  </li>
-                  <li className='block sm-inline-block'>
-                    <Link to='/about' className='btn'>
-                      <span className='block py1 px05'>About</span>
-                    </Link>
                   </li>
                   <li className='block sm-inline-block'>
                     <Link to='/faq' className='btn'>
