@@ -28,6 +28,7 @@ import {
 import {
   fetchNationalSocieties,
   fetchTimeSeries,
+  fetchTimeSeriesMeta,
   fetchDocuments,
 } from "../actions/appActions"
 
@@ -143,7 +144,9 @@ class Society extends React.Component {
       latestData
     } = this.state
 
-    const { society, data } = this.props
+    const { society, data, timeSeriesMeta } = this.props
+
+    console.log('The society is here: ', society, timeSeriesMeta)
 
     return (
       <section>
@@ -298,13 +301,8 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="genderChart">{ "View 2" }</CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
-                      </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleVolunteering")[0].description }</p>
+                      <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -335,10 +333,7 @@ class Society extends React.Component {
                           )
                         }
                       </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -402,13 +397,8 @@ class Society extends React.Component {
                       </div>
                     </CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
-                      </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noLocalUnits")[0].description }</p>
+                      <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -458,13 +448,8 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="plainNumber">{ "View 1" }</CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
-                      </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_IncomeLC")[0].description }</p>
+                      <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -517,13 +502,8 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="genderChart">{ "View 2" }</CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
-                      </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPaidStaff")[0].description }</p>
+                      <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -593,13 +573,8 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="plainNumber">{ "View 1" }</CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
-                      </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleReachedDisaster")[0].description }</p>
+                      <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -653,13 +628,8 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="genderChart">{ "View 2" }</CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
-                      </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleDonatingBlood")[0].description }</p>
+                      <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -707,13 +677,7 @@ class Society extends React.Component {
                       </div>
                     </CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
-                      </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p>{ "" }</p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -811,13 +775,14 @@ Society.propTypes = {
   nationalSocieties: React.PropTypes.array,
   data: React.PropTypes.array,
   documents: React.PropTypes.array,
+  timeSeriesMeta: React.PropTypes.array,
 }
 
 Society.contextTypes = {
   i18n: React.PropTypes.object.isRequired,
 }
 
-Society.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchDocuments ]
+Society.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchDocuments, fetchTimeSeriesMeta ]
 
 const makeMapStateToProps = () => {
   const getSociety = makeGetSociety()
@@ -830,6 +795,7 @@ const makeMapStateToProps = () => {
     data: getSocietyData(state, props),
     documents: getSocietyDocuments(state, props),
     nationalSocieties: state.appReducer.nationalSocieties,
+    timeSeriesMeta: state.appReducer.timeSeriesMeta,
   })
 }
 
