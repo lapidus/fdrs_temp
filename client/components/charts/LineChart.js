@@ -56,7 +56,6 @@ class LineChart extends React.Component {
                       right: 60
                     }}
                     domain={(() => {
-                      console.log("Domain gets the number: ", this.props.domain.y)
                       return this.props.domain.y
                     })()}
                     standalone={false}
@@ -99,7 +98,6 @@ class LineChart extends React.Component {
                       right: 60
                     }}
                     domain={(() => {
-                      console.log("Domain gets the number: ", this.props.domain.x)
                       return this.props.domain.x
                     })()}
                     standalone={false}

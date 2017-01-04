@@ -10,6 +10,8 @@ import uniqBy from "lodash/fp/uniqBy"
 import ReactIScroll from "react-iscroll"
 import niceNum from "../utils/niceNum"
 
+import { translate } from "react-i18next"
+
 import StickySidebar from "../components/StickySidebar"
 import LineChart from "../components/charts/LineChart"
 import Textfield from "../components/Textfield"
@@ -144,7 +146,7 @@ class Society extends React.Component {
       latestData
     } = this.state
 
-    const { society, data, timeSeriesMeta } = this.props
+    const { society, data, timeSeriesMeta, t } = this.props
 
     console.log('The society is here: ', society, timeSeriesMeta)
 
@@ -228,8 +230,8 @@ class Society extends React.Component {
                 <div className="col sm-8 px1 pb1">
                   <p className="lead">
                     { `${society.NSO_DON_name} was admitted to the IFRC in ${society.admission_date.split(".")[2]}.` }
-                    { latestData.KPI_noPeopleVolunteering ? ` In ${latestData.KPI_Year}, it counted ${latestData.KPI_noPeopleVolunteering} active volunteers` : "" }
-                    { earliestData.KPI_noPeopleVolunteering ? ` (up from ${earliestData.KPI_noPeopleVolunteering} in ${earliestData.KPI_Year})` : "" }
+                    { latestData.KPI_noPeopleVolunteering ? ` In ${latestData.KPI_Year}, it counted ${niceNum(latestData.KPI_noPeopleVolunteering, 0, null, true)} active volunteers` : "" }
+                    { earliestData.KPI_noPeopleVolunteering ? ` (up from ${niceNum(earliestData.KPI_noPeopleVolunteering, 0, null, true)} in ${earliestData.KPI_Year})` : "" }
                     { latestData.KPI_noPeopleVolunteeringM && latestData.KPI_noPeopleVolunteeringF ? `, of which ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringM)}% were male and ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringF)}% female` : "" }
                     { "." }
                   </p>
@@ -255,7 +257,7 @@ class Society extends React.Component {
 
               <div className="clearfix mxn1 pb2">
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card>
+                  <Card indicator="KPI_noPeopleVolunteering">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">
@@ -311,13 +313,13 @@ class Society extends React.Component {
                   <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(latestData.Population, 2) !== "N/A"}>
                     <CardView viewIcon="plainNumber">
                       <div className="pt3 px1">
-                        <p className="display-2 strong mb0">{ niceNum(latestData.Population, 2) }</p>
+                        <p className="display-2 strong mb0">{ niceNum(latestData.Population, 1) }</p>
                         <p className="m0">
                           {
                             niceNum(latestData.Population, 2) == "N/A" ? (
-                              missingDataString("population", society.NSO_DON_name, latestData.KPI_Year)
+                              missingDataString("population", t(`countries:${society.iso_2}`), latestData.KPI_Year)
                             ) : (
-                              `population of ${society.NSO_DON_name} in 2015`
+                              `population of ${t(`countries:${society.iso_2}`)} in 2015`
                             )
                           }
                         </p>
@@ -327,9 +329,9 @@ class Society extends React.Component {
                       <p>
                         {
                           niceNum(latestData.Population, 2) == "N/A" ? (
-                            missingDataString("population", society.NSO_DON_name, latestData.KPI_Year)
+                            missingDataString("population", t(`countries:${society.iso_2}`), latestData.KPI_Year)
                           ) : (
-                            "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics."
+                            "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + ". It is possible to view the aggregated numbers, as well as gender specific statistics."
                           )
                         }
                       </p>
@@ -339,7 +341,7 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-12 lg-4 px1 pb2">
-                  <Card>
+                  <Card indicator="KPI_noLocalUnits">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">{ "Local units" }</h1>
@@ -382,7 +384,6 @@ class Society extends React.Component {
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: (() => {
-                                console.log("DataPoints of major interest: ", d.KPI_Year, d.KPI_noLocalUnits)
                                 return d.KPI_noLocalUnits ? Number(d.KPI_noLocalUnits) : null
                               })(),
                             })),
@@ -455,7 +456,7 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card>
+                  <Card indicator="KPI_noPaidStaff">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">{ "Paid staff" }</h1>
@@ -486,7 +487,6 @@ class Society extends React.Component {
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: (() => {
-                                console.log("DataPoints of major interest (Paid staff): ", d.KPI_Year, d.KPI_noPaidStaff)
                                 return d.KPI_noPaidStaff ? Number(d.KPI_noPaidStaff) : null
                               })(),
                             })),
@@ -515,21 +515,16 @@ class Society extends React.Component {
                         <p className="display-2 strong mb0">{ niceNum(latestData.Poverty) }</p>
                         <p className="m0">{
                           niceNum(latestData.Poverty) === "N/A" ? (
-                            missingDataString("poverty", society.NSO_DON_name, latestData.KPI_Year)
+                            missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year)
                           ) : (
-                            `percentage of ${society.NSO_DON_name} population living below the poverty line in 2015`
+                            `percentage of ${t(`countries:${society.iso_2}`)} population living below the poverty line in 2015`
                           )
                         }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
-                      </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p>{ "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + ". It is possible to view the aggregated numbers, as well as gender specific statistics." }</p>
+                      <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -580,7 +575,7 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card>
+                  <Card indicator="KPI_noPeopleDonatingBlood">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">{ "People donating blood" }</h1>
@@ -645,9 +640,9 @@ class Society extends React.Component {
                         <p className="m0">
                           {
                             niceNum(latestData.GDP) === "N/A" ? (
-                              missingDataString("GDP", society.NSO_DON_name, latestData.KPI_Year)
+                              missingDataString("GDP", t(`countries:${society.iso_2}`), latestData.KPI_Year)
                             ) : (
-                              `${society.NSO_DON_name} GDP in ${latestData.KPI_Year}`
+                              `${t(`countries:${society.iso_2}`)} GDP in ${latestData.KPI_Year}`
                             )
                           }
                         </p>
@@ -656,13 +651,8 @@ class Society extends React.Component {
                     <CardView>{ "View 1" }</CardView>
                     <CardView>{" View 2" }</CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the population statistics for Burundi. It is possible to view the aggregated numbers, as well as gender specific statistics." }
-                      </p>
-                      <p>
-                        { "The data comes from this source:" } <br />
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
+                      <p>{ "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + ". It is possible to view the aggregated numbers, as well as gender specific statistics." }</p>
+                      <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -770,6 +760,7 @@ class Society extends React.Component {
 }
 
 Society.propTypes = {
+  t: React.PropTypes.func.isRequired,
   params: React.PropTypes.object.isRequired,
   society: React.PropTypes.object,
   nationalSocieties: React.PropTypes.array,
@@ -799,4 +790,6 @@ const makeMapStateToProps = () => {
   })
 }
 
-export default connect(makeMapStateToProps)(Society)
+export default translate([ "countries" ], { wait: true })(connect(makeMapStateToProps)(Society))
+
+// export default connect(makeMapStateToProps)(Society)

@@ -134,7 +134,7 @@ class Card extends React.Component {
               }
             </div>
           }
-          <Link to="/overview" className="btn">
+          <Link to={`/overview?currentIndicator=${this.props.indicator}`} className={this.props.indicator ? "btn" : "btn opacity-0"}>
             <span className="small">{ "show on map" }</span>
           </Link>
         </footer>
@@ -168,6 +168,7 @@ Card.propTypes = {
   bgColor: React.PropTypes.string,
   basicCard: React.PropTypes.bool,
   controlsVisible: React.PropTypes.bool,
+  indicator: React.PropTypes.string,
 }
 
 Card.defaultProps = {

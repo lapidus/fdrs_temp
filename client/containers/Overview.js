@@ -32,8 +32,10 @@ class Overview extends React.Component {
   constructor(props) {
     super(props)
 
+    const initialIndicator = props.location.query.currentIndicator || "KPI_noPeopleVolunteering"
+
     this.state = {
-      currentIndicator: this.props.timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleVolunteering")[0],
+      currentIndicator: this.props.timeSeriesMeta.filter(obj => obj.id === initialIndicator)[0],
       currentYear: 2015,
       groupedTimeSeries: groupBy(this.props.data, "KPI_Year"),
       groupedByCode: groupBy(this.props.data, "KPI_DON_Code"),
@@ -300,6 +302,7 @@ Overview.propTypes = {
   timeSeriesMeta: React.PropTypes.array,
   data: React.PropTypes.array,
   grouping: React.PropTypes.object,
+  params: React.PropTypes.object.isRequired,
 }
 
 Overview.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
