@@ -1,18 +1,7 @@
 
 import React from 'react'
 import ReactIScroll from 'react-iscroll'
-// import iScroll from 'iscroll'
 var iScroll = require('iscroll');
-
-// style={{
-//   position: this.state.isSticky ? 'fixed' : (this.state.bottomStick ? 'absolute' : 'relative'),
-//   left: this.state.isSticky ? this.state.left : 0,
-//   width: this.state.width,
-//   height: this.state.height,
-//   overflow: 'scroll',
-//   borderBottom: '32px solid rgb(246, 244, 242)',
-//   borderTop: '16px solid rgb(246, 244, 242)'
-// }}
 
 class StickySidebar extends React.Component {
   constructor(props) {
@@ -64,22 +53,13 @@ class StickySidebar extends React.Component {
     }
   }
   setDimensions() {
-
-    // Needs a better approach, like the followig:
-
-    // 1. Start with the height of the sticky element
     const height = window.innerHeight - 32;
-    // 2. Determine parent height based on sibling reference element
     const wrapperHeight = this.stickyElementWrapper.parentElement.nextElementSibling.offsetHeight;
-    // 3. Establish page y offset
-    // 4. ...
 
     this.setState({
       stickyTrigger: this.stickyElementWrapper.getBoundingClientRect().top + window.pageYOffset,
       width: this.stickyElementWrapper.offsetWidth,
-      // height: this.stickyElement.offsetHeight,
       height: height,
-      // wrapperHeight: this.stickyElementWrapper.parentElement.nextElementSibling.offsetHeight,
       wrapperHeight: wrapperHeight,
       left: this.stickyElementWrapper.getBoundingClientRect().left,
     });
@@ -93,7 +73,7 @@ class StickySidebar extends React.Component {
     window.addEventListener('resize', this.resizeHandler);
   }
   onScrollStart() {
-    console.log("iScroll starts scrolling")
+    // console.log("iScroll starts scrolling")
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.affixSidebar);
@@ -101,22 +81,29 @@ class StickySidebar extends React.Component {
     window.removeEventListener('resize', this.resizeHandler);
   }
   render() {
+
+    const wrapperStyles = {
+      position: 'relative',
+      height: this.state.wrapperHeight - 64
+    }
+
+    const stickyStyles = {
+      position: this.state.isSticky ? 'fixed' : (this.state.bottomStick ? 'absolute' : 'relative'),
+      left: this.state.isSticky ? this.state.left : 0,
+      width: this.state.width,
+      height: this.state.height,
+      overflow: 'hidden',
+    }
+
     return (
-      <div ref={(stickyElementWrapper) => { this.stickyElementWrapper = stickyElementWrapper; }}
-           style={{
-             position: 'relative',
-             height: this.state.wrapperHeight - 64
-           }}
+      <div
+        ref={(stickyElementWrapper) => { this.stickyElementWrapper = stickyElementWrapper; }}
+        style={wrapperStyles}
         >
-        <div ref={(stickyElement) => { this.stickyElement = stickyElement; }}
-          className={this.props.className + ' ' + (this.state.bottomStick ? 'pb2 b0' : 'pb2 t1')}
-          style={{
-            position: this.state.isSticky ? 'fixed' : (this.state.bottomStick ? 'absolute' : 'relative'),
-            left: this.state.isSticky ? this.state.left : 0,
-            width: this.state.width,
-            height: this.state.height,
-            overflow: 'hidden',
-          }}
+        <div
+          ref={(stickyElement) => { this.stickyElement = stickyElement; }}
+          className={`${this.props.className} ${this.state.bottomStick ? "pb2 b0" : "pb2 t1"}`}
+          style={stickyStyles}
           >
           {this.props.children}
         </div>

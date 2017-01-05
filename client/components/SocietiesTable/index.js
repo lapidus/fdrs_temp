@@ -1,6 +1,7 @@
 
 import React from "react"
 import { connect } from "react-redux"
+import Select from "react-select"
 import SocietiesTableHeader from "./Header"
 import SelectedSocieties from "./SelectedSocieties"
 import AllSocieties from "./AllSocieties"
@@ -73,6 +74,19 @@ class SocietiesTable extends React.Component {
   }
 
   render() {
+
+    const placeholder = (
+      <span>
+        <svg className="align-middle" style={{width:16,height:16,marginTop:-1}} width="16px" height="16px" viewBox="0 0 24 24">
+          <g  transform="translate(0, 0)" style={{stroke:"currentColor"}}>
+            <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="22" y1="22" x2="16.4" y2="16.4" strokeLinejoin="miter"/>
+            <circle fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" cx="10" cy="10" r="9" strokeLinejoin="miter"/>
+          </g>
+        </svg>
+        <span className="ml1">{ "Select National Societies to compare" }</span>
+      </span>
+    )
+
     return (
       <div>
         <SocietiesTableHeader
@@ -80,6 +94,24 @@ class SocietiesTable extends React.Component {
           sortDataset={this.sortDataset}
           sortParams={this.state.sortParams}
         />
+        <div className="mb2 px1">
+          <Select
+            searchable={ true }
+            clearable={ false }
+            placeholder={placeholder}
+            multi={ false }
+            name="ns-selector"
+            options={this.props.nationalSocieties.map(ns => {
+              return {
+                value: ns.KPI_DON_Code,
+                label: ns.NSO_DON_name,
+                slug: ns.slug,
+              }
+            })}
+            onChange={ this.props.handleNSSelect }
+          />
+        </div>
+
         <SelectedSocieties
           currentYear={this.props.currentYear}
           currentIndicator={this.props.currentIndicator}

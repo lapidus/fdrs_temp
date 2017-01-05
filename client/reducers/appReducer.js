@@ -14,6 +14,8 @@ import {
   RECEIVE_TIME_SERIES_META,
   REQUEST_DOCUMENTS,
   RECEIVE_DOCUMENTS,
+  REQUEST_COUNTRIES,
+  RECEIVE_COUNTRIES,
   SHOW_TOOLTIP,
   HIDE_TOOLTIP
 } from "../actions/appActions"
@@ -36,6 +38,8 @@ export default function storyReducer(state = {
     top: 0,
     left: 0,
   },
+  fetchingCountries: false,
+  countryPaths: null,
 }, action) {
   switch (action.type) {
   case START_LOAD:
@@ -95,6 +99,15 @@ export default function storyReducer(state = {
     return assign({}, state, {
       documents: action.documents,
       fetchingDocuments: false,
+    })
+  case REQUEST_COUNTRIES:
+    return assign({}, state, {
+      fetchingCountries: true,
+    })
+  case RECEIVE_COUNTRIES:
+    return assign({}, state, {
+      countryPaths: action.countryPaths,
+      fetchingCountries: false,
     })
   case SHOW_TOOLTIP:
     return assign({}, state, {

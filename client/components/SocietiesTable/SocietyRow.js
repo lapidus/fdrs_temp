@@ -106,16 +106,17 @@ class SocietyRow extends React.Component {
       groupedTimeSeries,
       groupedByCode,
       currentIndicator,
+      handleUnselectSociety,
     } = this.props
 
     return (
       <tr>
-        <td className="p1 sm-4">
+        <td className="p1 base-4 sm-4">
           <Link to={`/societies/${nationalSociety.slug}`}>
             { nationalSociety.NSO_DON_name }
           </Link>
         </td>
-        <td className="py05 px1 sm-4">
+        <td className="py05 px1 base-4 sm-4">
           <Trendline
             nationalSociety={nationalSociety}
             groupedTimeSeries={groupedTimeSeries}
@@ -123,8 +124,17 @@ class SocietyRow extends React.Component {
             currentIndicator={currentIndicator}
           />
         </td>
-        <td className="p1 sm-4">
-          <span>{ niceNum(nationalSociety.value, 0, null, true) }</span>
+        <td className="p0 base-4 sm-4">
+          <div className="p1 relative">
+            <span>{ niceNum(nationalSociety.value, 0, null, true) }</span>
+            {
+              handleUnselectSociety ? (
+                <button onClick={(e) => handleUnselectSociety(nationalSociety, e)} style={{right:16}} className="btn absolute t50 y-center-self bg-primary">remove</button>
+              ) : (
+                null
+              )
+            }
+          </div>
         </td>
       </tr>
     )

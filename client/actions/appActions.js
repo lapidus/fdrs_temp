@@ -21,6 +21,9 @@ export const RECEIVE_TIME_SERIES_META = "RECEIVE_TIME_SERIES_META"
 export const REQUEST_DOCUMENTS = "REQUEST_DOCUMENTS"
 export const RECEIVE_DOCUMENTS = "RECEIVE_DOCUMENTS"
 
+export const REQUEST_COUNTRIES = "REQUEST_COUNTRIES"
+export const RECEIVE_COUNTRIES = "RECEIVE_COUNTRIES"
+
 export const SHOW_TOOLTIP = "SHOW_TOOLTIP"
 export const HIDE_TOOLTIP = "HIDE_TOOLTIP"
 
@@ -211,6 +214,43 @@ export function fetchTimeSeriesMeta() {
         else {
           console.log("RECEIVED TIME_SERIES_META")
           dispatch(receiveTimeSeriesMeta(res))
+          resolve()
+        }
+      })
+    })
+  }
+}
+
+
+
+
+export const requestCountries = () => ({
+  type: REQUEST_COUNTRIES,
+})
+
+export const receiveCountries = countryPaths => ({
+  type: RECEIVE_COUNTRIES,
+  countryPaths,
+})
+
+export function fetchCountries() {
+  console.log("FETCHING COUNTRY PATHS")
+  return (dispatch, getState) => {
+    const { countryPaths } = getState().appReducer
+
+    if (countryPaths)
+      return dispatch(receiveCountries(countryPaths))
+
+    dispatch(requestCountries())
+    return new Promise((resolve, reject) => {
+      json("/api/report/world-topo.json", (err, countryPaths) => {
+        if (err) {
+          console.log("Failed at fetching country paths")
+          reject(err)
+        }
+        else {
+          console.log("RECEIVED COUNTRY PATHS")
+          dispatch(receiveCountries(countryPaths))
           resolve()
         }
       })

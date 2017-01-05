@@ -126,36 +126,7 @@ class Overview extends React.Component {
             <aside className="col sm-3 pl1 md-pl0 md-2 md-offset-1 pr1 sm-visible">
               <StickySidebar>
                 <div className="pb2">
-                  <h1 className="title mt0">National Societies</h1>
-                  <Select
-                    searchable={ true }
-                    clearable={ false }
-                    placeholder="Select a NS..."
-                    multi={ false }
-                    name="ns-selector"
-                    options={this.props.nationalSocieties.map(ns => {
-                      return {
-                        value: ns.KPI_DON_Code,
-                        label: ns.NSO_DON_name,
-                        slug: ns.slug,
-                      }
-                    })}
-                    onChange={ this.handleNSSelect }
-                  />
-                  <ul className="mt1 mb0 p0">
-                    {
-                      this.state.selectedSocieties.map((society, i) => {
-                        return (
-                          <li key={ i } className="block relative bg-secondary overflow-hidden py05 px1" style={{marginBottom: "0.5rem", textAlign: "left"}}>
-                            <span className="block overflow-hidden pr1" style={{whiteSpace: "nowrap", textOverflow: "ellipsis"}}>
-                              { society.NSO_DON_name }
-                            </span>
-                            <div onClick={ (e) => this.handleUnselectSociety(society, e) } className="btn absolute t0 b0 r0 bg-primary p05">x</div>
-                          </li>
-                        )
-                      })
-                    }
-                  </ul>
+                  {/* <h1 className="title mt0">National Societies</h1> */}
                 </div>
                 <div>
                   <h1 className="title my0">Indicators</h1>
@@ -178,21 +149,6 @@ class Overview extends React.Component {
 
             <div className="col sm-9 md-8 px1 pb3">
               <div className="relative">
-                {/* <Select
-                  searchable={ true }
-                  clearable={ false }
-                  placeholder="Select a NS..."
-                  multi={ false }
-                  name="ns-selector"
-                  options={this.props.nationalSocieties.map(ns => {
-                    return {
-                      value: ns.KPI_DON_Code,
-                      label: ns.NSO_DON_name,
-                      slug: ns.slug,
-                    }
-                  })}
-                  onChange={ this.handleNSSelect }
-                /> */}
 
                 {/* <div className="Select Select--single is-focused is-open is-searchable">
                   <div className="Select-control">
@@ -237,6 +193,39 @@ class Overview extends React.Component {
                   </div>
                 </div>
 
+              </div>
+
+              <div className="mb2">
+                {/* <Select
+                  searchable={ true }
+                  clearable={ false }
+                  placeholder="Select a NS..."
+                  multi={ false }
+                  name="ns-selector"
+                  options={this.props.nationalSocieties.map(ns => {
+                    return {
+                      value: ns.KPI_DON_Code,
+                      label: ns.NSO_DON_name,
+                      slug: ns.slug,
+                    }
+                  })}
+                  onChange={ this.handleNSSelect }
+                /> */}
+
+                {/* <ul className="mt1 mb0 p0">
+                  {
+                    this.state.selectedSocieties.map((society, i) => {
+                      return (
+                        <li key={ i } className="block relative bg-secondary overflow-hidden py05 px1" style={{marginBottom: "0.5rem", textAlign: "left"}}>
+                          <span className="block overflow-hidden pr1" style={{whiteSpace: "nowrap", textOverflow: "ellipsis"}}>
+                            { society.NSO_DON_name }
+                          </span>
+                          <div onClick={ (e) => this.handleUnselectSociety(society, e) } className="btn absolute t0 b0 r0 bg-primary p05">x</div>
+                        </li>
+                      )
+                    })
+                  }
+                </ul> */}
               </div>
 
               <SocietiesTable

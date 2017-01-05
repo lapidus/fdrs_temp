@@ -18,7 +18,7 @@ const SelectedSocieties = ({
   handleUnselectSociety
 }) => (
   <div>
-    {
+    { /*
       selectedSocieties.length > 0 ? (
         <div className="clearfix relative my2">
           <hr />
@@ -29,7 +29,7 @@ const SelectedSocieties = ({
       ) : (
         null
       )
-    }
+    */ }
 
     {
       selectedSocieties.length > 0 ? (
@@ -50,6 +50,7 @@ const SelectedSocieties = ({
                     currentIndicator={ currentIndicator }
                     currentYear={ currentYear }
                     societiesBlacklist={ societiesBlacklist }
+                    handleUnselectSociety={ handleUnselectSociety }
                   />
                 )
               })

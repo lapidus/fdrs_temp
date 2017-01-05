@@ -30,6 +30,10 @@ import {
   makeGetIndicatorData,
 } from "../../selectors"
 
+import {
+  fetchCountries,
+} from "../../actions/appActions"
+
 class Map extends React.Component {
   constructor(props) {
     super(props)
@@ -46,19 +50,17 @@ class Map extends React.Component {
     const max = Number(maxBy(maxArray))
 
     this.state = {
-      countries: null,
-      loading: true,
+      countries: this.props.countryPaths ? topojson.feature(props.countryPaths, props.countryPaths.objects.countries).features : null,
+      loading: !this.props.countryPaths ? true : false,
       currentYearData: currentYearData,
       minData: min,
       maxData: max,
       scale: scaleLinear().domain([min, max]).range([4,40])
     }
-
-    this.loadCountries = this.loadCountries.bind(this)
   }
   componentWillReceiveProps(nextProps) {
-    if(nextProps.indicator.id !== this.props.indicator.id) {
-    }
+    // if(nextProps.indicator.id !== this.props.indicator.id) {
+    // }
     const { groupedTimeSeries, currentYear, indicator } = nextProps
     const currentYearData = groupedTimeSeries[currentYear]
     const maxArray = Object.keys(groupedTimeSeries).map(year => {
@@ -74,6 +76,13 @@ class Map extends React.Component {
       maxData: max,
       scale: scaleLinear().domain([min, max]).range([4,40])
     })
+
+    if(nextProps.countryPaths !== this.props.countryPaths) {
+      this.setState({
+        countries: topojson.feature(nextProps.countryPaths, nextProps.countryPaths.objects.countries).features,
+        loading: false,
+      })
+    }
   }
   projection() {
     return geoNaturalEarth()
@@ -83,23 +92,11 @@ class Map extends React.Component {
             .rotate([-10,0,0])
             .precision(.1)
   }
-  loadCountries() {
-    json("/api/report/world-topo.json", (err, world) => {
-      if(err) console.log(err)
-      console.log("Countries: ", topojson.feature(world, world.objects.countries).features.map(c => c.properties.name))
-      this.setState({
-        countries: topojson.feature(world, world.objects.countries).features,
-        loading: false,
-      })
-    })
-  }
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   // return nextProps.selectedCountry !== this.props.selectedCountry || !this.state.countries
-  //   return true
-  // }
   componentDidMount() {
     var groups = groupBy(this.props.data, "year")
-    this.loadCountries()
+    if(!this.props.countryPaths) {
+      this.props.fetchCountries()
+    }
   }
   render() {
     const { data, indicator, nationalSocieties } = this.props
@@ -113,44 +110,44 @@ class Map extends React.Component {
               <p className="text-center">{ "Loading map..." }</p>
             </div>
           ) : (
-            ""
+            null
           )
         }
         <div style={{opacity: this.state.loading ? 0 : 1, transform: `translateY(${this.state.loading ? '30px' : '0'})`, transition: "all 0.75s"}}>
           {
-            this.state.loading ? (
-              null
-            ) : (
-              <svg width={800} height={480} viewBox="0 0 800 480">
-                <Countries countries={this.state.countries} projection={this.projection} />
-                {
-                  nationalSocieties.map((bubble, i) => {
+            <svg width={800} height={480} viewBox="0 0 800 480">
+              {
+                !this.state.loading ? (
+                  <Countries countries={this.state.countries} projection={this.projection} />
+                ) : (null)
+              }
+              { !this.state.loading ?
+                nationalSocieties.map((bubble, i) => {
 
-                    const lat  = Number(bubble.lat)
-                    const long = Number(bubble.long)
-                    const coords = long && lat ? [long, lat] : undefined
-                    const bubbleData = this.state.currentYearData.find((d) => d.KPI_DON_Code == bubble.KPI_DON_Code)
+                  const lat  = Number(bubble.lat)
+                  const long = Number(bubble.long)
+                  const coords = long && lat ? [long, lat] : undefined
+                  const bubbleData = this.state.currentYearData.find((d) => d.KPI_DON_Code == bubble.KPI_DON_Code)
 
-                    if(bubbleData && coords) {
-                      return (
-                        <circle
-                          key={bubble.KPI_DON_Code}
-                          cx={this.projection()(coords)[0]}
-                          cy={this.projection()(coords)[1]}
-                          r={bubbleData[this.props.indicator.id] ? this.state.scale(Number(bubbleData[this.props.indicator.id])) : 0}
-                          style={{
-                            fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
-                            stroke: "#fff",
-                            strokeWidth: "1.5px"
-                          }}
-                        />
-                      )
-                    }
+                  if(bubbleData && coords) {
+                    return (
+                      <circle
+                        key={bubble.KPI_DON_Code}
+                        cx={this.projection()(coords)[0]}
+                        cy={this.projection()(coords)[1]}
+                        r={bubbleData[this.props.indicator.id] ? this.state.scale(Number(bubbleData[this.props.indicator.id])) : 0}
+                        style={{
+                          fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
+                          stroke: "#fff",
+                          strokeWidth: "1.5px"
+                        }}
+                      />
+                    )
+                  }
 
-                  })
-                }
-              </svg>
-            )
+                }) : (null)
+              }
+            </svg>
           }
         </div>
       </div>
@@ -162,6 +159,7 @@ Map.propTypes = {
   indicator: React.PropTypes.object.isRequired,
   data: React.PropTypes.array,
   nationalSocieties: React.PropTypes.array,
+  countryPaths: React.PropTypes.object,
 }
 
 Map.contextTypes = {
@@ -172,7 +170,13 @@ const makeMapStateToProps = () => {
   const getIndicatorData = makeGetIndicatorData()
   return (state, props) => ({
     data: getIndicatorData(state, props),
+    countryPaths: state.appReducer.countryPaths,
+    fetchingCountries: state.appReducer.fetchingCountries,
   })
 }
 
-export default connect(makeMapStateToProps)(Map)
+const mapDispatchToProps = dispatch => ({
+  fetchCountries: () => dispatch(fetchCountries()),
+})
+
+export default connect(makeMapStateToProps, mapDispatchToProps)(Map)

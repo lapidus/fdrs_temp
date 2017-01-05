@@ -101,8 +101,16 @@ class App extends React.Component {
               </h1>
             </div>
             <div className="absolute t0 r0 z-index-1000 sm-hidden">
-              <button className='btn bg-secondary'>
-                <span className='block p1' onClick={this.props.toggleNav}>menu</span>
+              <button className='btn bg-secondary' onClick={this.props.toggleNav}>
+                <span className='block p1' >
+                  <svg className="block" width="20px" height="20px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                      <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="12" x2="23" y2="12" strokeLinejoin="miter"/>
+                      <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="5" x2="23" y2="5" strokeLinejoin="miter"/>
+                      <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="19" x2="23" y2="19" strokeLinejoin="miter"/>
+                    </g>
+                  </svg>
+                </span>
               </button>
             </div>
             <div className={`base-12 sm-7 ${navOpen ? "nav-drawer nav-drawer--open" : "nav-drawer"}`}>

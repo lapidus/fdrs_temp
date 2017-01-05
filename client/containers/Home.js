@@ -35,7 +35,7 @@ class Home extends React.Component {
 
             <div className='col sm-10 sm-offset-1 px1'>
               <div className='clearfix mxn1 md-mxn3'>
-                <div className='col sm-4 px1 md-px3'>
+                <div className='col sm-6 lg-4 px1 md-px3'>
                   <div style={{height:96}}>
                     <svg width="132px" height="118px" viewBox="0 0 132 118" style={{width:"auto", height:"100%"}}>
                         <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -57,9 +57,12 @@ class Home extends React.Component {
                   </div>
                   <h3 className='title sm-headline light'>The IFRC<br />at a glance</h3>
                   <p>See our work in numbers. This tool will give you an overview of what the entire Federation looks like.</p>
-                  <Link to='/overview' className="btn btn--raised bg-primary">Explore the IFRC</Link>
+                  <Link to='/overview' className="btn btn--raised bg-primary">
+                    <span className='block py05 px05'>{ "Explore the IFRC" }</span>
+                  </Link>
                 </div>
-                <div className='col sm-4 px1 md-px3'>
+
+                <div className='col sm-6 lg-4 px1 md-px3'>
                   <div style={{height:96}}>
                     <svg width="104px" height="118px" viewBox="0 0 104 118" style={{width:"auto", height:"100%"}}>
                         <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -83,9 +86,12 @@ class Home extends React.Component {
                   </div>
                   <h3 className='title sm-headline light'>National Society<br />profiles</h3>
                   <p>Interested in a particular National Society or a specific region? This tool is for you. Here you can also download profiles as PDFs.</p>
-                  <Link to='/societies' className="btn btn--raised bg-primary">Find your National Society</Link>
+                  <Link to='/societies' className="btn btn--raised bg-primary">
+                    <span className='block py05 px05'>{ "Find your National Society" }</span>
+                  </Link>
                 </div>
-                <div className='col sm-4 px1 md-px3'>
+
+                <div className='col sm-6 lg-4 px1 md-px3'>
                   <div style={{height:96}}>
                     <svg width="102px" height="118px" viewBox="0 0 102 118" style={{width:"auto", height:"100%"}}>
                         <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -115,7 +121,9 @@ class Home extends React.Component {
                   </div>
                   <h3 className='title sm-headline light'>"Everyone Counts"<br />annual report</h3>
                   <p>Our latest findings are also published in the form of an interactive annual report. Explore the report online, or download a PDF version.</p>
-                  <Link to='/report' className="btn btn--raised bg-primary">Read the report</Link>
+                  <Link to='/report' className="btn btn--raised bg-primary">
+                    <span className='block py05 px05'>{ "Read the report" }</span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -131,9 +139,11 @@ class Home extends React.Component {
               <h2 className='headline sm-display-1 light mt0 color-primary'>Latest insights</h2>
               <div className="clearfix mxn1">
                 <div className="col base-6 base-offset-6 px1 py4">
-                  <h2>{ "Exceptional Coverage" }</h2>
+                  <h2 className="title sm-headline light">{ "Exceptional Coverage" }</h2>
                   <p>{ "In 2015, all 190 National Societies have reported to FDRS on at least 1 key indicator. We thank the National Societies worldwide for their efforts to improve transparency and accountability of the IFRC." }</p>
-                  <Link to="/" className="btn btn--raised bg-primary">{ "Explore the data" }</Link>
+                  <Link to="/" className="btn btn--raised bg-primary">
+                    <span className='block py05 px1'>{ "Explore the data" }</span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -146,7 +156,7 @@ class Home extends React.Component {
               <h2 className='headline sm-display-1 light mt0'>For data collectors</h2>
               <p className='lead'>To get started with the data collection for your National Society, please log in.</p>
               <Link to='/' className='btn btn--raised bg-primary'>
-                <span className='block py05 px1'>Login as data collector</span>
+                <span className='block py05 px1'>{ "Login as data collector" }</span>
               </Link>
             </div>
           </div>
