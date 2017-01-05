@@ -38,10 +38,16 @@ class Dropdown extends React.Component {
     this.setState({ showDropdown: false })
   }
   render() {
+
+    const dropdownStyles = {
+      opacity: this.state.showDropdown || this.props.navOpen ? 1 : 0,
+      pointerEvents: this.state.showDropdown || this.props.navOpen ? "all" : "none",
+    }
+
     return (
       <span onMouseEnter={ this.showDropdown } onMouseLeave={ this.hideDropdown } onClick={ this.hideDropdown }>
         { this.props.children[0] }
-        <span style={{ opacity: this.state.showDropdown ? 1 : 0, pointerEvents: this.state.showDropdown ? "all" : "none" }}>
+        <span style={ dropdownStyles }>
           { this.props.children[1] }
         </span>
       </span>
@@ -92,31 +98,39 @@ class App extends React.Component {
                 AND REPORTING SYSTEM</Link>
               </h1>
             </div>
-            <div className="absolute t0 r0">
+            <div className="absolute t0 r0 z-index-1000 sm-hidden">
               <button className='btn bg-secondary'>
-                <span className='block p1'>menu</span>
+                <span className='block p1' onClick={this.props.toggleNav}>menu</span>
               </button>
             </div>
-            <div className='col absolute t0 r0 base-12 sm-7 text-right sm-relative bg-white'>
-              <nav className='inline-block'>
+            <div className={`base-12 sm-7 ${navOpen ? "nav-drawer nav-drawer--open" : "nav-drawer"}`}>
+              <nav className="inline-block">
                 <ul className='m0 p0'>
                   <li className='block sm-inline-block relative'>
-                    <Dropdown>
+                    <Dropdown navOpen={navOpen}>
                       <Link to='/' className='btn bg-white z-index-1'>
                         <span className='block py1 px05'>{ "All services" }</span>
                       </Link>
-                      <ul className="absolute t100 l0 bg-white m0 py1 px0 shadow-4" style={{minWidth:280}}>
-                        <li className="block px1 py05 text-left">
-                          <Link to="/overview">{ "The IFRC at a glance" }</Link>
+                      <ul className={navOpen ? "m0 p0" : "absolute t100 l0 bg-white m0 py1 px0 shadow-4"} style={{ minWidth:280 }}>
+                        <li className="block text-left">
+                          <Link to="/overview" className="block btn sm-text-left" style={{width: "100%"}}>
+                            <span className="block px1 py05">{ "The IFRC at a glance" }</span>
+                          </Link>
                         </li>
-                        <li className="block px1 py05 text-left">
-                          <Link to="/societies">{ "National Society profiles" }</Link>
+                        <li className="block text-left">
+                          <Link to="/societies" className="block btn sm-text-left" style={{width: "100%"}}>
+                            <span className="block px1 py05">{ "National Society profiles" }</span>
+                          </Link>
                         </li>
-                        <li className="block px1 py05 text-left">
-                          <Link to="/report">{ "\"Everyone Counts\" annual report" }</Link>
+                        <li className="block text-left">
+                          <Link to="/report" className="block btn sm-text-left" style={{width: "100%"}}>
+                            <span className="block px1 py05">{ "\"Everyone Counts\" annual report" }</span>
+                          </Link>
                         </li>
-                        <li className="block px1 py05 text-left">
-                          <Link to="/data-download">{ "Data download" }</Link>
+                        <li className="block text-left">
+                          <Link to="/data-download" className="block btn sm-text-left" style={{width: "100%"}}>
+                            <span className="block px1 py05">{ "Data download" }</span>
+                          </Link>
                         </li>
                       </ul>
                     </Dropdown>

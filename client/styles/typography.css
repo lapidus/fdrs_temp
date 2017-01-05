@@ -70,6 +70,8 @@ strong,
   .xs-subhead   { font-size: calc(16 * var(--one)); }
 }
 @media (--sm-viewport) {
+  .sm-text-left,.sm-align-left { text-align: left !important; }
+
   .sm-display-4 { font-size: calc(72 * var(--one)); }
   .sm-display-3 { font-size: calc(56 * var(--one)); }
   .sm-display-2 { font-size: calc(45 * var(--one)); }
