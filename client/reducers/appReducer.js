@@ -30,7 +30,12 @@ export default function storyReducer(state = {
   fetchingTimeSeriesMeta: false,
   documents: [],
   fetchingDocuments: false,
-  tooltipVisible: false
+  tooltipVisible: false,
+  tooltipContent: {},
+  tooltipPosition: {
+    top: 0,
+    left: 0,
+  },
 }, action) {
   switch (action.type) {
   case START_LOAD:
@@ -93,11 +98,13 @@ export default function storyReducer(state = {
     })
   case SHOW_TOOLTIP:
     return assign({}, state, {
-      tooltipVisible: true
+      tooltipVisible: true,
+      tooltipContent: action.content,
+      tooltipPosition: action.position,
     })
   case HIDE_TOOLTIP:
-    return({}, state, {
-      tooltipVisible: false
+    return assign({}, state, {
+      tooltipVisible: false,
     })
   default:
     return state

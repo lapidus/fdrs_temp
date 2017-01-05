@@ -26,6 +26,8 @@ import {
   fetchNationalSocieties,
   fetchTimeSeries,
   fetchTimeSeriesMeta,
+  showTooltip,
+  hideTooltip,
 } from "../actions/appActions"
 
 class Overview extends React.Component {
@@ -162,7 +164,7 @@ class Overview extends React.Component {
                       <ul className="p0">
                         {
                           Object.keys(pageData.indicators).map((indicatorKey, i) => (
-                            <li key={ i } className="block py05">
+                            <li key={ i } className="block py05" onMouseEnter={ (e) => this.props.showTooltip({ text: this.props.timeSeriesMeta.filter(obj => obj.id === indicatorKey)[0].description }, e) } onMouseLeave={ () => this.props.hideTooltip() }>
                               <a href="#" className={this.state.currentIndicator.id === indicatorKey ? "color-primary" : ""} onClick={(e) => this.handleIndicatorSelect(indicatorKey, e)}>{ pageData.indicators[indicatorKey] }</a>
                             </li>
                           ))
@@ -303,6 +305,8 @@ Overview.propTypes = {
   data: React.PropTypes.array,
   grouping: React.PropTypes.object,
   params: React.PropTypes.object.isRequired,
+  showTooltip: React.PropTypes.func,
+  hideTooltip: React.PropTypes.func,
 }
 
 Overview.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
@@ -317,4 +321,9 @@ const makeMapStateToProps = () => {
   })
 }
 
-export default connect(makeMapStateToProps)(Overview)
+const mapDispatchToProps = dispatch => ({
+  showTooltip: (content, evt) => dispatch(showTooltip(content, evt)),
+  hideTooltip: () => dispatch(hideTooltip()),
+})
+
+export default connect(makeMapStateToProps, mapDispatchToProps)(Overview)

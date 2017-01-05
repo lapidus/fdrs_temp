@@ -10,6 +10,8 @@ import { toggleNav } from "../actions/appActions"
 import Icon from "../components/Icon"
 import Loader from "../components/Loader"
 
+import Tooltip from "../components/Tooltip"
+
 require("../utils/d3GeoMinimal")
 
 const languageOptions = [
@@ -283,6 +285,8 @@ class App extends React.Component {
         </div>
 
         {/* <div style={{display: this.props.tooltipVisible ? "block" : "none" }}>{ "Tooltip" }</div> */}
+
+        <Tooltip />
       </div>
     )
   }

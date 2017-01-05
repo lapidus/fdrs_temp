@@ -63,7 +63,18 @@ export function endMainLoad() {
 export const toggleNav = () => ({ type: TOGGLE_NAV })
 export const closeNav = () => ({ type: CLOSE_NAV })
 
-export const showTooltip = () => ({ type: SHOW_TOOLTIP })
+export const showTooltip = (content, evt) => {
+  console.log("Event is here: ", evt)
+  const targetDimensions = evt.target.getBoundingClientRect()
+  return {
+    type: SHOW_TOOLTIP,
+    content: content,
+    position: {
+      top: targetDimensions.top,
+      left: targetDimensions.left + targetDimensions.width,
+    }
+  }
+}
 export const hideTooltip = () => ({ type: HIDE_TOOLTIP })
 
 const parseNationalSocieties = map(s => {
