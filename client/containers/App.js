@@ -119,7 +119,7 @@ class App extends React.Component {
                   <li className='block sm-inline-block relative'>
                     <Dropdown navOpen={navOpen}>
                       <Link to='/' className='btn bg-white z-index-1'>
-                        <span className='block py1 px05'>{ "All services" }</span>
+                        <span className='block py1 px05'>{ "Services" }</span>
                       </Link>
                       <ul className={navOpen ? "m0 p0" : "absolute t100 l0 bg-white m0 py1 px0 shadow-4"} style={{ minWidth:280 }}>
                         <li className="block text-left">
