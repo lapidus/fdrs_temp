@@ -135,8 +135,10 @@ class Overview extends React.Component {
                       <ul className="p0">
                         {
                           Object.keys(pageData.indicators).map((indicatorKey, i) => (
-                            <li key={ i } className="block py05" onMouseEnter={ (e) => this.props.showTooltip({ text: this.props.timeSeriesMeta.filter(obj => obj.id === indicatorKey)[0].description }, e) } onMouseLeave={ () => this.props.hideTooltip() }>
-                              <a href="#" className={this.state.currentIndicator.id === indicatorKey ? "color-primary" : ""} onClick={(e) => this.handleIndicatorSelect(indicatorKey, e)}>{ pageData.indicators[indicatorKey] }</a>
+                            <li key={ i } className="block" onMouseEnter={ (e) => this.props.showTooltip({ text: this.props.timeSeriesMeta.filter(obj => obj.id === indicatorKey)[0].description }, e) } onMouseLeave={ () => this.props.hideTooltip() }>
+                              <a href="#" className={this.state.currentIndicator.id === indicatorKey ? "block btn color-primary" : "block btn"} onClick={(e) => this.handleIndicatorSelect(indicatorKey, e)}>
+                                <div className="text-left" style={{whiteSpace:"normal"}}>{ pageData.indicators[indicatorKey] }</div>
+                              </a>
                             </li>
                           ))
                         }
@@ -174,13 +176,27 @@ class Overview extends React.Component {
                   </div>
                 </div> */}
 
-                <Map indicator={this.state.currentIndicator}
-                     data={this.props.data}
-                     groupedTimeSeries={this.state.groupedTimeSeries}
-                     currentYear={this.state.currentYear}
-                     nationalSocieties={this.props.nationalSocieties}
-                     societiesBlacklist={this.state.societiesBlacklist}
-                     />
+                {(() => {
+                  const router = this.context.router
+                  return (
+                    <Map indicator={this.state.currentIndicator}
+                         data={this.props.data}
+                         groupedTimeSeries={this.state.groupedTimeSeries}
+                         currentYear={this.state.currentYear}
+                         nationalSocieties={this.props.nationalSocieties}
+                         societiesBlacklist={this.state.societiesBlacklist}
+                         bubbleMouseEnter={ (e, bubble, indicator) => this.props.showTooltip({
+                             text: `${bubble.NSO_DON_name} - ${niceNum(indicator, null, null, true)}`
+                           }, e)
+                         }
+                         bubbleMouseLeave={ () => this.props.hideTooltip() }
+                         bubbleClick={ (e, bubble, indicator) => {
+                           router.push(`/societies/${bubble.slug}`)
+                         }}
+                        />
+                  )
+                })()}
+
                 <div className="absolute b0 text-center pb4 l50 x-center-self">
                   <div className="year-slider">
                     {
@@ -285,6 +301,7 @@ class Overview extends React.Component {
 }
 
 Overview.contextTypes = {
+  router: React.PropTypes.object.isRequired,
   i18n: React.PropTypes.object.isRequired,
 }
 

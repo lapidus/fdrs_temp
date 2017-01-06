@@ -208,12 +208,13 @@ class Society extends React.Component {
                     <ul className="my1 mx0 p0">
                       {
                         filteredSocieties.map((ns, i) =>
-                          <li className="block mb1" key={ i }>
+                          <li className="block" key={ i }>
                             <Link
                               to={ `/societies/${ ns.slug }` }
                               onClick={ this.handleFilterReset }
+                              className="block btn"
                             >
-                              { ns.NSO_DON_name }
+                              <div className="text-left" style={{whiteSpace:"normal"}}>{ ns.NSO_DON_name }</div>
                             </Link>
                           </li>
                         )

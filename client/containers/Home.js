@@ -14,12 +14,16 @@ class Home extends React.Component {
         <img src="/img/ipads2.png" className="absolute t0 r0 base-12 xs-8 sm-7 lg-6" style={{ transform: "translateY(-20%)" }}/>
         <header className='block relative px1 py4'>
           <div className='clearfix mxn1'>
-            <div className='col sm-8 sm-offset-1 md-6 md-offset-2 lg-5 px1'>
-              <h1 className='display-1 sm-display-2 md-display-2 light'>
-                Data insights on <br />the world's largest<br />
-                <span className='color-primary'>humanitarian organization</span>
+            <div className='col sm-8 sm-offset-1 md-6 md-offset-1 lg-6 px1'>
+              <h1 className='display-1 sm-display-2 md-display-3 light'>
+                <span className="color-primary">{ "Federation-wide" }</span> { "databank and reporting system" }
+                {/* Data insights on <br />the world's largest<br />
+                <span className='color-primary'>humanitarian organization</span> */}
               </h1>
-              <p className='lead pr4'>The Federation-wide Databank and Reporting System (FDRS) provides crucial reports and analytical tools based on data from National Societies.</p>
+              {/* <p className='lead pr4'>The Federation-wide Databank and Reporting System (FDRS) provides crucial reports and analytical tools based on data from National Societies.</p> */}
+              <p className='lead md-headline pr4'>
+                { "The Federation-wide Databank and Reporting System (FDRS) provides data insights on the" } <span className="color-primary">{ "world's largest humanitarian organization." }</span>
+              </p>
             </div>
           </div>
 

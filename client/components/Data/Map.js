@@ -139,8 +139,12 @@ class Map extends React.Component {
                         style={{
                           fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
                           stroke: "#fff",
-                          strokeWidth: "1.5px"
+                          strokeWidth: "1.5px",
+                          cursor: "pointer"
                         }}
+                        onMouseEnter={ (e) => this.props.bubbleMouseEnter(e, bubble, bubbleData[this.props.indicator.id]) }
+                        onMouseLeave={ () => this.props.bubbleMouseLeave() }
+                        onClick={ (e) => this.props.bubbleClick(e, bubble, bubbleData[this.props.indicator.id]) }
                       />
                     )
                   }
@@ -153,6 +157,12 @@ class Map extends React.Component {
       </div>
     )
   }
+}
+
+Map.defaultProps = {
+  bubbleMouseEnter: null,
+  bubbleMouseLeave: null,
+  bubbleClick: null,
 }
 
 Map.propTypes = {
