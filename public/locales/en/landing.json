@@ -1,0 +1,26 @@
+{
+  "title" : "IFRC Data Initiatives",
+  "lead" : "IFRC is a data-driven organization dedicated to making evidence-based decision-making",
+  "about" : {
+    "title" : "About Data",
+    "text" : "IFRC is aggregating its data and data literacy efforts in this prototype website. Please provide feedback to:"
+  },
+  "projects" : {
+    "fdrs" : {
+      "title" : "FDRS",
+      "text" :  "The Federation-wide Databank and Reporting System provides data about all the National Societies."
+    },
+    "go" : {
+      "title" : "Go Project",
+      "text" :  "Go is building a virtual Emergency Operations Center."
+    },
+    "literacy" : {
+      "title" : "Data Literacy",
+      "text" :  "Building collective understanding of how to collect, analyze, and visualize data."
+    },
+    "dref" : {
+      "title" : "DREFs & Appeals",
+      "text" :  "Visualization of current and historic Disaster Relief Emergency Fund requests and appeals."
+    }
+  }
+}
