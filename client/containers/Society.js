@@ -37,7 +37,8 @@ import {
 const iScroll = require("iscroll")
 
 function roundIt(n) {
-  const factor = Math.pow(10, String(n).length - 1)
+  const sansDecimal = Math.round(Number(n))
+  const factor = Math.pow(10, String(sansDecimal).length - 1)
   const finalNumber = Math.ceil(n/factor) * factor
   // return finalNumber === 0 ? 10 : finalNumber
   return finalNumber
@@ -412,6 +413,23 @@ class Society extends React.Component {
                         <h1 className="subhead mt0 mb1">
                           { "Income and Expenditure" }
                         </h1>
+                        {
+                          (() => {
+                            console.group("Data about income and expenditure: ")
+                            console.log("Data: ", data)
+                            const max = Number(maxBy(data, d => Number(d["KPI_expenditureLC (CHF)"]))["KPI_expenditureLC (CHF)"])
+
+                            console.log("MAX: ", maxBy(data, d => Number(d["KPI_expenditureLC (CHF)"])))
+                            console.log("MAX: ", max)
+                            console.log("Rounded: ", roundIt(max))
+
+                            data.map(dataItem => {
+                              console.log("Income: ", dataItem["KPI_IncomeLC (CHF)"])
+                              console.log("Expenditure: ", dataItem["KPI_expenditureLC (CHF)"])
+                            })
+                            console.groupEnd("Data about income and expenditure: ")
+                          })()
+                        }
                         <LineChart
                           height={ 150 }
                           padding={{
@@ -428,29 +446,34 @@ class Society extends React.Component {
                             y: [
                               0,
                               roundIt(
-                                maxBy(
+                                Number(maxBy(
                                   data,
-                                  d => +d.KPI_expenditureLC || 0
-                                ).KPI_expenditureLC
+                                  d => {
+                                    return Number(d["KPI_expenditureLC (CHF)"]) || 0
+                                  })["KPI_expenditureLC (CHF)"])
                               ),
                             ],
                           }}
                           dataset={ [
-                            data.map(d => ({
-                              x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_expenditureLC),
-                            })),
-                            data.map(d => ({
-                              x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_IncomeLC),
-                            })),
+                            data.map(d => {
+                              return ({
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d["KPI_expenditureLC (CHF)"]) || null,
+                              })
+                            }),
+                            data.map(d => {
+                              return ({
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d["KPI_IncomeLC (CHF)"]) || null,
+                              })
+                            }),
                           ] }
                         />
                       </div>
                     </CardView>
                     <CardView viewIcon="plainNumber">{ "View 1" }</CardView>
                     <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_IncomeLC")[0].description }</p>
+                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_IncomeLC (CHF)")[0].description }</p>
                       <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>

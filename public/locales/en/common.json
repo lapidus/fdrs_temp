@@ -13,5 +13,10 @@
         "KPI_noPeopleReachedDevelopment": "People reached by development",
         "KPI_noPeopleReachedServices": "People reached by services",
         "KPI_noPeopleCoveredPreparedness": "People covered"
+    },
+    "dataCollectors": {
+      "title": "For data collectors",
+      "lead": "To get started with the data collection for your National Society, please log in.",
+      "button": "Login as data collector"
     }
 }
