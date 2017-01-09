@@ -91,6 +91,7 @@ class Society extends React.Component {
         filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(nextProps), nextProps.documents),
       })
     }
+    console.log("a", this.state.filteredDocuments)
   }
 
   handleYearChange(year) {
@@ -704,7 +705,7 @@ class Society extends React.Component {
                                   </div>
                                   <div className="inline-block align-top sm-12 px1">
                                     <h1 className="strong subhead mt0 sm-my1">{ `${doc.document_type} - ${doc.year}` }</h1>
-                                    <a href={ doc.url } target="_blank" rel="noopener noreferrer" className="btn bg-primary">
+                                    <a href={ 'http://data-staging.ifrc.org/downloads/' + doc.path } target="_blank" rel="noopener noreferrer" className="btn bg-primary">
                                       { "Download" }
                                     </a>
                                   </div>
