@@ -1,0 +1,11 @@
+{
+  "title": "National Society profiles",
+  "tabs": [
+    [ "IFRC global", "overview" ],
+    [ "National society", "profiles" ]
+  ],
+  "titleParts": [
+    "National society",
+    "profiles"
+  ]
+}
