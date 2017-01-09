@@ -1,5 +1,10 @@
 {
-    "name": "Rio Grande",
+    "name": "Federation-wide databank and reporting system",
+    "nameParts": [
+      "Federation-wide",
+      "databank",
+      "and reporting system"
+    ],
     "indicators": {
         "KPI_noPeopleVolunteering": "People volunteering time",
         "KPI_noPaidStaff": "Paid staff",
@@ -14,9 +19,37 @@
         "KPI_noPeopleReachedServices": "People reached by services",
         "KPI_noPeopleCoveredPreparedness": "People covered"
     },
+    "login": "Login",
+    "navigation": [
+      {
+        "name": "Services",
+        "dropdownItems": [
+          "The IFRC at a glance",
+          "National society profiles",
+          "\"Everyone counts\" report",
+          "Data download"
+        ]
+      },
+      {
+        "name": "FAQ"
+      },
+      {
+        "name": "About"
+      },
+      {
+        "name": "Acknowledgements"
+      }
+    ],
     "dataCollectors": {
       "title": "For data collectors",
       "lead": "To get started with the data collection for your National Society, please log in.",
       "button": "Login as data collector"
-    }
+    },
+    "contact": {
+      "title": "Contact",
+      "lead": "If you have feedback, questions and/or corrections, please write to the FDRS team.",
+      "email": "fdrs@ifrc.org"
+    },
+    "credit": "website by Lapidus Interactive",
+    "copyright": "2016 FDRS"
 }
