@@ -42,11 +42,13 @@ export const makeGetSocietyDocuments = () =>
     [ getDocuments, getSociety ],
     (documents, society) => {
 
-      // Some NS e.g. Antigua and Barbuda seem to not have an iso_2 code.
+      // const ns = society.iso_2 !== "#N/A" ? (find(d => d.code === society.iso_2, documents) || {}) : {}
+      // return ns.documents || []
+
+      // I think we tried to solve the same thing here... ;) See above
       if(find(d => d.code === society.iso_2, documents) == undefined || society.iso_2 == "#N/A"){
         return [];
       }
-
       return find(d => d.code === society.iso_2, documents).documents;
     }
 

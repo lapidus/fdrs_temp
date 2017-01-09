@@ -1,5 +1,13 @@
 {
-    "name": "Rio Grande",
+    "name": "Federation-wide databank and reporting system",
+    "nameParts": [
+      "Federation-wide",
+      "databank",
+      "and reporting system"
+    ],
+    "download": "Download",
+    "indicatorsTitle": "Indicators",
+    "updateText": "Last updated...",
     "indicators": {
         "KPI_noPeopleVolunteering": "People volunteering time",
         "KPI_noPaidStaff": "Paid staff",
@@ -13,5 +21,50 @@
         "KPI_noPeopleReachedDevelopment": "People reached by development",
         "KPI_noPeopleReachedServices": "People reached by services",
         "KPI_noPeopleCoveredPreparedness": "People covered"
-    }
+    },
+    "login": "Login",
+    "home": "Home",
+    "navigation": [
+      {
+        "name": "Services",
+        "dropdownItems": [
+          "The IFRC at a glance",
+          "National society profiles",
+          "\"Everyone counts\" report",
+          "Data download"
+        ]
+      },
+      {
+        "name": "FAQ"
+      },
+      {
+        "name": "About"
+      },
+      {
+        "name": "Acknowledgements"
+      }
+    ],
+    "dataCollectors": {
+      "title": "For data collectors",
+      "lead": "To get started with the data collection for your National Society, please log in.",
+      "button": "Login as data collector"
+    },
+    "nationalSocietiesPreview": {
+      "subtitle": "Get to know the National Societies",
+      "title": "National Society Profiles",
+      "lead": "Explore the dataset for each National Society, and download PDF profiles for further sharing.",
+      "button": "Explore National Society Profiles"
+    },
+    "overviewPreview": {
+      "title": "The IFRC at a glance",
+      "lead": "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks.",
+      "button": "Explore the IFRC"
+    },
+    "contact": {
+      "title": "Contact",
+      "lead": "If you have feedback, questions and/or corrections, please write to the FDRS team.",
+      "email": "fdrs@ifrc.org"
+    },
+    "credit": "website by Lapidus Interactive",
+    "copyright": "2016 FDRS"
 }

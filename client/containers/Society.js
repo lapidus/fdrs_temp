@@ -7,20 +7,20 @@ import maxBy from "lodash/maxBy"
 import map from "lodash/fp/map"
 import filter from "lodash/fp/filter"
 import uniqBy from "lodash/fp/uniqBy"
-import ReactIScroll from "react-iscroll"
 import niceNum from "../utils/niceNum"
 
 import { translate } from "react-i18next"
 
-import StickySidebar from "../components/StickySidebar"
 import LineChart from "../components/charts/LineChart"
-import Textfield from "../components/Textfield"
 import ShareBtn from "../components/socialMedia/ShareBtn"
 import Breadcrumbs from "../components/Breadcrumbs"
 import Globe from "../components/Globe"
 import Card from "../components/cards/Card"
 import CardView from "../components/cards/CardView"
 import CardOverlay from "../components/cards/CardOverlay"
+import GeneratedIntroText from "../components/GeneratedIntroText"
+import FilteredSocietiesSidebar from "../components/FilteredSocietiesSidebar"
+
 import {
   makeGetSociety,
   makeGetSocietyData,
@@ -34,13 +34,10 @@ import {
   fetchDocuments,
 } from "../actions/appActions"
 
-const iScroll = require("iscroll")
-
 function roundIt(n) {
-  const factor = Math.pow(10, String(n).length - 1)
-  const finalNumber = Math.ceil(n/factor) * factor
-  // return finalNumber === 0 ? 10 : finalNumber
-  return finalNumber
+  const sansDecimal = Math.round(Number(n))
+  const factor = Math.pow(10, String(sansDecimal).length - 1)
+  return Math.ceil(n/factor) * factor
 }
 
 function getLatestYearDocuments(props) {
@@ -61,16 +58,12 @@ class Society extends React.Component {
 
     this.state = {
       year: getLatestYearDocuments(props),
-      filteredSocieties: props.nationalSocieties,
-      filterValue: "",
       earliestData: minBy(props.data, (o) => o.KPI_Year),
       latestData: maxBy(props.data, (o) => o.KPI_Year),
       filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(props), props.documents)
     }
 
     this.handleYearChange = this.handleYearChange.bind(this)
-    this.handleSocietiesFiltering = this.handleSocietiesFiltering.bind(this)
-    this.handleFilterReset = this.handleFilterReset.bind(this)
     this.getParsed = this.getParsed.bind(this)
     this.yearFilter = this.yearFilter.bind(this)
     this.yearOption = this.yearOption.bind(this)
@@ -79,7 +72,6 @@ class Society extends React.Component {
 
   componentDidMount() {
     document.body.classList.add("html-ready")
-    console.log("THIS IS THE NEW GROUPING: ", this.props.grouping, this.props.society, this.props.data)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -91,32 +83,12 @@ class Society extends React.Component {
         filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(nextProps), nextProps.documents),
       })
     }
-    console.log("a", this.state.filteredDocuments)
   }
 
   handleYearChange(year) {
     this.setState({
       year: year.value,
       filteredDocuments: filter(d => +d.year === +year.value, this.props.documents),
-    })
-  }
-
-  handleSocietiesFiltering(e) {
-    e.preventDefault()
-    const regex = new RegExp(e.target.value, "i")
-    const filteredSocieties = this.props.nationalSocieties.filter((d) => {
-      return (d.NSO_DON_name.search(regex) > -1)
-    })
-    this.setState({
-      filteredSocieties: filteredSocieties,
-      filterValue: e.target.value,
-    })
-  }
-
-  handleFilterReset() {
-    this.setState({
-      filteredSocieties: this.props.nationalSocieties,
-      filterValue: "",
     })
   }
 
@@ -141,36 +113,43 @@ class Society extends React.Component {
 
     const {
       year,
-      filteredSocieties,
-      filterValue,
       earliestData,
       latestData
     } = this.state
 
     const { society, data, timeSeriesMeta, t } = this.props
-
-    console.log('The society is here: ', society, timeSeriesMeta)
+    const { i18n } = this.context
+    const { language } = i18n
+    const pageData = i18n.store.data[language]["common"]
 
     return (
       <section>
 
-        <Breadcrumbs
-          links={ [
-            { name: "Home", path: "/" },
-            { name: "Services", path: "/" },
-            { name: "National Society Profiles", path: "/societies" },
-            { name: society.NSO_DON_name, path: undefined },
-          ] }
-        />
+        <Breadcrumbs links={[
+          { name: pageData.home, path: "/" },
+          { name: pageData.navigation[0].name, path: "/" },
+          { name: pageData.navigation[0].dropdownItems[1], path: "/societies" },
+          { name: society.NSO_DON_Name, path: undefined }
+        ]}/>
 
         <div className="clearfix bg-secondary px1">
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/overview" className="block p1"><span className="xs-visible">{ "IFRC Global " }</span>{ "Overview" }</Link>
+                <Link to="/overview" className="block p1">
+                  <span className="xs-visible">
+                    { t("societies:tabs")[0][0] }&nbsp;
+                  </span>
+                  { t("societies:tabs")[0][1] }
+                </Link>
               </li>
               <li className="inline-block">
-                <Link to="/societies" className="block bg-white p1"><span className="xs-visible">{ "National Society " }</span>{ "Profiles" }</Link>
+                <Link to="/societies" className="block bg-white p1">
+                  <span className="xs-visible">
+                    { t("societies:tabs")[1][0] }&nbsp;
+                  </span>
+                  { t("societies:tabs")[1][1] }
+                </Link>
               </li>
             </ul>
           </div>
@@ -186,44 +165,12 @@ class Society extends React.Component {
 
           <div className="clearfix mxn1">
             <aside className="col sm-3 pl1 md-pl0 md-2 md-offset-1 pr1 sm-visible">
-              <StickySidebar>
-                <div className="pb1">
-                  <h1 className="title mt0">{ "National Societies" }</h1>
-                  <Textfield
-                    placeholder="Search…"
-                    onChange={ this.handleSocietiesFiltering }
-                    value={ filterValue }
-                  />
-                </div>
-                <ReactIScroll
-                  iScroll={ iScroll }
-                  options={{
-                    mouseWheel: true,
-                    scrollbars: true,
-                    fadeScrollbars: false,
-                  }}
-                  onScrollStart={ this.onScrollStart }
-                >
-                  <div className="pr2 pb3">
-                    { !filteredSocieties.length && "No societies found" }
-                    <ul className="my1 mx0 p0">
-                      {
-                        filteredSocieties.map((ns, i) =>
-                          <li className="block" key={ i }>
-                            <Link
-                              to={ `/societies/${ ns.slug }` }
-                              onClick={ this.handleFilterReset }
-                              className="block btn"
-                            >
-                              <div className="text-left" style={{whiteSpace:"normal"}}>{ ns.NSO_DON_name }</div>
-                            </Link>
-                          </li>
-                        )
-                      }
-                    </ul>
-                  </div>
-                </ReactIScroll>
-              </StickySidebar>
+              <FilteredSocietiesSidebar
+                nationalSocieties={ this.props.nationalSocieties }
+                title={ t("societies:nationalSocieties") }
+                filterPlaceholder={ t("societies:searchPlaceholder") }
+                noSocietiesText={ t("societies:noSocieties") }
+              />
             </aside>
 
             <div className="col sm-9 md-8 px1">
@@ -231,14 +178,18 @@ class Society extends React.Component {
               <div className="clearfix mxn1 pb2">
                 <div className="col sm-8 px1 pb1">
                   <p className="lead">
-                    { `${society.NSO_DON_name} was admitted to the IFRC in ${society.admission_date.split(".")[2]}.` }
-                    { latestData.KPI_noPeopleVolunteering ? ` In ${latestData.KPI_Year}, it counted ${niceNum(latestData.KPI_noPeopleVolunteering, 0, null, true)} active volunteers` : "" }
-                    { earliestData.KPI_noPeopleVolunteering ? ` (up from ${niceNum(earliestData.KPI_noPeopleVolunteering, 0, null, true)} in ${earliestData.KPI_Year})` : "" }
-                    { latestData.KPI_noPeopleVolunteeringM && latestData.KPI_noPeopleVolunteeringF ? `, of which ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringM)}% were male and ${Math.round(100 / latestData.KPI_noPeopleVolunteering * latestData.KPI_noPeopleVolunteeringF)}% female` : "" }
-                    { "." }
+                    <GeneratedIntroText
+                      societyName={ society.NSO_DON_name }
+                      admissionDate={ society.admission_date.split(".")[2] }
+                      latestData={ latestData }
+                      earliestData={ earliestData }
+                      translationText={ t("societies:generatedText") }
+                    />
                   </p>
                   <p className="lead">
-                    { `Key proxy indicators reported by the National Society since ${earliestData.KPI_Year} are available below, as well as copies of additional key documents.` }
+                    { t("societies:fillerText")[0] }
+                    { ` ${earliestData.KPI_Year} ` }
+                    { t("societies:fillerText")[1] }
                   </p>
                   <div>
                     <ShareBtn service="twitter" />
@@ -263,7 +214,7 @@ class Society extends React.Component {
                     <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="subhead mt0 mb1">
-                          { "People volunteering their time" }
+                          { t("common:indicators.KPI_noPeopleVolunteering") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -346,7 +297,9 @@ class Society extends React.Component {
                   <Card indicator="KPI_noLocalUnits">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
-                        <h1 className="subhead mt0 mb1">{ "Local units" }</h1>
+                        <h1 className="subhead mt0 mb1">
+                          { t("common:indicators.KPI_noLocalUnits") }
+                        </h1>
                         <LineChart
                           height={ 150 }
                           padding={{
@@ -413,6 +366,23 @@ class Society extends React.Component {
                         <h1 className="subhead mt0 mb1">
                           { "Income and Expenditure" }
                         </h1>
+                        {
+                          // (() => {
+                          //   console.group("Data about income and expenditure: ")
+                          //   console.log("Data: ", data)
+                          //   const max = Number(maxBy(data, d => Number(d["KPI_expenditureLC (CHF)"]))["KPI_expenditureLC (CHF)"])
+                          //
+                          //   console.log("MAX: ", maxBy(data, d => Number(d["KPI_expenditureLC (CHF)"])))
+                          //   console.log("MAX: ", max)
+                          //   console.log("Rounded: ", roundIt(max))
+                          //
+                          //   data.map(dataItem => {
+                          //     console.log("Income: ", dataItem["KPI_IncomeLC (CHF)"])
+                          //     console.log("Expenditure: ", dataItem["KPI_expenditureLC (CHF)"])
+                          //   })
+                          //   console.groupEnd("Data about income and expenditure: ")
+                          // })()
+                        }
                         <LineChart
                           height={ 150 }
                           padding={{
@@ -429,30 +399,39 @@ class Society extends React.Component {
                             y: [
                               0,
                               roundIt(
-                                maxBy(
+                                Number(maxBy(
                                   data,
-                                  d => +d.KPI_expenditureLC || 0
-                                ).KPI_expenditureLC
+                                  d => {
+                                    return Number(d["KPI_expenditureLC (CHF)"]) || 0
+                                  })["KPI_expenditureLC (CHF)"])
                               ),
                             ],
                           }}
                           dataset={ [
-                            data.map(d => ({
-                              x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_expenditureLC),
-                            })),
-                            data.map(d => ({
-                              x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_IncomeLC),
-                            })),
+                            data.map(d => {
+                              return ({
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d["KPI_expenditureLC (CHF)"]) || null,
+                              })
+                            }),
+                            data.map(d => {
+                              return ({
+                                x: new Date(d.KPI_Year, 1, 1),
+                                y: Number(d["KPI_IncomeLC (CHF)"]) || null,
+                              })
+                            }),
                           ] }
                         />
                       </div>
                     </CardView>
                     <CardView viewIcon="plainNumber">{ "View 1" }</CardView>
                     <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_IncomeLC")[0].description }</p>
-                      <p><a href="#">{ "source of the data" }</a></p>
+                      <p>
+                        { timeSeriesMeta.filter(obj => obj.id === "KPI_IncomeLC (CHF)")[0].description }
+                      </p>
+                      <p>
+                        <a href="#">{ "source of the data" }</a>
+                      </p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -461,7 +440,9 @@ class Society extends React.Component {
                   <Card indicator="KPI_noPaidStaff">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
-                        <h1 className="subhead mt0 mb1">{ "Paid staff" }</h1>
+                        <h1 className="subhead mt0 mb1">
+                          { t("common:indicators.KPI_noPaidStaff") }
+                        </h1>
                         <LineChart
                           height={ 150 }
                           padding={{
@@ -504,8 +485,12 @@ class Society extends React.Component {
                     </CardView>
                     <CardView viewIcon="genderChart">{ "View 2" }</CardView>
                     <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPaidStaff")[0].description }</p>
-                      <p><a href="#">{ "source of the data" }</a></p>
+                      <p>
+                        { timeSeriesMeta.filter(obj => obj.id === "KPI_noPaidStaff")[0].description }
+                      </p>
+                      <p>
+                        <a href="#">{ "source of the data" }</a>
+                      </p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -525,8 +510,12 @@ class Society extends React.Component {
                       </div>
                     </CardView>
                     <CardOverlay>
-                      <p>{ "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + ". It is possible to view the aggregated numbers, as well as gender specific statistics." }</p>
-                      <p><a href="#">{ "source of the data" }</a></p>
+                      <p>
+                        { "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + ". It is possible to view the aggregated numbers, as well as gender specific statistics." }
+                      </p>
+                      <p>
+                        <a href="#">{ "source of the data" }</a>
+                      </p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -535,7 +524,9 @@ class Society extends React.Component {
                   <Card>
                     <CardView viewIcon="lineChart">
                       <div className="p1">
-                        <h1 className="subhead mt0 mb1">{ "People Reached" }</h1>
+                        <h1 className="subhead mt0 mb1">
+                          { t("societies:peopleReached") }
+                        </h1>
                         <LineChart
                           height={ 150 }
                           padding={{
@@ -568,10 +559,16 @@ class Society extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView viewIcon="plainNumber">{ "View 1" }</CardView>
+                    <CardView viewIcon="plainNumber">
+                      { "View 1" }
+                    </CardView>
                     <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleReachedDisaster")[0].description }</p>
-                      <p><a href="#">{ "source of the data" }</a></p>
+                      <p>
+                        { timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleReachedDisaster")[0].description }
+                      </p>
+                      <p>
+                        <a href="#">{ t("societies:source") }</a>
+                      </p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -580,7 +577,9 @@ class Society extends React.Component {
                   <Card indicator="KPI_noPeopleDonatingBlood">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
-                        <h1 className="subhead mt0 mb1">{ "People donating blood" }</h1>
+                        <h1 className="subhead mt0 mb1">
+                          { t("common:indicators.KPI_noPeopleDonatingBlood") }
+                        </h1>
                         <LineChart
                           height={ 150 }
                           padding={{
@@ -663,9 +662,13 @@ class Society extends React.Component {
                   <Card bgColor="bg-primary" basicCard controlsVisible={false}>
                     <CardView>
                       <div className="pt3 px2">
-                        <p className="display-1 lh-1 strong mt0 mb1">{ "What would you like to see here?" }</p>
-                        <p className="m0">{ "Help us improve data.ifrc.org" }</p>
-                        <p className="m0">{ "Send your ideas to:" }<br />{ "ideas@ifrc.org" }</p>
+                        <p className="display-1 lh-1 strong mt0 mb1">
+                          { t("societies:callout")[0] }
+                        </p>
+                        <p className="m0">
+                          { t("societies:callout")[1] }
+                        </p>
+                        <p className="m0">{ t("societies:callout")[2] }<br />{ "ideas@ifrc.org" }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
@@ -683,7 +686,7 @@ class Society extends React.Component {
                     <div className="col sm-12 px1 pb2">
                       <div className="relative overflow-hidden shadow-2 pt1 px1 pb2">
                         <h2 className="subhead mt0">
-                          { "Documents" }
+                          { t("societies:documents") }
                           <span className="inline-block align-middle mx1" style={{width:80}}>
                             <Select
                               searchable={ false }
@@ -701,12 +704,12 @@ class Society extends React.Component {
                               <article className="col sm-4 px1 py05" key={ i }>
                                 <div className="clearfix mxn1">
                                   <div className="inline-block align-top sm-12 px1">
-                                    <div className="bg-secondary" style={{width:60,height:60}}></div>
+                                    <div className="bg-secondary" style={{ width:60,height:60 }}></div>
                                   </div>
                                   <div className="inline-block align-top sm-12 px1">
                                     <h1 className="strong subhead mt0 sm-my1">{ `${doc.document_type} - ${doc.year}` }</h1>
                                     <a href={ 'http://data-staging.ifrc.org/downloads/' + doc.path } target="_blank" rel="noopener noreferrer" className="btn bg-primary">
-                                      { "Download" }
+                                      { t("common:download") }
                                     </a>
                                   </div>
                                 </div>
@@ -717,7 +720,7 @@ class Society extends React.Component {
                       </div>
                     </div>
                   ) : (
-                    <div className="px1">{ "No documents" }</div>
+                    <div className="px1">{ t("societies:noDocuments") }</div>
                   )
                 }
               </div>
@@ -728,7 +731,7 @@ class Society extends React.Component {
         <div className="bg-secondary px1">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              { "Last updated…" }
+              { t("common:updateText") }
             </div>
           </div>
         </div>
@@ -736,10 +739,19 @@ class Society extends React.Component {
         <div className="px1 py4 bg-beige">
           <div className="clearfix mxn1">
             <div className="col sm-4 sm-offset-6 px1">
-              <h2 className="headline sm-display-1 light mt0">{ "The IFRC at a glance" }</h2>
-              <p className="lead">{ "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks." }</p>
+              <p className="caps small strong">
+                { pageData.overviewPreview.subtitle }
+              </p>
+              <h2 className="headline sm-display-1 light mt0">
+                { pageData.overviewPreview.title }
+              </h2>
+              <p className="lead">
+                { pageData.overviewPreview.lead }
+              </p>
               <Link to="/" className="btn btn--raised bg-primary">
-                <span className="block py05 px1">{ "Explore the IFRC" }</span>
+                <span className="block py05 px1">
+                  { pageData.overviewPreview.button }
+                </span>
               </Link>
             </div>
           </div>
@@ -748,10 +760,16 @@ class Society extends React.Component {
         <div className="px1 py4 bg-secondary">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              <h2 className="headline sm-display-1 light mt0">{ "For data collectors" }</h2>
-              <p className="lead">{ "To get started with the data collection for your National Society, please log in." }</p>
+              <h2 className="headline sm-display-1 light mt0">
+                { pageData.dataCollectors.title }
+              </h2>
+              <p className="lead">
+                { pageData.dataCollectors.lead }
+              </p>
               <Link to="/" className="btn btn--raised bg-primary">
-                <span className="block py05 px1">{ "Login as data collector" }</span>
+                <span className="block py05 px1">
+                  { pageData.dataCollectors.button }
+                </span>
               </Link>
             </div>
           </div>
@@ -792,6 +810,6 @@ const makeMapStateToProps = () => {
   })
 }
 
-export default translate([ "countries" ], { wait: true })(connect(makeMapStateToProps)(Society))
+export default translate([ "countries", "societies" ], { wait: true })(connect(makeMapStateToProps)(Society))
 
 // export default connect(makeMapStateToProps)(Society)

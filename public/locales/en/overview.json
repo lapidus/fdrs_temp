@@ -1,0 +1,13 @@
+{
+  "title": "The IFRC at a glance",
+  "tabs": [
+    [ "IFRC global", "overview" ],
+    [ "National society", "profiles" ]
+  ],
+  "tableHeaders": [
+    "National society name",
+    "Trend",
+    "Data for"
+  ],
+  "filterPlaceholder": "Select national societies to compare"
+}

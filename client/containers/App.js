@@ -96,8 +96,9 @@ class App extends React.Component {
                 className="inline-block align-middle mx1"
               /></a>
               <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
-                <Link to="/" className='color-regular'><span className='color-primary'>FEDERATION-WIDE</span> DATABANK<br />
-                AND REPORTING SYSTEM</Link>
+                <Link to="/" className='color-regular caps'>
+                  <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
+                </Link>
               </h1>
             </div>
             <div className="absolute t0 r0 z-index-1000 sm-hidden">
@@ -119,27 +120,47 @@ class App extends React.Component {
                   <li className='block sm-inline-block relative'>
                     <Dropdown navOpen={navOpen}>
                       <Link to='/' className='btn bg-white z-index-1'>
-                        <span className='block py1 px05'>{ "Services" }</span>
+                        <span className='block py1 px05'>
+                          <svg style={{width:16,height:16,marginTop:-1}} className="mr1" width="20px" height="20px" viewBox="0 0 24 24">
+                            <g transform="translate(0, 0)" className="stroke-current">
+                              <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="4" x2="22" y2="4" strokeLinejoin="miter"/>
+                              <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="12" x2="22" y2="12" strokeLinejoin="miter"/>
+                              <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="20" x2="22" y2="20" strokeLinejoin="miter"/>
+                              <rect x="2" y="2" fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="4" height="4" strokeLinejoin="miter"/>
+                              <rect x="2" y="10" fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="4" height="4" strokeLinejoin="miter"/>
+                              <rect x="2" y="18" fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="4" height="4" strokeLinejoin="miter"/>
+                            </g>
+                          </svg>
+                          { t("common:navigation")[0].name }
+                        </span>
                       </Link>
                       <ul className={navOpen ? "m0 p0" : "absolute t100 l0 bg-white m0 py1 px0 shadow-4"} style={{ minWidth:280 }}>
                         <li className="block text-left">
                           <Link to="/overview" className="block btn sm-text-left" style={{width: "100%"}}>
-                            <span className="block px1 py05">{ "The IFRC at a glance" }</span>
+                            <span className="block px1 py05">
+                              { t("common:navigation")[0].dropdownItems[0] }
+                            </span>
                           </Link>
                         </li>
                         <li className="block text-left">
                           <Link to="/societies" className="block btn sm-text-left" style={{width: "100%"}}>
-                            <span className="block px1 py05">{ "National Society profiles" }</span>
+                            <span className="block px1 py05">
+                              { t("common:navigation")[0].dropdownItems[1] }
+                            </span>
                           </Link>
                         </li>
                         <li className="block text-left">
                           <Link to="/report" className="block btn sm-text-left" style={{width: "100%"}}>
-                            <span className="block px1 py05">{ "\"Everyone Counts\" annual report" }</span>
+                            <span className="block px1 py05">
+                              { t("common:navigation")[0].dropdownItems[2] }
+                            </span>
                           </Link>
                         </li>
                         <li className="block text-left">
                           <Link to="/data-download" className="block btn sm-text-left" style={{width: "100%"}}>
-                            <span className="block px1 py05">{ "Data download" }</span>
+                            <span className="block px1 py05">
+                              { t("common:navigation")[0].dropdownItems[3] }
+                            </span>
                           </Link>
                         </li>
                       </ul>
@@ -147,7 +168,9 @@ class App extends React.Component {
                   </li>
                   <li className='block sm-inline-block'>
                     <Link to='/faq' className='btn'>
-                      <span className='block py1 px05'>FAQ</span>
+                      <span className='block py1 px05'>
+                        { t("common:navigation")[1].name }
+                      </span>
                     </Link>
                   </li>
                   <li className='block sm-inline-block align-middle text-left select-xl select-no-underline select-no-scroll bg-secondary' style={{ width: 68 }}>
@@ -155,14 +178,28 @@ class App extends React.Component {
                       searchable={ false }
                       clearable={ false }
                       name="language-selector"
-                      value={ language }
+                      value={language}
                       options={ languageOptions }
                       onChange={ this.goToLanguage }
                     />
                   </li>
                   <li className='block sm-inline-block'>
                     <button className='btn bg-primary'>
-                      <span className='block p1'>Login</span>
+                      <div className="block p1">
+                        <svg style={{width:20,height:20}} width="20px" height="20px" viewBox="0 0 32 32">
+                          <g  transform="translate(0, 0)">
+                            <path fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M19,9.5
+                        c0,2.485,2.015,5.5,4.5,5.5S28,11.985,28,9.5S25.985,5,23.5,5S19,7.015,19,9.5z" strokeLinejoin="miter"/>
+                            <path fill="none" stroke="#fff" strokeWidth="2" strokeMiterlimit="10" d="M24,25h7v-2.162
+                        c0-1.223-0.735-2.329-1.871-2.781C27.829,19.539,25.9,19,23.5,19s-4.329,0.539-5.629,1.057c-0.536,0.214-0.98,0.57-1.303,1.018" strokeLinejoin="miter" strokeLinecap="butt"/>
+                            <path fill="none" stroke="#fff" strokeWidth="2" strokeMiterlimit="10" d="M20,28H1v-2.815c0-1.526,0.861-2.923,2.233-3.591
+                        C4.834,20.814,7.277,20,10.5,20s5.666,0.814,7.267,1.594C19.139,22.262,20,23.659,20,25.185V28z" strokeLinejoin="miter" strokeLinecap="square"/>
+                            <path fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M16,9.5
+                        c0,3.038-2.462,6.5-5.5,6.5S5,12.538,5,9.5S7.462,4,10.5,4S16,6.462,16,9.5z" strokeLinejoin="miter"/>
+                          </g>
+                        </svg>
+                        <span className="ml1">{ "Login" }</span>
+                      </div>
                     </button>
                   </li>
                 </ul>
@@ -170,69 +207,6 @@ class App extends React.Component {
             </div>
           </div>
         </header>
-
-        {/* <header className={ headerClassName }>
-          <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
-            <div
-              className="clearfix bg-white"
-              style={{ position: "relative", zIndex: 10000, height: "72px" }}
-            >
-              <div
-                className="logo-wrapper pl2"
-                style={{ position: "relative", float: language === "ar" ? "right" : "left" }}
-              >
-                <Link to={ prefixLanguageToRoute(language, "/") }>
-                  <img
-                    src="/img/ifrc-logo.png"
-                    height={ 60 }
-                    style={{ verticalAlign: "middle" }}
-                  />&nbsp;&nbsp;
-                </Link>
-                <span className="caps">
-                  { "FDRS" }
-                </span>
-              </div>
-              <div
-                style={{ position: "relative", float: language === "ar" ? "left" : "right" }}
-                className="pr2 md-visible"
-              >
-                <div style={{ float: language === "ar" ? "right" : "left", width:"200px" }}>
-                  <Select
-                    searchable={ false }
-                    clearable={ false }
-                    name="language-selector"
-                    value={ language }
-                    options={ languageOptions }
-                    onChange={ this.goToLanguage }
-                  />
-                </div>
-                <Link
-                  className="btn px1 py15"
-                  to={ prefixLanguageToRoute(language, "/data") }
-                >
-                  <span className="caps">{ t("report-common:chapters.data.pretitle") }</span>
-                </Link>
-                <Link
-                  className="btn px1 py15"
-                  to={ prefixLanguageToRoute(language, "/societies") }
-                >
-                  <span className="caps">{ t("report-common:societis") }</span>
-                </Link>
-                <Link
-                  className="btn px1 py15"
-                  to={ prefixLanguageToRoute(language, "/report") }
-                >
-                  <span className="caps">{ t("report-common:home.downloadReportSection.preTitle") }</span>
-                </Link>
-                <button className="btn px1 py15">
-                  <Icon name="share" height="20px" />
-                  &nbsp;&nbsp;&nbsp;
-                  <span className="caps">{ t("report-common:share") }</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </header> */}
 
         <div className={ "main-content-wrapper light" }>
           <div>
@@ -244,23 +218,57 @@ class App extends React.Component {
 
               <div className="col sm-3 sm-offset-1">
                 <p className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
-                  <Link to="/" className='color-regular'><span className='color-primary'>FEDERATION-WIDE</span> DATABANK<br />
-                  AND REPORTING SYSTEM</Link>
+                  <Link to="/" className='color-inverted caps'>
+                    <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
+                  </Link>
                 </p>
-                <p>website by Lapidus Interactive</p>
+                <p>{ t("common:credit") }</p>
               </div>
 
               <div className="col sm-3">
-                <p className="subhead strong">Services</p>
+                <p className="subhead strong">
+                  { t("common:navigation")[0].name }
+                </p>
                 <ul className="m0 p0">
                   <li className="block">
-                    <Link to="/overview">The IFRC at a glance</Link>
+                    <Link to="/overview">
+                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                      <span>
+                        { t("common:navigation")[0].dropdownItems[0] }
+                      </span>
+                    </Link>
                   </li>
                   <li className="block">
-                    <Link to="/societies">National Society profiles</Link>
+                    <Link to="/societies">
+                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                      <span>
+                        { t("common:navigation")[0].dropdownItems[1] }
+                      </span>
+                    </Link>
                   </li>
                   <li className="block">
-                    <Link to="/report">“Everyone Counts” report</Link>
+                    <Link to="/report">
+                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                      <span>
+                        { t("common:navigation")[0].dropdownItems[2] }
+                      </span>
+                    </Link>
+                  </li>
+                  <li className="block">
+                    <Link to="/data-download">
+                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                      <span>
+                        { t("common:navigation")[0].dropdownItems[3] }
+                      </span>
+                    </Link>
                   </li>
                 </ul>
 
@@ -268,24 +276,53 @@ class App extends React.Component {
 
                 <ul className="m0 p0">
                   <li className="block">
-                    <Link to="/about">Acknowledgements</Link>
+                    <Link to="/faq">
+                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                      <span>
+                        { t("common:navigation")[1].name }
+                      </span>
+                    </Link>
                   </li>
                   <li className="block">
-                    <Link to="/about">About</Link>
+                    <Link to="/about">
+                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                      <span>
+                        { t("common:navigation")[2].name }
+                      </span>
+                    </Link>
                   </li>
                   <li className="block">
-                    <Link to="/faq">FAQ</Link>
+                    <Link to="/acknowledgements">
+                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                      <span>
+                        { t("common:navigation")[3].name }
+                      </span>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="col sm-3">
-                <p className="subhead strong">Contact</p>
-                <p>If you have feedback, questions and/or corrections, please write to the FDRS team.</p>
-                <a href="#">fdrs@ifrc.org</a>
+                <p className="subhead strong">
+                  { t("common:contact.title") }
+                </p>
+                <p>
+                  { t("common:contact.lead") }
+                </p>
+                <a href="#">
+                  { t("common:contact.email") }
+                </a>
               </div>
 
               <div className="col base-10 base-offset-1 small">
-                <p>&copy; { "2016 FDRS" }</p>
+                <p>
+                  &copy;&nbsp;{ t("common:copyright") }
+                </p>
               </div>
 
             </div>

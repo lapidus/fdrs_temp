@@ -1,6 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import { Link } from "react-router"
+import { translate } from "react-i18next"
 import Breadcrumbs from "../components/Breadcrumbs"
 
 import prefixLanguageToRoute from "../utils/prefixLanguageToRoute"
@@ -8,26 +9,39 @@ import { fetchNationalSocieties } from "../actions/appActions"
 
 class Societies extends React.Component {
   render() {
-    const { language } = this.context.i18n
+    const { i18n } = this.context
+    const { language } = i18n
+    const { t } = this.props
     const societiesPerCol = Math.ceil(this.props.nationalSocieties.length / 3)
+    const pageData = i18n.store.data[language]["common"]
 
     return (
       <section>
 
         <Breadcrumbs links={[
-          { name: "Home", path: "/" },
-          { name: "Services", path: "/" },
-          { name: "National Society Profiles", path: undefined }
+          { name: pageData.home, path: "/" },
+          { name: pageData.navigation[0].name, path: "/" },
+          { name: pageData.navigation[0].dropdownItems[1], path: undefined },
         ]}/>
 
         <div className="clearfix bg-secondary px1">
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/overview" className="block p1"><span className="xs-visible">{ "IFRC Global " }</span>{ "Overview" }</Link>
+                <Link to="/overview" className="block p1">
+                  <span className="xs-visible">
+                    { t("societies:tabs")[0][0] }&nbsp;
+                  </span>
+                  { t("societies:tabs")[0][1] }
+                </Link>
               </li>
               <li className="inline-block">
-                <Link to="/societies" className="block bg-white p1"><span className="xs-visible">{ "National Society " }</span>{ "Profiles" }</Link>
+                <Link to="/societies" className="block bg-white p1">
+                  <span className="xs-visible">
+                    { t("societies:tabs")[1][0] }&nbsp;
+                  </span>
+                  { t("societies:tabs")[1][1] }
+                </Link>
               </li>
             </ul>
           </div>
@@ -36,7 +50,9 @@ class Societies extends React.Component {
         <header className="px1">
           <div className="clearfix mxn1">
             <div className="col sm-8 sm-offset-2 px1 py1">
-              <h1 className="display-1 md-display-2 m0 light">{ "National Society" } <span className="color-primary">{ "profiles" }</span></h1>
+              <h1 className="display-1 md-display-2 m0 light">
+                { t("societies:titleParts")[0] }&nbsp;<span className="color-primary">{ t("societies:titleParts")[1] }</span>
+              </h1>
             </div>
           </div>
         </header>
@@ -80,10 +96,16 @@ class Societies extends React.Component {
         <div className='px1 py4 bg-beige'>
           <div className='clearfix mxn1'>
             <div className='col sm-4 sm-offset-6 px1'>
-              <h2 className='headline sm-display-1 light mt0'>{ "The IFRC at a glance" }</h2>
-              <p className='lead'>{ "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks." }</p>
+              <h2 className='headline sm-display-1 light mt0'>
+                { t("common:overviewPreview.title") }
+              </h2>
+              <p className='lead'>
+                { t("common:overviewPreview.leader") }
+              </p>
               <Link to='/' className='btn btn--raised bg-primary'>
-                <span className='block py05 px1'>{ "Explore the IFRC" }</span>
+                <span className='block py05 px1'>
+                  { t("common:overviewPreview.button") }
+                </span>
               </Link>
             </div>
           </div>
@@ -92,10 +114,16 @@ class Societies extends React.Component {
         <div className='px1 py4 bg-secondary'>
           <div className='clearfix mxn1'>
             <div className='col sm-10 sm-offset-1 px1'>
-              <h2 className='headline sm-display-1 light mt0'>{ "For data collectors" }</h2>
-              <p className='lead'>{ "To get started with the data collection for your National Society, please log in." }</p>
+              <h2 className='headline sm-display-1 light mt0'>
+                { t("common:dataCollectors.title") }
+              </h2>
+              <p className='lead'>
+                { t("common:dataCollectors.lead") }
+              </p>
               <Link to='/' className='btn btn--raised bg-primary'>
-                <span className='block py05 px1'>{ "Login as data collector" }</span>
+                <span className='block py05 px1'>
+                  { t("common:dataCollectors.button") }
+                </span>
               </Link>
             </div>
           </div>
@@ -106,6 +134,7 @@ class Societies extends React.Component {
 }
 
 Societies.propTypes = {
+  t: React.PropTypes.func.isRequired,
   nationalSocieties: React.PropTypes.array,
 }
 
@@ -119,4 +148,4 @@ const mapStateToProps = state => ({
   nationalSocieties: state.appReducer.nationalSocieties,
 })
 
-export default connect(mapStateToProps)(Societies)
+export default translate("societies", { wait: true })(connect(mapStateToProps)(Societies))

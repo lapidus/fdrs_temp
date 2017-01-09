@@ -195,7 +195,6 @@
 .Select-option {
   box-sizing: border-box;
   background-color: #fff;
-  /*color: #666666;*/
   color: inherit;
   cursor: pointer;
   display: block;
@@ -207,9 +206,6 @@
 }
 .Select-option:last-child {}
 .Select-option.is-selected {
-  /*background-color: rgba(0, 126, 255, 0.04);*/
-  /*color: #333;*/
-  /*color: var(--color-primary);*/
   color: var(--color-primary) !important;
 }
 .Select-option.is-focused {

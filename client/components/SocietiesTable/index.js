@@ -83,7 +83,7 @@ class SocietiesTable extends React.Component {
             <circle fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" cx="10" cy="10" r="9" strokeLinejoin="miter"/>
           </g>
         </svg>
-        <span className="ml1">{ "Select National Societies to compare" }</span>
+        <span className="ml1">{ this.props.filterPlaceholder }</span>
       </span>
     )
 

@@ -2,6 +2,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import { Link } from "react-router"
+import { translate } from "react-i18next"
 import Breadcrumbs from "../components/Breadcrumbs"
 import Textfield from "../components/Textfield"
 import Map from "../components/Data/Map"
@@ -90,25 +91,38 @@ class Overview extends React.Component {
 
     const { i18n } = this.context
     const { language } = i18n
+    const { t } = this.props
     const pageData = i18n.store.data[language]["common"]
+    // const commonTranslations = i18n.store.data[language]["common"]
+    // const overviewTranslations = i18n.store.data[language]["overview"]
 
     return (
       <section>
 
         <Breadcrumbs links={[
-          { name: "Home", path: "/" },
-          { name: "Services", path: "/" },
-          { name: "IFRC Overview", path: undefined },
+          { name: pageData.home, path: "/" },
+          { name: pageData.navigation[0].name, path: "/" },
+          { name: pageData.navigation[0].dropdownItems[0], path: undefined },
         ]}/>
 
         <div className="clearfix bg-secondary px1">
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/overview" className="block bg-white p1"><span className="xs-visible">{ "IFRC Global " }</span>{ "Overview" }</Link>
+                <Link to="/overview" className="block bg-white p1">
+                  <span className="xs-visible">
+                    { t("overview:tabs")[0][0] }&nbsp;
+                  </span>
+                  { t("overview:tabs")[0][1] }
+                </Link>
               </li>
               <li className="inline-block">
-                <Link to="/societies" className="block p1"><span className="xs-visible">{ "National Society " }</span>{ "Profiles" }</Link>
+                <Link to="/societies" className="block p1">
+                  <span className="xs-visible">
+                    { t("overview:tabs")[1][0] }&nbsp;
+                  </span>
+                  { t("overview:tabs")[1][1] }
+                </Link>
               </li>
             </ul>
           </div>
@@ -117,19 +131,20 @@ class Overview extends React.Component {
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-8 sm-offset-3 px1 pt1">
-              <h1 className="color-primary strong m0 small">{ "IFRC" } <span className="color-primary">{ "at a glance" }</span></h1>
-              <p className="display-1 md-display-2 m0 light">{ pageData.indicators[this.state.currentIndicator.id] }</p>
+              <h1 className="color-primary strong m0 small">
+                { t("overview:title") }
+              </h1>
+              <p className="display-1 md-display-2 m0 light">
+                { pageData.indicators[this.state.currentIndicator.id] }
+              </p>
             </header>
           </div>
 
           <div className="clearfix mxn1">
             <aside className="col sm-3 pl1 md-pl0 md-2 md-offset-1 pr1 sm-visible">
               <StickySidebar>
-                <div className="pb2">
-                  {/* <h1 className="title mt0">National Societies</h1> */}
-                </div>
                 <div>
-                  <h1 className="title my0">Indicators</h1>
+                  <h1 className="title my0">{ pageData.indicatorsTitle }</h1>
                   <ReactIScroll iScroll={iScroll} options={{ mouseWheel: true, scrollbars: true, fadeScrollbars: false }} onScrollStart={this.onScrollStart}>
                     <div className="pr2 pb3">
                       <ul className="p0">
@@ -211,40 +226,8 @@ class Overview extends React.Component {
 
               </div>
 
-              <div className="mb2">
-                {/* <Select
-                  searchable={ true }
-                  clearable={ false }
-                  placeholder="Select a NS..."
-                  multi={ false }
-                  name="ns-selector"
-                  options={this.props.nationalSocieties.map(ns => {
-                    return {
-                      value: ns.KPI_DON_Code,
-                      label: ns.NSO_DON_name,
-                      slug: ns.slug,
-                    }
-                  })}
-                  onChange={ this.handleNSSelect }
-                /> */}
-
-                {/* <ul className="mt1 mb0 p0">
-                  {
-                    this.state.selectedSocieties.map((society, i) => {
-                      return (
-                        <li key={ i } className="block relative bg-secondary overflow-hidden py05 px1" style={{marginBottom: "0.5rem", textAlign: "left"}}>
-                          <span className="block overflow-hidden pr1" style={{whiteSpace: "nowrap", textOverflow: "ellipsis"}}>
-                            { society.NSO_DON_name }
-                          </span>
-                          <div onClick={ (e) => this.handleUnselectSociety(society, e) } className="btn absolute t0 b0 r0 bg-primary p05">x</div>
-                        </li>
-                      )
-                    })
-                  }
-                </ul> */}
-              </div>
-
               <SocietiesTable
+                filterPlaceholder={ t("overview:filterPlaceholder") }
                 currentYear={ this.state.currentYear }
                 currentIndicator={ this.state.currentIndicator }
                 selectedSocieties={ this.state.selectedSocieties }
@@ -265,7 +248,7 @@ class Overview extends React.Component {
         <div className="bg-secondary px1">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              { "Last updated…" }
+              { pageData.updateText }
             </div>
           </div>
         </div>
@@ -273,11 +256,19 @@ class Overview extends React.Component {
         <div className="px1 py4 bg-beige">
           <div className="clearfix mxn1">
             <div className="col sm-4 sm-offset-6 px1">
-              <p className="caps small strong">{ "Get to know the National Societies" }</p>
-              <h2 className="headline sm-display-1 light mt0">{ "National Society Profiles" }</h2>
-              <p className="lead">{ "Explore the dataset for each National Society, and download PDF profiles for further sharing." }</p>
+              <p className="caps small strong">
+                { pageData.nationalSocietiesPreview.subtitle }
+              </p>
+              <h2 className="headline sm-display-1 light mt0">
+                { pageData.nationalSocietiesPreview.title }
+              </h2>
+              <p className="lead">
+                { pageData.nationalSocietiesPreview.lead }
+              </p>
               <Link to="/" className="btn btn--raised bg-primary">
-                <span className="block py05 px1">{ "Explore National Society Profiles" }</span>
+                <span className="block py05 px1">
+                  { pageData.nationalSocietiesPreview.button }
+                </span>
               </Link>
             </div>
           </div>
@@ -286,10 +277,16 @@ class Overview extends React.Component {
         <div className="px1 py4 bg-secondary">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              <h2 className="headline sm-display-1 light mt0">{ "For data collectors" }</h2>
-              <p className="lead">{ "To get started with the data collection for your National Society, please log in." }</p>
+              <h2 className="headline sm-display-1 light mt0">
+                { pageData.dataCollectors.title }
+              </h2>
+              <p className="lead">
+                { pageData.dataCollectors.lead }
+              </p>
               <Link to="/" className="btn btn--raised bg-primary">
-                <span className="block py05 px1">{ "Login as data collector" }</span>
+                <span className="block py05 px1">
+                  { pageData.dataCollectors.button }
+                </span>
               </Link>
             </div>
           </div>
@@ -306,6 +303,7 @@ Overview.contextTypes = {
 }
 
 Overview.propTypes = {
+  t: React.PropTypes.func.isRequired,
   nationalSocieties: React.PropTypes.array,
   timeSeriesMeta: React.PropTypes.array,
   data: React.PropTypes.array,
@@ -332,4 +330,4 @@ const mapDispatchToProps = dispatch => ({
   hideTooltip: () => dispatch(hideTooltip()),
 })
 
-export default connect(makeMapStateToProps, mapDispatchToProps)(Overview)
+export default translate("overview", { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(Overview))

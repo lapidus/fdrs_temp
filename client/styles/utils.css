@@ -17,6 +17,9 @@
 .fill-beige   { fill: #8D8070; }
 
 .stroke-primary { stroke: var(--color-primary); }
+.stroke-secondary { stroke: var(--color-primary); }
+.stroke-normal { stroke: var(--text-color-base); }
+.stroke-current { stroke: currentcolor; }
 
 
 .color-primary   { color: var(--color-primary);   }
