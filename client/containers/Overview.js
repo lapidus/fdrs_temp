@@ -248,7 +248,7 @@ class Overview extends React.Component {
         <div className="bg-secondary px1">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              { "Last updated…" }
+              { pageData.updateText }
             </div>
           </div>
         </div>
@@ -256,11 +256,19 @@ class Overview extends React.Component {
         <div className="px1 py4 bg-beige">
           <div className="clearfix mxn1">
             <div className="col sm-4 sm-offset-6 px1">
-              <p className="caps small strong">{ "Get to know the National Societies" }</p>
-              <h2 className="headline sm-display-1 light mt0">{ "National Society Profiles" }</h2>
-              <p className="lead">{ "Explore the dataset for each National Society, and download PDF profiles for further sharing." }</p>
+              <p className="caps small strong">
+                { pageData.nationalSocietiesPreview.subtitle }
+              </p>
+              <h2 className="headline sm-display-1 light mt0">
+                { pageData.nationalSocietiesPreview.title }
+              </h2>
+              <p className="lead">
+                { pageData.nationalSocietiesPreview.lead }
+              </p>
               <Link to="/" className="btn btn--raised bg-primary">
-                <span className="block py05 px1">{ "Explore National Society Profiles" }</span>
+                <span className="block py05 px1">
+                  { pageData.nationalSocietiesPreview.button }
+                </span>
               </Link>
             </div>
           </div>
@@ -269,10 +277,16 @@ class Overview extends React.Component {
         <div className="px1 py4 bg-secondary">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              <h2 className="headline sm-display-1 light mt0">{ "For data collectors" }</h2>
-              <p className="lead">{ "To get started with the data collection for your National Society, please log in." }</p>
+              <h2 className="headline sm-display-1 light mt0">
+                { pageData.dataCollectors.title }
+              </h2>
+              <p className="lead">
+                { pageData.dataCollectors.lead }
+              </p>
               <Link to="/" className="btn btn--raised bg-primary">
-                <span className="block py05 px1">{ "Login as data collector" }</span>
+                <span className="block py05 px1">
+                  { pageData.dataCollectors.button }
+                </span>
               </Link>
             </div>
           </div>
