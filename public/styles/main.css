@@ -2573,3 +2573,17 @@ tr:last-of-type > td {
 @media (min-width: 91em) {
 
 }
+
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  .visible-print {
+    display: inherit !important;
+  }
+
+  .hidden-print {
+    display: none !important;
+  }
+}

@@ -16,9 +16,12 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, "public")))
 
 app.get("/societies/:id.pdf", (req, res, next) => {
+  console.log("Generating PDF", `${req.protocol}://${req.get("host")}${req.originalUrl.replace(".pdf", "_pdf")}`)
+
   const options = {
     url: `${req.protocol}://${req.get("host")}${req.originalUrl.replace(".pdf", "")}`,
     waitForHtmlReadyClass: true,
+    paperFormat : "A4"
   }
 
   urltopdf(options, function(err, pdfBuffer) {

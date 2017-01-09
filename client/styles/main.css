@@ -327,3 +327,17 @@ tr:last-of-type > td {
 @media (--xl-viewport) {
 
 }
+
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  .visible-print {
+    display: inherit !important;
+  }
+
+  .hidden-print {
+    display: none !important;
+  }
+}
