@@ -5,6 +5,8 @@
       "databank",
       "and reporting system"
     ],
+    "indicatorsTitle": "Indicators",
+    "updateText": "Last updated...",
     "indicators": {
         "KPI_noPeopleVolunteering": "People volunteering time",
         "KPI_noPaidStaff": "Paid staff",
@@ -20,6 +22,7 @@
         "KPI_noPeopleCoveredPreparedness": "People covered"
     },
     "login": "Login",
+    "home": "Home",
     "navigation": [
       {
         "name": "Services",
@@ -44,6 +47,18 @@
       "title": "For data collectors",
       "lead": "To get started with the data collection for your National Society, please log in.",
       "button": "Login as data collector"
+    },
+    "nationalSocietiesPreview": {
+      "subtitle": "Get to know the National Societies",
+      "title": "National Society Profiles",
+      "lead": "Explore the dataset for each National Society, and download PDF profiles for further sharing.",
+      "button": "Explore National Society Profiles"
+    },
+    "overviewPreview": {
+      "subtitle": "Something about the overview",
+      "title": "The IFRC at a glance",
+      "lead": "Something...",
+      "button": "Explore the IFRC"
     },
     "contact": {
       "title": "Contact",
