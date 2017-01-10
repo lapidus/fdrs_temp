@@ -74,6 +74,7 @@ class App extends React.Component {
     )
   }
   render() {
+    const { router } = this.context
     const { language } = this.context.i18n
     const { t, navOpen } = this.props
     const headerClassName = navOpen ?
@@ -87,124 +88,166 @@ class App extends React.Component {
       >
         <Loader />
 
-        <header className='relative shadow-4 px1 z-index-1000 bg-white hidden-print'>
+        <header className='relative shadow-4 px1 z-index-1000 bg-white hidden-print' style={{height:68}}>
           <div className='clearfix mxn1'>
-            <div className='col sm-5'>
-              <a href="http://www.ifrc.org" target="_blank"><img
-                src="/img/ifrc-logo-2.png"
-                height={ 68 }
-                className="inline-block align-middle mx1"
-              /></a>
-              <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
-                <Link to="/fdrs" className='color-regular caps'>
-                  <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
-                </Link>
-              </h1>
-            </div>
-            <div className="absolute t0 r0 z-index-1000 sm-hidden">
-              <button className='btn bg-secondary' onClick={this.props.toggleNav}>
-                <span className='block p1' >
-                  <svg className="block" width="20px" height="20px" viewBox="0 0 24 24">
-                    <g transform="translate(0, 0)">
-                      <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="12" x2="23" y2="12" strokeLinejoin="miter"/>
-                      <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="5" x2="23" y2="5" strokeLinejoin="miter"/>
-                      <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="19" x2="23" y2="19" strokeLinejoin="miter"/>
-                    </g>
-                  </svg>
-                </span>
-              </button>
-            </div>
-            <div className={`base-12 sm-7 ${navOpen ? "nav-drawer nav-drawer--open" : "nav-drawer"}`}>
-              <nav className="inline-block">
-                <ul className='m0 p0'>
-                  <li className='block sm-inline-block relative'>
-                    <Dropdown navOpen={navOpen}>
-                      <Link to='/' className='btn bg-white z-index-1'>
-                        <span className='block py1 px05'>
-                          <svg style={{width:16,height:16,marginTop:-1}} className="mr1" width="20px" height="20px" viewBox="0 0 24 24">
-                            <g transform="translate(0, 0)" className="stroke-current">
-                              <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="4" x2="22" y2="4" strokeLinejoin="miter"/>
-                              <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="12" x2="22" y2="12" strokeLinejoin="miter"/>
-                              <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="20" x2="22" y2="20" strokeLinejoin="miter"/>
-                              <rect x="2" y="2" fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="4" height="4" strokeLinejoin="miter"/>
-                              <rect x="2" y="10" fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="4" height="4" strokeLinejoin="miter"/>
-                              <rect x="2" y="18" fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="4" height="4" strokeLinejoin="miter"/>
-                            </g>
-                          </svg>
-                          { t("common:navigation")[0].name }
-                        </span>
-                      </Link>
-                      <ul className={navOpen ? "m0 p0" : "absolute t100 l0 bg-white m0 py1 px0 shadow-4"} style={{ minWidth:280 }}>
-                        <li className="block text-left">
-                          <Link to="/fdrs/overview" className="block btn sm-text-left" style={{width: "100%"}}>
-                            <span className="block px1 py05">
-                              { t("common:navigation")[0].dropdownItems[0] }
-                            </span>
-                          </Link>
-                        </li>
-                        <li className="block text-left">
-                          <Link to="/fdrs/societies" className="block btn sm-text-left" style={{width: "100%"}}>
-                            <span className="block px1 py05">
-                              { t("common:navigation")[0].dropdownItems[1] }
-                            </span>
-                          </Link>
-                        </li>
-                        <li className="block text-left">
-                          <Link to="/fdrs/report" className="block btn sm-text-left" style={{width: "100%"}}>
-                            <span className="block px1 py05">
-                              { t("common:navigation")[0].dropdownItems[2] }
-                            </span>
-                          </Link>
-                        </li>
-                        <li className="block text-left">
-                          <Link to="/fdrs/data-download" className="block btn sm-text-left" style={{width: "100%"}}>
-                            <span className="block px1 py05">
-                              { t("common:navigation")[0].dropdownItems[3] }
-                            </span>
-                          </Link>
-                        </li>
-                      </ul>
-                    </Dropdown>
-                  </li>
-                  <li className='block sm-inline-block'>
-                    <Link to='/fdrs/faq' className='btn'>
-                      <span className='block py1 px05'>
-                        { t("common:navigation")[1].name }
-                      </span>
+            {
+              router.location.pathname !== "/" ? (
+                <div className='col sm-5'>
+                  <a href="http://www.ifrc.org" target="_blank"><img
+                    src="/img/ifrc-logo-2.png"
+                    height={ 68 }
+                    className="inline-block align-middle mx1"
+                  /></a>
+                  <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
+                    <Link to="/fdrs" className='color-regular caps'>
+                      <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
                     </Link>
-                  </li>
-                  <li className='block sm-inline-block align-middle text-left select-xl select-no-underline select-no-scroll bg-secondary' style={{ width: 68 }}>
-                    <Select
-                      searchable={ false }
-                      clearable={ false }
-                      name="language-selector"
-                      value={language}
-                      options={ languageOptions }
-                      onChange={ this.goToLanguage }
-                    />
-                  </li>
-                  <li className='block sm-inline-block'>
-                    <button className='btn bg-primary'>
-                      <div className="block p1">
-                        <svg style={{width:20,height:20}} width="20px" height="20px" viewBox="0 0 32 32">
-                          <g  transform="translate(0, 0)">
-                            <path fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M19,9.5
-                        c0,2.485,2.015,5.5,4.5,5.5S28,11.985,28,9.5S25.985,5,23.5,5S19,7.015,19,9.5z" strokeLinejoin="miter"/>
-                            <path fill="none" stroke="#fff" strokeWidth="2" strokeMiterlimit="10" d="M24,25h7v-2.162
-                        c0-1.223-0.735-2.329-1.871-2.781C27.829,19.539,25.9,19,23.5,19s-4.329,0.539-5.629,1.057c-0.536,0.214-0.98,0.57-1.303,1.018" strokeLinejoin="miter" strokeLinecap="butt"/>
-                            <path fill="none" stroke="#fff" strokeWidth="2" strokeMiterlimit="10" d="M20,28H1v-2.815c0-1.526,0.861-2.923,2.233-3.591
-                        C4.834,20.814,7.277,20,10.5,20s5.666,0.814,7.267,1.594C19.139,22.262,20,23.659,20,25.185V28z" strokeLinejoin="miter" strokeLinecap="square"/>
-                            <path fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M16,9.5
-                        c0,3.038-2.462,6.5-5.5,6.5S5,12.538,5,9.5S7.462,4,10.5,4S16,6.462,16,9.5z" strokeLinejoin="miter"/>
-                          </g>
-                        </svg>
-                        <span className="ml1">{ "Login" }</span>
-                      </div>
-                    </button>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                  </h1>
+                </div>
+              ) : (
+                <div className='col base-6'>
+                  <a href="http://www.ifrc.org" target="_blank"><img
+                    src="/img/ifrc-logo-2.png"
+                    height={ 68 }
+                    className="inline-block align-middle mx1"
+                  /></a>
+                  <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
+                    <Link to="/" className='color-regular'>
+                      <span className='color-primary'>{ "Data.ifrc.org" }</span>
+                    </Link>
+                  </h1>
+                </div>
+              )
+            }
+            {
+              router.location.pathname !== "/" ? (
+                <div className="absolute t0 r0 z-index-1000 sm-hidden">
+                  <button className='btn bg-secondary' onClick={this.props.toggleNav}>
+                    <span className='block p1' >
+                      <svg className="block" width="20px" height="20px" viewBox="0 0 24 24">
+                        <g transform="translate(0, 0)">
+                          <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="12" x2="23" y2="12" strokeLinejoin="miter"/>
+                          <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="5" x2="23" y2="5" strokeLinejoin="miter"/>
+                          <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="19" x2="23" y2="19" strokeLinejoin="miter"/>
+                        </g>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              ) : null
+            }
+            {
+              router.location.pathname !== "/" ? (
+                <div className={`base-12 sm-7 ${navOpen ? "nav-drawer nav-drawer--open" : "nav-drawer"}`}>
+                  <nav className="inline-block">
+                    <ul className='m0 p0'>
+                      <li className='block sm-inline-block relative'>
+                        <Dropdown navOpen={navOpen}>
+                          <Link to='/' className='btn bg-white z-index-1'>
+                            <span className='block py1 px05'>
+                              <svg style={{width:16,height:16,marginTop:-1}} className="mr1" width="20px" height="20px" viewBox="0 0 24 24">
+                                <g transform="translate(0, 0)" className="stroke-current">
+                                  <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="4" x2="22" y2="4" strokeLinejoin="miter"/>
+                                  <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="12" x2="22" y2="12" strokeLinejoin="miter"/>
+                                  <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="20" x2="22" y2="20" strokeLinejoin="miter"/>
+                                  <rect x="2" y="2" fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="4" height="4" strokeLinejoin="miter"/>
+                                  <rect x="2" y="10" fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="4" height="4" strokeLinejoin="miter"/>
+                                  <rect x="2" y="18" fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="4" height="4" strokeLinejoin="miter"/>
+                                </g>
+                              </svg>
+                              { t("common:navigation")[0].name }
+                            </span>
+                          </Link>
+                          <ul className={navOpen ? "m0 p0" : "absolute t100 l0 bg-white m0 py1 px0 shadow-4"} style={{ minWidth:280 }}>
+                            <li className="block text-left">
+                              <Link to="/fdrs/overview" className="block btn sm-text-left" style={{width: "100%"}}>
+                                <span className="block px1 py05">
+                                  { t("common:navigation")[0].dropdownItems[0] }
+                                </span>
+                              </Link>
+                            </li>
+                            <li className="block text-left">
+                              <Link to="/fdrs/societies" className="block btn sm-text-left" style={{width: "100%"}}>
+                                <span className="block px1 py05">
+                                  { t("common:navigation")[0].dropdownItems[1] }
+                                </span>
+                              </Link>
+                            </li>
+                            <li className="block text-left">
+                              <Link to="/fdrs/report" className="block btn sm-text-left" style={{width: "100%"}}>
+                                <span className="block px1 py05">
+                                  { t("common:navigation")[0].dropdownItems[2] }
+                                </span>
+                              </Link>
+                            </li>
+                            <li className="block text-left">
+                              <Link to="/fdrs/data-download" className="block btn sm-text-left" style={{width: "100%"}}>
+                                <span className="block px1 py05">
+                                  { t("common:navigation")[0].dropdownItems[3] }
+                                </span>
+                              </Link>
+                            </li>
+                          </ul>
+                        </Dropdown>
+                      </li>
+                      <li className='block sm-inline-block'>
+                        <Link to='/fdrs/faq' className='btn'>
+                          <span className='block py1 px05'>
+                            { t("common:navigation")[1].name }
+                          </span>
+                        </Link>
+                      </li>
+                      <li className='block sm-inline-block align-middle text-left select-xl select-no-underline select-no-scroll bg-secondary' style={{ width: 68 }}>
+                        <Select
+                          searchable={ false }
+                          clearable={ false }
+                          name="language-selector"
+                          value={language}
+                          options={ languageOptions }
+                          onChange={ this.goToLanguage }
+                        />
+                      </li>
+                      <li className='block sm-inline-block'>
+                        <button className='btn bg-primary'>
+                          <div className="block p1">
+                            <svg style={{width:20,height:20}} width="20px" height="20px" viewBox="0 0 32 32">
+                              <g  transform="translate(0, 0)">
+                                <path fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M19,9.5
+                            c0,2.485,2.015,5.5,4.5,5.5S28,11.985,28,9.5S25.985,5,23.5,5S19,7.015,19,9.5z" strokeLinejoin="miter"/>
+                                <path fill="none" stroke="#fff" strokeWidth="2" strokeMiterlimit="10" d="M24,25h7v-2.162
+                            c0-1.223-0.735-2.329-1.871-2.781C27.829,19.539,25.9,19,23.5,19s-4.329,0.539-5.629,1.057c-0.536,0.214-0.98,0.57-1.303,1.018" strokeLinejoin="miter" strokeLinecap="butt"/>
+                                <path fill="none" stroke="#fff" strokeWidth="2" strokeMiterlimit="10" d="M20,28H1v-2.815c0-1.526,0.861-2.923,2.233-3.591
+                            C4.834,20.814,7.277,20,10.5,20s5.666,0.814,7.267,1.594C19.139,22.262,20,23.659,20,25.185V28z" strokeLinejoin="miter" strokeLinecap="square"/>
+                                <path fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M16,9.5
+                            c0,3.038-2.462,6.5-5.5,6.5S5,12.538,5,9.5S7.462,4,10.5,4S16,6.462,16,9.5z" strokeLinejoin="miter"/>
+                              </g>
+                            </svg>
+                            <span className="ml1">{ "Login" }</span>
+                          </div>
+                        </button>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              ) : (
+                <div className="col base-6 text-right">
+                  <nav className="inline-block">
+                    <ul className='m0 p0'>
+                      <li className='block sm-inline-block align-middle text-left select-xl select-no-underline select-no-scroll bg-secondary' style={{ width: 68 }}>
+                        <Select
+                          searchable={ false }
+                          clearable={ false }
+                          name="language-selector"
+                          value={language}
+                          options={ languageOptions }
+                          onChange={ this.goToLanguage }
+                        />
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              )
+            }
           </div>
         </header>
 
@@ -214,117 +257,135 @@ class App extends React.Component {
           </div>
 
           <footer className="site-footer bg-dark clearfix">
-            <div className="clearfix py2" style={{ background:"rgba(0,0,0,0.2)" }}>
+            {
+              router.location.pathname !== "/" ? (
+                <div className="clearfix py2">
+                  <div className="col sm-3 sm-offset-1">
+                    <p className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
+                      <Link to="/fdrs" className='color-inverted caps'>
+                        <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
+                      </Link>
+                    </p>
+                    <p>{ t("common:credit") }</p>
+                  </div>
+                  <div className="col sm-3">
+                    <p className="subhead strong">
+                      { t("common:navigation")[0].name }
+                    </p>
+                    <ul className="m0 p0">
+                      <li className="block">
+                        <Link to="/fdrs/overview">
+                          <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                            <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                          </svg>
+                          <span>
+                            { t("common:navigation")[0].dropdownItems[0] }
+                          </span>
+                        </Link>
+                      </li>
+                      <li className="block">
+                        <Link to="/fdrs/societies">
+                          <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                            <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                          </svg>
+                          <span>
+                            { t("common:navigation")[0].dropdownItems[1] }
+                          </span>
+                        </Link>
+                      </li>
+                      <li className="block">
+                        <Link to="/fdrs/report">
+                          <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                            <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                          </svg>
+                          <span>
+                            { t("common:navigation")[0].dropdownItems[2] }
+                          </span>
+                        </Link>
+                      </li>
+                      <li className="block">
+                        <Link to="/fdrs/data-download">
+                          <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                            <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                          </svg>
+                          <span>
+                            { t("common:navigation")[0].dropdownItems[3] }
+                          </span>
+                        </Link>
+                      </li>
+                    </ul>
 
+                    <br />
+
+                    <ul className="m0 p0">
+                      <li className="block">
+                        <Link to="/fdrs/faq">
+                          <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                            <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                          </svg>
+                          <span>
+                            { t("common:navigation")[1].name }
+                          </span>
+                        </Link>
+                      </li>
+                      <li className="block">
+                        <Link to="/fdrs/about">
+                          <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                            <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                          </svg>
+                          <span>
+                            { t("common:navigation")[2].name }
+                          </span>
+                        </Link>
+                      </li>
+                      <li className="block">
+                        <Link to="/fdrs/acknowledgements">
+                          <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
+                            <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
+                          </svg>
+                          <span>
+                            { t("common:navigation")[3].name }
+                          </span>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col sm-3">
+                    <p className="subhead strong">
+                      { t("common:contact.title") }
+                    </p>
+                    <p>
+                      { t("common:contact.lead") }
+                    </p>
+                    <a href="#">
+                      { t("common:contact.email") }
+                    </a>
+                  </div>
+                  <div className="col base-10 base-offset-1 small">
+                    <p>
+                      &copy;&nbsp;{ t("common:copyright") }
+                    </p>
+                  </div>
+                </div>
+              ) : null
+            }
+            <div className="clearfix bg-darker py2">
               <div className="col sm-3 sm-offset-1">
-                <p className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
-                  <Link to="/fdrs" className='color-inverted caps'>
-                    <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
-                  </Link>
-                </p>
-                <p>{ t("common:credit") }</p>
-              </div>
-
-              <div className="col sm-3">
-                <p className="subhead strong">
-                  { t("common:navigation")[0].name }
-                </p>
-                <ul className="m0 p0">
-                  <li className="block">
-                    <Link to="/fdrs/overview">
-                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
-                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
-                      </svg>
-                      <span>
-                        { t("common:navigation")[0].dropdownItems[0] }
-                      </span>
-                    </Link>
-                  </li>
-                  <li className="block">
-                    <Link to="/fdrs/societies">
-                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
-                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
-                      </svg>
-                      <span>
-                        { t("common:navigation")[0].dropdownItems[1] }
-                      </span>
-                    </Link>
-                  </li>
-                  <li className="block">
-                    <Link to="/fdrs/report">
-                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
-                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
-                      </svg>
-                      <span>
-                        { t("common:navigation")[0].dropdownItems[2] }
-                      </span>
-                    </Link>
-                  </li>
-                  <li className="block">
-                    <Link to="/fdrs/data-download">
-                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
-                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
-                      </svg>
-                      <span>
-                        { t("common:navigation")[0].dropdownItems[3] }
-                      </span>
-                    </Link>
-                  </li>
-                </ul>
-
-                <br />
-
-                <ul className="m0 p0">
-                  <li className="block">
-                    <Link to="/fdrs/faq">
-                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
-                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
-                      </svg>
-                      <span>
-                        { t("common:navigation")[1].name }
-                      </span>
-                    </Link>
-                  </li>
-                  <li className="block">
-                    <Link to="/fdrs/about">
-                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
-                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
-                      </svg>
-                      <span>
-                        { t("common:navigation")[2].name }
-                      </span>
-                    </Link>
-                  </li>
-                  <li className="block">
-                    <Link to="/fdrs/acknowledgements">
-                      <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
-                        <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
-                      </svg>
-                      <span>
-                        { t("common:navigation")[3].name }
-                      </span>
-                    </Link>
-                  </li>
-                </ul>
+                <Link to="/">{ "Back to Data.ifrc.org" }</Link>
               </div>
               <div className="col sm-3">
-                <p className="subhead strong">
-                  { t("common:contact.title") }
-                </p>
                 <p>
-                  { t("common:contact.lead") }
+                  { "Website designed by" }&nbsp;
+                  <a href="//lapidus.se" target="_blank">
+                    { "Lapidus Interactive" }
+                  </a>
                 </p>
-                <a href="#">
-                  { t("common:contact.email") }
-                </a>
               </div>
-
-              <div className="col base-10 base-offset-1 small">
+              <div className="col sm-3">
                 <p>
                   &copy;&nbsp;{ t("common:copyright") }
                 </p>
               </div>
-
             </div>
           </footer>
         </div>

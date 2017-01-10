@@ -33,6 +33,7 @@
   /*--color-grey-light:  #EFEBE9;*/
   --color-grey-light:  #F6F4F2;
   --color-grey-dark:   #263238;
+  --color-grey-darker: #162228;
 
   --text-color-base:   var(--color-grey-dark);
 

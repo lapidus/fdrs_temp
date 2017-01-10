@@ -83,7 +83,11 @@ class Home extends React.Component {
     ]
 
     return (
-      <section className="relative">
+      <section className="relative" style={{
+             backgroundImage: "url(/img/landing-bg.jpg)",
+             backgroundRepeat: "no-repeat",
+             backgroundSize: "100% auto"
+           }}>
         <img src="/img/ipads2.png" className="absolute t0 r0 base-12 xs-8 sm-7 lg-6" style={{ transform: "translateY(-20%)" }}/>
         <header className='block relative px1 py4'>
           <div className='clearfix mxn1'>
