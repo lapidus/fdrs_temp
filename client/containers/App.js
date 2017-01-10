@@ -98,7 +98,7 @@ class App extends React.Component {
                     height={ 68 }
                     className="inline-block align-middle mx1"
                   /></a>
-                  <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
+                  <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue, sans-serif"}}>
                     <Link to="/fdrs" className='color-regular caps'>
                       <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
                     </Link>
@@ -111,7 +111,7 @@ class App extends React.Component {
                     height={ 68 }
                     className="inline-block align-middle mx1"
                   /></a>
-                  <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
+                  <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue, sans-serif"}}>
                     <Link to="/" className='color-regular'>
                       <span className='color-primary'>{ "Data.ifrc.org" }</span>
                     </Link>
@@ -261,7 +261,7 @@ class App extends React.Component {
               router.location.pathname !== "/" ? (
                 <div className="clearfix py2">
                   <div className="col sm-3 sm-offset-1">
-                    <p className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue"}}>
+                    <p className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue, sans-serif"}}>
                       <Link to="/fdrs" className='color-inverted caps'>
                         <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
                       </Link>
