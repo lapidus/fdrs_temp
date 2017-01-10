@@ -112,7 +112,7 @@ class SocietyRow extends React.Component {
     return (
       <tr>
         <td className="p1 base-4 sm-4">
-          <Link to={`/societies/${nationalSociety.slug}`} className="color-primary">
+          <Link to={`/fdrs/societies/${nationalSociety.slug}`} className="color-primary">
             { nationalSociety.NSO_DON_name }
           </Link>
         </td>

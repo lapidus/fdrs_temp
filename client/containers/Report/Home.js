@@ -103,7 +103,7 @@ class Home extends React.Component {
                 <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-1.jpg">
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2 light">
-                    <Link to={prefixLanguageToRoute(language,"/report/who-we-are")}>
+                    <Link to={prefixLanguageToRoute(language,"/fdrs/report/who-we-are")}>
                       <span>{t("report-common:chapters.chapter1.title")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -131,7 +131,7 @@ class Home extends React.Component {
                 <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-2.jpg">
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
-                    <Link to={prefixLanguageToRoute(language,"/report/what-we-do")}>
+                    <Link to={prefixLanguageToRoute(language,"/fdrs/report/what-we-do")}>
                       <span>{t("report-common:chapters.chapter2.title")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -145,7 +145,7 @@ class Home extends React.Component {
                 <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-3.jpg">
                   <p className="subhead color-primary m0 px2 pt2">{t("report-common:home.sections.0.title")}</p>
                   <h3 className="display-1 m0 px2">
-                    <Link to={prefixLanguageToRoute(language,"/report/living-our-fundamental-principles")}>
+                    <Link to={prefixLanguageToRoute(language,"/fdrs/report/living-our-fundamental-principles")}>
                       <span>{t("report-common:chapters.chapter3.title")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -183,7 +183,7 @@ class Home extends React.Component {
               <div className="col sm-5 sm-offset-1">
                 <RatioCard ratio="10:6" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-1.jpg"}>
                   <p className="display-1 m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(language,"/report/strategic-aim-1")}>
+                    <Link to={prefixLanguageToRoute(language,"/fdrs/report/strategic-aim-1")}>
                       <span>{t("report-common:chapters.chapter4.pretitle")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -211,7 +211,7 @@ class Home extends React.Component {
               <div className="col sm-5">
                 <RatioCard ratio="10:6" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-2.jpg"}>
                   <p className="display-1 m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(language,"/report/strategic-aim-2")}>
+                    <Link to={prefixLanguageToRoute(language,"/fdrs/report/strategic-aim-2")}>
                       <span>{t("report-common:chapters.chapter5.pretitle")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -225,7 +225,7 @@ class Home extends React.Component {
               <div className="col sm-5 sm-offset-1">
                 <RatioCard ratio="10:6" contentClass="bg-primary" backgroundImage={"/img/strategic-aim-3.jpg"}>
                   <p className="display-1 m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(language,"/report/strategic-aim-3")}>
+                    <Link to={prefixLanguageToRoute(language,"/fdrs/report/strategic-aim-3")}>
                       <span>{t("report-common:chapters.chapter6.pretitle")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -264,7 +264,7 @@ class Home extends React.Component {
               <div className="col sm-5 sm-offset-1">
                 <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-7.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(language,"/report/enabling-action-1")}>
+                    <Link to={prefixLanguageToRoute(language,"/fdrs/report/enabling-action-1")}>
                       <span>{t("report-common:chapters.chapter7.pretitle")} </span>
                       {/* <Icon name="goto" width="28px" height="28px"/> */}
                     </Link>
@@ -292,7 +292,7 @@ class Home extends React.Component {
               <div className="col sm-5">
                 <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-8.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(language,"/report/enabling-action-2")}>
+                    <Link to={prefixLanguageToRoute(language,"/fdrs/report/enabling-action-2")}>
                       <span>{t("report-common:chapters.chapter8.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
@@ -306,7 +306,7 @@ class Home extends React.Component {
               <div className="col sm-5 sm-offset-1">
                 <RatioCard ratio="10:6" contentClass="bg-dark" gradient={true} backgroundImage="/img/chapters/chapter-9.jpg">
                   <p className="display-1 color-primary m0 px2 pt2">
-                    <Link to={prefixLanguageToRoute(language,"/report/enabling-action-3")}>
+                    <Link to={prefixLanguageToRoute(language,"/fdrs/report/enabling-action-3")}>
                       <span>{t("report-common:chapters.chapter9.pretitle")} </span>
                       <Icon name="goto" width="28px" height="28px"/>
                     </Link>
@@ -345,7 +345,7 @@ class Home extends React.Component {
                 <p className="lead">{t("report-common:chapters.data.body.1")} <Icon name="goto" width="24px" height="24px"/></p>
                 <br />
                 <br />
-                <Link to={prefixLanguageToRoute(language,"/data")} className="btn bg-primary p1">{t("report-common:chapters.data.button")} <Icon name="goto" width="24px" height="24px"/></Link>
+                <Link to={prefixLanguageToRoute(language,"/fdrs/data")} className="btn bg-primary p1">{t("report-common:chapters.data.button")} <Icon name="goto" width="24px" height="24px"/></Link>
               </div>
             </div>
           </div>

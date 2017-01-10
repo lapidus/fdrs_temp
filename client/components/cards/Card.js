@@ -134,7 +134,7 @@ class Card extends React.Component {
               }
             </div>
           }
-          <Link to={`/overview?currentIndicator=${this.props.indicator}`} className={this.props.indicator ? "btn" : "btn opacity-0"}>
+          <Link to={`/fdrs/overview?currentIndicator=${this.props.indicator}`} className={this.props.indicator ? "btn" : "btn opacity-0"}>
             <span className="small">{ "show on map" }</span>
           </Link>
         </footer>

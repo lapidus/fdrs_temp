@@ -35,8 +35,8 @@ class FAQ extends React.Component {
     return (
       <section>
         <Breadcrumbs links={[
-          { name: "Home", path: "/" },
-          { name: "FAQ", path: "/faq" },
+          { name: "Home", path: "/fdrs" },
+          { name: "FAQ", path: "/fdrs/faq" },
         ]}/>
         <div className="px1">
           <div className="clearfix mxn1">
@@ -86,7 +86,7 @@ class FAQ extends React.Component {
             <div className="col sm-10 sm-offset-1 px1">
               <h2 className="headline sm-display-1 light mt0">{ "For data collectors" }</h2>
               <p className="lead">{ "To get started with the data collection for your National Society, please log in." }</p>
-              <Link to="/" className="btn btn--raised bg-primary">
+              <Link to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">{ "Login as data collector" }</span>
               </Link>
             </div>

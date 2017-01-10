@@ -19,8 +19,8 @@ class Societies extends React.Component {
       <section>
 
         <Breadcrumbs links={[
-          { name: pageData.home, path: "/" },
-          { name: pageData.navigation[0].name, path: "/" },
+          { name: pageData.home, path: "/fdrs" },
+          { name: pageData.navigation[0].name, path: "/fdrs" },
           { name: pageData.navigation[0].dropdownItems[1], path: undefined },
         ]}/>
 
@@ -28,7 +28,7 @@ class Societies extends React.Component {
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/overview" className="block p1">
+                <Link to="/fdrs/overview" className="block p1">
                   <span className="xs-visible">
                     { t("societies:tabs")[0][0] }&nbsp;
                   </span>
@@ -36,7 +36,7 @@ class Societies extends React.Component {
                 </Link>
               </li>
               <li className="inline-block">
-                <Link to="/societies" className="block bg-white p1">
+                <Link to="/fdrs/societies" className="block bg-white p1">
                   <span className="xs-visible">
                     { t("societies:tabs")[1][0] }&nbsp;
                   </span>
@@ -65,7 +65,7 @@ class Societies extends React.Component {
                   {
                     this.props.nationalSocieties.slice(0,societiesPerCol).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
-                        <Link to={prefixLanguageToRoute(language, `/societies/${society.slug}`)}>{ society.NSO_DON_name }</Link>
+                        <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>{ society.NSO_DON_name }</Link>
                       </li>
                     ))
                   }
@@ -74,7 +74,7 @@ class Societies extends React.Component {
                   {
                     this.props.nationalSocieties.slice(societiesPerCol,societiesPerCol*2).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
-                        <Link to={prefixLanguageToRoute(language, `/societies/${society.slug}`)}>{ society.NSO_DON_name }</Link>
+                        <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>{ society.NSO_DON_name }</Link>
                       </li>
                     ))
                   }
@@ -83,7 +83,7 @@ class Societies extends React.Component {
                   {
                     this.props.nationalSocieties.slice(societiesPerCol*2,societiesPerCol*3).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
-                        <Link to={prefixLanguageToRoute(language, `/societies/${society.slug}`)}>{ society.NSO_DON_name }</Link>
+                        <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>{ society.NSO_DON_name }</Link>
                       </li>
                     ))
                   }

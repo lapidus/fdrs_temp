@@ -6,7 +6,7 @@ import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
 
 const BreadCrumbs = ({ language, chapter }) =>
   <div>
-    <Link to={ prefixLanguageToRoute(language, "/") }>
+    <Link to={ prefixLanguageToRoute(language, "/fdrs/report") }>
       <span>{ "Home" }</span>
     </Link>
     <span style={{ padding: "0 1em" }}>{ "›" }</span>

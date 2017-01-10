@@ -97,17 +97,17 @@ class Report extends React.Component {
             <div className="col sm-8 sm-offset-0 md-offset-2">
               <ul className="m0 py1 px0 small strong">
                 <li className="inline-block mr1">
-                  <Link to="/">
+                  <Link to="/fdrs">
                     {"Home"}
                   </Link>
                 </li>
                 <li className="inline-block mr1">
-                  <Link to="/">
+                  <Link to="/fdrs/services">
                     {"Services"}
                   </Link>
                 </li>
                 <li className="inline-block mr1">
-                  <Link to="/report">
+                  <Link to="/fdrs/report">
                     {"Report"}
                   </Link>
                 </li>

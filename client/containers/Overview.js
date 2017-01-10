@@ -100,8 +100,8 @@ class Overview extends React.Component {
       <section>
 
         <Breadcrumbs links={[
-          { name: pageData.home, path: "/" },
-          { name: pageData.navigation[0].name, path: "/" },
+          { name: pageData.home, path: "/fdrs" },
+          { name: pageData.navigation[0].name, path: "/fdrs" },
           { name: pageData.navigation[0].dropdownItems[0], path: undefined },
         ]}/>
 
@@ -109,7 +109,7 @@ class Overview extends React.Component {
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/overview" className="block bg-white p1">
+                <Link to="/fdrs/overview" className="block bg-white p1">
                   <span className="xs-visible">
                     { t("overview:tabs")[0][0] }&nbsp;
                   </span>
@@ -117,7 +117,7 @@ class Overview extends React.Component {
                 </Link>
               </li>
               <li className="inline-block">
-                <Link to="/societies" className="block p1">
+                <Link to="/fdrs/societies" className="block p1">
                   <span className="xs-visible">
                     { t("overview:tabs")[1][0] }&nbsp;
                   </span>
@@ -206,7 +206,7 @@ class Overview extends React.Component {
                          }
                          bubbleMouseLeave={ () => this.props.hideTooltip() }
                          bubbleClick={ (e, bubble, indicator) => {
-                           router.push(`/societies/${bubble.slug}`)
+                           router.push(`/fdrs/societies/${bubble.slug}`)
                          }}
                         />
                   )
@@ -265,7 +265,7 @@ class Overview extends React.Component {
               <p className="lead">
                 { pageData.nationalSocietiesPreview.lead }
               </p>
-              <Link to="/" className="btn btn--raised bg-primary">
+              <Link to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">
                   { pageData.nationalSocietiesPreview.button }
                 </span>
@@ -283,7 +283,7 @@ class Overview extends React.Component {
               <p className="lead">
                 { pageData.dataCollectors.lead }
               </p>
-              <Link to="/" className="btn btn--raised bg-primary">
+              <Link to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">
                   { pageData.dataCollectors.button }
                 </span>

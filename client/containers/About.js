@@ -7,8 +7,8 @@ class About extends React.Component {
     return (
       <section>
         <Breadcrumbs links={[
-          { name: "Home", path: "/" },
-          { name: "About", path: "/about" },
+          { name: "Home", path: "/fdrs" },
+          { name: "About", path: "/fdrs/about" },
         ]}/>
         <div className="px1">
           <div className="clearfix mxn1">

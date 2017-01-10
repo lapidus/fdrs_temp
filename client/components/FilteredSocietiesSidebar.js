@@ -74,7 +74,7 @@ class FilteredSocietiesSidebar extends React.Component {
               {
                 filteredSocieties.map((ns, i) =>
                   <li className="block" key={ i }>
-                    <Link to={ `/societies/${ ns.slug }` } onClick={ this.handleFilterReset } className="block btn">
+                    <Link to={ `/fdrs/societies/${ ns.slug }` } onClick={ this.handleFilterReset } className="block btn">
                       <div className="text-left" style={{ whiteSpace:"normal" }}>
                         { ns.NSO_DON_name }
                       </div>

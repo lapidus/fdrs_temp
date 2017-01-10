@@ -44,7 +44,7 @@ const Navigation = ({ navOpen, t }, { i18n }) => {
                           { chapter.id }
                         </div>
                         <div className="pl2">
-                          <Link to={ `${langRoute}/report/${routes[chapter].slug}` }>
+                          <Link to={ `${langRoute}/fdrs/report/${routes[chapter].slug}` }>
                             <div className="title">{ t(`report-common:chapters.${chapter}.title`) }</div>
                             <hr style={{ marginBottom: "8px", marginTop: "4px" }} />
                           </Link>
@@ -77,7 +77,7 @@ const Navigation = ({ navOpen, t }, { i18n }) => {
                   { "11" }
                 </div>
                 <div className="pl3">
-                  <Link to={ `${langRoute}/report/${routes.acknowledgements.slug}` }>
+                  <Link to={ `${langRoute}/fdrs/report/${routes.acknowledgements.slug}` }>
                     <div className="title">{ t("report-common:chapters.acknowledgements.title") }</div>
                     <hr style={{ marginBottom: "8px", marginTop: "4px" }} />
                   </Link>
