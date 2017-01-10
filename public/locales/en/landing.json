@@ -1,9 +1,16 @@
 {
   "title" : "IFRC Data Initiatives",
+  "titleParts": [
+    "IFRC",
+    "Data Initiatives"
+  ],
   "lead" : "IFRC is a data-driven organization dedicated to making evidence-based decision-making",
   "about" : {
     "title" : "About Data",
-    "text" : "IFRC is aggregating its data and data literacy efforts in this prototype website. Please provide feedback to:"
+    "text" : [
+      "IFRC is aggregating its data and data literacy efforts in this prototype website.",
+      "Please provide feedback to:"
+    ]
   },
   "projects" : {
     "fdrs" : {
