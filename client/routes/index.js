@@ -19,19 +19,8 @@ const reportChildRoutes = Object.keys(report.routes).map(routeKey => ({
   },
 }))
 
-// helper to create language prefixed routes
-const langPrefixedRoutes = lang => ({
-  path: lang,
-  indexRoute: {
-    getComponent(location, cb) {
-      System.import("../containers/Home").then(loadRoute(cb)).catch(errorLoading)
-    },
-  },
-  childRoutes: childRoutes,
-})
-
-// our main child routes, extracted to reuse in the language prefixed routes
-const childRoutes = [
+// FDRS child routes
+const fdrsChildRoutes = [
   {
     path: "data",
     getComponent(location, cb) {
@@ -81,20 +70,47 @@ const childRoutes = [
   },
 ]
 
-// main routes config
+const fdrsRoutes = [
+  {
+    path: "fdrs",
+    getComponent(location, cb) {
+      System.import("../containers/FDRS").then(loadRoute(cb)).catch(errorLoading)
+    },
+    indexRoute: {
+      getComponent(location, cb) {
+        System.import("../containers/Home").then(loadRoute(cb)).catch(errorLoading)
+      }
+    },
+    childRoutes: fdrsChildRoutes
+  }
+]
+
 const routes = {
   component: App,
-  childRoutes: [ {
-    path: "/",
-    getComponent(location, cb) {
-      System.import("../containers/Home").then(loadRoute(cb)).catch(errorLoading)
-    },
-  } ],
+  childRoutes: [
+    {
+      path: "/",
+      getComponent(location, cb) {
+        System.import("../containers/Landing").then(loadRoute(cb)).catch(errorLoading)
+      },
+    }
+  ]
 }
 
 // add main child routes, default ("en" skipped in the url)
-routes.childRoutes = routes.childRoutes.concat(childRoutes)
-// and language prefixed
+routes.childRoutes = routes.childRoutes.concat(fdrsRoutes)
+
+// helper to create language prefixed routes
+const langPrefixedRoutes = lang => ({
+  path: lang,
+  indexRoute: {
+    getComponent(location, cb) {
+      System.import("../containers/Landing").then(loadRoute(cb)).catch(errorLoading)
+    },
+  },
+  childRoutes: fdrsRoutes,
+})
+
 routes.childRoutes.push(
   langPrefixedRoutes("fr"),
   langPrefixedRoutes("es"),
