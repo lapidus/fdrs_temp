@@ -60,7 +60,10 @@ class Society extends React.Component {
       year: getLatestYearDocuments(props),
       earliestData: minBy(props.data, (o) => o.KPI_Year),
       latestData: maxBy(props.data, (o) => o.KPI_Year),
-      filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(props), props.documents)
+      filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(props), props.documents),
+      latestPopulationData: maxBy(props.data, (o) => o.Population ? o.KPI_Year : 0),
+      latestGDPData: maxBy(props.data, (o) => o.GDP ? o.KPI_Year : 0),
+      latestPovertyData: maxBy(props.data, (o) => o.Poverty ? o.KPI_Year : 0),
     }
 
     this.handleYearChange = this.handleYearChange.bind(this)
@@ -81,6 +84,9 @@ class Society extends React.Component {
         earliestData: minBy(nextProps.data, (o) => o.KPI_Year),
         latestData: maxBy(nextProps.data, (o) => o.KPI_Year),
         filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(nextProps), nextProps.documents),
+        latestPopulationData: maxBy(nextProps.data, (o) => o.Population ? o.KPI_Year : 0),
+        latestGDPData: maxBy(nextProps.data, (o) => o.GDP ? o.KPI_Year : 0),
+        latestPovertyData: maxBy(nextProps.data, (o) => o.Poverty ? o.KPI_Year : 0),
       })
     }
   }
@@ -263,20 +269,25 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(latestData.Population, 2) !== "N/A"}>
+                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(this.state.latestPopulationData.Population, 2) !== "N/A"}>
                     <CardView viewIcon="plainNumber">
-                      <div className="pt3 px1">
-                        <p className="display-2 strong mb0">{ niceNum(latestData.Population, 1) }</p>
-                        <p className="m0">
-                          {
-                            niceNum(latestData.Population, 2) == "N/A" ? (
-                              missingDataString("population", t(`countries:${society.iso_2}`), latestData.KPI_Year)
-                            ) : (
-                              `population of ${t(`countries:${society.iso_2}`)} in 2015`
-                            )
-                          }
-                        </p>
-                      </div>
+                      {
+                        niceNum(this.state.latestPopulationData.Population, 2) !== "N/A" ? (
+                          <div className="pt3 px1">
+                            <p className="display-2 strong m0">{ niceNum(this.state.latestPopulationData.Population) }</p>
+                            <p className="m0">
+                              { `The population of ${t(`countries:${society.iso_2}`)} in ${this.state.latestPopulationData.KPI_Year}` }
+                            </p>
+                          </div>
+                        ) : (
+                          <div className="pt3 px1">
+                            <p className="display-2 strong mb0">{ niceNum(this.state.latestPopulationData.Population) }</p>
+                            <p className="m0">
+                              { missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
+                            </p>
+                          </div>
+                        )
+                      }
                     </CardView>
                     <CardOverlay>
                       <p>
@@ -496,18 +507,25 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card initialView={ 0 } bgColor="bg-beige" basicCard controlsVisible={niceNum(latestData.Poverty) !== "N/A"}>
+                  <Card initialView={ 0 } bgColor="bg-beige" basicCard controlsVisible={niceNum(this.state.latestPovertyData.Poverty) !== "N/A"}>
                     <CardView viewIcon="plainNumber">
-                      <div className="pt3 px1">
-                        <p className="display-2 strong mb0">{ niceNum(latestData.Poverty) }</p>
-                        <p className="m0">{
-                          niceNum(latestData.Poverty) === "N/A" ? (
-                            missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year)
-                          ) : (
-                            `percentage of ${t(`countries:${society.iso_2}`)} population living below the poverty line in 2015`
-                          )
-                        }</p>
-                      </div>
+                      {
+                        niceNum(this.state.latestPovertyData.Poverty) !== "N/A" ? (
+                          <div className="pt3 px1">
+                            <p className="display-2 strong mb0">{ niceNum(this.state.latestPovertyData.Poverty) }%</p>
+                            <p className="m0">
+                              { `percentage of population of ${t(`countries:${society.iso_2}`)} living below the poverty line in ${this.state.latestPovertyData.KPI_Year}` }
+                            </p>
+                          </div>
+                        ) : (
+                          <div className="pt3 px1">
+                            <p className="display-2 strong mb0">{ niceNum(this.state.latestPovertyData.Poverty) }</p>
+                            <p className="m0">
+                              { missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
+                            </p>
+                          </div>
+                        )
+                      }
                     </CardView>
                     <CardOverlay>
                       <p>
@@ -631,26 +649,29 @@ class Society extends React.Component {
                 </div>
 
                 <div className="col sm-6 lg-4 px1 pb2">
-                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(latestData.GDP) !== "N/A"}>
+                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(this.state.latestGDPData.GDP) !== "N/A"}>
                     <CardView>
-                      <div className="pt3 px1">
-                        <p className="small strong m0">
-                          { niceNum(latestData.GDP) === "N/A" ? "" : "CHF" }
-                        </p>
-                        <p className="display-1 strong m0">{ niceNum(latestData.GDP) }</p>
-                        <p className="m0">
-                          {
-                            niceNum(latestData.GDP) === "N/A" ? (
-                              missingDataString("GDP", t(`countries:${society.iso_2}`), latestData.KPI_Year)
-                            ) : (
-                              `${t(`countries:${society.iso_2}`)} GDP in ${latestData.KPI_Year}`
-                            )
-                          }
-                        </p>
-                      </div>
+                      {
+                        niceNum(this.state.latestGDPData.GDP) !== "N/A" ? (
+                          <div className="pt3 px1">
+                            <p className="small strong m0">
+                              { niceNum(this.state.latestGDPData.GDP) === "N/A" ? "" : "CHF" }
+                            </p>
+                            <p className="display-1 strong m0">{ niceNum(this.state.latestGDPData.GDP) }</p>
+                            <p className="m0">
+                              { `GDP of ${t(`countries:${society.iso_2}`)} in ${this.state.latestGDPData.KPI_Year}` }
+                            </p>
+                          </div>
+                        ) : (
+                          <div className="pt3 px1">
+                            <p className="display-2 strong mb0">{ niceNum(this.state.latestGDPData.GDP) }</p>
+                            <p className="m0">
+                              { missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
+                            </p>
+                          </div>
+                        )
+                      }
                     </CardView>
-                    <CardView>{ "View 1" }</CardView>
-                    <CardView>{" View 2" }</CardView>
                     <CardOverlay>
                       <p>{ "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + ". It is possible to view the aggregated numbers, as well as gender specific statistics." }</p>
                       <p><a href="#">{ "source of the data" }</a></p>
