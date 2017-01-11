@@ -31,11 +31,14 @@ class Globe extends React.Component {
             .precision(.1)
   }
   loadCountries() {
-    json("/api/report/world-topo.json", (err, world) => {
-      if(err) console.log(err)
-      this.setState({
-        countries: topojson.feature(world, world.objects.countries).features,
-        loading: false,
+    return new Promise((resolve, reject) => {
+      json("/api/report/world-topo.json", (err, world) => {
+        if (err) console.log(err)
+        this.setState({
+          countries: topojson.feature(world, world.objects.countries).features,
+          loading: false,
+        })
+        resolve()
       })
     })
   }
