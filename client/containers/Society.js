@@ -7,6 +7,7 @@ import maxBy from "lodash/maxBy"
 import map from "lodash/fp/map"
 import filter from "lodash/fp/filter"
 import uniqBy from "lodash/fp/uniqBy"
+import sortBy from "lodash/sortBy"
 import niceNum from "../utils/niceNum"
 
 import { translate } from "react-i18next"
@@ -60,7 +61,7 @@ class Society extends React.Component {
       year: getLatestYearDocuments(props),
       earliestData: minBy(props.data, (o) => o.KPI_Year),
       latestData: maxBy(props.data, (o) => o.KPI_Year),
-      filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(props), props.documents),
+      filteredDocuments: sortBy(filter(d => +d.year === +getLatestYearDocuments(props), props.documents), (o) => Number(o.year)),
       latestPopulationData: maxBy(props.data, (o) => o.Population ? o.KPI_Year : 0),
       latestGDPData: maxBy(props.data, (o) => o.GDP ? o.KPI_Year : 0),
       latestPovertyData: maxBy(props.data, (o) => o.Poverty ? o.KPI_Year : 0),
@@ -83,7 +84,8 @@ class Society extends React.Component {
         year: getLatestYearDocuments(nextProps),
         earliestData: minBy(nextProps.data, (o) => o.KPI_Year),
         latestData: maxBy(nextProps.data, (o) => o.KPI_Year),
-        filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(nextProps), nextProps.documents),
+        // filteredDocuments: filter(d => +d.year === +getLatestYearDocuments(nextProps), nextProps.documents),
+        filteredDocuments: sortBy(filter(d => +d.year === +getLatestYearDocuments(nextProps), nextProps.documents), (o) => Number(o.year)),
         latestPopulationData: maxBy(nextProps.data, (o) => o.Population ? o.KPI_Year : 0),
         latestGDPData: maxBy(nextProps.data, (o) => o.GDP ? o.KPI_Year : 0),
         latestPovertyData: maxBy(nextProps.data, (o) => o.Poverty ? o.KPI_Year : 0),
@@ -94,7 +96,8 @@ class Society extends React.Component {
   handleYearChange(year) {
     this.setState({
       year: year.value,
-      filteredDocuments: filter(d => +d.year === +year.value, this.props.documents),
+      // filteredDocuments: filter(d => +d.year === +year.value, this.props.documents),
+      filteredDocuments: sortBy(filter(d => +d.year === +year.value, this.props.documents), (o) => Number(o.year)),
     })
   }
 
@@ -146,10 +149,10 @@ class Society extends React.Component {
                   <span>
                     <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g transform="translate(0, 0)">
-                        <path dataCap="butt" fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M5.7,3C6.4,3.5,7,4.1,7.5,5C7.9,5.7,8.9,7.8,8,9c-1,1.3-4,1.8-4,3c0,0.9,1.3,2,2,3c1,1.5,0.6,3,0,4c-0.3,0.5-0.8,0.9-1.3,1.2" strokeLinejoin="miter" strokeLinecap="butt"/>
-                        <path dataCap="butt" fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M20.6,5.2C18.5,6.3,15.5,7,15,7c-1,0.1-1.2-0.8-2-2c-0.6-0.9-2-2.1-2-3c0-0.4,0-0.7,0.1-1" strokeLinejoin="miter" strokeLinecap="butt"/>
+                        <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M5.7,3C6.4,3.5,7,4.1,7.5,5C7.9,5.7,8.9,7.8,8,9c-1,1.3-4,1.8-4,3c0,0.9,1.3,2,2,3c1,1.5,0.6,3,0,4c-0.3,0.5-0.8,0.9-1.3,1.2" strokeLinejoin="miter" strokeLinecap="butt"/>
+                        <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M20.6,5.2C18.5,6.3,15.5,7,15,7c-1,0.1-1.2-0.8-2-2c-0.6-0.9-2-2.1-2-3c0-0.4,0-0.7,0.1-1" strokeLinejoin="miter" strokeLinecap="butt"/>
                         <circle fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" cx="12" cy="12" r="11" strokeLinejoin="miter"/>
-                        <path dataCap="butt" fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M19,12.9c0,3.1-4,6.9-6,6.1c-1.8-0.7-0.5-2.1-1-6.1c-0.2-1.6,1.6-3,3.5-3S19,11.2,19,12.9z" strokeLinejoin="miter" strokeLinecap="butt"/>
+                        <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M19,12.9c0,3.1-4,6.9-6,6.1c-1.8-0.7-0.5-2.1-1-6.1c-0.2-1.6,1.6-3,3.5-3S19,11.2,19,12.9z" strokeLinejoin="miter" strokeLinecap="butt"/>
                       </g>
                     </svg>
                   </span>
@@ -164,9 +167,9 @@ class Society extends React.Component {
                   <span>
                     <svg style={{width:16,height:16,marginTop:-3,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g  transform="translate(0, 0)">
-                        <path dataCap="butt" fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M12,23c-2-1.6-2.1-6.8,1-8c1.6-0.6,2.2,2.9,5.4,2c0.6-0.2,2.1,0.7,1.6,2.1" strokeLinejoin="miter" strokeLinecap="butt"/>
-                        <path dataCap="butt" fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M6.3,4.8c0.6,0.5,1.1,1.1,1.6,1.8c0.4,0.7,1.3,2.6,0.5,3.6c-0.9,1.2-3.6,1.6-3.6,2.7c0,0.8,1.2,1.8,1.8,2.7c1,1.4,0.5,2.8,0,3.6c-0.3,0.5-0.7,0.8-1.2,1.1" strokeLinejoin="miter" strokeLinecap="butt"/>
-                        <path dataCap="butt" fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M20.2,7.3C21.3,8.9,22,10.9,22,13c0,5.5-4.5,10-10,10S2,18.5,2,13S6.5,3,12,3c0.5,0,1,0,1.5,0.1" strokeLinejoin="miter" strokeLinecap="butt"/>
+                        <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M12,23c-2-1.6-2.1-6.8,1-8c1.6-0.6,2.2,2.9,5.4,2c0.6-0.2,2.1,0.7,1.6,2.1" strokeLinejoin="miter" strokeLinecap="butt"/>
+                        <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M6.3,4.8c0.6,0.5,1.1,1.1,1.6,1.8c0.4,0.7,1.3,2.6,0.5,3.6c-0.9,1.2-3.6,1.6-3.6,2.7c0,0.8,1.2,1.8,1.8,2.7c1,1.4,0.5,2.8,0,3.6c-0.3,0.5-0.7,0.8-1.2,1.1" strokeLinejoin="miter" strokeLinecap="butt"/>
+                        <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M20.2,7.3C21.3,8.9,22,10.9,22,13c0,5.5-4.5,10-10,10S2,18.5,2,13S6.5,3,12,3c0.5,0,1,0,1.5,0.1" strokeLinejoin="miter" strokeLinecap="butt"/>
                         <path fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M21,5c0,2.5-4,6-4,6s-4-3.5-4-6c0-2.5,2.1-4,4-4S21,2.5,21,5z" strokeLinejoin="miter"/>
                       </g>
                     </svg>
@@ -280,7 +283,7 @@ class Society extends React.Component {
                         <p className="m0">{ `people volunteering time for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
-                    <CardView viewIcon="genderChart">{ "View 2" }</CardView>
+                    {/* <CardView viewIcon="genderChart">{ "View 2" }</CardView> */}
                     <CardOverlay>
                       <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleVolunteering")[0].description }</p>
                       <p><a href="#">{ "source of the data" }</a></p>
@@ -315,7 +318,7 @@ class Society extends React.Component {
                           niceNum(latestData.Population, 2) == "N/A" ? (
                             missingDataString("population", t(`countries:${society.iso_2}`), latestData.KPI_Year)
                           ) : (
-                            "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + ". It is possible to view the aggregated numbers, as well as gender specific statistics."
+                            "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + "."
                           )
                         }
                       </p>
@@ -442,20 +445,33 @@ class Society extends React.Component {
                             data.map(d => {
                               return ({
                                 x: new Date(d.KPI_Year, 1, 1),
-                                y: Number(d["KPI_expenditureLC (CHF)"]) || null,
+                                y: Number(d["KPI_expenditureLC (CHF)"]) || null
                               })
                             }),
                             data.map(d => {
                               return ({
                                 x: new Date(d.KPI_Year, 1, 1),
-                                y: Number(d["KPI_IncomeLC (CHF)"]) || null,
+                                y: Number(d["KPI_IncomeLC (CHF)"]) || null
                               })
                             }),
                           ] }
                         />
                       </div>
                     </CardView>
-                    <CardView viewIcon="plainNumber">{ "View 1" }</CardView>
+                    <CardView viewIcon="plainNumber">
+                      <div className="p1">
+                        <div className="clearfix mxn1">
+                          <div className="col sm-6 px1">
+                            <p className="display-1 strong m0">{ niceNum(latestData["KPI_IncomeLC (CHF)"]) }</p>
+                            <p className="m0">{ `Income in CHF of ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                          </div>
+                          <div className="col sm-6 px1">
+                            <p className="display-1 strong m0">{ niceNum(latestData["KPI_expenditureLC (CHF)"]) }</p>
+                            <p className="m0">{ `Expenditure in CHF of ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                          </div>
+                        </div>
+                      </div>
+                    </CardView>
                     <CardOverlay>
                       <p>
                         { timeSeriesMeta.filter(obj => obj.id === "KPI_IncomeLC (CHF)")[0].description }
@@ -514,7 +530,7 @@ class Society extends React.Component {
                         <p className="m0">{ `paid staff for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
-                    <CardView viewIcon="genderChart">{ "View 2" }</CardView>
+                    {/* <CardView viewIcon="genderChart">{ "View 2" }</CardView> */}
                     <CardOverlay>
                       <p>
                         { timeSeriesMeta.filter(obj => obj.id === "KPI_noPaidStaff")[0].description }
@@ -549,7 +565,7 @@ class Society extends React.Component {
                     </CardView>
                     <CardOverlay>
                       <p>
-                        { "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + ". It is possible to view the aggregated numbers, as well as gender specific statistics." }
+                        { "This card shows the poverty statistics for " + t(`countries:${society.iso_2}`) + "." }
                       </p>
                       <p>
                         <a href="#">{ "source of the data" }</a>
@@ -693,7 +709,7 @@ class Society extends React.Component {
                       }
                     </CardView>
                     <CardOverlay>
-                      <p>{ "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + ". It is possible to view the aggregated numbers, as well as gender specific statistics." }</p>
+                      <p>{ "This card shows the GDP statistics for " + t(`countries:${society.iso_2}`) + "." }</p>
                       <p><a href="#">{ "source of the data" }</a></p>
                     </CardOverlay>
                   </Card>
@@ -745,11 +761,30 @@ class Society extends React.Component {
                               <article className="col sm-4 px1 py05" key={ i }>
                                 <div className="clearfix mxn1">
                                   <div className="inline-block align-top sm-12 px1">
-                                    <div className="bg-secondary" style={{ width:60,height:60 }}></div>
+                                    <div style={{ width:48,height:48 }}>
+                                      <svg width="48px" height="48px" viewBox="0 0 48 48">
+                                        <g transform="translate(0, 0)">
+                                          <polyline fill="none" stroke="#c6c6c6" strokeWidth="2" strokeMiterlimit="10" points="30,2 30,14 42,14 " strokeLinejoin="miter" strokeLinecap="butt"/>
+                                          <polygon fill="none" stroke="#c6c6c6" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="30,2 6,2 6,46 42,46 42,14 " strokeLinejoin="miter"/>
+                                          <line fill="none" stroke="#c6c6c6" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="14" y1="36" x2="34" y2="36" strokeLinejoin="miter"/>
+                                          <line fill="none" stroke="#c6c6c6" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="14" y1="26" x2="34" y2="26" strokeLinejoin="miter"/>
+                                          <line fill="none" stroke="#c6c6c6" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="14" y1="16" x2="22" y2="16" strokeLinejoin="miter"/>
+                                        </g>
+                                      </svg>
+                                    </div>
                                   </div>
                                   <div className="inline-block align-top sm-12 px1">
                                     <h1 className="strong subhead mt0 sm-my1">{ `${doc.document_type} - ${doc.year}` }</h1>
                                     <a href={ 'http://data-staging.ifrc.org/downloads/' + doc.path } target="_blank" rel="noopener noreferrer" className="btn bg-primary">
+                                      <span>
+                                        <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
+                                          <g transform="translate(0, 0)" style={{stroke:"currentcolor"}}>
+                                            <line fill="none" strokeWidth="2" strokeMiterlimit="10" x1="12" y1="9" x2="12" y2="22" strokeLinejoin="miter" strokeLinecap="butt"/>
+                                            <polyline fill="none" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="15,19 12,22 9,19 " strokeLinejoin="miter"/>
+                                            <path fill="none" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M17,16h2c2.209,0,4-1.791,4-4c0-2.197-1.782-4.013-4.025-3.997C18.718,4.093,15.474,1,11.5,1C7.481,1,4.21,4.164,4.018,8.136C2.287,8.575,1,10.132,1,12c0,2.209,1.791,4,4,4h2" strokeLinejoin="miter"/>
+                                          </g>
+                                        </svg>
+                                      </span>
                                       { t("common:download") }
                                     </a>
                                   </div>
