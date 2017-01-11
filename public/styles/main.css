@@ -1921,6 +1921,9 @@ strong,
 .bg-beige { background: #8D8070; color: #FFFFFF;
 
 }
+.btn.bg-primary { color: #FFFFFF !important;
+
+}
 .fill-primary { fill: #D0021B;
 
 }

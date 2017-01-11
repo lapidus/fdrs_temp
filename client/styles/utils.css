@@ -12,6 +12,10 @@
 .bg-darker    { background: var(--color-grey-darker); color: var(--color-white);     }
 .bg-beige     { background: #8D8070;                  color: var(--color-white);     }
 
+.btn.bg-primary {
+  color: var(--color-primary-contrast) !important;
+}
+
 .fill-primary { fill: var(--color-primary); }
 .fill-secondary { fill: var(--color-secondary); }
 .fill-grey { fill: var(--color-grey); }
