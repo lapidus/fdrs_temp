@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, "public")))
 
-app.get("/societies/:id.pdf", (req, res, next) => {
+app.get("/fdrs/societies/:id.pdf", (req, res, next) => {
   console.log("Generating PDF", `${req.protocol}://${req.get("host")}${req.originalUrl.replace(".pdf", "_pdf")}`)
 
   const options = {
