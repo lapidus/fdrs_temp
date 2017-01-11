@@ -115,7 +115,7 @@ class App extends React.Component {
                   /></a>
                   <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue, sans-serif"}}>
                     <Link to="/" className='color-regular'>
-                      <span className='color-primary'>{ "Data.ifrc.org" }</span>
+                      <span className='color-regular'>{ "IFRC DATA INITIATIVES" }</span>
                     </Link>
                   </h1>
                 </div>
