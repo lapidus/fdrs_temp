@@ -81,6 +81,8 @@ class App extends React.Component {
                             "site-header clearfix level-5 is-extended" :
                             "site-header clearfix level-5"
 
+    const prefixedRootRoute = `/${language}`
+
     return (
       <div
         dir={ language === "ar" ? "rtl" : "ltr" }
@@ -91,7 +93,7 @@ class App extends React.Component {
         <header className='relative shadow-4 px1 z-index-1000 bg-white hidden-print' style={{height:68}}>
           <div className='clearfix mxn1'>
             {
-              router.location.pathname !== "/" ? (
+              router.location.pathname !== "/" && router.location.pathname !== prefixedRootRoute ? (
                 <div className='col sm-5'>
                   <a href="http://www.ifrc.org" target="_blank"><img
                     src="/img/ifrc-logo-2.png"
@@ -120,7 +122,7 @@ class App extends React.Component {
               )
             }
             {
-              router.location.pathname !== "/" ? (
+              router.location.pathname !== "/" && router.location.pathname !== prefixedRootRoute ? (
                 <div className="absolute t0 r0 z-index-1000 sm-hidden">
                   <button className='btn bg-secondary' onClick={this.props.toggleNav}>
                     <span className='block p1' >
@@ -137,7 +139,7 @@ class App extends React.Component {
               ) : null
             }
             {
-              router.location.pathname !== "/" ? (
+              router.location.pathname !== "/" && router.location.pathname !== prefixedRootRoute ? (
                 <div className={`base-12 sm-7 ${navOpen ? "nav-drawer nav-drawer--open" : "nav-drawer"}`}>
                   <nav className="inline-block">
                     <ul className='m0 p0'>
@@ -297,7 +299,7 @@ class App extends React.Component {
 
           <footer className="site-footer bg-dark clearfix">
             {
-              router.location.pathname !== "/" ? (
+              router.location.pathname !== "/" && router.location.pathname !== prefixedRootRoute ? (
                 <div className="clearfix py2">
                   <div className="col sm-3 sm-offset-1">
                     <p className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue, sans-serif"}}>
@@ -400,11 +402,11 @@ class App extends React.Component {
                       { t("common:contact.email") }
                     </a>
                   </div>
-                  <div className="col base-10 base-offset-1 small">
+                  {/* <div className="col base-10 base-offset-1 small">
                     <p>
                       &copy;&nbsp;{ t("common:copyright") }
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               ) : null
             }
