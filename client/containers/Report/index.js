@@ -118,16 +118,16 @@ class Report extends React.Component {
                     name="chapter-selector"
                     value={this.context.router.getCurrentLocation().pathname}
                     options={[
-                      { value: "/report", label: "Introduction" },
-                      { value: "/report/who-we-are", label: "Who we are" },
-                      { value: "/report/what-we-do", label: "What we do" },
-                      { value: "/report/living-our-fundamental-principles", label: "Living our fundamental principles" },
-                      { value: "/report/strategic-aim-1", label: "Strategic aim 1" },
-                      { value: "/report/strategic-aim-2", label: "Strategic aim 2" },
-                      { value: "/report/strategic-aim-3", label: "Strategic aim 3" },
-                      { value: "/report/enabling-action-1", label: "Enabling action 1" },
-                      { value: "/report/enabling-action-2", label: "Enabling action 2" },
-                      { value: "/report/enabling-action-3", label: "Enabling action 3" },
+                      { value: "/fdrs/report", label: "Introduction" },
+                      { value: "/fdrs/report/who-we-are", label: "Who we are" },
+                      { value: "/fdrs/report/what-we-do", label: "What we do" },
+                      { value: "/fdrs/report/living-our-fundamental-principles", label: "Living our fundamental principles" },
+                      { value: "/fdrs/report/strategic-aim-1", label: "Strategic aim 1" },
+                      { value: "/fdrs/report/strategic-aim-2", label: "Strategic aim 2" },
+                      { value: "/fdrs/report/strategic-aim-3", label: "Strategic aim 3" },
+                      { value: "/fdrs/report/enabling-action-1", label: "Enabling action 1" },
+                      { value: "/fdrs/report/enabling-action-2", label: "Enabling action 2" },
+                      { value: "/fdrs/report/enabling-action-3", label: "Enabling action 3" },
                     ]}
                     onChange={ this.goToChapter }
                   />
