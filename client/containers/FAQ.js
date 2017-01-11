@@ -1,6 +1,7 @@
 
 import React from "react"
 import { Link } from "react-router"
+import { translate } from "react-i18next"
 import Breadcrumbs from "../components/Breadcrumbs"
 
 const CollapsibleHeader = ({ children }) => <span>{ children }</span>
@@ -32,6 +33,12 @@ class Collapsible extends React.Component {
 
 class FAQ extends React.Component {
   render() {
+
+    const { i18n } = this.context
+    const { t } = this.props
+
+    const questions = t("faq:questions")
+
     return (
       <section>
         <Breadcrumbs links={[
@@ -49,32 +56,42 @@ class FAQ extends React.Component {
             <div className="col sm-6 sm-offset-3 px1 pt1">
               <p className="lead">{ "This text will be the introduction for the FAQ page. Below you will find the most frequently asked questions. If your question has not been answered below, please contact the IFRC secreatariat at: " }<span className="color-primary">{ "fdrs@ifrc.org" }</span></p>
 
-              <Collapsible>
-                <CollapsibleHeader>
-                  <h1 className="headline m0">{ "1. Question goes here" }</h1>
-                </CollapsibleHeader>
-                <CollapsibleBody>
-                  <p>{ "The answer will go here, but will be hidden by default." }</p>
-                </CollapsibleBody>
-              </Collapsible>
+              {
+                questions.map((questionItem, i) => {
 
-              <Collapsible>
-                <CollapsibleHeader>
-                  <h1 className="headline m0">{ "2. Second question can go here" }</h1>
-                </CollapsibleHeader>
-                <CollapsibleBody>
-                  <p>{ "The answer will go here, but will be hidden by default." }</p>
-                </CollapsibleBody>
-              </Collapsible>
+                  const { question, answer } = questionItem
 
-              <Collapsible>
-                <CollapsibleHeader>
-                  <h1 className="headline m0">{ "3. Another question goes here" }</h1>
-                </CollapsibleHeader>
-                <CollapsibleBody>
-                  <p>{ "The answer will go here, but will be hidden by default." }</p>
-                </CollapsibleBody>
-              </Collapsible>
+                  return (
+                    <Collapsible key={ i }>
+                      <CollapsibleHeader>
+                        <h1 className="headline m0">{ question }</h1>
+                      </CollapsibleHeader>
+                      <CollapsibleBody>
+                        {
+                          answer.map((answerItem, j) => {
+                            if(typeof answerItem !== "string") {
+                              return (
+                                <ul key={ j }>
+                                  {
+                                    answerItem.map((listItem, k) => (
+                                      <li key={ k }>{ listItem }</li>
+                                    ))
+                                  }
+                                </ul>
+                              )
+                            }
+                            else {
+                              return (
+                                <p key={ j }>{ answerItem }</p>
+                              )
+                            }
+                          })
+                        }
+                      </CollapsibleBody>
+                    </Collapsible>
+                  )
+                })
+              }
 
             </div>
           </div>
@@ -97,4 +114,13 @@ class FAQ extends React.Component {
   }
 }
 
-export default FAQ
+FAQ.contextTypes = {
+  // router: React.PropTypes.object.isRequired,
+  i18n: React.PropTypes.object.isRequired
+}
+
+FAQ.propTypes = {
+  t: React.PropTypes.func.isRequired
+}
+
+export default translate("faq", { wait: true })(FAQ)

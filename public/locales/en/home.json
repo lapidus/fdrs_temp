@@ -13,17 +13,20 @@
       {
         "title": "The IFRC at a glance",
         "description": "See our work in numbers. This tool will give you an overview of what the entire Federation looks like.",
-        "button": "Explore the IFRC"
+        "button": "Explore the IFRC",
+        "slug": "overview"
       },
       {
         "title": "National Society profiles",
         "description": "Interested in a particular National Society or a specific region? This tool is for you. Here you can also download profiles as PDFs.",
-        "button": "Find your National Society"
+        "button": "Find your National Society",
+        "slug": "societies"
       },
       {
         "title": "\"Everyone Counts\" annual report",
         "description": "Our latest findings are also published in the form of an interactive annual report. Explore the report online, or download a PDF version.",
-        "button": "Read the report"
+        "button": "Read the report",
+        "slug": "report"
       }
     ]
   },

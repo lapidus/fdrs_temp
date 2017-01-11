@@ -118,20 +118,23 @@ class Home extends React.Component {
               <div className='clearfix mxn1 md-mxn3'>
                 {
                   servicesIllustrations.map((item, i) => {
+
+                    const serviceItem = t("home:services.items")[i]
+
                     return (
                       <div key={i} className='col sm-6 lg-4 px1 md-px3'>
                         <div style={{height:96}}>
                           { servicesIllustrations[i] }
                         </div>
-                        <h3 className='title sm-headline light'>
-                          { t("home:services.items")[i].title }
+                        <h3 className='title sm-headline strong'>
+                          { serviceItem.title }
                         </h3>
                         <p>
-                          { t("home:services.items")[i].description }
+                          { serviceItem.description }
                         </p>
-                        <Link to='/overview' className="btn btn--raised bg-primary">
-                          <span className='block py05 px05'>
-                            { t("home:services.items")[i].button }
+                        <Link to={`/fdrs/${serviceItem.slug}`}>
+                          <span className="strong inline-block py05" style={{borderBottom:"3px solid currentcolor"}}>
+                            { serviceItem.button }
                           </span>
                         </Link>
                       </div>
@@ -148,7 +151,7 @@ class Home extends React.Component {
 
         <div className='px1 pb4'
              style={{
-               backgroundImage: "url(/img/report-preview.png)",
+               backgroundImage: "url(/img/national-society-coverage.png)",
                backgroundSize: "auto 100%",
                backgroundRepeat: "no-repeat",
                backgroundPosition: "left"
@@ -160,14 +163,14 @@ class Home extends React.Component {
               </h2>
               <div className="clearfix mxn1">
                 <div className="col base-6 base-offset-6 px1 py4">
-                  <h2 className="title sm-headline light">
+                  <h2 className="title sm-headline strong">
                     { t("home:insights.subtitle") }
                   </h2>
                   <p>
                     { t("home:insights.description") }
                   </p>
-                  <Link to="/" className="btn btn--raised bg-primary">
-                    <span className='block py05 px1'>
+                  <Link to="/fdrs">
+                    <span className="strong inline-block py05" style={{borderBottom:"3px solid currentcolor"}}>
                       { t("home:insights.button") }
                     </span>
                   </Link>
@@ -192,7 +195,7 @@ class Home extends React.Component {
               <p className='lead'>
                 { t("common:dataCollectors.lead") }
               </p>
-              <Link to='/' className='btn btn--raised bg-primary'>
+              <Link to='/fdrs' className='btn btn--raised bg-primary'>
                 <span className='block py05 px1'>
                   { t("common:dataCollectors.button") }
                 </span>
