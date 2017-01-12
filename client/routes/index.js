@@ -28,9 +28,26 @@ const fdrsChildRoutes = [
     },
   }, {
     path: "overview",
+    // getComponent(location, cb) {
+    //   System.import("../containers/Overview").then(loadRoute(cb)).catch(errorLoading)
+    // },
     getComponent(location, cb) {
-      System.import("../containers/Overview").then(loadRoute(cb)).catch(errorLoading)
+      System.import("../containers/Overview/index").then(loadRoute(cb)).catch(errorLoading)
     },
+    childRoutes: [
+      {
+        path: "map",
+        getComponent(location, cb) {
+          System.import("../containers/Overview/OverviewMap").then(loadRoute(cb)).catch(errorLoading)
+        },
+      },
+      {
+        path: "table",
+        getComponent(location, cb) {
+          System.import("../containers/Overview/OverviewTable").then(loadRoute(cb)).catch(errorLoading)
+        },
+      }
+    ]
   }, {
     path: "faq",
     getComponent(location, cb) {
