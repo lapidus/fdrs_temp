@@ -19,6 +19,9 @@ import {
   SHOW_TOOLTIP,
   HIDE_TOOLTIP,
   SET_INDICATOR,
+  SELECT_SOCIETY,
+  UNSELECT_SOCIETY,
+  CLEAR_SOCIETIES,
 } from "../actions/appActions"
 
 export default function storyReducer(state = {
@@ -41,7 +44,8 @@ export default function storyReducer(state = {
   },
   fetchingCountries: false,
   countryPaths: null,
-  currentIndicator: "KPI_noPeopleVolunteering"
+  currentIndicator: "KPI_noPeopleVolunteering",
+  selectedSocieties: [],
 }, action) {
   switch (action.type) {
   case START_LOAD:
@@ -124,6 +128,23 @@ export default function storyReducer(state = {
   case SET_INDICATOR:
     return assign({}, state, {
       currentIndicator: action.indicator
+    })
+  case SELECT_SOCIETY:
+    return assign({}, state, {
+      selectedSocieties: state.selectedSocieties.concat([action.societyID])
+    })
+  case UNSELECT_SOCIETY:
+    const societyIndex = state.selectedSocieties.indexOf(societyID)
+    const newSocieties = state.selectedSocieties
+                              .slice(0, societyIndex)
+                              .concat(state.selectedSocieties
+                                           .slice(societyIndex + 1))
+    return assign({}, state, {
+      selectedSocieties: newSocieties
+    })
+  case CLEAR_SOCIETIES:
+    return assign({}, state, {
+      selectedSocieties: []
     })
   default:
     return state

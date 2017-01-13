@@ -37,13 +37,29 @@ const SelectedSocieties = ({
           <tbody>
             {
               selectedSocieties.map((NS, i) => {
-                const nationalSociety = currentDataset.filter(o => o.KPI_DON_Code === NS.KPI_DON_Code)[0]
+                // const nationalSociety = currentDataset.filter(o => o.KPI_DON_Code === NS.KPI_DON_Code)[0]
+                const nationalSociety = currentDataset.filter(o => o.KPI_DON_Code === NS)[0]
+                // return (
+                //   <SocietyRow
+                //     nationalSociety={ nationalSociety }
+                //     nationalSocieties={ nationalSocieties }
+                //     key={NS.KPI_DON_Code}
+                //     rowKey={NS.KPI_DON_Code}
+                //     groupedTimeSeries={ groupedTimeSeries }
+                //     groupedByCode={ groupedByCode }
+                //     currentDataset={ currentDataset }
+                //     currentIndicator={ currentIndicator }
+                //     currentYear={ currentYear }
+                //     societiesBlacklist={ societiesBlacklist }
+                //     handleUnselectSociety={ handleUnselectSociety }
+                //   />
+                // )
                 return (
                   <SocietyRow
                     nationalSociety={ nationalSociety }
                     nationalSocieties={ nationalSocieties }
-                    key={NS.KPI_DON_Code}
-                    rowKey={NS.KPI_DON_Code}
+                    key={NS}
+                    rowKey={NS}
                     groupedTimeSeries={ groupedTimeSeries }
                     groupedByCode={ groupedByCode }
                     currentDataset={ currentDataset }

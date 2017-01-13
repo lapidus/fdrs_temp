@@ -8,6 +8,12 @@ import AllSocieties from "./AllSocieties"
 
 import sortBy from "lodash/sortBy"
 
+import {
+  selectSociety,
+  unselectSociety,
+  clearSocieties,
+} from "../../actions/appActions"
+
 function sortDataset(timeSeries, currentYear, currentIndicator, nationalSocieties, reverse) {
   const currentDataset = timeSeries[currentYear]
                                    .map(o => {
@@ -63,7 +69,7 @@ class SocietiesTable extends React.Component {
   shouldComponentUpdate(nextProps) {
     const yearDidNotChange = this.props.currentYear === nextProps.currentYear
     const indicatorDidNotChange = this.props.currentIndicator.id === nextProps.currentIndicator.id
-    const selectedSocietiesDidNotChange = this.props.societiesBlacklist.length === nextProps.societiesBlacklist.length
+    const selectedSocietiesDidNotChange = this.props.selectedSocieties.length === nextProps.selectedSocieties.length
     return !(yearDidNotChange && indicatorDidNotChange && selectedSocietiesDidNotChange)
   }
 
@@ -81,8 +87,6 @@ class SocietiesTable extends React.Component {
   }
 
   render() {
-
-    console.log("RERENDERING TABLE!")
 
     const placeholder = (
       <span>
@@ -117,8 +121,19 @@ class SocietiesTable extends React.Component {
                 slug: ns.slug,
               }
             })}
-            onChange={ this.props.handleNSSelect }
+            onChange={(society) => {
+              this.props.selectSociety(society.value)
+              this.props.handleNSSelect
+            }}
           />
+
+          <div>
+            {
+              this.props.selectedSocieties.map((s,i) => {
+                <span className="px1" key={ i }>{ s }</span>
+              })
+            }
+          </div>
         </div>
 
         <SelectedSocieties
@@ -158,10 +173,20 @@ SocietiesTable.propTypes = {
   handleNSSelect: React.PropTypes.func,
   handleYearSelect: React.PropTypes.func,
   nationalSocieties: React.PropTypes.array,
+  selectSociety: React.PropTypes.func,
+  unselectSociety: React.PropTypes.func,
+  clearSocieties: React.PropTypes.func,
 }
 
 const mapStateToProps = state => ({
-  nationalSocieties: state.appReducer.nationalSocieties
+  nationalSocieties: state.appReducer.nationalSocieties,
+  selectedSocieties: state.appReducer.selectedSocieties,
 })
 
-export default connect(mapStateToProps)(SocietiesTable)
+const mapDispatchToProps = dispatch => ({
+  selectSociety: (societyID) => dispatch(selectSociety(societyID)),
+  unselectSociety: (societyID) => dispatch(unselectSociety(societyID)),
+  clearSocieties: () => dispatch(clearSocieties()),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(SocietiesTable)

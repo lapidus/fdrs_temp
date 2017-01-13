@@ -16,6 +16,9 @@ import {
   fetchTimeSeriesMeta,
   showTooltip,
   hideTooltip,
+  selectSociety,
+  unselectSociety,
+  clearSocieties,
 } from "../../actions/appActions"
 
 class OverviewTable extends React.Component {
@@ -32,7 +35,6 @@ class OverviewTable extends React.Component {
               filterPlaceholder={ t("overview:filterPlaceholder") }
               currentYear={ 2015 }
               currentIndicator={{ id: this.props.currentIndicator }}
-              selectedSocieties={ [] }
               societiesBlacklist={ [] }
               groupedTimeSeries={ this.props.grouping }
               groupedByCode={ groupBy(this.props.data, "KPI_DON_Code") }
@@ -63,6 +65,9 @@ OverviewTable.propTypes = {
   showTooltip: React.PropTypes.func,
   hideTooltip: React.PropTypes.func,
   currentIndicator: React.PropTypes.string,
+  selectSociety: React.PropTypes.func,
+  unselectSociety: React.PropTypes.func,
+  clearSocieties: React.PropTypes.func,
 }
 
 OverviewTable.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
@@ -81,6 +86,9 @@ const makeMapStateToProps = () => {
 const mapDispatchToProps = dispatch => ({
   showTooltip: (content, evt) => dispatch(showTooltip(content, evt)),
   hideTooltip: () => dispatch(hideTooltip()),
+  selectSociety: (societyID) => dispatch(selectSociety(societyId)),
+  unselectSociety: (societyID) => dispatch(unselectSociety(societyId)),
+  clearSocieties: () => dispatch(clearSocieties()),
 })
 
 export default translate("overview", { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(OverviewTable))

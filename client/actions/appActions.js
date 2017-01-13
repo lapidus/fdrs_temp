@@ -29,6 +29,10 @@ export const HIDE_TOOLTIP = "HIDE_TOOLTIP"
 
 export const SET_INDICATOR = "SET_INDICATOR"
 
+export const SELECT_SOCIETY = "SELECT_SOCIETY"
+export const UNSELECT_SOCIETY = "UNSELECT_SOCIETY"
+export const CLEAR_SOCIETIES = "CLEAR_SOCIETIES"
+
 let counter
 
 const startLoad = () => ({ type: START_LOAD })
@@ -263,4 +267,18 @@ export function fetchCountries() {
 export const setIndicator = indicator => ({
   type: SET_INDICATOR,
   indicator,
+})
+
+export const selectSociety = societyID => ({
+  type: SELECT_SOCIETY,
+  societyID
+})
+
+export const unselectSociety = societyID => ({
+  type: UNSELECT_SOCIETY,
+  societyID
+})
+
+export const clearSocieties = () => ({
+  type: CLEAR_SOCIETIES
 })
