@@ -60,6 +60,13 @@ class SocietiesTable extends React.Component {
     })
   }
 
+  shouldComponentUpdate(nextProps) {
+    const yearDidNotChange = this.props.currentYear === nextProps.currentYear
+    const indicatorDidNotChange = this.props.currentIndicator.id === nextProps.currentIndicator.id
+    const selectedSocietiesDidNotChange = this.props.societiesBlacklist.length === nextProps.societiesBlacklist.length
+    return !(yearDidNotChange && indicatorDidNotChange && selectedSocietiesDidNotChange)
+  }
+
   componentWillReceiveProps(nextProps) {
 
     const differentIndicator = nextProps.currentIndicator.id !== this.props.currentIndicator.id
@@ -74,6 +81,8 @@ class SocietiesTable extends React.Component {
   }
 
   render() {
+
+    console.log("RERENDERING TABLE!")
 
     const placeholder = (
       <span>

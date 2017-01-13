@@ -3,6 +3,7 @@ import React from "react"
 import { connect } from "react-redux"
 import { translate } from "react-i18next"
 import { Link } from "react-router"
+import Select from "react-select"
 
 import Breadcrumbs from "../../components/Breadcrumbs"
 import {
@@ -13,8 +14,9 @@ import {
   fetchNationalSocieties,
   fetchTimeSeries,
   fetchTimeSeriesMeta,
-  // showTooltip,
-  // hideTooltip,
+  showTooltip,
+  hideTooltip,
+  setIndicator,
 } from "../../actions/appActions"
 
 class Overview extends React.Component {
@@ -83,13 +85,32 @@ class Overview extends React.Component {
                 { t("overview:title") }
               </h1>
               <div className="relative">
-                <span className="display-1 md-display-2 m0 light">{ pageData.indicators["KPI_noPeopleVolunteering"] }</span>
+                {/* <span className="display-1 md-display-2 m0 light">{ pageData.indicators[this.props.currentIndicator] }</span> */}
+                <div className="sm-6 select-xl select-no-underline select-no-scroll">
+                  <Select
+                    searchable={ false }
+                    clearable={ false }
+                    value={this.props.currentIndicator}
+                    placeholder={"Whaddup"}
+                    multi={ false }
+                    name="ns-selector"
+                    options={Object.keys(pageData.indicators).map(indicatorKey => {
+                      return {
+                        value: indicatorKey,
+                        label: pageData.indicators[indicatorKey],
+                      }
+                    })}
+                    onChange={(indicator) => this.props.setIndicator(indicator.value)}
+                  />
+                </div>
                 <div className="absolute t50 r0 y-center-self">
-                  <Link to="/fdrs/overview/map" className="btn">
-                    <span className="small strong caps">{ "Map" }</span>
+                  <Link to="/fdrs/overview/map" className="relative btn">
+                    <span className="small strong caps color-primary">{ "Map" }</span>
+                    <span className="absolute b0 l0 base-12 bg-primary" style={{height:4}}></span>
                   </Link>
-                  <Link to="/fdrs/overview/table" className="btn">
+                  <Link to="/fdrs/overview/table" className="relative btn">
                     <span className="small strong caps">{ "Table" }</span>
+                    <span className="absolute b0 l0 base-12 bg-secondary" style={{height:4}}></span>
                   </Link>
                 </div>
               </div>
@@ -164,8 +185,10 @@ Overview.propTypes = {
   data: React.PropTypes.array,
   grouping: React.PropTypes.object,
   params: React.PropTypes.object.isRequired,
-  // showTooltip: React.PropTypes.func,
-  // hideTooltip: React.PropTypes.func,
+  currentIndicator: React.PropTypes.string,
+  showTooltip: React.PropTypes.func,
+  hideTooltip: React.PropTypes.func,
+  setIndicator: React.PropTypes.func,
 }
 
 Overview.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
@@ -177,12 +200,14 @@ const makeMapStateToProps = () => {
     nationalSocieties: state.appReducer.nationalSocieties,
     timeSeriesMeta: state.appReducer.timeSeriesMeta,
     data: state.appReducer.timeSeries,
+    currentIndicator: state.appReducer.currentIndicator,
   })
 }
 
-// const mapDispatchToProps = dispatch => ({
-//   showTooltip: (content, evt) => dispatch(showTooltip(content, evt)),
-//   hideTooltip: () => dispatch(hideTooltip()),
-// })
+const mapDispatchToProps = dispatch => ({
+  showTooltip: (content, evt) => dispatch(showTooltip(content, evt)),
+  hideTooltip: () => dispatch(hideTooltip()),
+  setIndicator: (indicator) => dispatch(setIndicator(indicator)),
+})
 
-export default translate("overview", { wait: true })(connect(makeMapStateToProps)(Overview))
+export default translate("overview", { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(Overview))

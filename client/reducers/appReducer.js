@@ -17,7 +17,8 @@ import {
   REQUEST_COUNTRIES,
   RECEIVE_COUNTRIES,
   SHOW_TOOLTIP,
-  HIDE_TOOLTIP
+  HIDE_TOOLTIP,
+  SET_INDICATOR,
 } from "../actions/appActions"
 
 export default function storyReducer(state = {
@@ -40,6 +41,7 @@ export default function storyReducer(state = {
   },
   fetchingCountries: false,
   countryPaths: null,
+  currentIndicator: "KPI_noPeopleVolunteering"
 }, action) {
   switch (action.type) {
   case START_LOAD:
@@ -118,6 +120,10 @@ export default function storyReducer(state = {
   case HIDE_TOOLTIP:
     return assign({}, state, {
       tooltipVisible: false,
+    })
+  case SET_INDICATOR:
+    return assign({}, state, {
+      currentIndicator: action.indicator
     })
   default:
     return state

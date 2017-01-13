@@ -27,6 +27,8 @@ export const RECEIVE_COUNTRIES = "RECEIVE_COUNTRIES"
 export const SHOW_TOOLTIP = "SHOW_TOOLTIP"
 export const HIDE_TOOLTIP = "HIDE_TOOLTIP"
 
+export const SET_INDICATOR = "SET_INDICATOR"
+
 let counter
 
 const startLoad = () => ({ type: START_LOAD })
@@ -257,3 +259,8 @@ export function fetchCountries() {
     })
   }
 }
+
+export const setIndicator = indicator => ({
+  type: SET_INDICATOR,
+  indicator,
+})
