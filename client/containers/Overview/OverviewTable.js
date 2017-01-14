@@ -30,7 +30,6 @@ class OverviewTable extends React.Component {
       <div className="px1">
         <div className="relative clearfix mxn1">
           <div className="col sm-9 sm-offset-2 px1 pt1">
-            { "Table" }
             <SocietiesTable
               filterPlaceholder={ t("overview:filterPlaceholder") }
               currentYear={ 2015 }

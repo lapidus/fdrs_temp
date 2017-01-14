@@ -15,7 +15,7 @@ const SelectedSocieties = ({
   currentYear,
   currentDataset,
   nationalSocieties,
-  handleUnselectSociety
+  unselectSociety
 }) => (
   <div>
     { /*
@@ -66,7 +66,7 @@ const SelectedSocieties = ({
                     currentIndicator={ currentIndicator }
                     currentYear={ currentYear }
                     societiesBlacklist={ societiesBlacklist }
-                    handleUnselectSociety={ handleUnselectSociety }
+                    unselectSociety={ unselectSociety }
                   />
                 )
               })

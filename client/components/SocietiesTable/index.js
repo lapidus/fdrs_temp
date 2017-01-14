@@ -144,7 +144,7 @@ class SocietiesTable extends React.Component {
           groupedTimeSeries={this.props.groupedTimeSeries}
           groupedByCode={this.props.groupedByCode}
           currentDataset={this.state.currentDataset}
-          handleUnselectSociety={this.props.handleUnselectSociety}
+          unselectSociety={this.props.unselectSociety}
         />
         <AllSocieties
           sum={this.state.currentDatasetSum}

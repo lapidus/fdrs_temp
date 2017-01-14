@@ -134,7 +134,7 @@ export default function storyReducer(state = {
       selectedSocieties: state.selectedSocieties.concat([action.societyID])
     })
   case UNSELECT_SOCIETY:
-    const societyIndex = state.selectedSocieties.indexOf(societyID)
+    const societyIndex = state.selectedSocieties.indexOf(action.societyID)
     const newSocieties = state.selectedSocieties
                               .slice(0, societyIndex)
                               .concat(state.selectedSocieties

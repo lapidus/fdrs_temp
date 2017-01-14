@@ -106,7 +106,7 @@ class SocietyRow extends React.Component {
       groupedTimeSeries,
       groupedByCode,
       currentIndicator,
-      handleUnselectSociety,
+      unselectSociety,
     } = this.props
 
     return (
@@ -128,8 +128,8 @@ class SocietyRow extends React.Component {
           <div className="p1 relative">
             <span>{ niceNum(nationalSociety.value, 0, null, true) }</span>
             {
-              handleUnselectSociety ? (
-                <button onClick={(e) => handleUnselectSociety(nationalSociety, e)} style={{right:16}} className="btn absolute t50 y-center-self bg-primary">remove</button>
+              unselectSociety ? (
+                <button onClick={(e) => unselectSociety(nationalSociety.KPI_DON_Code)} style={{right:16}} className="btn absolute t50 y-center-self bg-primary">remove</button>
               ) : (
                 null
               )
