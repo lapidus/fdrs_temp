@@ -109,6 +109,7 @@ class OverviewMap extends React.Component {
                     2015:"2015"
                   }}
                   step={null}
+                  onChange={(year) => this.props.switchYear(year)}
                   onAfterChange={(year) => this.props.switchYear(year)}
                   defaultValue={2015}
                   />
