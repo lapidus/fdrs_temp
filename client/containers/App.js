@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react"
 import { Link } from "react-router"
+import LanguageLink from "../components/LanguageLink"
 import { connect } from "react-redux"
 import { translate } from "react-i18next"
 import Select from "react-select"
@@ -10,7 +11,8 @@ import { toggleNav } from "../actions/appActions"
 import Icon from "../components/Icon"
 import Loader from "../components/Loader"
 
-import Tooltip from "../components/Tooltip"
+// import Tooltip from "../components/Tooltip"
+import { Tooltip } from 'redux-tooltip';
 
 require("../utils/d3GeoMinimal")
 
@@ -101,9 +103,9 @@ class App extends React.Component {
                     className="inline-block align-middle mx1"
                   /></a>
                   <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue, sans-serif"}}>
-                    <Link to="/fdrs" className='color-regular caps'>
+                    <LanguageLink to="/fdrs" className='color-regular caps'>
                       <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
-                    </Link>
+                    </LanguageLink>
                   </h1>
                 </div>
               ) : (

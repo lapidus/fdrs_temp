@@ -85,7 +85,7 @@ class OverviewMap extends React.Component {
             <div className="clearfix mxn1">
               <div className="col sm-10 sm-offset-2 md-9 md-offset-3 py2">
                 <SocietiesRanking
-                  societiesList={sortBy(this.props.grouping[2015], o => Number(o[this.props.currentIndicator]))}
+                  societiesList={sortBy(this.props.grouping[this.props.currentYear], o => Number(o[this.props.currentIndicator]))}
                   currentIndicator={this.props.currentIndicator}
                   />
               </div>

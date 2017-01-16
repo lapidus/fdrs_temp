@@ -4,6 +4,7 @@ import { connect } from "react-redux"
 import { translate } from "react-i18next"
 import { Link } from "react-router"
 import Select from "react-select"
+import { Origin } from 'redux-tooltip';
 
 import Breadcrumbs from "../../components/Breadcrumbs"
 import {
@@ -82,9 +83,10 @@ class Overview extends React.Component {
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-9 sm-offset-2 px1 pt1">
-              <h1 className="color-primary strong m0 small">
-                { t("overview:title") }
-              </h1>
+
+                <h1 className="color-primary strong m0 small">
+                  { t("overview:title") }
+                </h1>
               <div className="relative">
                 {/* <span className="display-1 md-display-2 m0 light">{ pageData.indicators[this.props.currentIndicator] }</span> */}
                 <div className="sm-9 select-xl select-no-underline select-no-scroll">

@@ -1,6 +1,7 @@
 
 import React from "react"
 import { Link } from "react-router"
+import LanguageLink from "./LanguageLink"
 
 class Breadcrumbs extends React.Component {
   render() {
@@ -14,9 +15,9 @@ class Breadcrumbs extends React.Component {
                   <li className="inline-block mr1" key={ i }>
                     {
                       item.path ? (
-                        <Link to={ item.path }>
+                        <LanguageLink to={ item.path }>
                           { item.name }
-                        </Link>
+                        </LanguageLink>
                       ) : (
                         <span className={ i === (this.props.links.length - 1) ? "color-primary" : "" }>
                           { item.name }

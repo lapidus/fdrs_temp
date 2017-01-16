@@ -11,7 +11,9 @@ class Countries extends React.Component {
       <g>
         {
           this.props.countries.map((country, i) => (
-            country.properties.name !== "Antarctica" ? (<path key={ i } d={geoPath().projection(this.props.projection())(country)} style={{fill: "#EFEBE9"}} />) : ""
+            country.properties.name !== "Antarctica" ? (
+              <path key={ i } d={geoPath().projection(this.props.projection())(country)} style={{fill: "#EFEBE9"}} />
+            ) : null
           ))
         }
       </g>

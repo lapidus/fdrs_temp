@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import groupBy from "lodash/groupBy"
 import minBy from "lodash/minBy"
 import maxBy from "lodash/maxBy"
+import { Origin } from "redux-tooltip"
 
 import Countries from "./Countries"
 
@@ -33,6 +34,8 @@ import {
 import {
   fetchCountries,
 } from "../../actions/appActions"
+
+const SVGOrigin = Origin.wrapBy("g")
 
 class Map extends React.Component {
   constructor(props) {
@@ -131,21 +134,35 @@ class Map extends React.Component {
 
                   if(bubbleData && coords) {
                     return (
-                      <circle
-                        key={bubble.KPI_DON_Code}
-                        cx={this.projection()(coords)[0]}
-                        cy={this.projection()(coords)[1]}
-                        r={bubbleData[this.props.indicator.id] ? this.state.scale(Number(bubbleData[this.props.indicator.id])) : 0}
-                        style={{
-                          fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
-                          stroke: "#fff",
-                          strokeWidth: "1.5px",
-                          cursor: "pointer"
-                        }}
-                        onMouseEnter={ (e) => this.props.bubbleMouseEnter(e, bubble, bubbleData[this.props.indicator.id]) }
-                        onMouseLeave={ () => this.props.bubbleMouseLeave() }
-                        onClick={ (e) => this.props.bubbleClick(e, bubble, bubbleData[this.props.indicator.id]) }
-                      />
+                      <SVGOrigin content={ bubbleData[this.props.indicator.id] } key={bubble.KPI_DON_Code}>
+                        {/* <circle
+                          key={bubble.KPI_DON_Code}
+                          cx={this.projection()(coords)[0]}
+                          cy={this.projection()(coords)[1]}
+                          r={bubbleData[this.props.indicator.id] ? this.state.scale(Number(bubbleData[this.props.indicator.id])) : 0}
+                          style={{
+                            fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
+                            stroke: "#fff",
+                            strokeWidth: "1.5px",
+                            cursor: "pointer"
+                          }}
+                          onMouseEnter={ (e) => this.props.bubbleMouseEnter(e, bubble, bubbleData[this.props.indicator.id]) }
+                          onMouseLeave={ () => this.props.bubbleMouseLeave() }
+                          onClick={ (e) => this.props.bubbleClick(e, bubble, bubbleData[this.props.indicator.id]) }
+                        /> */}
+                        <circle
+                          cx={this.projection()(coords)[0]}
+                          cy={this.projection()(coords)[1]}
+                          r={bubbleData[this.props.indicator.id] ? this.state.scale(Number(bubbleData[this.props.indicator.id])) : 0}
+                          style={{
+                            fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
+                            stroke: "#fff",
+                            strokeWidth: "1.5px",
+                            cursor: "pointer"
+                          }}
+                          onClick={ (e) => this.props.bubbleClick(e, bubble, bubbleData[this.props.indicator.id]) }
+                        />
+                      </SVGOrigin>
                     )
                   }
 
