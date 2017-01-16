@@ -1,5 +1,58 @@
 {
-    "name": "Rio Grande",
+    "download": "\u062a\u062d\u0645\u064a\u0644 \u0627\u0644\u062a\u0642\u0631\u064a\u0631",
+    "copyright": "@ 2016 IFRC",
+    "indicatorsTitle": "Indicators",
+    "nameParts": {
+        "2": "and reporting system",
+        "1": "databank",
+        "0": "Federation-wide"
+    },
+    "updateText": "Last updated...",
+    "login": "Login",
+    "home": "Home",
+    "navigation": [
+        {
+            "name": "Services",
+            "dropdownItems": {
+                "1": "National society profiles",
+                "0": "The IFRC at a glance",
+                "3": "Data download",
+                "2": "\"Everyone counts\" report"
+            }
+        },
+        {
+            "name": "FAQ"
+        },
+        {
+            "name": "About"
+        },
+        {
+            "name": "Acknowledgements"
+        }
+    ],
+    "dataCollectors": {
+        "title": "For data collectors",
+        "lead": "To get started with the data collection for your National Society, please log in.",
+        "button": "Login as data collector"
+    },
+    "nationalSocietiesPreview": {
+        "subtitle": "Get to know the National Societies",
+        "title": "National Society Profiles",
+        "button": "Explore National Society Profiles",
+        "lead": "Explore the dataset for each National Society, and download PDF profiles for further sharing."
+    },
+    "overviewPreview": {
+        "button": "Explore the IFRC",
+        "lead": "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks.",
+        "title": "The IFRC at a glance"
+    },
+    "contact": {
+        "title": "Contact",
+        "lead": "If you have feedback, questions and\/or corrections, please write to the FDRS team.",
+        "email": "fdrs@ifrc.org"
+    },
+    "credit": "website by Lapidus Interactive",
+    "name": "Federation-wide databank and reporting system",
     "indicators": {
         "KPI_noPeopleVolunteering": "People volunteering time",
         "KPI_noPaidStaff": "Paid staff",

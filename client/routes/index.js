@@ -74,6 +74,11 @@ const fdrsChildRoutes = [
       System.import("../containers/Society").then(loadRoute(cb)).catch(errorLoading)
     },
   }, {
+    path: "societies_pdf/:id",
+    getComponent(location, cb) {
+      System.import("../containers/SocietyPDF").then(loadRoute(cb)).catch(errorLoading)
+    },
+  },{
     path: "report",
     getComponent(location, cb) {
       System.import("../containers/Report").then(loadRoute(cb)).catch(errorLoading)

@@ -1,570 +1,571 @@
 {
     "chapter": "7",
-    "title": "Enabling action 1",
-    "subtitle": "Strong National Red Cross and Red Crescent Societies",
-    "intro": "National Societies are born from and rooted within their own contexts. A strong National Society is one that is able to deliver countrywide, through a network of volunteer-based units, a relevant service to vulnerable people sustained for as long as needed.",
+    "title": "\u0641\u0639\u0644 \u0627\u0644\u062a\u0645\u0643\u064a\u0646 \u0627\u0644\u0623\u0648\u0644",
+    "subtitle": "\u0628\u0646\u0627\u0621 \u062c\u0645\u0639\u064a\u0627\u062a \u0648\u0637\u0646\u064a\u0629 \u0642\u0648\u064a\u0629 \u0644\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631",
+    "intro": "\u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u062a\u0646\u0634\u0623 \u0648\u062a\u062a\u062c\u0630\u0631 \u0641\u064a \u0633\u064a\u0627\u0642\u0647\u0627 \u0627\u0644\u062e\u0627\u0635. \u0648\u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u0642\u0648\u064a\u0629 \u0647\u064a \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0642\u0627\u062f\u0631\u0629 \u0639\u0644\u0649 \u062a\u0642\u062f\u064a\u0645 \u062e\u062f\u0645\u0627\u062a \u0645\u0646\u0627\u0633\u0628\u0629 \u0648\u0645\u0633\u062a\u0645\u0631\u0629 \u0637\u0627\u0644\u0645\u0627 \u0643\u0627\u0646\u062a \u0647\u0646\u0627\u0643 \u062d\u0627\u062c\u0629 \u0625\u0644\u064a\u0647\u0627\u060c \u0644\u0644\u0645\u0633\u062a\u0636\u0639\u0641\u064a\u0646 \u0639\u0644\u0649 \u0646\u0637\u0627\u0642 \u0627\u0644\u0628\u0644\u062f\u060c \u0648\u0645\u0646 \u062e\u0644\u0627\u0644 \u0634\u0628\u0643\u0629 \u0645\u0646 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u0633\u062a\u0639\u064a\u0646 \u0628\u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646.",
     "sections": [
         {
-            "title": "National Society core capacities",
+            "title": "\u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0627\u0644\u062c\u0648\u0647\u0631\u064a\u0629 \u0644\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629",
             "blocks": [
-                "The combined service delivery ability of National Societies is the main strength of the IFRC and, indeed, the whole Movement.",
+                "\u0648\u062a\u0645\u062b\u0644 \u0627\u0644\u0642\u062f\u0631\u0629 \u0627\u0644\u0645\u0634\u062a\u0631\u0643\u0629 \u0644\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0639\u0644\u0649 \u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0645\u0648\u0637\u0646 \u0627\u0644\u0642\u0648\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a \u0644\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0648\u0644\u0644\u062d\u0631\u0643\u0629 \u0628\u0631\u0645\u062a\u0647\u0627.",
                 {
-                    "title": "Core capacities",
-                    "caption": "Source: Organisational Development Department"
+                    "title": "\u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0627\u0644\u062c\u0648\u0647\u0631\u064a\u0629",
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0633\u0645 \u0627\u0644\u062a\u0646\u0645\u064a\u0629 \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629"
                 },
-                "National Societies are born from and rooted within their own contexts. A strong National Society is one that is able to deliver countrywide, through a network of volunteer-based units, a relevant service to vulnerable people sustained for as long as needed. Many decades of tried and tested experience indicates that the strength of a National Society comes from within its own organisational dynamic that includes a set of interconnected core capacities.",
-                "We assess our capacities through our own Organisational Capacity Assessment and Certification (OCAC) method. This starts with a systematised self-assessment of 85 attributes, each of which are rated on a cumulative five-step score with a midpoint minimum standard to be reached by all.",
+                "\u0641\u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u062a\u0646\u0634\u0623 \u0648\u062a\u062a\u062c\u0630\u0631 \u0641\u064a \u0633\u064a\u0627\u0642\u0647\u0627 \u0627\u0644\u062e\u0627\u0635. \u0648\u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u0642\u0648\u064a\u0629 \u0647\u064a \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0642\u0627\u062f\u0631\u0629 \u0639\u0644\u0649 \u062a\u0642\u062f\u064a\u0645 \u062e\u062f\u0645\u0627\u062a \u0645\u0646\u0627\u0633\u0628\u0629 \u0648\u0645\u0633\u062a\u0645\u0631\u0629 \u0637\u0627\u0644\u0645\u0627 \u0643\u0627\u0646\u062a \u0647\u0646\u0627\u0643 \u062d\u0627\u062c\u0629 \u0625\u0644\u064a\u0647\u0627\u060c \u0644\u0644\u0645\u0633\u062a\u0636\u0639\u0641\u064a\u0646 \u0639\u0644\u0649 \u0646\u0637\u0627\u0642 \u0627\u0644\u0628\u0644\u062f\u060c \u0648\u0645\u0646 \u062e\u0644\u0627\u0644 \u0634\u0628\u0643\u0629 \u0645\u0646 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u0633\u062a\u0639\u064a\u0646 \u0628\u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646. \u0648\u062a\u0634\u064a\u0631 \u0639\u0642\u0648\u062f \u0645\u0646 \u0627\u0644\u062a\u062c\u0631\u0628\u0629 \u0627\u0644\u062a\u064a \u062c\u0631\u0649 \u0627\u062e\u062a\u0628\u0627\u0631\u0647\u0627 \u0648\u062a\u062c\u0631\u0628\u062a\u0647\u0627 \u0625\u0644\u0649 \u0623\u0646 \u0642\u0648\u0629 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u062a\u0623\u062a\u064a \u0645\u0646 \u062f\u0627\u062e\u0644 \u0642\u0637\u0627\u0639\u0627\u062a\u0647\u0627 \u0627\u0644\u062f\u064a\u0646\u0627\u0645\u064a\u0629 \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629 \u0627\u0644\u062a\u064a \u062a\u0634\u0645\u0644 \u0645\u062c\u0645\u0648\u0639\u0629 \u0645\u0646 \u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0627\u0644\u062c\u0648\u0647\u0631\u064a\u0629 \u0627\u0644\u0645\u062a\u0631\u0627\u0628\u0637\u0629.",
+                "\u0648\u0646\u062d\u0646 \u0646\u0642\u064a\u0651\u0645 \u062e\u0628\u0631\u0627\u062a\u0646\u0627 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0645\u0646\u0647\u062c\u0646\u0627 \u0644\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0648\u062a\u0635\u062f\u064a\u0642\u0647\u0627. \u0648\u064a\u0628\u062f\u0623 \u0630\u0644\u0643 \u0628\u062a\u0642\u064a\u064a\u0645 \u0630\u0627\u062a\u064a \u0645\u0645\u0646\u0647\u062c \u0644\u062e\u0645\u0633 \u0648\u062b\u0645\u0627\u0646\u064a\u0646 \u0633\u0645\u0629 \u0645\u0646 \u0633\u0645\u0627\u062a \u0627\u0644\u0642\u062f\u0631\u0627\u062a\u060c \u062a\u064f\u0642\u064a\u0651\u0645 \u0643\u0644 \u0645\u0646\u0647\u0627 \u0648\u0641\u0642 \u0645\u0642\u064a\u0627\u0633 \u0645\u0646 \u062e\u0645\u0633 \u062f\u0631\u062c\u0627\u062a\u060c \u0639\u0644\u0649 \u0623\u0646 \u062a\u0628\u0644\u063a \u062c\u0645\u064a\u0639\u0647\u0627 \u0645\u0639\u0627\u064a\u064a\u0631 \u062f\u0646\u064a\u0627 \u0639\u0646\u062f \u0646\u0642\u0637\u0629 \u0627\u0644\u0648\u0633\u0637.",
                 {
                     "type": "chart",
-                    "title": "Assessing capacity attributes (example)",
+                    "title": "\u062a\u0642\u064a\u064a\u0645 \u0633\u0645\u0627\u062a \u0627\u0644\u0642\u062f\u0631\u0627\u062a (\u0645\u062b\u0627\u0644)",
                     "headings": [
-                        "Investing in skills",
-                        "Succession management"
+                        "\u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0641\u064a \u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a",
+                        "\u0625\u062f\u0627\u0631\u0629 \u0625\u062d\u0644\u0627\u0644 \u0627\u0644\u0645\u0646\u0627\u0635\u0628"
                     ],
                     "dataset": [
                         [
-                            "A",
-                            "Step B not met",
-                            "Step B not met"
+                            "\u0623",
+                            "\u062e\u0637\u0648\u0629 (\u0628) \u063a\u064a\u0631 \u0645\u0633\u062a\u0648\u0641\u0627\u0629",
+                            "\u062e\u0637\u0648\u0629 (\u0628) \u063a\u064a\u0631 \u0645\u0633\u062a\u0648\u0641\u0627\u0629"
                         ],
                         [
-                            "B",
-                            "The National Society keeps track of the skills and profiles it needs for the implementation of its activities",
-                            "The National Society keeps track of talent in its volunteers and staff base. Transition from Red Cross and Red Crescent Youth to volunteer is promoted and monitored by the leadership"
+                            "\u0628",
+                            "\u062a\u062a\u0627\u0628\u0639 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a \u0648\u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u062d\u062a\u0627\u062c\u0647\u0627 \u0645\u0646 \u0623\u062c\u0644 \u062a\u0646\u0641\u064a\u0630 \u0623\u0646\u0634\u0637\u062a\u0647\u0627.",
+                            "\u062a\u062a\u0627\u0628\u0639 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u0645\u062a\u0645\u064a\u0632\u064a\u0646 \u0645\u0646 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0648\u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646. \u0648\u062a\u0634\u062c\u0639 \u0627\u0644\u0634\u0628\u0627\u0628 \u0639\u0644\u0649 \u0627\u0644\u0627\u0646\u062a\u0642\u0627\u0644 \u0645\u0646 \u0634\u0628\u0627\u0628\n\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0625\u0644\u0649 \u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0641\u064a \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631\u060c \u0648\u0639\u0644\u0649 \u0642\u064a\u0627\u062f\u0629 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0645\u062a\u0627\u0628\u0639\u0629 \u0630\u0644\u0643."
                         ],
                         [
-                            "C",
-                            "The recruitement of volunteers differentiates between general recruitement and the recruitment of specific groups and profiles.",
-                            "The National Society invests in training of identified talents and facilitates their exposure to internal and external learning opportunities."
+                            "\u062c",
+                            "\u0627\u0633\u062a\u0642\u0637\u0627\u0628 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0628\u0634\u0643\u0644 \u064a\u0645\u0627\u064a\u0632 \u0628\u064a\u0646 \u0627\u0644\u0627\u0633\u062a\u0642\u0637\u0627\u0628 \u0627\u0644\u0639\u0627\u0645 \u0648\u0627\u0633\u062a\u0642\u0637\u0627\u0628 \u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0645\u0639\u064a\u0646\u0629 \u0623\u0648 \u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0630\u0648\u064a \u0642\u062f\u0631\u0627\u062a \u0645\u0639\u064a\u0646\u0629.",
+                            "\u062a\u0633\u062a\u062b\u0645\u0631 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0641\u064a \u062a\u062f\u0631\u064a\u0628 \u0627\u0644\u0645\u062a\u0645\u064a\u0632\u064a\u0646 \u0627\u0644\u0645\u062d\u062f\u062f\u064a\u0646\u060c \u0648\u062a\u062a\u0648\u0644\u0649 \u062a\u0633\u0647\u064a\u0644 \u0627\u062d\u062a\u0643\u0627\u0643\u0647\u0645 \u0628\u0641\u0631\u0635 \u0627\u0644\u062a\u0639\u0644\u0645 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 \u0648\u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629."
                         ],
                         [
-                            "Midpoint minimum standard for all National Societies"
+                            "\u0627\u0644\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u062f\u0646\u064a\u0627 \u0644\u0643\u0644 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629"
                         ],
                         [
-                            "D",
-                            "The National Society has identified the skills of volunteer and staff necessary to help it \u2018to do more, do better and reach further\u2019. The National Society consciouly develops those skills.",
-                            "The National Society provides general management\/governance training to potential candidates for key positions in the future."
+                            "\u062f",
+                            "\u062a\u062d\u062f\u062f \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u062a\u064a \u064a\u0644\u0632\u0645 \u062a\u0648\u0627\u0641\u0631\u0647\u0627 \u0644\u062f\u0649 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0648\u0627\u0644\u0639\u0627\u0645\u0644\u064a\u0646 \u0644\u0645\u0633\u0627\u0639\u062f\u062a\u0647\u0627 \u0639\u0644\u0649 \u2018\u0628\u0630\u0644 \u0627\u0644\u0645\u0632\u064a\u062f\u060c \u0628\u0634\u0643\u0644 \u0623\u0641\u0636\u0644\u060c \u0648\u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u0645\u0632\u064a\u062f\u2019. \u0648\u062a\u0642\u0648\u0645 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0628\u062a\u0637\u0648\u064a\u0631 \u062a\u0644\u0643 \u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a \u0628\u0634\u0643\u0644\u064d \u0648\u0627\u0639\u064d.",
+                            "\u062a\u0648\u0641\u0631 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u062f\u0648\u0631\u0627\u062a \u062a\u062f\u0631\u064a\u0628\u064a\u0629 \u0628\u0634\u0623\u0646 \u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u062d\u0643\u0645 \u0648\u0627\u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0645\u0646 \u0623\u062c\u0644 \u0627\u0644\u0645\u0631\u0634\u062d\u064a\u0646 \u0627\u0644\u0645\u062d\u062a\u0645\u0644 \u062a\u0642\u0644\u062f\u0647\u0645 \u0645\u0646\u0627\u0635\u0628 \u0631\u0626\u064a\u0633\u064a\u0629 \u0641\u064a \u0627\u0644\u0645\u0633\u062a\u0642\u0628\u0644."
                         ],
                         [
-                            "E",
-                            "The National Society has sufficient skills and resources to engage in new, or expand existing activities in response to the needs of the community.",
-                            "The National Society as a succession plan for its key management."
+                            "\u0647\u0640",
+                            "\u0644\u062f\u0649 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0645\u0646 \u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a \u0648\u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0645\u0627 \u064a\u0643\u0641\u064a \u0644\u0644\u0627\u0646\u062e\u0631\u0627\u0637 \u0641\u064a \u0623\u0646\u0634\u0637\u0629 \u062c\u062f\u064a\u062f\u0629\u060c \u0623\u0648 \u0627\u0644\u062a\u0648\u0633\u0639 \u0641\u064a \u0623\u0646\u0634\u0637\u0629 \u0642\u0627\u0626\u0645\u0629\u060c \u0644\u062a\u0644\u0628\u064a\u0629 \u062d\u0627\u062c\u0627\u062a \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u064a\u0629.",
+                            "\u0644\u062f\u0649 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u062e\u0637\u0629 \u0625\u062d\u0644\u0627\u0644 \u0644\u0645\u0646\u0627\u0635\u0628 \u0627\u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0639\u0644\u064a\u0627."
                         ]
                     ],
-                    "caption": "Source: Organisational Development Department"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0633\u0645 \u0627\u0644\u062a\u0646\u0645\u064a\u0629 \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629"
                 },
-                "Of interest to note is that National Society strength is not necessarily dependent on the wealth of its country, i.e. rich and poor can both become strong.",
+                "\u0648\u062a\u062c\u062f\u0631 \u0627\u0644\u0625\u0634\u0627\u0631\u0629 \u0625\u0644\u0649 \u0623\u0646 \u0642\u0648\u0629 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0644\u0627 \u062a\u062a\u0648\u0642\u0641 \u0628\u0627\u0644\u0636\u0631\u0648\u0631\u0629 \u0639\u0644\u0649 \u0645\u062f\u0649 \u062b\u0631\u0627\u0621 \u0627\u0644\u0628\u0644\u062f \u0627\u0644\u0630\u064a \u062a\u0646\u062a\u0645\u064a \u0625\u0644\u064a\u0647\u060c \u0623\u064a \u0623\u0646 \u0628\u0625\u0645\u0643\u0627\u0646 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0623\u0646 \u062a\u0635\u0628\u062d \u0642\u0648\u064a\u0629 \u0633\u0648\u0627\u0621 \u0623\u0643\u0627\u0646\u062a \u063a\u0646\u064a\u0629 \u0623\u0645 \u0641\u0642\u064a\u0631\u0629.",
                 {
                     "type": "chart",
-                    "title": "Strength versus wealth",
+                    "title": "\u0627\u0644\u0642\u0648\u0629 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062b\u0631\u0648\u0629",
                     "legend": [
                         {
                             "color": "#82BC01",
-                            "name": "Africa"
+                            "name": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627"
                         },
                         {
                             "color": "#0F9EE3",
-                            "name": "Americas"
+                            "name": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646"
                         },
                         {
                             "color": "#EE3224",
-                            "name": "Asia Pacific"
+                            "name": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626"
                         },
                         {
                             "color": "#5C315E",
-                            "name": "Europe"
+                            "name": "\u0623\u0648\u0631\u0648\u0628\u0627"
                         },
                         {
                             "color": "#7E6E69",
-                            "name": "Middle East and North Africa"
+                            "name": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627"
                         }
                     ],
                     "dataset": [
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "251.0145229838",
                             "x": "2.3996988492",
                             "y": "94",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "268.0539113455",
                             "x": "2.4282221487",
                             "y": "39",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "394.775830896",
                             "x": "2.5963505563",
                             "y": "31",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "413.7574148529",
                             "x": "2.6167457897",
                             "y": "28",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "447.4371289135",
                             "x": "2.6507320196",
                             "y": "54",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "453.5689927392",
                             "x": "2.6566433573",
                             "y": "40",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "491.7899781002",
                             "x": "2.6917796743",
                             "y": "42",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "494.3146150632",
                             "x": "2.6940034511",
                             "y": "69",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "512.1031992238",
                             "x": "2.709357489",
                             "y": "36",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "574.1195223244",
                             "x": "2.7590023148",
                             "y": "53",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "634.3209745958",
                             "x": "2.8023090721",
                             "y": "59",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "687.2454749827",
                             "x": "2.837111889",
                             "y": "42",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "690.2053852927",
                             "x": "2.8389783435",
                             "y": "60",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "693.9843611994",
                             "x": "2.8413496838",
                             "y": "69",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "751.9163167908",
                             "x": "2.8761695092",
                             "y": "33",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "752.1560525138",
                             "x": "2.8763079546",
                             "y": "30",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "870.54210662",
                             "x": "2.939789782",
                             "y": "47",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "1023.2943547429",
                             "x": "3.0100005782",
                             "y": "63",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "1068.3893101576",
                             "x": "3.028729534",
                             "y": "72",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "1144",
                             "x": "3.0584260245",
                             "y": "31",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "1159.9297395354",
                             "x": "3.0644316835",
                             "y": "51",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "1243.986074645",
                             "x": "3.0948155188",
                             "y": "16",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "1469.1211622675",
                             "x": "3.1670576147",
                             "y": "33",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "1555.3606139083",
                             "x": "3.1918310972",
                             "y": "74",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "1716.5262836303",
                             "x": "3.2346504578",
                             "y": "40",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "1753.6423665158",
                             "x": "3.2439410291",
                             "y": "14",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "1755.2140164853",
                             "x": "3.2443300784",
                             "y": "30",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "2184.1634610913",
                             "x": "3.3392851375",
                             "y": "31",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "2322.8805603409",
                             "x": "3.3660268795",
                             "y": "38",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "2575.6836947783",
                             "x": "3.4108925287",
                             "y": "58",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "3330.5252303753",
                             "x": "3.522512728",
                             "y": "73",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "3490.2453158802",
                             "x": "3.5428559529",
                             "y": "79",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "3672.9669404092",
                             "x": "3.5650170194",
                             "y": "40",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "3789.5675576278",
                             "x": "3.5785896538",
                             "y": "42",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "3866.9897922327",
                             "x": "3.5873730257",
                             "y": "62",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Middle East and North Africa",
+                            "region": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "4236.793630997",
                             "x": "3.6270373106",
                             "y": "6",
                             "stroke": "#7E6E69"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "4467.1037911876",
                             "x": "3.6500260432",
                             "y": "86",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "4565.2698841641",
                             "x": "3.6594664567",
                             "y": "99",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "4636",
                             "x": "3.6661434273",
                             "y": "49",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Middle East and North Africa",
+                            "region": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "4909.0280937704",
                             "x": "3.6909955175",
                             "y": "88",
                             "stroke": "#7E6E69"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "5440.4524646364",
                             "x": "3.7356350201",
                             "y": "51",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "6091.0143517459",
                             "x": "3.7846896228",
                             "y": "80",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Middle East and North Africa",
+                            "region": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "6454.619627972",
                             "x": "3.8098706543",
                             "y": "67",
                             "stroke": "#7E6E69"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "6685.0187489763",
                             "x": "3.8251026296",
                             "y": "76",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "6795.7724978042",
                             "x": "3.8322388316",
                             "y": "19",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "6797.7343069753",
                             "x": "3.832364186",
                             "y": "45",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "7747.8413209319",
                             "x": "3.8891807176",
                             "y": "63",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "9036.0361679301",
                             "x": "3.9559779606",
                             "y": "34",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "9386.3048352874",
                             "x": "3.9724946545",
                             "y": "58",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Middle East and North Africa",
+                            "region": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "9705.3922340726",
                             "x": "3.9870130917",
                             "y": "20",
                             "stroke": "#7E6E69"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "12116.15460932",
                             "x": "4.0833648066",
                             "y": "37",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "12707.85431362",
                             "x": "4.1040722273",
                             "y": "46",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "14007.877516277",
                             "x": "4.1463723357",
                             "y": "46",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "14037.015448307",
                             "x": "4.1472747779",
                             "y": "46",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "14183.01601695",
                             "x": "4.1517685933",
                             "y": "55",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Americas",
+                            "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "x_regular_gdp": "15452.173598195",
                             "x": "4.1889895786",
                             "y": "47",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Middle East and North Africa",
+                            "region": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "19512",
                             "x": "4.2903017873",
                             "y": "72",
                             "stroke": "#7E6E69"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "22000.069567182",
                             "x": "4.3424240541",
                             "y": "66",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "33071.839313506",
                             "x": "4.5194583492",
                             "y": "83",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "37749.442722625",
                             "x": "4.5769105447",
                             "y": "62",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Europe",
+                            "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "x_regular_gdp": "45931.724786305",
                             "x": "4.662112754",
                             "y": "43",
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "x_regular_gdp": "46720.356660302",
                             "x": "4.6695061495",
                             "y": "73",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Middle East and North Africa",
+                            "region": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "x_regular_gdp": "92682",
                             "x": "4.9669953969",
                             "y": "63",
                             "stroke": "#7E6E69"
                         }
                     ],
-                    "caption": "Source: Organisational Development Department"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0633\u0645 \u0627\u0644\u062a\u0646\u0645\u064a\u0629 \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629"
                 },
-                "Ongoing analysis suggests that the critical factors for success include appropriate leadership that is just right for its own context, and good long-term partnerships, which are strategically tailored to the National Society\u2019s own organisational development needs."
+                "\u062a\u0628\u064a\u0646 \u062a\u062d\u0627\u0644\u064a\u0644 \u062a\u062c\u0631\u0649 \u062d\u0627\u0644\u064a\u0627\u064b \u0623\u0646 \u0627\u0644\u0639\u0648\u0627\u0645\u0644 \u0627\u0644\u062d\u0627\u0633\u0645\u0629 \u0644\u0644\u0646\u062c\u0627\u062d \u062a\u062a\u0636\u0645\u0646 \u0648\u062c\u0648\u062f \u0642\u064a\u0627\u062f\u0629 \u0645\u0644\u0627\u0626\u0645\u0629 \u0628\u0627\u0644\u0642\u062f\u0631 \u0627\u0644\u0645\u0637\u0644\u0648\u0628 \u0644\u0633\u064a\u0627\u0642\u0647\u0627 \u0627\u0644\u062e\u0627\u0635\u060c \u0648\u0648\u062c\u0648\u062f \u0634\u0631\u0627\u0643\u0627\u062a \u062c\u064a\u062f\u0629 \u0648\u0637\u0648\u064a\u0644\u0629 \u0627\u0644\u0623\u062c\u0644 \u0645\u0635\u0645\u0645\u0629 \u0645\u0646 \u0627\u0644\u0646\u0627\u062d\u064a\u0629 \u0627\u0644\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0629 \u0628\u0645\u0627 \u064a\u062a\u0646\u0627\u0633\u0628 \u0645\u0639 \u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a \u0627\u0644\u062a\u0646\u0645\u064a\u0629 \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629 \u0644\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629."
             ]
         },
         {
-            "title": "Bridging the technical divide",
+            "title": "\u0633\u064e\u062f \u0627\u0644\u0641\u062c\u0648\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629",
             "blocks": [
-                "Through the Digital Divide Initiative, the IFRC secretariat has been tracking the information and communications technology capabilities of up to 155 National Societies that responded to surveys conducted in 2011 and 2013. Results from these surveys prioritised support to 28 National Societies, often with very basic support, such as stabilising and simplifying systems, connecting local branches, training technical staff and managers, providing antivirus and office automation software, setting up a support network of service providers, and using the",
-                "IFRC\u2019s global presence and reputation to negotiate more favourable agreements with technology companies. This support has contributed towards improving the average information and communications technology capabilities of these 28 National Societies by nearly a third during the period 2011\u20132013.",
+                "\u0628\u0641\u0636\u0644 \u0645\u0628\u0627\u062f\u0631\u0629 \u0633\u062f \u0627\u0644\u0641\u062c\u0648\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629\u060c \u062a\u062a\u062a\u0628\u0639 \u0623\u0645\u0627\u0646\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0642\u062f\u0631\u0627\u062a 155 \u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u0631\u062f\u062a \u0639\u0644\u0649 \u0627\u0633\u062a\u0637\u0644\u0627\u0639\u0627\u062a \u0623\u062c\u0631\u064a\u062a \u0628\u064a\u0646 \u0639\u0627\u0645\u064a 2011 \u0648 2013 . \u0641\u064a\u0645\u0627 \u064a\u062a\u0639\u0644\u0642 \u0628\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0648\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0648\u0627\u0633\u062a\u0646\u0627\u062f\u0627 \u0625\u0644\u0649 \u0646\u062a\u0627\u0626\u062c \u062a\u0644\u0643 \u0627\u0644\u062f\u0631\u0627\u0633\u0627\u062a \u0627\u0644\u0627\u0633\u062a\u0642\u0635\u0627\u0626\u064a\u0629\u060c \u0627\u0633\u062a\u0641\u0627\u062f\u062a 28 \u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629\u060c \u0645\u0646 \u0628\u0627\u0628 \u0627\u0644\u0623\u0648\u0644\u0648\u064a\u0629\u060c \u0645\u0646 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629 \u0644\u0644\u063a\u0627\u064a\u0629 \u0641\u064a \u0643\u062b\u064a\u0631 \u0645\u0646 \u0627\u0644\u0623\u062d\u064a\u0627\u0646 \u0641\u064a \u062a\u062d\u0642\u064a\u0642 \u0627\u0633\u062a\u0642\u0631\u0627\u0631 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0627\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629 \u0648\u062a\u0628\u0633\u064a\u0637\u0647\u0627\u061b \u0648\u0627\u0644\u0631\u0628\u0637 \u0628\u064a\u0646 \u0627\u0644\u0641\u0631\u0648\u0639 \u0627\u0644\u0645\u062d\u0644\u064a\u0629\u061b \u0648\u062a\u062f\u0631\u064a\u0628 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0648\u0627\u0644\u0645\u062f\u064a\u0631\u064a\u0646 \u0627\u0644\u0641\u0646\u064a\u064a\u0646\u061b \u0648\u062a\u0648\u0641\u064a\u0631 \u0628\u0631\u0627\u0645\u062c \u0645\u0643\u0627\u0641\u062d\u0629 \u0627\u0644\u0641\u064a\u0631\u0648\u0633\u0627\u062a\u061b \u0648\u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u0627\u0644\u0622\u0644\u064a \u0644\u0644\u0645\u0643\u0627\u062a\u0628\u061b \u0648\u0648\u0636\u0639 \u0634\u0628\u0643\u0629 \u062f\u0639\u0645 \u0645\u0646 \u0645\u0642\u062f\u0645\u064a \u0627\u0644\u062e\u062f\u0645\u0627\u062a\u061b \u0648\u0627\u0644\u0627\u0633\u062a\u0641\u0627\u062f\u0629 \u0645\u0646 ",
+                "\u0648\u062c\u0648\u062f \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0648\u0633\u0645\u0639\u062a\u0647 \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645 \u0644\u0644\u062a\u0641\u0627\u0648\u0636 \u0628\u0634\u0623\u0646 \u0627\u062a\u0641\u0627\u0642\u0627\u062a \u0623\u0646\u0633\u0628 \u0645\u0639 \u0634\u0631\u0643\u0627\u062a \u0627\u0644\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627. \u0648\u0642\u062f \u0623\u0633\u0647\u0645 \u0647\u0630\u0627 \u0627\u0644\u062f\u0639\u0645 \u0641\u064a \u062a\u062d\u0633\u064a\u0646 \u0645\u062a\u0648\u0633\u0637 \u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0641\u064a \u0645\u062c\u0627\u0644\u064a \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0648\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627 \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u062b\u0645\u0627\u0646\u064a \u0648\u0627\u0644\u0639\u0634\u0631\u064a\u0646 \u0627\u0644\u0645\u0630\u0643\u0648\u0631\u0629 \u0628\u0646\u062d\u0648 \u0627\u0644\u062b\u0644\u062b \u062e\u0644\u0627\u0644 \u0627\u0644\u0641\u062a\u0631\u0629 2011 - 2013 .",
                 {
                     "type": "image",
-                    "title": "Image title"
+                    "title": "Image title",
+                    "caption": ""
                 }
             ]
         },
         {
-            "title": "Volunteering in a changing world",
+            "title": "\u0627\u0644\u062a\u0637\u0648\u0639 \u0641\u064a \u0639\u0627\u0644\u0645 \u0645\u062a\u063a\u064a\u0631",
             "blocks": [
-                "In the Democratic Republic of Congo, volunteers helped protect more than 2 million people from polio. In Syria, volunteers are currently providing desperately needed assistance to more than 3.5 million people each month. Our volunteers were at the frontline of the Ebola response in West Africa, reaching some 7 million people.",
-                "These examples illustrate that the capacity to engage volunteers is at the heart of a National Society\u2019s strength, effectiveness, and scale. Its moment of truth comes when a volunteer interacts with a beneficiary.",
-                "Volunteering brings considerable non-pecuniary personal and social benefits to the individual, and in turn, their communities. For isolated and marginalised individuals, volunteering is an important means for social inclusion (including for migrant communities). It is also a key means to build the human and social capital of communities, advocating for their needs and rights, and strengthening their resilience to crises.",
-                "Volunteerism will need to play a central role in attaining the future Sustainable Development Goals by ensuring their localisation and scaling-up. The shift from volunteers merely as service deliverers towards volunteers as development actors, and thus a critical component of civic action and resilience, is the way forward.",
+                "\u0641\u064a \u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0627\u0644\u0643\u0648\u0646\u063a\u0648 \u0627\u0644\u062f\u064a\u0645\u0648\u0642\u0631\u0627\u0637\u064a\u0629\u060c \u0633\u0627\u0639\u062f \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u0648\u0646 \u0639\u0644\u0649 \u062d\u0645\u0627\u064a\u0629 \u0645\u0627 \u064a\u0632\u064a\u062f \u0639\u0644\u0649 2 \u0645\u0644\u064a\u0648\u0646 \u0634\u062e\u0635 \u0645\u0646 \u0634\u0644\u0644 \u0627\u0644\u0623\u0637\u0641\u0627\u0644. \u0648\u0641\u064a \u0633\u0648\u0631\u064a\u0627\u060c \u0642\u062f\u0645 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u0648\u0646 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0629 \u0644\u0645\u0627 \u064a\u0632\u064a\u062f \u0639\u0646 3.5 \u0645\u0644\u064a\u0648\u0646 \u0634\u062e\u0635 \u0643\u0644 \u0634\u0647\u0631 \u0645\u0645\u0646 \u0647\u0645 \u0641\u064a \u0623\u0645\u0633 \u0627\u0644\u062d\u0627\u062c\u0629 \u0644\u0644\u0645\u0639\u0648\u0646\u0629. \u0648\u0643\u0627\u0646 \u0645\u062a\u0637\u0648\u0639\u0648\u0646\u0627 \u0641\u064a \u0637\u0644\u064a\u0639\u0629 \u0645\u0648\u0627\u062c\u0647\u0629 \u0645\u0631\u0636 \u0627\u0644\u0625\u064a\u0628\u0648\u0644\u0627 \u0641\u064a \u063a\u0631\u0628 \u0623\u0641\u0631\u064a\u0642\u0627\u060c \u062d\u064a\u062b \u0648\u0635\u0644\u0648\u0627 \u0644\u0646\u062d\u0648 7 \u0645\u0644\u064a\u0648\u0646 \u0634\u062e\u0635.",
+                "\u0648\u062a\u0648\u0636\u062d \u0647\u0630\u0647 \u0627\u0644\u0623\u0645\u062b\u0644\u0629 \u0623\u0646 \u0627\u0644\u0642\u062f\u0631\u0629 \u0639\u0644\u0649 \u0625\u0634\u0631\u0627\u0643 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0647\u064a \u0623\u0633\u0627\u0633 \u0642\u0648\u0629 \u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0648\u0641\u0639\u0627\u0644\u064a\u062a\u0647\u0627 \u0648\u0646\u0637\u0627\u0642 \u0639\u0645\u0644\u0647\u0627. \u0648\u064a\u064f\u062e\u062a\u0628\u0631 \u0630\u0644\u0643 \u062d\u064a\u0646 \u064a\u062a\u0641\u0627\u0639\u0644 \u0627\u0644\u0645\u062a\u0637\u0648\u0639 \u0645\u0639 \u0623\u062d\u062f \u0627\u0644\u0645\u0633\u062a\u0641\u064a\u062f\u064a\u0646.",
+                "\u0648\u064a\u0642\u062f\u0645 \u0627\u0644\u062a\u0637\u0648\u0639 \u0641\u0648\u0627\u0626\u062f (\u063a\u064a\u0631 \u0645\u0627\u0644\u064a\u0629) \u0634\u062e\u0635\u064a\u0629 \u0648\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629 \u0639\u0638\u064a\u0645\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f\u060c \u0648\u0645\u0646 \u062b\u0645 \u0644\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a. \u0648\u064a\u0634\u0643\u0644 \u0627\u0644\u062a\u0637\u0648\u0639 \u0628\u0627\u0644\u0646\u0633\u0628\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f \u0627\u0644\u0645\u0639\u0632\u0648\u0644\u064a\u0646 \u0648\u0627\u0644\u0645\u0647\u0645\u0634\u064a\u0646\u060c \u0648\u0633\u064a\u0644\u0629 \u0645\u0647\u0645\u0629 \u0644\u0644\u0627\u0646\u062f\u0645\u0627\u062c \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a (\u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0627\u0644\u0645\u0647\u0627\u062c\u0631\u064a\u0646). \u0643\u0645\u0627 \u0623\u0646\u0647 \u064a\u0634\u0643\u0644 \u0623\u062f\u0627\u0629 \u0631\u0626\u064a\u0633\u064a\u0629 \u0644\u0628\u0646\u0627\u0621 \u0631\u0623\u0633\u0645\u0627\u0644 \u0628\u0634\u0631\u064a \u0648\u0627\u062c\u062a\u0645\u0627\u0639\u064a \u0644\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a\u060c \u0648\u0644\u0645\u0646\u0627\u0635\u0631\u0629 \u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a\u0647\u0627 \u0648\u062d\u0642\u0648\u0642\u0647\u0627\u060c \u0648\u062a\u0639\u0632\u064a\u0632 \u0642\u062f\u0631\u062a\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0635\u0645\u0648\u062f \u0623\u0645\u0627\u0645 \u0627\u0644\u0623\u0632\u0645\u0627\u062a.",
+                "\u0648\u0645\u0646 \u0627\u0644\u0636\u0631\u0648\u0631\u064a \u0623\u0646 \u064a\u0642\u0648\u0645 \u0627\u0644\u062a\u0637\u0648\u0639 \u0628\u062f\u0648\u0631 \u0645\u062d\u0648\u0631\u064a \u0641\u064a \u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u0623\u0647\u062f\u0627\u0641 \u0627\u0644\u0625\u0646\u0645\u0627\u0626\u064a\u0629 \u0627\u0644\u0645\u0633\u062a\u062f\u0627\u0645\u0629 \u0641\u064a \u0627\u0644\u0645\u0633\u062a\u0642\u0628\u0644 \u0639\u0646 \u0637\u0631\u064a\u0642 \u062a\u0623\u0645\u064a\u0646 \u0625\u0636\u0641\u0627\u0621 \u0627\u0644\u0637\u0627\u0628\u0639 \u0627\u0644\u0645\u062d\u0644\u064a \u0639\u0644\u064a\u0647\u0627 \u0648\u062a\u0639\u0632\u064a\u0632\u0647\u0627. \u0648\u062a\u062d\u0648\u0644 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u0648\u0646 \u0645\u0646 \u0645\u062c\u0631\u062f \u0645\u0642\u062f\u0645\u064a \u062e\u062f\u0645\u0627\u062a \u0625\u0644\u0649 \u0641\u0627\u0639\u0644\u064a\u0646 \u0641\u064a \u0627\u0644\u062a\u0646\u0645\u064a\u0629\u060c \u0648\u0645\u0646 \u062b\u0645 \u0639\u0646\u0627\u0635\u0631 \u0623\u0633\u0627\u0633\u064a\u0629 \u0641\u064a \u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u0623\u0647\u0644\u064a \u0648\u0627\u0644\u0642\u062f\u0631\u0629 \u0639\u0644\u0649 \u0627\u0644\u0635\u0645\u0648\u062f\u060c \u0647\u0648 \u0627\u0644\u0633\u0628\u064a\u0644 \u0644\u0644\u0645\u0636\u064a \u0642\u062f\u0645\u0627\u064b.",
                 {
                     "type": "case-study-simple",
-                    "title": "A day in the life of a volunteer",
+                    "title": "\u064a\u0648\u0645 \u0641\u064a \u062d\u064a\u0627\u0629 \u0645\u062a\u0637\u0648\u0651\u0639",
                     "content": [
-                        "It is 6:30 am and Daniel is rising and preparing for his volunteer shift. For the past year he has been helping to end the Ebola outbreak in Sierra Leone, and he is now the leader of a Sierra Leone Red Cross Society team that conducts safe and dignified burials of bodies that are suspected of carrying the Ebola virus. It is difficult work and they have faced much opposition from communities who were afraid of them. Their own families asked them to leave home, hotels did not rent rooms to them, and many shops would not serve them. But they have been slowly winning over communities. He is one of 7,000 Red Cross volunteers working across the Ebola affected countries.",
-                        "On 8 May 2015 we asked our volunteers from around the world to take a photo of what they were doing on that day \u2013 World Red Cross and Red Crescent Day. Nearly 3,000 photos and stories were submitted from 110 countries \u2013 still only a small slice of the incredible work done by volunteers."
+                        "\u0625\u0646\u0651\u0647\u0627 \u0627\u0644\u0633\u0627\u0639\u0629 \u0627\u0644\u0633\u0627\u062f\u0633\u0629 \u0648\u0627\u0644\u0646\u0635\u0641 \u0635\u0628\u0627\u062d\u064b\u0627\u060c \u0648\u0647\u0627 \u0647\u0648 \u062f\u0627\u0646\u064a\u0627\u0644 \u064a\u0646\u0647\u0636 \u0645\u0646 \u0633\u0631\u064a\u0631\u0647 \u0648\u064a\u062a\u0647\u064a\u0651\u0623 \u0644\u0639\u0645\u0644\u0647 \u0643\u0645\u062a\u0637\u0648\u0651\u0639. \u0645\u0636\u0649 \u0639\u0644\u0649 \u0639\u0645\u0644\u0647 \u0647\u0630\u0627 \u0639\u0627\u0645\u064c \u0648\u0627\u0638\u0628\u064e \u0641\u064a\u0647 \u0639\u0644\u0649 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0629 \u0641\u064a \u062c\u0647\u0648\u062f \u0627\u0644\u0642\u0636\u0627\u0621 \u0639\u0644\u0649 \u062a\u0641\u0634\u0651\u064a \u0648\u0628\u0627\u0621 \u0627\u0644\u0625\u064a\u0628\u0648\u0644\u0627 \u0641\u064a \u0633\u064a\u0631\u0627\u0644\u064a\u0648\u0646\u060c \u0648\u0623\u0635\u0628\u062d \u0627\u0644\u0622\u0646 \u0642\u0627\u0626\u062f \u0641\u0631\u064a\u0642 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0641\u064a \u0633\u064a\u0631\u0627\u0644\u064a\u0648\u0646 \u0627\u0644\u0630\u064a \u064a\u0642\u0648\u0645 \u0628\u0639\u0645\u0644\u064a\u0627\u062a \u062f\u0641\u0646 \u062c\u062b\u0627\u0645\u064a\u0646 \u0627\u0644\u0636\u062d\u0627\u064a\u0627 \u0627\u0644\u062a\u064a \u064a\u0634\u062a\u0628\u0647 \u0628\u0623\u0646\u0651\u0647\u0627 \u062d\u0627\u0645\u0644\u0629 \u0644\u0644\u0641\u064a\u0631\u0648\u0633 \u0628\u0637\u0631\u064a\u0642\u0629 \u0622\u0645\u0646\u0629 \u0648\u0643\u0631\u064a\u0645\u0629. \u0625\u0646\u0651\u0647 \u0639\u0645\u0644 \u0635\u0639\u0628\u060c \u0648\u0644\u0642\u062f \u0648\u0627\u062c\u0647 \u0627\u0644\u0641\u0631\u064a\u0642 \u0645\u0639\u0627\u0631\u0636\u0629 \u0634\u062f\u064a\u062f\u0629 \u0645\u0646 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u0651\u064a\u0629 \u0627\u0644\u062a\u064a \u0643\u0627\u0646\u062a \u062a\u062e\u0627\u0641 \u0645\u0646\u0647. \u0648\u062d\u062a\u0651\u0649 \u0639\u0627\u0626\u0644\u0627\u062a \u0623\u0639\u0636\u0627\u0621 \u0627\u0644\u0641\u0631\u064a\u0642 \u0646\u0641\u0633\u0647\u0627 \u0637\u0644\u0628\u062a \u0645\u0646\u0647\u0645 \u0645\u063a\u0627\u062f\u0631\u0629 \u0627\u0644\u0645\u0646\u0632\u0644\u060c \u0648\u0627\u0644\u0641\u0646\u0627\u062f\u0642 \u0643\u0627\u0646\u062a \u062a\u0631\u0641\u0636 \u062a\u0623\u062c\u064a\u0631\u0647\u0645 \u0627\u0644\u063a\u0631\u0641\u060c \u0641\u064a\u0645\u0627 \u0627\u0645\u062a\u0646\u0639\u062a \u0645\u062a\u0627\u062c\u0631 \u0643\u062b\u064a\u0631\u0629 \u0639\u0646 \u0627\u0633\u062a\u0642\u0628\u0627\u0644\u0647\u0645. \u0648\u0644\u0643\u0646\u0651\u0647\u0645 \u0643\u0627\u0646\u0648\u0627 \u064a\u062a\u063a\u0644\u0628\u0648\u0646 \u062a\u062f\u0631\u064a\u062c\u064a\u064b\u0627 \u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u0631\u0641\u0636 \u0645\u0646 \u062c\u0627\u0646\u0628 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u0651\u064a\u0629. \u0648\u062f\u0627\u0646\u064a\u0627\u0644 \u0647\u0648 \u0648\u0627\u062d\u062f \u0645\u0646 7 \u0622\u0644\u0627\u0641 \u0645\u062a\u0637\u0648\u0651\u0639 \u0641\u064a \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u064a\u0639\u0645\u0644\u0648\u0646 \u0641\u064a \u0645\u062e\u062a\u0644\u0641 \u0627\u0644\u0628\u0644\u062f\u0627\u0646 \u0627\u0644\u062a\u064a \u062a\u0648\u0627\u062c\u0647 \u0648\u0628\u0627\u0621 \u0627\u0644\u0625\u064a\u0628\u0648\u0644\u0627.",
+                        "\u0641\u064a 8 \u0623\u064a\u0627\u0631\/\u0645\u0627\u064a\u0648 2015 \u060c \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0639\u0627\u0644\u0645\u064a \u0644\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631\u060c \u0637\u0644\u0628\u0646\u0627 \u0645\u0646 \u0645\u062a\u0637\u0648\u0651\u0639\u064a\u0646\u0627 \u0641\u064a \u0645\u062e\u062a\u0644\u0641 \u0623\u0646\u062d\u0627\u0621 \u0627\u0644\u0639\u0627\u0644\u0645 \u0623\u0646 \u064a\u0644\u062a\u0642\u0637\u0648\u0627 \u0635\u0648\u0631\u0629 \u0644\u0645\u0627 \u0643\u0627\u0646\u0648\u0627 \u064a\u0641\u0639\u0644\u0648\u0646\u0647 \u0630\u0627\u0643 \u0627\u0644\u064a\u0648\u0645. \u0641\u062a\u0644\u0642\u064a\u0646\u0627 \u0646\u062d\u0648 3 \u0622\u0644\u0627\u0641 \u0635\u0648\u0631\u0629 \u0648\u0642\u0635\u0629 \u0645\u0646 110 \u0628\u0644\u062f\u0627 \u2013 \u0648\u0645\u0627 \u0630\u0644\u0643 \u0625\u0644\u0627 \u062c\u0632\u0621 \u0635\u063a\u064a\u0631 \u0645\u0646 \u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u0636\u062e\u0645 \u0627\u0644\u0630\u064a \u064a\u0642\u0648\u0645 \u0628\u0647 \u0627\u0644\u0645\u062a\u0637\u0648\u0651\u0639\u0648\u0646."
                     ]
                 }
             ]
         },
         {
-            "title": "Strong youth for strong National Societies",
+            "title": "\u0634\u0628\u0627\u0628 \u0642\u0648\u064a \u0645\u0646 \u0623\u062c\u0644 \u062c\u0645\u0639\u064a\u0627\u062a \u0648\u0637\u0646\u064a\u0629 \u0642\u0648\u064a\u0629",
             "blocks": [
-                "The first formal initiative to associate young people with the work of the Red Cross was in 1892, but this was rejected. It was only after the San Francisco earthquake of 1906 that the first official youth contribution via the American Red Cross was registered. Young people have been at the forefront of our worldwide efforts ever since. Their multiple roles include being innovators and early adopters of communication, social media, and other technologies, intercultural ambassadors and advocates, peer-to-peer facilitators, community mobilisers, and agents of behavioural change.",
+                "\u062a\u0631\u062c\u0639 \u0623\u0648\u0644 \u0645\u0628\u0627\u062f\u0631\u0629 \u0631\u0633\u0645\u064a\u0629 \u0644\u0636\u0645 \u0627\u0644\u0634\u0628\u0627\u0628 \u0625\u0644\u0649 \u0639\u0645\u0644 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0625\u0644\u0649 \u0639\u0627\u0645 1892. \u063a\u064a\u0631 \u0623\u0646 \u0627\u0644\u0645\u0628\u0627\u062f\u0631\u0629 \u0631\u064f\u0641\u0636\u062a. \u0648\u0644\u0645 \u062a\u0633\u062c\u0644 \u0623\u0648\u0644 \u0645\u0633\u0627\u0647\u0645\u0629 \u0631\u0633\u0645\u064a\u0629 \u0645\u0646 \u0627\u0644\u0634\u0628\u0627\u0628 \u0625\u0644\u0627 \u0628\u0639\u062f \u0648\u0642\u0648\u0639 \u0632\u0644\u0632\u0627\u0644 \u0633\u0627\u0646 \u0641\u0631\u0627\u0646\u0633\u064a\u0633\u0643\u0648 \u0641\u064a \u0639\u0627\u0645 1906 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a. \u0648\u0623\u0635\u0628\u062d \u0627\u0644\u0634\u0628\u0627\u0628 \u0641\u064a \u0637\u0644\u064a\u0639\u0629 \u062c\u0647\u0648\u062f\u0646\u0627 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629 \u0645\u0646\u0630 \u0630\u0644\u0643 \u0627\u0644\u062d\u064a\u0646\u060c \u0628\u0641\u0636\u0644 \u0627\u0636\u0637\u0644\u0627\u0639\u0647\u0645 \u0628\u0627\u0644\u0639\u062f\u064a\u062f \u0645\u0646 \u0627\u0644\u0623\u062f\u0648\u0627\u0631 \u0645\u0646\u0647\u0627 \u062f\u0648\u0631\u0647\u0645 \u0643\u0645\u0628\u062a\u0643\u0631\u064a\u0646 \u0648\u0631\u0648\u0627\u062f \u0641\u064a \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0648\u0641\u064a \u0627\u0633\u062a\u0639\u0645\u0627\u0644 \u0648\u0633\u0627\u0626\u0644 \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a \u0648\u063a\u064a\u0631 \u0630\u0644\u0643 \u0645\u0646 \u0627\u0644\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627\u062a\u060c \u0643\u0630\u0644\u0643 \u0643\u0633\u0641\u0631\u0627\u0621 \u0641\u064a\u0645\u0627 \u0628\u064a\u0646 \u0627\u0644\u062b\u0642\u0627\u0641\u0627\u062a \u0648\u0645\u0646\u0627\u0635\u0631\u064a\u0646\u060c \u0648\u0645\u0648\u062c\u0647\u064a\u0646 \u0644\u0644\u0623\u0642\u0631\u0627\u0646\u060c \u0648\u0645\u0633\u0624\u0648\u0644\u064a\u0646 \u0639\u0646 \u0627\u0644\u062a\u0639\u0628\u0626\u0629 \u0627\u0644\u062c\u0645\u0627\u0647\u064a\u0631\u064a\u0629\u060c \u0648\u0648\u0633\u0637\u0627\u0621 \u0641\u064a \u062a\u063a\u064a\u064a\u0631 \u0627\u0644\u0633\u0644\u0648\u0643.",
                 {
                     "type": "chart",
-                    "title": "Youth in the IFRC",
+                    "title": "\u0627\u0644\u0634\u0628\u0627\u0628 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a",
                     "captions": [
-                        "of volunteers are young people",
-                        "of National Society headquarters staff are aged less than 30 years"
+                        "\u0645\u0646 \u0645\u062a\u0637\u0648\u0639\u064a\u0646\u0627 \u0647\u0645 \u0645\u0646 \u0627\u0644\u0634\u0628\u0627\u0628",
+                        "\u0645\u0646 \u0645\u0648\u0638\u0641\u064a \u0645\u0642\u0627\u0631 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u062a\u0642\u0644 \u0623\u0639\u0645\u0627\u0631\u0647\u0645 \u0639\u0646 30 \u0639\u0627\u0645\u0627\u064b"
                     ],
                     "dataset": [
                         [
@@ -591,53 +592,54 @@
                                 "fill": "#F1F0EF"
                             }
                         ]
-                    ]
+                    ],
+                    "caption": ""
                 },
-                "The IFRC Youth Engagement Strategy focuses on the three dimensions of youth \u2013 as volunteers, as leaders, and as beneficiaries. An estimated half of our volunteers are young people and nearly all National Societies involve them actively in their programmes. Some 18 per cent of National Society headquarters staff are aged less than 30 years, this being the IFRC policy definition of \u201cyouth\u201d though local social norms and cultural contexts permit reasonable variation.",
+                "\u062a\u0631\u0643\u0632 \u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0644\u0625\u0634\u0631\u0627\u0643 \u0627\u0644\u0634\u0628\u0627\u0628 \u0639\u0644\u0649 \u062b\u0644\u0627\u062b\u0629 \u0623\u0628\u0639\u0627\u062f \u0647\u064a \u0627\u0644\u0634\u0628\u0627\u0628 \u0643\u0645\u062a\u0637\u0648\u0639\u064a\u0646\u060c \u0648\u0627\u0644\u0634\u0628\u0627\u0628 \u0643\u0642\u0627\u062f\u0629\u060c \u0648\u0627\u0644\u0634\u0628\u0627\u0628 \u0643\u0645\u0633\u062a\u0641\u064a\u062f\u064a\u0646. \u0648\u062a\u0641\u064a\u062f \u0627\u0644\u062a\u0642\u062f\u064a\u0631\u0627\u062a \u0628\u0623\u0646 \u0646\u062d\u0648 \u0646\u0635\u0641 \u0645\u062a\u0637\u0648\u0639\u064a\u0646\u0627 \u0647\u0645 \u0645\u0646 \u0627\u0644\u0634\u0628\u0627\u0628 \u0648\u0623\u0646 \u0643\u0644 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u062a\u0642\u0631\u064a\u0628\u0627\u064b \u062a\u0634\u0631\u0643\u0647\u0645 \u0628\u0641\u0639\u0627\u0644\u064a\u0629 \u0641\u064a \u0628\u0631\u0627\u0645\u062c\u0647\u0627. \u0648\u062a\u0642\u0644 \u0623\u0639\u0645\u0627\u0631 \u0646\u062d\u0648 18 \u0641\u064a \u0627\u0644\u0645\u0627\u0626\u0629 \u0645\u0646 \u0645\u0648\u0638\u0641\u064a \u0645\u0642\u0627\u0631 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0639\u0646 30 \u0639\u0627\u0645\u0627\u064b\u060c \u0648\u0647\u0630\u0627 \u0627\u0644\u062a\u0639\u0631\u064a\u0641 \u0644\u0633\u064a\u0627\u0633\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0628\u0634\u0623\u0646 \u00ab\u0627\u0644\u0634\u0628\u0627\u0628 \u00bb \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629\u060c \u0648\u0627\u0644\u0633\u064a\u0627\u0642\u0627\u062a \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629 \u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u064a\u062a\u064a\u062d \u062a\u062d\u0642\u064a\u0642 \u062a\u0646\u0648\u0639 \u0645\u0639\u0642\u0648\u0644.",
                 {
                     "type": "chart",
-                    "title": "Youth engagement",
+                    "title": "\u0625\u0634\u0631\u0627\u0643 \u0627\u0644\u0634\u0628\u0627\u0628",
                     "dataset": [
                         {
-                            "name": "National Societies with youth focal points in their governance",
+                            "name": "\u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u062a\u062a\u0636\u0645\u0646 \u0623\u062c\u0647\u0632\u0629 \u062d\u0643\u0645\u0647\u0627 \u0645\u0646\u0633\u0642\u0627\u064b \u0644\u0644\u0634\u0628\u0627\u0628",
                             "number": "116"
                         },
                         {
-                            "name": "National Societies with youth representatives on their boards",
+                            "name": "\u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u062a\u062e\u0635\u0635 \u0645\u0642\u0639\u062f\u0627\u064b \u0641\u064a \u0645\u062c\u0644\u0633 \u0625\u062f\u0627\u0631\u062a\u0647\u0627 \u0644\u0645\u0645\u062b\u0644 \u0627\u0644\u0634\u0628\u0627\u0628",
                             "number": "89"
                         },
                         {
-                            "name": "National Societies with youth-led governance structures",
+                            "name": "\u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u0644\u062f\u064a\u0647\u0627 \u0623\u062c\u0647\u0632\u0629 \u062d\u0643\u0645 \u062a\u062d\u062a \u0642\u064a\u0627\u062f\u0629 \u0634\u0628\u0627\u0628\u064a\u0629",
                             "number": "69"
                         },
                         {
-                            "name": "National Societies with youth in service delivery",
+                            "name": "\u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u064a\u0634\u0627\u0631\u0643 \u0627\u0644\u0634\u0628\u0627\u0628 \u0641\u064a \u062a\u0642\u062f\u064a\u0645 \u062e\u062f\u0645\u0627\u062a\u0647\u0627",
                             "number": "108"
                         },
                         {
-                            "name": "National Societies training youth as leaders",
+                            "name": "\u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u062a\u0642\u0648\u0645 \u0628\u062a\u062f\u0631\u064a\u0628 \u0634\u0628\u0627\u0628 \u0639\u0644\u0649 \u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u0642\u064a\u0627\u062f\u0629",
                             "number": "76"
                         },
                         {
-                            "name": "National Societies training young beneficiaries",
+                            "name": "\u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u062a\u0642\u0648\u0645 \u0628\u062a\u062f\u0631\u064a\u0628 \u0627\u0644\u0634\u0628\u0627\u0628 \u0645\u0646 \u0627\u0644\u0645\u0633\u062a\u0641\u064a\u062f\u064a\u0646",
                             "number": "110"
                         },
                         {
-                            "name": "National Societies training young volunteers",
+                            "name": "\u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u062a\u0642\u0648\u0645 \u0628\u062a\u062f\u0631\u064a\u0628 \u0627\u0644\u0634\u0628\u0627\u0628 \u0645\u0646 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646",
                             "number": "92"
                         }
                     ],
-                    "caption": "Source: Youth Action and Volunteering Development Department"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0633\u0645 \u062a\u0646\u0645\u064a\u0629 \u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u0634\u0628\u0627\u0628 \u0648\u0627\u0644\u062a\u0637\u0648\u0639"
                 },
-                "We strive to enable young beneficiaries to become youth volunteers and encourage them to assume leadership roles in their communities, besides improving their employability in their working lives. Education, empowerment, and the creation of enabling environments are vital to maximise the engagement of young people in our work."
+                "\u0648\u0646\u062d\u0646 \u0646\u0633\u0639\u0649 \u0625\u0644\u0649 \u062a\u0645\u0643\u064a\u0646 \u0627\u0644\u0645\u0633\u062a\u0641\u064a\u062f\u064a\u0646 \u0645\u0646 \u0627\u0644\u0634\u0628\u0627\u0628 \u0645\u0646 \u0623\u0646 \u064a\u0635\u0628\u062d\u0648\u0627 \u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0648\u0646\u0634\u062c\u0639\u0647\u0645 \u0639\u0644\u0649 \u0627\u0644\u0627\u0636\u0637\u0644\u0627\u0639 \u0628\u0623\u062f\u0648\u0627\u0631 \u0627\u0644\u0642\u064a\u0627\u062f\u0629 \u0641\u064a \u0645\u062c\u062a\u0645\u0639\u0627\u062a\u0647\u0645\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u062a\u062d\u0633\u064a\u0646 \u0635\u0644\u0627\u062d\u064a\u062a\u0647\u0645 \u0644\u0644\u0639\u0645\u0644 \u0641\u064a \u062d\u064a\u0627\u062a\u0647\u0645 \u0627\u0644\u0639\u0645\u0644\u064a\u0629. \u0648\u064a\u0639\u062f \u0627\u0644\u062a\u0639\u0644\u064a\u0645 \u0648\u0627\u0644\u062a\u0645\u0643\u064a\u0646 \u0648\u062a\u0647\u064a\u0626\u0629 \u0638\u0631\u0648\u0641 \u0645\u0624\u0627\u062a\u064a\u0629 \u0639\u0648\u0627\u0645\u0644 \u0623 \u0633\u0627\u0633\u064a\u0629 \u0644\u062a\u0639\u0638\u064a\u0645 \u0627\u0644\u0627\u0633\u062a\u0641\u0627\u062f\u0629 \u0645\u0646\n\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0634\u0628\u0627\u0628 \u0641\u064a \u0639\u0645\u0644\u0646\u0627."
             ]
         }
     ],
     "nextChapter": {
         "heading": "Next chapter",
         "chapter": "8",
-        "subtitle": "Enabling action 2",
-        "title": "Humanitarian diplomacy to prevent and reduce vulnerability in a globalised world",
+        "subtitle": "\u0641\u0639\u0644 \u0627\u0644\u062a\u0645\u0643\u064a\u0646 \u0627\u0644\u062b\u0627\u0646\u064a",
+        "title": "\u0627\u0646\u062a\u0647\u0627\u062c \u062f\u0628\u0644\u0648\u0645\u0627\u0633\u064a\u0629 \u0625\u0646\u0633\u0627\u0646\u064a\u0629 \u0644\u062a\u0641\u0627\u062f\u064a \u0645\u0648\u0627\u0637\u0646 \u0627\u0644\u0636\u0639\u0641 \u0648\u0627\u0644\u062d\u062f \u0645\u0646\u0647\u0627 \u0641\u064a \u0639\u0627\u0644\u0645 \u0627\u0644\u0639\u0648\u0644\u0645\u0629",
         "slug": "enabling-action-2"
     }
 }

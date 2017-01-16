@@ -1,96 +1,98 @@
 {
     "chapter": "5",
     "slug": "strategic-aim-2",
-    "title": "Strategic aim 2",
-    "subtitle": "Healthy and safe living",
-    "intro": "For the IFRC, the community resilience approach is, in many ways, just the modern designation of how we have worked with communities for many decades.",
+    "title": "\u0627\u0644\u0647\u062f\u0641 \u0627\u0644\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a \u0627\u0644\u062b\u0627\u0646\u064a",
+    "subtitle": "\u062d\u064a\u0627\u0629 \u0635\u062d\u064a\u0629 \u0648\u0622\u0645\u0646\u0629",
+    "intro": "\u0648\u0628\u0627\u0644\u0646\u0633\u0628\u0629 \u0644\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a\u060c \u064a\u0634\u0643\u0644 \u0646\u0647\u062c \u0642\u062f\u0631\u0629 \u0627\u0644\u0645\u062c\u062a\u0645\u0639 \u0639\u0644\u0649 \u0627\u0644\u0635\u0645\u0648\u062f \u0645\u0646 \u0639\u062f\u0629 \u0623\u0648\u062c\u0647 \u0645\u062c\u0631\u062f \u062a\u0633\u0645\u064a\u0629 \u062c\u062f\u064a\u062f\u0629 \u0644\u0639\u0645\u0644\u0646\u0627 \u0645\u0639 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u062e\u0644\u0627\u0644 \u0627\u0644\u0639\u062f\u064a\u062f \u0645\u0646 \u0627\u0644\u0639\u0642\u0648\u062f.",
     "sections": [
         {
-            "title": "People reached by long-term services",
+            "title": "\u0639\u062f\u062f \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0627\u0644\u0645\u0634\u0645\u0648\u0644\u064a\u0646 \u0628\u062e\u062f\u0645\u0627\u062a \u0637\u0648\u064a\u0644\u0629 \u0627\u0644\u0623\u062c\u0644",
             "blocks": [
-                "Our National Societies achieve this through their volunteers, who engage their own communities via education and training. By getting to know their own specific hazards and by analysing their risks and vulnerabilities, they are able to develop the appropriate solutions for their local context.",
+                "\u0648\u0642\u062f \u062d\u0642\u0642\u062a \u062c\u0645\u0639\u064a\u0627\u062a\u0646\u0627 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0630\u0644\u0643 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0645\u062a\u0637\u0648\u0639\u064a\u0647\u0627 \u0627\u0644\u0630\u064a\u0646 \u0623\u0634\u0631\u0643\u0648\u0627 \u0645\u062c\u062a\u0645\u0639\u0627\u062a\u0647\u0645 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u062a\u0639\u0644\u064a\u0645 \u0648\u0627\u0644\u062a\u062f\u0631\u064a\u0628 \u0644\u0644\u062a\u0639\u0631\u0641 \u0639\u0644\u0649 \u0627\u0644\u0645\u062e\u0627\u0637\u0631\u0627\u0644\u062a\u064a \u062a\u062a\u0639\u0631\u0636 \u0644\u0647\u0627 \u0628\u0648\u062c\u0647 \u062e\u0627\u0635 \u0648\u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0645\u062e\u0627\u0637\u0631\u0648\u0623\u0648\u062c\u0647 \u0627\u0644\u0636\u0639\u0641 \u0627\u0644\u062a\u064a \u062a\u062a\u0633\u0645 \u0628\u0647\u0627\u060c \u062d\u062a\u0649 \u064a\u062a\u0633\u0646\u0649 \u0648\u0636\u0639 \u0627\u0644\u062d\u0644\u0648\u0644 \u0627\u0644\u0645\u0646\u0627\u0633\u0628\u0629 \u0644\u0633\u064a\u0627\u0642\u0647\u0627 \u0627\u0644\u0645\u062d\u0644\u064a.",
                 {
                     "type": "chart",
-                    "title": "People reached",
+                    "title": "\u0639\u062f\u062f \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0627\u0644\u0645\u0634\u0645\u0648\u0644\u064a\u0646",
                     "axisLabels": {
-                        "x": "Years"
+                        "x": "\u0633\u0646\u0648\u0627\u062a",
+                        "y": ""
                     },
-                    "caption": "Source: FDRS"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a"
                 },
-                "Overall, the IFRC network reached nearly 161 million people with one or more long-term services in 2013, an increase of 55 per cent on the 103.4 million reported in 2012. This increase is partly due to more National Societies reporting on this indicator.",
-                "The Americas region has the largest outreach with  long-term programmes reflecting the historical roots of Red Cross work there. Gender-disaggregated reporting is a significant general weakness and will be strengthened in future years.",
+                "\u0641\u0642\u062f \u0634\u0645\u0644\u062a \u0634\u0628\u0643\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0628\u0648\u062c\u0647 \u0639\u0627\u0645 \u0645\u0627 \u064a\u0642\u0631\u0628 \u0645\u0646 161 \u0645\u0644\u064a\u0648\u0646 \u0634\u062e\u0635 \u0645\u0646 \u062e\u0644\u0627\u0644 \u062e\u062f\u0645\u0629 \u0623\u0648 \u0623\u0643\u062b\u0631\u0645\u0646 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0637\u0648\u064a\u0644\u0629 \u0627\u0644\u0623\u062c\u0644 \u0641\u064a \u0639\u0627\u0645 2013 \u060c \u0628\u0645\u0627 \u064a\u0645\u062b\u0644 \u0632\u064a\u0627\u062f\u0629 \u0642\u062f\u0631\u0647\u0627 55 \u0641\u064a \u0627\u0644\u0645\u0627\u0626\u0629 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0639\u062f\u062f \u0627\u0644\u0645\u0628\u0644\u063a \u0639\u0646\u0647 \u0641\u064a \u0639\u0627\u0645 2012 \u0648\u0627\u0644\u0628\u0627\u0644\u063a 103.4 \u0645\u0644\u064a\u0648\u0646 \u0634\u062e\u0635. \u0648\u062a\u0631\u062c\u0639 \u0647\u0630\u0647 \u0627\u0644\u0632\u064a\u0627\u062f\u0629 \u062c\u0632\u0626\u064a\u0627\u064b \u0625\u0644\u0649 \u0632\u064a\u0627\u062f\u0629 \u0639\u062f\u062f \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u062a\u064a \u0642\u062f\u0645\u062a \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0633\u062a\u0646\u0627\u062f\u0627 \u0625\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u0645\u0624\u0634\u0631.",
+                "\u0648\u0644\u062f\u0649 \u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u064a\u0646 \u0623\u0643\u0628\u0631 \u0628\u0631\u0627\u0645\u062c \u0646\u0634\u0631 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0637\u0648\u064a\u0644\u0629 \u0627\u0644\u0623\u062c\u0644\u060c \u0648\u0647\u0648 \u0645\u0627 \u064a\u0639\u0643\u0633 \u0627\u0644\u062c\u0630\u0648\u0631 \u0627\u0644\u062a\u0627\u0631\u064a\u062e\u064a\u0629 \u0644\u0639\u0645\u0644 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0647\u0646\u0627\u0643. \u0648\u062a\u0634\u0643\u0644 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0627\u0644\u0645\u0641\u0635\u0644\u0629 \u0628\u062d\u0633\u0628 \u0646\u0648\u0639 \u0627\u0644\u062c\u0646\u0633 \u0645\u0648\u0637\u0646 \u0636\u0639\u0641 \u0639\u0627\u0645 \u0648\u0643\u0628\u064a\u0631\u060c \u0648\u0647\u064a \u0633\u062a\u062a\u0639\u0632\u0632 \u0641\u064a \u0627\u0644\u0633\u0646\u0648\u0627\u062a \u0627\u0644\u0645\u0642\u0628\u0644\u0629.",
                 {
                     "type": "chart",
                     "title": "People reached by region and gender",
                     "dataset": [
                         {
-                            "name": "Americas",
+                            "name": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "index": "1",
                             "first": "24431270",
                             "second": "19398807",
                             "rest": "17024418",
                             "names": [
-                                "Argentine Red Cross",
-                                "Canadian Red Cross"
+                                "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0631\u062c\u0646\u062a\u064a\u0646\u064a",
+                                "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0643\u0646\u062f\u064a"
                             ]
                         },
                         {
-                            "name": "Africa",
+                            "name": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "index": "2",
                             "first": "8640267",
                             "second": "7367549",
                             "rest": "14225882",
                             "names": [
-                                "Mali Red Cross",
-                                "Kenyan Red Cross"
+                                "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0645\u0627\u0644\u064a",
+                                "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631\u0627\u0644\u0643\u064a\u0646\u064a"
                             ]
                         },
                         {
-                            "name": "Asia and the Pacific",
+                            "name": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "index": "3",
                             "first": "7525024",
                             "second": "7148247",
                             "rest": "11430773",
                             "names": [
-                                "The Republic of Korea National Red Cross",
-                                "Vietnam"
+                                "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0643\u0648\u0631\u064a",
+                                "\u0641\u064a\u064a\u062a \u0646\u0627\u0645"
                             ]
                         },
                         {
-                            "name": "Europe",
+                            "name": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "index": "4",
                             "first": "7371570",
                             "second": "6264920",
                             "rest": "12191129",
                             "names": [
-                                "German Red Cross",
-                                "Spain"
+                                "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a",
+                                "\u0625\u0633\u0628\u0627\u0646\u064a\u0627"
                             ]
                         },
                         {
-                            "name": "Middle East and North Africa",
+                            "name": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "index": "5",
                             "first": "16179974",
                             "second": "670000",
                             "rest": "813308",
                             "names": [
-                                "Red Crescent Society of the Islamic Republic of Iran",
+                                "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0644\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0625\u064a\u0631\u0627\u0646 \u0627\u0644\u0625\u0633\u0644\u0627\u0645\u064a\u0629",
                                 "??"
                             ]
                         }
                     ],
-                    "caption": "Source: FDRS"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a"
                 },
-                "The IFRC secretariat\u2019s annual mapping of disaster risk reduction services indicates a progressive scaling-up since the beginning of the decade. By 2014, 151.7 million Swiss francs were being spent in 121 National Societies to reach 31.2 million people.",
+                "\u0648\u062a\u0634\u064a\u0631 \u0627\u0644\u062e\u0631\u0627\u0626\u0637 \u0627\u0644\u062a\u064a \u062a\u0635\u062f\u0631\u0647\u0627 \u0623\u0645\u0627\u0646\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0633\u0646\u0648\u064a\u0627\u064b \u0628\u0634\u0623\u0646 \u062e\u062f\u0645\u0627\u062a \u0627\u0644\u062d\u062f \u0645\u0646 \u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0643\u0648\u0627\u0631\u062b \u0625\u0644\u0649 \u062a\u0642\u062f\u0645 \u062a\u062f\u0631\u064a\u062c\u064a \u0645\u0646\u0630 \u0628\u062f\u0627\u064a\u0629 \u0627\u0644\u0639\u0642\u062f. \u0641\u0642\u062f \u0628\u0644\u063a\u062a \u0627\u0644\u0645\u0628\u0627\u0644\u063a \u0627\u0644\u062a\u064a \u0623\u0646\u0641\u0642\u062a \u0641\u064a 121 \u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u0628\u062d\u0644\u0648\u0644 \u0639\u0627\u0645 2014 \u060c 151.7 \u0645\u0644\u064a\u0648\u0646 \u0641\u0631\u0646\u0643 \u0633\u0648\u064a\u0633\u0631\u064a \u0644\u062a\u063a\u0637\u064a\u0629 31.2 \u0645\u0644\u064a\u0648\u0646 \u0634\u062e\u0635.",
                 {
                     "type": "chart",
-                    "title": "Disaster risk reduction: reaching more with increased investment",
+                    "title": "\u0627\u0644\u062d\u062f \u0645\u0646 \u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0643\u0648\u0627\u0631\u062b: \u062a\u063a\u0637\u064a\u0629 \u0627\u0644\u0645\u0632\u064a\u062f \u0645\u0646 \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0628\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u0627\u062a",
                     "axisLabels": {
-                        "x": "Years"
+                        "x": "\u0633\u0646\u0648\u0627\u062a",
+                        "y": ""
                     },
                     "lineLabels": [
-                        "Expenditure\\n(CHF millions)",
-                        "People reached\\n(millions)"
+                        "\u0627\u0644\u0646\u0641\u0642\u0627\u062a\n(\u0628\u0645\u0644\u0627\u064a\u064a\u0646 \u0627\u0644\u0641\u0631\u0646\u0643\u0627\u062a \u0627\u0644\u0633\u0648\u064a\u0633\u0631\u064a\u0629)",
+                        "\u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0627\u0644\u0630\u064a\u0646 \u062a\u0645 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u064a\u0647\u0645\n(\u0645\u0644\u0627\u064a\u064a\u0646)"
                     ],
                     "dataset": [
                         [
@@ -138,59 +140,60 @@
                             }
                         ]
                     ],
-                    "caption": "Source: Community Preparedness and Risk Reduction Department"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0633\u0645 \u062a\u0623\u0647\u0628 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0648\u0627\u0644\u062d\u062f \u0645\u0646 \u0627\u0644\u0645\u062e\u0627\u0637\u0631"
                 }
             ]
         },
         {
-            "title": "Climate change",
+            "title": "\u062a\u063a\u064a\u0651\u0631 \u0627\u0644\u0645\u0646\u0627\u062e",
             "blocks": [
-                "International consensus on the importance and urgency of tackling climate change has grown over recent years, and the IFRC focus is on building resilience. We contribute to climate change adaptation through scaling up our disaster risk reduction work, and we see our role in climate change mitigation through promoting sustainable community development that is respectful of the environment and optimises communities\u2019 carbon footprints.",
+                "\u0644\u0642\u062f \u0632\u0627\u062f \u062e\u0644\u0627\u0644 \u0627\u0644\u0633\u0646\u0648\u0627\u062a \u0627\u0644\u0623\u062e\u064a\u0631\u0629 \u062a\u0648\u0627\u0641\u0642 \u0627\u0644\u0623\u0631\u0627\u0621 \u0639\u0644\u0649 \u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u062f\u0648\u0644\u064a \u0628\u0634\u0623\u0646 \u0623\u0647\u0645\u064a\u0629 \u0648\u0636\u0631\u0648\u0631\u0629 \u0627\u0644\u062a\u0635\u062f\u064a \u0644\u062a\u063a\u064a\u0631 \u0627\u0644\u0645\u0646\u0627\u062e\u060c \u0648\u0641\u064a \u0647\u0630\u0627 \u0627\u0644\u0635\u062f\u062f \u064a\u0631\u0643\u0632 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0639\u0644\u0649 \u0628\u0646\u0627\u0621 \u0627\u0644\u0642\u062f\u0631\u0629 \u0639\u0644\u0649 \u0627\u0644\u0635\u0645\u0648\u062f. \u0648\u0646\u062d\u0646 \u0646\u0633\u0627\u0647\u0645 \u0641\u064a \u0627\u0644\u062a\u0643\u064a\u0641 \u0645\u0639 \u062a\u063a\u064a\u0631 \u0627\u0644\u0645\u0646\u0627\u062e \u0639\u0646 \u0637\u0631\u064a\u0642 \u062a\u0639\u0632\u064a\u0632 \u0639\u0645\u0644\u0646\u0627 \u0644\u0644\u062d\u062f \u0645\u0646 \u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0643\u0648\u0627\u0631\u062b\u060c \u0648\u0646\u062d\u0646 \u0646\u0631\u0649 \u062f\u0648\u0631\u0646\u0627 \u0641\u064a \u0627\u0644\u062a\u062e\u0641\u064a\u0641 \u0645\u0646 \u0622\u062b\u0627\u0631 \u062a\u063a\u064a\u0631 \u0627\u0644\u0645\u0646\u0627\u062e \u0645\u0646 \u062e\u0644\u0627\u0644 \u062a\u0639\u0632\u064a\u0632 \u0627\u0644\u062a\u0646\u0645\u064a\u0629 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u064a\u0629 \u0627\u0644\u0645\u0633\u062a\u062f\u0627\u0645\u0629 \u0627\u0644\u062a\u064a \u062a\u062d\u062a\u0631\u0645 \u0627\u0644\u0628\u064a\u0626\u0629 \u0648\u062a\u062d\u0633\u064a\u0646 \u0627\u0644\u062a\u062d\u0643\u0645 \u0641\u064a \u0627\u0644\u0628\u0635\u0645\u0629 \u0627\u0644\u0643\u0631\u0628\u0648\u0646\u064a\u0629 \u0627\u0644\u062a\u064a \u062a\u062e\u0644\u0641\u0647\u0627 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a.",
                 {
                     "type": "image",
-                    "title": "image title missing"
+                    "title": "image title missing",
+                    "caption": ""
                 },
-                "Starting by \u201cclimate proofing\u201d existing programmes and services where feasible, National Societies are proactively engaging with their countries\u2019 National Adaptation Plans on a range of actions. For example, the Kenya Red Cross Society has been helping to build \u201cclimate-smart\u201d food security in the drought-prone North Eastern province, the Rwandan Red Cross has been working on rainwater harvesting, and the Indian Red Cross Society on flood plains management in Bihar and Odisha states. The Red Cross societies in Togo and Uganda have been breaking new ground, with German Red Cross support, in early warning early action with forecast-based financing. The Netherlands Red Cross and the Red Cross and Red Crescent Climate Centre are in the vanguard of a Partners for Resilience programme that has reached out to hundreds of local communities across several ecosystems around the world with local climate-smart risk reduction interventions."
+                "\u0648\u0627\u0646\u0637\u0644\u0627\u0642\u0627\u064b \u0645\u0646 \u0627\u0644\u0628\u0631\u0627\u0645\u062c \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u062d\u0627\u0644\u064a\u0629 \u00ab\u0627\u0644\u0648\u0627\u0642\u064a\u0629 \u0645\u0646 \u0627\u0644\u0645\u0646\u0627\u062e \u00bb \u062a\u0634\u0627\u0631\u0643 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0628\u0641\u0639\u0627\u0644\u064a\u0629 \u062d\u064a\u062b\u0645\u0627 \u0643\u0627\u0646 \u0630\u0644\u0643 \u0645\u0645\u0643\u0646\u0627\u064b \u0628\u0645\u062c\u0645\u0648\u0639\u0629 \u0645\u0646 \u0627\u0644\u0625\u062c\u0631\u0627\u0621\u0627\u062a \u0641\u064a \u0627\u0644\u062e\u0637\u0637 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0644\u0628\u0644\u062f\u0627\u0646\u0647\u0627 \u062a\u0631\u0645\u064a \u0625\u0644\u0649 \u0627\u0644\u062a\u0643\u064a\u0641 \u0645\u0639 \u062a\u063a\u064a\u0631 \u0627\u0644\u0645\u0646\u0627\u062e. \u0641\u0639\u0644\u0649 \u0633\u0628\u064a\u0644 \u0627\u0644\u0645\u062b\u0627\u0644\u060c \u062a\u0633\u0627\u0639\u062f \u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0643\u064a\u0646\u064a \u0641\u064a \u0625\u0646\u0634\u0627\u0621 \u0646\u0638\u0627\u0645 \u0644 \u0644\u0623\u0645\u0646 \u0627\u0644\u063a\u0630\u0627\u0626\u064a \u00ab\u064a\u0631\u0627\u0639\u064a \u0627\u0644\u0645\u0646\u0627\u062e \u00bb \u0641\u064a \u0627\u0644\u0625\u0642\u0644\u064a\u0645 \u0627\u0644\u0634\u0645\u0627\u0644\u064a \u0627\u0644\u0634\u0631\u0642\u064a \u0627\u0644\u0645\u0639\u0631\u0636 \u0644\u0644\u062c\u0641\u0627\u0641\u060c \u0648\u064a\u0639\u0645\u0644 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0631\u0648\u0627\u0646\u062f\u064a \u0641\u064a \u062c\u0645\u0639 \u0645\u064a\u0627\u0647 \u0627\u0644\u0645\u0637\u0631\u060c \u0648\u064a\u0639\u0645\u0644 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0647\u0646\u062f\u064a \u0641\u064a \u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0633\u0647\u0648\u0644 \u0627\u0644\u0641\u064a\u0636\u0627\u0646\u064a\u0629 \u0641\u064a \u0648\u0644\u0627\u064a\u062a\u064a \u0628\u064a\u0647\u0627\u0631\u0648\u0623\u0648\u062f\u064a\u0634\u0627\u060c \u0648 \u064a\u062a\u0637\u0631\u0642 \u0643\u0644 \u0645\u0646 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0641\u064a \u062a\u0648\u063a\u0648\u0648\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0641\u064a \u0623\u0648\u063a\u0646\u062f\u0627 \u0644\u0645\u062c\u0627\u0644\u0627\u062a\u060c \u0628\u062f\u0639\u0645 \u0645\u0646 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a\u060c \u0641\u064a\u0645\u0627 \u064a\u062e\u0635 \u0627\u0644\u0625\u0646\u0630\u0627\u0631 \u0627\u0644\u0645\u0628\u0643\u0631 - \u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u0645\u0628\u0643\u0631 \u0645\u0646 \u062e\u0644\u0627\u0644 \u062a\u0645\u0648\u064a\u0644\u0627\u062a \u0645\u062a\u0648\u0642\u0639\u0629. \u0648\u064a\u062a\u0635\u062f\u0631 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631\u0627\u0644\u0647\u0648\u0644\u0646\u062f\u064a \u0648\u0645\u0631\u0643\u0632 \u0627\u0644\u0645\u0646\u0627\u062e \u0627\u0644\u062a\u0627\u0628\u0639 \u0644\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0628\u0631\u0646\u0627\u0645\u062c \u0627\u0644\u0634\u0631\u0643\u0627\u0621 \u0645\u0646 \u0623\u062c\u0644 \u0627\u0644\u0635\u0645\u0648\u062f\u060c \u0627\u0644\u0630\u064a \u0648\u0635\u0644 \u0625\u0644\u0649 \u0645\u0626\u0627\u062a \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u0639\u0628\u0631 \u0627\u0644\u0639\u062f\u064a\u062f \u0645\u0646 \u0627\u0644\u0646\u0638\u0645 \u0627\u0644\u0625\u064a\u0643\u0648\u0644\u0648\u062c\u064a\u0629 \u0641\u064a \u062c\u0645\u064a\u0639 \u0623\u0646\u062d\u0627\u0621 \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0648\u0628 \u0623\u0646\u0634\u0637\u0629 \u0645\u062d\u0644\u064a\u0629 \u00ab\u062a\u0631\u0627\u0639\u064a \u0627\u0644\u0645\u0646\u0627\u062e\u00bb \u062a\u0631\u0645\u064a \u0625\u0644\u0649 \u0627\u0644\u062d\u062f \u0645\u0646 \u0627\u0644\u0645\u062e\u0627\u0637\u0631."
             ]
         },
         {
-            "title": "Road safety",
+            "title": "\u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642",
             "blocks": [
-                "Each year 1.24 million lives are lost on our roads and a further 50 million people suffer serious injuries. Road traffic deaths are the 8th biggest killer in the world, and the biggest killer of those aged 15-24. Fifty per cent of all road traffic deaths are among pedestrians, cyclists, or motorcycle riders. Seventy-five per cent of road traffic deaths are men. Low and middle-income countries account for only 53 per cent of the world\u2019s vehicles, yet suffer 92 per cent of the world\u2019s road fatalities.",
+                "\u064a\u0641\u0642\u062f 1.24 \u0645\u0644\u064a\u0648\u0646 \u0634\u062e\u0635 \u0633\u0646\u0648\u064a\u0627\u064b \u062d\u064a\u0627\u062a\u0647 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642\u060c \u0648\u064a\u0639\u0627\u0646\u064a 50 \u0645\u0644\u064a\u0648\u0646 \u0634\u062e\u0635 \u0622\u062e\u0631 \u0645\u0646 \u0625\u0635\u0627\u0628\u0627\u062a \u062e\u0637\u064a\u0631\u0629. \u0648\u062a\u0634\u0643\u0644 \u0627\u0644\u0648\u0641\u064a\u0627\u062a \u0628\u0633\u0628\u0628 \u062d\u0648\u0627\u062f\u062b \u0627\u0644\u0645\u0631\u0648\u0631 \u062b\u0627\u0645\u0646 \u0623\u0643\u0628\u0631\u0633\u0628\u0628 \u0644\u0644\u0648\u0641\u064a\u0627\u062a \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0648\u0623\u0647\u0645 \u0633\u0628\u0628 \u0644\u0648\u0641\u064a\u0627\u062a \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0627\u0644\u0630\u064a\u0646 \u062a\u062a\u0631\u0627\u0648\u062d \u0623\u0639\u0645\u0627\u0631\u0647\u0645 \u0628\u064a\u0646 15 \u0648 24 \u0639\u0627\u0645\u0627\u064b. \u0648\u064a\u0634\u0643\u0644 \u0627\u0644\u0645\u0634\u0627\u0629 \u0648 \u0633\u0627\u0626\u0642\u0648 \u0627\u0644\u062f\u0631\u0627\u062c\u0627\u062a \u0648 \u0633\u0627\u0626\u0642\u0648 \u0627\u0644\u0645\u0648\u062a\u0648\u0633\u064a\u0643\u0644\u0627\u062a 50 \u0641\u064a \u0627\u0644\u0645\u0627\u0626\u0629 \u0645\u0646 \u062c\u0645\u064a\u0639 \u0627\u0644\u0648\u0641\u064a\u0627\u062a \u0628\u0633\u0628\u0628 \u062d\u0648\u0627\u062f\u062b \u0627\u0644\u0645\u0631\u0648\u0631. \u0648\u064a\u0634\u0643\u0644 \u0627\u0644\u0631\u062c\u0627\u0644 \u062e\u0645\u0633\u0629 \u0648 \u0633\u0628\u0639\u064a\u0646 \u0641\u064a \u0627\u0644\u0645\u0627\u0626\u0629 \u0645\u0646 \u0627\u0644\u0648\u0641\u064a\u0627\u062a \u0628\u0633\u0628\u0628 \u062d\u0648\u0627\u062f\u062b \u0627\u0644\u0645\u0631\u0648\u0631. \u0648\u0644\u0627 \u062a\u0636\u0645 \u0627\u0644\u0628\u0644\u062f\u0627\u0646 \u0630\u0627\u062a \u0627\u0644\u062f\u062e\u0644 \u0627\u0644\u0645\u0646\u062e\u0641\u0636 \u0648\u0630\u0627\u062a \u0627\u0644\u062f\u062e\u0644 \u0627\u0644\u0645\u062a\u0648\u0633\u0637 \u0633\u0648\u0649 53 \u0641\u064a \u0627\u0644\u0645\u0627\u0626\u0629 \u0645\u0646 \u0627\u0644\u0639\u0631\u0628\u0627\u062a \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0648\u0645\u0639 \u0630\u0644\u0643 \u0644\u062f\u064a\u0647\u0627 92 \u0641\u064a \u0627\u0644\u0645\u0627\u0626\u0629 \u0645\u0646 \u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0648\u0641\u064a\u0627\u062a \u0628\u0633\u0628\u0628 \u062d\u0648\u0627\u062f\u062b \u0627\u0644\u0645\u0631\u0648\u0631 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645.",
                 {
                     "type": "tabs",
-                    "title": "Road Safety Involvement and Activities",
+                    "title": "\u0645\u0634\u0627\u0631\u0643\u0629 \u0648\u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0641\u064a \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642",
                     "tabs": [
                         {
-                            "name": "Involvement",
+                            "name": "\u0645\u0634\u0627\u0631\u0643\u0629",
                             "headers": [
-                                "Region",
-                                "Percentage of National Societies in each region carrying out road safety activities",
-                                "Percentage of National Societies in each region interested in strengthening\/expanding road safety activities"
+                                "\u0645\u0646\u0637\u0642\u0629",
+                                "\u0646\u0633\u0628\u0629 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u0645\u0647\u062a\u0645\u0629 \u0628\u062a\u0639\u0632\u064a\u0632 \u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642 \u0623\u0648 \u062a\u0648\u0633\u064a\u0639 \u0646\u0637\u0627\u0642\u0647\u0627\u060c \u0645\u0635\u0646\u0641\u0629 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629",
+                                "\u0646\u0633\u0628\u0629 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u062a\u064a \u062a\u0636\u0637\u0644\u0639 \u0628\u0623\u0646\u0634\u0637\u0629 \u0641\u064a \u0645\u062c\u0627\u0644 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642\u060c \u0645\u0635\u0646\u0641\u0629 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0627\u0637\u0642"
                             ],
                             "dataset": [
                                 {
-                                    "region": "Africa",
+                                    "region": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "percentage1": "54",
                                     "percentage2": "73"
                                 },
                                 {
-                                    "region": "Europe",
+                                    "region": "\u0623\u0648\u0631\u0648\u0628\u0627",
                                     "percentage1": "49",
                                     "percentage2": "45"
                                 },
                                 {
-                                    "region": "Americas",
+                                    "region": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                                     "percentage1": "57",
                                     "percentage2": "71"
                                 },
                                 {
-                                    "region": "Asia Pacific",
+                                    "region": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                                     "percentage1": "54",
                                     "percentage2": "66"
                                 },
                                 {
-                                    "region": "Middle East and North Africa",
+                                    "region": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "percentage1": "44",
                                     "percentage2": "56"
                                 },
@@ -204,56 +207,56 @@
                         {
                             "name": "Activities",
                             "headers": [
-                                "Activities",
-                                "No. of activities"
+                                "\u0627\u0644\u0623\u0646\u0634\u0637\u0629",
+                                "\u0639\u062f\u062f \u0627\u0644\u0623\u0646\u0634\u0637\u0629"
                             ],
                             "dataset": [
                                 {
-                                    "activity": "Education for groups (e.g. children, youth, novice, drivers, police officers)",
+                                    "activity": "\u062a\u0648\u0639\u064a\u0629 \u0627\u0644\u0641\u0626\u0627\u062a (\u0639\u0644\u0649 \u0633\u0628\u064a\u0644 \u0627\u0644\u0645\u062b\u0627\u0644 \u0627\u0644\u0623\u0637\u0641\u0627\u0644\u060c \u0648\u0627\u0644\u0634\u0628\u0627\u0628\u060c \u0648\u0627\u0644\u0645\u0628\u062a\u062f\u0626\u064a\u0646\u060c \u0648\u0627\u0644\u0633\u0627\u0626\u0642\u064a\u0646\u060c \u0648\u0645\u0633\u0624\u0648\u0644\u064a \u0627\u0644\u0634\u0631\u0637\u0629)",
                                     "amount": "73"
                                 },
                                 {
-                                    "activity": "Road safety education for staff and volunteers",
+                                    "activity": "\u062a\u0648\u0639\u064a\u0629 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0648\u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0628\u0645\u0645\u0627\u0631\u0633\u0627\u062a \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642",
                                     "amount": "47"
                                 },
                                 {
-                                    "activity": "Programmes for protection of road users",
+                                    "activity": "\u0628\u0631\u0627\u0645\u062c \u0644\u062d\u0645\u0627\u064a\u0629 \u0645\u0633\u062a\u062e\u062f\u0645\u064a \u0627\u0644\u0637\u0631\u0642",
                                     "amount": "46"
                                 },
                                 {
-                                    "activity": "Road safety capacity building or training (i.e. first aid training)",
+                                    "activity": "\u0627\u0644\u062a\u062f\u0631\u064a\u0628 \u0623\u0648 \u0628\u0646\u0627\u0621 \u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0641\u064a \u0645\u062c\u0627\u0644 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642 (\u0627\u0644\u062a\u062f\u0631\u064a\u0628 \u0639\u0644\u0649 \u0627\u0644\u0625\u0633\u0639\u0627\u0641\u0627\u062a \u0627\u0644\u0623\u0648\u0644\u064a\u0629 \u0639\u0644\u0649 \u0633\u0628\u064a\u0644 \u0627\u0644\u0645\u062b\u0627\u0644)",
                                     "amount": "46"
                                 },
                                 {
-                                    "activity": "Advocacy for road safety intervention",
+                                    "activity": "\u0645\u0646\u0627\u0635\u0631\u0629 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0641\u064a \u0645\u062c\u0627\u0644 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642",
                                     "amount": "45"
                                 },
                                 {
-                                    "activity": "Information dissemination\/aweareness",
+                                    "activity": "\u0646\u0634\u0631 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a\/\u0627\u0644\u062a\u0648\u0639\u064a\u0629",
                                     "amount": "5"
                                 }
                             ]
                         }
                     ],
-                    "caption": "Source: Global Road Safety Partnership"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629 \u0644\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642"
                 }
             ]
         },
         {
-            "title": "Healthy living",
+            "title": "\u062d\u064a\u0627\u0629 \u0635\u062d\u064a\u0629",
             "blocks": [
-                "Noting that good health is a state of physical, mental, and social wellbeing, the Red Cross and Red Crescent work in health and social care focuses on tackling inequalities by:",
+                "\u064a\u0634\u064a\u0631 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0625\u0644\u0649 \u0627\u0644\u062d\u064a\u0627\u0629 \u0627\u0644\u0635\u062d\u064a\u0629 \u0628\u0627\u0639\u062a\u0628\u0627\u0631\u0647\u0627 \u062d\u0627\u0644\u0629 \u0645\u0646 \u0627\u0644\u0631\u0627\u062d\u0629 \u0627\u0644\u0628\u062f\u0646\u064a\u0629 \u0648\u0627\u0644\u0639\u0642\u0644\u064a\u0629 \u0648\u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629. \u0648\u0647\u0648 \u064a\u0639\u0645\u0644 \u0641\u064a \u0645\u062c\u0627\u0644 \u0627\u0644\u0631\u0639\u0627\u064a\u0629 \u0627\u0644\u0635\u062d\u064a\u0629 \u0648\u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629 \u062d\u064a\u062b \u064a\u0631\u0643\u0632 \u0639\u0644\u0649 \u0627\u0644\u062a\u0635\u062f\u064a \u0644\u0623\u0648\u062c\u0647 \u0639\u062f\u0645 \u0627\u0644\u0645\u0633\u0627\u0648\u0627\u0629 \u0639\u0646 \u0637\u0631\u064a\u0642 \u0627\u0644\u0622\u062a\u064a:",
                 [
-                    "Expanding access of underserved people to primary and public health services including during emergencies",
+                    "\u062a\u0648\u0633\u064a\u0639 \u0646\u0637\u0627\u0642 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0635\u062d\u0629 \u0627\u0644\u0623\u0648\u0644\u064a\u0629 \u0648\u0627\u0644\u0635\u062d\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u0623\u062b\u0646\u0627\u0621 \u062d\u0627\u0644\u0627\u062a \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0644\u0644\u0623\u0634\u062e\u0627\u0635 \u0627\u0644\u0630\u064a\u0646 \u062a\u0646\u0642\u0635\u0647\u0645 \u062a\u0644\u0643 \u0627\u0644\u062e\u062f\u0645\u0627\u062a",
                     "Enhancing the healing benefits of edical care through essential nutritional, educational, psychosocial, and rehabilitative interventions",
-                    "Tackling underlying social, behavioural, and environmental factors that determine good health"
+                    "\u0627\u0644\u062a\u0635\u062f\u064a \u0644\u0644\u0639\u0648\u0627\u0645\u0644 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629 \u0648\u0627\u0644\u0633\u0644\u0648\u0643\u064a\u0629 \u0648\u0627\u0644\u0628\u064a\u0626\u064a\u0629 \u0627\u0644\u062a\u064a \u062a\u0633\u0627\u0647\u0645 \u0641\u064a \u0627\u0644\u0635\u062d\u0629 \u0627\u0644\u062c\u064a\u062f\u0629."
                 ],
-                "The Red Cross and Red Crescent is known as the pioneer of first aid in both war and peace, and has undoubtedly saved countless lives over many decades.",
-                "The modern version of this is our integrated Community-based Health and First Aid package, the basic platform for all we do. Going beyond the handling of common injuries, it helps communities to identify and address their priority health issues, advocates health promotion and disease prevention, and prepares volunteers to respond to the health consequences of disasters and other emergencies.",
-                "The national and local burdens of disease vary, and so do the health and social care activities of National Societies. This has shifted over time, as national government health systems have developed to take on more, leaving National Red Cross and Red Crescent Societies to support under-served and auxiliary areas. A sample survey indicated 30 types of health work in 2013",
+                "\u0648\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0645\u0639\u0631\u0648\u0641 \u0628\u0623\u0646\u0647 \u0631\u0627\u0626\u062f \u0641\u064a \u0645\u062c\u0627\u0644 \u0627\u0644\u0625\u0633\u0639\u0627\u0641\u0627\u062a \u0627\u0644\u0623\u0648\u0644\u064a\u0629 \u0633\u0648\u0627\u0621 \u0641\u064a \u0627\u0644\u062d\u0631\u0628 \u0623\u0648 \u0627\u0644\u0633\u0644\u0627\u0645\u060c \u0648 \u0623\u0646\u0647 \u0623\u0646\u0642\u0630 \u062f\u0648\u0646 \u0634\u0643 \u0639\u062f\u062f\u0627\u064b \u0644\u0627 \u064a\u062d\u0635\u0649 \u0627\u0644\u0623\u0631\u0648\u0627\u062d \u0639\u0644\u0649 \u0645\u062f\u0649 \u0627\u0644\u0639\u062f\u064a\u062f \u0645\u0646 \u0627\u0644\u0639\u0642\u0648\u062f.",
+                "\u0648\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a \u0647\u0630\u0627 \u0627\u0644\u0634\u0623\u0646 \u0647\u0648 \u0645\u062c\u0645\u0648\u0639\u062a\u0646\u0627 \u0627\u0644\u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u0648\u0627\u0644\u0645\u062c\u062a\u0645\u0639\u064a\u0629 \u0644\u0644\u0635\u062d\u0629 \u0648\u0627\u0644\u0625\u0633\u0639\u0627\u0641\u0627\u062a \u0627\u0644\u0623\u0648\u0644\u064a\u0629\u060c \u0648\u0647\u064a \u0627\u0644\u0625\u0637\u0627\u0631 \u0627\u0644\u0623\u0633\u0627\u0633\u064a \u0644\u0643\u0644 \u0645\u0627 \u0646\u0642\u0648\u0645 \u0628\u0647. \u0641 \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u0645\u0639\u0627\u0644\u062c\u0629 \u0627\u0644\u0625\u0635\u0627\u0628\u0627\u062a \u0627\u0644\u0634\u0627\u0626\u0639\u0629\u060c \u062a\u0633\u0627\u0639\u062f \u062a\u0644\u0643 \u0627\u0644\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0639\u0644\u0649 \u062a\u062d\u062f\u064a\u062f \u0627\u0644\u0642\u0636\u0627\u064a\u0627 \u0627\u0644\u0635\u062d\u064a\u0629 \u0630\u0627\u062a \u0627\u0644\u0623\u0648\u0644\u0648\u064a\u0629 \u0644\u062f\u064a\u0647\u0627 \u0648\u0645\u0639\u0627\u0644\u062c\u062a\u0647\u0627\u060c \u0648\u062a\u0646\u0627\u0635\u0631 \u062a\u0639\u0632\u064a\u0632 \u0627\u0644\u0635\u062d\u0629 \u0648\u0627\u0644\u0648\u0642\u0627\u064a\u0629 \u0645\u0646 \u0627\u0644\u0623\u0645\u0631\u0627\u0636\u060c \u0648\u062a\u0639\u062f \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0644\u0645\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u0639\u0648\u0627\u0642\u0628 \u0627\u0644\u0635\u062d\u064a\u0629 \u0644\u0644\u0643\u0648\u0627\u0631\u062b \u0648\u063a\u064a\u0631\u0647\u0627 \u0645\u0646 \u062d\u0627\u0644\u0627\u062a \u0627\u0644\u0637\u0648\u0627\u0631\u0626.",
+                "\u0648\u062a\u062a\u0646\u0648\u0639 \u0623\u0639\u0628\u0627\u0621 \u0623\u0644\u0623\u0645\u0631\u0627\u0636 \u0639\u0644\u0649 \u0627\u0644\u0645\u0633\u062a\u0648\u064a\u064a\u0646 \u0627\u0644\u0648\u0637\u0646\u064a \u0648\u0627\u0644\u0645\u062d\u0644\u064a\u060c \u0648\u0643\u0630\u0644\u0643 \u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u0631\u0639\u0627\u064a\u0629 \u0627\u0644\u0635\u062d\u064a\u0629 \u0648\u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629 \u0644\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629. \u0648\u062a\u063a\u064a\u0631 \u0645\u0639 \u0645\u0631\u0648\u0631\u0627\u0644\u0648\u0642\u062a\u060c \u0628\u062a\u0637\u0648\u0631 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0635\u062d\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0644\u0644\u062d\u0643\u0648\u0645\u0627\u062a \u0648\u062a\u062d\u0645\u0644\u0651\u0647\u0627 \u0644\u0645\u0632\u064a\u062f \u0645\u0646 \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0627\u062a\u060c  \u062a\u0627\u0631\u0643\u0629 \u0644\u062c\u0645\u064a\u0639\u0627\u062a \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631\u0645\u0633\u0624\u0644\u064a\u0629 \u062f\u0639\u0645 \u0627\u0644\u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u062a\u064a\u062a\u0646\u0642\u0635\u0647\u0627 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0648\u0627\u0644\u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0641\u0631\u0639\u064a\u0629. \u0648\u0642\u062f \u0628\u064a\u0651\u0646\u062a \u0639\u064a\u0651\u0646\u0629 \u0645\u0646 \u0627\u0644\u062f\u0631\u0627\u0633\u0627\u062a \u0627\u0644\u0627\u0633\u062a\u0642\u0635\u0627\u0626\u064a\u0629 \u0648\u062c\u0648\u062f 30 \u0646\u0648\u0639\u0627\u064b \u0645\u0646 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0635\u062d\u064a\u0629 \u0641\u064a \u0639\u0627\u0645 2013.",
                 {
                     "type": "chart",
-                    "title": "Percentage of National Societies reporting on health services",
+                    "title": "\u0646\u0633\u0628\u0629 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u062a\u064a \u0623\u0628\u0644\u063a\u062a \u0639\u0646 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0635\u062d\u064a\u0629",
                     "dataset": [
                         {
                             "y": "0",
@@ -261,15 +264,15 @@
                         },
                         {
                             "y": "100",
-                            "x": "First aid"
+                            "x": "\u0627\u0644\u0625\u0633\u0639\u0627\u0641\u0627\u062a \u0627\u0644\u0623\u0648\u0644\u064a\u0647"
                         },
                         {
                             "y": "89",
-                            "x": "HIV control"
+                            "x": "\u0645\u0643\u0627\u0641\u062d\u0629 \u0641\u064a\u0631\u0648\u0633 \u0627\u0644\u0625\u064a\u062f"
                         },
                         {
                             "y": "86",
-                            "x": "Psychosocial support"
+                            "x": "\u0627\u0644\u062f\u0639\u0645 \u0627\u0644\u0646\u0641\u0633\u064a \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a"
                         },
                         {
                             "y": "82",
@@ -281,11 +284,11 @@
                         },
                         {
                             "y": "69",
-                            "x": "Nutrition"
+                            "x": "\u0627\u0644\u062a\u063a\u0630\u064a\u0629"
                         },
                         {
                             "y": "68",
-                            "x": "Sexual and reproductive health"
+                            "x": "\u0627\u0644\u0635\u062d\u0629 \u0627\u0644\u062c\u0646\u0633\u064a\u0629 \u0648\u0627\u0644\u0625\u0646\u062c\u0627\u0628\u064a\u0629"
                         },
                         {
                             "y": "67",
@@ -293,23 +296,23 @@
                         },
                         {
                             "y": "66",
-                            "x": "Water, sanitation and hygiene promotion"
+                            "x": "\u0627\u0644\u0645\u0627\u0621 \u0648\u0627\u0644\u0635\u0631\u0641 \u0627\u0644\u0635\u062d\u064a \u0648 \u0627\u0644\u062a\u0648\u0639\u064a\u0629 \u0628\u0627\u0644\u0646\u0638\u0627\u0641\u0629 \u0627\u0644\u0635\u062d\u064a\u0629"
                         },
                         {
                             "y": "58",
-                            "x": "Tuberculosis"
+                            "x": "\u0645\u0643\u0627\u0641\u062d\u0629 \u0627\u0644\u0633\u0644"
                         },
                         {
                             "y": "56",
-                            "x": "Control of noncummunicable diseases"
+                            "x": "\u0645\u0643\u0627\u0641\u062d\u0629 \u0627\u0644\u0623\u0645\u0631\u0627\u0636 \u063a\u064a\u0631 \u0627\u0644\u0645\u0639\u062f\u064a\u0629"
                         },
                         {
                             "y": "51",
-                            "x": "Support of breastfeeding"
+                            "x": "\u062f\u0639\u0645 \u0627\u0644\u0631\u0636\u0627\u0639\u0629 \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629"
                         },
                         {
                             "y": "50",
-                            "x": "Influenza control"
+                            "x": "\u0645\u0643\u0627\u0641\u062d\u0629 \u0627\u0644\u0625\u0646\u0641\u0644\u0648\u0646\u0632\u0627"
                         },
                         {
                             "y": "0",
@@ -317,67 +320,67 @@
                         },
                         {
                             "y": "48",
-                            "x": "Family planning"
+                            "x": "\u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0623\u0633\u0631\u0629"
                         },
                         {
                             "y": "48",
-                            "x": "Maternal and child nutrition"
+                            "x": "\u062a\u063a\u0630\u064a\u0629 \u0627\u0644\u0623\u0645 \u0648\u0627\u0644\u0637\u0641\u0644"
                         },
                         {
                             "y": "47",
-                            "x": "Harm reduction"
+                            "x": "\u0627\u0644\u062d\u062f \u0645\u0646 \u0627\u0644\u0623\u0630\u064a"
                         },
                         {
                             "y": "47",
-                            "x": "Routine measles immunisation"
+                            "x": "\u0627\u0644\u062a\u062d\u0635\u064a\u0646 \u0627\u0644\u062f\u0648\u0631\u064a \u0636\u062f \u0627\u0644\u0625\u0635\u0627\u0628\u0629 \u0628\u0627\u0644\u062d\u0635\u0628\u0627\u0621"
                         },
                         {
                             "y": "46",
-                            "x": "Mental health"
+                            "x": "\u0627\u0644\u0635\u062d\u0629 \u0627\u0644\u0639\u0642\u0644\u064a\u0629"
                         },
                         {
                             "y": "44",
-                            "x": "Malaria control"
+                            "x": "\u0645\u0643\u0627\u0641\u062d\u0629 \u0627\u0644\u0645\u0644\u0627\u0631\u064a\u0627"
                         },
                         {
                             "y": "44",
-                            "x": "Antenatal care"
+                            "x": "\u0627\u0644\u0631\u0639\u0627\u064a\u0629 \u0627\u0644\u0633\u0627\u0628\u0642\u0629 \u0644\u0644\u0648\u0644\u0627\u062f\u0629"
                         },
                         {
                             "y": "44",
-                            "x": "Postnatal care"
+                            "x": "\u0627\u0644\u0631\u0639\u0627\u064a\u0629 \u0627\u0644\u0644\u0627\u062d\u0642\u0629 \u0644\u0644\u0648\u0644\u0627\u062f\u0629"
                         },
                         {
                             "y": "44",
-                            "x": "Routine polio immunisation"
+                            "x": "\u0627\u0644\u062a\u062d\u0635\u064a\u0646 \u0627\u0644\u062f\u0648\u0631\u064a \u0636\u062f \u0634\u0644\u0644 \u0627\u0644\u0623\u0637\u0641\u0627\u0644"
                         },
                         {
                             "y": "43",
-                            "x": "Measles immunisation campaigns"
+                            "x": "\u062d\u0645\u0644\u0627\u062a \u0627\u0644\u062a\u062d\u0635\u064a\u0646 \u0636\u062f \u0627\u0644\u0625\u0635\u0627\u0628\u0629 \u0628\u0627\u0644\u062d\u0635\u0628\u0627\u0621"
                         },
                         {
                             "y": "41",
-                            "x": "Active ageing"
+                            "x": "\u0627\u0644\u0646\u0634\u0627\u0637 \u0627\u0644\u0647\u0650\u0631\u064e\u0645\u064a "
                         },
                         {
                             "y": "39",
-                            "x": "Polio immunisation campaigns"
+                            "x": "\u062d\u0645\u0644\u0627\u062a \u0627\u0644\u062a\u062d\u0635\u064a\u0646 \u0636\u062f \u0627\u0644\u0625\u0635\u0627\u0628\u0629 \u0628\u0634\u0644\u0644 \u0627\u0644\u0623\u0637\u0641\u0627\u0644"
                         },
                         {
                             "y": "34",
-                            "x": "Other routine immunisation"
+                            "x": "\u0627\u0644\u062a\u062d\u0635\u064a\u0646 \u0627\u0644\u062f\u0648\u0631\u064a \u0636\u062f \u0627\u0644\u0625\u0635\u0627\u0628\u0629 \u0628\u0623\u0645\u0631\u0627\u0636 \u0623\u062e\u0631\u064a"
                         },
                         {
                             "y": "32",
-                            "x": "Dengue control"
+                            "x": "\u0645\u0643\u0627\u0641\u062d\u0629 \u062d\u0645\u064a \u0627\u0644\u0636\u0646\u0643 "
                         },
                         {
                             "y": "25",
-                            "x": "Other disease control"
+                            "x": "\u0645\u0643\u0627\u0641\u062d\u0629 \u0623\u0645\u0631\u0627\u0636 \u0623\u062e\u0631\u064a"
                         },
                         {
                             "y": "23",
-                            "x": "Other immunisation campaigns"
+                            "x": "\u062d\u0645\u0644\u0627\u062a \u0627\u0644\u062a\u062d\u0635\u064a\u0646 \u0636\u062f \u0627\u0644\u0625\u0635\u0627\u0628\u0629 \u0628\u0623\u0645\u0631\u0627\u0636 \u0623\u062e\u0631\u064a"
                         },
                         {
                             "y": "14",
@@ -385,119 +388,119 @@
                         },
                         {
                             "y": "8",
-                            "x": "Other maternal, newborn and child health"
+                            "x": "\u0623\u0646\u0634\u0637\u0629 \u0623\u062e\u0631\u064a \u0645\u0639\u0646\u064a\u0629 \u0628\u0635\u062d\u0629 \u0627\u0644\u0623\u0645 \u0648\u0627\u0644\u0648\u0644\u064a\u062f \u0648 \u0627\u0644\u0637\u0641\u0644"
                         }
                     ],
                     "caption": "Source: Health Department"
                 },
-                "In terms of targeting, the majority of National Societies work with youth, children, elderly, people living with HIV, migrants, and people with disabilities",
+                "\u0645\u0646 \u062d\u064a\u062b \u0627\u0644\u0623\u0647\u062f\u0627\u0641\u060c \u062a\u0639\u0645\u0644 \u063a\u0627\u0644\u0628\u064a\u0629 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0645\u0639 \u0627\u0644\u0634\u0628\u0627\u0628\u060c \u0648\u0627\u0644\u0623\u0637\u0641\u0627\u0644\u060c \u0648\u0627\u0644\u0645\u0633\u0646\u064a\u0646\u060c \u0648\u0627\u0644\u0645\u062a\u0639\u0627\u064a\u0634\u064a\u0646 \u0645\u0639 \u0641\u064a\u0631\u0648\u0633 \u0646\u0642\u0635 \u0627\u0644\u0645\u0646\u0627\u0639\u0629 \u0627\u0644\u0628\u0634\u0631\u064a\u060c \u0648\u0627\u0644\u0645\u0647\u0627\u062c\u0631\u064a\u0646\u060c \u0648\u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0630\u0648\u064a \u0627\u0644\u0625\u0639\u0627\u0642\u0629",
                 {
                     "type": "chart",
-                    "title": "Number of National Societies targeting the health needs of specific groups",
+                    "title": "\u0639\u062f\u062f \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u062a\u064a \u062a\u0633\u062a\u0647\u062f\u0641 \u062a\u0644\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0635\u062d\u064a\u0629 \u0644\u0641\u0626\u0627\u062a \u0628\u0639\u064a\u0646\u0647\u0627",
                     "dataset": [
                         {
                             "y": "11",
-                            "x": "Transgender persons",
+                            "x": "\u0627\u0644\u0645\u062a\u062d\u0648\u0644\u0648\u0646 \u062c\u0646\u0633\u064a\u0627\u064b",
                             "fill": "#C5C6C6"
                         },
                         {
                             "y": "13",
-                            "x": "Other groups",
+                            "x": "\u0627\u0644\u0641\u0626\u0627\u062a \u0627\u0644\u0623\u062e\u0631\u0649",
                             "fill": "#756661"
                         },
                         {
                             "y": "20",
-                            "x": "Men who have sex with men",
+                            "x": "\u0627\u0644\u0631\u062c\u0627\u0644 \u0627\u0644\u0630\u064a\u0646 \u064a\u0645\u0627\u0631\u0633\u0648\u0646 \u0627\u0644\u062c\u0646\u0633 \u0645\u0639 \u0631\u062c\u0627\u0644",
                             "fill": "#FED02F"
                         },
                         {
                             "y": "32",
-                            "x": "Drug users",
+                            "x": "\u0645\u062a\u0639\u0627\u0637\u0648 \u0627\u0644\u0639\u0642\u0627\u0642\u064a\u0631",
                             "fill": "#5A6122"
                         },
                         {
                             "y": "35",
-                            "x": "Sex workers",
+                            "x": "\u0627\u0644\u0645\u0634\u062a\u063a\u0644\u0648\u0646 \u0628\u0627\u0644\u062c\u0646\u0633",
                             "fill": "#D5106E"
                         },
                         {
                             "y": "56",
-                            "x": "Migrants",
+                            "x": "\u0627\u0644\u0645\u0647\u0627\u062c\u0631\u0648\u0646",
                             "fill": "#1A9FE0"
                         },
                         {
                             "y": "56",
-                            "x": "Persons living with disabilities",
+                            "x": "\u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0645\u0646 \u0630\u0648\u064a \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a \u0627\u0644\u062e\u0627\u0635\u0647",
                             "fill": "#84BB23"
                         },
                         {
                             "y": "60",
-                            "x": "People living with HIV",
+                            "x": "\u0627\u0644\u0645\u0635\u0627\u0628\u064a\u0646 \u0628\u0641\u064a\u0631\u0648\u0633 \u0627\u0644\u0625\u064a\u062f\u0632",
                             "fill": "#5B325D"
                         },
                         {
                             "y": "67",
-                            "x": "Children",
+                            "x": "\u0627\u0644\u0623\u0637\u0641\u0627\u0644",
                             "fill": "#E02726"
                         },
                         {
                             "y": "74",
-                            "x": "Elderly",
+                            "x": "\u0627\u0644\u0645\u0633\u0646\u064a\u0646",
                             "fill": "#012A39"
                         },
                         {
                             "y": "83",
-                            "x": "Youth",
+                            "x": "\u0627\u0644\u0634\u0628\u0627\u0628",
                             "fill": "#682F26"
                         }
                     ],
-                    "caption": "Source: Health Department"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631 : \u0642\u0633\u0645 \u0627\u0644\u0635\u062d\u0629"
                 }
             ]
         },
         {
-            "title": "Promoting safe blood systems",
+            "title": "\u062a\u0639\u0632\u064a\u0632 \u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u062f\u0645 \u0627\u0644\u0645\u0623\u0645\u0648\u0646",
             "blocks": [
-                "To serve others by donating your spare money, time, or skills is commendable. To give of your own self is truly noble. It is, therefore, unsurprising that the Red Cross and Red Crescent has been associated with blood services ever since the technology became available. Safe and accessible blood supplies are crucial to save or preserve life in medical care and in the aftermath of accidents, violence, and disasters.",
+                "\u062e\u062f\u0645\u0629 \u0627\u0644\u0622\u062e\u0631\u064a\u0646 \u0628\u0628\u0630\u0644 \u0645\u0627\u0644 \u0623\u0648 \u0648\u0642\u062a  \u0625\u0636\u0627\u0641\u064a \u0623\u0648 \u0645\u0647\u0627\u0631\u0627\u062a \u0625\u0636\u0627\u0641\u064a\u0629 \u0647\u0648 \u0639\u0645\u0644\n\u0645\u062d\u0645\u0648\u062f. \u0623\u0645\u0627 \u0628\u0630\u0644 \u0627\u0644\u0630\u0627\u062a \u0641\u0647\u0648 \u0639\u0645\u0644 \u0646\u0628\u064a\u0644 \u062d\u0642\u0627\u064b. \u0648\u0645\u0646 \u062b\u0645\u060c \u0641\u0644\u064a\u0633 \u063a\u0631\u064a\u0628\u0627\u064b \u0623\u0646 \u064a\u0642\u062a\u0631\u0646 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0628\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u062f\u0645\u060c \u0645\u0646\u0630 \u0623\u0646 \u0623\u0635\u0628\u062d\u062a \u0627\u0644\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627 \u0645\u062a\u0648\u0641\u0631\u0629. \u0648\u064a\u0639\u062f \u062a\u0648\u0641\u064a\u0631\u0625\u0645\u062f\u0627\u062f\u0627\u062a \u0627\u0644\u062f\u0645 \u0627\u0644\u0645\u0623\u0645\u0648\u0646 \u0623\u0645\u0631\u0627\u064b \u0623\u0633\u0627\u0633\u064a\u0627\u064b \u0644\u0625\u0646\u0642\u0627\u0630 \u0627\u0644\u062d\u064a\u0627\u0629 \u0623\u0648 \u0627\u0644\u062d\u0641\u0627\u0638 \u0639\u0644\u064a\u0647\u0627 \u0641\u064a \u0627\u0644\u0631\u0639\u0627\u064a\u0629 \u0627\u0644\u0637\u0628\u064a\u0629\u060c \u0648\u0639\u0642\u0628 \u0648\u0642\u0648\u0639 \u0627\u0644\u062d\u0648\u0627\u062f\u062b\u060c \u0648 \u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0639\u0646\u0641\u060c \u0648\u0627\u0644\u0643\u0648\u0627\u0631\u062b.",
                 {
                     "type": "chart",
-                    "title": "Number of blood donors",
+                    "title": "\u0639\u062f\u062f \u0627\u0644\u0645\u062a\u0628\u0631\u0639\u064a\u0646 \u0628\u0627\u0644\u062f\u0645",
                     "dataset": [
                         {
-                            "name": "Asia and The Pacific",
+                            "name": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                             "index": "1",
                             "first": "5160000",
                             "second": "2708173",
                             "rest": "2168070",
                             "names": [
-                                "Japanese Red Cross Society",
-                                "The Republic of Korea National Red Cross"
+                                "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a",
+                                "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0643\u0648\u0631\u064a"
                             ]
                         },
                         {
-                            "name": "Europe",
+                            "name": "\u0623\u0648\u0631\u0648\u0628\u0627",
                             "index": "2",
                             "first": "1723440",
                             "second": "1640882",
                             "rest": "2979272",
                             "names": [
-                                "German Red Cross",
-                                "Turkish Red Crescent society"
+                                "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a",
+                                "\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u062a\u0631\u0643\u064a"
                             ]
                         },
                         {
-                            "name": "Americas",
+                            "name": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                             "index": "3",
                             "first": "3349561",
                             "second": "145701",
                             "rest": "258180",
                             "names": [
-                                "American Red Cross",
+                                "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a",
                                 "??"
                             ]
                         },
                         {
-                            "name": "Middle East and North Africa",
+                            "name": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "index": "4",
                             "first": "223212",
                             "second": "121204",
@@ -508,7 +511,7 @@
                             ]
                         },
                         {
-                            "name": "Africa",
+                            "name": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                             "index": "5",
                             "first": "65880",
                             "second": "27017",
@@ -519,34 +522,34 @@
                             ]
                         }
                     ],
-                    "caption": "Source: FDRS"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a"
                 },
-                "Alongside the World Health Organisation, we strongly believe in a policy of 100 per cent voluntary non-remunerated blood donation, because that is safest. At present, only 60 countries have fully achieved this norm. Given worldwide shortages of blood and its components, there is a long way to go to achieve global blood security. Cultural attitudes are an undoubted constraint in some places. Of the 108 million blood donations collected globally, about 21 million or a fifth are associated with Red Cross and Red Crescent blood services. Males tend to dominate as donors, and the Asia Pacific and Europe regions make the most donations"
+                "\u0648\u0645\u0639\u0627\u064b \u0645\u0639 \u0645\u0646\u0638\u0645\u0629 \u0627\u0644\u0635\u062d\u0629 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629\u060c \u0646\u0624\u0645\u0646 \u0625\u064a\u0645\u0627\u0646\u0627\u064b \u0631\u0627\u0633\u062e\u0627\u064b \u0641\u064a \u0633\u064a\u0627\u0633\u0629 \u0627\u0644\u062a\u0628\u0631\u0639 \u0628\u0627\u0644\u062f\u0645 \u062a\u0637\u0648\u0639\u0627\u064b \u0648\u062f\u0648\u0646 \u0645\u0642\u0627\u0628\u0644 \u0639\u0644\u0649 \u0627\u0644\u0625\u0637\u0644\u0627\u0642\u060c \u0644\u0623\u0646\u0647\u0627 \u0647\u064a \u0627\u0644\u0633\u064a\u0627\u0633\u064a\u0629 \u0627\u0644\u0623\u0633\u0644\u0645. \u0648\u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0627\u0644\u062d\u0627\u0644\u064a\u060c \u0644\u0645 \u062a\u0646\u0641\u0630 \u0633\u0648\u0649 60 \u0628\u0644\u062f\u0627\u064b \u0647\u0630\u0627 \u0627\u0644\u0645\u0639\u064a\u0627\u0631 \u0628\u0634\u0643\u0644 \u0643\u0627\u0645\u0644. \u0648\u0646\u0638\u0631\u0627\u064b \u0644\u0646\u0642\u0635 \u0627\u0644\u062f\u0645 \u0648\u0645\u0643\u0648\u0646\u0627\u062a\u0647 \u0641\u064a \u062c\u0645\u064a\u0639 \u0623\u0646\u062d\u0627\u0621 \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0645\u0627 \u0632\u0627\u0644 \u0647\u0646\u0627\u0643 \u0627\u0644\u0643\u062b\u064a\u0631 \u0627\u0644\u0630\u064a \u064a\u0646\u0628\u063a\u064a \u0639\u0645\u0644\u0647 \u0644\u062a\u0623\u0645\u064a\u0646 \u062a\u0648\u0641\u064a\u0631 \u0627\u0644\u062f\u0645 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645. \u0648\u062a\u0639\u062f \u0627\u0644\u0645\u0648\u0627\u0642\u0641 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629 \u0639\u0627\u0626\u0642\u0627\u064b \u0623\u0643\u064a\u062f\u0627\u064b \u0641\u064a \u0647\u0630\u0627 \u0627\u0644\u0645\u062c\u0627\u0644 \u0641\u064a \u0628\u0639\u0636 \u0627\u0644\u0623\u0645\u0627\u0643\u0646.\u0648\u062a\u0634\u0643\u0644 \u062e\u062f\u0645\u0627\u062a \u0627\u0644\u062a\u0628\u0631\u0639 \u0628\u0627\u0644\u062f\u0645 \u0627\u0644\u062a\u064a \u064a\u0642\u062f\u0645\u0647\u0627 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0646\u062d\u064821 \u0645\u0644\u064a\u0648\u0646 \u0645\u0646 108 \u0645\u0644\u064a\u0648\u0646 \u062a\u0628\u0631\u0639 \u0628\u0627\u0644\u062f\u0645 \u0639\u0644\u0649 \u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0623\u064a \u062e\u0645\u0633\u0647\u0627 \u062a\u0642\u0631\u064a\u0628\u0627\u064b. \u0648\u064a\u063a\u0644\u0628 \u0627\u0644\u0630\u0643\u0648\u0631 \u0639\u0644\u0649 \u0627\u0644\u0645\u062a\u0628\u0631\u0639\u064a\u0646 \u0648\u062a\u0642\u062f\u0645 \u0645\u0639\u0638\u0645 \u0627\u0644\u062a\u0628\u0631\u0639\u0627\u062a \u0641\u064a \u0645\u0646\u0637\u0642\u062a\u064a \u0622\u0633\u064a\u0627 - \u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626 \u0648 \u0623\u0648\u0631\u0648\u0628\u0627."
             ]
         },
         {
-            "title": "Water and sanitation",
+            "title": "\u0627\u0644\u0645\u0627\u0621 \u0648\u0627\u0644\u0635\u0631\u0641 \u0627\u0644\u0635\u062d\u064a",
             "blocks": [
-                "Water and sanitation services are a key part of our emergency response interventions. Additionally, we have a long-term commitment to contribute towards the achievement of Millennium Development Goal 7 that aims to halve, by this year, the proportion of the population without sustainable access to safe drinking water and basic sanitation.",
+                "\u062a\u0634\u0643\u0644 \u062e\u062f\u0645\u0627\u062a \u062a\u0648\u0641\u064a\u0631 \u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0645\u0627\u0621 \u0648\u0627\u0644\u0635\u0631\u0641 \u0627\u0644\u0635\u062d\u064a \u062c\u0632\u0621\u0627\u064b \u0631\u0626\u064a\u0633\u064a\u0627\u064b \u0645\u0646 \u0639\u0645\u0644\u064a\u0627\u062a\u0646\u0627 \u0644\u0644\u0625\u063a\u0627\u062b\u0629 \u0641\u064a \u062d\u0627\u0644\u0627\u062a \u0627\u0644\u0637\u0648\u0627\u0631\u0626. \u0643\u0645\u0627 \u0623\u0646 \u0644\u062f\u064a\u0646\u0627 \u0627\u0644\u062a\u0632\u0627\u0645 \u0637\u0648\u064a\u0644 \u0627\u0644\u0623\u0645\u062f \u0628\u0627\u0644\u0625\u0633\u0647\u0627\u0645 \u0641\u064a \u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u0647\u062f\u0641 \u0627\u0644\u0625\u0646\u0645\u0627\u0626\u064a \u0627\u0644\u0633\u0627\u0628\u0639 \u0644\u0623\u0644\u0644\u0641\u064a\u0629 \u0627\u0644\u0630\u064a \u064a\u0631\u0645\u064a \u0625\u0644\u0649 \u0627\u0644\u062d\u062f\u0651\u060c \u0628\u062d\u0644\u0648\u0644 \u0647\u0630\u0627 \u0627\u0644\u0639\u0627\u0645\u060c \u0628\u0646\u0633\u0628\u0629 \u0627\u0644\u0646\u0635\u0641 \u0645\u0646 \u0639\u062f\u062f \u0627\u0644\u0646\u0627\u0633 \u0627\u0644\u0630\u064a\u0646 \u0644\u0627\u064a\u0633\u062a\u0641\u064a\u062f\u0648\u0646 \u0628\u0634\u0643\u0644 \u0645\u0633\u062a\u062f\u0627\u0645 \u0645\u0646 \u0641\u0631\u0635 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0627\u0644\u0645\u0627\u0621 \u0627\u0644\u0635\u0627\u0644\u062d \u0644\u0644\u0634\u0631\u0628 \u0648\u0645\u0631\u0627\u0641\u0642 \u0627\u0644\u0635\u0631\u0641 \u0627\u0644\u0635\u062d\u064a \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629.",
                 {
                     "type": "chart",
-                    "title": "Water and sanitation predictions",
+                    "title": "\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0645\u0627\u0621 \u0648\u0627\u0644\u0635\u0631\u0641 \u0627\u0644\u0635\u062d\u064a",
                     "translations": [
-                        "people have access to\\nsafe drinking water",
-                        "people benefited from\\nwater and sanitation\\nservices",
-                        "people have access to an\\nimproved toilet"
+                        "\u0627\u0644\u0634\u062e\u0627\u0635 \u0644\u062f\u064a\u0647\u0645 \u0625\u0645\u0643\u0627\u0646\u064a\u0629 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u0645\u064a\u0627\u0647 \u0627\u0644\u0635\u0627\u0644\u062d\u0629 \u0644\u0644\u0634\u0631\u0628",
+                        "\u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0627\u0644\u0645\u0633\u062a\u0641\u064a\u062f\u0648\u0646 \u0645\u0646 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0645\u064a\u0627\u0647 \u0648\u0627\u0644\u0635\u0631\u0641 \u0627\u0644\u0635\u062d\u064a",
+                        "\u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0644\u062f\u064a\u0647\u0645 \u0625\u0645\u0643\u0627\u0646\u064a\u0629 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649\n\u062a\u062d\u0633\u064a\u0646 \u0627\u0644\u0645\u0631\u062d\u0627\u0636"
                     ],
-                    "caption": "Source: Health Department"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631 : \u0642\u0633\u0645 \u0627\u0644\u0635\u062d\u0629"
                 },
-                "We are halfway through the period of the IFRC\u2019s Global Water and Sanitation Initiative 2005\u20132025. The initial target for the Red Cross and Red Crescent was to benefit 5 million people by the end of 2015, but this has been greatly exceeded as we reach towards 15 million this year and set a higher ambition to double this within the next ten years"
+                "\u0648\u0642\u062f \u0648\u0635\u0644\u0646\u0627 \u0625\u0644\u0649 \u0645\u0646\u062a\u0635\u0641 \u0641\u062a\u0631\u0629 \u0645\u0628\u0627\u062f\u0631\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629 \u0627\u0644\u0645\u0639\u0646\u064a\u0629 \u0628\u0627\u0644\u0645\u0627\u0621\n\u0648\u0627\u0644\u0635\u0631\u0641 \u0627\u0644\u0635\u062d\u064a \u0644\u0644\u0641\u062a\u0631\u0629 2005 - 2025 . \u0648\u0643\u0627\u0646 \u0627\u0644\u0647\u062f\u0641 \u0627\u0644\u0623\u0648\u0644\u064a \u0644\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0645\u0646 \u062a\u0644\u0643 \u0627\u0644\u0645\u0628\u0627\u062f\u0631\u0629 \u0647\u0648 \u062a\u063a\u0637\u064a\u0629 \u062e\u0645\u0633\u0629 \u0645\u0644\u0627\u064a\u064a\u0646 \u0634\u062e\u0635 \u0628\u062d\u0644\u0648\u0644 \u0646\u0647\u0627\u064a\u0629 \u0639\u0627\u0645 2015 \u060c \u0644\u0643\u0646\u0646\u0627 \u062a\u062c\u0627\u0648\u0632\u0646\u0627 \u0630\u0644\u0643 \u0628\u0643\u062b\u064a\u0631 \u062d\u064a\u062b \u0648\u0635\u0644\u0646\u0627 \u0625\u0644\u0649 \u0632\u0647\u0627\u0621 15 \u0645\u0644\u064a\u0648\u0646 \u0634\u062e\u0635 \u0647\u0630\u0627 \u0627\u0644\u0639\u0627\u0645 \u0648\u062d\u064a\u062b \u0623\u0631\u0633\u064a\u0646\u0627 \u0637\u0645\u0648\u062d\u0627\u064b \u0623\u0643\u0628\u0631 \u0644\u0645\u0636\u0627\u0639\u0641\u0629 \u0647\u0630\u0627 \u0627\u0644\u0639\u062f\u062f \u062e\u0644\u0627\u0644 \u0627\u0644\u0633\u0646\u0648\u0627\u062a \u0627\u0644\u0639\u0634\u0631 \u0627\u0644\u0642\u0627\u062f\u0645\u0629."
             ]
         }
     ],
     "nextChapter": {
-        "heading": "Next chapter",
+        "heading": "\u0627\u0644\u0641\u0635\u0644 \u0627\u0644\u062a\u0627\u0644\u064a",
         "chapter": "6",
-        "subtitle": "Strategic Aim 3",
-        "title": "Social inclusion and a culture of non-violence and peace",
+        "subtitle": "\u0627\u0644\u0647\u062f\u0641 \u0627\u0644\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a \u0627\u0644\u062b\u0627\u0644\u062b",
+        "title": "\u062a\u0634\u062c\u064a\u0639 \u0627\u0644\u0627\u0646\u062f\u0645\u0627\u062c \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a \u0648\u062b\u0642\u0627\u0641\u0629 \u0627\u0644\u0633\u0644\u0627\u0645 \u0648\u0646\u0628\u0630 \u0627\u0644\u0639\u0646\u0641",
         "slug": "strategic-aim-3"
     }
 }

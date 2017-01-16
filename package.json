@@ -22,10 +22,11 @@
   },
   "authors": [
     "Arek Mytych",
-    "Richard Zimerman"
+    "Richard Zimerman",
+    "Daniel Lapidus"
   ],
   "private": true,
-  "license": "Apache-2.0",
+  "license": "(c) Copyright 2015 Lapidus Interactive, all rights reserved.",
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": [

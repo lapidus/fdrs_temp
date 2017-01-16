@@ -1,28 +1,28 @@
 {
     "chapter": "1",
-    "title": "Who we are",
+    "title": "\u0645\u0646 \u0646\u062d\u0646",
     "slug": "who-we-are",
-    "intro": "The global Red Cross and Red Crescent family has grown steadily since its earliest origins in 1863, reaching 190 National Societies in 2015.",
+    "intro": "\u0646\u0645\u062a \u0623\u0633\u0631\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629 \u0628\u0634\u0643\u0644 \u0645\u0637\u0631\u062f \u0645\u0646\u0630 \u0646\u0634\u0623\u062a\u0647\u0627 \u0639\u0627\u0645 1863 \u060c \u0644\u064a\u0635\u0644 \u0639\u062f\u062f \u0623\u0639\u0636\u0627\u0626\u0647\u0627 \u0625\u0644\u0649 190 \u062c\u0645\u0639\u064a\u0629 \u0648\u0637\u0646\u064a\u0629 \u0641\u064a \u0639\u0627\u0645 2015.",
     "sections": [
         {
-            "title": "Our network",
+            "title": "\u0634\u0628\u0643\u062a\u0646\u0627",
             "blocks": [
-                "Our National Societies organise their efforts through more than 160,000 local units \u2013 branches or chapters \u2013 located within the communities from which they arise and that they serve. Our communities come in various shapes and forms, and diversity is our particular strength. For us, the term community refers to:",
+                "\u062a\u0646\u0638\u0651\u0645 \u062c\u0645\u0639\u064a\u0627\u062a\u0646\u0627 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u062c\u0647\u0648\u062f\u0647\u0627 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0645\u0627 \u064a\u0631\u0628\u0648 \u0639\u0644\u0649 160,000 \u0648\u062d\u062f\u0629 \u0645\u062d\u0644\u064a\u0629 - \u0641\u0631\u0648\u0639 \u0623\u0648 \u0634\u0639\u0628 \u0645\u062d\u0644\u064a\u0629 - \u062a\u0648\u062c\u062f \u0645\u0642\u0627\u0631\u0647\u0627 \u0641\u064a \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u0627\u0644\u062a\u064a \u0646\u0634\u0623\u062a \u062a\u0644\u0643 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0645\u0646 \u0631\u062d\u0645\u0647\u0627 \u0648\u062a\u0642\u062f\u0645 \u062e\u062f\u0645\u0627\u062a\u0647\u0627 \u0625\u0644\u064a\u0647\u0627. \u0648\u062a\u062a\u0628\u0627\u064a\u0646 \u0623\u0634\u0643\u0627\u0644 \u0645\u062c\u062a\u0645\u0639\u0627\u062a\u0646\u0627 \u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u0648\u0646\u0645\u0627\u0630\u062c\u0647\u0627\u060c \u062d\u064a\u062b \u064a\u064f\u0639\u062f\u0651 \u0627\u0644\u062a\u0646\u0648\u0639 \u0645\u0635\u062f\u0631 \u0642\u0648\u062a\u0646\u0627 \u0627\u0644\u0641\u0631\u064a\u062f\u0629. \u0648\u064a\u0634\u064a\u0631 \u0645\u0635\u0637\u0644\u062d \u0627\u0644\u0645\u062c\u062a\u0645\u0639 \u0627\u0644\u0645\u062d\u0644\u064a \u0628\u0627\u0644\u0646\u0633\u0628\u0629 \u0644\u0646\u0627 \u0625\u0644\u0649 \u0645\u0627 \u064a\u0644\u064a:",
                 [
-                    "People living in a defined geographical area",
-                    "People sharing a common identity, culture, values, and norms that have emerged according to a social structure",
-                    "People who are exposed to the same or similar risks and vulnerabilities, or political and economic factors",
-                    "People who come together \u2013 including virtually \u2013 due to shared interests."
+                    "\u0623\u0646\u0627\u0633 \u064a\u0639\u064a\u0634\u0648\u0646 \u0641\u064a \u0645\u0646\u0637\u0642\u0629 \u062c\u063a\u0631\u0627\u0641\u064a\u0629 \u0645\u062d\u062f\u062f\u0629",
+                    "\u0623\u0634\u062e\u0627\u0635 \u0644\u062f\u064a\u0647\u0645 \u0647\u0648\u064a\u0629 \u0645\u0634\u062a\u0631\u0643\u0629\u060c \u0648\u062b\u0642\u0627\u0641\u0629 \u0648\u0642\u064a\u0645\u0627\u064b \u0648\u0645\u0639\u0627\u064a\u064a\u0631 \u0645\u0634\u062a\u0631\u0643\u0629 \u0628\u0631\u0632\u062a \u0648\u0641\u0642\u0627\u064b \u0644\u0628\u0646\u064a\u0629 \u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629 \u0645\u062d\u062f\u062f\u0629",
+                    "\u0623\u0646\u0627\u0633 \u064a\u062a\u0639\u0631\u0636\u0648\u0646 \u0644\u0644\u0645\u062e\u0627\u0637\u0631 \u0646\u0641\u0633\u0647\u0627 \u0623\u0648 \u0644\u0645\u062e\u0627\u0637\u0631 \u0634\u0628\u064a\u0647\u0629 \u0648\u0644\u062f\u064a\u0647\u0645 \u0646\u0642\u0627\u0637 \u0636\u0639\u0641 \u0645\u062a\u0634\u0627\u0628\u0647\u0629\u060c \u0623\u0648 \u064a\u062a\u0623\u062b\u0631\u0648\u0646 \u0628\u0639\u0648\u0627\u0645\u0644 \u0633\u064a\u0627\u0633\u064a\u0629 \u0648\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 \u0645\u062a\u0634\u0627\u0628\u0647\u0629",
+                    "\u0623\u0646\u0627\u0633 \u064a\u062c\u062a\u0645\u0639\u0648\u0646 \u0645\u0639\u0627\u064b \u0628\u0627\u0644\u0641\u0639\u0644 \u2013 \u0623\u0648 \u0627\u0641\u062a\u0631\u0627\u0636\u064a\u0627\u064b - \u0628\u0633\u0628\u0628 \u0645\u0635\u0627\u0644\u062d \u0645\u0634\u062a\u0631\u0643\u0629."
                 ],
                 {
                     "type": "chart",
-                    "title": "Growth of National Societies",
+                    "title": "\u062a\u0646\u0627\u0645\u064a \u0634\u0628\u0643\u062a\u0646\u0627",
                     "labels": [
-                        "National\\nSocieties"
+                        "\u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a\n\u0627\u0644\u0648\u0637\u0646\u064a\u0629"
                     ],
                     "axisLabels": {
-                        "x": "Years",
-                        "y": "National Societies"
+                        "x": "\u0633\u0646\u0648\u0627\u062a",
+                        "y": "\u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629"
                     },
                     "dataset": [
                         {
@@ -262,93 +262,94 @@
                             "members": "189"
                         }
                     ],
-                    "caption": "Source: Administration Department"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0633\u0645 \u0627\u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u0625\u062f\u0627\u0631\u064a\u0629"
                 },
-                "These are not exclusive categories and people may associate themselves with more than one community. Neither are communities static: they are constantly changing as internal and external circumstances influence their dynamics.",
-                "The regional and local branches of our National Societies are dispersed across numerous towns, villages, and neighbourhoods. Together with their headquarters, these constitute the world\u2019s largest humanitarian network.",
-                "Connecting the National Societies and representing them globally is the IFRC secretariat headquartered in Geneva, and together they constitute the International Federation of Red Cross and Red Crescent Societies. In 2015, the IFRC secretariat has a decentralised worldwide presence through its headquarters, five regional offices, 19 country cluster support teams, 51 country offices, three international liaison offices, five hubs for our global logistics service, and several temporary field offices based on service requirements.",
+                "\u0648\u0644\u0627 \u064a\u064f\u0646\u0638\u0631 \u0625\u0644\u0649 \u062a\u0644\u0643 \u0627\u0644\u0641\u0626\u0627\u062a \u0639\u0644\u0649 \u0623\u0646\u0647\u0627 \u062c\u0627\u0645\u0639\u0629 \u0645\u0627\u0646\u0639\u0629\u061b \u0648\u064a\u062c\u0648\u0632 \u0623\u0646 \u064a\u0631\u062a\u0628\u0637 \u0627\u0644\u0646\u0627\u0633 \u0628\u0623\u0643\u062b\u0631 \u0645\u0646 \u0645\u062c\u062a\u0645\u0639 \u0645\u062d\u0644\u064a \u0648\u0627\u062d\u062f. \u0643\u0645\u0627 \u0623\u0646 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u0646\u0641\u0633\u0647\u0627 \u0644\u064a\u0633\u062a \u062b\u0627\u0628\u062a\u0629 \u0623\u0648 \u062c\u0627\u0645\u062f\u0629\u060c \u0628\u0644 \u0647\u064a \u0641\u064a \u062d\u0627\u0644\u0629 \u062a\u063a\u064a\u0651\u0631 \u0645\u0633\u062a\u0645\u0631 \u0648\u0641\u0642\u0627\u064b \u0644\u062a\u0623\u062b\u064a\u0631 \u0627\u0644\u0638\u0631\u0648\u0641 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 \u0648\u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 \u0639\u0644\u0649 \u0627\u0644\u0642\u0648\u0649 \u0627\u0644\u0645\u062d\u0631\u0643\u0629 \u0641\u064a\u0647\u0627.",
+                "\u0648\u062a\u062a\u0648\u0632\u0639 \u0627\u0644\u0641\u0631\u0648\u0639 \u0627\u0644\u0625\u0642\u0644\u064a\u0645\u064a\u0629 \u0648\u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u0644\u062c\u0645\u0639\u064a\u0627\u062a\u0646\u0627 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0639\u0628\u0631 \u0627\u0644\u0639\u062f\u064a\u062f \u0645\u0646 \u0627\u0644\u0645\u062f\u0646 \u0648\u0627\u0644\u0642\u0631\u0649 \u0648\u0627\u0644\u0623\u062d\u064a\u0627\u0621\u060c \u0648\u0647\u064a \u062a\u0634\u0643\u0644 \u0645\u0639 \u0645\u0642\u0627\u0631\u0647\u0627 \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629 \u0623\u0643\u0628\u0631 \u0634\u0628\u0643\u0629 \u0625\u0646\u0633\u0627\u0646\u064a\u0629 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645 \u0642\u0627\u0637\u0628\u0629.",
+                "\u0648\u062a\u0631\u0628\u0637 \u0623\u0645\u0627\u0646\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0648\u0645\u0642\u0631\u0647\u0627 \u0641\u064a \u062c\u0646\u064a\u0641 \u0628\u064a\u0646 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0648\u062a\u0645\u062b\u0651\u0644\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0635\u0639\u064a\u062f \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u060c \u0648\u062a\u0634\u0643\u0644 \u0627\u0644\u0623\u0645\u0627\u0646\u0629 \u0648\u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0645\u0639\u0627\u064b \u0643\u064a\u0627\u0646 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631. \u0648\u0642\u062f \u062a\u0623\u0643\u062f \u0627\u0644\u0637\u0627\u0628\u0639 \u0627\u0644\u0644\u0627\u0645\u0631\u0643\u0632\u064a \u0644 \u0644\u0623\u0645\u0627\u0646\u0629 \u0641\u064a \u0639\u0627\u0645 2015 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0625\u0646\u0634\u0627\u0621 \u062e\u0645\u0633\u0629 \u0645\u0643\u0627\u062a\u0628 \u0625\u0642\u0644\u064a\u0645\u064a\u0629 \u0645\u0648\u0632\u0639\u0629 \u0639\u0644\u0649 \u062c\u0645\u064a\u0639 \u0623\u0646\u062d\u0627\u0621 \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0628\u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0625\u0644\u0649 19 \u0641\u0631\u064a\u0642\u0627 \u0645\u0646 \u0641\u0631\u0642 \u062f\u0639\u0645 \u0627\u0644\u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0627\u0644\u0642\u0637\u0631\u064a\u0629 \u0648 51 \u0645\u0643\u062a\u0628\u0627\u064b \u0642\u0637\u0631\u064a\u0627\u064b\u060c \u0648\u062b\u0644\u0627\u062b\u0629 \u0645\u0643\u0627\u062a\u0628 \u0627\u062a\u0635\u0627\u0644 \u062f\u0648\u0644\u064a\u0629\u060c \u0648\u062e\u0645\u0633\u0629 \u0645\u0631\u0627\u0643\u0632 \u0644\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0644\u0648\u062c\u0633\u062a\u064a\u0629 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629\u060c \u0648\u0639\u062f\u0629 \u0645\u0643\u0627\u062a\u0628 \u0645\u064a\u062f\u0627\u0646\u064a\u0629 \u0645\u0624\u0642\u062a\u0629 \u062a\u064f\u0646\u0634\u0623 \u0639\u0644\u0649 \u0623\u0633\u0627\u0633 \u0645\u062a\u0637\u0644\u0628\u0627\u062a \u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u062e\u062f\u0645\u0627\u062a.",
                 {
                     "type": "chart",
-                    "title": "A decentralised IFRC secretariat to serve its members",
+                    "title": "\u0623\u0645\u0627\u0646\u0629 \u0644\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0630\u0627\u062a \u0637\u0628\u064a\u0639\u0629 \u0644\u0627 \u0645\u0631\u0643\u0632\u064a\u0629\u060c \u062a\u0642\u0648\u0645 \u0639\u0644\u0649 \u062e\u062f\u0645\u0629 \u0623\u0639\u0636\u0627\u0626\u0647",
                     "dataset": "\/api\/data\/headquarters.json",
-                    "caption": "Source: Human Resources Department; The maps used do not imply the expression of any opinion on the part of the International Federation of Red Cross and Red Crescent Societies or National Societies concerning the legal status of a territory or of its authorities."
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0633\u0645 \u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0628\u0634\u0631\u064a\u0629. \u0644\u0627 \u064a\u0642\u0635\u062f \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0647\u0630\u0647 \u0627\u0644\u062e\u0631\u0627\u0626\u0637 \u0627\u0644\u062a\u0639\u0628\u064a\u0631 \u0639\u0646 \u0623\u064a \u0631\u0623\u064a \u0645\u0646 \u062c\u0627\u0646\u0628 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0623\u0648 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0641\u064a\u0645\u0627 \u064a\u062a\u0639\u0644\u0642 \u0628\u0627\u0644\u0648\u0636\u0639 \u0627\u0644\u0642\u0627\u0646\u0648\u0646\u064a \u0644\u0645\u0646\u0637\u0642\u0629 \u0623\u0648 \u0633\u0644\u0637\u0627\u062a \u0623\u064a \u0645\u0646\u0647\u0627."
                 }
             ]
         },
         {
-            "title": "Our resources",
+            "title": "\u0645\u0648\u0627\u0631\u062f\u0646\u0627",
             "blocks": [
-                "Our greatest strength is in the people who are with us. In 2013, National Societies reported that they had a membership of 80 million. They had some 452,000 paid staff and mobilised a further 16 million volunteers, giving an overall volunteer to staff ratio of 35 to 1, with just under half of the volunteers being female",
+                "\u0627\u0644\u0646\u0627\u0633 \u0647\u0645 \u0645\u0635\u062f\u0631 \u0642\u0648\u062a\u0646\u0627 \u0627\u0644\u0639\u0638\u0645\u0649\u060c \u0641\u0647\u0645 \u0627\u0644\u0630\u064a\u0646 \u064a\u0639\u0636\u062f\u0648\u0646 \u0639\u0645\u0644\u0646\u0627 \u0648\u064a\u0642\u0641\u0648\u0646 \u0628\u062c\u0627\u0646\u0628\u0646\u0627. \u0648\u0642\u062f \u0630\u0643\u0631\u062a \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0641\u064a \u0639\u0627\u0645 2013 \u0623\u0646 \u062d\u062c\u0645 \u0639\u0636\u0648\u064a\u062a\u0647\u0627 \u064a\u0636\u0645 80 \u0645\u0644\u064a\u0648\u0646 \u0639\u0636\u0648\u060c \u0648 \u0623\u0646 \u0644\u062f\u064a\u0647\u0627 \u062d\u0648\u0627\u0644\u064a 452.000 \u0645\u0648\u0638\u0641 \u064a\u062a\u0642\u0627\u0636\u0648\u0646 \u0631\u0648\u0627\u062a\u0628 \u0648 \u0623\u0646\u0647\u0627 \u0627\u0633\u062a\u0637\u0627\u0639\u062a \u0623\u0646 \u062a\u062d\u0634\u062f 16 \u0645\u0644\u064a\u0648\u0646 \u0645\u062a\u0637\u0648\u0639 \u0648\u0646\u064a\u0641\u060c \u0648\u0623\u0646 \u0627\u0644\u0646\u0633\u0628\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0644\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646 \u0628\u0627\u0644\u0645\u0642\u0627\u0631\u0646\u0629 \u0645\u0639 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u062a\u0628\u0644\u063a 35 - 1\u060c \u0648\u0623\u0646 \u0627\u0644\u0625\u0646\u0627\u062b \u064a\u0634\u0643\u0651\u0644\u0646 \u0646\u0633\u0628\u0629 \u062a\u0642\u0644 \u0642\u0644\u064a\u0644\u0627\u064b \u0639\u0646 \u0646\u0635\u0641 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646.",
                 {
                     "type": "chart",
-                    "title": "Human Resources in National Societies",
+                    "title": "\u0645\u0648\u0627\u0631\u062f\u0646\u0627 \u0627\u0644\u0628\u0634\u0631\u064a\u0629",
                     "translations": {
-                        "volunteers": "Volunteers",
-                        "paidStaff": "Paid staff",
-                        "secretariatStaff": "Secretariat staff",
-                        "male": "Male",
-                        "female": "Female",
-                        "nationalSocietyStaff": "National Society Staff",
-                        "nationalSocietyVolunteers": "National Society Volunteers",
-                        "IFRCSecretariatStaff": "IFRC Secretariat Staff"
+                        "volunteers": "\u0627\u0644\u0645\u062a\u0637\u0648\u0639\u0648\u0646",
+                        "paidStaff": "\u0627\u0644\u0639\u0627\u0645\u0644\u0648\u0646",
+                        "secretariatStaff": "\u0645\u0648\u0638\u0641\u0648 \u0623\u0645\u0627\u0646\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a",
+                        "male": "\u0627\u0644\u0630\u0643\u0648\u0631",
+                        "female": "\u0627\u0644\u0625\u0646\u0627\u062b",
+                        "nationalSocietyStaff": "\u0627\u0644\u0639\u0627\u0645\u0644\u0648\u0646 \u0641\u064a \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629",
+                        "nationalSocietyVolunteers": "\u0627\u0644\u0645\u062a\u0637\u0648\u0639\u0648\u0646 \u0641\u064a \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629",
+                        "IFRCSecretariatStaff": "\u0645\u0648\u0638\u0641\u0648 \u0623\u0645\u0627\u0646\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a"
                     },
-                    "caption": "Source: FDRS, Human Resources Department"
+                    "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627 \u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a\u060c \u0642\u0633\u0645 \u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0628\u0634\u0631\u064a\u0629"
                 },
-                "National Societies received an income of about 30.8 billion Swiss francs and spent 30.4 billion Swiss francs in 2013. Most of the income of National Societies is raised and spent domestically on their own programmes. This does not capture the total value of Red Cross and Red Crescent work, because it does not include the many in-kind domestic contributions and services provided voluntarily.",
-                "National Societies gave 35.4 million Swiss francs in statutory membership fees to the IFRC secretariat. This, together with an additional 263 million Swiss francs in voluntary contributions, and services and other income of 47.1 million Swiss francs, made up the IFRC secretariat\u2019s income of 345.5 million Swiss francs in 2013. During the same year, the IFRC secretariat spent 365.3 million Swiss francs and employed 2,920 staff.",
+                "\u0648\u0642\u062f \u0627\u0633\u062a\u0637\u0627\u0639\u062a \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0623\u0646 \u062a\u062d\u0635\u062f \u0625\u064a\u0631\u0627\u062f\u0627\u062a \u062a\u0646\u0627\u0647\u0632 30.8 \u0645\u0644\u064a\u0627\u0631 \u0641\u0631\u0646\u0643 \u0633\u0648\u064a\u0633\u0631\u064a\u060c \u0648\u0628\u0644\u063a\u062a \u0646\u0641\u0642\u0627\u062a\u0647\u0627 30.4 \u0645\u0644\u064a\u0627\u0631 \u0641\u0631\u0646\u0643 \u0633\u0648\u064a\u0633\u0631\u064a \u0641\u064a \u0639\u0627\u0645 2013 . \u0648\u062a\u062c\u0645\u0639 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0645\u0639\u0638\u0645 \u062f\u062e\u0644\u0647\u0627 \u0648\u062a\u064f\u0646\u0641\u0642\u0647 \u0645\u062d\u0644\u064a\u0627\u064b \u0639\u0644\u0649 \u0627\u0644\u0628\u0631\u0627\u0645\u062c \u0627\u0644\u062e\u0627\u0635\u0629 \u0628\u0647\u0627. \u0628\u064a\u062f \u0623\u0646 \u062a\u0644\u0643 \u0627\u0644\u0623\u0631\u0642\u0627\u0645 \u0644\u0627 \u062a\u0639\u0643\u0633 \u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a\u0629 \u0644\u0639\u0645\u0644 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0648\u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0644\u0623\u0646\u0647\u0627 \u0644\u0627 \u062a\u062a\u0636\u0645\u0646 \u0627\u0644\u0639\u062f\u064a\u062f \u0645\u0646 \u0627\u0644\u0645\u0633\u0627\u0647\u0645\u0627\u062a \u0627\u0644\u0639\u064a\u0646\u064a\u0629 \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0645\u0642\u062f\u0645\u0629 \u0637\u0648\u0639\u0627\u064b \u0639\u0644\u0649 \u0627\u0644\u0635\u0639\u064a\u062f \u0627\u0644\u0645\u062d\u0644\u064a.",
+                "\u0648\u0642\u0627\u0645\u062a \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0628\u062a\u0633\u062f\u064a\u062f \u0645\u0628\u0644\u063a 35.4 \u0645\u0644\u064a\u0648\u0646 \u0641\u0631\u0646\u0643 \u0633\u0648\u064a\u0633\u0631\u064a \u0641\u064a \u0634\u0643\u0644 \u0631\u0633\u0648\u0645 \u0627\u0644\u0639\u0636\u0648\u064a\u0629 \u0627\u0644\u0645\u0642\u0631\u0631\u0629 \u0644\u0644\u0623\u0645\u0627\u0646\u0629\u060c \u0628\u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0644\u0645\u0628\u0644\u063a \u0625\u0636\u0627\u0641\u064a \u0642\u062f\u0631\u0647 263 \u0645\u0644\u064a\u0648\u0646 \u0641\u0631\u0646\u0643 \u0633\u0648\u064a\u0633\u0631\u064a \u0641\u064a \u0635\u0648\u0631\u0629 \u0645\u0633\u0627\u0647\u0645\u0627\u062a \u0637\u0648\u0639\u064a\u0629\u060c \u0648\u0642\u062f\u0645\u062a \u0623\u064a\u0636\u0627\u064b \u062e\u062f\u0645\u0627\u062a \u0648 \u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0623\u062e\u0631\u0649 \u0628\u0644\u063a\u062a 47.1 \u0645\u0644\u064a\u0648\u0646 \u0641\u0631\u0646\u0643 \u0633\u0648\u064a\u0633\u0631\u064a\u060c \u0648\u0647\u064a \u062a\u0634\u0643\u0651\u0644 \u0645\u062c\u062a\u0645\u0639\u0629 \u062f\u062e\u0644 \u0627\u0644\u0623\u0645\u0627\u0646\u0629 \u0627\u0644\u0628\u0627\u0644\u063a 345.5 \u0645\u0644\u064a\u0648\u0646 \u0641\u0631\u0646\u0643 \u0633\u0648\u064a\u0633\u0631\u064a \u0641\u064a \u0639\u0627\u0645 2013 . \u0648\u0623\u0646\u0641\u0642\u062a \u0627\u0644\u0623\u0645\u0627\u0646\u0629 \u062e\u0644\u0627\u0644 \u0627\u0644\u0639\u0627\u0645 \u0646\u0641\u0633\u0647 365.3 \u0645\u0644\u064a\u0648\u0646 \u0641\u0631\u0646\u0643 \u0633\u0648\u064a\u0633\u0631\u064a\u060c \u0643\u0645\u0627 \u0642\u0627\u0645\u062a \u0628\u062a\u0639\u064a\u064a\u0646 2,920 \u0645\u0648\u0638\u0641\u0627\u064b.",
                 {
                     "type": "chart",
-                    "title": "Income and Expenditure",
+                    "title": "\u0645\u0648\u0627\u0631\u062f\u0646\u0627 \u0627\u0644\u0645\u0627\u0644\u064a\u0629",
                     "translations": {
-                        "nationalSocieties": "National Societies",
+                        "nationalSocieties": "\u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629",
                         "ifrcSecretariat": "IFRC secretariat",
-                        "income": "Income",
-                        "expenses": "Expenses"
-                    }
+                        "income": "\u0627\u0644\u062f\u062e\u0644",
+                        "expenses": "\u0627\u0644\u0646\u0641\u0642\u0627\u062a"
+                    },
+                    "caption": ""
                 },
-                "Our presence around the world is rooted in diverse demographical, social, and economic contexts. As expected, National Societies in the Asia Pacific region, the biggest and most populous part of the world, have the largest number of local units that provide the base for the biggest numbers of volunteers.",
+                "\u0648\u062a\u0648\u0637\u062f \u0648\u062c\u0648\u062f\u0646\u0627 \u0641\u064a \u062c\u0645\u064a\u0639 \u0628\u0642\u0627\u0639 \u0627\u0644\u0639\u0627\u0644\u0645 \u0641\u064a \u0633\u064a\u0627\u0642\u0627\u062a \u062f\u064a\u0645\u0648\u063a\u0631\u0627\u0641\u064a\u0629 \u0648\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629 \u0648\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 \u0645\u062a\u0646\u0648\u0639\u0629. \u0648\u0643\u0645\u0627 \u0647\u0648 \u0645\u062a\u0648\u0642\u0639\u060c \u0641\u0625\u0646 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0641\u064a \u0645\u0646\u0637\u0642\u0629 \u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626\u060c \u0648\u0647\u064a \u0623\u0643\u0628\u0631 \u0628\u0642\u0627\u0639 \u0627\u0644\u0639\u0627\u0644\u0645 \u0645\u0646 \u062d\u064a\u062b \u0627\u0644\u0645\u0633\u0627\u062d\u0629 \u0648 \u0623\u0643\u062b\u0631\u0647\u0627 \u0633\u0643\u0627\u0646\u0627\u064b\u060c \u0644\u062f\u064a\u0647\u0627 \u0623\u0643\u0628\u0631 \u0639\u062f\u062f \u0645\u0646 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u0648\u062a\u0648\u0641\u0631 \u0645\u0646 \u062b\u0645 \u0642\u0627\u0639\u062f\u0629 \u0644\u0623\u0643\u0628\u0631 \u0639\u062f\u062f \u0645\u0646 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646.",
                 {
                     "type": "tabs",
-                    "title": "Regional resources",
+                    "title": "\u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0625\u0642\u0644\u064a\u0645\u064a\u0629",
                     "tabs": [
                         {
-                            "name": "Local units",
+                            "name": "\u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u064a\u0629",
                             "dataset": [
                                 {
-                                    "name": "Asia and The Pacific",
+                                    "name": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                                     "index": "1",
                                     "first": "92345",
                                     "second": "16945",
                                     "rest": "12467",
                                     "names": [
-                                        "Red Cross Society of China",
-                                        "Vietnam Red Cross Society"
+                                        "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0635\u064a\u0646\u064a",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0641\u064a\u062a\u0646\u0627\u0645\u064a"
                                     ]
                                 },
                                 {
-                                    "name": "Europe",
+                                    "name": "\u0623\u0648\u0631\u0648\u0628\u0627",
                                     "index": "2",
                                     "first": "5065",
                                     "second": "2669",
                                     "rest": "11543",
                                     "names": [
-                                        "German Red Cross",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a",
                                         "??"
                                     ]
                                 },
                                 {
-                                    "name": "Africa",
+                                    "name": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "3",
                                     "first": "5013",
                                     "second": "2853",
                                     "rest": "3491",
                                     "names": [
-                                        "Malagasy Red Cross Society",
+                                        "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0641\u064a \u0645\u062f\u063a\u0634\u0642\u0631",
                                         "??"
                                     ]
                                 },
                                 {
-                                    "name": "Middle East and North Africa",
+                                    "name": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "4",
                                     "first": "3800",
                                     "second": "264",
@@ -359,7 +360,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Americas",
+                                    "name": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                                     "index": "5",
                                     "first": "532",
                                     "second": "508",
@@ -370,107 +371,107 @@
                                     ]
                                 }
                             ],
-                            "caption": "Source: FDRS"
+                            "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a"
                         },
                         {
-                            "name": "Volunteers",
+                            "name": "\u0627\u0644\u0645\u062a\u0637\u0648\u0639\u0648\u0646",
                             "dataset": [
                                 {
-                                    "name": "Asia and The Pacific",
+                                    "name": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                                     "index": "1",
                                     "first": "2700000",
                                     "second": "2179837",
                                     "rest": "4333656",
                                     "names": [
-                                        "India Red Cross Society",
-                                        "Japanese Red Cross Society"
+                                        "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0647\u0646\u062f\u064a",
+                                        "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a"
                                     ]
                                 },
                                 {
-                                    "name": "Middle East and North Africa",
+                                    "name": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "2",
                                     "first": "2353668",
                                     "second": "40000",
                                     "rest": "92980",
                                     "names": [
-                                        "Red Crescent Society of the Islamic Republic of Iran",
+                                        "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0623\u062d\u0645\u0631 \u0644\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0625\u064a\u0631\u0627\u0646 \u0627\u0644\u0625\u0633\u0644\u0627\u0645\u064a\u0629",
                                         "??"
                                     ]
                                 },
                                 {
-                                    "name": "Africa",
+                                    "name": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "3",
                                     "first": "578405",
                                     "second": "450000",
                                     "rest": "931235",
                                     "names": [
-                                        "Nigeria",
+                                        "\u0646\u064a\u062c\u064a\u0631\u064a\u0627",
                                         "??"
                                     ]
                                 },
                                 {
-                                    "name": "Europe",
+                                    "name": "\u0623\u0648\u0631\u0648\u0628\u0627",
                                     "index": "4",
                                     "first": "398000",
                                     "second": "209075",
                                     "rest": "1160043",
                                     "names": [
-                                        "German Red Cross",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a",
                                         "??"
                                     ]
                                 },
                                 {
-                                    "name": "Americas",
+                                    "name": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                                     "index": "5",
                                     "first": "392735",
                                     "second": "47843",
                                     "rest": "164392",
                                     "names": [
-                                        "United States Red Cross",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a",
                                         "??"
                                     ]
                                 }
                             ],
-                            "caption": "Source: FDRS"
+                            "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a"
                         },
                         {
-                            "name": "Paid staff",
+                            "name": "\u0627\u0644\u0639\u0627\u0645\u0644\u0648\u0646",
                             "dataset": [
                                 {
-                                    "name": "Europe",
+                                    "name": "\u0623\u0648\u0631\u0648\u0628\u0627",
                                     "index": "1",
                                     "first": "149869",
                                     "second": "18025",
                                     "rest": "53725",
                                     "names": [
-                                        "German Red Cross",
-                                        "French Red Cross"
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0641\u0631\u0646\u0633\u064a"
                                     ]
                                 },
                                 {
-                                    "name": "Asia and The Pacific",
+                                    "name": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                                     "index": "2",
                                     "first": "65212",
                                     "second": "40708",
                                     "rest": "43803",
                                     "names": [
-                                        "Japanese Red Cross Society",
-                                        "Chinese Red Cross"
+                                        "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a",
+                                        "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0635\u064a\u0646\u064a"
                                     ]
                                 },
                                 {
-                                    "name": "Americas",
+                                    "name": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                                     "index": "3",
                                     "first": "27827",
                                     "second": "9273",
                                     "rest": "13803",
                                     "names": [
-                                        "United States Red Cross",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a",
                                         "??"
                                     ]
                                 },
                                 {
-                                    "name": "Middle East and North Africa",
+                                    "name": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "4",
                                     "first": "7500",
                                     "second": "4150",
@@ -481,7 +482,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Africa",
+                                    "name": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "5",
                                     "first": "1114",
                                     "second": "800",
@@ -492,53 +493,53 @@
                                     ]
                                 }
                             ],
-                            "caption": "Source: FDRS"
+                            "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a"
                         }
                     ]
                 },
-                "The Japanese Red Cross Society has the largest income but, in aggregate, the wealthiest National Societies are in Europe. Expenditure mirrors this trend. The largest numbers of paid staff are also in Europe, reflecting the tendency of richer National Societies to rely more on paid workers than volunteers, especially for services that are paid for or subsidised by national and local authorities.",
+                "\u0648\u064a\u0633\u062c\u0651\u0644 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a \u0623\u0639\u0644\u0649 \u0625\u064a\u0631\u0627\u062f\u0627\u062a\u060c \u0648\u0644\u0643\u0646 \u062a\u0648\u062c\u062f \u0623\u0643\u062b\u0631 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u063a\u0646\u0649 \u0625\u062c\u0645\u0627\u0644\u0627\u064b \u0641\u064a \u0623\u0648\u0631\u0648\u0628\u0627. \u0648\u064a\u0639\u0643\u0633 \u0627\u0644\u0625\u0646\u0641\u0627\u0642 \u0647\u0630\u0627 \u0627\u0644\u0627\u062a\u062c\u0627\u0647. \u0648\u064a\u0648\u062c\u062f \u0623\u0643\u0628\u0631 \u0639\u062f\u062f \u0645\u0646 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0627\u0644\u0630\u064a\u0646 \u064a\u062a\u0642\u0627\u0636\u0648\u0646 \u0631\u0648\u0627\u062a\u0628 \u0641\u064a \u0623\u0648\u0631\u0648\u0628\u0627 \u0623\u064a\u0636\u0627\u064b \u0645\u0645\u0627 \u064a\u0634\u064a\u0631 \u0625\u0644\u0649 \u0645\u064a\u0644 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u063a\u0646\u064a\u0629 \u0646\u062d\u0648 \u0627\u0644\u0627\u0639\u062a\u0645\u0627\u062f \u0639\u0644\u0649 \u0627\u0644\u0639\u0627\u0645\u0644\u064a\u0646 \u0645\u0642\u0627\u0628\u0644 \u0623\u062c\u0631 \u0623\u0643\u062b\u0631 \u0645\u0646 \u0627\u0639\u062a\u0645\u0627\u062f\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646\u060c \u0648\u0644\u0627 \u0633\u064a\u0645\u0627 \u0628\u0627\u0644\u0646\u0633\u0628\u0629 \u0625\u0644\u0649 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u062a\u0648\u0644\u0649 \u0627\u0644\u0633\u0644\u0637\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0648\u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u062f\u0641\u0639 \u062a\u0643\u0627\u0644\u064a\u0641\u0647\u0627 \u0623\u0648 \u062f\u0639\u0645\u0647\u0627.",
                 {
                     "type": "tabs",
-                    "title": "Regional budgets",
+                    "title": "\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0627\u062a \u0627\u0644\u0625\u0642\u0644\u064a\u0645\u064a\u0629",
                     "tabs": [
                         {
-                            "name": "Income",
+                            "name": "\u0627\u0644\u062f\u062e\u0644",
                             "dataset": [
                                 {
-                                    "name": "Asia and The Pacific",
+                                    "name": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                                     "index": "1",
                                     "first": "10663700440.393",
                                     "second": "810096534.6958",
                                     "rest": "2078954900.7382",
                                     "names": [
-                                        "Japanese Red Cross Society",
-                                        "Australian Red Cross"
+                                        "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0633\u062a\u0631\u0627\u0644\u064a"
                                     ]
                                 },
                                 {
-                                    "name": "Europe",
+                                    "name": "\u0623\u0648\u0631\u0648\u0628\u0627",
                                     "index": "2",
                                     "first": "8042155085.0591",
                                     "second": "1421776388.7861",
                                     "rest": "3486934229.8231",
                                     "names": [
-                                        "German Red Cross",
-                                        "French Red Cross"
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0641\u0631\u0646\u0633\u064a"
                                     ]
                                 },
                                 {
-                                    "name": "Americas",
+                                    "name": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                                     "index": "3",
                                     "first": "3065067796.1811",
                                     "second": "300863549.30617",
                                     "rest": "244891909.4962",
                                     "names": [
-                                        "United States Red Cross",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a",
                                         "??"
                                     ]
                                 },
                                 {
-                                    "name": "Middle East and North Africa",
+                                    "name": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "4",
                                     "first": "235038763.49247",
                                     "second": "162610077.5209",
@@ -549,7 +550,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Africa",
+                                    "name": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "5",
                                     "first": "41024256",
                                     "second": "10767668.752589",
@@ -560,46 +561,46 @@
                                     ]
                                 }
                             ],
-                            "caption": "Source: FDRS"
+                            "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a"
                         },
                         {
-                            "name": "Expenses",
+                            "name": "\u0627\u0644\u0646\u0641\u0642\u0627\u062a",
                             "dataset": [
                                 {
-                                    "name": "Asia and The Pacific",
+                                    "name": "\u0622\u0633\u064a\u0627 \u0648\u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0627\u062f\u0626",
                                     "index": "1",
                                     "first": "10618342361.449",
                                     "second": "788495015.4565",
                                     "rest": "1839040359.0357",
                                     "names": [
-                                        "Japanese Red Cross Society",
-                                        "Australian Red Cross"
+                                        "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0633\u062a\u0631\u0627\u0644\u064a"
                                     ]
                                 },
                                 {
-                                    "name": "Europe",
+                                    "name": "\u0623\u0648\u0631\u0648\u0628\u0627",
                                     "index": "2",
                                     "first": "8042155085.0591",
                                     "second": "1436783131.4654",
                                     "rest": "3438691266.2519",
                                     "names": [
-                                        "German Red Cross",
-                                        "French Red Cross"
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0641\u0631\u0646\u0633\u064a"
                                     ]
                                 },
                                 {
-                                    "name": "Africa",
+                                    "name": "\u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "3",
                                     "first": "3015685102.1648",
                                     "second": "298001167.04313",
                                     "rest": "250064644.98834",
                                     "names": [
-                                        "United States Red Cross",
+                                        "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a",
                                         "??"
                                     ]
                                 },
                                 {
-                                    "name": "Middle East and North Africa",
+                                    "name": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627",
                                     "index": "4",
                                     "first": "198075518.46777",
                                     "second": "164212671.1968",
@@ -610,7 +611,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Americas",
+                                    "name": "\u0627\u0644\u0623\u0645\u0631\u064a\u0643\u062a\u0627\u0646",
                                     "index": "5",
                                     "first": "44840952",
                                     "second": "10190693.283048",
@@ -621,256 +622,256 @@
                                     ]
                                 }
                             ],
-                            "caption": "Source: FDRS"
+                            "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a"
                         }
                     ]
                 },
-                "Each National Society is unique and its profile can be consulted on www.ifrc.org\/data. At the same time, the IFRC is founded on the notion of mutually respectful solidarity among National Societies through sharing knowledge, practical expertise, other capacities, and financial resources.",
-                "However, we do not know the total magnitude of what National Societies spend in international assistance, as much of this is done bilaterally. The Federation-wide Databank and Reporting System will seek to reflect this in the future. Meanwhile, an indication can be found in the response to IFRC appeals. Between 2010 and 2014, National Societies, governments, and others contributed more than 1.5 billion Swiss francs. There are considerable year-on-year fluctuations, mostly due to the pattern of major emergencies.",
+                "\u0648\u062a\u064f\u0639\u062a\u0628\u0631 \u0643\u0644 \u062c\u0645\u0639\u064a\u0629 \u0645\u0646 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0641\u0631\u064a\u062f\u0629 \u0641\u064a \u062d\u062f \u0630\u0627\u062a\u0647\u0627\u060c \u0648\u064a\u0645\u0643\u0646 \u0627\u0644\u0627\u0637\u0644\u0627\u0639 \u0639\u0644\u0649 \u0644\u0645\u062d\u0629 \u0645\u062e\u062a\u0635\u0631\u0629 \u0639\u0646 \u0643\u0644 \u0645\u0646\u0647\u0627 \u0639\u0646 \u0637\u0631\u064a\u0642 \u0627\u0644\u0631\u0627\u0628\u0637 \u0627\u0644\u062a\u0627\u0644\u064a:\nwww.ifrc.org\/data. \u0648\u064a\u0642\u0648\u0645 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0646\u0641\u0633\u0647 \u0639\u0644\u0649 \u0641\u0643\u0631\u0629 \u0627\u0644\u062a\u0636\u0627\u0645\u0646 \u0641\u064a \u0638\u0644 \u0627\u062d\u062a\u0631\u0627\u0645 \u0645\u062a\u0628\u0627\u062f\u0644 \u0628\u064a\u0646 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0645\u0646 \u062e\u0644\u0627\u0644 \u062a\u0628\u0627\u062f\u0644 \u0627\u0644\u0645\u0639\u0627\u0631\u0641 \u0648\u0627\u0644\u062e\u0628\u0631\u0627\u062a \u0627\u0644\u0639\u0645\u0644\u064a\u0629 \u0648\u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0627\u0644\u0623\u062e\u0631\u0649 \u0648\u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0645\u0627\u0644\u064a\u0629.",
+                "\u0628\u064a\u062f \u0623\u0646\u0646\u0627 \u0644\u0627 \u064a\u0645\u0643\u0646 \u0623\u0646 \u0646\u062d\u0635\u064a \u0645\u064f\u062c\u0645\u0644 \u0645\u0627 \u062a\u0646\u0641\u0642\u0647 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0639\u0644\u0649 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0627\u062a \u0627\u0644\u062f\u0648\u0644\u064a\u0629\u060c \u062d\u064a\u062b \u0625\u0646 \u0627\u0644\u062c\u0632\u0621 \u0627\u0644\u0623\u0643\u0628\u0631 \u0645\u0646\u0647 \u064a\u062a\u0645 \u0639\u0644\u0649 \u0645\u0633\u062a\u0648\u0649 \u062b\u0646\u0627\u0626\u064a. \u0648\u0633\u0648\u0641 \u062a\u0633\u0639\u0649 \u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0646\u0638\u0627\u0645 \u0627\u0644\u0625\u0641\u0627\u062f\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0625\u0644\u0649 \u062a\u0648\u0636\u064a\u062d \u062a\u0644\u0643 \u0627\u0644\u0635\u0648\u0631\u0629 \u0641\u064a \u0627\u0644\u0645\u0633\u062a\u0642\u0628\u0644. \u0648\u064a\u0648\u062c\u062f \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0646\u0641\u0633\u0647 \u0645\u0624\u0634\u0631 \u064a\u0645\u0643\u0646 \u0627\u0644\u0627\u0633\u062a\u062f\u0644\u0627\u0644 \u0645\u0646\u0647 \u0639\u0644\u0649 \u062d\u062c\u0645 \u0627\u0644\u0625\u0646\u0641\u0627\u0642 \u0648\u0647\u0648 \u0627\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u0644\u0646\u062f\u0627\u0621\u0627\u062a \u0627\u0644\u062a\u064a \u064a\u0635\u062f\u0631\u0647\u0627 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a. \u0641\u0642\u062f \u0628\u0644\u063a\u062a \u0645\u0633\u0627\u0647\u0645\u0627\u062a \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0648\u0627\u0644\u062d\u0643\u0648\u0645\u0627\u062a \u0641\u0636\u0644\u0627\u064b \u0639\u0646 \u062c\u0647\u0627\u062a \u0623\u062e\u0631\u0649 \u0623\u0643\u062b\u0631 \u0645\u0646 1.5 \u0645\u0644\u064a\u0627\u0631 \u0641\u0631\u0646\u0643 \u0633\u0648\u064a\u0633\u0631\u064a \u062e\u0644\u0627\u0644 \u0627\u0644\u0641\u062a\u0631\u0629 \u0645\u0646 2010 \u0648\u062d\u062a\u0649 2014. \u0648\u0647\u0646\u0627\u0643 \u062a\u0628\u0627\u064a\u0646\u0627\u062a \u0643\u0628\u064a\u0631\u0629 \u0645\u0646 \u0639\u0627\u0645 \u0625\u0644\u0649 \u0639\u0627\u0645 \u064a\u064f\u0639\u0632\u0649 \u0645\u0639\u0638\u0645\u0647\u0627 \u0625\u0644\u0649 \u0646\u0645\u0637 \u062d\u0627\u0644\u0627\u062a \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0627\u0644\u0643\u0628\u0631\u0649.",
                 {
                     "type": "tabs",
-                    "title": "Worldwide humanitarian contributions",
+                    "title": "\u0627\u0644\u0645\u0633\u0627\u0647\u0645\u0627\u062a \u0627\u0644\u0625\u0646\u0633\u0627\u0646\u064a\u0629 \u0641\u064a \u062c\u0645\u064a\u0639 \u0623\u0646\u062d\u0627\u0621 \u0627\u0644\u0639\u0627\u0644\u0645",
                     "tabs": [
                         {
-                            "name": "Contributors",
-                            "caption": "Source: Finance Department",
+                            "name": "\u0627\u0644\u0645\u0633\u0627\u0647\u0645",
+                            "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0633\u0645 \u0627\u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u0645\u0627\u0644\u064a\u0629",
                             "headers": [
-                                "Rank",
-                                "Donor",
-                                "Total (CHF millions)",
+                                "\u0627\u0644\u062a\u0631\u062a\u064a\u0628",
+                                "\u0627\u0644\u0645\u0633\u0627\u0647\u0645",
+                                "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a (\u0628\u0645\u0644\u0627\u064a\u064a\u0646 \u0627\u0644\u0641\u0631\u0646\u0643\u0627\u062a \u0627\u0644\u0633\u0648\u064a\u0633\u0631\u064a\u0629)",
                                 "%"
                             ],
                             "dataset": [
                                 {
                                     "rank": "1",
-                                    "donor": "Swedish Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0633\u0648\u064a\u062f\u064a",
                                     "total": "153.3",
                                     "percent": "10"
                                 },
                                 {
                                     "rank": "2",
-                                    "donor": "Canadian Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0643\u0646\u062f\u064a",
                                     "total": "144.2",
                                     "percent": "9"
                                 },
                                 {
                                     "rank": "3",
-                                    "donor": "European Commission",
+                                    "donor": "\u0627\u0644\u0645\u0641\u0648\u0636\u064a\u0629 \u0627\u0644\u0623\u0648\u0631\u0648\u0628\u064a\u0629",
                                     "total": "139.3",
                                     "percent": "9"
                                 },
                                 {
                                     "rank": "4",
-                                    "donor": "British Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0628\u0631\u064a\u0637\u0627\u0646\u064a",
                                     "total": "116.1",
                                     "percent": "7"
                                 },
                                 {
                                     "rank": "5",
-                                    "donor": "Norwegian Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0646\u0631\u0648\u064a\u062c\u064a",
                                     "total": "112.2",
                                     "percent": "7"
                                 },
                                 {
                                     "rank": "6",
-                                    "donor": "American Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a",
                                     "total": "102",
                                     "percent": "7"
                                 },
                                 {
                                     "rank": "7",
-                                    "donor": "Netherlands Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0647\u0648\u0644\u0646\u062f\u064a",
                                     "total": "88.1",
                                     "percent": "6"
                                 },
                                 {
                                     "rank": "8",
-                                    "donor": "Japanese Red Cross Society",
+                                    "donor": "\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a",
                                     "total": "64.5",
                                     "percent": "4"
                                 },
                                 {
                                     "rank": "9",
-                                    "donor": "Finnish Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0641\u0646\u0644\u0646\u062f\u064a",
                                     "total": "61.5",
                                     "percent": "4"
                                 },
                                 {
                                     "rank": "10",
-                                    "donor": "United States Government",
+                                    "donor": "\u062d\u0643\u0648\u0645\u0629 \u0627\u0644\u0648\u0644\u0627\u064a\u0627\u062a \u0627\u0644\u0645\u062a\u062d\u062f\u0629",
                                     "total": "55",
                                     "percent": "4"
                                 },
                                 {
                                     "rank": "11",
-                                    "donor": "British Government",
+                                    "donor": "\u0627\u0644\u062d\u0643\u0648\u0645\u0629 \u0627\u0644\u0628\u0631\u064a\u0637\u0627\u0646\u064a\u0629",
                                     "total": "51.6",
                                     "percent": "3"
                                 },
                                 {
                                     "rank": "12",
-                                    "donor": "Japanese Government",
+                                    "donor": "\u0627\u0644\u062d\u0643\u0648\u0645\u0629 \u0627\u0644\u064a\u0627\u0628\u0627\u0646\u064a\u0629",
                                     "total": "47.1",
                                     "percent": "3"
                                 },
                                 {
                                     "rank": "13",
-                                    "donor": "Australian Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0623\u0633\u062a\u0631\u0627\u0644\u064a",
                                     "total": "46.6",
                                     "percent": "3"
                                 },
                                 {
                                     "rank": "14",
-                                    "donor": "Danish Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u062f\u0627\u0646\u0645\u0631\u0643\u064a",
                                     "total": "30.6",
                                     "percent": "2"
                                 },
                                 {
                                     "rank": "15",
-                                    "donor": "Swiss Red Cross",
+                                    "donor": "\u0627\u0644\u0635\u0644\u064a\u0628 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0633\u0648\u064a\u0633\u0631\u064a",
                                     "total": "21.7",
                                     "percent": "1"
                                 },
                                 {
                                     "rank": "-",
-                                    "donor": "Next 25 contributors",
+                                    "donor": "\u0627\u0644\u062e\u0645\u0633\u0629 \u0648\u0639\u0634\u0631\u0648\u0646 \u0645\u0633\u0627\u0647\u0645\u0627\u064b \u0627\u0644\u062a\u0627\u0644\u064a\u064a\u0646",
                                     "total": "223.2",
                                     "percent": "14"
                                 },
                                 {
                                     "rank": "-",
-                                    "donor": "Other contributors",
+                                    "donor": "\u0628\u0627\u0642\u064a \u0627\u0644\u0645\u0633\u0627\u0647\u0645\u064a\u0646",
                                     "total": "109.2",
                                     "percent": "7"
                                 }
                             ]
                         },
                         {
-                            "name": "Recipients",
-                            "caption": "Source: Finance Department",
+                            "name": "\u0627\u0644\u0645\u062a\u0644\u0642\u0648\u0646",
+                            "caption": "\u0627\u0644\u0645\u0635\u062f\u0631: \u0642\u0633\u0645 \u0627\u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u0645\u0627\u0644\u064a\u0629",
                             "headers": [
-                                "Rank",
-                                "National Society",
-                                "Total (CHF millions)",
+                                "\u0627\u0644\u062a\u0631\u062a\u064a\u0628",
+                                "\u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629",
+                                "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a (\u0628\u0645\u0644\u0627\u064a\u064a\u0646 \u0627\u0644\u0641\u0631\u0646\u0643\u0627\u062a \u0627\u0644\u0633\u0648\u064a\u0633\u0631\u064a\u0629)",
                                 "%"
                             ],
                             "dataset": [
                                 {
                                     "rank": "1",
-                                    "nationalSociety": "Haiti",
+                                    "nationalSociety": "\u0647\u0627\u064a\u062a\u064a",
                                     "total": "256.1",
                                     "percent": "20"
                                 },
                                 {
                                     "rank": "2",
-                                    "nationalSociety": "Philippines",
+                                    "nationalSociety": "\u0627\u0644\u0641\u0644\u0628\u064a\u0646",
                                     "total": "111.1",
                                     "percent": "9"
                                 },
                                 {
                                     "rank": "3",
-                                    "nationalSociety": "Pakistan",
+                                    "nationalSociety": "\u0628\u0627\u0643\u0633\u062a\u0627\u0646",
                                     "total": "103.5",
                                     "percent": "8"
                                 },
                                 {
                                     "rank": "4",
-                                    "nationalSociety": "Syria",
+                                    "nationalSociety": "\u0633\u0648\u0631\u064a\u0629",
                                     "total": "83.1",
                                     "percent": "7"
                                 },
                                 {
                                     "rank": "5",
-                                    "nationalSociety": "Sierra Leone",
+                                    "nationalSociety": "\u0633\u064a\u0631\u0627\u0644\u064a\u0648\u0646",
                                     "total": "44.4",
                                     "percent": "4"
                                 },
                                 {
                                     "rank": "6",
-                                    "nationalSociety": "Kenya",
+                                    "nationalSociety": "\u0643\u064a\u0646\u064a\u0627",
                                     "total": "40.9",
                                     "percent": "3"
                                 },
                                 {
                                     "rank": "7",
-                                    "nationalSociety": "Afghanistan",
+                                    "nationalSociety": "\u0623\u0641\u063a\u0627\u0646\u0633\u062a\u0627\u0646",
                                     "total": "36.9",
                                     "percent": "3"
                                 },
                                 {
                                     "rank": "8",
-                                    "nationalSociety": "Turkey",
+                                    "nationalSociety": "\u062a\u0631\u0643\u064a\u0627",
                                     "total": "31.6",
                                     "percent": "3"
                                 },
                                 {
                                     "rank": "9",
-                                    "nationalSociety": "DPR Korea",
+                                    "nationalSociety": "\u0643\u0648\u0631\u064a\u0627 \u0627\u0644\u0634\u0639\u0628\u064a\u0629 \u0627\u0644\u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a\u0629",
                                     "total": "29.6",
                                     "percent": "2"
                                 },
                                 {
                                     "rank": "10",
-                                    "nationalSociety": "Sri Lanka",
+                                    "nationalSociety": "\u0633\u0631\u064a \u0644\u0627\u0646\u0643\u0627",
                                     "total": "28.8",
                                     "percent": "2"
                                 },
                                 {
                                     "rank": "11",
-                                    "nationalSociety": "Liberia",
+                                    "nationalSociety": "\u0644\u064a\u0628\u064a\u0631\u064a\u0627",
                                     "total": "25.5",
                                     "percent": "2"
                                 },
                                 {
                                     "rank": "12",
-                                    "nationalSociety": "Ethiopia",
+                                    "nationalSociety": "\u0625\u062b\u064a\u0648\u0628\u064a\u0627",
                                     "total": "21",
                                     "percent": "2"
                                 },
                                 {
                                     "rank": "13",
-                                    "nationalSociety": "Sudan",
+                                    "nationalSociety": "\u0627\u0644\u0633\u0648\u062f\u0627\u0646",
                                     "total": "18",
                                     "percent": "1"
                                 },
                                 {
                                     "rank": "14",
-                                    "nationalSociety": "Somalia",
+                                    "nationalSociety": "\u0627\u0644\u0635\u0648\u0645\u0627\u0644",
                                     "total": "17.9",
                                     "percent": "1"
                                 },
                                 {
                                     "rank": "15",
-                                    "nationalSociety": "Bangladesh",
+                                    "nationalSociety": "\u0628\u0646\u063a\u0644\u0627\u062f\u064a\u0634",
                                     "total": "17.3",
                                     "percent": "1"
                                 },
                                 {
                                     "rank": "-",
-                                    "nationalSociety": "Next 15 recipients",
+                                    "nationalSociety": "\u0627\u0644\u0645\u062a\u0644\u0642\u0648\u0646 \u0627\u0644\u062e\u0645\u0633\u0629 \u0639\u0634\u0631 \u0627\u0644\u062a\u0627\u0644\u064a\u0648\u0646",
                                     "total": "172.4",
                                     "percent": "14"
                                 },
                                 {
                                     "rank": "-",
-                                    "nationalSociety": "Others",
+                                    "nationalSociety": "\u0628\u0627\u0642\u064a \u0627\u0644\u0645\u062a\u0644\u0642\u064a\u0646",
                                     "total": "212.9",
                                     "percent": "17"
                                 }
                             ]
                         }
                     ],
-                    "caption": "List of largest contributors in cash, kind and services, CHF millions."
+                    "caption": "\u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u062a\u064a \u0643\u0627\u0646 \u0644\u0647\u0627 \u0623\u0643\u0628\u0631 \u0627\u0644\u0645\u0633\u0627\u0647\u0645\u0627\u062a (\u0645\u0633\u0627\u0647\u0645\u0627\u062a \u0646\u0642\u062f\u064a\u0629\u060c \u0623\u0648 \u0639\u064a\u0646\u064a\u0629\u060c \u0623\u0648 \u0628\u062a\u0642\u062f\u064a\u0645 \u062e\u062f\u0645\u0627\u062a\u060c \u0628\u0645\u0644\u0627\u064a\u064a\u0646 \u0627\u0644\u0641\u0631\u0646\u0643\u0627\u062a \u0627\u0644\u0633\u0648\u064a\u0633\u0631\u064a\u0629)."
                 },
-                "The location of major disasters also skews heavily where most international assistance is deployed. The bulk goes to emergency response, along with longer-term development type programmes to reduce risk and vulnerability. This may be responsible for crowding out investment in building the capacity of the National Societies themselves."
+                "\u0648\u064a\u062d\u062f\u062f \u0645\u0648\u0642\u0639 \u0627\u0644\u0643\u0648\u0627\u0631\u062b \u0627\u0644\u0643\u0628\u0631\u0649 \u0625\u0644\u0649 \u062d\u062f \u0643\u0628\u064a\u0631 \u0623\u064a\u0636\u0627\u064b \u0627\u0644\u0645\u0643\u0627\u0646 \u0627\u0644\u0630\u064a \u062a\u0646\u062a\u0634\u0631 \u0641\u064a\u0647 \u0645\u0639\u0638\u0645 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0627\u062a \u0627\u0644\u062f\u0648\u0644\u064a\u0629\u060c \u062d\u064a\u062b \u064a\u0646\u0635\u0631\u0641 \u0627\u0644\u062c\u0632\u0621 \u0627\u0644\u0623\u0643\u0628\u0631 \u0645\u0646\u0647\u0627 \u0644\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u062d\u0627\u0644\u0627\u062a \u0627\u0644\u0637\u0648\u0627\u0631\u0626\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u0627\u0644\u0628\u0631\u0627\u0645\u062c \u0627\u0644\u0625\u0646\u0645\u0627\u0626\u064a\u0629 \u0637\u0648\u064a\u0644\u0629 \u0627\u0644\u0623\u062c\u0644 \u0627\u0644\u0631\u0627\u0645\u064a\u0629 \u0625\u0644\u0649 \u0627\u0644\u062d\u062f \u0645\u0646 \u0627\u0644\u0645\u062e\u0627\u0637\u0631 \u0648\u0645\u0648\u0627\u0637\u0646 \u0627\u0644\u0636\u0639\u0641. \u0648\u0642\u062f \u064a\u0643\u0648\u0646 \u0647\u0630\u0627 \u0627\u0644\u0633\u0628\u0628 \u0648\u0631\u0627\u0621 \u062a\u0643\u062b\u064a\u0641 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0641\u064a \u0645\u062c\u0627\u0644 \u0628\u0646\u0627\u0621 \u0642\u062f\u0631\u0627\u062a \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0646\u0641\u0633\u0647\u0627."
             ]
         }
     ],
     "nextChapter": {
-        "heading": "Next chapter",
+        "heading": "\u0627\u0644\u0641\u0635\u0644 \u0627\u0644\u062a\u0627\u0644\u064a",
         "chapter": "2",
-        "subtitle": "Overview",
-        "title": "What we do",
+        "subtitle": "\u0646\u0638\u0631\u0629 \u0639\u0627\u0645\u0629",
+        "title": "\u0639\u0645\u0644\u0646\u0627",
         "slug": "what-we-do"
     }
 }

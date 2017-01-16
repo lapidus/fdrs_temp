@@ -16,10 +16,13 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, "public")))
 
 app.get("/fdrs/societies/:id.pdf", (req, res, next) => {
-  console.log("Generating PDF", `${req.protocol}://${req.get("host")}${req.originalUrl.replace(".pdf", "_pdf")}`)
+
+  console.log("Generating PDF1", `${req.protocol}://${req.get("host")}${req.originalUrl.replace(".pdf", "")}`)
+
+  console.log("Generating PDF", `${req.protocol}://${req.get("host")}${req.originalUrl.replace("societies", "societies_pdf").replace(".pdf", "")}`)
 
   const options = {
-    url: `${req.protocol}://${req.get("host")}${req.originalUrl.replace(".pdf", "")}`,
+    url: `${req.protocol}://${req.get("host")}${req.originalUrl.replace("societies", "societies_pdf").replace(".pdf", "")}`,
     waitForHtmlReadyClass: true,
     paperFormat : "A4"
   }
