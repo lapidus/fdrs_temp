@@ -764,6 +764,9 @@ strong,
   }
 
 }
+.PDF { font-size: 20px !important;
+
+}
 .col { position: relative; display: block; float: left; min-height: 1px; width: 100%;
 
 }
