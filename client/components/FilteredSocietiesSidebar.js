@@ -6,6 +6,9 @@ const iScroll = require("iscroll")
 import StickySidebar from "./StickySidebar"
 import Textfield from "./Textfield"
 
+import { translate } from "react-i18next"
+
+
 class FilteredSocietiesSidebar extends React.Component {
   constructor(props) {
     super(props)
@@ -39,7 +42,8 @@ class FilteredSocietiesSidebar extends React.Component {
     const {
       title,
       filterPlaceholder,
-      noSocietiesText
+      noSocietiesText,
+      t
     } = this.props
 
     const {
@@ -76,7 +80,7 @@ class FilteredSocietiesSidebar extends React.Component {
                   <li className="block" key={ i }>
                     <Link to={ `/fdrs/societies/${ ns.slug }` } onClick={ this.handleFilterReset } className="block btn">
                       <div className="text-left" style={{ whiteSpace:"normal" }}>
-                        { ns.NSO_DON_name }
+                        { t("national-societites:" + ns.KPI_DON_Code) }
                       </div>
                     </Link>
                   </li>
@@ -90,4 +94,14 @@ class FilteredSocietiesSidebar extends React.Component {
   }
 }
 
-export default FilteredSocietiesSidebar
+FilteredSocietiesSidebar.contextTypes = {
+  i18n: React.PropTypes.object.isRequired,
+}
+
+FilteredSocietiesSidebar.propTypes = {
+  t: React.PropTypes.func.isRequired,
+}
+
+
+export default translate([ "national-societites" ], { wait: true })(FilteredSocietiesSidebar)
+
