@@ -32,7 +32,7 @@ class OverviewTable extends React.Component {
           <div className="col sm-9 sm-offset-2 px1 pt1">
             <SocietiesTable
               filterPlaceholder={ t("overview:filterPlaceholder") }
-              currentYear={ 2015 }
+              currentYear={ this.props.currentYear }
               currentIndicator={{ id: this.props.currentIndicator }}
               societiesBlacklist={ [] }
               groupedTimeSeries={ this.props.grouping }
@@ -67,6 +67,7 @@ OverviewTable.propTypes = {
   selectSociety: React.PropTypes.func,
   unselectSociety: React.PropTypes.func,
   clearSocieties: React.PropTypes.func,
+  currentYear: React.PropTypes.number,
 }
 
 OverviewTable.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
@@ -79,6 +80,7 @@ const makeMapStateToProps = () => {
     timeSeriesMeta: state.appReducer.timeSeriesMeta,
     data: state.appReducer.timeSeries,
     currentIndicator: state.appReducer.currentIndicator,
+    currentYear: state.appReducer.currentYear,
   })
 }
 

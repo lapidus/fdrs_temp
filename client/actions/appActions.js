@@ -33,6 +33,8 @@ export const SELECT_SOCIETY = "SELECT_SOCIETY"
 export const UNSELECT_SOCIETY = "UNSELECT_SOCIETY"
 export const CLEAR_SOCIETIES = "CLEAR_SOCIETIES"
 
+export const SWITCH_YEAR = "SWITCH_YEAR"
+
 let counter
 
 const startLoad = () => ({ type: START_LOAD })
@@ -281,4 +283,9 @@ export const unselectSociety = societyID => ({
 
 export const clearSocieties = () => ({
   type: CLEAR_SOCIETIES
+})
+
+export const switchYear = year => ({
+  type: SWITCH_YEAR,
+  year
 })

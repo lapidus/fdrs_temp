@@ -5,6 +5,8 @@ import { translate } from "react-i18next"
 import groupBy from "lodash/groupBy"
 import sortBy from "lodash/sortBy"
 
+import Slider from "rc-slider"
+
 import niceNum from "../../utils/niceNum"
 import Map from "../../components/Data/Map"
 
@@ -18,6 +20,7 @@ import {
   fetchTimeSeriesMeta,
   showTooltip,
   hideTooltip,
+  switchYear,
 } from "../../actions/appActions"
 
 class SocietiesRanking extends React.Component {
@@ -62,7 +65,7 @@ class OverviewMap extends React.Component {
                 <Map indicator={{id: this.props.currentIndicator}}
                      data={this.props.data}
                      groupedTimeSeries={this.props.grouping}
-                     currentYear={2015}
+                     currentYear={this.props.currentYear}
                      nationalSocieties={this.props.nationalSocieties}
                      societiesBlacklist={[]}
                      bubbleMouseEnter={ (e, bubble, indicator) => this.props.showTooltip({
@@ -92,6 +95,25 @@ class OverviewMap extends React.Component {
 
         <div className="clearfix mxn1">
           <div className="col sm-8 sm-offset-3 px1 pt2 pb4">
+            <div className="block text-center mb3">
+              <div className="inline-block align-middle base-10 sm-6 md-4">
+                <Slider
+                  min={2010}
+                  max={2015}
+                  marks={{
+                    2010:"2010",
+                    2011:"2011",
+                    2012:"2012",
+                    2013:"2013",
+                    2014:"2014",
+                    2015:"2015"
+                  }}
+                  step={null}
+                  onAfterChange={(year) => this.props.switchYear(year)}
+                  defaultValue={2015}
+                  />
+              </div>
+            </div>
             <p className="small">{ "* The boundaries and the designations used on this map do not imply the expression of any opinion on the part of the International Federation of Red Cross and Red Crescent Societies and are used for illustrative purposes only." }</p>
           </div>
         </div>
@@ -116,6 +138,8 @@ OverviewMap.propTypes = {
   showTooltip: React.PropTypes.func,
   hideTooltip: React.PropTypes.func,
   currentIndicator: React.PropTypes.string,
+  currentYear: React.PropTypes.number,
+  switchYear: React.PropTypes.func,
 }
 
 OverviewMap.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
@@ -128,12 +152,14 @@ const makeMapStateToProps = () => {
     timeSeriesMeta: state.appReducer.timeSeriesMeta,
     data: state.appReducer.timeSeries,
     currentIndicator: state.appReducer.currentIndicator,
+    currentYear: state.appReducer.currentYear,
   })
 }
 
 const mapDispatchToProps = dispatch => ({
   showTooltip: (content, evt) => dispatch(showTooltip(content, evt)),
   hideTooltip: () => dispatch(hideTooltip()),
+  switchYear: (year) => dispatch(switchYear(year)),
 })
 
 export default translate("overview", { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(OverviewMap))

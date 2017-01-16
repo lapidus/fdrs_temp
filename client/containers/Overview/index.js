@@ -17,6 +17,7 @@ import {
   showTooltip,
   hideTooltip,
   setIndicator,
+  switchYear,
 } from "../../actions/appActions"
 
 class Overview extends React.Component {
@@ -192,6 +193,7 @@ Overview.propTypes = {
   showTooltip: React.PropTypes.func,
   hideTooltip: React.PropTypes.func,
   setIndicator: React.PropTypes.func,
+  switchIndicator: React.PropTypes.func,
 }
 
 Overview.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
@@ -211,6 +213,7 @@ const mapDispatchToProps = dispatch => ({
   showTooltip: (content, evt) => dispatch(showTooltip(content, evt)),
   hideTooltip: () => dispatch(hideTooltip()),
   setIndicator: (indicator) => dispatch(setIndicator(indicator)),
+  switchYear: (year) => dispatch(switchYear(year)),
 })
 
 export default translate("overview", { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(Overview))

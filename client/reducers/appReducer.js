@@ -22,6 +22,7 @@ import {
   SELECT_SOCIETY,
   UNSELECT_SOCIETY,
   CLEAR_SOCIETIES,
+  SWITCH_YEAR,
 } from "../actions/appActions"
 
 export default function storyReducer(state = {
@@ -46,6 +47,7 @@ export default function storyReducer(state = {
   countryPaths: null,
   currentIndicator: "KPI_noPeopleVolunteering",
   selectedSocieties: [],
+  currentYear: 2015,
 }, action) {
   switch (action.type) {
   case START_LOAD:
@@ -145,6 +147,10 @@ export default function storyReducer(state = {
   case CLEAR_SOCIETIES:
     return assign({}, state, {
       selectedSocieties: []
+    })
+  case SWITCH_YEAR:
+    return assign({}, state, {
+      currentYear: action.year
     })
   default:
     return state

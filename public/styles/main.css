@@ -2606,3 +2606,91 @@ tr:last-of-type > td {
     display: none !important;
   }
 }
+
+
+.rc-slider {
+  position: relative;
+  height: 14px;
+  padding: 5px 0;
+  width: 100%;
+}
+.rc-slider-rail {
+  position: absolute;
+  width: 100%;
+  background-color: #e9e9e9;
+  height: 4px;
+}
+.rc-slider-track {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  background-color: #D0021B;
+  -webkit-transition: width 0.1s;
+  transition: width 0.1s;
+}
+.rc-slider-step {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+}
+.rc-slider-dot {
+  position: absolute;
+  bottom: -4px;
+  margin-left: -6px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #e9e9e9;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.rc-slider-dot:first-child {
+  margin-left: -4px;
+}
+.rc-slider-dot:last-child {
+  margin-left: -4px;
+}
+
+.rc-slider-dot-active {
+  border-color: #D0021B;
+}
+.rc-slider-handle {
+  position: absolute;
+  margin-left: -9px;
+  margin-top: -7px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid 3px #D0021B;
+  background-color: #fff;
+  -webkit-transition: left 0.1s, -webkit-transform 0.2s;
+  transition: left 0.1s, -webkit-transform 0.2s;
+  transition: transform 0.2s, left 0.1s;
+  transition: transform 0.2s, left 0.1s, -webkit-transform 0.2s;
+}
+.rc-slider-handle:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+.rc-slider-handle-active:active {
+  border-color: #aabb00;
+}
+.rc-slider-mark {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+}
+.rc-slider-mark-text {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  color: #999;
+}
+.rc-slider-mark-text-active {}
