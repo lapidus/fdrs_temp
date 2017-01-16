@@ -107,3 +107,7 @@ strong,
   .xl-title     { font-size: calc(20 * var(--one)); }
   .xl-subhead   { font-size: calc(16 * var(--one)); }
 }
+
+.PDF {
+  font-size: 20px !important;
+}
