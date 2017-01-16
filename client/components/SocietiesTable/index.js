@@ -90,13 +90,14 @@ class SocietiesTable extends React.Component {
 
     const placeholder = (
       <span>
-        <svg className="align-middle" style={{width:16,height:16,marginTop:-1}} width="16px" height="16px" viewBox="0 0 24 24">
+        {/* <svg className="align-middle" style={{width:16,height:16,marginTop:-1}} width="16px" height="16px" viewBox="0 0 24 24">
           <g  transform="translate(0, 0)" style={{stroke:"currentColor"}}>
             <line fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="22" y1="22" x2="16.4" y2="16.4" strokeLinejoin="miter"/>
             <circle fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" cx="10" cy="10" r="9" strokeLinejoin="miter"/>
           </g>
-        </svg>
-        <span className="ml1">{ this.props.filterPlaceholder }</span>
+        </svg> */}
+        {/* <span className="ml1">{ this.props.filterPlaceholder }</span> */}
+        <span style={{paddingLeft:"0.5rem"}}>{ this.props.filterPlaceholder }</span>
       </span>
     )
 

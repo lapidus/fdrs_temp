@@ -145,7 +145,7 @@ class App extends React.Component {
                     <ul className='m0 p0'>
                       <li className='block sm-inline-block relative'>
                         <Dropdown navOpen={navOpen}>
-                          <Link to='/' className='btn bg-white z-index-1'>
+                          <Link to='/fdrs' className='btn bg-white z-index-1'>
                             <span className='block py1 px05'>
                               <svg style={{width:16,height:16,marginTop:-1,marginLeft:8}} className="mr1" width="20px" height="20px" viewBox="0 0 24 24">
                                 <g transform="translate(0, 0)" className="stroke-current">
@@ -162,7 +162,7 @@ class App extends React.Component {
                           </Link>
                           <ul className={navOpen ? "m0 p0" : "absolute t100 l0 bg-white m0 py1 px0 shadow-4"} style={{ minWidth:280 }}>
                             <li className="block text-left">
-                              <Link to="/fdrs/overview" className="block btn sm-text-left" style={{width: "100%"}}>
+                              <Link to="/fdrs/overview/map" className="block btn sm-text-left" style={{width: "100%"}}>
                                 <span className="block px1 py05">
                                   <span>
                                     <svg style={{width:16,height:16,marginTop:-1,marginRight:16}} width="24px" height="24px" viewBox="0 0 24 24">
@@ -238,7 +238,7 @@ class App extends React.Component {
                           </span>
                         </Link>
                       </li>
-                      <li className='block sm-inline-block align-middle text-left select-xl select-no-underline select-no-scroll bg-secondary' style={{ width: 68 }}>
+                      <li className='block sm-inline-block align-middle text-left select-xl select-no-underline select-no-scroll bg-secondary' style={{ width: 96 }}>
                         <Select
                           searchable={ false }
                           clearable={ false }

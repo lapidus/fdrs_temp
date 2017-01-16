@@ -28,9 +28,6 @@ const fdrsChildRoutes = [
     },
   }, {
     path: "overview",
-    // getComponent(location, cb) {
-    //   System.import("../containers/Overview").then(loadRoute(cb)).catch(errorLoading)
-    // },
     getComponent(location, cb) {
       System.import("../containers/Overview/index").then(loadRoute(cb)).catch(errorLoading)
     },

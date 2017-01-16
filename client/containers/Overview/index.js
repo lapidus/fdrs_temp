@@ -39,7 +39,7 @@ class Overview extends React.Component {
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/fdrs/overview" className="block bg-white p1">
+                <Link to="/fdrs/overview/map" className="block bg-white p1">
                   <span>
                     <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g transform="translate(0, 0)">
@@ -86,14 +86,17 @@ class Overview extends React.Component {
               </h1>
               <div className="relative">
                 {/* <span className="display-1 md-display-2 m0 light">{ pageData.indicators[this.props.currentIndicator] }</span> */}
-                <div className="sm-6 select-xl select-no-underline select-no-scroll">
+                <div className="sm-9 select-xl select-no-underline select-no-scroll">
                   <Select
                     searchable={ false }
                     clearable={ false }
-                    value={this.props.currentIndicator}
+                    value={ this.props.currentIndicator }
                     placeholder={"Whaddup"}
                     multi={ false }
                     name="ns-selector"
+                    valueRenderer={(option) => {
+                      return <span className="headline sm-display-1 md-display-2 light">{ pageData.indicators[option.value] }</span>
+                    }}
                     options={Object.keys(pageData.indicators).map(indicatorKey => {
                       return {
                         value: indicatorKey,
