@@ -17,11 +17,12 @@ class Report extends React.Component {
   componentDidMount() {
     console.log("Mounting app: ", this.props.location)
 
-    this.goToChapter = this.goToChapter.bind(this)
+    // this.goToChapter = this.goToChapter.bind(this)
   }
 
   goToChapter(chapter) {
-    this.context.router.push(chapter.value)
+    const prefixedRoute = prefixLanguageToRoute(this.context.i18n.language, chapter.value)
+    this.context.router.push(prefixedRoute)
   }
 
   render() {
@@ -129,7 +130,7 @@ class Report extends React.Component {
                       { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-2"), label: t("report-common:chapters.chapter8.title") },
                       { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-3"), label: t("report-common:chapters.chapter9.title") },
                     ]}
-                    onChange={ this.goToChapter }
+                    onChange={ this.goToChapter.bind(this) }
                   />
                 </li>
               </ul>
