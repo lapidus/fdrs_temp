@@ -110,7 +110,7 @@ class Map extends React.Component {
     const tooltipContent = (name, kpi, value) => (
       <div className="text-center p1" style={{maxWidth:240}}>
         <div>{ name }</div>
-        <div className="title my1"><strong>{ niceNum(value, null, null, true) }</strong></div>
+        <div className="title my1"><strong>{ niceNum(Math.round(value), null, null, true) }</strong></div>
       </div>
     )
 
