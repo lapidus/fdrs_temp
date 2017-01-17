@@ -299,7 +299,7 @@ class App extends React.Component {
             { this.props.children }
           </div>
 
-          <footer className="site-footer bg-dark clearfix">
+          <footer className="site-footer bg-dark clearfix hidden-print">
             {
               router.location.pathname !== "/" && router.location.pathname !== prefixedRootRoute ? (
                 <div className="clearfix py2">
@@ -417,12 +417,7 @@ class App extends React.Component {
                 <Link to="/">{ "Back to Data.ifrc.org" }</Link>
               </div>
               <div className="col sm-3">
-                <p>
-                  { "Website designed by" }&nbsp;
-                  <a href="//lapidus.se" target="_blank">
-                    { "Lapidus Interactive" }
-                  </a>
-                </p>
+
               </div>
               <div className="col sm-3">
                 <p>

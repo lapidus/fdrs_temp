@@ -131,32 +131,24 @@ class SocietyPDF extends React.Component {
     const pageData = i18n.store.data[language]["common"]
 
     return (
-      <section className="PDF">
-
-        <div className='col sm-5'>
-
-          <h1 className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue, sans-serif"}}>
-          </h1>
-        </div>
-
-        <hr />
+      <section className="PDF" style={{zoom:'0.5'}}>
 
         <div className="px1">
-          <div className="clearfix mxn1">
-            <header className="col sm-8 px1 py1">
-              <p className="color-primary strong m0 small">{ society.NSO_ZON_name }</p>
-              <h1 className="title m0 light">{ society.NSO_DON_name }</h1>
+          <div className="clearfix">
+            <header className="col base-8 px1 py1">
+              <p className="color-primary strong m0 small">NATIONAL SOCIETY PROFILE</p>
+              <h1 className="display-2 m0 light">{ society.NSO_DON_name }</h1>
             </header>
           </div>
 
-          <div className="clearfix mxn1">
+          <div className="clearfix">
 
 
-            <div className="col sm-9 md-8 px1">
+            <div className="col px1">
 
-              <div className="clearfix mxn1 pb2">
-                <div className="col sm-8 px1 pb1">
-                  <p className="lead">
+              <div className="clearfix mxn1">
+                <div className="col base-8 px1 pb1">
+                  <p className="">
                     <GeneratedIntroText
                       societyName={ society.NSO_DON_name }
                       admissionDate={ society.admission_date.split(".")[2] }
@@ -167,19 +159,17 @@ class SocietyPDF extends React.Component {
                   </p>
                   <p className="lead">
                     { t("societies:fillerText")[0] }
-                    { ` ${earliestData.KPI_Year} ` }
-                    { t("societies:fillerText")[1] }
+                    { ` ${earliestData.KPI_Year}:` }
                   </p>
 
                 </div>
 
               </div>
 
-              <div className="clearfix mxn1 pb2">
-                <div className="col sm-12 lg-12 px1 pb2">
-
+              <div className="clearfix pb2">
+                <div className="col base-6">
                     <CardView viewIcon="lineChart">
-                      <div className="p1">
+                      <div className="pb1">
                         <h1 className="subhead mt0 mb1">
                           { t("common:indicators.KPI_noPeopleVolunteering") }
                         </h1>
@@ -218,46 +208,9 @@ class SocietyPDF extends React.Component {
 
                 </div>
 
-                <div className="col sm-6 lg-4 px1 pb2">
-                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(this.state.latestPopulationData.Population, 2) !== "N/A"}>
-                    <CardView viewIcon="plainNumber">
-                      {
-                        niceNum(this.state.latestPopulationData.Population, 2) !== "N/A" ? (
-                          <div className="pt3 px1">
-                            <p className="display-2 strong m0">{ niceNum(this.state.latestPopulationData.Population) }</p>
-                            <p className="m0">
-                              { `The population of ${t(`countries:${society.iso_2}`)} in ${this.state.latestPopulationData.KPI_Year}` }
-                            </p>
-                          </div>
-                        ) : (
-                          <div className="pt3 px1">
-                            <p className="display-2 strong mb0">{ niceNum(this.state.latestPopulationData.Population) }</p>
-                            <p className="m0">
-                              { missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
-                            </p>
-                          </div>
-                        )
-                      }
-                    </CardView>
-                    <CardOverlay>
-                      <p>
-                        {
-                          niceNum(latestData.Population, 2) == "N/A" ? (
-                            missingDataString("population", t(`countries:${society.iso_2}`), latestData.KPI_Year)
-                          ) : (
-                            "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + "."
-                          )
-                        }
-                      </p>
-                      <p><a href="#">{ "source of the data" }</a></p>
-                    </CardOverlay>
-                  </Card>
-                </div>
-
-                <div className="col sm-12 lg-4 px1 pb2">
-                  <Card indicator="KPI_noLocalUnits">
+                <div className="col base-6">
                     <CardView viewIcon="lineChart">
-                      <div className="p1">
+                      <div className="pb1">
                         <h1 className="subhead mt0 mb1">
                           { t("common:indicators.KPI_noLocalUnits") }
                         </h1>
@@ -307,43 +260,14 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView viewIcon="plainNumber">
-                      <div className="p1">
-                        <p className="display-1 strong m0">{ niceNum(latestData.KPI_noLocalUnits) }</p>
-                        <p className="m0">{ `local units for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
-                      </div>
-                    </CardView>
-                    <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noLocalUnits")[0].description }</p>
-                      <p><a href="#">{ "source of the data" }</a></p>
-                    </CardOverlay>
-                  </Card>
                 </div>
 
-                <div className="col sm-12 lg-8 px1 pb2">
-                  <Card>
+                <div className="col base-6">
                     <CardView viewIcon="lineChart">
-                      <div className="p1">
+                      <div className="pb1">
                         <h1 className="subhead mt0 mb1">
                           { "Income and Expenditure" }
                         </h1>
-                        {
-                          // (() => {
-                          //   console.group("Data about income and expenditure: ")
-                          //   console.log("Data: ", data)
-                          //   const max = Number(maxBy(data, d => Number(d["KPI_expenditureLC (CHF)"]))["KPI_expenditureLC (CHF)"])
-                          //
-                          //   console.log("MAX: ", maxBy(data, d => Number(d["KPI_expenditureLC (CHF)"])))
-                          //   console.log("MAX: ", max)
-                          //   console.log("Rounded: ", roundIt(max))
-                          //
-                          //   data.map(dataItem => {
-                          //     console.log("Income: ", dataItem["KPI_IncomeLC (CHF)"])
-                          //     console.log("Expenditure: ", dataItem["KPI_expenditureLC (CHF)"])
-                          //   })
-                          //   console.groupEnd("Data about income and expenditure: ")
-                          // })()
-                        }
                         <LineChart
                           height={ 150 }
                           padding={{
@@ -385,35 +309,11 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView viewIcon="plainNumber">
-                      <div className="p1">
-                        <div className="clearfix mxn1">
-                          <div className="col sm-6 px1">
-                            <p className="display-1 strong m0">{ niceNum(latestData["KPI_IncomeLC (CHF)"]) }</p>
-                            <p className="m0">{ `Income in CHF of ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
-                          </div>
-                          <div className="col sm-6 px1">
-                            <p className="display-1 strong m0">{ niceNum(latestData["KPI_expenditureLC (CHF)"]) }</p>
-                            <p className="m0">{ `Expenditure in CHF of ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
-                          </div>
-                        </div>
-                      </div>
-                    </CardView>
-                    <CardOverlay>
-                      <p>
-                        { timeSeriesMeta.filter(obj => obj.id === "KPI_IncomeLC (CHF)")[0].description }
-                      </p>
-                      <p>
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
-                    </CardOverlay>
-                  </Card>
                 </div>
 
-                <div className="col sm-6 lg-4 px1 pb2">
-                  <Card indicator="KPI_noPaidStaff">
+                <div className="col base-6">
                     <CardView viewIcon="lineChart">
-                      <div className="p1">
+                      <div className="pb1">
                         <h1 className="subhead mt0 mb1">
                           { t("common:indicators.KPI_noPaidStaff") }
                         </h1>
@@ -451,60 +351,11 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView viewIcon="plainNumber">
-                      <div className="p1">
-                        <p className="display-1 strong m0">{ niceNum(latestData.KPI_noPaidStaff) }</p>
-                        <p className="m0">{ `paid staff for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
-                      </div>
-                    </CardView>
-                    {/* <CardView viewIcon="genderChart">{ "View 2" }</CardView> */}
-                    <CardOverlay>
-                      <p>
-                        { timeSeriesMeta.filter(obj => obj.id === "KPI_noPaidStaff")[0].description }
-                      </p>
-                      <p>
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
-                    </CardOverlay>
-                  </Card>
                 </div>
 
-                <div className="col sm-6 lg-4 px1 pb2">
-                  <Card initialView={ 0 } bgColor="bg-beige" basicCard controlsVisible={niceNum(this.state.latestPovertyData.Poverty) !== "N/A"}>
-                    <CardView viewIcon="plainNumber">
-                      {
-                        niceNum(this.state.latestPovertyData.Poverty) !== "N/A" ? (
-                          <div className="pt3 px1">
-                            <p className="display-2 strong mb0">{ niceNum(this.state.latestPovertyData.Poverty) }%</p>
-                            <p className="m0">
-                              { `percentage of population of ${t(`countries:${society.iso_2}`)} living below the poverty line in ${this.state.latestPovertyData.KPI_Year}` }
-                            </p>
-                          </div>
-                        ) : (
-                          <div className="pt3 px1">
-                            <p className="display-2 strong mb0">{ niceNum(this.state.latestPovertyData.Poverty) }</p>
-                            <p className="m0">
-                              { missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
-                            </p>
-                          </div>
-                        )
-                      }
-                    </CardView>
-                    <CardOverlay>
-                      <p>
-                        { "This card shows the poverty statistics for " + t(`countries:${society.iso_2}`) + "." }
-                      </p>
-                      <p>
-                        <a href="#">{ "source of the data" }</a>
-                      </p>
-                    </CardOverlay>
-                  </Card>
-                </div>
-
-                <div className="col sm-12 lg-8 px1 pb2">
-                  <Card>
+                <div className="col base-6">
                     <CardView viewIcon="lineChart">
-                      <div className="p1">
+                      <div className="">
                         <h1 className="subhead mt0 mb1">
                           { t("societies:peopleReached") }
                         </h1>
@@ -540,24 +391,11 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView viewIcon="plainNumber">
-                      { "View 1" }
-                    </CardView>
-                    <CardOverlay>
-                      <p>
-                        { timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleReachedDisaster")[0].description }
-                      </p>
-                      <p>
-                        <a href="#">{ t("societies:source") }</a>
-                      </p>
-                    </CardOverlay>
-                  </Card>
                 </div>
 
-                <div className="col sm-6 lg-4 px1 pb2">
-                  <Card indicator="KPI_noPeopleDonatingBlood">
+                <div className="col base-6">
                     <CardView viewIcon="lineChart">
-                      <div className="p1">
+                      <div className="">
                         <h1 className="subhead mt0 mb1">
                           { t("common:indicators.KPI_noPeopleDonatingBlood") }
                         </h1>
@@ -593,190 +431,13 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
-                    <CardView viewIcon="plainNumber">
-                      <div className="p1">
-                        <p className="display-1 strong m0">{ niceNum(latestData.KPI_noPeopleDonatingBlood) }</p>
-                        <p className="m0">
-                          {
-                            `people donating blood for ${society.NSO_DON_name} in ${latestData.KPI_Year}`
-                          }
-                        </p>
-                      </div>
-                    </CardView>
-                    <CardView viewIcon="genderChart">{ "View 2" }</CardView>
-                    <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleDonatingBlood")[0].description }</p>
-                      <p><a href="#">{ "source of the data" }</a></p>
-                    </CardOverlay>
-                  </Card>
                 </div>
 
-                <div className="col sm-6 lg-4 px1 pb2">
-                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(this.state.latestGDPData.GDP) !== "N/A"}>
-                    <CardView>
-                      {
-                        niceNum(this.state.latestGDPData.GDP) !== "N/A" ? (
-                          <div className="pt3 px1">
-                            <p className="small strong m0">
-                              { niceNum(this.state.latestGDPData.GDP) === "N/A" ? "" : "CHF" }
-                            </p>
-                            <p className="display-1 strong m0">{ niceNum(this.state.latestGDPData.GDP) }</p>
-                            <p className="m0">
-                              { `GDP of ${t(`countries:${society.iso_2}`)} in ${this.state.latestGDPData.KPI_Year}` }
-                            </p>
-                          </div>
-                        ) : (
-                          <div className="pt3 px1">
-                            <p className="display-2 strong mb0">{ niceNum(this.state.latestGDPData.GDP) }</p>
-                            <p className="m0">
-                              { missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
-                            </p>
-                          </div>
-                        )
-                      }
-                    </CardView>
-                    <CardOverlay>
-                      <p>{ "This card shows the GDP statistics for " + t(`countries:${society.iso_2}`) + "." }</p>
-                      <p><a href="#">{ "source of the data" }</a></p>
-                    </CardOverlay>
-                  </Card>
-                </div>
-
-                <div className="col sm-6 lg-4 px1 pb2">
-                  <Card bgColor="bg-primary" basicCard controlsVisible={false}>
-                    <CardView>
-                      <div className="pt3 px2">
-                        <p className="display-1 lh-1 strong mt0 mb1">
-                          { t("societies:callout")[0] }
-                        </p>
-                        <p className="m0">
-                          { t("societies:callout")[1] }
-                        </p>
-                        <p className="m0">{ t("societies:callout")[2] }<br />{ "fdrs@ifrc.org" }</p>
-                      </div>
-                    </CardView>
-                    <CardOverlay>
-                      <p>{ "" }</p>
-                    </CardOverlay>
-                  </Card>
-                </div>
-
-                <div className="col sm-12 px1 pb2">
-                  <hr />
-                </div>
-
-                {
-                  this.state.filteredDocuments.length > 0 ? (
-                    <div className="col sm-12 px1 pb2">
-                      <div className="relative overflow-hidden shadow-2 pt1 px1 pb2">
-                        <h2 className="subhead mt0">
-                          { t("societies:documents") }
-                          <span className="inline-block align-middle mx1" style={{width:80}}>
-                            <Select
-                              searchable={ false }
-                              clearable={ false }
-                              name="year-selector"
-                              value={ year }
-                              options={ this.yearOptions() }
-                              onChange={ this.handleYearChange }
-                            />
-                          </span>
-                        </h2>
-                        <div className="clearfix mxn1">
-                          {
-                            this.state.filteredDocuments.map((doc, i) =>
-                              <article className="col sm-4 px1 py05" key={ i }>
-                                <div className="clearfix mxn1">
-                                  <div className="inline-block align-top sm-12 px1">
-                                    <div style={{ width:48,height:48 }}>
-                                      <svg width="48px" height="48px" viewBox="0 0 48 48">
-                                        <g transform="translate(0, 0)">
-                                          <polyline fill="none" stroke="#c6c6c6" strokeWidth="2" strokeMiterlimit="10" points="30,2 30,14 42,14 " strokeLinejoin="miter" strokeLinecap="butt"/>
-                                          <polygon fill="none" stroke="#c6c6c6" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="30,2 6,2 6,46 42,46 42,14 " strokeLinejoin="miter"/>
-                                          <line fill="none" stroke="#c6c6c6" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="14" y1="36" x2="34" y2="36" strokeLinejoin="miter"/>
-                                          <line fill="none" stroke="#c6c6c6" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="14" y1="26" x2="34" y2="26" strokeLinejoin="miter"/>
-                                          <line fill="none" stroke="#c6c6c6" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="14" y1="16" x2="22" y2="16" strokeLinejoin="miter"/>
-                                        </g>
-                                      </svg>
-                                    </div>
-                                  </div>
-                                  <div className="inline-block align-top sm-12 px1">
-                                    <h1 className="strong subhead mt0 sm-my1">{ `${doc.document_type} - ${doc.year}` }</h1>
-                                    <a href={ 'http://data-staging.ifrc.org/downloads/' + doc.path } target="_blank" rel="noopener noreferrer" className="btn bg-primary">
-                                      <span>
-                                        <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
-                                          <g transform="translate(0, 0)" style={{stroke:"currentcolor"}}>
-                                            <line fill="none" strokeWidth="2" strokeMiterlimit="10" x1="12" y1="9" x2="12" y2="22" strokeLinejoin="miter" strokeLinecap="butt"/>
-                                            <polyline fill="none" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="15,19 12,22 9,19 " strokeLinejoin="miter"/>
-                                            <path fill="none" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M17,16h2c2.209,0,4-1.791,4-4c0-2.197-1.782-4.013-4.025-3.997C18.718,4.093,15.474,1,11.5,1C7.481,1,4.21,4.164,4.018,8.136C2.287,8.575,1,10.132,1,12c0,2.209,1.791,4,4,4h2" strokeLinejoin="miter"/>
-                                          </g>
-                                        </svg>
-                                      </span>
-                                      { t("common:download") }
-                                    </a>
-                                  </div>
-                                </div>
-                              </article>
-                            )
-                          }
-                        </div>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="px1">{ t("societies:noDocuments") }</div>
-                  )
-                }
               </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-secondary px1">
-          <div className="clearfix mxn1">
-            <div className="col sm-10 sm-offset-1 px1">
-              { t("common:updateText") }
-            </div>
-          </div>
-        </div>
-
-        <div className="px1 py4 bg-beige">
-          <div className="clearfix mxn1">
-            <div className="col sm-4 sm-offset-6 px1">
-              <p className="caps small strong">
-                { pageData.overviewPreview.subtitle }
-              </p>
-              <h2 className="headline sm-display-1 light mt0">
-                { pageData.overviewPreview.title }
-              </h2>
-              <p className="lead">
-                { pageData.overviewPreview.lead }
-              </p>
-              <Link to="/fdrs" className="btn btn--raised bg-primary">
-                <span className="block py05 px1">
-                  { pageData.overviewPreview.button }
-                </span>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <div className="px1 py4 bg-secondary">
-          <div className="clearfix mxn1">
-            <div className="col sm-10 sm-offset-1 px1">
-              <h2 className="headline sm-display-1 light mt0">
-                { pageData.dataCollectors.title }
-              </h2>
-              <p className="lead">
-                { pageData.dataCollectors.lead }
-              </p>
-              <Link to="/fdrs" className="btn btn--raised bg-primary">
-                <span className="block py05 px1">
-                  { pageData.dataCollectors.button }
-                </span>
-              </Link>
-            </div>
-          </div>
-        </div>
       </section>
     )
   }

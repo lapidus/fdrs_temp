@@ -80,7 +80,7 @@ class FilteredSocietiesSidebar extends React.Component {
                   <li className="block" key={ i }>
                     <Link to={ `/fdrs/societies/${ ns.slug }` } onClick={ this.handleFilterReset } className="block btn">
                       <div className="text-left" style={{ whiteSpace:"normal" }}>
-                        { t("national-societites:" + ns.KPI_DON_Code) }
+                        { t("national-societies:" + ns.KPI_DON_Code) }
                       </div>
                     </Link>
                   </li>
@@ -103,5 +103,5 @@ FilteredSocietiesSidebar.propTypes = {
 }
 
 
-export default translate([ "national-societites" ], { wait: true })(FilteredSocietiesSidebar)
+export default translate([ "national-societies" ], { wait: true })(FilteredSocietiesSidebar)
 

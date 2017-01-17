@@ -131,6 +131,10 @@ class Society extends React.Component {
     const { language } = i18n
     const pageData = i18n.store.data[language]["common"]
 
+
+    console.log("ss", society)
+
+
     return (
       <section>
 
@@ -189,7 +193,7 @@ class Society extends React.Component {
             <header className="col sm-8 sm-offset-3 px1 py1">
               <p className="color-primary strong m0 small">{ society.NSO_ZON_name }</p>
               <h1 className="display-1 md-display-2 m0 light">
-                { t("national-societites:" + society.KPI_DON_Code) }
+                { t("national-societies:" + society.KPI_DON_Code) }
               </h1>
             </header>
           </div>
@@ -223,6 +227,11 @@ class Society extends React.Component {
                     { t("societies:fillerText")[1] }
                   </p>
                   <div>
+                    <a target="_blank" href={"/fdrs/societies/" + society.slug + ".pdf"}>
+                      <button className="btn" style={{ background: "#F6F4F2"}}>
+                        Download PDF
+                      </button>
+                    </a>
                     <ShareBtn service="twitter" />
                     <ShareBtn service="facebook" />
                     <ShareBtn service="mail" />
@@ -888,6 +897,6 @@ const makeMapStateToProps = () => {
   })
 }
 
-export default translate([ "countries", "societies", "national-societites" ], { wait: true })(connect(makeMapStateToProps)(Society))
+export default translate([ "countries", "societies", "national-societies" ], { wait: true })(connect(makeMapStateToProps)(Society))
 
 // export default connect(makeMapStateToProps)(Society)

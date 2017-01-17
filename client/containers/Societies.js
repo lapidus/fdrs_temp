@@ -86,7 +86,7 @@ class Societies extends React.Component {
                     this.props.nationalSocieties.slice(0,societiesPerCol).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
                         <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>
-                          { t("national-societites:" + society.KPI_DON_Code) }
+                          { t("national-societies:" + society.KPI_DON_Code) }
                         </Link>
                       </li>
                     ))
@@ -97,7 +97,7 @@ class Societies extends React.Component {
                     this.props.nationalSocieties.slice(societiesPerCol,societiesPerCol*2).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
                         <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>
-                          { t("national-societites:" + society.KPI_DON_Code) }
+                          { t("national-societies:" + society.KPI_DON_Code) }
                         </Link>
                       </li>
                     ))
@@ -108,7 +108,7 @@ class Societies extends React.Component {
                     this.props.nationalSocieties.slice(societiesPerCol*2,societiesPerCol*3).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
                         <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>
-                          { t("national-societites:" + society.KPI_DON_Code) }
+                          { t("national-societies:" + society.KPI_DON_Code) }
                         </Link>
                       </li>
                     ))

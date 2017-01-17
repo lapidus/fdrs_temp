@@ -103,11 +103,9 @@ class SocietiesTable extends React.Component {
 
     return (
       <div>
-        <SocietiesTableHeader
-          currentYear={this.props.currentYear}
-          sortDataset={this.sortDataset}
-          sortParams={this.state.sortParams}
-        />
+
+        <hr />
+
         <div className="mb2 px1">
           <Select
             searchable={ true }
@@ -136,6 +134,12 @@ class SocietiesTable extends React.Component {
             }
           </div>
         </div>
+
+        <SocietiesTableHeader
+          currentYear={this.props.currentYear}
+          sortDataset={this.sortDataset}
+          sortParams={this.state.sortParams}
+        />
 
         <SelectedSocieties
           currentYear={this.props.currentYear}
