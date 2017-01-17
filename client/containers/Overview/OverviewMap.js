@@ -28,24 +28,33 @@ class SocietiesRanking extends React.Component {
   render() {
     return (
       <div>
-        <h2 className="subhead mt0 mb1 px1">
-          { "sorted" }&nbsp;<span className="color-primary">{ "High to low" }</span>
+        <h2 className="subhead mt0 mb1">
+          { "Sorted" }&nbsp;<span className="color-primary">{ "High to Low" }</span>
         </h2>
-        <ul className="m0 p0 small">
+
+        <table style={{position:"absolute", height:"600px",overflowY:"scroll", display: "block"}}>
+
           {
             this.props.societiesList.reverse().map((society, i) => {
               return (
-                <li key={ i } className="block px1" style={
-                  {
-                    paddingTop:"0.25rem",
-                    paddingBottom:"0.25rem",
-                    background: i % 2 === 0 ? `rgb(246, 244, 242)` : "transparent"
-                  }
-                }>{ society.NSO_DON_name } - { society[this.props.currentIndicator] }</li>
+                <tr key={ i } style={
+              {
+                  paddingTop:"0.2rem",
+                  paddingBottom:"0.2rem",
+                  fontSize:"0.9rem",
+                  background: i % 2 === 0 ? `rgb(246, 244, 242)` : "transparent"
+              }
+            }>
+                <td>
+                  
+                </td>
+                <td>{ society.NSO_DON_name } </td><td>{ niceNum(society[this.props.currentIndicator], null, null, false) }</td>
+              </tr>
               )
+
             })
           }
-        </ul>
+        </table>
       </div>
     )
   }
@@ -87,9 +96,9 @@ class OverviewMap extends React.Component {
             </div>
           </div>
 
-          <div className="absolute l0 col sm-3 px1" style={{top:"25%",height:"75%",overflow:"scroll"}}>
+          <div className="absolute l0 col sm-3 px1" style={{top:"15%",height:"75%"}}>
             <div className="clearfix mxn1">
-              <div className="col sm-10 sm-offset-2 md-9 md-offset-3 py2">
+              <div className="col sm-10 sm-offset-2 md-9 md-offset-3 py0">
                 <SocietiesRanking
                   societiesList={sortBy(this.props.grouping[this.props.currentYear], o => Number(o[this.props.currentIndicator]))}
                   currentIndicator={this.props.currentIndicator}
