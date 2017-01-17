@@ -77,13 +77,15 @@ class LineChart extends React.Component {
                       },
                       axisLabel: {
                         fontFamily: "inherit",
-                        fontSize: 16
+                        fontSize: 16,
+                        padding: 40,
                       },
-                      ticks: {stroke: "transparent"}
+                      ticks: {
+                        stroke: "transparent"
+                      }
                     }}
                     orientation="left"
-                    tickFormat={(y) => niceNum(y)}
-                    }
+                    tickFormat={ (y) => niceNum(y) }
                   />
                 ) : (
                   ""
@@ -111,7 +113,8 @@ class LineChart extends React.Component {
                     style={{
                       axisLabel: {
                         fontFamily: "inherit",
-                        fontSize: 16
+                        fontSize: 16,
+                        padding: 30,
                       },
                       tickLabels: {
                         fontFamily: "inherit",

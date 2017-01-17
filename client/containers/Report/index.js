@@ -111,23 +111,23 @@ class Report extends React.Component {
                     {"Report"}
                   </Link>
                 </li>
-                <li className="inline-block align-middle mr1 select-no-underline select-no-scroll" style={{width:160}}>
+                <li className="inline-block align-middle mr1 select-no-underline select-no-scroll" style={{minWidth:300}}>
                   <Select
                     searchable={ false }
                     clearable={ false }
                     name="chapter-selector"
                     value={this.context.router.getCurrentLocation().pathname}
                     options={[
-                      { value: "/fdrs/report", label: "Introduction" },
-                      { value: "/fdrs/report/who-we-are", label: "Who we are" },
-                      { value: "/fdrs/report/what-we-do", label: "What we do" },
-                      { value: "/fdrs/report/living-our-fundamental-principles", label: "Living our fundamental principles" },
-                      { value: "/fdrs/report/strategic-aim-1", label: "Strategic aim 1" },
-                      { value: "/fdrs/report/strategic-aim-2", label: "Strategic aim 2" },
-                      { value: "/fdrs/report/strategic-aim-3", label: "Strategic aim 3" },
-                      { value: "/fdrs/report/enabling-action-1", label: "Enabling action 1" },
-                      { value: "/fdrs/report/enabling-action-2", label: "Enabling action 2" },
-                      { value: "/fdrs/report/enabling-action-3", label: "Enabling action 3" },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report"), label: "Introduction" },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/who-we-are"), label: t("report-common:chapters.chapter1.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/what-we-do"), label: t("report-common:chapters.chapter2.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/living-our-fundamental-principles"), label: t("report-common:chapters.chapter3.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/strategic-aim-1"), label: t("report-common:chapters.chapter4.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/strategic-aim-2"), label: t("report-common:chapters.chapter5.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/strategic-aim-3"), label: t("report-common:chapters.chapter6.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-1"), label: t("report-common:chapters.chapter7.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-2"), label: t("report-common:chapters.chapter8.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-3"), label: t("report-common:chapters.chapter9.title") },
                     ]}
                     onChange={ this.goToChapter }
                   />

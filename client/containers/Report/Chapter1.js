@@ -123,7 +123,7 @@ class Chapter1 extends React.Component {
                 height={240}
                 padding={{
                   top: 30,
-                  bottom: 40,
+                  bottom: 50,
                   left: 60,
                   right: 60
                 }}
@@ -139,7 +139,7 @@ class Chapter1 extends React.Component {
                 dataset={[section0.blocks[2].dataset.map((item, i) => {
                   return {
                     x: new Date(item.year, 1, 1),
-                    y: item.members
+                    y: Number(item.members)
                   }
                 })]}
               />
