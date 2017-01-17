@@ -6,6 +6,7 @@ import maxBy from "lodash/maxBy"
 import { Origin } from "redux-tooltip"
 
 import Countries from "./Countries"
+import niceNum from "../../utils/niceNum"
 
 import {
   json,
@@ -104,6 +105,13 @@ class Map extends React.Component {
   render() {
     const { data, indicator, nationalSocieties } = this.props
 
+    const tooltipContent = (name, value) => (
+      <div className="text-center p1" style={{maxWidth:240}}>
+        <div>{ name }</div>
+        <div className="title my1"><strong>{ niceNum(value, null, null, true) }</strong></div>
+      </div>
+    )
+
     return (
       <div className="" style={{ clear: "left", minHeight: '10rem' }}>
         {/* <h2>{ indicator.id } — { indicator.description }</h2> */}
@@ -134,7 +142,9 @@ class Map extends React.Component {
 
                   if(bubbleData && coords) {
                     return (
-                      <SVGOrigin content={ bubbleData[this.props.indicator.id] } key={bubble.KPI_DON_Code}>
+                      <SVGOrigin
+                        content={tooltipContent(this.props.nationalSocietyNames[bubble.KPI_DON_Code], bubbleData[this.props.indicator.id])}
+                        key={bubble.KPI_DON_Code}>
                         {/* <circle
                           key={bubble.KPI_DON_Code}
                           cx={this.projection()(coords)[0]}
@@ -155,7 +165,7 @@ class Map extends React.Component {
                           cy={this.projection()(coords)[1]}
                           r={bubbleData[this.props.indicator.id] ? this.state.scale(Number(bubbleData[this.props.indicator.id])) : 0}
                           style={{
-                            fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.4)",
+                            fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.1)",
                             stroke: "#fff",
                             strokeWidth: "1.5px",
                             cursor: "pointer"

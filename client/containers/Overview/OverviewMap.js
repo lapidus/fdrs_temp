@@ -21,6 +21,7 @@ import {
   showTooltip,
   hideTooltip,
   switchYear,
+  selectSociety,
 } from "../../actions/appActions"
 
 class SocietiesRanking extends React.Component {
@@ -54,6 +55,10 @@ class OverviewMap extends React.Component {
   render() {
 
     console.log('THE GROUPING: ', this.props.grouping)
+    const { t } = this.props
+    const { i18n } = this.context
+
+    const nationalSocietyNames = i18n.store.data[i18n.language]["national-societies"]
 
     return (
       <div className="px1">
@@ -67,15 +72,16 @@ class OverviewMap extends React.Component {
                      groupedTimeSeries={this.props.grouping}
                      currentYear={this.props.currentYear}
                      nationalSocieties={this.props.nationalSocieties}
-                     societiesBlacklist={[]}
+                     societiesBlacklist={this.props.selectedSocieties}
                      bubbleMouseEnter={ (e, bubble, indicator) => this.props.showTooltip({
                          text: `${bubble.NSO_DON_name} - ${niceNum(indicator, null, null, true)}`
                        }, e)
                      }
                      bubbleMouseLeave={ () => this.props.hideTooltip() }
                      bubbleClick={ (e, bubble, indicator) => {
-                       console.log("Clicked a bubble!")
+                       this.props.selectSociety(bubble.KPI_DON_Code)
                      }}
+                     nationalSocietyNames={ nationalSocietyNames }
                     />
               </div>
             </div>
@@ -141,6 +147,8 @@ OverviewMap.propTypes = {
   currentIndicator: React.PropTypes.string,
   currentYear: React.PropTypes.number,
   switchYear: React.PropTypes.func,
+  selectedSocieties: React.PropTypes.array,
+  selectSociety: React.PropTypes.func,
 }
 
 OverviewMap.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
@@ -154,6 +162,7 @@ const makeMapStateToProps = () => {
     data: state.appReducer.timeSeries,
     currentIndicator: state.appReducer.currentIndicator,
     currentYear: state.appReducer.currentYear,
+    selectedSocieties: state.appReducer.selectedSocieties,
   })
 }
 
@@ -161,6 +170,7 @@ const mapDispatchToProps = dispatch => ({
   showTooltip: (content, evt) => dispatch(showTooltip(content, evt)),
   hideTooltip: () => dispatch(hideTooltip()),
   switchYear: (year) => dispatch(switchYear(year)),
+  selectSociety: (societyID) => dispatch(selectSociety(societyID)),
 })
 
-export default translate("overview", { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(OverviewMap))
+export default translate(["overview", "national-societies"], { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(OverviewMap))

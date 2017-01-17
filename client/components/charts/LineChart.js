@@ -1,5 +1,6 @@
 import React from "react"
 import { VictoryChart, VictoryAxis, VictoryLine, VictoryScatter } from "victory"
+import niceNum from "../../utils/niceNum"
 
 var lineColors = [
   "#EE3224",
@@ -81,7 +82,8 @@ class LineChart extends React.Component {
                       ticks: {stroke: "transparent"}
                     }}
                     orientation="left"
-                    tickFormat={(y) => y >= 1000000 ? y/1000000 + "m" : (y >= 1000 ? y/1000 + "k" : y) }
+                    tickFormat={(y) => niceNum(y)}
+                    }
                   />
                 ) : (
                   ""

@@ -174,4 +174,4 @@ const mapStateToProps = state => ({
   nationalSocieties: state.appReducer.nationalSocieties,
 })
 
-export default translate(["societies", "national-societites"], { wait: true })(connect(mapStateToProps)(Societies))
+export default translate(["societies", "national-societies"], { wait: true })(connect(mapStateToProps)(Societies))
