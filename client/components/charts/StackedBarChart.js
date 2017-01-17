@@ -87,7 +87,7 @@ class StackedBarChart extends React.Component {
                     fontWeight: "700",
                   }}
                   x={ 30 }
-                  y={ (((height - 22) / 5) * (i + 1)) - 30 }
+                  y={ (height + 15) - (((height - 22) / labels.length) * (i + 1)) }
                   key={ i }
                   text={ label.text }
                 />
