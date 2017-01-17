@@ -10,7 +10,7 @@ import SideNavigation from "../../components/Report/SideNavigation"
 import StaffComposition from "../../components/Report/StaffComposition"
 import StaffGenderDistribution from "../../components/Report/StaffGenderDistribution"
 import StackedBarChart from "../../components/charts/StackedBarChart"
-import WorldMap from "../../components/charts/WorldMap"
+// import WorldMap from "../../components/charts/WorldMap"
 
 class Chapter1 extends React.Component {
   componentDidMount() {
@@ -154,7 +154,7 @@ class Chapter1 extends React.Component {
             </div>
           </div>
 
-          <div className="clearfix">
+          {/* <div className="clearfix">
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 py2">
               <WorldMap
                 title={section0.blocks[6].title}
@@ -164,7 +164,7 @@ class Chapter1 extends React.Component {
                 bubblePopupTemplate={this.bubblePopupTemplate}
                 />
             </div>
-          </div>
+          </div> */}
 
           <div className="clearfix" id="scroll-target-section1">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">

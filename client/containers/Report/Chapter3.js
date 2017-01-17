@@ -40,7 +40,21 @@ class Chapter3 extends React.Component {
           </div>
         </div> */}
 
-        <div className="clearfix bg-primary pt1">
+        <div className="clearfix bg-primary">
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+            <p className="caps small strong m0">{ "Everyone counts" }</p>
+            <h2 className="display-2 light m0">{chapter.title}</h2>
+          </div>
+        </div>
+
+        <div className="clearfix bg-dark overflow-hidden" style={{backgroundImage:"url(/img/chapters/chapter-3.jpg)",backgroundSize: "cover",backgroundPosition:"center 40%",backgroundRepeat: "no-repeat", backgroundAttachment: "fixed"}}>
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
+            <p className="lead">{chapter.intro}</p>
+            <hr />
+          </div>
+        </div>
+
+        {/* <div className="clearfix bg-primary pt1">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
             <h2 className="display-2">{chapter.title}</h2>
           </div>
@@ -51,10 +65,10 @@ class Chapter3 extends React.Component {
             <p className="lead">{chapter.intro}</p>
             <hr />
           </div>
-        </div>
+        </div> */}
 
         <div className="clearfix bg-secondary body-text py2">
-          <div className="col sm-10 sm-offset-1 center">
+          <div className="col sm-10 sm-offset-1 text-center">
             {chapter.general[0].map((principle, j) => {
               return (
                 <span key={j} className="px2 pt1 pb2" style={{display:"inline-block"}}>
@@ -63,6 +77,8 @@ class Chapter3 extends React.Component {
                 </span>
               )
             })}
+          </div>
+          <div className="col sm-8 sm-offset-2 text-center">
             <p>{chapter.general[1]}</p>
           </div>
         </div>
@@ -98,7 +114,7 @@ class Chapter3 extends React.Component {
                           })}
                         </g>
                         <text fontFamily="Roboto-Bold, Roboto" fontSize="16" fontWeight="700" letterSpacing="1" fill="#EE3224">
-                          {section0.blocks[1].name.split("\n").map((item, i) => <tspan textAnchor="middle" className="caps" key={i} x="240" y={237 + (i * 15)}>{item}</tspan>)}
+                          { /* section0.blocks[1].name.split("\n").map((item, i) => <tspan textAnchor="middle" className="caps" key={i} x="240" y={237 + (i * 15)}>{item}</tspan>) */ }
                         </text>
                       </g>
                     </g>
@@ -129,7 +145,7 @@ class Chapter3 extends React.Component {
                         })}
                       </g>
                       <text fontFamily="Roboto-Bold, Roboto" fontSize="16" fontWeight="700" letterSpacing="1" fill="#EE3224">
-                        {section0.blocks[4].name.split("\n").map((item, i) => <tspan textAnchor="middle" className="caps" key={i} x="240" y={237 + (i * 15)}>{item}</tspan>)}
+                        { /* section0.blocks[4].name.split("\n").map((item, i) => <tspan textAnchor="middle" className="caps" key={i} x="240" y={237 + (i * 15)}>{item}</tspan>) */ }
                       </text>
                     </g>
                   </g>

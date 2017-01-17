@@ -58,8 +58,23 @@ class Chapter2 extends React.Component {
                 })}
               </ol>
               <p>{section0.blocks[4]}</p>
-              <a href={section0.blocks[5]} target="_blank">
+              {/* <a href={section0.blocks[5]} target="_blank">
                 <button className="btn bg-primary p1">{section0.blocks[6]}</button>
+              </a> */}
+
+              <a href={section0.blocks[5]} target="_blank" className="btn btn--raised bg-primary">
+                <div className="px1">
+                  <span>
+                    <svg style={{width:16,height:16,marginTop:-1,marginRight:16}} width="24px" height="24px" viewBox="0 0 24 24">
+                      <g transform="translate(0, 0)" style={{stroke:"currentcolor"}}>
+                        <line fill="none" strokeWidth="2" strokeMiterlimit="10" x1="12" y1="9" x2="12" y2="22" strokeLinejoin="miter" strokeLinecap="butt"/>
+                        <polyline fill="none" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="15,19 12,22 9,19 " strokeLinejoin="miter"/>
+                        <path fill="none" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M17,16h2c2.209,0,4-1.791,4-4c0-2.197-1.782-4.013-4.025-3.997C18.718,4.093,15.474,1,11.5,1C7.481,1,4.21,4.164,4.018,8.136C2.287,8.575,1,10.132,1,12c0,2.209,1.791,4,4,4h2" strokeLinejoin="miter"/>
+                      </g>
+                    </svg>
+                  </span>
+                  {section0.blocks[6]}
+                </div>
               </a>
             </div>
           </div>
@@ -76,9 +91,11 @@ class Chapter2 extends React.Component {
         </div>
 
         <div className="center pb3" style={{position:"relative"}}>
-          <img src="/img/chapters/2/flickr.jpg" style={{opacity:0.3}}/>
-          <div className="vertical-center" style={{position:"absolute",width:"100%"}}>
-            <a className="btn bg-primary p1" href="https://www.flickr.com/photos/ifrc/albums" target="_blank">{section1.blocks[1]}</a>
+          <img src="/img/chapters/2/flickr.jpg" style={{opacity:0.3,width:"100%"}}/>
+          <div className="absolute base-12 t50 y-venter-self text-center">
+            <a className="btn btn--raised bg-primary" href="https://www.flickr.com/photos/ifrc/albums" target="_blank">
+              <div className="p1">{section1.blocks[1]}</div>
+            </a>
           </div>
         </div>
 
