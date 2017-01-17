@@ -107,22 +107,18 @@ class Map extends React.Component {
 
 
 
-    const tooltipContent = (name, value) => (
+    const tooltipContent = (name, kpi, value) => (
       <div className="text-center p1" style={{maxWidth:240}}>
         <div>{ name }</div>
         <div className="title my1"><strong>{ niceNum(value, null, null, true) }</strong></div>
       </div>
     )
 
-
     var nationalSocietiesByID = _.keyBy(nationalSocieties, 'KPI_DON_Code');
-    console.log("nationalSocietiesByID", nationalSocietiesByID);
 
     let currentYearData = _.sortBy(this.state.currentYearData, (item) => {
       return -Number(item[this.props.indicator.id]);
     });
-
-    console.log("cc", currentYearData, this.props.indicator.id)
 
     return (
       <div className="" style={{ clear: "left", minHeight: '10rem' }}>
@@ -155,14 +151,11 @@ class Map extends React.Component {
                   const long = Number(nationalSocietiesByID[bubble.KPI_DON_Code].long)
                   const coords = long && lat ? [long, lat] : undefined
                   const bubbleData = bubble[this.props.indicator.id]
-
-                    console.log(bubbleData)
-
-
+                    
                   if(bubbleData && coords) {
                     return (
                       <SVGOrigin
-                        content={tooltipContent(this.props.nationalSocietyNames[bubble.KPI_DON_Code], bubbleData)}
+                        content={tooltipContent(this.props.nationalSocietyNames[bubble.KPI_DON_Code], this.props.indicator.id, bubbleData)}
                         key={bubble.KPI_DON_Code}>
                         {/* <circle
                           key={bubble.KPI_DON_Code}
