@@ -652,7 +652,7 @@ class SocietyPDF extends React.Component {
                         <p className="m0">
                           { t("societies:callout")[1] }
                         </p>
-                        <p className="m0">{ t("societies:callout")[2] }<br />{ "ideas@ifrc.org" }</p>
+                        <p className="m0">{ t("societies:callout")[2] }<br />{ "fdrs@ifrc.org" }</p>
                       </div>
                     </CardView>
                     <CardOverlay>

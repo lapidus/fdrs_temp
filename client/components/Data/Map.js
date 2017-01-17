@@ -105,12 +105,24 @@ class Map extends React.Component {
   render() {
     const { data, indicator, nationalSocieties } = this.props
 
+
+
     const tooltipContent = (name, value) => (
       <div className="text-center p1" style={{maxWidth:240}}>
         <div>{ name }</div>
         <div className="title my1"><strong>{ niceNum(value, null, null, true) }</strong></div>
       </div>
     )
+
+
+    var nationalSocietiesByID = _.keyBy(nationalSocieties, 'KPI_DON_Code');
+    console.log("nationalSocietiesByID", nationalSocietiesByID);
+
+    let currentYearData = _.sortBy(this.state.currentYearData, (item) => {
+      return -Number(item[this.props.indicator.id]);
+    });
+
+    console.log("cc", currentYearData, this.props.indicator.id)
 
     return (
       <div className="" style={{ clear: "left", minHeight: '10rem' }}>
@@ -132,18 +144,25 @@ class Map extends React.Component {
                   <Countries countries={this.state.countries} projection={this.projection} />
                 ) : (null)
               }
-              { !this.state.loading ?
-                nationalSocieties.map((bubble, i) => {
 
-                  const lat  = Number(bubble.lat)
-                  const long = Number(bubble.long)
+
+              {
+                !this.state.loading ?
+                  currentYearData.map((bubble, i) => {
+
+
+                  const lat  = Number(nationalSocietiesByID[bubble.KPI_DON_Code].lat)
+                  const long = Number(nationalSocietiesByID[bubble.KPI_DON_Code].long)
                   const coords = long && lat ? [long, lat] : undefined
-                  const bubbleData = this.state.currentYearData.find((d) => d.KPI_DON_Code == bubble.KPI_DON_Code)
+                  const bubbleData = bubble[this.props.indicator.id]
+
+                    console.log(bubbleData)
+
 
                   if(bubbleData && coords) {
                     return (
                       <SVGOrigin
-                        content={tooltipContent(this.props.nationalSocietyNames[bubble.KPI_DON_Code], bubbleData[this.props.indicator.id])}
+                        content={tooltipContent(this.props.nationalSocietyNames[bubble.KPI_DON_Code], bubbleData)}
                         key={bubble.KPI_DON_Code}>
                         {/* <circle
                           key={bubble.KPI_DON_Code}
@@ -163,14 +182,14 @@ class Map extends React.Component {
                         <circle
                           cx={this.projection()(coords)[0]}
                           cy={this.projection()(coords)[1]}
-                          r={bubbleData[this.props.indicator.id] ? this.state.scale(Number(bubbleData[this.props.indicator.id])) : 0}
+                          r={bubbleData ? this.state.scale(Number(bubbleData)) : 0}
                           style={{
                             fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.1)",
                             stroke: "#fff",
                             strokeWidth: "1.5px",
                             cursor: "pointer"
                           }}
-                          onClick={ (e) => this.props.bubbleClick(e, bubble, bubbleData[this.props.indicator.id]) }
+                          onClick={ (e) => this.props.bubbleClick(e, bubble, bubbleData) }
                         />
                       </SVGOrigin>
                     )
