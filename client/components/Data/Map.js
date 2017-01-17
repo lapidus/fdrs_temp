@@ -59,7 +59,7 @@ class Map extends React.Component {
       currentYearData: currentYearData,
       minData: min,
       maxData: max,
-      scale: scaleLinear().domain([min, max]).range([4,40])
+      scale: scaleLinear().domain([min, max]).range([2,50])
     }
   }
   componentWillReceiveProps(nextProps) {
@@ -78,7 +78,7 @@ class Map extends React.Component {
       currentYearData: currentYearData,
       minData: min,
       maxData: max,
-      scale: scaleLinear().domain([min, max]).range([4,40])
+      scale: scaleLinear().domain([min, max]).range([2,50])
     })
 
     if(nextProps.countryPaths !== this.props.countryPaths) {
@@ -151,7 +151,7 @@ class Map extends React.Component {
                   const long = Number(nationalSocietiesByID[bubble.KPI_DON_Code].long)
                   const coords = long && lat ? [long, lat] : undefined
                   const bubbleData = bubble[this.props.indicator.id]
-                    
+
                   if(bubbleData && coords) {
                     return (
                       <SVGOrigin
