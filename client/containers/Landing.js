@@ -2,8 +2,41 @@
 import React from "react"
 import { Link } from "react-router"
 import { translate } from "react-i18next"
+import * as d3 from "d3";
+
 
 class Landing extends React.Component {
+
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      items : [],
+    }
+
+  }
+
+  componentDidMount() {
+
+    d3.json("https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fmedia.ifrc.org%2Fifrc%2Ftheme%2Fdata%2Ffeed%2F", (data) => {
+
+      console.log(data)
+
+      /*
+      *
+      *
+      *
+      * */
+
+
+      this.setState({
+        items : data.items
+      })
+
+    })
+
+  }
+
   render() {
 
     const { t } = this.props
@@ -28,6 +61,46 @@ class Landing extends React.Component {
             </div>
           </div>
         </header>
+
+
+        <div className='col sm-12'>
+
+              <div className='col sm-7 sm-offset-1 px1'>
+                { this.state.items.map((item, index) =>
+                   <div key={index}>
+                     <h1 className="headline">{item.title}</h1>
+                     <p>{item.description}</p>
+                     <a target="_blank" href={item.link} className='btn btn--raised bg-primary'>
+                      <span className='block py05 px1'>
+                        Read More
+                      </span>
+                     </a>
+                   </div>
+                )}
+              </div>
+
+
+            <div className="col sm-4 px1">
+              <div className="relative ratio-1-1">
+                <article className="ratio-content shadow-4 bg-beige p2">
+                  <h1 className="headline m0">
+                    { t("landing:about.title") }
+                  </h1>
+                  <p>
+                    { t("landing:about.text")[0] }
+                  </p>
+                  <p>
+                    { t("landing:about.text")[1] }
+                  </p>
+                </article>
+              </div>
+            </div>
+          
+        </div>
+
+
+
+
 
         <div className='block relative px1'>
           <div className='clearfix mxn1'>
