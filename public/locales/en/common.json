@@ -9,18 +9,96 @@
     "indicatorsTitle": "Indicators",
     "updateText": "Last updated...",
     "indicators": {
-        "KPI_noPeopleVolunteering": "People volunteering time",
-        "KPI_noPaidStaff": "Paid staff",
-        "KPI_noPeopleDonatingBlood": "People donating blood",
-        "KPI_noLocalUnits": "Local units",
-        "KPI_IncomeLC (CHF)": "Income (in CHF)",
-        "KPI_expenditureLC (CHF)": "Expenditure (in CHF)",
-        "KPI_noPeopleReachedDisaster": "People reached by disaster response and early recovery programmes",
-        "KPI_noPeopleReachedAllServices": "People reached by all services",
-        "KPI_noPeopleReachedHealth": "People reached by health services",
-        "KPI_noPeopleReachedDevelopment": "People reached by development",
-        "KPI_noPeopleReachedServices": "People reached by services",
-        "KPI_noPeopleCoveredPreparedness": "People covered"
+      "KPI_noPeopleVolunteering": {
+        "name" : "People volunteering time",
+        "definition" : "Number of people volunteering time: People that have volunteered at least four hours during the annual reporting period.",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_noPaidStaff": {
+        "name" : "Paid staff",
+        "definition" : "Number of paid staff: People who work with a National Society or the Secretariat for a minimum of three months and are remunerated.",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_noPeopleDonatingBlood": {
+        "name" : "People donating blood",
+        "definition" : "Number of people donating blood: People that have donated blood at least once during the reporting period.",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_noLocalUnits": {
+        "name" : "Local units",
+        "definition" : "Number of local units: National Society subdivisions that work directly with the community – this can include local chapters, branches, regional and intermediate offices, and headquarters.",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_IncomeLC (CHF)": {
+        "name" : "Income (in CHF)",
+        "definition" : "Total income received: the fiscal value of money, material goods, and services a National Society receives during the fiscal year (in CHF).",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_expenditureLC (CHF)": {
+        "name" : "Expenditure (in CHF)",
+        "definition" : "Total expenditure: the fiscal value of money, material goods, and services a National Society spends during the fiscal year (in CHF).",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_noPeopleReachedDisaster": {
+        "name" : "People reached by disaster response and early recovery programmes",
+        "definition" : "",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_noPeopleReachedAllServices": {
+        "name" : "People reached by all services",
+        "definition" : "Number of people reached by Long Term Services and Development Programmes: Direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_noPeopleReachedHealth": {
+        "name" : "People reached by health services",
+        "definition" : "",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_noPeopleReachedDevelopment": {
+        "name" : "People reached by development",
+        "definition" : "",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_noPeopleReachedServices": {
+        "name" : "People reached by services",
+        "definition" : "",
+        "source" : "",
+        "unit" : ""
+      },
+      "KPI_noPeopleCoveredPreparedness": {
+        "name" : "People covered",
+        "definition" : "Number of people covered by Preparedness and Risk Reduction Programmes",
+        "source" : "",
+        "unit" : ""
+      },
+      "Population": {
+        "name" : "Population",
+        "definition" : "",
+        "source" : "",
+        "unit" : ""
+      },
+      "Poverty": {
+        "name" : "Poverty",
+        "definition" : "",
+        "source" : "",
+        "unit" : ""
+      },
+      "GDP": {
+        "name" : "GDP per capita",
+        "definition" : "",
+        "source" : "",
+        "unit" : ""
+      }
     },
     "login": "Login",
     "home": "Home",
