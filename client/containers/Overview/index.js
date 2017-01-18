@@ -29,6 +29,7 @@ class Overview extends React.Component {
 
     const pageData = i18n.store.data[i18n.language]["common"]
 
+
     return (
       <section>
         <Breadcrumbs links={[
@@ -89,7 +90,7 @@ class Overview extends React.Component {
                 </h1>
               <div className="relative">
                 {/* <span className="display-1 md-display-2 m0 light">{ pageData.indicators[this.props.currentIndicator] }</span> */}
-                <div className="sm-9 select-xl select-no-underline select-no-scroll">
+                <div className="sm-9 select-xl select-no-underline select-no-scroll mxn3">
                   <Select
                     searchable={ false }
                     clearable={ false }
@@ -111,12 +112,13 @@ class Overview extends React.Component {
                 </div>
                 <div className="absolute t50 r0 y-center-self">
                   <Link to="/fdrs/overview/map" className="relative btn">
-                    <span className="small strong caps color-primary">{ "Map" }</span>
-                    <span className="absolute b0 l0 base-12 bg-primary" style={{height:4}}></span>
+                    <span className="small strong caps">{ "Map" }</span>
+                    <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/map" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
                   </Link>
+
                   <Link to="/fdrs/overview/table" className="relative btn">
                     <span className="small strong caps">{ "Table" }</span>
-                    <span className="absolute b0 l0 base-12 bg-secondary" style={{height:4}}></span>
+                    <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/table" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
                   </Link>
                 </div>
               </div>
@@ -129,7 +131,7 @@ class Overview extends React.Component {
         <div className="bg-secondary px1">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              { pageData.updateText }
+
             </div>
           </div>
         </div>
