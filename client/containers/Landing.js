@@ -46,6 +46,18 @@ class Landing extends React.Component {
 
     const { t } = this.props
 
+    var myRegex = /<img[^>]+src="(http:\/\/[^">]+)"/g;
+
+    this.getImage = (content) => {
+      var result = myRegex.exec(content);
+      if(result){
+        return result[1];
+      }
+      else{
+        return "";
+      }
+    }
+
     return (
       <section style={{
              backgroundImage: "url(/img/landing-bg.jpg)",
@@ -54,7 +66,7 @@ class Landing extends React.Component {
            }}
            className="py2"
         >
-        <header className='block relative px1 py4'>
+        <header className='block relative px1 pt4 pb1'>
           <div className='clearfix mxn1'>
             <div className='col sm-10 sm-offset-1 px1'>
               <h1 className='display-1 sm-display-2 md-display-3 light m0'>
@@ -73,34 +85,9 @@ class Landing extends React.Component {
             <div className='col sm-6 sm-offset-1 px1'> 
               <div className="clearfix mxn1">
 
-                { this.state.items.map((item, index) =>
-                   <div key={index}>
-                     <h1 className="headline">{item.title}</h1>
-                     <div>
-                       <span>By {item.author}</span> | <span>{item.pubDate.substring(0,item.pubDate.length-9)}</span>
-
-
-                       {
-                         item.categories ?
-                           item.categories.map((cat, index) =>
-                            <span> | {cat} |</span>
-                           ) : ""
-                       }
-
-                     </div>
-                     <p>{item.description}</p>
-                     <a target="_blank" href={item.link} className='btn btn--raised bg-primary'>
-                      <span className='block py05 px1'>
-                        Read More
-                      </span>
-                     </a>
-                   </div>
-                )}
-              </div>
-            </div>
-
-            <div className="col sm-4 sm-offset-1 px1">
-              <div className="relative">
+                <h4>
+                  Featured project
+                </h4>
 
                 <article className="shadow-4 p2">
                   <h1 className="headline m0">
@@ -120,6 +107,44 @@ class Landing extends React.Component {
 
                 </article>
 
+                <h4>
+                  News
+                </h4>
+
+                { this.state.items.map((item, index) =>
+                   <div key={index} className="pb4">
+
+                     {
+                       <img className="" src={this.getImage(item.content)} alt=""/>
+                     }
+
+                     <img src="" alt=""/>
+                     <h1 className="subtitle">{item.title}</h1>
+                     <div>
+                       <span>By {item.author}</span> | <span>{item.pubDate.substring(0,item.pubDate.length-9)}</span>
+                       {
+                         item.categories ?
+                           item.categories.map((cat, index) =>
+                            <span key={index}> | {cat} </span>
+                           ) : ""
+                       }
+
+                     </div>
+                     <p>{item.description}</p>
+                     <a target="_blank" href={item.link} className='btn btn--raised bg-primary'>
+                      <span className='block py05 px1'>
+                        Read More
+                      </span>
+                     </a>
+                   </div>
+                )}
+              </div>
+            </div>
+
+            <div className="col sm-3 sm-offset-1 px1">
+              <div className="relative">
+
+                <h4>&nbsp;</h4>
                 <article className="shadow-4 bg-beige p2 mt2">
                   <h1 className="headline m0">
                     { t("landing:about.title") }
@@ -131,9 +156,6 @@ class Landing extends React.Component {
                     { t("landing:about.text")[1] }
                   </p>
                 </article>
-
-
-
 
               </div>
               </div>
