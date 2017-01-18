@@ -6,6 +6,8 @@ import Breadcrumbs from "../components/Breadcrumbs"
 
 import prefixLanguageToRoute from "../utils/prefixLanguageToRoute"
 import { fetchNationalSocieties } from "../actions/appActions"
+import _ from "lodash"
+
 
 class Societies extends React.Component {
   render() {
@@ -14,6 +16,10 @@ class Societies extends React.Component {
     const { t } = this.props
     const societiesPerCol = Math.ceil(this.props.nationalSocieties.length / 3)
     const pageData = i18n.store.data[language]["common"]
+
+    const sortedNationalSocieties = _.sortBy(this.props.nationalSocieties, function(d){
+      return t("national-societies:" + d.KPI_DON_Code);
+    })
 
     return (
       <section>
@@ -83,7 +89,7 @@ class Societies extends React.Component {
               <ul className="clearfix mxn1 p0">
                 <div className="col sm-4 px1">
                   {
-                    this.props.nationalSocieties.slice(0,societiesPerCol).map((society, i) => (
+                    sortedNationalSocieties.slice(0,societiesPerCol).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
                         <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>
                           { t("national-societies:" + society.KPI_DON_Code) }
@@ -94,7 +100,7 @@ class Societies extends React.Component {
                 </div>
                 <div className="col sm-4 px1">
                   {
-                    this.props.nationalSocieties.slice(societiesPerCol,societiesPerCol*2).map((society, i) => (
+                    sortedNationalSocieties.slice(societiesPerCol,societiesPerCol*2).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
                         <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>
                           { t("national-societies:" + society.KPI_DON_Code) }
@@ -105,7 +111,7 @@ class Societies extends React.Component {
                 </div>
                 <div className="col sm-4 px1">
                   {
-                    this.props.nationalSocieties.slice(societiesPerCol*2,societiesPerCol*3).map((society, i) => (
+                    sortedNationalSocieties.slice(societiesPerCol*2,societiesPerCol*3).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
                         <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>
                           { t("national-societies:" + society.KPI_DON_Code) }
