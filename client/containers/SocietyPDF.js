@@ -438,6 +438,12 @@ class SocietyPDF extends React.Component {
           </div>
         </div>
 
+        <div className="clearfix text-center title bg-secondary p2">
+
+          For the latest information, see <a href="data.ifrc.org">data.ifrc.org</a>
+
+        </div>
+
       </section>
     )
   }

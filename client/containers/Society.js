@@ -9,6 +9,7 @@ import filter from "lodash/fp/filter"
 import uniqBy from "lodash/fp/uniqBy"
 import sortBy from "lodash/sortBy"
 import niceNum from "../utils/niceNum"
+import Icon from "../components/Icon"
 
 import { translate } from "react-i18next"
 
@@ -120,6 +121,9 @@ class Society extends React.Component {
 
   render() {
 
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+
+
     const {
       year,
       earliestData,
@@ -130,9 +134,6 @@ class Society extends React.Component {
     const { i18n } = this.context
     const { language } = i18n
     const pageData = i18n.store.data[language]["common"]
-
-
-    console.log("ss", society)
 
 
     return (
@@ -232,7 +233,10 @@ class Society extends React.Component {
                         Download PDF
                       </button>
                     </a>
-                    <ShareBtn service="twitter" />
+                    <a href="https://twitter.com/intent/tweet?text=Society Profile&hashtags=IFRC,FDRS">
+                      <ShareBtn service="twitter" />
+                    </a>
+
                     <ShareBtn service="facebook" />
                     <ShareBtn service="mail" />
                   </div>
@@ -818,7 +822,7 @@ class Society extends React.Component {
         <div className="bg-secondary px1">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              { t("common:updateText") }
+
             </div>
           </div>
         </div>
