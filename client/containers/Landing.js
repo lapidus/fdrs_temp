@@ -3,6 +3,7 @@ import React from "react"
 import { Link } from "react-router"
 import { translate } from "react-i18next"
 import * as d3 from "d3";
+import LanguageLink from "../components/LanguageLink"
 
 
 class Landing extends React.Component {
@@ -13,6 +14,10 @@ class Landing extends React.Component {
     this.state = {
       items : [],
     }
+
+
+
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"df61f27b-dcce-11e6-8789-0a5fecc78a4d"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
 
   }
 
@@ -63,12 +68,26 @@ class Landing extends React.Component {
         </header>
 
 
-        <div className='col sm-12'>
+        <div className='block relative px1'> 
+          <div className='clearfix mxn1'> 
+            <div className='col sm-6 sm-offset-1 px1'> 
+              <div className="clearfix mxn1">
 
-              <div className='col sm-7 sm-offset-1 px1'>
                 { this.state.items.map((item, index) =>
                    <div key={index}>
                      <h1 className="headline">{item.title}</h1>
+                     <div>
+                       <span>By {item.author}</span> | <span>{item.pubDate.substring(0,item.pubDate.length-9)}</span>
+
+
+                       {
+                         item.categories ?
+                           item.categories.map((cat, index) =>
+                            <span> | {cat} |</span>
+                           ) : ""
+                       }
+
+                     </div>
                      <p>{item.description}</p>
                      <a target="_blank" href={item.link} className='btn btn--raised bg-primary'>
                       <span className='block py05 px1'>
@@ -78,11 +97,30 @@ class Landing extends React.Component {
                    </div>
                 )}
               </div>
+            </div>
 
+            <div className="col sm-4 sm-offset-1 px1">
+              <div className="relative">
 
-            <div className="col sm-4 px1">
-              <div className="relative ratio-1-1">
-                <article className="ratio-content shadow-4 bg-beige p2">
+                <article className="shadow-4 p2">
+                  <h1 className="headline m0">
+                    <Link to="/fdrs">
+                      { t("landing:projects.fdrs.title") }
+                    </Link>
+                  </h1>
+                  <p>
+                    { t("landing:projects.fdrs.text") }
+                  </p>
+
+                  <LanguageLink to="/fdrs/" className='btn btn--raised mt1 bg-primary'>
+                      <span className='block py05 px1'>
+                        Go to FDRS
+                      </span>
+                  </LanguageLink>
+
+                </article>
+
+                <article className="shadow-4 bg-beige p2 mt2">
                   <h1 className="headline m0">
                     { t("landing:about.title") }
                   </h1>
@@ -93,92 +131,15 @@ class Landing extends React.Component {
                     { t("landing:about.text")[1] }
                   </p>
                 </article>
+
+
+
+
+              </div>
               </div>
             </div>
-          
         </div>
 
-
-
-
-
-        <div className='block relative px1'>
-          <div className='clearfix mxn1'>
-            <div className='col sm-10 sm-offset-1 px1'>
-              <div className="clearfix mxn1">
-                <div className="col sm-8 px1">
-                  <div className="clearfix mxn1">
-                    <div className="col sm-12 md-6 px1 pb2">
-                      <div className="relative ratio-3-2">
-                        <article className="ratio-content shadow-4 p2">
-                          <h1 className="headline m0">
-                            <Link to="/fdrs">
-                              { t("landing:projects.fdrs.title") }
-                            </Link>
-                          </h1>
-                          <p>
-                            { t("landing:projects.fdrs.text") }
-                          </p>
-                        </article>
-                      </div>
-                    </div>
-                    <div className="col sm-12 md-6 px1 pb2">
-                      <div className="relative ratio-3-2">
-                        <article className="ratio-content shadow-4 p2">
-                          <h1 className="headline m0">
-                            { t("landing:projects.go.title") }
-                          </h1>
-                          <p>
-                            { t("landing:projects.go.text") }
-                          </p>
-                        </article>
-                      </div>
-                    </div>
-                    <div className="col sm-12 md-6 px1 pb2">
-                      <div className="relative ratio-3-2">
-                        <article className="ratio-content shadow-4 p2">
-                          <h1 className="headline m0">
-                            { t("landing:projects.literacy.title") }
-                          </h1>
-                          <p>
-                            { t("landing:projects.literacy.text") }
-                          </p>
-                        </article>
-                      </div>
-                    </div>
-                    <div className="col sm-12 md-6 px1 pb2">
-                      <div className="relative ratio-3-2">
-                        <article className="ratio-content shadow-4 p2">
-                          <h1 className="headline m0">
-                            { t("landing:projects.dref.title") }
-                          </h1>
-                          <p>
-                            { t("landing:projects.dref.text") }
-                          </p>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col sm-4 px1">
-                  <div className="relative ratio-1-1">
-                    <article className="ratio-content shadow-4 bg-beige p2">
-                      <h1 className="headline m0">
-                        { t("landing:about.title") }
-                      </h1>
-                      <p>
-                        { t("landing:about.text")[0] }
-                      </p>
-                      <p>
-                        { t("landing:about.text")[1] }
-                      </p>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
     )
   }
