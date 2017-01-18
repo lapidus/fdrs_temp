@@ -26,7 +26,7 @@ class DataView extends React.Component {
     const keyIndicators = filter(isKeyIndicator, props.meta)
 
     this.state = {
-      indicator: keyIndicators[0],
+      indicator: keyIndicators[0].name,
       keyIndicators,
     }
 

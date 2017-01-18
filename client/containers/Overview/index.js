@@ -89,7 +89,6 @@ class Overview extends React.Component {
                   { t("overview:title") }
                 </h1>
               <div className="relative">
-                {/* <span className="display-1 md-display-2 m0 light">{ pageData.indicators[this.props.currentIndicator] }</span> */}
                 <div className="sm-9 select-xl select-no-underline select-no-scroll mxn3">
                   <Select
                     searchable={ false }
@@ -99,12 +98,12 @@ class Overview extends React.Component {
                     multi={ false }
                     name="ns-selector"
                     valueRenderer={(option) => {
-                      return <span className="headline sm-display-1 md-display-2 light">{ pageData.indicators[option.value] }</span>
+                      return <span className="headline sm-display-1 md-display-2 light">{ pageData.indicators[option.value].name }</span>
                     }}
                     options={Object.keys(pageData.indicators).map(indicatorKey => {
                       return {
                         value: indicatorKey,
-                        label: pageData.indicators[indicatorKey],
+                        label: pageData.indicators[indicatorKey].name,
                       }
                     })}
                     onChange={(indicator) => this.props.setIndicator(indicator.value)}
