@@ -14,9 +14,9 @@ class SocietiesTableHeader extends React.Component {
       down } = this.props
 
     return (
-      <table className="base-12 text-left mb2">
+      <table className="base-12 text-left">
         <tbody>
-          <tr className="shadow-2">
+          <tr className="">
             <th className="p1 base-4 sm-4">{ t("overview:tableHeaders")[0] }</th>
             <th className="p1 base-4 sm-4">{ t("overview:tableHeaders")[1] }</th>
             <th className="p1 base-4 sm-4 relative">

@@ -265,7 +265,9 @@ class App extends React.Component {
                             c0,3.038-2.462,6.5-5.5,6.5S5,12.538,5,9.5S7.462,4,10.5,4S16,6.462,16,9.5z" strokeLinejoin="miter"/>
                               </g>
                             </svg>
-                            <span className="ml1">{ "Login" }</span>
+                            <a href="http://fdrs.ifrc.org" target="_blank">
+                              <span className="ml1">{ "Login" }</span>
+                            </a>
                           </div>
                         </button>
                       </li>
@@ -413,8 +415,13 @@ class App extends React.Component {
               ) : null
             }
             <div className="clearfix bg-darker py2">
+
               <div className="col sm-3 sm-offset-1">
-                <Link to="/">{ "Back to Data.ifrc.org" }</Link>
+                { this.props.location.pathname !== "/" ?
+                  <Link to="/">{ "Back to Data.ifrc.org" }</Link> :
+                  ""
+                }
+
               </div>
               <div className="col sm-3">
 

@@ -32,7 +32,7 @@ class SocietiesRanking extends React.Component {
           { "Sorted" }&nbsp;<span className="color-primary">{ "High to Low" }</span>
         </h2>
 
-        <table style={{position:"absolute", height:"600px",overflowY:"scroll", display: "block"}}>
+        <table style={{height:"600px",overflowY:"scroll", display: "block"}}>
 
           {
             this.props.societiesList.reverse().map((society, i) => {
@@ -46,7 +46,7 @@ class SocietiesRanking extends React.Component {
               }
             }>
                 <td>
-                  
+
                 </td>
                 <td>{ society.NSO_DON_name } </td><td>{ niceNum(society[this.props.currentIndicator], null, null, false) }</td>
               </tr>
@@ -73,7 +73,19 @@ class OverviewMap extends React.Component {
       <div className="px1">
 
         <div className="relative clearfix mxn1">
-          <div className="col sm-9 sm-offset-2 px1 pt1">
+
+          <div className="col sm-3 px2">
+            <div className="clearfix mxn1">
+              <div className="col sm-12 md-12 py0">
+                <SocietiesRanking
+                  societiesList={sortBy(this.props.grouping[this.props.currentYear], o => Number(o[this.props.currentIndicator]))}
+                  currentIndicator={this.props.currentIndicator}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="col sm-9 px1 pt1">
             <div className="relative ratio-16-9">
               <div className="ratio-content">
                 <Map indicator={{id: this.props.currentIndicator}}
@@ -96,20 +108,10 @@ class OverviewMap extends React.Component {
             </div>
           </div>
 
-          <div className="absolute l0 col sm-3 px1" style={{top:"15%",height:"75%"}}>
-            <div className="clearfix mxn1">
-              <div className="col sm-10 sm-offset-2 md-9 md-offset-3 py0">
-                <SocietiesRanking
-                  societiesList={sortBy(this.props.grouping[this.props.currentYear], o => Number(o[this.props.currentIndicator]))}
-                  currentIndicator={this.props.currentIndicator}
-                  />
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="clearfix mxn1">
-          <div className="col sm-8 sm-offset-3 px1 pt2 pb4">
+          <div className="col sm-9 sm-offset-3 px1 pt2 pb4">
             <div className="block text-center mb3">
               <div className="inline-block align-middle base-10 sm-6 md-4">
                 <Slider
