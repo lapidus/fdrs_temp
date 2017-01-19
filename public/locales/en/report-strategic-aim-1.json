@@ -37,7 +37,7 @@
                 "y": "Natural disasters"
             },
             "lineLabels": [
-                "Natural\\ndisasters"
+                "Natural\ndisasters"
             ]
         }
     ],
@@ -362,50 +362,32 @@
                             "fill": "#FED02F"
                         },
                         {
-                            "x": [
-                                "Volcanic",
-                                "eruptions (4)"
-                            ],
+                            "x": "Volcanic\neruptions (4)",
                             "y": "4",
                             "fill": "#DE2214"
                         },
                         {
-                            "x": [
-                                "Cyclones,",
-                                "storms (4)"
-                            ],
+                            "x": "Cyclones,\nstorms (4)",
                             "y": "4",
                             "fill": "#84BB23"
                         },
                         {
-                            "x": [
-                                "Extreme",
-                                "temperature (4)"
-                            ],
+                            "x": "Extreme\ntemperature (4)",
                             "y": "4",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "Civil",
-                                "unrest (13)"
-                            ],
+                            "x": "Civil\nunrest (13)",
                             "y": "13",
                             "fill": "#84BB23"
                         },
                         {
-                            "x": [
-                                "Explosions,",
-                                "fires (2)"
-                            ],
+                            "x": "Explosions,\nfires (2)",
                             "y": "2",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "Population",
-                                "movement (11)"
-                            ],
+                            "x": "Population\nmovement (11)",
                             "y": "11",
                             "fill": "#EE3224"
                         },
@@ -652,28 +634,17 @@
                             "name": "1993\u20142011",
                             "dataset": [
                                 {
-                                    "x": [
-                                        "Vehicle",
-                                        "accidents (10)"
-                                    ],
+                                    "x": "Vehicle\naccidents (10)",
                                     "y": "10",
                                     "fill": "#012A39"
                                 },
                                 {
-                                    "x": [
-                                        "Violence\/",
-                                        "crime\/",
-                                        "conflict",
-                                        "related (30)"
-                                    ],
+                                    "x": "Violence\/\ncrime\/\nconflict\nrelated (30)",
                                     "y": "30",
                                     "fill": "#EE3224"
                                 },
                                 {
-                                    "x": [
-                                        "Natural",
-                                        "disasters (60)"
-                                    ],
+                                    "x": "Natural\ndisasters (60)",
                                     "y": "60",
                                     "fill": "#FED02F"
                                 }
@@ -683,26 +654,17 @@
                             "name": "2012\u20142014",
                             "dataset": [
                                 {
-                                    "x": [
-                                        "Vehicle",
-                                        "accidents (10)"
-                                    ],
+                                    "x": "Vehicle\naccidents (10)",
                                     "y": "10",
                                     "fill": "#012A39"
                                 },
                                 {
-                                    "x": [
-                                        "Violence\/crime\/",
-                                        "conflict related (86)"
-                                    ],
+                                    "x": "Violence\/crime\/\nconflict related (86)",
                                     "y": "86",
                                     "fill": "#EE3224"
                                 },
                                 {
-                                    "x": [
-                                        "Natural",
-                                        "disasters (4)"
-                                    ],
+                                    "x": "Natural\ndisasters (4)",
                                     "y": "4",
                                     "fill": "#FED02F"
                                 }

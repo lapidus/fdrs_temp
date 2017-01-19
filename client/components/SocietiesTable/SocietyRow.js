@@ -1,15 +1,19 @@
 
 import React from "react"
 import { connect } from "react-redux"
-import { Link } from "react-router"
+import LanguageLink  from "../../components/LanguageLink"
 import niceNum from "../../utils/niceNum"
 import { VictoryLine, VictoryScatter, Point } from "victory"
 import { showTooltip, hideTooltip } from "../../actions/appActions"
 import sortBy from "lodash/sortBy"
 
 function recalculateDataPoints(allYears, nsData, currentIndicator) {
+
+  allYears = ["2010", "2011", "2012", "2013", "2014", "2015"];
+
   return allYears.map(year => {
     const filtered = nsData.filter(obj => obj.KPI_Year === year)[0]
+
     return {
       x: new Date(year, 1, 1),
       y: filtered ? (filtered[currentIndicator.id] ? Number(filtered[currentIndicator.id]) : null) : null
@@ -46,7 +50,7 @@ class Trendline extends React.Component {
   }
   render() {
     const { dataPoints } = this.state
-
+    
     return (
       <div className="relative">
         <div className="absolute b0 l0 small">
@@ -116,9 +120,9 @@ class SocietyRow extends React.Component {
     return (
       <tr>
         <td className="px1 py05 base-4">
-          <Link to={`/fdrs/societies/${nationalSociety.slug}`} className="color-primary">
+          <LanguageLink to={`/fdrs/societies/${nationalSociety.slug}`} className="color-primary">
             { nationalSociety.NSO_DON_name }
-          </Link>
+          </LanguageLink>
         </td>
         <td className="py05 px1 base-4">
           <Trendline

@@ -1,6 +1,6 @@
 import React from "react"
 import { connect } from "react-redux"
-import { Link } from "react-router"
+import LanguageLink  from "../components/LanguageLink"
 import Select from "react-select"
 import minBy from "lodash/minBy"
 import maxBy from "lodash/maxBy"
@@ -155,7 +155,7 @@ class Society extends React.Component {
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/fdrs/overview/map" className="btn block p1 link-no-underline text-left">
+                <LanguageLink to="/fdrs/overview/map" className="btn block p1 link-no-underline text-left">
                   <span className="inline-block">
                     <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g transform="translate(0, 0)">
@@ -170,10 +170,10 @@ class Society extends React.Component {
                     { t("societies:tabs")[0][0] }&nbsp;
                   </span>
                   { t("societies:tabs")[0][1] }
-                </Link>
+                </LanguageLink>
               </li>
               <li className="inline-block">
-                <Link to="/fdrs/societies" className="btn block p1 link-no-underline bg-white text-left">
+                <LanguageLink to="/fdrs/societies" className="btn block p1 link-no-underline bg-white text-left">
                   <span>
                     <svg style={{width:16,height:16,marginTop:-3,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g  transform="translate(0, 0)">
@@ -188,7 +188,7 @@ class Society extends React.Component {
                     { t("societies:tabs")[1][0] }&nbsp;
                   </span>
                   { t("societies:tabs")[1][1] }
-                </Link>
+                </LanguageLink>
               </li>
             </ul>
           </div>
@@ -312,12 +312,12 @@ class Society extends React.Component {
                     <CardView viewIcon="plainNumber">
                       <div className="p1">
                         <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noPeopleVolunteering) }</p>
-                        <p className="m0">{ `people volunteering time for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                        <p className="m0">{ t("common:indicators.KPI_noPeopleVolunteering.name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleVolunteering")[0].description }</p>
-                      <a href="#" tabIndex="-1">{ "source of the data" }</a>
+                      <p>{ t("common:indicators.KPI_noPeopleVolunteering.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noPeopleVolunteering.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -337,7 +337,7 @@ class Society extends React.Component {
                           <div className="pt3 px1">
                             <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestPopulationData.Population) }</p>
                             <p className="m0">
-                              { `The population of ${t(`countries:${society.iso_2}`)} in ${this.state.latestPopulationData.KPI_Year}` }
+                              { t("common:indicators.Population.name") + `, ${t(`countries:${society.iso_2}`)}, ${this.state.latestPopulationData.KPI_Year}` }
                             </p>
                           </div>
                         ) : (
@@ -356,13 +356,11 @@ class Society extends React.Component {
                           niceNum(latestData.Population, 2) == "N/A" ? (
                             missingDataString("population", t(`countries:${society.iso_2}`), latestData.KPI_Year)
                           ) : (
-                            "This card shows the population statistics for " + t(`countries:${society.iso_2}`) + "."
+                            t("common:indicators.Population.definition") + "."
                           )
                         }
                       </p>
-                      <p>
-                        <a href="#" tabIndex="-1">{ "source of the data" }</a>
-                      </p>
+                      <p>Source: { t("common:indicators.Population.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -432,14 +430,12 @@ class Society extends React.Component {
                     <CardView viewIcon="plainNumber">
                       <div className="p1">
                         <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noLocalUnits) }</p>
-                        <p className="m0">{ `local units for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                        <p className="m0">{ t("common:indicators.KPI_noLocalUnits.name") + `, ${society.NSO_DON_name},  ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noLocalUnits")[0].description }</p>
-                      <p>
-                        <a href="#" tabIndex="-1">{ "source of the data" }</a>
-                      </p>
+                      <p>{ t("common:indicators.KPI_noLocalUnits.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noLocalUnits.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -456,7 +452,7 @@ class Society extends React.Component {
                     <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="text-base mt0 mb1">
-                          { "Income and Expenditure" }
+                          { t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name") + " and " + t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -504,25 +500,21 @@ class Society extends React.Component {
                         <div className="clearfix mxn1">
                           <div className="col sm-6 px1">
                             <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData["KPI_IncomeLC (CHF)"]) }</p>
-                            <p className="m0">{ `Income in CHF of ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                            <p className="m0">{ t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                           </div>
                           <div className="col sm-6 px1">
                             <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData["KPI_expenditureLC (CHF)"]) }</p>
-                            <p className="m0">{ `Expenditure in CHF of ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                            <p className="m0">{ t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                           </div>
                         </div>
                       </div>
                     </CardView>
                     <CardOverlay>
-                      <p>
-                        { timeSeriesMeta.filter(obj => obj.id === "KPI_IncomeLC (CHF)")[0].description }
-                      </p>
-                      <p>
-                        { timeSeriesMeta.filter(obj => obj.id === "KPI_expenditureLC (CHF)")[0].description }
-                      </p>
-                      <p>
-                        <a href="#" tabIndex="-1">{ "source of the data" }</a>
-                      </p>
+                      <p>{ t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".definition") }</p>
+                      <p>{ t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".definition") }</p>
+
+                      <p>Source: { t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".source") }</p>
+
                     </CardOverlay>
                   </Card>
                 </div>
@@ -580,16 +572,12 @@ class Society extends React.Component {
                     <CardView viewIcon="plainNumber">
                       <div className="p1">
                         <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noPaidStaff) }</p>
-                        <p className="m0">{ `paid staff for ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                        <p className="m0">{ t("common:indicators.KPI_noPaidStaff.definition") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
-                      <p>
-                        { timeSeriesMeta.filter(obj => obj.id === "KPI_noPaidStaff")[0].description }
-                      </p>
-                      <p>
-                        <a href="#" tabIndex="-1">{ "source of the data" }</a>
-                      </p>
+                      <p>{ t("common:indicators.KPI_noPaidStaff.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noPaidStaff.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -609,7 +597,7 @@ class Society extends React.Component {
                           <div className="pt3 px1">
                             <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestPovertyData.Poverty) }%</p>
                             <p className="m0">
-                              { `percentage of population of ${t(`countries:${society.iso_2}`)} living below the poverty line in ${this.state.latestPovertyData.KPI_Year}` }
+                              { t("common:indicators.Poverty.name") + `, ${t(`countries:${society.iso_2}`)}, ${this.state.latestPovertyData.KPI_Year}` }
                             </p>
                           </div>
                         ) : (
@@ -623,12 +611,8 @@ class Society extends React.Component {
                       }
                     </CardView>
                     <CardOverlay>
-                      <p>
-                        { "This card shows the poverty statistics for " + t(`countries:${society.iso_2}`) + "." }
-                      </p>
-                      <p>
-                        <a href="#" tabIndex="-1">{ "source of the data" }</a>
-                      </p>
+                      <p>{ t("common:indicators.Poverty.definition") }</p>
+                      <p>Source: { t("common:indicators.Poverty.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -708,14 +692,8 @@ class Society extends React.Component {
                       { "View 1" }
                     </CardView>
                     <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleReachedDisaster")[0].description }</p>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleReachedAllServices")[0].description }</p>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleReachedHealth")[0].description }</p>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleReachedDevelopment")[0].description }</p>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleCoveredPreparedness")[0].description }</p>
-                      <p>
-                        <a href="#" tabIndex="-1">{ t("societies:source") }</a>
-                      </p>
+                      <p>{ t("common:indicators.KPI_noPeopleReachedAllServices.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noPeopleReachedAllServices.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -773,17 +751,14 @@ class Society extends React.Component {
                         <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noPeopleDonatingBlood) }</p>
                         <p className="m0">
                           {
-                            `people donating blood for ${society.NSO_DON_name} in ${latestData.KPI_Year}`
+                            t("common:indicators.KPI_noPeopleDonatingBlood.name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}`
                           }
                         </p>
                       </div>
                     </CardView>
-                    <CardView viewIcon="genderChart">{ "View 2" }</CardView>
                     <CardOverlay>
-                      <p>{ timeSeriesMeta.filter(obj => obj.id === "KPI_noPeopleDonatingBlood")[0].description }</p>
-                      <p>
-                        <a href="#" tabIndex="-1">{ "source of the data" }</a>
-                      </p>
+                      <p>{ t("common:indicators.KPI_noPeopleDonatingBlood.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noPeopleDonatingBlood.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -802,28 +777,26 @@ class Society extends React.Component {
                         niceNum(this.state.latestGDPData.GDP) !== "N/A" ? (
                           <div className="pt3 px1">
                             <p className="text-xs strong m0">
-                              { niceNum(this.state.latestGDPData.GDP) === "N/A" ? "" : "CHF" }
+                              { niceNum(this.state.latestGDPData.GDP) === "N/A" ? "" : "USD" }
                             </p>
                             <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestGDPData.GDP) }</p>
                             <p className="m0">
-                              { `GDP of ${t(`countries:${society.iso_2}`)} in ${this.state.latestGDPData.KPI_Year}` }
+                              { t("common:indicators.GDP.name") + `, ${t(`countries:${society.iso_2}`)}, ${this.state.latestGDPData.KPI_Year}` }
                             </p>
                           </div>
                         ) : (
                           <div className="pt3 px1">
                             <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestGDPData.GDP) }</p>
                             <p className="m0">
-                              { missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
+                              { missingDataString("gbp", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
                             </p>
                           </div>
                         )
                       }
                     </CardView>
                     <CardOverlay>
-                      <p>{ "This card shows the GDP statistics for " + t(`countries:${society.iso_2}`) + "." }</p>
-                      <p>
-                        <a href="#" tabIndex="-1">{ "source of the data" }</a>
-                      </p>
+                      <p>{ t("common:indicators.GDP.definition") }</p>
+                      <p>Source: { t("common:indicators.GDP.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
@@ -902,7 +875,7 @@ class Society extends React.Component {
                                   </div>
                                   <div className="inline-block align-top sm-12 px1">
                                     <h1 className="text-base mt0 sm-my1">{ `${doc.document_type} - ${doc.year}` }</h1>
-                                    <a href={ 'http://data-staging.ifrc.org/downloads/' + doc.path } target="_blank" rel="noopener noreferrer" className="btn bg-light">
+                                    <a href={ 'http://data.ifrc.org/public/' + doc.path } target="_blank" rel="noopener noreferrer" className="btn bg-light">
                                       <span>
                                         <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                                           <g transform="translate(0, 0)" style={{stroke:"currentcolor"}}>
@@ -955,11 +928,11 @@ class Society extends React.Component {
               <p className="lead">
                 { pageData.overviewPreview.lead }
               </p>
-              <Link to="/fdrs" className="btn btn--raised bg-primary">
+              <LanguageLink to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">
                   { pageData.overviewPreview.button }
                 </span>
-              </Link>
+              </LanguageLink>
             </div>
           </div>
         </div>
@@ -978,11 +951,11 @@ class Society extends React.Component {
               <p className="lead">
                 { pageData.dataCollectors.lead }
               </p>
-              <Link to="/fdrs" className="btn btn--raised bg-primary">
+              <LanguageLink to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">
                   { pageData.dataCollectors.button }
                 </span>
-              </Link>
+              </LanguageLink>
             </div>
           </div>
         </div>

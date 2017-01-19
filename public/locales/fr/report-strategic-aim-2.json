@@ -13,7 +13,8 @@
                     "type": "chart",
                     "title": "People reached",
                     "axisLabels": {
-                        "x": "Anne\u0301es"
+                        "x": "Anne\u0301es",
+                        "y": ""
                     },
                     "caption": "Source: FDRS"
                 },
@@ -86,11 +87,12 @@
                     "type": "chart",
                     "title": "Disaster risk reduction: reaching more with increased investment",
                     "axisLabels": {
-                        "x": "Anne\u0301es"
+                        "x": "Anne\u0301es",
+                        "y": ""
                     },
                     "lineLabels": [
-                        "De\u0301penses\\n(en millions de CHF)",
-                        "Personnes atteintes\\n(en millions)"
+                        "De\u0301penses\n(en millions de CHF)",
+                        "Personnes atteintes\n(en millions)"
                     ],
                     "dataset": [
                         [
@@ -148,7 +150,8 @@
                 "Le consensus international sur l\u2019importance et l\u2019urgence de s\u2019attaquer aux changements climatiques s\u2019est renforce\u0301 ces dernie\u0300res anne\u0301es et la Fe\u0301de\u0301ration met l\u2019accent sur le renforcement de la re\u0301silience. Nous favorisons l\u2019adaptation aux changements climatiques en e\u0301tendant nos activite\u0301s de re\u0301duction des risques de catastrophe et nous conside\u0301rons que notre ro\u0302le en matie\u0300re d\u2019atte\u0301nuation des changements climatiques consiste a\u0300 promouvoir un de\u0301veloppement communautaire durable respectueux de l\u2019environnement et optimisant l\u2019empreinte carbone.",
                 {
                     "type": "image",
-                    "title": "image title missing"
+                    "title": "image title missing",
+                    "caption": ""
                 },
                 "En commenc\u0327ant par \u00abmettre a\u0300 l\u2019e\u0301preuve du climat\u00bb, dans la mesure du possible, les programmes et les services existants, les Socie\u0301te\u0301s nationales participent de manie\u0300re active a\u0300 la mise en \u0153uvre du Plan national d\u2019adaptation de leur pays. La Croix-Rouge du Kenya contribue par exemple a\u0300 la mise en place d\u2019une politique climatiquement rationnelle en matie\u0300re de se\u0301curite\u0301 alimentaire dans la province nord-est du pays, expose\u0301e a\u0300 la se\u0301cheresse. La Croix-Rouge rwandaise travaille sur des projets de collecte de l\u2019eau de pluie et la Croix-Rouge de l\u2019Inde, sur la gestion des zones inondables des E\u0301tats du Bihar et de l\u2019Odisha. La Croix-Rouge togolaise et la Croix-Rouge de l\u2019Ouganda, avec le soutien de la CroixRouge allemande, ont fait \u0153uvre de pionnie\u0300res dans le domaine de l\u2019alerte pre\u0301coce en adoptant un syste\u0300me de financement fonde\u0301 sur des pre\u0301visions. La Croix-Rouge ne\u0301erlandaise et le Centre d\u2019e\u0301tude de la Croix-Rouge et du Croissant-Rouge sur le changement climatique sont a\u0300 l\u2019avant-garde d\u2019un programme intitule\u0301 \u00abPartenaires pour la re\u0301silience \u00bb, qui a permis la mise en place d\u2019actions climatiquement rationnelles de re\u0301duction des risques dans des centaines de communaute\u0301s situe\u0301es dans diffe\u0301rents e\u0301cosyste\u0300mes a\u0300 travers le monde."
             ]
@@ -254,46 +257,145 @@
                 {
                     "type": "chart",
                     "title": "Poucentage de Socie\u0301te\u0301s nationales de\u0301clarant fournir des services de sante\u0301",
-                    "dataset": {
-                        "0": {
+                    "dataset": [
+                        {
                             "y": "0",
                             "x": "100%"
                         },
-                        "1": {
+                        {
                             "y": "100",
                             "x": "First aid"
                         },
-                        "2": {
+                        {
                             "y": "89",
                             "x": "HIV control"
                         },
-                        "3": {
+                        {
                             "y": "86",
                             "x": "Psychosocial support"
                         },
-                        "4": {
+                        {
                             "y": "82",
                             "x": "Blood donation"
                         },
-                        "5": {
+                        {
                             "y": "0",
                             "x": "75%"
                         },
-                        "6": {
+                        {
+                            "y": "69",
                             "x": "Nutrition"
                         },
-                        "7": {
+                        {
+                            "y": "68",
                             "x": "Sexual and reproductive health"
                         },
-                        "31": {
+                        {
+                            "y": "67",
+                            "x": "Community-based health and first aid"
+                        },
+                        {
+                            "y": "66",
+                            "x": "Water, sanitation and hygiene promotion"
+                        },
+                        {
+                            "y": "58",
+                            "x": "Tuberculosis"
+                        },
+                        {
+                            "y": "56",
+                            "x": "Control of noncummunicable diseases"
+                        },
+                        {
+                            "y": "51",
+                            "x": "Support of breastfeeding"
+                        },
+                        {
+                            "y": "50",
+                            "x": "Influenza control"
+                        },
+                        {
+                            "y": "0",
+                            "x": "50%"
+                        },
+                        {
+                            "y": "48",
+                            "x": "Family planning"
+                        },
+                        {
+                            "y": "48",
+                            "x": "Maternal and child nutrition"
+                        },
+                        {
+                            "y": "47",
+                            "x": "Harm reduction"
+                        },
+                        {
+                            "y": "47",
+                            "x": "Routine measles immunisation"
+                        },
+                        {
+                            "y": "46",
+                            "x": "Mental health"
+                        },
+                        {
+                            "y": "44",
+                            "x": "Malaria control"
+                        },
+                        {
+                            "y": "44",
+                            "x": "Antenatal care"
+                        },
+                        {
+                            "y": "44",
+                            "x": "Postnatal care"
+                        },
+                        {
+                            "y": "44",
+                            "x": "Routine polio immunisation"
+                        },
+                        {
+                            "y": "43",
+                            "x": "Measles immunisation campaigns"
+                        },
+                        {
+                            "y": "41",
+                            "x": "Active ageing"
+                        },
+                        {
+                            "y": "39",
+                            "x": "Polio immunisation campaigns"
+                        },
+                        {
+                            "y": "34",
+                            "x": "Other routine immunisation"
+                        },
+                        {
+                            "y": "32",
+                            "x": "Dengue control"
+                        },
+                        {
+                            "y": "25",
+                            "x": "Other disease control"
+                        },
+                        {
+                            "y": "23",
+                            "x": "Other immunisation campaigns"
+                        },
+                        {
                             "y": "14",
                             "x": "Other health and social activities"
+                        },
+                        {
+                            "y": "8",
+                            "x": "Other maternal, newborn and child health"
                         }
-                    },
+                    ],
                     "caption": "Source: Health Department"
                 },
                 "En ce qui concerne les groupes spe\u0301cifiques, la majorite\u0301 des Socie\u0301te\u0301s nationales travaillent avec les jeunes, les enfants, les personnes a\u0302ge\u0301es, les personnes vivant avec le VIH, les migrants et les personnes handicape\u0301es.",
                 {
+                    "type": "chart",
                     "title": "Nombre de Socie\u0301te\u0301s nationales menant des activite\u0301s axe\u0301es sur les besoins de groupes spe\u0301cifiques",
                     "dataset": [
                         {
@@ -433,9 +535,9 @@
                     "type": "chart",
                     "title": "L\u2019eau et l\u2019assainissement",
                     "translations": [
-                        "de personnes ont acce\u0300s\\na\u0300 l\u2019eau potable.",
-                        "ont be\u0301ne\u0301ficie\u0301 de services\\nd\u2019approvisionnement en\\neau et d\u2019assainissement.",
-                        "de personnes ont acce\u0300s\\na\u0300 des toilettes ame\u0301liore\u0301es."
+                        "de personnes ont acce\u0300s\na\u0300 l\u2019eau potable.",
+                        "ont be\u0301ne\u0301ficie\u0301 de services\nd\u2019approvisionnement en\neau et d\u2019assainissement.",
+                        "de personnes ont acce\u0300s\na\u0300 des toilettes ame\u0301liore\u0301es."
                     ],
                     "caption": "Source: Health Department"
                 },

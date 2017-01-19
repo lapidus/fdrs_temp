@@ -79,276 +79,449 @@
                             "name": "Moyen-Orient et Afrique du Nord"
                         }
                     ],
-                    "dataset": {
-                        "0": {
+                    "dataset": [
+                        {
                             "region": "Afrique",
                             "x_regular_gdp": "251.0145229838",
+                            "x": "2.3996988492",
                             "y": "94",
                             "stroke": "#82BC01"
                         },
-                        "1": {
+                        {
+                            "region": "Africa",
                             "x_regular_gdp": "268.0539113455",
-                            "y": "39"
+                            "x": "2.4282221487",
+                            "y": "39",
+                            "stroke": "#82BC01"
                         },
-                        "10": {
-                            "region": "Afrique"
+                        {
+                            "region": "Africa",
+                            "x_regular_gdp": "394.775830896",
+                            "x": "2.5963505563",
+                            "y": "31",
+                            "stroke": "#82BC01"
                         },
-                        "11": {
+                        {
+                            "region": "Africa",
+                            "x_regular_gdp": "413.7574148529",
+                            "x": "2.6167457897",
+                            "y": "28",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Africa",
+                            "x_regular_gdp": "447.4371289135",
+                            "x": "2.6507320196",
+                            "y": "54",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Africa",
+                            "x_regular_gdp": "453.5689927392",
+                            "x": "2.6566433573",
+                            "y": "40",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Africa",
+                            "x_regular_gdp": "491.7899781002",
+                            "x": "2.6917796743",
+                            "y": "42",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Africa",
+                            "x_regular_gdp": "494.3146150632",
+                            "x": "2.6940034511",
+                            "y": "69",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Africa",
+                            "x_regular_gdp": "512.1031992238",
+                            "x": "2.709357489",
+                            "y": "36",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Africa",
+                            "x_regular_gdp": "574.1195223244",
+                            "x": "2.7590023148",
+                            "y": "53",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Afrique",
+                            "x_regular_gdp": "634.3209745958",
+                            "x": "2.8023090721",
+                            "y": "59",
+                            "stroke": "#82BC01"
+                        },
+                        {
+                            "region": "Asia and the Pacific",
                             "x_regular_gdp": "687.2454749827",
+                            "x": "2.837111889",
                             "y": "42",
                             "stroke": "#EE3224"
                         },
-                        "12": {
+                        {
                             "region": "Asie-Pacifique",
                             "x_regular_gdp": "690.2053852927",
                             "x": "2.8389783435",
                             "y": "60",
                             "stroke": "#EE3224"
                         },
-                        "13": {
+                        {
                             "region": "Afrique",
                             "x_regular_gdp": "693.9843611994",
                             "x": "2.8413496838",
                             "y": "69",
                             "stroke": "#82BC01"
                         },
-                        "14": {
+                        {
                             "region": "Afrique",
                             "x_regular_gdp": "751.9163167908",
                             "x": "2.8761695092",
                             "y": "33",
                             "stroke": "#82BC01"
                         },
-                        "15": {
+                        {
                             "region": "Asie-Pacifique",
                             "x_regular_gdp": "752.1560525138",
                             "x": "2.8763079546",
                             "y": "30",
                             "stroke": "#EE3224"
                         },
-                        "16": {
+                        {
                             "region": "Europe",
                             "x_regular_gdp": "870.54210662",
                             "x": "2.939789782",
                             "y": "47",
                             "stroke": "#5C315E"
                         },
-                        "17": {
+                        {
                             "region": "Afrique",
                             "x_regular_gdp": "1023.2943547429",
                             "x": "3.0100005782",
                             "y": "63",
                             "stroke": "#82BC01"
                         },
-                        "18": {
+                        {
                             "region": "Asie-Pacifique",
                             "x_regular_gdp": "1068.3893101576",
                             "x": "3.028729534",
                             "y": "72",
                             "stroke": "#EE3224"
                         },
-                        "19": {
+                        {
+                            "region": "Asia and the Pacific",
                             "x_regular_gdp": "1144",
-                            "x": "3.0584260245"
-                        },
-                        "20": {
-                            "x_regular_gdp": "1159.9297395354",
-                            "stroke": "#5C315E"
-                        },
-                        "21": {
-                            "x_regular_gdp": "1243.986074645",
+                            "x": "3.0584260245",
+                            "y": "31",
                             "stroke": "#EE3224"
                         },
-                        "22": {
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "1159.9297395354",
+                            "x": "3.0644316835",
+                            "y": "51",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Asia and the Pacific",
+                            "x_regular_gdp": "1243.986074645",
+                            "x": "3.0948155188",
+                            "y": "16",
+                            "stroke": "#EE3224"
+                        },
+                        {
                             "region": "Afrique",
                             "x_regular_gdp": "1469.1211622675",
                             "x": "3.1670576147",
                             "y": "33",
                             "stroke": "#82BC01"
                         },
-                        "23": {
+                        {
                             "region": "Afrique",
                             "x_regular_gdp": "1555.3606139083",
                             "x": "3.1918310972",
                             "y": "74",
                             "stroke": "#82BC01"
                         },
-                        "24": {
+                        {
                             "region": "Europe",
                             "x_regular_gdp": "1716.5262836303",
                             "x": "3.2346504578",
                             "y": "40",
                             "stroke": "#5C315E"
                         },
-                        "25": {
+                        {
                             "region": "Am\u00e9riques",
                             "x_regular_gdp": "1753.6423665158",
                             "x": "3.2439410291",
                             "y": "14",
                             "stroke": "#0F9EE3"
                         },
-                        "26": {
+                        {
                             "region": "Asie-Pacifique",
                             "x_regular_gdp": "1755.2140164853",
                             "x": "3.2443300784",
                             "y": "30",
                             "stroke": "#EE3224"
                         },
-                        "27": {
+                        {
                             "region": "Asie-Pacifique",
                             "x_regular_gdp": "2184.1634610913",
                             "x": "3.3392851375",
                             "y": "31",
                             "stroke": "#EE3224"
                         },
-                        "28": {
+                        {
                             "region": "Am\u00e9riques",
                             "x_regular_gdp": "2322.8805603409",
                             "x": "3.3660268795",
                             "y": "38",
                             "stroke": "#0F9EE3"
                         },
-                        "29": {
+                        {
                             "region": "Am\u00e9riques",
                             "x_regular_gdp": "2575.6836947783",
                             "x": "3.4108925287",
                             "y": "58",
                             "stroke": "#0F9EE3"
                         },
-                        "30": {
+                        {
                             "region": "Am\u00e9riques",
                             "x_regular_gdp": "3330.5252303753",
                             "x": "3.522512728",
-                            "y": "73"
+                            "y": "73",
+                            "stroke": "#0F9EE3"
                         },
-                        "31": {
+                        {
                             "region": "Europe",
-                            "x_regular_gdp": "3490.2453158802"
+                            "x_regular_gdp": "3490.2453158802",
+                            "x": "3.5428559529",
+                            "y": "79",
+                            "stroke": "#5C315E"
                         },
-                        "41": {
+                        {
+                            "region": "Asia and the Pacific",
+                            "x_regular_gdp": "3672.9669404092",
+                            "x": "3.5650170194",
+                            "y": "40",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Americas",
+                            "x_regular_gdp": "3789.5675576278",
+                            "x": "3.5785896538",
+                            "y": "42",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "3866.9897922327",
+                            "x": "3.5873730257",
+                            "y": "62",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Middle East and North Africa",
+                            "x_regular_gdp": "4236.793630997",
+                            "x": "3.6270373106",
+                            "y": "6",
+                            "stroke": "#7E6E69"
+                        },
+                        {
+                            "region": "Asia and the Pacific",
+                            "x_regular_gdp": "4467.1037911876",
+                            "x": "3.6500260432",
+                            "y": "86",
+                            "stroke": "#EE3224"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "4565.2698841641",
+                            "x": "3.6594664567",
+                            "y": "99",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Americas",
+                            "x_regular_gdp": "4636",
+                            "x": "3.6661434273",
+                            "y": "49",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Middle East and North Africa",
+                            "x_regular_gdp": "4909.0280937704",
+                            "x": "3.6909955175",
+                            "y": "88",
+                            "stroke": "#7E6E69"
+                        },
+                        {
+                            "region": "Americas",
+                            "x_regular_gdp": "5440.4524646364",
+                            "x": "3.7356350201",
+                            "y": "51",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
                             "region": "Asie-Pacifique",
                             "x_regular_gdp": "6091.0143517459",
                             "x": "3.7846896228",
+                            "y": "80",
                             "stroke": "#EE3224"
                         },
-                        "42": {
+                        {
                             "region": "Moyen-Orient et Afrique du Nord",
                             "x_regular_gdp": "6454.619627972",
                             "x": "3.8098706543",
                             "y": "67",
                             "stroke": "#7E6E69"
                         },
-                        "43": {
+                        {
                             "region": "Europe",
                             "x_regular_gdp": "6685.0187489763",
                             "x": "3.8251026296",
                             "y": "76",
                             "stroke": "#5C315E"
                         },
-                        "44": {
+                        {
                             "region": "Am\u00e9riques",
                             "x_regular_gdp": "6795.7724978042",
                             "x": "3.8322388316",
                             "y": "19",
                             "stroke": "#0F9EE3"
                         },
-                        "45": {
+                        {
                             "region": "Europe",
                             "x_regular_gdp": "6797.7343069753",
                             "x": "3.832364186",
                             "y": "45",
                             "stroke": "#5C315E"
                         },
-                        "46": {
+                        {
                             "region": "Am\u00e9riques",
                             "x_regular_gdp": "7747.8413209319",
                             "x": "3.8891807176",
                             "y": "63",
                             "stroke": "#0F9EE3"
                         },
-                        "47": {
+                        {
                             "region": "Europe",
                             "x_regular_gdp": "9036.0361679301",
                             "x": "3.9559779606",
                             "y": "34",
                             "stroke": "#5C315E"
                         },
-                        "48": {
+                        {
                             "region": "Am\u00e9riques",
                             "x_regular_gdp": "9386.3048352874",
                             "x": "3.9724946545",
                             "y": "58",
                             "stroke": "#0F9EE3"
                         },
-                        "49": {
+                        {
                             "region": "Moyen-Orient et Afrique du Nord",
                             "x_regular_gdp": "9705.3922340726",
                             "x": "3.9870130917",
+                            "y": "20",
                             "stroke": "#7E6E69"
                         },
-                        "50": {
+                        {
                             "region": "Europe",
                             "x_regular_gdp": "12116.15460932",
                             "x": "4.0833648066",
+                            "y": "37",
                             "stroke": "#5C315E"
                         },
-                        "51": {
+                        {
                             "region": "Europe",
                             "x_regular_gdp": "12707.85431362",
-                            "y": "46"
-                        },
-                        "53": {
-                            "region": "Europe"
-                        },
-                        "54": {
+                            "x": "4.1040722273",
+                            "y": "46",
                             "stroke": "#5C315E"
                         },
-                        "56": {
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "14007.877516277",
+                            "x": "4.1463723357",
+                            "y": "46",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "14037.015448307",
+                            "x": "4.1472747779",
+                            "y": "46",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Europe",
+                            "x_regular_gdp": "14183.01601695",
+                            "x": "4.1517685933",
+                            "y": "55",
+                            "stroke": "#5C315E"
+                        },
+                        {
+                            "region": "Americas",
+                            "x_regular_gdp": "15452.173598195",
+                            "x": "4.1889895786",
+                            "y": "47",
+                            "stroke": "#0F9EE3"
+                        },
+                        {
+                            "region": "Middle East and North Africa",
+                            "x_regular_gdp": "19512",
                             "x": "4.2903017873",
+                            "y": "72",
                             "stroke": "#7E6E69"
                         },
-                        "57": {
+                        {
                             "region": "Europe",
+                            "x_regular_gdp": "22000.069567182",
                             "x": "4.3424240541",
                             "y": "66",
                             "stroke": "#5C315E"
                         },
-                        "58": {
+                        {
                             "region": "Europe",
                             "x_regular_gdp": "33071.839313506",
                             "x": "4.5194583492",
                             "y": "83",
                             "stroke": "#5C315E"
                         },
-                        "59": {
+                        {
                             "region": "Asie-Pacifique",
                             "x_regular_gdp": "37749.442722625",
                             "x": "4.5769105447",
                             "y": "62",
                             "stroke": "#EE3224"
                         },
-                        "60": {
+                        {
                             "region": "Europe",
                             "x_regular_gdp": "45931.724786305",
                             "x": "4.662112754",
                             "y": "43",
                             "stroke": "#5C315E"
                         },
-                        "61": {
+                        {
                             "region": "Asie-Pacifique",
                             "x_regular_gdp": "46720.356660302",
                             "x": "4.6695061495",
                             "y": "73",
                             "stroke": "#EE3224"
                         },
-                        "62": {
+                        {
                             "region": "Moyen-Orient et Afrique du Nord",
                             "x_regular_gdp": "92682",
                             "x": "4.9669953969",
                             "y": "63",
                             "stroke": "#7E6E69"
                         }
-                    },
+                    ],
                     "caption": "Source: de\u0301partement De\u0301veloppement organisationnel"
                 },
                 "Les analyses en cours laissent penser que les facteurs essentiels du succe\u0300s incluent un leadership adapte\u0301 au contexte et des partenariats a\u0300 long terme solides et strate\u0301giques, re\u0301pondant aux besoins des Socie\u0301te\u0301s nationales en matie\u0300re de de\u0301veloppement organisationnel."
@@ -361,7 +534,8 @@
                 "et mettre a\u0300 profit la pre\u0301sence et la re\u0301putation mondiales de la Fe\u0301de\u0301ration pour ne\u0301gocier des accords plus avantageux avec les entreprises spe\u0301cialise\u0301es dans les technologies. Cet appui a permis d\u2019accroi\u0302tre d\u2019un tiers en moyenne les capacite\u0301s en matie\u0300re de technologies de l\u2019information et de la communication de ces 28 Socie\u0301te\u0301s nationales durant la pe\u0301riode 2011 a\u0300 2013.",
                 {
                     "type": "image",
-                    "title": "Image title"
+                    "title": "Image title",
+                    "caption": ""
                 }
             ]
         },
@@ -376,7 +550,8 @@
                     "type": "case-study-simple",
                     "title": "Une journe\u0301e dans la vie d\u2019un volontaire",
                     "content": [
-                        "Il est 6 h 30 et Daniel se pre\u0301pare a\u0300 endosser son habit de volontaire. Depuis un an, il participe aux efforts de\u0301ploye\u0301s pour mettre fin a\u0300 l\u2019e\u0301pide\u0301mie de maladie a\u0300 virus Ebola en Sierra Leone. Il dirige aujourd\u2019hui l\u2019e\u0301quipe de la Croix-Rouge de Sierra Leone qui proce\u0300de a\u0300 l\u2019inhumation su\u0302re et digne de de\u0301pouilles susceptibles d\u2019e\u0302tre infecte\u0301es par le virus. C\u2019est un travail difficile et les membres de l\u2019e\u0301quipe se sont heurte\u0301s a\u0300 une forte opposition des communaute\u0301s qui avaient peur d\u2019eux. Leurs propres familles leur ont demande\u0301 de quitter la maison, les ho\u0302tels ont refuse\u0301 de leur louer des chambres et beaucoup de commerces de les servir. Mais progressivement, ils ont su gagner la confiance des communaute\u0301s. Daniel est l\u2019un des 7 000 volontaires de la Croix-Rouge a\u0300 l\u2019\u0153uvre dans les pays touche\u0301s par le virus Ebola."
+                        "Il est 6 h 30 et Daniel se pre\u0301pare a\u0300 endosser son habit de volontaire. Depuis un an, il participe aux efforts de\u0301ploye\u0301s pour mettre fin a\u0300 l\u2019e\u0301pide\u0301mie de maladie a\u0300 virus Ebola en Sierra Leone. Il dirige aujourd\u2019hui l\u2019e\u0301quipe de la Croix-Rouge de Sierra Leone qui proce\u0300de a\u0300 l\u2019inhumation su\u0302re et digne de de\u0301pouilles susceptibles d\u2019e\u0302tre infecte\u0301es par le virus. C\u2019est un travail difficile et les membres de l\u2019e\u0301quipe se sont heurte\u0301s a\u0300 une forte opposition des communaute\u0301s qui avaient peur d\u2019eux. Leurs propres familles leur ont demande\u0301 de quitter la maison, les ho\u0302tels ont refuse\u0301 de leur louer des chambres et beaucoup de commerces de les servir. Mais progressivement, ils ont su gagner la confiance des communaute\u0301s. Daniel est l\u2019un des 7 000 volontaires de la Croix-Rouge a\u0300 l\u2019\u0153uvre dans les pays touche\u0301s par le virus Ebola.",
+                        "On 8 May 2015 we asked our volunteers from around the world to take a photo of what they were doing on that day \u2013 World Red Cross and Red Crescent Day. Nearly 3,000 photos and stories were submitted from 110 countries \u2013 still only a small slice of the incredible work done by volunteers."
                     ]
                 }
             ]
@@ -417,7 +592,8 @@
                                 "fill": "#F1F0EF"
                             }
                         ]
-                    ]
+                    ],
+                    "caption": ""
                 },
                 "La Strate\u0301gie de la Fe\u0301de\u0301ration relative a\u0300 la mobilisation de la jeunesse rapproche trois perspectives de la mobilisation des jeunes: les jeunes en tant que volontaires, les jeunes en tant que leaders et les jeunes en tant que be\u0301ne\u0301ficiaires. Selon les estimations, la moitie\u0301 de nos volontaires sont des jeunes et la quasi-totalite\u0301 des Socie\u0301te\u0301s nationales favorisent une participation active de la jeunesse a\u0300 leurs programmes. Environ 18% des employe\u0301s des sie\u0300ges des Socie\u0301te\u0301s nationales sont a\u0302ge\u0301s de moins de 30 ans, ce qui correspond a\u0300 la fourchette haute de la de\u0301finition de la jeunesse adopte\u0301e par la Fe\u0301de\u0301ration, bien que les normes sociales locales et le contexte culturel autorisent certaines variations raisonnables.",
                 {

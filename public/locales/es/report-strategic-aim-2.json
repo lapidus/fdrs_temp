@@ -1,26 +1,98 @@
 {
+    "chapter": "5",
+    "slug": "strategic-aim-2",
+    "title": "Strategic aim 2",
+    "subtitle": "Healthy and safe living",
+    "intro": "For the IFRC, the community resilience approach is, in many ways, just the modern designation of how we have worked with communities for many decades.",
     "sections": [
         {
-            "blocks": {
-                "4": {
-                    "dataset": {
-                        "4": {
-                            "rest": "813308",
-                            "names": {
-                                "1": "??"
-                            }
-                        }
-                    }
+            "title": "People reached by long-term services",
+            "blocks": [
+                "Our National Societies achieve this through their volunteers, who engage their own communities via education and training. By getting to know their own specific hazards and by analysing their risks and vulnerabilities, they are able to develop the appropriate solutions for their local context.",
+                {
+                    "type": "chart",
+                    "title": "People reached",
+                    "axisLabels": {
+                        "x": "Years",
+                        "y": ""
+                    },
+                    "caption": "Source: FDRS"
                 },
-                "5": "El panorama anual establecido por la secretar\u00eda de la Federaci\u00f3n Internacional en cuanto a servicios para la reducci\u00f3n del riesgo de desastres apunta a una intensificaci\u00f3n gradual de esfuerzos desde el inicio del decenio. Hasta 2014, se hab\u00eda invertido 151,7 millones de francos suizos en ciento veintiuna (121) Sociedades Nacionales en beneficio de 31,2 millones de personas",
-                "6": {
+                "Overall, the IFRC network reached nearly 161 million people with one or more long-term services in 2013, an increase of 55 per cent on the 103.4 million reported in 2012. This increase is partly due to more National Societies reporting on this indicator.",
+                "The Americas region has the largest outreach with  long-term programmes reflecting the historical roots of Red Cross work there. Gender-disaggregated reporting is a significant general weakness and will be strengthened in future years.",
+                {
+                    "type": "chart",
+                    "title": "People reached by region and gender",
+                    "dataset": [
+                        {
+                            "name": "Americas",
+                            "index": "1",
+                            "first": "24431270",
+                            "second": "19398807",
+                            "rest": "17024418",
+                            "names": [
+                                "Argentine Red Cross",
+                                "Canadian Red Cross"
+                            ]
+                        },
+                        {
+                            "name": "Africa",
+                            "index": "2",
+                            "first": "8640267",
+                            "second": "7367549",
+                            "rest": "14225882",
+                            "names": [
+                                "Mali Red Cross",
+                                "Kenyan Red Cross"
+                            ]
+                        },
+                        {
+                            "name": "Asia and the Pacific",
+                            "index": "3",
+                            "first": "7525024",
+                            "second": "7148247",
+                            "rest": "11430773",
+                            "names": [
+                                "The Republic of Korea National Red Cross",
+                                "Vietnam"
+                            ]
+                        },
+                        {
+                            "name": "Europe",
+                            "index": "4",
+                            "first": "7371570",
+                            "second": "6264920",
+                            "rest": "12191129",
+                            "names": [
+                                "German Red Cross",
+                                "Spain"
+                            ]
+                        },
+                        {
+                            "name": "Middle East and North Africa",
+                            "index": "5",
+                            "first": "16179974",
+                            "second": "670000",
+                            "rest": "813308",
+                            "names": [
+                                "Red Crescent Society of the Islamic Republic of Iran",
+                                "??"
+                            ]
+                        }
+                    ],
+                    "caption": "Source: FDRS"
+                },
+                "El panorama anual establecido por la secretar\u00eda de la Federaci\u00f3n Internacional en cuanto a servicios para la reducci\u00f3n del riesgo de desastres apunta a una intensificaci\u00f3n gradual de esfuerzos desde el inicio del decenio. Hasta 2014, se hab\u00eda invertido 151,7 millones de francos suizos en ciento veintiuna (121) Sociedades Nacionales en beneficio de 31,2 millones de personas",
+                {
+                    "type": "chart",
                     "title": "Reducci\u00f3n del riesgo de desastres: un mayor alcance con una menor inversi\u00f3n",
                     "axisLabels": {
-                        "x": "Years"
+                        "x": "Years",
+                        "y": ""
                     },
                     "lineLabels": [
-                        "Gastos \\n(en millones de\\n francos suizos)",
-                        "Beneficiarios\\n(en millones)"
+                        "Gastos \n(en millones de\n francos suizos)",
+                        "Beneficiarios\n(en millones)"
                     ],
                     "dataset": [
                         [
@@ -70,7 +142,7 @@
                     ],
                     "caption": "Fuente: Departamento de Preparaci\u00f3n de la Comunidad y Reducci\u00f3n del Riesgo"
                 }
-            }
+            ]
         },
         {
             "title": "Cambio clim\u00e1tico",
@@ -78,7 +150,8 @@
                 "En a\u00f1os recientes, ha aumentado el consenso a nivel internacional con respecto a la importancia y la urgente necesidad de medidas relativas al cambio clim\u00e1tico. En este contexto, la Federaci\u00f3n Internacional centra su atenci\u00f3n en el fomento de la capacidad de resistencia y recuperaci\u00f3n. La contribuci\u00f3n de la organizaci\u00f3n a los esfuerzos de adaptaci\u00f3n al cambio clim\u00e1tico se canaliza a trav\u00e9s de actividades orientadas a la reducci\u00f3n del riesgo de desastres. Asimismo, esta orienta su funci\u00f3n en la mitigaci\u00f3n de las repercusiones del cambio clim\u00e1tico mediante la promoci\u00f3n de modalidades de desarrollo comunitario sustentable y respetuoso del medio ambiente en el que se optimice la huella de carbono de las comunidades.",
                 {
                     "type": "image",
-                    "title": "image title missing"
+                    "title": "image title missing",
+                    "caption": ""
                 },
                 "Siempre que es factible, las Sociedades Nacionales comienzan por la incorporaci\u00f3n de medidas responsables desde el punto de vista ambiental en los programas y servicios existentes y ampl\u00edan su participaci\u00f3n directa en la elaboraci\u00f3n y la aplicaci\u00f3n de planes nacionales de adaptaci\u00f3n mediante diversas iniciativas. Por ejemplo, la Cruz Roja de Kenia ha contribuido a la elaboraci\u00f3n de iniciativas de seguridad alimentaria ingeniosas desde la perspectiva clim\u00e1tica para aplicarlas en la provincia nororiental; la Cruz Roja de Ruanda se interesa en el aprovechamiento del agua de lluvia; la Cruz Roja de India trabaja en la gesti\u00f3n de planicies en los estados de Bihar y Odisha. Las Sociedades Nacionales de Togo y Uganda, con apoyo de la Cruz Roja Alemana, examinan actividades de alerta temprana con financiaci\u00f3n fundada en pron\u00f3sticos. La Cruz Roja Neerlandesa y el centro de referencia de la Federaci\u00f3n Internacional sobre cambio clim\u00e1tico se sit\u00faan a la vanguardia del programa de asociados en el fomento de la capacidad de resistencia y recuperaci\u00f3n, Partners for Resilience, por cuyo conducto se ha beneficiado a cientos de comunidades locales en diversos ecosistemas del mundo a trav\u00e9s de iniciativas creativas y responsables desde el punto de vista del clima, orientadas a la reducci\u00f3n de riesgos."
             ]
@@ -106,7 +179,8 @@
                                 },
                                 {
                                     "region": "Europa",
-                                    "percentage1": "49"
+                                    "percentage1": "49",
+                                    "percentage2": "45"
                                 },
                                 {
                                     "region": "Am\u00e9rica",
@@ -313,22 +387,98 @@
                             "x": "Otras actividades de \u00edndole sanitaria o social"
                         },
                         {
-                            "y": "8"
+                            "y": "8",
+                            "x": "Other maternal, newborn and child health"
                         }
-                    ]
+                    ],
+                    "caption": "Source: Health Department"
+                },
+                "In terms of targeting, the majority of National Societies work with youth, children, elderly, people living with HIV, migrants, and people with disabilities",
+                {
+                    "type": "chart",
+                    "title": "Number of National Societies targeting the health needs of specific groups",
+                    "dataset": [
+                        {
+                            "y": "11",
+                            "x": "Transgender persons",
+                            "fill": "#C5C6C6"
+                        },
+                        {
+                            "y": "13",
+                            "x": "Other groups",
+                            "fill": "#756661"
+                        },
+                        {
+                            "y": "20",
+                            "x": "Men who have sex with men",
+                            "fill": "#FED02F"
+                        },
+                        {
+                            "y": "32",
+                            "x": "Drug users",
+                            "fill": "#5A6122"
+                        },
+                        {
+                            "y": "35",
+                            "x": "Sex workers",
+                            "fill": "#D5106E"
+                        },
+                        {
+                            "y": "56",
+                            "x": "Migrants",
+                            "fill": "#1A9FE0"
+                        },
+                        {
+                            "y": "56",
+                            "x": "Persons living with disabilities",
+                            "fill": "#84BB23"
+                        },
+                        {
+                            "y": "60",
+                            "x": "People living with HIV",
+                            "fill": "#5B325D"
+                        },
+                        {
+                            "y": "67",
+                            "x": "Children",
+                            "fill": "#E02726"
+                        },
+                        {
+                            "y": "74",
+                            "x": "Elderly",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "y": "83",
+                            "x": "Youth",
+                            "fill": "#682F26"
+                        }
+                    ],
+                    "caption": "Source: Health Department"
                 }
             ]
         },
         {
-            "blocks": {
-                "1": {
+            "title": "Promoting safe blood systems",
+            "blocks": [
+                "To serve others by donating your spare money, time, or skills is commendable. To give of your own self is truly noble. It is, therefore, unsurprising that the Red Cross and Red Crescent has been associated with blood services ever since the technology became available. Safe and accessible blood supplies are crucial to save or preserve life in medical care and in the aftermath of accidents, violence, and disasters.",
+                {
+                    "type": "chart",
+                    "title": "Number of blood donors",
                     "dataset": [
                         {
-                            "names": {
-                                "1": "The Republic of Korea National Red Cross"
-                            }
+                            "name": "Asia and The Pacific",
+                            "index": "1",
+                            "first": "5160000",
+                            "second": "2708173",
+                            "rest": "2168070",
+                            "names": [
+                                "Japanese Red Cross Society",
+                                "The Republic of Korea National Red Cross"
+                            ]
                         },
                         {
+                            "name": "Europe",
                             "index": "2",
                             "first": "1723440",
                             "second": "1640882",
@@ -374,8 +524,8 @@
                     ],
                     "caption": "Fuente: Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
                 },
-                "2": "En pleno acuerdo con la Organizaci\u00f3n Mundial de la Salud, la Federaci\u00f3n Internacional es un firme defensor de la pol\u00edtica de donaci\u00f3n de sangre totalmente voluntaria y no remunerada, pues se considera la modalidad m\u00e1s segura. De momento, apenas sesenta pa\u00edses cumplen plenamente con esta norma. Habida cuenta de la escasez de suministro de sangre y de sus componentes en el mundo, resta a\u00fan un largo camino por recorrer para lograr la seguridad del suministro de sangre a nivel mundial. En ciertos lugares es indiscutible la limitaci\u00f3n impuesta por actitudes culturales. Cerca de una quinta parte (21 millones) de los ciento ocho (108) millones de unidades de sangre donadas en el mundo se canaliza a trav\u00e9s de los servicios especializados de las organizaciones de la Cruz Roja y de la Media Luna Roja. Suele predominar la donaci\u00f3n de sangre por parte de hombres, y esta tendencia se vuelve mayoritaria en las regiones de Asia y el Pac\u00edfico y Europa."
-            }
+                "En pleno acuerdo con la Organizaci\u00f3n Mundial de la Salud, la Federaci\u00f3n Internacional es un firme defensor de la pol\u00edtica de donaci\u00f3n de sangre totalmente voluntaria y no remunerada, pues se considera la modalidad m\u00e1s segura. De momento, apenas sesenta pa\u00edses cumplen plenamente con esta norma. Habida cuenta de la escasez de suministro de sangre y de sus componentes en el mundo, resta a\u00fan un largo camino por recorrer para lograr la seguridad del suministro de sangre a nivel mundial. En ciertos lugares es indiscutible la limitaci\u00f3n impuesta por actitudes culturales. Cerca de una quinta parte (21 millones) de los ciento ocho (108) millones de unidades de sangre donadas en el mundo se canaliza a trav\u00e9s de los servicios especializados de las organizaciones de la Cruz Roja y de la Media Luna Roja. Suele predominar la donaci\u00f3n de sangre por parte de hombres, y esta tendencia se vuelve mayoritaria en las regiones de Asia y el Pac\u00edfico y Europa."
+            ]
         },
         {
             "title": "Agua y saneamiento",
@@ -385,9 +535,9 @@
                     "type": "chart",
                     "title": "Nuestro objetivo",
                     "translations": [
-                        "personas tienen acceso\\nna agua potable salubre",
-                        "se benefician de servicios\\n de agua y saneamiento",
-                        "personas tienen acceso \\na mejores instalaciones sanitarias."
+                        "personas tienen acceso\nna agua potable salubre",
+                        "se benefician de servicios\n de agua y saneamiento",
+                        "personas tienen acceso \na mejores instalaciones sanitarias."
                     ],
                     "caption": "Fuente: Departamento de Salud"
                 },

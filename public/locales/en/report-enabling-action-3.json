@@ -12,42 +12,22 @@
                     "title": "National Society statutes revision",
                     "dataset": [
                         {
-                            "x": [
-                                "Statutes conforming",
-                                "with the minimum",
-                                "requirements",
-                                "(26)"
-                            ],
+                            "x": "Statutes conforming\nwith the minimum\nrequirements\n(26)",
                             "fill": "#84BB23",
                             "y": "26"
                         },
                         {
                             "y": "10",
-                            "x": [
-                                "Revision",
-                                "process not yet",
-                                "started",
-                                "(10)"
-                            ],
+                            "x": "Revision\nprocess not yet\nstarted\n(10)",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "Statutes",
-                                "don't meet",
-                                "the minimum",
-                                "requirements (2)"
-                            ],
+                            "x": "Statutes\ndon't meet\nthe minimum\nrequirements (2)",
                             "y": "2",
                             "fill": "#EE3224"
                         },
                         {
-                            "x": [
-                                "Statutes in",
-                                "process of",
-                                "revision",
-                                "(62)"
-                            ],
+                            "x": "Statutes in\nprocess of\nrevision\n(62)",
                             "fill": "#FED02F",
                             "y": "62"
                         }
@@ -216,8 +196,8 @@
                         "y": ""
                     },
                     "lineLabels": {
-                        "1": "Course\\ncompletions",
-                        "0": "Course\\nregistrations"
+                        "1": "Course\ncompletions",
+                        "0": "Course\nregistrations"
                     },
                     "caption": "The graph above shows the number of users who registered for courses vs. the number of students who completed courses."
                 },

@@ -22,10 +22,8 @@
                 "Les Principes fondamentaux sont au c\u0153ur de notre identite\u0301 et notre finalite\u0301 communes. Ils sont refle\u0301te\u0301s par les valeurs qui sous-tendent nos efforts et par les aptitudes personnelles dont doivent disposer les volontaires et les employe\u0301s de la Croix-Rouge et du Croissant-Rouge.",
                 {
                     "type": "chart",
-                    "name": [
-                        "7 Principes",
-                        "fondamentaux"
-                    ],
+                    "title": "",
+                    "name": "7 Principes\nfondamentaux",
                     "items": [
                         "Humanite\u0301",
                         "Impartialite\u0301",
@@ -35,26 +33,26 @@
                         "Unite\u0301",
                         "Universalite\u0301"
                     ],
-                    "src": "\/img\/chapters\/3\/principles.svg"
+                    "src": "\/img\/chapters\/3\/principles.svg",
+                    "caption": ""
                 },
                 "L\u2019anne\u0301e 2015 marque le 50e anniversaire de l\u2019adoption officielle des Principes fondamentaux. Beaucoup de choses ont change\u0301 dans le monde depuis 1965. Des consultations re\u0301unissant des membres, des volontaires et des employe\u0301s de 115 Socie\u0301te\u0301s nationales ainsi que d\u2019autres parties prenantes ont e\u0301te\u0301 organise\u0301es dans chacune des re\u0301gions afin de savoir comment les Principes fondamentaux sont perc\u0327us. Les conclusions ont e\u0301te\u0301 remarquablement unanimes.",
                 "Les Principes fondamentaux sont conside\u0301re\u0301s comme e\u0301tant tout aussi pertinents aujourd\u2019hui que par le passe\u0301. Ils le seraient me\u0302me davantage a\u0300 notre e\u0301poque, ou\u0300 il est encore plus ne\u0301cessaire de disposer d\u2019un cadre e\u0301thique clair pour naviguer a\u0300 travers les de\u0301fis que pose la complexite\u0301 conside\u0301rablement accrue du paysage humanitaire actuel.",
                 {
                     "type": "chart",
-                    "name": [
-                        "7 compe\u0301tences",
-                        "personnelles"
-                    ],
+                    "title": "",
+                    "name": "7 compe\u0301tences\npersonnelles",
                     "items": [
                         "Empathie",
                         "\u00c9coute active",
-                        "Pens\u00e9e critique\\net non-jugement",
-                        "Communication\\nnon violente",
-                        "N\u00e9gociation\\net m\u00e9diation",
-                        "R\u00e9silience\\npersonnelle",
-                        "Paix\\nint\u00e9rieure"
+                        "Pens\u00e9e critique\net non-jugement",
+                        "Communication\nnon violente",
+                        "N\u00e9gociation\net m\u00e9diation",
+                        "R\u00e9silience\npersonnelle",
+                        "Paix\nint\u00e9rieure"
                     ],
-                    "src": "\/img\/chapters\/3\/skills.svg"
+                    "src": "\/img\/chapters\/3\/skills.svg",
+                    "caption": ""
                 },
                 "T\u00e9l\u00e9charger le tableau"
             ]

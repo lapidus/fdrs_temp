@@ -1,6 +1,6 @@
 
 import React from "react"
-import { Link } from "react-router"
+import LanguageLink  from "../components/LanguageLink"
 import ReactIScroll from "react-iscroll"
 const iScroll = require("iscroll")
 import StickySidebar from "./StickySidebar"
@@ -51,6 +51,11 @@ class FilteredSocietiesSidebar extends React.Component {
       filterValue
     } = this.state
 
+    const sortedFilteredSocieties = _.sortBy(filteredSocieties, function(d){
+      return t("national-societies:" + d.KPI_DON_Code);
+    })
+
+
     return (
       <StickySidebar>
         <div className="pb1 px1 overflow-hidden">
@@ -76,13 +81,13 @@ class FilteredSocietiesSidebar extends React.Component {
             { !filteredSocieties.length && noSocietiesText }
             <ul className="my1 mx0 p0">
               {
-                filteredSocieties.map((ns, i) =>
+                sortedFilteredSocieties.map((ns, i) =>
                   <li className="block" key={ i }>
-                    <Link to={ `/fdrs/societies/${ ns.slug }` } onClick={ this.handleFilterReset } className="block btn px1">
+                    <LanguageLink to={ `/fdrs/societies/${ ns.slug }` } onClick={ this.handleFilterReset } className="block btn px1">
                       <div className="text-left" style={{ whiteSpace:"normal" }}>
                         { t("national-societies:" + ns.KPI_DON_Code) }
                       </div>
-                    </Link>
+                    </LanguageLink>
                   </li>
                 )
               }

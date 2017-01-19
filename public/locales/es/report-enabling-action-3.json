@@ -4,58 +4,37 @@
     "chapter": "9",
     "sections": [
         {
+            "title": "Keeping our governance up to date",
             "blocks": {
                 "0": "Un indicador de buen gobierno reside en el cumplimiento por parte de las Sociedades Nacionales de la obligaci\u00f3n que les incumbe con respecto a la actualizaci\u00f3n de sus estatutos y dem\u00e1s instrumentos de base jur\u00eddica, de manera que guarden consonancia con la evoluci\u00f3n del mundo. Por regla general, una Sociedad Nacional deber\u00eda proceder a la revisi\u00f3n de sus estatutos cada diez a\u00f1os.",
                 "2": {
+                    "type": "chart",
+                    "title": "National Society statutes revision",
                     "dataset": [
                         {
-                            "x": [
-                                "de los estatutos",
-                                " cumplen con",
-                                " los requisitos",
-                                " m\u00ednimos",
-                                "(26)"
-                            ],
+                            "x": "de los estatutos\n cumplen con\n los requisitos\n m\u00ednimos\n(26)",
                             "fill": "#84BB23",
                             "y": "26"
                         },
                         {
                             "y": "10",
-                            "x": [
-                                "de los ",
-                                "procesos ",
-                                "de revisi\u00f3n",
-                                " todav\u00eda ",
-                                "sin iniciar",
-                                "(10)"
-                            ],
+                            "x": "de los \nprocesos \nde revisi\u00f3n\n todav\u00eda \nsin iniciar\n(10)",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "de los ",
-                                "estatutos ",
-                                "no cumplen con los ",
-                                "requisitos m\u00ednimos",
-                                " (2)"
-                            ],
+                            "x": "de los \nestatutos \nno cumplen con los \nrequisitos m\u00ednimos\n (2)",
                             "y": "2",
                             "fill": "#EE3224"
                         },
                         {
-                            "x": [
-                                "de los ",
-                                "estatutos est\u00e1n",
-                                "en proceso",
-                                " de revisi\u00f3n",
-                                "(62)"
-                            ],
+                            "x": "de los \nestatutos est\u00e1n\nen proceso\n de revisi\u00f3n\n(62)",
                             "fill": "#FED02F",
                             "y": "62"
                         }
                     ],
                     "caption": "Fuente: Cooperaci\u00f3n y Apoyo a \u00d3rganos de Gobierno"
                 },
+                "1": "At the end of 2013, some 26 per cent of National Societies had statutes that met minimum requirements and more than 60 per cent were engaged in the revision of their statutory base instruments. Such revisions are an arduous process as National Societies are bottom-up democratic bodies, and changes have to be owned by members and reflect local social and cultural contexts.",
                 "3": "Al mismo tiempo, las Sociedades Nacionales son miembros de la Federaci\u00f3n Internacional y deben cumplir con requisitos m\u00ednimos. Para la mayor\u00eda de Sociedades Nacionales se trata de un proceso de desarrollo y la revisi\u00f3n de los estatutos pone al orden del d\u00eda importantes di\u00e1logos nacionales sobre el lugar de estas organizaciones en el entorno de sus pa\u00edses."
             }
         },
@@ -76,21 +55,44 @@
             "blocks": {
                 "2": {
                     "type": "chart",
-                    "dataset": {
-                        "0": {
+                    "dataset": [
+                        {
                             "x": "Evaluaci\u00f3n inicial",
                             "y": "3"
                         },
-                        "1": {
+                        {
+                            "y": "7",
                             "x": "Estudio de caso e investigaci\u00f3n"
                         },
-                        "3": {
-                            "y": "2"
+                        {
+                            "y": "9",
+                            "x": "Final evaluation"
                         },
-                        "8": {
+                        {
+                            "y": "2",
+                            "x": "Impact evaluation"
+                        },
+                        {
+                            "y": "1",
+                            "x": "Impact evaluation\/case study\/research"
+                        },
+                        {
+                            "x": "Mid-term evaluation",
+                            "y": "3"
+                        },
+                        {
+                            "y": "1",
+                            "x": "Real-time evaluation"
+                        },
+                        {
+                            "y": "10",
+                            "x": "Review"
+                        },
+                        {
+                            "y": "2",
                             "x": "Encuesta"
                         }
-                    },
+                    ],
                     "title": "Informes por tipo de evaluaci\u00f3n",
                     "caption": "Fuente: Departamento de Planificaci\u00f3n y Evaluaci\u00f3n"
                 },
@@ -123,60 +125,162 @@
                 "Las Sociedades Nacionales son \u00f3rganos din\u00e1micos que, de manera comprensible, acusan la influencia de factores internos y externos, que pueden cambiar ante la modificaci\u00f3n de sus circunstancias. La Junta de Gobierno ha establecido un Comit\u00e9 de Cumplimiento y Mediaci\u00f3n para prestar asistencia a las Sociedades Nacionales en la soluci\u00f3n de desacuerdos que se someten a su consideraci\u00f3n o para superar dificultades, por ejemplo con relaci\u00f3n a eventuales infracciones de las normas de integridad.",
                 "Un grupo de miembros registrados en una Sociedad Nacional se empez\u00f3 a preocupar seriamente por el da\u00f1o que causaban a la reputaci\u00f3n de la organizaci\u00f3n ciertas denuncias relacionadas con apropiaci\u00f3n indebida de fondos, abuso del cargo en beneficio propio, incumplimiento de los principios fundamentales y ganancias personales. La junta de gobierno de la Sociedad Nacional no respondi\u00f3 a sus inquietudes y el grupo reclamante convoc\u00f3 una asamblea general extraordinaria que vot\u00f3 una moci\u00f3n de no confianza en contra de las instancias de gobierno y de gesti\u00f3n, y eligi\u00f3 a unos reemplazantes. El caso se someti\u00f3 ante la corte suprema del pa\u00eds para que dictaminara acerca de la legitimidad de los dos mecanismos de gobierno enfrentados. La controversia lleg\u00f3 a alarmar a las autoridades p\u00fablicas que solicitaron la intervenci\u00f3n de la secretar\u00eda de la Federaci\u00f3n Internacional.",
                 "El Comit\u00e9 de Cumplimiento y Mediaci\u00f3n de la Federaci\u00f3n Internacional recurri\u00f3 a intermediarios fiables y puso en sus manos la negociaci\u00f3n de un acuerdo que implicaba la designaci\u00f3n de una nueva junta de gobierno provisional que tomara las riendas de la Sociedad Nacional. Adem\u00e1s, la secretar\u00eda de la Federaci\u00f3n Internacional proporcion\u00f3 apoyo t\u00e9cnico para enmendar los estatutos e incorporar una disposici\u00f3n que obligara a celebrar una asamblea general al a\u00f1o. El proceso sigui\u00f3 su curso de forma apropiada y los \u00f3rganos de gobierno reci\u00e9n elegidos permitieron finalizar las auditor\u00edas financieras del periodo objeto de controversia y solucionar los problemas planteados. La Sociedad Nacional se recuper\u00f3 y ahora funciona adecuadamente.",
-                "Las ense\u00f1anzas extra\u00eddas de este caso ilustran la necesidad de que las Sociedades Nacionales permanezcan siempre vigilantes con respecto de su integridad y tomen la iniciativa de enfrentarse a los problemas y combatir toda resistencia con perseverancia. La secretar\u00eda de la Federaci\u00f3n Internacional puede mediar para la b\u00fasqueda de soluciones y para asegurar la observancia de las normas de integridad a las que est\u00e1n sometidas las Sociedades Nacionales."
+                "Las ense\u00f1anzas extra\u00eddas de este caso ilustran la necesidad de que las Sociedades Nacionales permanezcan siempre vigilantes con respecto de su integridad y tomen la iniciativa de enfrentarse a los problemas y combatir toda resistencia con perseverancia. La secretar\u00eda de la Federaci\u00f3n Internacional puede mediar para la b\u00fasqueda de soluciones y para asegurar la observancia de las normas de integridad a las que est\u00e1n sometidas las Sociedades Nacionales.",
+                "The key lessons learned from this case are that a National Society must remain constantly vigilant over its own integrity and take the initiative to tackle problems by countering resistance with persistence. The IFRC secretariat can help to mediate solutions and ensure compliance."
             ]
         },
         {
             "title": "Cultura de formaci\u00f3n",
-            "blocks": [
-                "La formaci\u00f3n es un elemento esencial que favorece la adaptaci\u00f3n y la actualizaci\u00f3n de una instituci\u00f3n sujeta a un mundo en transformaci\u00f3n. Otro aspecto importante reside en el fomento de la profesionalidad de quienes colaboran con las organizaciones de la Cruz Roja y de la Media Luna Roja a fin de que gocen de mayor credibilidad al demostrar que cumplen con normas expl\u00edcitas. Ello explica que se aliente una filosof\u00eda de formaci\u00f3n y aprendizaje continuos. ",
-                {
-                    "dataset": [
-                        {
+            "blocks": {
+                "0": "La formaci\u00f3n es un elemento esencial que favorece la adaptaci\u00f3n y la actualizaci\u00f3n de una instituci\u00f3n sujeta a un mundo en transformaci\u00f3n. Otro aspecto importante reside en el fomento de la profesionalidad de quienes colaboran con las organizaciones de la Cruz Roja y de la Media Luna Roja a fin de que gocen de mayor credibilidad al demostrar que cumplen con normas expl\u00edcitas. Ello explica que se aliente una filosof\u00eda de formaci\u00f3n y aprendizaje continuos. ",
+                "1": {
+                    "dataset": {
+                        "0": {
+                            "y": "108",
                             "x": "Ingl\u00e9s"
+                        },
+                        "1": {
+                            "y": "85",
+                            "x": "French"
+                        },
+                        "2": {
+                            "y": "81",
+                            "x": "Spanish"
+                        },
+                        "3": {
+                            "y": "44",
+                            "x": "Italian"
+                        },
+                        "4": {
+                            "y": "43",
+                            "x": "Portuguese"
+                        },
+                        "6": {
+                            "x": "Chinese",
+                            "y": "30"
+                        },
+                        "5": {
+                            "y": "30",
+                            "x": "German"
+                        },
+                        "7": {
+                            "y": "28",
+                            "x": "Russian"
+                        },
+                        "8": {
+                            "y": "20",
+                            "x": "Arabic"
+                        },
+                        "9": {
+                            "x": "Others",
+                            "y": "63"
                         }
-                    ]
-                }
-            ]
+                    },
+                    "type": "chart",
+                    "title": "Learning platform courses by languages",
+                    "caption": "Source: Learning and Research Department"
+                },
+                "3": "The IFRC Learning Platform is a global yet local online learning community offering 131 courses available in 16 languages.",
+                "2": "The IFRC Learning Passport scheme encourages people to take responsibility for their own development, and fosters the portability of the learning they undertake while moving between institutions and employers.",
+                "4": "Over the past six years, an average of 489 Red Cross and Red Crescent staff have taken the International Mobilisation and Preparation for Action (IMPACT) training annually, in preparation for international deployments",
+                "5": {
+                    "type": "chart",
+                    "title": "International Mobilisation and Preparation for Action (IMPACT) course",
+                    "caption": "Sources: Learning and Research Department"
+                },
+                "6": {
+                    "type": "chart",
+                    "title": "Learning platform users",
+                    "axisLabels": {
+                        "x": "Years",
+                        "y": ""
+                    },
+                    "lineLabels": {
+                        "1": "Course\ncompletions",
+                        "0": "Course\nregistrations"
+                    },
+                    "caption": "The graph above shows the number of users who registered for courses vs. the number of students who completed courses."
+                },
+                "8": "With the rapid growth in overall registered users to more than 140,000 in 2014, course registrations have soared to over 220,000 with some users signed up to take more than one course. Course completion rates have also increased to just under 50 per cent, indicating steadily increasing customer utility.",
+                "7": "The Learning Platform is rapidly becoming a social community in its own right with encouragement for group learning and peer-to-peer sharing."
+            }
         },
         {
-            "blocks": {
-                "1": {
-                    "1": {
-                        "title": "Centro de referencia sobre pr\u00e1cticas sustentadas en pruebas."
+            "title": "Centres of expertise around the world",
+            "blocks": [
+                "A unique advantage of our extensive network is the access to world-class expertise, organised through Red Cross and Red Crescent reference centres that focus on specific subjects. The centres conduct research, develop innovative approaches, consolidate best practices, share knowledge, conduct advocacy, and offer training and technical assistance to National Societies, thus enabling them to do more and better.",
+                [
+                    {
+                        "title": "Caribbean Disaster Risk Management Centre",
+                        "subtitle": "The Barbados Red Cross Society",
+                        "slug": "http:\/\/www.cdema.org"
                     },
-                    "7": {
+                    {
+                        "title": "Centro de referencia sobre pr\u00e1cticas sustentadas en pruebas.",
+                        "slug": "http:\/\/www.rodekruis.be\/en\/who-are-we\/research\/centre-for-evidence-based-practice\/",
+                        "subtitle": "Belgian Red Cross"
+                    },
+                    {
+                        "title": "Climate Center",
+                        "subtitle": "The Netherlands Red Cross",
+                        "slug": "http:\/\/www.climatecentre.org\/"
+                    },
+                    {
+                        "title": "Global Disaster Preparedness Centre",
+                        "slug": "http:\/\/www.preparecenter.org\/",
+                        "subtitle": "American Red Cross"
+                    },
+                    {
+                        "title": "Global First Aid Reference Centre",
+                        "slug": "http:\/\/www.ifrc.org\/en\/get-involved\/learning-education-training\/reference-centres\/",
+                        "subtitle": "French Red Cross"
+                    },
+                    {
+                        "title": "Livelihoods Resource Centre",
+                        "slug": "http:\/\/www.livelihoodscentre.org\/",
+                        "subtitle": "Spanish Red Cross"
+                    },
+                    {
+                        "title": "Reference Centre for Community Resilience",
+                        "slug": "http:\/\/www.crrec.cruzroja.org\/",
+                        "subtitle": "Costa Rican Red Cross"
+                    },
+                    {
+                        "title": "Reference Centre for Institutional Disaster Preparedness",
+                        "slug": "http:\/\/www.crepd.cruzroja.org\/",
                         "subtitle": "Cruz Roja Salvadore\u00f1a"
                     },
-                    "8": {
+                    {
                         "title": "Centro de referencia sobre apoyo psicol\u00f3gico.",
                         "subtitle": "Cruz Roja Danesa",
                         "slug": "http:\/\/pscentre.org\/"
                     },
-                    "9": {
+                    {
                         "title": "Unidad de investigaci\u00f3n sobre alojamiento provisional y de emergencia.",
                         "slug": "http:\/\/ifrc-sru.org\/",
                         "subtitle": "Cruz Roja de B\u00e9lgica, Cruz Roja de Luxemburgo, Cruz Roja Neerlandesa"
                     },
-                    "10": {
+                    {
                         "slug": "http:\/\/www.cruzroja.es\/portal\/page?_pageid=478,1&_dad=portal30&_schema=PORTAL30",
                         "title": "Centro de referencia sobre servicio voluntario.",
                         "subtitle": "Cruz Roja Espa\u00f1ola, Cruz Roja Brit\u00e1nica"
                     },
-                    "11": {
+                    {
                         "slug": "http:\/\/www.ifrc.org\/en\/news-and-media\/news-stories\/americas\/ecuador\/ecuadorian-red-cross-inaugurates-medical-emergencies-and-prehospital-care-reference-centre-67988\/",
                         "title": "Centro regional de referencia en emergencias m\u00e9dicas y atenci\u00f3n prehospitalaria.",
                         "subtitle": "Cruz Roja Ecuatoriana"
                     },
-                    "12": {
+                    {
                         "title": "Grupo mundial de asesores (programas de sangre).",
                         "slug": "http:\/\/www.globaladvisorypanel.org\/",
                         "subtitle": "Cruz Roja Australiana, Cruz Roja Suiza"
                     }
-                }
-            }
+                ]
+            ]
         }
     ],
+    "slug": "enabling-action-3",
+    "intro": "Since the adoption of Strategy 2020, the major effort seeking to improve our functioning as the IFRC has been on strengthening our governance, introducing a framework for accountability, and promoting a culture of learning.",
     "nextChapter": {
         "heading": "Cap\u00edtulo siguiente",
         "chapter": "10",

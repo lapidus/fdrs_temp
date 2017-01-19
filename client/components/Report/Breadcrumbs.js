@@ -1,14 +1,11 @@
-
 import React from "react"
-import { Link } from "react-router"
-
-import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
+import LanguageLink  from "../../components/LanguageLink"
 
 const BreadCrumbs = ({ language, chapter }) =>
   <div>
-    <Link to={ prefixLanguageToRoute(language, "/fdrs/report") }>
+    <LanguageLink to="/fdrs/report">
       <span>{ "Home" }</span>
-    </Link>
+    </LanguageLink>
     <span style={{ padding: "0 1em" }}>{ "›" }</span>
     { chapter.title }
   </div>

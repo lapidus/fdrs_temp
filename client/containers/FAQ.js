@@ -98,17 +98,6 @@ class FAQ extends React.Component {
 
         </div>
 
-        <div className="px1 py4 bg-secondary">
-          <div className="clearfix mxn1">
-            <div className="col sm-10 sm-offset-1 px1">
-              <h2 className="headline sm-display-1 light mt0">{ "For data collectors" }</h2>
-              <p className="lead">{ "To get started with the data collection for your National Society, please log in." }</p>
-              <a href="https://fdrs.ifrc.org" target="_blank" className="btn btn--raised bg-primary">
-                <span className="block py05 px1">{ "Login as data collector" }</span>
-              </a>
-            </div>
-          </div>
-        </div>
       </section>
     )
   }

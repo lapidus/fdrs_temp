@@ -18,7 +18,7 @@
                     "type": "chart",
                     "title": "La croissance de notre re\u0301seau",
                     "labels": [
-                        "Socie\u0301te\u0301s\\nnationales"
+                        "Socie\u0301te\u0301s\nnationales"
                     ],
                     "axisLabels": {
                         "x": "Anne\u0301es",
@@ -94,7 +94,8 @@
                             "members": "49"
                         },
                         {
-                            "year": "1925"
+                            "year": "1925",
+                            "members": "52"
                         },
                         {
                             "year": "1929",
@@ -193,7 +194,8 @@
                             "members": "132"
                         },
                         {
-                            "year": "1985"
+                            "year": "1985",
+                            "members": "137"
                         },
                         {
                             "year": "1986",
@@ -275,29 +277,26 @@
         },
         {
             "title": "Nos ressources",
-            "blocks": {
-                "0": "Notre plus grande force, ce sont les individus qui \u0153uvrent a\u0300 nos co\u0302te\u0301s. En 2013, les Socie\u0301te\u0301s nationales ont indique\u0301 qu\u2019elles comptaient 80 millions de membres, 452 000 employe\u0301s re\u0301mune\u0301re\u0301s et 16 millions de volontaires, la proportion d\u2019employe\u0301s par rapport au nombre de volontaires e\u0301tant d\u2019un employe\u0301 pour 35 volontaires, dont pre\u0300s de la moitie\u0301 sont des femmes.",
-                "1": {
+            "blocks": [
+                "Notre plus grande force, ce sont les individus qui \u0153uvrent a\u0300 nos co\u0302te\u0301s. En 2013, les Socie\u0301te\u0301s nationales ont indique\u0301 qu\u2019elles comptaient 80 millions de membres, 452 000 employe\u0301s re\u0301mune\u0301re\u0301s et 16 millions de volontaires, la proportion d\u2019employe\u0301s par rapport au nombre de volontaires e\u0301tant d\u2019un employe\u0301 pour 35 volontaires, dont pre\u0300s de la moitie\u0301 sont des femmes.",
+                {
                     "type": "chart",
                     "title": "Nos ressources humaines",
                     "translations": {
                         "volunteers": "Volontaires des Socie\u0301te\u0301s nationales",
-                        "paidStaff": [
-                            "Personnel des",
-                            "Socie\u0301te\u0301s nationales"
-                        ],
-                        "secretariatStaff": [
-                            "Personnel du Secre\u0301tariat",
-                            "de la Fe\u0301de\u0301ration"
-                        ],
+                        "paidStaff": "Personnel des\nSocie\u0301te\u0301s nationales",
+                        "secretariatStaff": "Personnel du Secre\u0301tariat\nde la Fe\u0301de\u0301ration",
                         "male": "Hommes",
-                        "female": "Femmes"
+                        "female": "Femmes",
+                        "nationalSocietyStaff": "National Society Staff",
+                        "nationalSocietyVolunteers": "National Society Volunteers",
+                        "IFRCSecretariatStaff": "IFRC Secretariat Staff"
                     },
                     "caption": "Source: FDRS, de\u0301partement Ressources humaines"
                 },
-                "2": "En 2013, les recettes des Socie\u0301te\u0301s nationales se sont e\u0301leve\u0301es a\u0300 environ 30,8 milliards de francs suisses, et leurs de\u0301penses, a\u0300 30,4 milliards de francs suisses. La plus grande partie des recettes des Socie\u0301te\u0301s nationales est leve\u0301e au niveau national et de\u0301pense\u0301e au titre des programmes mene\u0301s dans leurs pays respectifs. Ces chiffres ne sont pas repre\u0301sentatifs de la valeur totale du travail re\u0301alise\u0301 par la Croix-Rouge et le Croissant-Rouge, car ils ne tiennent pas compte des nombreuses contributions en nature des pays ni des services fournis de manie\u0300re volontaire.",
-                "3": "Les Socie\u0301te\u0301s nationales ont verse\u0301 35,4 millions de francs suisses au Secre\u0301tariat de la Fe\u0301de\u0301ration au titre des contributions statutaires des membres. A\u0300 cette somme se sont ajoute\u0301s 263 millions de francs suisses provenant des contributions volontaires, ainsi que 47,1 millions de francs suisses provenant de la prestation de services et d\u2019autres revenus, portant ainsi le total des recettes du Secre\u0301tariat de la Fe\u0301de\u0301ration a\u0300 345,5 millions de francs suisses en 2013. Au cours de la me\u0302me anne\u0301e, le Secre\u0301tariat de la Fe\u0301de\u0301ration a de\u0301pense\u0301 365,3 millions de francs suisses et employe\u0301 2 920 personnes.",
-                "4": {
+                "En 2013, les recettes des Socie\u0301te\u0301s nationales se sont e\u0301leve\u0301es a\u0300 environ 30,8 milliards de francs suisses, et leurs de\u0301penses, a\u0300 30,4 milliards de francs suisses. La plus grande partie des recettes des Socie\u0301te\u0301s nationales est leve\u0301e au niveau national et de\u0301pense\u0301e au titre des programmes mene\u0301s dans leurs pays respectifs. Ces chiffres ne sont pas repre\u0301sentatifs de la valeur totale du travail re\u0301alise\u0301 par la Croix-Rouge et le Croissant-Rouge, car ils ne tiennent pas compte des nombreuses contributions en nature des pays ni des services fournis de manie\u0300re volontaire.",
+                "Les Socie\u0301te\u0301s nationales ont verse\u0301 35,4 millions de francs suisses au Secre\u0301tariat de la Fe\u0301de\u0301ration au titre des contributions statutaires des membres. A\u0300 cette somme se sont ajoute\u0301s 263 millions de francs suisses provenant des contributions volontaires, ainsi que 47,1 millions de francs suisses provenant de la prestation de services et d\u2019autres revenus, portant ainsi le total des recettes du Secre\u0301tariat de la Fe\u0301de\u0301ration a\u0300 345,5 millions de francs suisses en 2013. Au cours de la me\u0302me anne\u0301e, le Secre\u0301tariat de la Fe\u0301de\u0301ration a de\u0301pense\u0301 365,3 millions de francs suisses et employe\u0301 2 920 personnes.",
+                {
                     "type": "chart",
                     "title": "Recettes et d\u00e9penses",
                     "translations": {
@@ -305,10 +304,11 @@
                         "ifrcSecretariat": "Secre\u0301tariat de la Fe\u0301de\u0301ration",
                         "income": "Recettes",
                         "expenses": "D\u00e9penses"
-                    }
+                    },
+                    "caption": ""
                 },
-                "5": "Notre pre\u0301sence dans le monde est lie\u0301e a\u0300 diffe\u0301rents contextes de\u0301mographiques, sociaux et e\u0301conomiques. Sans surprise, les Socie\u0301te\u0301s nationales de la re\u0301gion Asie-Pacifique, la re\u0301gion la plus vaste et la plus peuple\u0301e du monde, comptent le plus grand nombre d\u2019unite\u0301s locales lesquelles disposent du plus important vivier de volontaires.",
-                "6": {
+                "Notre pre\u0301sence dans le monde est lie\u0301e a\u0300 diffe\u0301rents contextes de\u0301mographiques, sociaux et e\u0301conomiques. Sans surprise, les Socie\u0301te\u0301s nationales de la re\u0301gion Asie-Pacifique, la re\u0301gion la plus vaste et la plus peuple\u0301e du monde, comptent le plus grand nombre d\u2019unite\u0301s locales lesquelles disposent du plus important vivier de volontaires.",
+                {
                     "type": "tabs",
                     "title": "Ressources r\u00e9gionales",
                     "tabs": [
@@ -453,25 +453,95 @@
                                     "index": "2",
                                     "first": "65212",
                                     "second": "40708",
-                                    "rest": "43803"
+                                    "rest": "43803",
+                                    "names": [
+                                        "Japanese Red Cross Society",
+                                        "Chinese Red Cross"
+                                    ]
                                 },
                                 {
-                                    "name": "Ame\u0301riques"
+                                    "name": "Ame\u0301riques",
+                                    "index": "3",
+                                    "first": "27827",
+                                    "second": "9273",
+                                    "rest": "13803",
+                                    "names": [
+                                        "United States Red Cross",
+                                        "??"
+                                    ]
+                                },
+                                {
+                                    "name": "Middle East and North Africa",
+                                    "index": "4",
+                                    "first": "7500",
+                                    "second": "4150",
+                                    "rest": "10275",
+                                    "names": [
+                                        "??",
+                                        "??"
+                                    ]
+                                },
+                                {
+                                    "name": "Africa",
+                                    "index": "5",
+                                    "first": "1114",
+                                    "second": "800",
+                                    "rest": "5868",
+                                    "names": [
+                                        "??",
+                                        "??"
+                                    ]
                                 }
-                            ]
+                            ],
+                            "caption": "Source: FDRS"
                         }
                     ]
                 },
-                "8": {
+                "The Japanese Red Cross Society has the largest income but, in aggregate, the wealthiest National Societies are in Europe. Expenditure mirrors this trend. The largest numbers of paid staff are also in Europe, reflecting the tendency of richer National Societies to rely more on paid workers than volunteers, especially for services that are paid for or subsidised by national and local authorities.",
+                {
+                    "type": "tabs",
+                    "title": "Regional budgets",
                     "tabs": [
                         {
-                            "dataset": {
-                                "2": {
+                            "name": "Income",
+                            "dataset": [
+                                {
+                                    "name": "Asia and The Pacific",
+                                    "index": "1",
+                                    "first": "10663700440.393",
+                                    "second": "810096534.6958",
+                                    "rest": "2078954900.7382",
                                     "names": [
-                                        "United States Red Cross"
+                                        "Japanese Red Cross Society",
+                                        "Australian Red Cross"
                                     ]
                                 },
-                                "3": {
+                                {
+                                    "name": "Europe",
+                                    "index": "2",
+                                    "first": "8042155085.0591",
+                                    "second": "1421776388.7861",
+                                    "rest": "3486934229.8231",
+                                    "names": [
+                                        "German Red Cross",
+                                        "French Red Cross"
+                                    ]
+                                },
+                                {
+                                    "name": "Americas",
+                                    "index": "3",
+                                    "first": "3065067796.1811",
+                                    "second": "300863549.30617",
+                                    "rest": "244891909.4962",
+                                    "names": [
+                                        "United States Red Cross",
+                                        "??"
+                                    ]
+                                },
+                                {
+                                    "name": "Middle East and North Africa",
+                                    "index": "4",
+                                    "first": "235038763.49247",
                                     "second": "162610077.5209",
                                     "rest": "152572225.04122",
                                     "names": [
@@ -479,7 +549,7 @@
                                         "??"
                                     ]
                                 },
-                                "4": {
+                                {
                                     "name": "Afrique",
                                     "index": "5",
                                     "first": "41024256",
@@ -490,7 +560,7 @@
                                         "??"
                                     ]
                                 }
-                            },
+                            ],
                             "caption": "Source: FDRS"
                         },
                         {
@@ -556,9 +626,9 @@
                         }
                     ]
                 },
-                "9": "Toutes les Socie\u0301te\u0301s nationales sont diffe\u0301rentes, comme le montrent les profils disponibles a\u0300 l\u2019adresse www.ifrc.org\/data. Reste que la Fe\u0301de\u0301ration est fonde\u0301e sur la solidarite\u0301 et le respect mutuel entre les Socie\u0301te\u0301s nationales, lesquels se manifestent par le partage des connaissances, des expe\u0301riences pratiques, des ressources financie\u0300res et d\u2019autres capacite\u0301s.",
-                "10": "Toutefois, nous ne connaissons pas le volume total des de\u0301penses que les Socie\u0301te\u0301s nationales consacrent a\u0300 l\u2019aide internationale, une grande partie de cette aide e\u0301tant fournie de manie\u0300re bilate\u0301rale. Des efforts seront faits a\u0300 l\u2019avenir pour que cette donne\u0301e soit refle\u0301te\u0301e dans la Base de donne\u0301es et le syste\u0300me de compte rendu a\u0300 l\u2019e\u0301chelle de la Fe\u0301de\u0301ration. En attendant, les contributions au titre des appels lance\u0301s par la Fe\u0301de\u0301ration constituent une premie\u0300re indication, les Socie\u0301te\u0301s nationales, les gouvernements et d\u2019autres donateurs ayant verse\u0301 plus de 1,5 milliard de francs suisses entre 2010 et 2014. Les montants varient conside\u0301rablement d\u2019une anne\u0301e a\u0300 l\u2019autre, en fonction principalement du sche\u0301ma des catastrophes de grande ampleur.",
-                "11": {
+                "Toutes les Socie\u0301te\u0301s nationales sont diffe\u0301rentes, comme le montrent les profils disponibles a\u0300 l\u2019adresse www.ifrc.org\/data. Reste que la Fe\u0301de\u0301ration est fonde\u0301e sur la solidarite\u0301 et le respect mutuel entre les Socie\u0301te\u0301s nationales, lesquels se manifestent par le partage des connaissances, des expe\u0301riences pratiques, des ressources financie\u0300res et d\u2019autres capacite\u0301s.",
+                "Toutefois, nous ne connaissons pas le volume total des de\u0301penses que les Socie\u0301te\u0301s nationales consacrent a\u0300 l\u2019aide internationale, une grande partie de cette aide e\u0301tant fournie de manie\u0300re bilate\u0301rale. Des efforts seront faits a\u0300 l\u2019avenir pour que cette donne\u0301e soit refle\u0301te\u0301e dans la Base de donne\u0301es et le syste\u0300me de compte rendu a\u0300 l\u2019e\u0301chelle de la Fe\u0301de\u0301ration. En attendant, les contributions au titre des appels lance\u0301s par la Fe\u0301de\u0301ration constituent une premie\u0300re indication, les Socie\u0301te\u0301s nationales, les gouvernements et d\u2019autres donateurs ayant verse\u0301 plus de 1,5 milliard de francs suisses entre 2010 et 2014. Les montants varient conside\u0301rablement d\u2019une anne\u0301e a\u0300 l\u2019autre, en fonction principalement du sche\u0301ma des catastrophes de grande ampleur.",
+                {
                     "type": "tabs",
                     "title": "Contributions humanitaires",
                     "tabs": [
@@ -790,10 +860,11 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "caption": "List of largest contributors in cash, kind and services, CHF millions."
                 },
-                "12": "Les lieux ou\u0300 se produisent les catastrophes de grande ampleur influencent eux aussi de manie\u0300re consid\u00e9rable l\u2019utilisation qui est faite de l\u2019aide internationale. L\u2019essentiel des contributions est affecte\u0301 aux secours d\u2019urgence, ainsi qu\u2019aux programmes de de\u0301veloppement a\u0300 plus long terme visant a\u0300 re\u0301duire les risques et la vulne\u0301rabilite\u0301, ce qui peut expliquer le manque d\u2019investissements dans le renforcement des capacite\u0301s des Socie\u0301te\u0301s nationales."
-            }
+                "Les lieux ou\u0300 se produisent les catastrophes de grande ampleur influencent eux aussi de manie\u0300re consid\u00e9rable l\u2019utilisation qui est faite de l\u2019aide internationale. L\u2019essentiel des contributions est affecte\u0301 aux secours d\u2019urgence, ainsi qu\u2019aux programmes de de\u0301veloppement a\u0300 plus long terme visant a\u0300 re\u0301duire les risques et la vulne\u0301rabilite\u0301, ce qui peut expliquer le manque d\u2019investissements dans le renforcement des capacite\u0301s des Socie\u0301te\u0301s nationales."
+            ]
         }
     ],
     "nextChapter": {

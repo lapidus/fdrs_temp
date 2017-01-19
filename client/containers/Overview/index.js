@@ -2,7 +2,8 @@
 import React from "react"
 import { connect } from "react-redux"
 import { translate } from "react-i18next"
-import { Link } from "react-router"
+import LanguageLink  from "../../components/LanguageLink"
+
 import Select from "react-select"
 import { Origin } from 'redux-tooltip';
 
@@ -47,7 +48,7 @@ class Overview extends React.Component {
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/fdrs/overview/map" className="btn block p1 bg-white link-no-underline text-left">
+                <LanguageLink to="/fdrs/overview/map" className="btn block p1 bg-white link-no-underline text-left">
                   <span className="inline-block">
                     <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g transform="translate(0, 0)">
@@ -62,10 +63,10 @@ class Overview extends React.Component {
                     { t("overview:tabs")[0][0] }&nbsp;
                   </span>
                   { t("overview:tabs")[0][1] }
-                </Link>
+                </LanguageLink>
               </li>
               <li className="inline-block">
-                <Link to="/fdrs/societies" className="btn block p1 link-no-underline text-left">
+                <LanguageLink to="/fdrs/societies" className="btn block p1 link-no-underline text-left">
                   <span>
                     <svg style={{width:16,height:16,marginTop:-3,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g  transform="translate(0, 0)">
@@ -80,7 +81,7 @@ class Overview extends React.Component {
                     { t("overview:tabs")[1][0] }&nbsp;
                   </span>
                   { t("overview:tabs")[1][1] }
-                </Link>
+                </LanguageLink>
               </li>
             </ul>
           </div>
@@ -118,17 +119,17 @@ class Overview extends React.Component {
                   />
                 </div>
                 <div className="absolute t50 r0 y-center-self">
-                  <Link to="/fdrs/overview/map" className="relative btn">
+                  <LanguageLink to="/fdrs/overview/map" className="relative btn">
                     <span className="small strong caps">{ "Map" }</span>
                     <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/map" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
-                  </Link>
+                  </LanguageLink>
 
-                  <Link to="/fdrs/overview/table" className="relative btn">
+                  <LanguageLink to="/fdrs/overview/table" className="relative btn">
                     {/* <span className="small strong caps color-secondary">{ "Table" }</span>
                     <span className="absolute b0 l0 base-12 bg-secondary" style={{height:4}}></span> */}
                     <span className="small strong caps">{ "Table" }</span>
                     <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/table" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
-                  </Link>
+                  </LanguageLink>
                 </div>
               </div>
             </header>
@@ -164,11 +165,11 @@ class Overview extends React.Component {
               <p className="lead">
                 { pageData.nationalSocietiesPreview.lead }
               </p>
-              <Link to="/fdrs" className="btn btn--raised bg-primary">
+              <LanguageLink to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">
                   { pageData.nationalSocietiesPreview.button }
                 </span>
-              </Link>
+              </LanguageLink>
             </div>
           </div>
         </div>
@@ -187,11 +188,11 @@ class Overview extends React.Component {
               <p className="lead">
                 { pageData.dataCollectors.lead }
               </p>
-              <Link to="/fdrs" className="btn btn--raised bg-primary">
+              <LanguageLink to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">
                   { pageData.dataCollectors.button }
                 </span>
-              </Link>
+              </LanguageLink>
             </div>
           </div>
         </div>

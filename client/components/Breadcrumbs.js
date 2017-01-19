@@ -1,7 +1,6 @@
 
 import React from "react"
-import { Link } from "react-router"
-import LanguageLink from "./LanguageLink"
+import LanguageLink from "../components/LanguageLink"
 
 class Breadcrumbs extends React.Component {
   render() {

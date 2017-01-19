@@ -69,11 +69,25 @@
                 "quote": "Depuis leurs d\u00e9buts, la Croix-Rouge et le Croissant-Rouge sont surtout connus pour leur mission, qui est d\u2019apporter une aide d\u2019urgence et un r\u00e9confort aux personnes en d\u00e9tresse."
             },
             {
+                "id": "Section 3",
+                "title": "Enabling actions",
+                "statistic": {
+                    "number": "190",
+                    "text": "National Societies"
+                },
+                "fact": "To inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world.",
                 "quote": "Depuis l\u2019adoption de la Strat\u00e9gie 2020, les principales mesures prises pour am\u00e9liorer notre fonctionnement en tant que F\u00e9d\u00e9ration ont consist\u00e9 \u00e0 renforcer notre gouvernance, \u00e0 mettre en place un cadre de redevabilit\u00e9 et \u00e0 promouvoir une culture de l\u2019apprentissage."
+            },
+            {
+                "id": "Section 4",
+                "title": "Annexes"
             }
         ]
     },
     "chapters": {
+        "chapter1": {
+            "title": "Who we are"
+        },
         "chapter2": {
             "title": "Ce que nous faisons"
         },
@@ -101,10 +115,17 @@
             "title": "Mener des activit\u00e9s de diplomatie humanitaire pour pr\u00e9venir et r\u00e9duire la vuln\u00e9rabilit\u00e9 dans un monde interd\u00e9pendant"
         },
         "chapter9": {
-            "pretitle": "Action facilitatrice 3"
+            "pretitle": "Action facilitatrice 3",
+            "title": "Function effectively as the IFRC"
         },
         "data": {
-            "title": "Explorez les donn\u00e9es"
+            "pretitle": "Data tools",
+            "title": "Explorez les donn\u00e9es",
+            "body": [
+                "See the seven key indicators across all National Societies",
+                "Find information about your National Society"
+            ],
+            "button": "Explore the data from FDRS"
         },
         "acknowledgements": {
             "title": "Remerciements"

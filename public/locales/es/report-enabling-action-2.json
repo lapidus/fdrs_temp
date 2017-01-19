@@ -1,49 +1,75 @@
 {
+    "chapter": "8",
+    "slug": "enabling-action-2",
     "title": "Acci\u00f3n facilitadora 2",
     "subtitle": "Valernos de la diplomacia humanitaria para prevenir y reducir la vulnerabilidad en un mundo globalizado",
-    "sections": {
-        "0": {
+    "intro": "Our humanitarian diplomacy includes advocacy, social mobilisation, negotiation, communication, representation, formal agreements, fundraising, and other measures that enable the Red Cross and Red Crescent to do more, do better, and reach further in serving poor and vulnerable communities.",
+    "sections": [
+        {
             "title": "Funci\u00f3n en calidad de auxiliares de los poderes p\u00fablicos",
-            "blocks": {
-                "1": [
+            "blocks": [
+                "The auxiliary role of our National Societies is recognised in national laws, and provides the authority and access to pursue privileged dialogue with public authorities. The many ways in which several national authorities contribute to the success of their National Red Cross or Red Crescent Society include:",
+                [
                     "el aporte de contribuciones directas mediante subvenciones o pagos de tasas por prestaci\u00f3n de servicios;",
-                    "el aporte de contribuciones indirectas a trav\u00e9s de exenciones tributarias, concesiones fiscales, asistencia en especie (terrenos, espacio de oficinas), beneficios especiales (v.g. tarifas preferenciales para servicios de telecomunicaciones, distribuci\u00f3n de ingresos derivados de acontecimientos deportivos de importancia), autorizaciones para iniciativas con fines de lucro (v.g. tiendas de caridad, servicios comerciales de primeros auxilios);"
+                    "el aporte de contribuciones indirectas a trav\u00e9s de exenciones tributarias, concesiones fiscales, asistencia en especie (terrenos, espacio de oficinas), beneficios especiales (v.g. tarifas preferenciales para servicios de telecomunicaciones, distribuci\u00f3n de ingresos derivados de acontecimientos deportivos de importancia), autorizaciones para iniciativas con fines de lucro (v.g. tiendas de caridad, servicios comerciales de primeros auxilios);",
+                    "Ensuring an enabling environment with policies and laws that incentivise volunteering and humanitarian access."
                 ],
-                "2": "Las Sociedades Nacionales suelen recurrir a la condici\u00f3n de auxiliares de los poderes p\u00fablicos para salvar graves impedimentos en casos de crisis humanitarias. Gracias a esta funci\u00f3n, las Sociedades Nacionales pueden tambi\u00e9n abogar en favor de reformas pol\u00edticas a m\u00e1s largo plazo y de cambios legislativos que permitan la eliminaci\u00f3n de las causas subyacentes de la discriminaci\u00f3n, la marginaci\u00f3n y otras vulnerabilidades arraigadas."
-            }
+                "Las Sociedades Nacionales suelen recurrir a la condici\u00f3n de auxiliares de los poderes p\u00fablicos para salvar graves impedimentos en casos de crisis humanitarias. Gracias a esta funci\u00f3n, las Sociedades Nacionales pueden tambi\u00e9n abogar en favor de reformas pol\u00edticas a m\u00e1s largo plazo y de cambios legislativos que permitan la eliminaci\u00f3n de las causas subyacentes de la discriminaci\u00f3n, la marginaci\u00f3n y otras vulnerabilidades arraigadas."
+            ]
         },
-        "2": {
-            "blocks": {
-                "1": {
+        {
+            "title": "Our humanitarian diplomacy issue",
+            "blocks": [
+                "Our humanitarian diplomacy mission includes promoting the Red Cross and Red Crescent perspective on the major challenges that face humanity. We use our regular presence at global fora to do this, for example, at the United Nations General Assembly, World Economic Forum, World Health Assembly, World Conference on Disaster Risk Reduction, United Nations Conference on Climate Change, High Level Forum on aid effectiveness, and others."
+            ]
+        },
+        {
+            "title": "External partnerships",
+            "blocks": [
+                "Beyond governments, we welcome partnerships with others who share our values and objectives, and who acknowledge our distinctive mandate and independence of action. The range of partnerships that National Societies have with other agencies, corporations, academia, professional networks, and others has steadily expanded, reflecting the respect and regard with which they are held.",
+                {
                     "type": "chart",
-                    "items": {
-                        "0": {
+                    "title": "Joint learning: partnership with the special olympics",
+                    "items": [
+                        {
                             "country": "Peru",
                             "text": "Las Olimpiadas Especiales, la Cruz Roja Peruana y la Direcci\u00f3n Regional de Educaci\u00f3n de Per\u00fa trabajaron conjuntamente para introducir el deporte de las bochas en la aislada ciudad de Iquitos, ubicada en una remota regi\u00f3n de la selva. Lograron la participaci\u00f3n de cinco escuelas en las que formaron a veinticinco entrenadores y a diez promotores de salud.."
                         },
-                        "3": {
+                        {
+                            "country": "Jamaica",
+                            "text": "Special Olympics, using their existing relationship with the Jamaican Association on Intellectual Disability, partnered with the Jamaica Red Cross to train on leadership and advocacy. The athletes raised issues such as teasing and bullying, discrimination on public transport, and self-doubt."
+                        },
+                        {
+                            "country": "Austria",
+                            "text": "Special Olympics and the youth of the Austrian Red Cross share a vision that culminates in the staging of the 2017 Special Olympics Winter Games in Styria, Austria."
+                        },
+                        {
+                            "country": "Indonesia",
                             "text": "Los voluntarios de la Cruz Roja Indonesia han impartido formaci\u00f3n a setenta y cinco atletas con discapacidad y a sus cincuenta tutores. Mientras que los deportistas asimilaban conocimientos sobre primeros auxilios, sus colegas de la Cruz Roja entend\u00edan lo que es vivir con una discapacidad intelectual. Istiansari, de la Cruz Roja, cuenta \u201csiempre conservan un \u00e1nimo extraordinario con sus risas y sonrisas. Aprender juntos result\u00f3 divertido\u201d."
                         }
-                    }
+                    ],
+                    "caption": ""
                 },
-                "2": "Las organizaciones de la Cruz Roja y de la Media Luna Roja y las Olimpiadas Especiales son aliados naturales, habida cuenta que la promoci\u00f3n de la inclusi\u00f3n social forma parte del cometido de las primeras y que las segundas tienen por misi\u00f3n proporcionar a ni\u00f1os y adultos con discapacidad intelectual continuas oportunidades para desarrollar aptitudes f\u00edsicas, demostrar valor, experimentar alegr\u00eda y participar en un intercambio de dones a trav\u00e9s del deporte. Esta alianza, oficializada en 2013, abarca a m\u00e1s de quince pa\u00edses."
-            }
+                "Las organizaciones de la Cruz Roja y de la Media Luna Roja y las Olimpiadas Especiales son aliados naturales, habida cuenta que la promoci\u00f3n de la inclusi\u00f3n social forma parte del cometido de las primeras y que las segundas tienen por misi\u00f3n proporcionar a ni\u00f1os y adultos con discapacidad intelectual continuas oportunidades para desarrollar aptitudes f\u00edsicas, demostrar valor, experimentar alegr\u00eda y participar en un intercambio de dones a trav\u00e9s del deporte. Esta alianza, oficializada en 2013, abarca a m\u00e1s de quince pa\u00edses."
+            ]
         },
-        "3": {
+        {
+            "title": "Our outreach",
             "blocks": [
                 "El alcance de la labor de la Federaci\u00f3n Internacional ha aumentado de forma constante en a\u00f1os recientes. En 2014, la Federaci\u00f3n Internacional contaba con 310 000 consultas a trav\u00e9s de medios de comunicaci\u00f3n, adem\u00e1s de decenas de miles de referencias en la prensa escrita, emisiones de radio y televisi\u00f3n y noticias en l\u00ednea en todo el mundo sobre la labor de las Sociedades Nacionales. En 2014, el sitio web de la Federaci\u00f3n Internacional fue objeto de 9 millones de consultas por parte de tres millones de personas, denotando un significativo aumento frente a las cifras de 2010.",
                 {
                     "type": "chart",
                     "title": "Divulgaci\u00f3n a trav\u00e9s de los medios de comunicaci\u00f3n tradicionales y digitales",
                     "axisLabels": {
-                        "x": "A\u00f1os"
+                        "x": "A\u00f1os",
+                        "y": ""
                     },
                     "lineLabels": [
                         "Views",
                         "Users",
                         "Twitter",
                         "Facebook",
-                        "YouTube\\n",
+                        "YouTube\n",
                         "Media hits"
                     ],
                     "caption": "Fuente: Departamento de Comunicaci\u00f3n"
@@ -51,10 +77,11 @@
                 "Los medios digitales han suscitado oportunidades adicionales para ampliar la comunidad de personas de muy distinta trayectoria interesadas en compartir nuestro empe\u00f1o humanitario. En 2014, el canal de YouTube de la Federaci\u00f3n Internacional tuvo 530 000 visualizaciones y el alcance de difusi\u00f3n a trav\u00e9s de Facebook y Twitter super\u00f3, respectivamente, 11 y 23 millones de mensajes."
             ]
         }
-    },
+    ],
     "nextChapter": {
         "heading": "Cap\u00edtulo siguiente",
         "chapter": "9",
+        "subtitle": "Enabling action 3",
         "title": "Funcionar con eficacia como Federaci\u00f3n Internacional",
         "slug": "enabling-action-3"
     }

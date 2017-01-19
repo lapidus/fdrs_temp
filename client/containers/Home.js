@@ -1,7 +1,8 @@
 import React from "react"
 import { translate } from "react-i18next"
 import Slant from '../components/Slant'
-import { Link } from 'react-router'
+import LanguageLink  from "../components/LanguageLink"
+
 
 class Home extends React.Component {
   render() {
@@ -128,9 +129,9 @@ class Home extends React.Component {
                         <p>
                           { serviceItem.description }
                         </p>
-                        <Link to={`/fdrs/${serviceItem.slug}`} className="strong inline-block py05 link-underlined">
+                        <LanguageLink to={`/fdrs/${serviceItem.slug}`} className="strong inline-block py05 link-underlined">
                           { serviceItem.button }
-                        </Link>
+                        </LanguageLink>
                       </div>
                     )
                   })
@@ -163,9 +164,9 @@ class Home extends React.Component {
                   <p>
                     { t("home:insights.description") }
                   </p>
-                  <Link to="/fdrs" className="strong inline-block py05 link-underlined">
+                  <LanguageLink to="/fdrs" className="strong inline-block py05 link-underlined">
                     { t("home:insights.button") }
-                  </Link>
+                  </LanguageLink>
                 </div>
               </div>
             </div>
@@ -187,11 +188,11 @@ class Home extends React.Component {
               <p className='lead'>
                 { t("common:dataCollectors.lead") }
               </p>
-              <Link to='/fdrs' className='btn btn--raised bg-primary'>
+              <a href="http://fdrs.ifrc.org" target="_blank" className='btn btn--raised bg-primary'>
                 <span className='block py05 px1'>
                   { t("common:dataCollectors.button") }
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

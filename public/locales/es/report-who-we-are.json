@@ -18,7 +18,7 @@
                     "type": "chart",
                     "title": "Una red en constante crecimiento",
                     "labels": [
-                        "Sociedades\\nNacionales"
+                        "Sociedades\nNacionales"
                     ],
                     "axisLabels": {
                         "x": "A\u00f1os",
@@ -277,19 +277,26 @@
         },
         {
             "title": "Recursos",
-            "blocks": {
-                "0": "Nuestra mayor fortaleza reside en las personas que nos acompa\u00f1an. En 2013, las Sociedades Nacionales en conjunto contaban con ochenta (80) millones de miembros. Figuraban en plantilla cuatrocientos cincuenta y dos mil (452 000) miembros del personal y movilizaban a cerca de diecis\u00e9is (16) millones de voluntarios, con un \u00edndice de treinta y cinco voluntarios por cada miembro del personal y un cincuenta por ciento (50%) de mujeres entre los voluntarios.",
-                "1": {
+            "blocks": [
+                "Nuestra mayor fortaleza reside en las personas que nos acompa\u00f1an. En 2013, las Sociedades Nacionales en conjunto contaban con ochenta (80) millones de miembros. Figuraban en plantilla cuatrocientos cincuenta y dos mil (452 000) miembros del personal y movilizaban a cerca de diecis\u00e9is (16) millones de voluntarios, con un \u00edndice de treinta y cinco voluntarios por cada miembro del personal y un cincuenta por ciento (50%) de mujeres entre los voluntarios.",
+                {
                     "type": "chart",
+                    "title": "Human Resources in National Societies",
                     "translations": {
+                        "volunteers": "Volunteers",
+                        "paidStaff": "Paid staff",
+                        "secretariatStaff": "Secretariat staff",
+                        "male": "Male",
+                        "female": "Female",
                         "nationalSocietyStaff": "Miembros del personal de las Sociedades Nacionales",
+                        "nationalSocietyVolunteers": "National Society Volunteers",
                         "IFRCSecretariatStaff": "Miembros del personal de la secretar\u00eda de la Federaci\u00f3n Internacional"
                     },
                     "caption": "Fuente: Departamento de Recursos Humanos y banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
                 },
-                "2": "Las Sociedades Nacionales denotaron ingresos de alrededor de treinta mil ochocientos millones de francos suizos (CHF 30 800 millones) y egresos por valor de treinta mil cuatrocientos millones de francos suizos (CHF 30 400 millones) en 2013. La mayor parte de los ingresos de las Sociedades Nacionales proceden de sus respectivos pa\u00edses y se invierte en los programas que estas ejecutan. Sin embargo, ello no refleja a cabalidad el valor del trabajo de las organizaciones de la Cruz Roja y de la Media Luna Roja pues no se incluye las numerosas donaciones en especie y los servicios prestados a t\u00edtulo voluntario.",
-                "3": "Las Sociedades Nacionales remitieron a la secretar\u00eda de la Federaci\u00f3n Internacional 35,4 millones de francos suizos por concepto de contribuciones. A este valor se a\u00f1aden 263 millones de francos suizos procedentes de contribuciones voluntarias y 47,1 millones de francos suizos correspondientes a servicios y otros ingresos que constituyeron el ingreso total de la secretar\u00eda de la Federaci\u00f3n Internacional, cifrado en 345,5 millones de francos suizos en 2013. En ese a\u00f1o, la secretar\u00eda invirti\u00f3 365,3 millones de francos suizos y empleaba a 2 920 personas.",
-                "4": {
+                "Las Sociedades Nacionales denotaron ingresos de alrededor de treinta mil ochocientos millones de francos suizos (CHF 30 800 millones) y egresos por valor de treinta mil cuatrocientos millones de francos suizos (CHF 30 400 millones) en 2013. La mayor parte de los ingresos de las Sociedades Nacionales proceden de sus respectivos pa\u00edses y se invierte en los programas que estas ejecutan. Sin embargo, ello no refleja a cabalidad el valor del trabajo de las organizaciones de la Cruz Roja y de la Media Luna Roja pues no se incluye las numerosas donaciones en especie y los servicios prestados a t\u00edtulo voluntario.",
+                "Las Sociedades Nacionales remitieron a la secretar\u00eda de la Federaci\u00f3n Internacional 35,4 millones de francos suizos por concepto de contribuciones. A este valor se a\u00f1aden 263 millones de francos suizos procedentes de contribuciones voluntarias y 47,1 millones de francos suizos correspondientes a servicios y otros ingresos que constituyeron el ingreso total de la secretar\u00eda de la Federaci\u00f3n Internacional, cifrado en 345,5 millones de francos suizos en 2013. En ese a\u00f1o, la secretar\u00eda invirti\u00f3 365,3 millones de francos suizos y empleaba a 2 920 personas.",
+                {
                     "type": "chart",
                     "title": "Ingresos y Gastos",
                     "translations": {
@@ -297,10 +304,11 @@
                         "ifrcSecretariat": "Secretar\u00eda de la Federaci\u00f3n Internacional",
                         "income": "Ingresos",
                         "expenses": "Gastos"
-                    }
+                    },
+                    "caption": ""
                 },
-                "5": "Nuestra presencia en el mundo corresponde a diversos contextos demogr\u00e1ficos, sociales y econ\u00f3micos. Sin sorpresa, las Sociedades Nacionales de pa\u00edses localizados en la regi\u00f3n de Asia y el Pac\u00edfico, la zona m\u00e1s vasta y poblada del mundo, cuentan con la mayor cantidad de secciones locales con las cuales colabora el m\u00e1s numeroso cuerpo de voluntarios.",
-                "6": {
+                "Nuestra presencia en el mundo corresponde a diversos contextos demogr\u00e1ficos, sociales y econ\u00f3micos. Sin sorpresa, las Sociedades Nacionales de pa\u00edses localizados en la regi\u00f3n de Asia y el Pac\u00edfico, la zona m\u00e1s vasta y poblada del mundo, cuentan con la mayor cantidad de secciones locales con las cuales colabora el m\u00e1s numeroso cuerpo de voluntarios.",
+                {
                     "type": "tabs",
                     "title": "Recursos regionales",
                     "tabs": [
@@ -435,32 +443,102 @@
                                     "first": "149869",
                                     "second": "18025",
                                     "rest": "53725",
-                                    "names": {
-                                        "1": "French Red Cross"
-                                    }
+                                    "names": [
+                                        "German Red Cross",
+                                        "French Red Cross"
+                                    ]
                                 },
                                 {
                                     "name": "Asia y el Pac\u00edfico",
                                     "index": "2",
                                     "first": "65212",
+                                    "second": "40708",
+                                    "rest": "43803",
                                     "names": [
-                                        "Japanese Red Cross Society"
+                                        "Japanese Red Cross Society",
+                                        "Chinese Red Cross"
+                                    ]
+                                },
+                                {
+                                    "name": "Americas",
+                                    "index": "3",
+                                    "first": "27827",
+                                    "second": "9273",
+                                    "rest": "13803",
+                                    "names": [
+                                        "United States Red Cross",
+                                        "??"
+                                    ]
+                                },
+                                {
+                                    "name": "Middle East and North Africa",
+                                    "index": "4",
+                                    "first": "7500",
+                                    "second": "4150",
+                                    "rest": "10275",
+                                    "names": [
+                                        "??",
+                                        "??"
+                                    ]
+                                },
+                                {
+                                    "name": "Africa",
+                                    "index": "5",
+                                    "first": "1114",
+                                    "second": "800",
+                                    "rest": "5868",
+                                    "names": [
+                                        "??",
+                                        "??"
                                     ]
                                 }
-                            ]
+                            ],
+                            "caption": "Source: FDRS"
                         }
                     ]
                 },
-                "8": {
+                "The Japanese Red Cross Society has the largest income but, in aggregate, the wealthiest National Societies are in Europe. Expenditure mirrors this trend. The largest numbers of paid staff are also in Europe, reflecting the tendency of richer National Societies to rely more on paid workers than volunteers, especially for services that are paid for or subsidised by national and local authorities.",
+                {
+                    "type": "tabs",
+                    "title": "Regional budgets",
                     "tabs": [
                         {
-                            "dataset": {
-                                "2": {
-                                    "names": {
-                                        "1": "??"
-                                    }
+                            "name": "Income",
+                            "dataset": [
+                                {
+                                    "name": "Asia and The Pacific",
+                                    "index": "1",
+                                    "first": "10663700440.393",
+                                    "second": "810096534.6958",
+                                    "rest": "2078954900.7382",
+                                    "names": [
+                                        "Japanese Red Cross Society",
+                                        "Australian Red Cross"
+                                    ]
                                 },
-                                "3": {
+                                {
+                                    "name": "Europe",
+                                    "index": "2",
+                                    "first": "8042155085.0591",
+                                    "second": "1421776388.7861",
+                                    "rest": "3486934229.8231",
+                                    "names": [
+                                        "German Red Cross",
+                                        "French Red Cross"
+                                    ]
+                                },
+                                {
+                                    "name": "Americas",
+                                    "index": "3",
+                                    "first": "3065067796.1811",
+                                    "second": "300863549.30617",
+                                    "rest": "244891909.4962",
+                                    "names": [
+                                        "United States Red Cross",
+                                        "??"
+                                    ]
+                                },
+                                {
                                     "name": "Middle East and North Africa",
                                     "index": "4",
                                     "first": "235038763.49247",
@@ -471,7 +549,7 @@
                                         "??"
                                     ]
                                 },
-                                "4": {
+                                {
                                     "name": "Africa",
                                     "index": "5",
                                     "first": "41024256",
@@ -482,7 +560,7 @@
                                         "??"
                                     ]
                                 }
-                            },
+                            ],
                             "caption": "Source: FDRS"
                         },
                         {
@@ -548,9 +626,9 @@
                         }
                     ]
                 },
-                "9": "Cada Sociedad Nacional tiene caracter\u00edsticas singulares que constan en la secci\u00f3n de datos www.ifrc.org\/data. Sin embargo, conviene tambi\u00e9n recordar que la Federaci\u00f3n Internacional se cimienta sobre la noci\u00f3n de la respetuosa solidaridad entre las Sociedades Nacionales a trav\u00e9s de esfuerzos encaminados a compartir conocimientos, pericia, recursos financieros y otras competencias.",
-                "10": "No obstante, se desconoce la magnitud exacta de la inversi\u00f3n de las Sociedades Nacionales en la asistencia internacional en vista de que gran parte de este esfuerzo reviste car\u00e1cter bilateral. El banco de datos y sistema general interno de informaci\u00f3n intentar\u00e1 reflejar este aspecto en el futuro. Mientras tanto, las aportaciones efectuadas a llamamientos de la Federaci\u00f3n Internacional vierten cierta luz al respecto. Entre 2010 y 2014, las Sociedades Nacionales, los gobiernos, y otras fuentes, aportaron m\u00e1s de mil quinientos millones de francos suizos (CHF 1 500 millones). Las considerables fluctuaciones registradas de un a\u00f1o a otro se explican por los patrones de las emergencias de gran envergadura.",
-                "11": {
+                "Cada Sociedad Nacional tiene caracter\u00edsticas singulares que constan en la secci\u00f3n de datos www.ifrc.org\/data. Sin embargo, conviene tambi\u00e9n recordar que la Federaci\u00f3n Internacional se cimienta sobre la noci\u00f3n de la respetuosa solidaridad entre las Sociedades Nacionales a trav\u00e9s de esfuerzos encaminados a compartir conocimientos, pericia, recursos financieros y otras competencias.",
+                "No obstante, se desconoce la magnitud exacta de la inversi\u00f3n de las Sociedades Nacionales en la asistencia internacional en vista de que gran parte de este esfuerzo reviste car\u00e1cter bilateral. El banco de datos y sistema general interno de informaci\u00f3n intentar\u00e1 reflejar este aspecto en el futuro. Mientras tanto, las aportaciones efectuadas a llamamientos de la Federaci\u00f3n Internacional vierten cierta luz al respecto. Entre 2010 y 2014, las Sociedades Nacionales, los gobiernos, y otras fuentes, aportaron m\u00e1s de mil quinientos millones de francos suizos (CHF 1 500 millones). Las considerables fluctuaciones registradas de un a\u00f1o a otro se explican por los patrones de las emergencias de gran envergadura.",
+                {
                     "type": "tabs",
                     "title": "Respuesta a los llamamientos emitidos por la Federaci\u00f3n Internacional entre 2010 y 2014 y principales Sociedades Nacionales beneficiarias",
                     "tabs": [
@@ -619,95 +697,181 @@
                                     "percent": "4"
                                 },
                                 {
-                                    "rank": "10"
+                                    "rank": "10",
+                                    "donor": "United States Government",
+                                    "total": "55",
+                                    "percent": "4"
+                                },
+                                {
+                                    "rank": "11",
+                                    "donor": "British Government",
+                                    "total": "51.6",
+                                    "percent": "3"
+                                },
+                                {
+                                    "rank": "12",
+                                    "donor": "Japanese Government",
+                                    "total": "47.1",
+                                    "percent": "3"
+                                },
+                                {
+                                    "rank": "13",
+                                    "donor": "Australian Red Cross",
+                                    "total": "46.6",
+                                    "percent": "3"
+                                },
+                                {
+                                    "rank": "14",
+                                    "donor": "Danish Red Cross",
+                                    "total": "30.6",
+                                    "percent": "2"
+                                },
+                                {
+                                    "rank": "15",
+                                    "donor": "Swiss Red Cross",
+                                    "total": "21.7",
+                                    "percent": "1"
+                                },
+                                {
+                                    "rank": "-",
+                                    "donor": "Next 25 contributors",
+                                    "total": "223.2",
+                                    "percent": "14"
+                                },
+                                {
+                                    "rank": "-",
+                                    "donor": "Other contributors",
+                                    "total": "109.2",
+                                    "percent": "7"
                                 }
                             ]
                         },
                         {
-                            "dataset": {
-                                "2": {
-                                    "total": "103.5"
+                            "name": "Recipients",
+                            "caption": "Source: Finance Department",
+                            "headers": [
+                                "Rank",
+                                "National Society",
+                                "Total (CHF millions)",
+                                "%"
+                            ],
+                            "dataset": [
+                                {
+                                    "rank": "1",
+                                    "nationalSociety": "Haiti",
+                                    "total": "256.1",
+                                    "percent": "20"
                                 },
-                                "3": {
+                                {
+                                    "rank": "2",
+                                    "nationalSociety": "Philippines",
+                                    "total": "111.1",
+                                    "percent": "9"
+                                },
+                                {
+                                    "rank": "3",
+                                    "nationalSociety": "Pakistan",
+                                    "total": "103.5",
+                                    "percent": "8"
+                                },
+                                {
+                                    "rank": "4",
                                     "nationalSociety": "Syria",
+                                    "total": "83.1",
                                     "percent": "7"
                                 },
-                                "4": {
+                                {
                                     "rank": "5",
                                     "nationalSociety": "Sierra Leone",
                                     "total": "44.4",
                                     "percent": "4"
                                 },
-                                "5": {
+                                {
                                     "rank": "6",
                                     "nationalSociety": "Kenya",
                                     "total": "40.9",
                                     "percent": "3"
                                 },
-                                "6": {
+                                {
                                     "rank": "7",
                                     "nationalSociety": "Afghanistan",
                                     "total": "36.9",
                                     "percent": "3"
                                 },
-                                "7": {
+                                {
                                     "rank": "8",
                                     "nationalSociety": "Turkey",
                                     "total": "31.6",
                                     "percent": "3"
                                 },
-                                "8": {
+                                {
                                     "rank": "9",
                                     "nationalSociety": "DPR Korea",
                                     "total": "29.6",
                                     "percent": "2"
                                 },
-                                "9": {
+                                {
                                     "rank": "10",
                                     "nationalSociety": "Sri Lanka",
                                     "total": "28.8",
                                     "percent": "2"
                                 },
-                                "10": {
+                                {
                                     "rank": "11",
                                     "nationalSociety": "Liberia",
                                     "total": "25.5",
                                     "percent": "2"
                                 },
-                                "11": {
+                                {
                                     "rank": "12",
                                     "nationalSociety": "Ethiopia",
                                     "total": "21",
                                     "percent": "2"
                                 },
-                                "12": {
+                                {
                                     "rank": "13",
                                     "nationalSociety": "Sudan",
                                     "total": "18",
                                     "percent": "1"
                                 },
-                                "13": {
+                                {
                                     "rank": "14",
                                     "nationalSociety": "Somalia",
                                     "total": "17.9",
                                     "percent": "1"
                                 },
-                                "14": {
+                                {
                                     "rank": "15",
                                     "nationalSociety": "Bangladesh",
                                     "total": "17.3",
                                     "percent": "1"
                                 },
-                                "15": {
+                                {
                                     "rank": "-",
                                     "nationalSociety": "Next 15 recipients",
+                                    "total": "172.4",
                                     "percent": "14"
+                                },
+                                {
+                                    "rank": "-",
+                                    "nationalSociety": "Others",
+                                    "total": "212.9",
+                                    "percent": "17"
                                 }
-                            }
+                            ]
                         }
-                    ]
-                }
-            }
+                    ],
+                    "caption": "List of largest contributors in cash, kind and services, CHF millions."
+                },
+                "The location of major disasters also skews heavily where most international assistance is deployed. The bulk goes to emergency response, along with longer-term development type programmes to reduce risk and vulnerability. This may be responsible for crowding out investment in building the capacity of the National Societies themselves."
+            ]
         }
-    ]
+    ],
+    "nextChapter": {
+        "heading": "Next chapter",
+        "chapter": "2",
+        "subtitle": "Overview",
+        "title": "What we do",
+        "slug": "what-we-do"
+    }
 }

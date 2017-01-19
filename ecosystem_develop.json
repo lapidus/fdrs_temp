@@ -4,6 +4,8 @@
     {
       "name": "react_test_dev",
       "script": "build/server.js",
+      "exec_mode"         : "cluster",
+      "instances"         : 2,
       "env": {
         "COMMON_VARIABLE": "true"
       },
@@ -33,7 +35,7 @@
       // Can be multiple commands separated by the character ";"
       "pre-deploy-local": "echo 'This is a local executed command:::';pwd",
       // Commands to be executed on the server after the repo has been cloned
-      "post-deploy": "npm install && npm run build --release && pm2 startOrRestart ecosystem_develop.json --env develop",
+      "post-deploy": "npm install && npm run build --release && pm2 startOrReload ecosystem_develop.json --env develop",
       // Environment variables that must be injected in all applications on this env
       "env": {
         "NODE_ENV": "development",

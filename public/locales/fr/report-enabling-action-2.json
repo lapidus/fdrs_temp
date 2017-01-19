@@ -47,7 +47,8 @@
                             "country": "Indon\u00e9sie",
                             "text": "Les volontaires de la Croix-Rouge indone\u0301sienne ont suivi une formation avec 75 athle\u0300tes handicape\u0301s et leurs 50 mentors. Si les athle\u0300tes ont appris les premiers secours, les volontaires de la Croix-Rouge ont appris a\u0300 vivre avec une de\u0301ficience intellectuelle. \u00ab Ils ont toujours maintenu un climat de convivialite\u0301 avec leurs rires et sourires. Il e\u0301tait amusant d\u2019apprendre ensemble\u00bb, explique Istiansari de la Croix-Rouge."
                         }
-                    ]
+                    ],
+                    "caption": ""
                 },
                 "La mission de la Croix-Rouge et du Croissant-Rouge, qui est de favoriser l\u2019inte\u0301gration sociale, et celle de Special Olympics, qui est de donner aux enfants et aux adultes pre\u0301sentant un handicap intellectuel la possibilite\u0301 de de\u0301velopper leur condition physique, de de\u0301montrer leur courage, d\u2019e\u0301prouver de la joie et de partager par le sport, font de ces deux organisations des allie\u0301s naturels."
             ]
@@ -60,15 +61,16 @@
                     "type": "chart",
                     "title": "Aller plus loin gra\u0302ce aux me\u0301dias traditionnels et nume\u0301riques",
                     "axisLabels": {
-                        "x": "Anne\u0301es"
+                        "x": "Anne\u0301es",
+                        "y": ""
                     },
                     "lineLabels": [
                         "Visites",
                         "Utilisateurs",
                         "Twitter",
                         "Facebook",
-                        "YouTube\\n",
-                        "\\nMentions dans\\nles me\u0301dias"
+                        "YouTube\n",
+                        "\nMentions dans\nles me\u0301dias"
                     ],
                     "caption": "Source: de\u0301partement Communications"
                 },

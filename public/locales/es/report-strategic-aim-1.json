@@ -1,14 +1,121 @@
 {
+    "chapter": "4",
+    "slug": "strategic-aim-1",
+    "title": "Strategic aim 1",
+    "subtitle": "Save lives, protect livelihoods and strengthen recovery from disasters and crises",
+    "intro": "From our earliest days, the Red Cross and Red Crescent is best known for our mission to bring urgent help and comfort in moments of greatest need.",
+    "general": [
+        "In 2014, we responded internationally to 278 disasters and crises worldwide, continuing a general downward trend during this decade. This trend is partly a reflection of the wider \u2013 perhaps temporary \u2013 reduction in the frequency of major natural disasters in recent years, but may also be an indicator of increased local and national capacities to deal with disasters without requiring international support.",
+        {
+            "type": "chart",
+            "title": "Declining number of natural disasters",
+            "caption": "Source: Disaster and Crisis Management Department",
+            "dataset": [
+                {
+                    "year": "2010",
+                    "disasters": "393"
+                },
+                {
+                    "year": "2011",
+                    "disasters": "406"
+                },
+                {
+                    "year": "2012",
+                    "disasters": "358"
+                },
+                {
+                    "year": "2013",
+                    "disasters": "305"
+                },
+                {
+                    "year": "2014",
+                    "disasters": "278"
+                }
+            ],
+            "axisLabels": {
+                "x": "Years",
+                "y": "Natural disasters"
+            },
+            "lineLabels": [
+                "Natural\ndisasters"
+            ]
+        }
+    ],
     "sections": [
         {
-            "blocks": {
-                "2": {
-                    "dataset": {
-                        "3": {
+            "title": "Number of people reached by types of disasters",
+            "blocks": [
+                "Hydrometeorological disasters including floods, hurricanes, and droughts dominated in all regions. Africa had the added burden of prolonged conflict-related crises. Asia Pacific tends to have been more prone to geophysical hazards including earthquakes.",
+                "The majority of the Red Cross and Red Crescent emergency actions and beneficiaries were in Asia Pacific and Africa.",
+                {
+                    "type": "chart",
+                    "title": "People reached by region",
+                    "customFills": [
+                        "#E02726",
+                        "#1A9FE0",
+                        "#BEBAB8",
+                        "#FED02F"
+                    ],
+                    "dataset": [
+                        {
+                            "index": "1",
+                            "numbers": [
+                                "0",
+                                "608168",
+                                "6953897",
+                                "600019"
+                            ],
+                            "labels": [
+                                "Geophysical",
+                                "Hydrometeorological",
+                                "Biological",
+                                "Various"
+                            ],
+                            "total": "8162084",
+                            "name": "Africa"
+                        },
+                        {
+                            "index": "2",
+                            "numbers": [
+                                "2308695",
+                                "1152032",
+                                "10000",
+                                "173729"
+                            ],
+                            "labels": [
+                                "Geophysical",
+                                "Hydrometeorological",
+                                "Biological",
+                                "Various"
+                            ],
+                            "total": "3644456",
+                            "name": "Asia and the Pacific"
+                        },
+                        {
+                            "index": "3",
+                            "numbers": [
+                                "0",
+                                "644820",
+                                "181250",
+                                "0"
+                            ],
+                            "labels": [
+                                "Geophysical",
+                                "Hydrometeorological",
+                                "Biological",
+                                "Various"
+                            ],
+                            "total": "826070",
+                            "name": "Americas"
+                        },
+                        {
                             "index": "4",
-                            "numbers": {
-                                "3": "168250"
-                            },
+                            "numbers": [
+                                "0",
+                                "72614",
+                                "172000",
+                                "168250"
+                            ],
                             "labels": [
                                 "Geof\u00edsicos",
                                 "Hidrometeorol\u00f3gicos",
@@ -18,7 +125,7 @@
                             "total": "412864",
                             "name": "Europa"
                         },
-                        "4": {
+                        {
                             "index": "5",
                             "numbers": [
                                 "0",
@@ -35,10 +142,10 @@
                             "total": "72725",
                             "name": "Oriente Medio y Norte de \u00c1frica"
                         }
-                    },
+                    ],
                     "caption": "Fuente: Departamento de Gesti\u00f3n de Desastres y Crisis y banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
                 }
-            }
+            ]
         },
         {
             "title": "Magnitud de las crisis atendidas por las organizaciones de la Cruz Roja y de la Media Luna Roja",
@@ -80,14 +187,18 @@
                             "year": "2013",
                             "appealsLaunched": "19",
                             "amount": "129.8",
-                            "beneficiaries": "1.9"
+                            "beneficiaries": "1.9",
+                            "crisis": "Typhoon Haiyan, Philippines"
                         },
                         {
                             "year": "2014",
                             "appealsLaunched": "27",
-                            "amount": "230.8"
+                            "amount": "230.8",
+                            "beneficiaries": "62.5",
+                            "crisis": "Ebola epidemic, West Africa"
                         },
                         {
+                            "year": "Total",
                             "appealsLaunched": "137",
                             "amount": "1250.8",
                             "beneficiaries": "91.1",
@@ -251,58 +362,43 @@
                             "fill": "#FED02F"
                         },
                         {
-                            "x": [
-                                "Erupciones",
-                                "volc\u00e1nicas (4)"
-                            ],
+                            "x": "Erupciones\nvolc\u00e1nicas (4)",
                             "y": "4",
                             "fill": "#DE2214"
                         },
                         {
-                            "x": [
-                                "Ciclones,",
-                                "tormentas (4)"
-                            ],
+                            "x": "Ciclones,\ntormentas (4)",
                             "y": "4",
                             "fill": "#84BB23"
                         },
                         {
-                            "x": [
-                                "Temperaturas",
-                                "extremas (4)"
-                            ],
+                            "x": "Temperaturas\nextremas (4)",
                             "y": "4",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "Disturbios",
-                                "civiles (13)"
-                            ],
+                            "x": "Disturbios\nciviles (13)",
                             "y": "13",
                             "fill": "#84BB23"
                         },
                         {
-                            "x": [
-                                "Explosiones,",
-                                "incendios (2)"
-                            ],
+                            "x": "Explosiones,\nincendios (2)",
                             "y": "2",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "Movimiento",
-                                "de poblaciones (11)"
-                            ],
+                            "x": "Movimiento\nde poblaciones (11)",
                             "y": "11",
                             "fill": "#EE3224"
                         },
                         {
                             "x": "Otros (2)",
-                            "y": "2"
+                            "y": "2",
+                            "fill": "#012A39"
                         },
                         {
+                            "x": "Epidemics (28)",
+                            "y": "28",
                             "fill": "#FED02F"
                         }
                     ],
@@ -399,6 +495,7 @@
                         },
                         "IRQ": {
                             "fillKey": "bubbleFill",
+                            "name": "Iraq",
                             "number": "108873",
                             "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">108,873<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
                         },
@@ -471,29 +568,120 @@
                     },
                     "caption": "Fuente: Departamento de Alojamiento Provisional y Asentamientos"
                 },
-                "Hasta la fecha, la Federaci\u00f3n Internacional ha coordinado actividades de alojamiento provisional y de emergencia a ra\u00edz de treinta y dos (32) emergencias mediante el env\u00edo de unidades especializadas que incluyen personal de distintas Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja y de otros organismos miembros del grupo tem\u00e1tico."
+                "Hasta la fecha, la Federaci\u00f3n Internacional ha coordinado actividades de alojamiento provisional y de emergencia a ra\u00edz de treinta y dos (32) emergencias mediante el env\u00edo de unidades especializadas que incluyen personal de distintas Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja y de otros organismos miembros del grupo tem\u00e1tico.",
+                {
+                    "type": "case-study-extended",
+                    "title": "The Syria crisis"
+                },
+                {
+                    "type": "case-study-extended",
+                    "title": "Typhoon Haiyan"
+                },
+                {
+                    "type": "case-study-extended",
+                    "title": "Ebola virus disease"
+                }
             ]
         },
         {
-            "blocks": {
-                "3": {
-                    "tabs": {
-                        "1": {
-                            "dataset": {
-                                "2": {
+            "title": "Staying safe",
+            "blocks": [
+                "It can be risky at the frontline of humanitarian response. Worldwide, more than 1,100 aid workers have died in the course of their duties over the past decade with many more being injured and an increasing number of kidnappings. The trend indicates increased disrespect for international humanitarian law and the deliberate targeting of humanitarian and health service facilities.",
+                {
+                    "type": "chart",
+                    "title": "Security incidents",
+                    "barLabels": [
+                        "281",
+                        "155",
+                        "114",
+                        "103",
+                        "79"
+                    ],
+                    "axisLabels": {
+                        "x": "Years",
+                        "y": ""
+                    },
+                    "dataset": [
+                        {
+                            "value": "281",
+                            "year": "2010"
+                        },
+                        {
+                            "value": "155",
+                            "year": "2011"
+                        },
+                        {
+                            "value": "114",
+                            "year": "2012"
+                        },
+                        {
+                            "value": "103",
+                            "year": "2013"
+                        },
+                        {
+                            "value": "79",
+                            "year": "2014"
+                        }
+                    ],
+                    "caption": "Source: Security Unit"
+                },
+                "For the IFRC, the number of reported security incidents has declined in recent years. It is a positive sign that while there was one security incident recorded for about 15 IFRC staff deployed in 2010, this had improved to one incident per 44 staff in 2014.",
+                {
+                    "type": "tabs",
+                    "title": "Causes of death",
+                    "tabs": [
+                        {
+                            "name": "1993\u20142011",
+                            "dataset": [
+                                {
+                                    "x": "Vehicle\naccidents (10)",
+                                    "y": "10",
+                                    "fill": "#012A39"
+                                },
+                                {
+                                    "x": "Violence\/\ncrime\/\nconflict\nrelated (30)",
+                                    "y": "30",
+                                    "fill": "#EE3224"
+                                },
+                                {
+                                    "x": "Natural\ndisasters (60)",
+                                    "y": "60",
+                                    "fill": "#FED02F"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012\u20142014",
+                            "dataset": [
+                                {
+                                    "x": "Vehicle\naccidents (10)",
+                                    "y": "10",
+                                    "fill": "#012A39"
+                                },
+                                {
+                                    "x": "Violence\/crime\/\nconflict related (86)",
+                                    "y": "86",
+                                    "fill": "#EE3224"
+                                },
+                                {
+                                    "x": "Natural\ndisasters (4)",
                                     "y": "4",
                                     "fill": "#FED02F"
                                 }
-                            }
+                            ]
                         }
-                    },
+                    ],
                     "caption": "Fuente: Unidad de Seguridad de la secretar\u00eda"
                 },
-                "4": "Cabe observar, sin embargo, un cambio en los patrones de riesgo. En a\u00f1os anteriores la mayor\u00eda de decesos de colaboradores de las organizaciones de la Cruz Roja y de la Media Luna Roja estuvieron vinculados con intervenciones de socorro a ra\u00edz de desastres, mientras que ahora una de las causas predominantes es la violencia directa."
-            }
+                "Cabe observar, sin embargo, un cambio en los patrones de riesgo. En a\u00f1os anteriores la mayor\u00eda de decesos de colaboradores de las organizaciones de la Cruz Roja y de la Media Luna Roja estuvieron vinculados con intervenciones de socorro a ra\u00edz de desastres, mientras que ahora una de las causas predominantes es la violencia directa."
+            ]
         }
     ],
     "nextChapter": {
-        "subtitle": "Objetivo estrat\u00e9gico 2"
+        "heading": "Next chapter",
+        "chapter": "5",
+        "subtitle": "Objetivo estrat\u00e9gico 2",
+        "title": "Healthy and safe living",
+        "slug": "strategic-aim-2"
     }
 }

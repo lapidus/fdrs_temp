@@ -23,16 +23,13 @@
                 {
                     "type": "chart",
                     "title": "",
-                    "name": [
-                        "7 Fundamental",
-                        "principles"
-                    ],
+                    "name": "7 Fundamental\nprinciples",
                     "items": [
                         "Humanity",
                         "Impartiality",
                         "Neutrality",
                         "Independence",
-                        "Voluntary\\nservice",
+                        "Voluntary\nservice",
                         "Unity",
                         "Universality"
                     ],
@@ -44,17 +41,14 @@
                 {
                     "type": "chart",
                     "title": "",
-                    "name": [
-                        "7 Personal",
-                        "skills"
-                    ],
+                    "name": "7 Personal\nskills",
                     "items": [
                         "Empathy",
                         "Active Listening",
-                        "Critical Thinking\\nand Non-\\nJudgement",
-                        "Nonviolent\\nCommunication",
-                        "Collaborative\\nNegotiation\\nand Mediation",
-                        "Personal\\nResilience",
+                        "Critical Thinking\nand Non-\nJudgement",
+                        "Nonviolent\nCommunication",
+                        "Collaborative\nNegotiation\nand Mediation",
+                        "Personal\nResilience",
                         "Inner Peace"
                     ],
                     "src": "\/img\/chapters\/3\/skills.svg",
