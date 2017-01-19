@@ -40,7 +40,7 @@ class AllSocieties extends React.Component {
           <tbody>
             <tr>
               <td className="p1 base-4">{ "IFRC (all National Societies)" }</td>
-              <td className="p1 base-4">{ "Trendline" }</td>
+              <td className="p1 base-4">{" "}</td>
               <td className="p1 base-4">{ niceNum(sum, 0, null, true) }</td>
             </tr>
             {
