@@ -142,7 +142,7 @@ class FDRSNavigation extends React.Component {
             <ul className="m0 p0">
               <li className="block relative sm-inline-block">
                 <Dropdown showDropdown={ this.state.showDropdown[0] }>
-                  <LanguageLink to="/fdrs" className="btn block py15 px1 text-left bg-white z-index-1" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                  <LanguageLink to="/fdrs" className="btn block py15 text-left bg-white z-index-1" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
                     <span className="inline-block px05">
                       <svg style={{width:"1rem",height:"1rem",marginTop:-1}} width="20px" height="20px" viewBox="0 0 24 24">
                         <g transform="translate(0, 0)" className="stroke-current">
@@ -162,7 +162,7 @@ class FDRSNavigation extends React.Component {
                   <div className="relative sm-absolute t100 l0 bg-white text-left shadow-4" style={{width:"200%"}}>
                     <ul className="m0 p0 base-12">
                       <li>
-                        <LanguageLink to="/fdrs/overview/map" className="btn px15 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                        <LanguageLink to="/fdrs/overview/map" className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
                           <svg style={{width:"1rem",height:"1rem",marginTop:-1,marginRight:"1rem"}} width="24px" height="24px" viewBox="0 0 24 24">
                             <g transform="translate(0, 0)" className="stroke-current">
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M5.7,3C6.4,3.5,7,4.1,7.5,5C7.9,5.7,8.9,7.8,8,9c-1,1.3-4,1.8-4,3c0,0.9,1.3,2,2,3c1,1.5,0.6,3,0,4c-0.3,0.5-0.8,0.9-1.3,1.2" strokeLinejoin="miter" strokeLinecap="butt"/>
@@ -175,7 +175,7 @@ class FDRSNavigation extends React.Component {
                         </LanguageLink>
                       </li>
                       <li>
-                        <LanguageLink to="/fdrs/societies" className="btn px15 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                        <LanguageLink to="/fdrs/societies" className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
                           <svg style={{width:"1rem",height:"1rem",marginTop:-3,marginRight:"1rem"}} width="24px" height="24px" viewBox="0 0 24 24">
                             <g  transform="translate(0, 0)" className="stroke-current">
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M12,23c-2-1.6-2.1-6.8,1-8c1.6-0.6,2.2,2.9,5.4,2c0.6-0.2,2.1,0.7,1.6,2.1" strokeLinejoin="miter" strokeLinecap="butt"/>
@@ -188,7 +188,7 @@ class FDRSNavigation extends React.Component {
                         </LanguageLink>
                       </li>
                       <li>
-                        <LanguageLink to="/fdrs/report" className="btn px15 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                        <LanguageLink to="/fdrs/report" className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
                           <svg style={{width:"1rem",height:"1rem",marginTop:-3,marginRight:"1rem"}} width="24px" height="24px" viewBox="0 0 24 24">
                             <g transform="translate(0, 0)" className="stroke-current">
                               <rect x="2" y="1" fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="20" height="22" strokeLinejoin="miter"/>
@@ -201,7 +201,7 @@ class FDRSNavigation extends React.Component {
                         </LanguageLink>
                       </li>
                       <li>
-                        <LanguageLink to="/fdrs/data-download" className="btn px15 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                        <LanguageLink to="/fdrs/data-download" className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
                           <svg style={{width:"1rem",height:"1rem",marginTop:-1,marginRight:"1rem"}} width="24px" height="24px" viewBox="0 0 24 24">
                             <g transform="translate(0, 0)" className="stroke-current">
                               <line fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" x1="12" y1="9" x2="12" y2="22" strokeLinejoin="miter" strokeLinecap="butt"/>
@@ -217,13 +217,24 @@ class FDRSNavigation extends React.Component {
                 </Dropdown>
               </li>
               <li className="block relative sm-inline-block">
-                <LanguageLink to="/fdrs/faq" className="btn block py15 px05">
+                <LanguageLink to="/fdrs/faq" className="btn block py15">
                   <span className="inline-block px05">
-                    <svg style={{width:"1rem",height:"1rem",marginTop:-1}} width="24px" height="24px" viewBox="0 0 24 24">
+                    {/* <svg style={{width:"1rem",height:"1rem",marginTop:-1}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g transform="translate(0, 0)" className="stroke-current">
                         <rect x="1" y="1" fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="22" height="22" strokeLinejoin="miter"/>
                         <path fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M12,14v-1c1.6,0,3-1.4,3-3s-1.4-3-3-3c-1.2,0-2.3,0.9-2.8,1.9" strokeLinejoin="miter"/>
                         <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="12" y1="17" x2="12" y2="18" strokeLinejoin="miter"/>
+                      </g>
+                    </svg> */}
+                    <svg style={{width:"1.25rem",height:"1.25rem",marginTop:-2}} width="24px" height="24px" viewBox="0 0 24 24">
+                      <g transform="translate(0, 0)" className="stroke-current">
+                        <line fill="none" stroke="#343434" strokeWidth="1.8" strokeLinecap="square" strokeMiterlimit="10" x1="1" y1="12" x2="3" y2="12" strokeLinejoin="miter"/>
+                        <line fill="none" stroke="#343434" strokeWidth="1.8" strokeLinecap="square" strokeMiterlimit="10" x1="4.2" y1="4.2" x2="5.6" y2="5.6" strokeLinejoin="miter"/>
+                        <line fill="none" stroke="#343434" strokeWidth="1.8" strokeLinecap="square" strokeMiterlimit="10" x1="12" y1="1" x2="12" y2="3" strokeLinejoin="miter"/>
+                        <line fill="none" stroke="#343434" strokeWidth="1.8" strokeLinecap="square" strokeMiterlimit="10" x1="19.8" y1="4.2" x2="18.4" y2="5.6" strokeLinejoin="miter"/>
+                        <line fill="none" stroke="#343434" strokeWidth="1.8" strokeLinecap="square" strokeMiterlimit="10" x1="23" y1="12" x2="21" y2="12" strokeLinejoin="miter"/>
+                        <path fill="none" stroke="#343434" strokeWidth="1.8" strokeLinecap="square" strokeMiterlimit="10" d="M18,12c0-3.3-2.7-6-6-6s-6,2.7-6,6c0,2.6,1.7,4.8,4,5.7V20h4v-2.3C16.3,16.8,18,14.6,18,12z" strokeLinejoin="miter"/>
+                        <line fill="none" stroke="#343434" strokeWidth="1.8" strokeLinecap="square" strokeMiterlimit="10" x1="10" y1="23" x2="14" y2="23" strokeLinejoin="miter"/>
                       </g>
                     </svg>
                   </span>
@@ -232,7 +243,7 @@ class FDRSNavigation extends React.Component {
               </li>
               <li className="block relative sm-inline-block">
                 <Dropdown showDropdown={ this.state.showDropdown[1] }>
-                  <div className="btn block py15 px1 text-left bg-white z-index-1 sm-visible sm-block" style={{minWidth:105}} onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
+                  <div className="btn block py15 text-left bg-white z-index-1 sm-visible sm-block" style={{minWidth:94}} onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
                     <span className="inline-block px05">
                       { this.renderFlag(language) }
                     </span>
@@ -243,7 +254,7 @@ class FDRSNavigation extends React.Component {
                   <div className="relative sm-absolute t100 l0 bg-white text-left shadow-4" style={{width:"100%"}}>
                     <ul>
                       <li>
-                        <button onClick={() => this.goToLanguage("en")} className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
+                        <button onClick={() => this.goToLanguage("en")} className="btn px05 py1 text-left base-12" onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
                           <span className="inline-block px05">
                             { this.renderFlag("en") }
                           </span>
@@ -253,7 +264,7 @@ class FDRSNavigation extends React.Component {
                         </button>
                       </li>
                       <li>
-                        <button onClick={() => this.goToLanguage("fr")} className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
+                        <button onClick={() => this.goToLanguage("fr")} className="btn px05 py1 text-left base-12" onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
                           <span className="inline-block px05">
                             { this.renderFlag("fr") }
                           </span>
@@ -263,7 +274,7 @@ class FDRSNavigation extends React.Component {
                         </button>
                       </li>
                       <li>
-                        <button onClick={() => this.goToLanguage("es")} className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
+                        <button onClick={() => this.goToLanguage("es")} className="btn px05 py1 text-left base-12" onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
                           <span className="inline-block px05">
                             { this.renderFlag("es") }
                           </span>
@@ -273,7 +284,7 @@ class FDRSNavigation extends React.Component {
                         </button>
                       </li>
                       <li>
-                        <button onClick={() => this.goToLanguage("ar")} className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
+                        <button onClick={() => this.goToLanguage("ar")} className="btn px05 py1 text-left base-12" onFocus={() => this.showDropdown(1)} onBlur={() => this.hideDropdown(1)}>
                           <span className="inline-block px05">
                             { this.renderFlag("ar") }
                           </span>
