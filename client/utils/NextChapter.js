@@ -8,7 +8,7 @@ const NextChapter = ({ nextChapter }, { language }) =>
     <div className="col sm-6 sm-offset-6 px1">
       <p className="text-sm color-primary m0">{ nextChapter.heading }</p>
       <h2 className="text-md sm-text-lg mt0 light">
-        <LanguageLink to={ `/${nextChapter.slug}` }>
+        <LanguageLink to={ `/fdrs/report/${nextChapter.slug}` }>
           { nextChapter.title }
           {/* <Icon name="goto" width={ 30 } height={ 30 } /> */}
         </LanguageLink>

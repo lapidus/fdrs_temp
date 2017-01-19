@@ -116,8 +116,8 @@ class Card extends React.Component {
               }
             </div>
           }
-          <LanguageLink to={`/fdrs/overview?currentIndicator=${this.props.indicator}`} className={this.props.indicator ? "btn" : "btn opacity-0"}>
-            <span className="text-xs">{ "show on map" }</span>
+          <LanguageLink to={`/fdrs/overview/map?currentIndicator=${this.props.indicator}`} className={this.props.indicator ? "btn" : "btn opacity-0"}>
+
           </LanguageLink>
           <button
             className="btn btn--raised btn--circle bg-white absolute t0 r1 y-center-self"

@@ -23,9 +23,9 @@ class GeneratedIntroText extends React.Component {
     const earliestYear = earliestData.KPI_Year
 
     const admissionString = `${societyName} ${translationText[0]} ${admissionDate}.`
-    const volunteerString = latestTotal ? `${translationText[1]} ${latestYear}${translationText[2]} ${niceNum(latestTotal, 0, null, true)} ${translationText[3]}` : null
-    const comparisonString = earliestTotal ? ` (${translationText[4]} ${niceNum(earliestTotal, 0, null, true)} ${translationText[5]} ${earliestYear})` : null
-    const genderString = latestMale && latestFemale ? `${translationText[6]} ${Math.round(100 / latestTotal * latestMale)}% ${translationText[7]} ${Math.round(100 / latestTotal * latestFemale)}% ${translationText[8]}` : null
+    const volunteerString = latestTotal ? `${translationText[1]} ${latestYear}${translationText[2]} ${niceNum(latestTotal, 0, null, true)} ${translationText[3]}` : ""
+    const comparisonString = earliestTotal ? ` (${translationText[4]} ${niceNum(earliestTotal, 0, null, true)} ${translationText[5]} ${earliestYear})` : ""
+    const genderString = latestMale && latestFemale ? `${translationText[6]} ${Math.round(100 / latestTotal * latestMale)}% ${translationText[7]} ${Math.round(100 / latestTotal * latestFemale)}% ${translationText[8]}` : ""
 
     const part2 = volunteerString ? ` ${volunteerString}${comparisonString}${genderString}.` : ""
 
