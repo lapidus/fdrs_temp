@@ -902,7 +902,7 @@ class Society extends React.Component {
                                   </div>
                                   <div className="inline-block align-top sm-12 px1">
                                     <h1 className="text-base mt0 sm-my1">{ `${doc.document_type} - ${doc.year}` }</h1>
-                                    <a href={ 'http://data-staging.ifrc.org/downloads/' + doc.path } target="_blank" rel="noopener noreferrer" className="btn bg-light">
+                                    <a href={ 'http://data.ifrc.org/public/' + doc.path } target="_blank" rel="noopener noreferrer" className="btn bg-light">
                                       <span>
                                         <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                                           <g transform="translate(0, 0)" style={{stroke:"currentcolor"}}>
