@@ -4,51 +4,12 @@ import { translate } from "react-i18next"
 import LanguageLink from "./LanguageLink"
 import { connect } from "react-redux"
 import constructLanguageRoute from "../utils/constructLanguageRoute"
+import Dropdown from "./Dropdown"
 
 import {
   toggleNav,
   closeNav
 } from "../actions/appActions"
-
-class Dropdown extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      showDropdown: props.showDropdown
-    }
-
-    this.showDropdown = this.showDropdown.bind(this)
-    this.hideDropdown = this.hideDropdown.bind(this)
-  }
-  componentWillReceiveProps(nextProps) {
-    if(nextProps.showDropdown !== this.props.showDropdown) {
-      this.setState({ showDropdown: nextProps.showDropdown })
-    }
-  }
-  showDropdown() {
-    this.setState({ showDropdown: true })
-  }
-  hideDropdown() {
-    this.setState({ showDropdown: false })
-  }
-  render() {
-
-    const dropdownStyles = {
-      opacity: this.state.showDropdown || this.props.navOpen ? 1 : 0,
-      pointerEvents: this.state.showDropdown || this.props.navOpen ? "all" : "none",
-    }
-
-    return (
-      <span onMouseEnter={ this.showDropdown } onMouseLeave={ this.hideDropdown } onClick={ this.hideDropdown }>
-        { this.props.children[0] }
-        <span style={ dropdownStyles }>
-          { this.props.children[1] }
-        </span>
-      </span>
-    )
-  }
-}
 
 class FDRSNavigation extends React.Component {
   constructor(props) {
