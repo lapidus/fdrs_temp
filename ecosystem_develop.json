@@ -4,6 +4,8 @@
     {
       "name": "react_test_dev",
       "script": "build/server.js",
+      "exec_mode"         : "cluster",
+      "instances"         : 2,
       "env": {
         "COMMON_VARIABLE": "true"
       },
