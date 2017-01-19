@@ -125,8 +125,8 @@ class Map extends React.Component {
         {/* <h2>{ indicator.id } — { indicator.description }</h2> */}
         {
           this.state.loading ? (
-            <div>
-              <p className="text-center">{ "Loading map..." }</p>
+            <div className="absolute t25 base-12 text-center">
+              <span className="inline-block bg-secondary p1">{ "Loading map..." }</span>
             </div>
           ) : (
             null
@@ -134,7 +134,7 @@ class Map extends React.Component {
         }
         <div style={{opacity: this.state.loading ? 0 : 1, transform: `translateY(${this.state.loading ? '30px' : '0'})`, transition: "all 0.75s"}}>
           {
-            <svg width={800} height={480} viewBox="0 0 800 480">
+            <svg style={{width:"100%"}} width={800} height={480} viewBox="0 0 800 480">
               {
                 !this.state.loading ? (
                   <Countries countries={this.state.countries} projection={this.projection} />
@@ -199,8 +199,8 @@ class Map extends React.Component {
 }
 
 Map.defaultProps = {
-  bubbleMouseEnter: null,
-  bubbleMouseLeave: null,
+  // bubbleMouseEnter: null,
+  // bubbleMouseLeave: null,
   bubbleClick: null,
 }
 

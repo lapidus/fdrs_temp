@@ -22,6 +22,11 @@ import {
 } from "../../actions/appActions"
 
 class Overview extends React.Component {
+  shouldComponentUpdate(nextProps) {
+    const didIndicatorChange = nextProps.currentIndicator !== this.props.currentIndicator
+    const didRouteChange = this.props.children.props.location.pathname !== nextProps.children.props.location.pathname
+    return didIndicatorChange || didRouteChange
+  }
   render() {
 
     const { i18n, router } = this.context
@@ -37,12 +42,12 @@ class Overview extends React.Component {
           { name: pageData.navigation[0].dropdownItems[0], path: undefined },
         ]}/>
 
-        <div className="clearfix bg-secondary px1">
+        <div className="clearfix bg-light px1">
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/fdrs/overview/map" className="block bg-white p1">
-                  <span>
+                <Link to="/fdrs/overview/map" className="btn block p1 bg-white link-no-underline text-left">
+                  <span className="inline-block">
                     <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g transform="translate(0, 0)">
                         <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M5.7,3C6.4,3.5,7,4.1,7.5,5C7.9,5.7,8.9,7.8,8,9c-1,1.3-4,1.8-4,3c0,0.9,1.3,2,2,3c1,1.5,0.6,3,0,4c-0.3,0.5-0.8,0.9-1.3,1.2" strokeLinejoin="miter" strokeLinecap="butt"/>
@@ -52,14 +57,14 @@ class Overview extends React.Component {
                       </g>
                     </svg>
                   </span>
-                  <span className="xs-visible">
+                  <span className="inline-block xs-visible">
                     { t("overview:tabs")[0][0] }&nbsp;
                   </span>
                   { t("overview:tabs")[0][1] }
                 </Link>
               </li>
               <li className="inline-block">
-                <Link to="/fdrs/societies" className="block p1">
+                <Link to="/fdrs/societies" className="btn block p1 link-no-underline text-left">
                   <span>
                     <svg style={{width:16,height:16,marginTop:-3,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g  transform="translate(0, 0)">
@@ -82,11 +87,11 @@ class Overview extends React.Component {
 
         <div className="px1">
           <div className="clearfix mxn1">
-            <header className="col sm-9 sm-offset-2 px1 pt1">
+            <header className="col sm-10 sm-offset-1 md-8 md-offset-3 px1 py1">
 
-                <h1 className="color-primary strong m0 small">
-                  { t("overview:title") }
-                </h1>
+              <h1 className="color-primary strong m0 text-base">
+                { t("overview:title") }
+              </h1>
               <div className="relative">
                 {/* <span className="display-1 md-display-2 m0 light">{ pageData.indicators[this.props.currentIndicator] }</span> */}
                 <div className="sm-9 select-xl select-no-underline select-no-scroll">
@@ -98,7 +103,7 @@ class Overview extends React.Component {
                     multi={ false }
                     name="ns-selector"
                     valueRenderer={(option) => {
-                      return <span className="headline sm-display-1 md-display-2 light">{ pageData.indicators[option.value] }</span>
+                      return <span className="text-md sm-text-lg md-text-xl light">{ pageData.indicators[option.value] }</span>
                     }}
                     options={Object.keys(pageData.indicators).map(indicatorKey => {
                       return {
@@ -106,6 +111,9 @@ class Overview extends React.Component {
                         label: pageData.indicators[indicatorKey],
                       }
                     })}
+                    optionRenderer={(option) => {
+                      return <span className="text-base md-text-sm">{ pageData.indicators[option.value] }</span>
+                    }}
                     onChange={(indicator) => this.props.setIndicator(indicator.value)}
                   />
                 </div>
@@ -115,7 +123,7 @@ class Overview extends React.Component {
                     <span className="absolute b0 l0 base-12 bg-primary" style={{height:4}}></span>
                   </Link>
                   <Link to="/fdrs/overview/table" className="relative btn">
-                    <span className="small strong caps">{ "Table" }</span>
+                    <span className="small strong caps color-secondary">{ "Table" }</span>
                     <span className="absolute b0 l0 base-12 bg-secondary" style={{height:4}}></span>
                   </Link>
                 </div>
@@ -124,9 +132,11 @@ class Overview extends React.Component {
           </div>
         </div>
 
+        <hr className="mb2"/>
+
         { this.props.children }
 
-        <div className="bg-secondary px1">
+        <div className="bg-light px1 py05">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
               { pageData.updateText }
@@ -134,8 +144,13 @@ class Overview extends React.Component {
           </div>
         </div>
 
-        <div className="px1 py4 bg-beige">
-          <div className="clearfix mxn1">
+        <div className="px1 bg-beige" style={{
+            backgroundImage: "url(/img/profiles-preview.png)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "50% auto",
+            backgroundPosition: "center left",
+          }}>
+          <div className="clearfix mxn1 py4">
             <div className="col sm-4 sm-offset-6 px1">
               <p className="caps small strong">
                 { pageData.nationalSocietiesPreview.subtitle }
@@ -155,8 +170,13 @@ class Overview extends React.Component {
           </div>
         </div>
 
-        <div className="px1 py4 bg-secondary">
-          <div className="clearfix mxn1">
+        <div className="px1 bg-light" style={{
+              backgroundImage:"url(/img/worldmap.jpeg)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}>
+          <div className="clearfix mxn1 py6" style={{ background: "rgba(255,255,255,0.5)" }}>
             <div className="col sm-10 sm-offset-1 px1">
               <h2 className="headline sm-display-1 light mt0">
                 { pageData.dataCollectors.title }

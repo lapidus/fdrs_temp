@@ -10,6 +10,7 @@ import prefixLanguageToRoute from "../utils/prefixLanguageToRoute"
 import { toggleNav } from "../actions/appActions"
 import Icon from "../components/Icon"
 import Loader from "../components/Loader"
+import FDRSNavigation from "../components/FDRSNavigation"
 
 // import Tooltip from "../components/Tooltip"
 import { Tooltip } from 'redux-tooltip';
@@ -22,7 +23,6 @@ const languageOptions = [
   { value: "es", label: "ES" },
   { value: "ar", label: "AR" }
 ]
-
 
 class Dropdown extends React.Component {
   constructor(props) {
@@ -59,6 +59,11 @@ class Dropdown extends React.Component {
   }
 }
 
+// class BasicNavigation extends React.Component {
+//   render() {
+//   }
+// }
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -92,7 +97,9 @@ class App extends React.Component {
       >
         <Loader />
 
-        <header className='relative shadow-4 px1 z-index-1000 bg-white hidden-print' style={{height:68}}>
+        <FDRSNavigation toggleNav={this.props.toggleNav} navOpen={this.props.navOpen}/>
+
+        {/* <header className='relative shadow-4 px1 z-index-max bg-white hidden-print' style={{height:68}}>
           <div className='clearfix mxn1'>
             {
               router.location.pathname !== "/" && router.location.pathname !== prefixedRootRoute ? (
@@ -292,7 +299,7 @@ class App extends React.Component {
               )
             }
           </div>
-        </header>
+        </header> */}
 
         <div className={ "main-content-wrapper light" }>
           <div>

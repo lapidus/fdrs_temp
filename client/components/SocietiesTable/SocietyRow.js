@@ -55,7 +55,7 @@ class Trendline extends React.Component {
         <div className="absolute t0 r0 small">
           { niceNum(dataPoints[dataPoints.length - 1].y) }
         </div>
-        <svg width="450" height="110" viewBox="0 0 450 110">
+        <svg style={{ width:"100%" }} width="450" height="110" viewBox="0 0 450 110">
           <VictoryLine
             standalone={false}
             height={110}
@@ -99,6 +99,10 @@ class SocietyRow extends React.Component {
   constructor(props) {
     super(props)
   }
+  shouldComponentUpdate(nextProps) {
+    const didIndicatorChange = nextProps.indicator && this.props.indicator ? nextProps.indicator.id !== this.props.indicator.id : false
+    return didIndicatorChange || Boolean(this.props.forceUpdate)
+  }
   render() {
 
     const {
@@ -111,12 +115,12 @@ class SocietyRow extends React.Component {
 
     return (
       <tr>
-        <td className="p1 base-4 sm-4">
+        <td className="px1 py05 base-4">
           <Link to={`/fdrs/societies/${nationalSociety.slug}`} className="color-primary">
             { nationalSociety.NSO_DON_name }
           </Link>
         </td>
-        <td className="py05 px1 base-4 sm-4">
+        <td className="py05 px1 base-4">
           <Trendline
             nationalSociety={nationalSociety}
             groupedTimeSeries={groupedTimeSeries}
@@ -124,7 +128,7 @@ class SocietyRow extends React.Component {
             currentIndicator={currentIndicator}
           />
         </td>
-        <td className="p0 base-4 sm-4">
+        <td className="px1 py05 base-4">
           <div className="p1 relative">
             <span>{ niceNum(nationalSociety.value, 0, null, true) }</span>
             {

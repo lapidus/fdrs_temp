@@ -94,9 +94,9 @@ class Report extends React.Component {
         ]}/> */}
 
         <div className="sm-visible">
-          <div className="clearfix bg-secondary px1">
+          <div className="clearfix bg-light px1">
             <div className="col sm-8 sm-offset-0 md-offset-2">
-              <ul className="m0 py1 px0 small strong">
+              <ul className="m0 py05 px0 text-base">
                 <li className="inline-block mr1">
                   <Link to="/fdrs">
                     {"Home"}
@@ -137,7 +137,6 @@ class Report extends React.Component {
             </div>
           </div>
         </div>
-
 
         <div className={ navOpen ? "main-content-wrapper removed" : "main-content-wrapper" }>
           <div style={{minHeight:"100vh"}}>

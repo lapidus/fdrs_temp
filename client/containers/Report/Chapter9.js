@@ -43,16 +43,16 @@ class Chapter9 extends React.Component {
           </div>
         </div> */}
 
-        <div className="clearfix bg-primary pt1">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-            <h2 className="display-2">{chapter.title}</h2>
-            <p className="title">{chapter.subtitle}</p>
+        <div className="clearfix bg-primary">
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
+            <p className="text-base m0">{chapter.title}</p>
+            <h2 className="text-md sm-text-lg md-text-xl light m0 lh-small">{chapter.subtitle}</h2>
           </div>
         </div>
 
         <div className="clearfix bg-dark chapter-banner" style={{backgroundImage:"url(/img/chapters/chapter-9.jpg)",backgroundRepeat:"no-repeat",backgroundPosition:"center 50%", backgroundSize:"cover"}}>
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-            <p className="lead">{chapter.intro}</p>
+          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
+            <p className="text-base sm-text-sm md-text-md">{chapter.intro}</p>
             <hr />
           </div>
         </div>
@@ -76,8 +76,8 @@ class Chapter9 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section1">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section1.title}</h3>
+              <p className="text-sm color-primary m0">{chapter.title}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{section1.title}</h3>
               <HeadlineDivider />
               <p>{section1.blocks[0]}</p>
             </div>
@@ -98,8 +98,8 @@ class Chapter9 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section2">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section2.title}</h3>
+              <p className="text-sm color-primary m0">{chapter.title}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{section2.title}</h3>
               <HeadlineDivider />
               <p>{section2.blocks[0]}</p>
               <p>{section2.blocks[1]}</p>
@@ -117,8 +117,8 @@ class Chapter9 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section3">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section3.title}</h3>
+              <p className="text-sm color-primary m0">{chapter.title}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{section3.title}</h3>
               <HeadlineDivider />
               <p>{section3.blocks[0]}</p>
             </div>
@@ -206,8 +206,8 @@ class Chapter9 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section4">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section4.title}</h3>
+              <p className="text-sm color-primary m0">{chapter.title}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{section4.title}</h3>
               <HeadlineDivider />
               <p>{section4.blocks[0]}</p>
             </div>
@@ -225,8 +225,8 @@ class Chapter9 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section5">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section5.title}</h3>
+              <p className="text-sm color-primary m0">{chapter.title}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{section5.title}</h3>
               <HeadlineDivider />
               <p>{section5.blocks[0]}</p>
             </div>
@@ -345,8 +345,8 @@ class Chapter9 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section6">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section6.title}</h3>
+              <p className="text-sm color-primary m0">{chapter.title}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{section6.title}</h3>
               <HeadlineDivider />
               <p>{section6.blocks[0]}</p>
             </div>

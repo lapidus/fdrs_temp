@@ -126,7 +126,7 @@ class SideNavigation extends React.Component {
   }
   render() {
     return (
-      <div className='side-navigation sm-7 sm-offset-3 md-3 md-offset-0 lg-2 px1 py2' ref='sticker' style={{position:this.state.isSticky ? 'fixed' : 'absolute', top: this.state.top, bottom: this.state.bottom }}>
+      <div className='side-navigation sm-7 sm-offset-3 md-3 md-offset-0 lg-2 px1 py2 md-visible' ref='sticker' style={{position:this.state.isSticky ? 'fixed' : 'absolute', top: this.state.top, bottom: this.state.bottom }}>
         <h4 className='title strong'>{this.props.title}</h4>
         <ul style={{fontSize:'1rem'}}>
           {this.props.sections.map((section, i) => {

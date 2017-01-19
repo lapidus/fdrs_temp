@@ -1,5 +1,6 @@
 
 import React from "react"
+import { Origin } from "redux-tooltip"
 // import Datamap from "datamaps"
 import {
   // select,
@@ -11,6 +12,8 @@ import {
   geoOrthographic
 } from "d3-geo";
 import topojson from "topojson-client"
+
+const SVGOrigin = Origin.wrapBy("g")
 
 class Globe extends React.Component {
   constructor(props) {
@@ -54,18 +57,22 @@ class Globe extends React.Component {
         {
           this.state.loading ? (
             <div className="absolute t0 l0 r0 b0 base-12 overflow-hidden">
-              <p className="relative text-center t50">{ "Loading map..." }</p>
+              <div className="relative text-center t33">
+                <div className="inline-block bg-secondary p1">{ "Loading globe..." }</div>
+              </div>
             </div>
           ) : null
         }
         <div className="absolute t0 l0 r0 b0 overflow-hidden" style={{opacity: this.state.loading ? 0 : 1, transform: this.state.loading ? "rotate(10deg)" : "rotate(0)", transition: "all 1s"}}>
         {
           !this.state.loading ? (
-            <svg width={200} height={200} viewBox="0 0 200 200">
+            <svg style={{width:"100%"}} width={200} height={200} viewBox="0 0 200 200">
               {this.state.countries.map((country, i) => (
                 <path key={ i } d={geoPath().projection(this.projection())(country)} style={{fill: "#EFEBE9"}} />
               ))}
-              <circle cx={100} cy={100} r={8} style={{fill: "rgba(208,2,27,0.8)", stroke: "#fff", strokeWidth: "2px"}} />
+              <SVGOrigin content={ this.props.selectedCountryName }>
+                <circle cx={100} cy={100} r={8} style={{fill: "rgba(208,2,27,0.8)", stroke: "#fff", strokeWidth: "2px"}} />
+              </SVGOrigin>
             </svg>
           ) : null
         }

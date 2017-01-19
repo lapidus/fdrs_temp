@@ -67,49 +67,53 @@ class Chapter1 extends React.Component {
 
         <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-            <p className="caps small strong m0">{ "Everyone counts" }</p>
-            <h2 className="display-2 light m0">{chapter.title}</h2>
+            <p className="text-base m0">{ "Everyone counts" }</p>
+            <h2 className="text-md sm-text-lg md-text-xl light m0 lh-small">{chapter.title}</h2>
           </div>
         </div>
 
         <div
-          className="clearfix bg-dark overflow-hidden"
-          style={{
-            backgroundImage: "url(/img/chapters/chapter-1.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center 20%",
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
-          }}
-        >
+            className="clearfix bg-dark overflow-hidden"
+            style={{
+              backgroundImage: "url(/img/chapters/chapter-1.jpg)",
+              backgroundSize: "cover",
+              backgroundPosition: "center 20%",
+              backgroundRepeat: "no-repeat",
+              backgroundAttachment: "fixed",
+            }}
+          >
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
-            <p className="lead">{chapter.intro}</p>
+            <p className="text-base sm-text-sm md-text-md">{ chapter.intro }</p>
             <hr />
           </div>
         </div>
 
-        <div className="clearfix body-text" style={{ position: "relative" }}>
-          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section0","scroll-target-section1"]}/>
+        <div className="relative clearfix body-text">
+          <SideNavigation title={ chapter.title } sections={ chapter.sections } sectionReferences={["scroll-target-section0","scroll-target-section1"]}/>
 
           <div className="clearfix" id="scroll-target-section0">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section0.title}</h3>
+              <p className="text-sm color-primary m0">{ chapter.title }</p>
+              <h3 className="text-md sm-text-lg mt0 light">{ section0.title }</h3>
               <HeadlineDivider />
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-              <p>{section0.blocks[0]}</p>
+              <p>{ section0.blocks[0] }</p>
             </div>
           </div>
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-              <ul>
+              <ul className="py05">
                 {section0.blocks[1].map((item, i) => {
-                  return <li key={i}>{item}</li>
+                  return (
+                    <li key={ i } className="pl1 py05">
+                      { item }
+                    </li>
+                  )
                 })}
               </ul>
             </div>
@@ -168,8 +172,8 @@ class Chapter1 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section1">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section1.title}</h3>
+              <p className="text-sm color-primary m0">{chapter.title}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{section1.title}</h3>
 
               <HeadlineDivider />
               <p>{section1.blocks[0]}</p>
@@ -193,11 +197,11 @@ class Chapter1 extends React.Component {
           </div>
 
           <div className="clearfix">
-            <div className="col px1 xs-6 sm-px0 sm-4 sm-offset-2 md-4 md-offset-3 lg-3 lg-offset-3 sm-pr1">
+            <div className="col px1 xs-6 sm-px0 sm-4 sm-offset-2 md-4 md-offset-3 lg-3 lg-offset-3 pt1">
               <p>{section1.blocks[3]}</p>
             </div>
-            <div className="col px1 xs-6 sm-px0 sm-4 md-4 lg-3">
-              <h4 className="title strong mb0">{section1.blocks[4].title}</h4>
+            <div className="col px1 xs-6 sm-4 md-4 lg-3 pt1">
+              <h4 className="title strong m0">{section1.blocks[4].title}</h4>
               <svg width="100%" height="360px" viewBox="0 0 360 360">
                 <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g fontFamily="Roboto-Bold, Roboto">

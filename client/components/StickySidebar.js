@@ -102,7 +102,7 @@ class StickySidebar extends React.Component {
         >
         <div
           ref={(stickyElement) => { this.stickyElement = stickyElement; }}
-          className={`${this.props.className} ${this.state.bottomStick ? "pb2 b0" : "pb2 t1"}`}
+          className={`${this.props.className} ${this.state.bottomStick ? "pb2 b0 shadow-3" : "pb2 t0 shadow-3"}`}
           style={stickyStyles}
           >
           {this.props.children}

@@ -43,19 +43,19 @@ class Chapter4 extends React.Component {
 
         <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-            <h2 className="display-2 light m0">{t("report-strategic-aim-1:title")}</h2>
-            <p className="m0 title">{t("report-strategic-aim-1:subtitle")}</p>
+            <p className="text-base m0">{t("report-strategic-aim-1:title")}</p>
+            <h2 className="text-md sm-text-lg md-text-xl light m0 lh-small">{t("report-strategic-aim-1:subtitle")}</h2>
           </div>
         </div>
 
         <div className="clearfix bg-dark overflow-hidden" style={{backgroundImage:"url(/img/chapters/chapter-4.jpg)",backgroundSize: "cover",backgroundPosition:"center 50%",backgroundRepeat: "no-repeat", backgroundAttachment: "fixed"}}>
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
-            <p className="lead">{t("report-strategic-aim-1:intro")}</p>
+            <p className="text-base sm-text-sm md-text-md">{t("report-strategic-aim-1:intro")}</p>
             <hr />
           </div>
         </div>
 
-        <div className="clearfix body-text" style={{ position:"relative" }}>
+        <div className="relative clearfix body-text">
 
           <SideNavigation
             title={ t("report-strategic-aim-1:title") }
@@ -81,7 +81,7 @@ class Chapter4 extends React.Component {
                 height={300}
                 padding={{
                   top: 30,
-                  bottom: 40,
+                  bottom: 50,
                   left: 60,
                   right: 60
                 }}
@@ -102,18 +102,20 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section0">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("report-strategic-aim-1:sections.0.title")}</h3>
+              <p className="text-sm color-primary m0">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{t("report-strategic-aim-1:sections.0.title")}</h3>
               <HeadlineDivider />
               <p>{t("report-strategic-aim-1:sections.0.blocks.0")}</p>
             </div>
           </div>
 
           <div className="clearfix">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-3 md-offset-3 lg-3 lg-offset-3 sm-pr1">
-              <p>{t("report-strategic-aim-1:sections.0.blocks.1")}</p>
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
+              <p>
+                { t("report-strategic-aim-1:sections.0.blocks.1") }
+              </p>
             </div>
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-0 lg-3">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
 
               <StackedBarChart
                 title={t("report-strategic-aim-1:sections.0.blocks.2.title")}
@@ -174,17 +176,19 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section1">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("report-strategic-aim-1:sections.1.title")}</h3>
+              <p className="text-sm color-primary m0">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{t("report-strategic-aim-1:sections.1.title")}</h3>
               <HeadlineDivider />
               <p>{t("report-strategic-aim-1:sections.1.blocks.0")}</p>
               <div>
                 <h4 className="title strong">{t("report-strategic-aim-1:sections.1.blocks.1.title")}</h4>
                 <table>
-                  <thead>
-                    <tr className="small">
+                  <thead className="bg-secondary">
+                    <tr className="text-xs text-left">
                       {section1.blocks[1].headers.map((item, i) => {
-                        return (<th key={ i }>{item}</th>)
+                        return (
+                          <th key={ i } className="p05 lh-small">{item}</th>
+                        )
                       })}
                     </tr>
                   </thead>
@@ -192,11 +196,11 @@ class Chapter4 extends React.Component {
                     {section1.blocks[1].dataset.map((item, i) => {
                       return (
                         <tr key={ i }>
-                          <td>{item.year}</td>
-                          <td>{item.appealsLaunched}</td>
-                          <td>{item.amount}</td>
-                          <td>{item.beneficiaries}</td>
-                          <td className="small">{item.crisis}</td>
+                          <td className="p05">{item.year}</td>
+                          <td className="p05">{item.appealsLaunched}</td>
+                          <td className="p05">{item.amount}</td>
+                          <td className="p05">{item.beneficiaries}</td>
+                          <td className="p05 text-xs">{item.crisis}</td>
                         </tr>
                       )
                     })}
@@ -209,27 +213,27 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section2">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("report-strategic-aim-1:sections.2.title")}</h3>
+              <p className="text-sm color-primary m0">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{t("report-strategic-aim-1:sections.2.title")}</h3>
               <HeadlineDivider />
               <p>{t("report-strategic-aim-1:sections.2.blocks.0")}</p>
             </div>
 
             <div className="clearfix">
               <div className="col px1 sm-px0 sm-6 md-4 md-offset-3 lg-4 lg-offset-2">
-                <div className="col sm-8 sm-offset-4 md-11 md-offset-0 lg-9 lg-offset-3 sm-pr1">
+                <div className="col sm-8 sm-offset-4 md-11 md-offset-0 lg-9 lg-offset-3">
                   <p>{t("report-strategic-aim-1:sections.2.blocks.1")}</p>
                 </div>
-                <div className="col sm-8 sm-offset-4 md-11 md-offset-0 lg-9 lg-offset-3 sm-pr1">
+                <div className="col sm-8 sm-offset-4 md-11 md-offset-0 lg-9 lg-offset-3">
                   <p>{t("report-strategic-aim-1:sections.2.blocks.2")}</p>
                 </div>
               </div>
-              <div className="col px1 sm-px0 sm-5 md-4 md-offset-0 lg-4">
+              <div className="col px1 sm-5 md-4 md-offset-0 lg-4">
                 <h4 className="title strong">{t("report-strategic-aim-1:sections.2.blocks.3.title")}</h4>
 
                 <Tabs active={0}>
                   <TabPanel title={t("report-strategic-aim-1:sections.2.blocks.3.tabs.0.name")}>
-                    <table>
+                    <table className="base-12">
                       <thead>
                         <tr>
                           {section2.blocks[3].tabs[0].headers.map((item, i) => {
@@ -250,7 +254,7 @@ class Chapter4 extends React.Component {
                     </table>
                   </TabPanel>
                   <TabPanel title={t("report-strategic-aim-1:sections.2.blocks.3.tabs.1.name")}>
-                    <table>
+                    <table className="base-12">
                       <thead>
                         <tr>
                           {section2.blocks[3].tabs[1].headers.map((item, i) => {
@@ -279,8 +283,8 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section3">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("report-strategic-aim-1:sections.3.title")}</h3>
+              <p className="text-sm color-primary m0">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{t("report-strategic-aim-1:sections.3.title")}</h3>
               <HeadlineDivider />
               <p>{t("report-strategic-aim-1:sections.3.blocks.0")}</p>
               <DonutChart
@@ -295,8 +299,8 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section4">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("report-strategic-aim-1:sections.4.title")}</h3>
+              <p className="text-sm color-primary m0">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{t("report-strategic-aim-1:sections.4.title")}</h3>
               <HeadlineDivider />
               <p>{t("report-strategic-aim-1:sections.4.blocks.0")}</p>
             </div>
@@ -338,8 +342,8 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section5">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("report-strategic-aim-1:sections.5.title")}</h3>
+              <p className="text-sm color-primary m0">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{t("report-strategic-aim-1:sections.5.title")}</h3>
               <HeadlineDivider />
               <p>{t("report-strategic-aim-1:sections.5.blocks.0")}</p>
             </div>
@@ -516,8 +520,8 @@ class Chapter4 extends React.Component {
 
           <div className="clearfix" id="scroll-target-section6">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{t("report-strategic-aim-1:title")}</p>
-              <h3 className="headline">{t("report-strategic-aim-1:sections.6.title")}</h3>
+              <p className="text-sm color-primary m0">{t("report-strategic-aim-1:title")}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{t("report-strategic-aim-1:sections.6.title")}</h3>
               <HeadlineDivider />
               <p>{t("report-strategic-aim-1:sections.6.blocks.0")}</p>
               <SimpleBarChart

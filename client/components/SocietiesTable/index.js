@@ -67,10 +67,11 @@ class SocietiesTable extends React.Component {
   }
 
   shouldComponentUpdate(nextProps) {
-    const yearDidNotChange = this.props.currentYear === nextProps.currentYear
-    const indicatorDidNotChange = this.props.currentIndicator.id === nextProps.currentIndicator.id
-    const selectedSocietiesDidNotChange = this.props.selectedSocieties.length === nextProps.selectedSocieties.length
-    return !(yearDidNotChange && indicatorDidNotChange && selectedSocietiesDidNotChange)
+    const didYearChange = nextProps.currentYear !== this.props.currentYear
+    const didIndicatorChange = nextProps.currentIndicator.id !== this.props.currentIndicator.id
+    const didSelectionChange = nextProps.selectedSocieties.length !== this.props.selectedSocieties.length
+
+    return didYearChange || didIndicatorChange || didSelectionChange
   }
 
   componentWillReceiveProps(nextProps) {
@@ -104,7 +105,11 @@ class SocietiesTable extends React.Component {
     return (
       <div>
 
-        <hr />
+        <SocietiesTableHeader
+          currentYear={this.props.currentYear}
+          sortDataset={this.sortDataset}
+          sortParams={this.state.sortParams}
+        />
 
         <div className="mb2 px1">
           <Select
@@ -121,25 +126,14 @@ class SocietiesTable extends React.Component {
               }
             })}
             onChange={(society) => {
-              this.props.selectSociety(society.value)
-              this.props.handleNSSelect
+              const societyAlreadySelected = this.props.selectedSocieties.indexOf(society.value) !== -1
+              if(societyAlreadySelected) return
+              else this.props.selectSociety(society.value)
+              // this.props.handleNSSelect
             }}
           />
 
-          <div>
-            {
-              this.props.selectedSocieties.map((s,i) => {
-                <span className="px1" key={ i }>{ s }</span>
-              })
-            }
-          </div>
         </div>
-
-        <SocietiesTableHeader
-          currentYear={this.props.currentYear}
-          sortDataset={this.sortDataset}
-          sortParams={this.state.sortParams}
-        />
 
         <SelectedSocieties
           currentYear={this.props.currentYear}

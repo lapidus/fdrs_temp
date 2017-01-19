@@ -36,16 +36,16 @@ class AllSocieties extends React.Component {
           )
         }
 
-        <table className="base-12 text-left shadow-2">
+        <table className="base-12 text-left shadow-3">
           <tbody>
             <tr>
-              <td className="p1 base-4 sm-4">{ "IFRC (all National Societies)" }</td>
-              <td className="p1 base-4 sm-4">{ "Trendline" }</td>
-              <td className="p1 base-4 sm-4">{ niceNum(sum, 0, null, true) }</td>
+              <td className="p1 base-4">{ "IFRC (all National Societies)" }</td>
+              <td className="p1 base-4">{ "Trendline" }</td>
+              <td className="p1 base-4">{ niceNum(sum, 0, null, true) }</td>
             </tr>
             {
               currentDataset.map((NS, i) => {
-                return societiesBlacklist.indexOf(NS.KPI_DON_Code) == -1 ? (
+                return selectedSocieties.indexOf(NS.KPI_DON_Code) == -1 ? (
                   <SocietyRow
                     nationalSociety={ NS }
                     nationalSocieties={ nationalSocieties }

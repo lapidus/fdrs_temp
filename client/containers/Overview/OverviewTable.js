@@ -22,6 +22,10 @@ import {
 } from "../../actions/appActions"
 
 class OverviewTable extends React.Component {
+  shouldComponentUpdate(nextProps) {
+    const didIndicatorChange = nextProps.currentIndicator !== this.props.currentIndicator
+    return didIndicatorChange
+  }
   render() {
 
     const { t } = this.props
@@ -29,7 +33,7 @@ class OverviewTable extends React.Component {
     return (
       <div className="px1">
         <div className="relative clearfix mxn1">
-          <div className="col sm-9 sm-offset-2 px1 pt1">
+          <div className="col sm-10 sm-offset-1 px1 pt1">
             <SocietiesTable
               filterPlaceholder={ t("overview:filterPlaceholder") }
               currentYear={ this.props.currentYear }

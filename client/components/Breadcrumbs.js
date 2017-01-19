@@ -7,9 +7,9 @@ class Breadcrumbs extends React.Component {
   render() {
     return (
       <div className="sm-visible">
-        <div className="clearfix bg-secondary px1">
+        <div className="clearfix bg-light px1">
           <div className="col sm-8 sm-offset-0 md-offset-2">
-            <ul className="m0 py1 px0 small strong">
+            <ul className="m0 py05 px0 text-base">
               {
                 this.props.links.map((item, i) => (
                   <li className="inline-block mr1" key={ i }>

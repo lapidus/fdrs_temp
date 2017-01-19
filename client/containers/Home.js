@@ -4,10 +4,6 @@ import Slant from '../components/Slant'
 import { Link } from 'react-router'
 
 class Home extends React.Component {
-  // render() {
-  //   const { t } = this.props
-  //   return <div className="py4 pl2">{ t("report-common:site-title") }</div>
-  // }
   render() {
 
     const { t } = this.props
@@ -92,11 +88,11 @@ class Home extends React.Component {
         <header className='block relative px1 py4'>
           <div className='clearfix mxn1'>
             <div className='col sm-8 sm-offset-1 md-6 md-offset-1 lg-6 px1'>
-              <h1 className='display-1 sm-display-2 md-display-3 light'>
+              <h1 className='text-lg sm-text-xl md-text-xxl lh-small light'>
                 <span className="color-primary">{ t("home:intro.titleParts")[0] }&nbsp;</span>
                 { t("home:intro.titleParts")[1] }
               </h1>
-              <p className='lead md-headline pr4'>
+              <p className='text-sm md-text-md pr4'>
                 { t("home:intro.lead") }
               </p>
             </div>
@@ -132,10 +128,8 @@ class Home extends React.Component {
                         <p>
                           { serviceItem.description }
                         </p>
-                        <Link to={`/fdrs/${serviceItem.slug}`}>
-                          <span className="strong inline-block py05" style={{borderBottom:"3px solid currentcolor"}}>
-                            { serviceItem.button }
-                          </span>
+                        <Link to={`/fdrs/${serviceItem.slug}`} className="strong inline-block py05 link-underlined">
+                          { serviceItem.button }
                         </Link>
                       </div>
                     )
@@ -169,10 +163,8 @@ class Home extends React.Component {
                   <p>
                     { t("home:insights.description") }
                   </p>
-                  <Link to="/fdrs">
-                    <span className="strong inline-block py05" style={{borderBottom:"3px solid currentcolor"}}>
-                      { t("home:insights.button") }
-                    </span>
+                  <Link to="/fdrs" className="strong inline-block py05 link-underlined">
+                    { t("home:insights.button") }
                   </Link>
                 </div>
               </div>
@@ -180,7 +172,7 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className='px1 bg-secondary'
+        <div className='px1 bg-light'
              style={{
                backgroundImage:"url(/img/worldmap.jpeg)",
                backgroundRepeat: "no-repeat",

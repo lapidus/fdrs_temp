@@ -95,8 +95,33 @@ class Card extends React.Component {
           }
         </div>
         <footer className="relative pt2 pb05 px1" style={{opacity: this.props.controlsVisible ? 1 : 0, pointerEvents: this.props.controlsVisible ? "all" : "none"}}>
+          {
+            !basicCard &&
+            <div className="t0 l1 y-center-self absolute btn-group btn-group--raised">
+              {
+                children.map((child, i) =>
+                  child.props.componentIdentifier === "CardView" &&
+                  <button
+                    key={ i }
+                    onClick={ () => this.switchView(i) }
+                    className={ cardView === i ? "btn bg-primary stroke-white" : "btn bg-white" }
+                  >
+                    {
+                      child.props.viewIcon ?
+                      viewIcons[child.props.viewIcon] :
+                      <span className="px05">{ i }</span>
+                    }
+                  </button>
+                )
+              }
+            </div>
+          }
+          <Link to={`/fdrs/overview?currentIndicator=${this.props.indicator}`} className={this.props.indicator ? "btn" : "btn opacity-0"}>
+            <span className="text-xs">{ "show on map" }</span>
+          </Link>
           <button
             className="btn btn--raised btn--circle bg-white absolute t0 r1 y-center-self"
+            style={{width:48,height:48}}
             onClick={ this.handleOverlayToggle }
           >
             <svg width="2rem" height="2rem" viewBox="0 0 36 36">
@@ -113,30 +138,6 @@ class Card extends React.Component {
               </g>
             </svg>
           </button>
-          {
-            !basicCard &&
-            <div className="t0 l1 y-center-self absolute btn-group btn-group--raised">
-              {
-                children.map((child, i) =>
-                  child.props.componentIdentifier === "CardView" &&
-                  <button
-                    key={ i }
-                    onClick={ () => this.switchView(i) }
-                    className={ cardView === i ? "btn bg-primary" : "btn bg-white" }
-                  >
-                    {
-                      child.props.viewIcon ?
-                      viewIcons[child.props.viewIcon] :
-                      <span className="px05">{ i }</span>
-                    }
-                  </button>
-                )
-              }
-            </div>
-          }
-          <Link to={`/fdrs/overview?currentIndicator=${this.props.indicator}`} className={this.props.indicator ? "btn" : "btn opacity-0"}>
-            <span className="small">{ "show on map" }</span>
-          </Link>
         </footer>
         {
           children.map((child, i) =>
@@ -145,14 +146,21 @@ class Card extends React.Component {
               key={ i }
               className={ `card__overlay bg-white color-regular ${overlay && "card__overlay--active"}` }
             >
-              <div>
+              <div className="pt2">
                 { child.props.children }
               </div>
               <button
                 onClick={ this.handleOverlayToggle }
-                className="btn bg-primary"
+                className="absolute btn"
+                style={{top:"1rem",right:"1rem"}}
+                tabIndex={overlay ? "0" : "-1"}
               >
-                { "close" }
+                <svg style={{width:16,stroke:"currentcolor"}} width="24px" height="24px" viewBox="0 0 24 24">
+                  <g  transform="translate(0, 0)">
+                    <line fill="none" strokeWidth="3" strokeLinecap="square" strokeMiterlimit="10" x1="19" y1="5" x2="5" y2="19" strokeLinejoin="miter"/>
+                    <line fill="none" strokeWidth="3" strokeLinecap="square" strokeMiterlimit="10" x1="19" y1="19" x2="5" y2="5" strokeLinejoin="miter"/>
+                  </g>
+                </svg>
               </button>
             </div>
           )

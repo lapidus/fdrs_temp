@@ -42,14 +42,14 @@ class Chapter3 extends React.Component {
 
         <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-            <p className="caps small strong m0">{ "Everyone counts" }</p>
-            <h2 className="display-2 light m0">{chapter.title}</h2>
+            <p className="text-base m0">{ "Everyone counts" }</p>
+            <h2 className="text-md sm-text-lg md-text-xl light m0 lh-small">{chapter.title}</h2>
           </div>
         </div>
 
         <div className="clearfix bg-dark overflow-hidden" style={{backgroundImage:"url(/img/chapters/chapter-3.jpg)",backgroundSize: "cover",backgroundPosition:"center 40%",backgroundRepeat: "no-repeat", backgroundAttachment: "fixed"}}>
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
-            <p className="lead">{chapter.intro}</p>
+            <p className="text-base sm-text-sm md-text-md">{chapter.intro}</p>
             <hr />
           </div>
         </div>
@@ -73,18 +73,18 @@ class Chapter3 extends React.Component {
               return (
                 <span key={j} className="px2 pt1 pb2" style={{display:"inline-block"}}>
                   <img src={`/img/chapters/3/${principleReference[j]}.svg`} /><br />
-                  {principle}
+                  { principle }
                 </span>
               )
             })}
           </div>
-          <div className="col sm-8 sm-offset-2 text-center">
-            <p>{chapter.general[1]}</p>
+          <div className="col sm-8 sm-offset-2 lg-5 lg-offset-3 py1">
+            <p className="text-base sm-text-sm md-text-md">{ chapter.general[1] }</p>
           </div>
         </div>
 
 
-        <div className="clearfix body-text" style={{position:"relative"}}>
+        <div className="relative clearfix body-text pb4">
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 pt2">
@@ -93,64 +93,71 @@ class Chapter3 extends React.Component {
           </div>
 
           <div className="clearfix">
-            <div className="col px1 sm-px0 sm-5 sm-offset-1 md-5 md-offset-1 lg-4 lg-offset-2 pb2">
-              <div className="pr2">
-                <div>
-                  <svg width="100%" height="480px" viewBox="0 0 480 480" version="1.1">
-                    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                      <g>
-                        <circle cx="240" cy="240" r="210" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
-                        <circle cx="240" cy="240" r="150" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
-                        <g transform="translate(0, 62)" fontSize="20" fontFamily="Roboto-Bold, Roboto" fill="#786A65" fontWeight="700">
-                          {section0.blocks[1].items.map((item, i) => {
-                            var xReferences = [240,360,390,340,150,90,120]
-                            var yReferences = [19,106,198,290,290,198,106]
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-3 lg-offset-4 pt2">
+              <svg width="100%" height="480px" viewBox="0 0 480 480" version="1.1">
+                <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                  <g>
+                    <circle cx="240" cy="240" r="210" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
+                    <circle cx="240" cy="240" r="150" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
+                    <g transform="translate(0, 62)" fontSize="20" fontFamily="Roboto-Bold, Roboto" fill="#786A65" fontWeight="700">
+                      {section0.blocks[1].items.map((item, i) => {
+                        var xReferences = [240,360,390,340,150,90,120]
+                        var yReferences = [19,106,198,290,290,198,106]
 
-                            return (
-                              <text key={i}>
-                                {item.split("\n").map((subItem, j) => <tspan key={j} x={xReferences[i]} y={yReferences[i] + (j * 22)} textAnchor="middle">{subItem}</tspan> )}
-                              </text>
-                            )
-                          })}
-                        </g>
-                        <text fontFamily="Roboto-Bold, Roboto" fontSize="16" fontWeight="700" letterSpacing="1" fill="#EE3224">
-                          { /* section0.blocks[1].name.split("\n").map((item, i) => <tspan textAnchor="middle" className="caps" key={i} x="240" y={237 + (i * 15)}>{item}</tspan>) */ }
-                        </text>
-                      </g>
+                        return (
+                          <text key={i}>
+                            {item.split("\n").map((subItem, j) => <tspan key={j} x={xReferences[i]} y={yReferences[i] + (j * 22)} textAnchor="middle">{subItem}</tspan> )}
+                          </text>
+                        )
+                      })}
                     </g>
-                  </svg>
-                </div>
-                <p>{section0.blocks[3]}</p>
-                <button className="btn bg-primary p1">{section0.blocks[5]}</button>
-              </div>
-            </div>
-            <div className="col px1 sm-px0 sm-5 md-5 lg-4">
-              <p>{section0.blocks[2]}</p>
-              <div>
-                <svg width="100%" height="480px" viewBox="0 0 480 480" version="1.1">
-                  <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                    <g>
-                      <circle cx="240" cy="240" r="210" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
-                      <circle cx="240" cy="240" r="150" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
-                      <g transform="translate(0, 62)" fontSize="20" fontFamily="Roboto-Bold, Roboto" fill="#786A65" fontWeight="700">
-                        {section0.blocks[4].items.map((item, i) => {
-                          var xReferences = [240,360,390,340,150,90,120]
-                          var yReferences = [19,106,198,290,290,198,106]
-
-                          return (
-                            <text key={i}>
-                              {item.split("\n").map((subItem, j) => <tspan key={j} x={xReferences[i]} y={yReferences[i] + (j * 22)} textAnchor="middle">{subItem}</tspan> )}
-                            </text>
-                          )
-                        })}
-                      </g>
-                      <text fontFamily="Roboto-Bold, Roboto" fontSize="16" fontWeight="700" letterSpacing="1" fill="#EE3224">
-                        { /* section0.blocks[4].name.split("\n").map((item, i) => <tspan textAnchor="middle" className="caps" key={i} x="240" y={237 + (i * 15)}>{item}</tspan>) */ }
-                      </text>
-                    </g>
+                    <text fontFamily="Roboto-Bold, Roboto" fontSize="16" fontWeight="700" letterSpacing="1" fill="#EE3224">
+                      { /* section0.blocks[1].name.split("\n").map((item, i) => <tspan textAnchor="middle" className="caps" key={i} x="240" y={237 + (i * 15)}>{item}</tspan>) */ }
+                    </text>
                   </g>
-                </svg>
-              </div>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div className="clearfix">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 pt2">
+              <p>{section0.blocks[2]}</p>
+            </div>
+          </div>
+
+          <div className="clearfix">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-3 lg-offset-4 pt2">
+              <svg width="100%" height="480px" viewBox="0 0 480 480" version="1.1">
+                <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                  <g>
+                    <circle cx="240" cy="240" r="210" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
+                    <circle cx="240" cy="240" r="150" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
+                    <g transform="translate(0, 62)" fontSize="20" fontFamily="Roboto-Bold, Roboto" fill="#786A65" fontWeight="700">
+                      {section0.blocks[4].items.map((item, i) => {
+                        var xReferences = [240,360,390,340,150,90,120]
+                        var yReferences = [19,106,198,290,290,198,106]
+
+                        return (
+                          <text key={i}>
+                            {item.split("\n").map((subItem, j) => <tspan key={j} x={xReferences[i]} y={yReferences[i] + (j * 22)} textAnchor="middle">{subItem}</tspan> )}
+                          </text>
+                        )
+                      })}
+                    </g>
+                    <text fontFamily="Roboto-Bold, Roboto" fontSize="16" fontWeight="700" letterSpacing="1" fill="#EE3224">
+                      { /* section0.blocks[4].name.split("\n").map((item, i) => <tspan textAnchor="middle" className="caps" key={i} x="240" y={237 + (i * 15)}>{item}</tspan>) */ }
+                    </text>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div className="clearfix">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 pt2">
+              <p>{section0.blocks[3]}</p>
+              <button className="btn bg-primary py05 px1">{ section0.blocks[5] }</button>
             </div>
           </div>
 

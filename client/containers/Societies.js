@@ -24,12 +24,12 @@ class Societies extends React.Component {
           { name: pageData.navigation[0].dropdownItems[1], path: undefined },
         ]}/>
 
-        <div className="clearfix bg-secondary px1">
+        <div className="clearfix bg-light px1">
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/fdrs/overview/map" className="block p1">
-                  <span>
+                <Link to="/fdrs/overview/map" className="btn block p1 link-no-underline text-left">
+                  <span className="inline-block">
                     <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g transform="translate(0, 0)">
                         <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M5.7,3C6.4,3.5,7,4.1,7.5,5C7.9,5.7,8.9,7.8,8,9c-1,1.3-4,1.8-4,3c0,0.9,1.3,2,2,3c1,1.5,0.6,3,0,4c-0.3,0.5-0.8,0.9-1.3,1.2" strokeLinejoin="miter" strokeLinecap="butt"/>
@@ -39,14 +39,14 @@ class Societies extends React.Component {
                       </g>
                     </svg>
                   </span>
-                  <span className="xs-visible">
+                  <span className="inline-block xs-visible">
                     { t("societies:tabs")[0][0] }&nbsp;
                   </span>
                   { t("societies:tabs")[0][1] }
                 </Link>
               </li>
               <li className="inline-block">
-                <Link to="/fdrs/societies" className="block bg-white p1">
+                <Link to="/fdrs/societies" className="btn block p1 bg-white link-no-underline text-left">
                   <span>
                     <svg style={{width:16,height:16,marginTop:-3,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g  transform="translate(0, 0)">
@@ -70,7 +70,7 @@ class Societies extends React.Component {
         <header className="px1">
           <div className="clearfix mxn1">
             <div className="col sm-8 sm-offset-2 px1 py1">
-              <h1 className="display-1 md-display-2 m0 light">
+              <h1 className="text-md sm-text-lg md-text-xl light m0">
                 { t("societies:titleParts")[0] }&nbsp;<span className="color-primary">{ t("societies:titleParts")[1] }</span>
               </h1>
             </div>
@@ -79,7 +79,7 @@ class Societies extends React.Component {
 
         <div className="px1">
           <div className="clearfix mxn1">
-            <div className="col sm-8 sm-offset-2 px1">
+            <div className="col sm-8 sm-offset-2 px1 pb3">
               <ul className="clearfix mxn1 p0">
                 <div className="col sm-4 px1">
                   {
@@ -119,36 +119,49 @@ class Societies extends React.Component {
           </div>
         </div>
 
-        <div className='px1 py4 bg-beige'>
-          <div className='clearfix mxn1'>
-            <div className='col sm-4 sm-offset-6 px1'>
-              <h2 className='headline sm-display-1 light mt0'>
-                { t("common:overviewPreview.title") }
-              </h2>
-              <p className='lead'>
-                { t("common:overviewPreview.leader") }
+        <div className="px1 bg-beige" style={{
+            backgroundImage: "url(/img/overview-preview.png)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "50% auto",
+            backgroundPosition: "center left",
+          }}>
+          <div className="clearfix mxn1 py6">
+            <div className="col sm-4 sm-offset-6 px1">
+              <p className="caps small strong">
+                { pageData.overviewPreview.subtitle }
               </p>
-              <Link to='/' className='btn btn--raised bg-primary'>
-                <span className='block py05 px1'>
-                  { t("common:overviewPreview.button") }
+              <h2 className="headline sm-display-1 light mt0">
+                { pageData.overviewPreview.title }
+              </h2>
+              <p className="lead">
+                { pageData.overviewPreview.lead }
+              </p>
+              <Link to="/fdrs" className="btn btn--raised bg-primary">
+                <span className="block py05 px1">
+                  { pageData.overviewPreview.button }
                 </span>
               </Link>
             </div>
           </div>
         </div>
 
-        <div className='px1 py4 bg-secondary'>
-          <div className='clearfix mxn1'>
-            <div className='col sm-10 sm-offset-1 px1'>
-              <h2 className='headline sm-display-1 light mt0'>
-                { t("common:dataCollectors.title") }
+        <div className="px1 bg-light" style={{
+              backgroundImage:"url(/img/worldmap.jpeg)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+         }}>
+          <div className="clearfix mxn1 py6" style={{ background: "rgba(255,255,255,0.5)" }}>
+            <div className="col sm-10 sm-offset-1 px1">
+              <h2 className="headline sm-display-1 light mt0">
+                { pageData.dataCollectors.title }
               </h2>
-              <p className='lead'>
-                { t("common:dataCollectors.lead") }
+              <p className="lead">
+                { pageData.dataCollectors.lead }
               </p>
-              <Link to='/' className='btn btn--raised bg-primary'>
-                <span className='block py05 px1'>
-                  { t("common:dataCollectors.button") }
+              <Link to="/fdrs" className="btn btn--raised bg-primary">
+                <span className="block py05 px1">
+                  { pageData.dataCollectors.button }
                 </span>
               </Link>
             </div>

@@ -23,7 +23,7 @@ const niceNum = (input, precision, format, fullNumber) => {
       precision = 3
     else if (input < 0.1)
       precision = 2
-    else if (input < 10)
+    else if (input < 10 || input > 1000000)
       precision = 1
     else
       precision = 0

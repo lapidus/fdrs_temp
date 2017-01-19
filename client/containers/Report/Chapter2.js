@@ -27,14 +27,14 @@ class Chapter2 extends React.Component {
 
         <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-            <p className="caps small strong m0">{ "Everyone counts" }</p>
-            <h2 className="display-2 light m0">{chapter.title}</h2>
+            <p className="text-base m0">{ "Everyone counts" }</p>
+            <h2 className="text-md sm-text-lg md-text-xl light m0 lh-small">{chapter.title}</h2>
           </div>
         </div>
 
         <div className="clearfix bg-dark overflow-hidden" style={{backgroundImage:"url(/img/chapters/chapter-2.jpg)",backgroundSize: "cover",backgroundPosition:"center 40%",backgroundRepeat: "no-repeat", backgroundAttachment: "fixed"}}>
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
-            <p className="lead">{chapter.intro}</p>
+            <p className="text-base sm-text-sm md-text-md">{chapter.intro}</p>
             <hr />
           </div>
         </div>
@@ -48,13 +48,13 @@ class Chapter2 extends React.Component {
               <p><strong>{section0.blocks[0]}</strong></p>
               <ol>
                 {section0.blocks[1].map((item, i) => {
-                  return (<li key={i}>{item}</li>)
+                  return (<li key={i} className="py05">{item}</li>)
                 })}
               </ol>
               <p><strong>{section0.blocks[2]}</strong></p>
               <ol>
                 {section0.blocks[3].map((item, i) => {
-                  return (<li key={i}>{item}</li>)
+                  return (<li key={i} className="py05">{item}</li>)
                 })}
               </ol>
               <p>{section0.blocks[4]}</p>
@@ -81,8 +81,8 @@ class Chapter2 extends React.Component {
 
           <div className="clearfix" style={{position:"relative"}} id="scroll-target-section1">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="small strong color-primary caps">{chapter.title}</p>
-              <h3 className="headline">{section1.title}</h3>
+              <p className="text-sm color-primary m0">{chapter.title}</p>
+              <h3 className="text-md sm-text-lg mt0 light">{section1.title}</h3>
               <HeadlineDivider />
               <p>{section1.blocks[0]}</p>
             </div>
