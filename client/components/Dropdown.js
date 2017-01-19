@@ -33,9 +33,9 @@ class Dropdown extends React.Component {
     return (
       <span onMouseEnter={ this.showDropdown } onMouseLeave={ this.hideDropdown } onClick={ this.hideDropdown }>
         { this.props.children[0] }
-        <span style={ dropdownStyles }>
+        <div style={ dropdownStyles }>
           { this.props.children[1] }
-        </span>
+        </div>
       </span>
     )
   }
