@@ -1,6 +1,6 @@
 
 import React from "react"
-import { Link } from "react-router"
+import LanguageLink  from "../components/LanguageLink"
 import Breadcrumbs from "../components/Breadcrumbs"
 
 import { translate } from "react-i18next"
@@ -62,9 +62,9 @@ class Download extends React.Component {
             <div className="col sm-10 sm-offset-1 px1">
               <h2 className="headline sm-display-1 light mt0">{ "For data collectors" }</h2>
               <p className="lead">{ "To get started with the data collection for your National Society, please log in." }</p>
-              <Link to="/fdrs" className="btn btn--raised bg-primary">
+              <LanguageLink to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">{ "Login as data collector" }</span>
-              </Link>
+              </LanguageLink>
             </div>
           </div>
         </div>

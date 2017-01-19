@@ -1,17 +1,19 @@
 import React, { PropTypes } from "react"
-import { Link } from "react-router"
 import { translate } from "react-i18next"
 import { connect } from "react-redux"
 
 import Select from "react-select"
 
-import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
+import LanguageLink  from "../../components/LanguageLink"
 import { toggleNav } from "../../actions/appActions"
 import Icon from "../../components/Icon"
 import Loader from "../../components/Loader"
 import Navigation from "../../components/Report/Navigation"
 import ReadMore from "../../components/Report/ReadMore"
 import Breadcrumbs from "../../components/Breadcrumbs"
+
+import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
+
 
 class Report extends React.Component {
   componentDidMount() {
@@ -98,19 +100,19 @@ class Report extends React.Component {
             <div className="col sm-8 sm-offset-0 md-offset-2">
               <ul className="m0 py05 px0 text-base">
                 <li className="inline-block mr1">
-                  <Link to="/fdrs">
+                  <LanguageLink to="/fdrs">
                     {"Home"}
-                  </Link>
+                  </LanguageLink>
                 </li>
                 <li className="inline-block mr1">
-                  <Link to="/fdrs/services">
+                  <LanguageLink to="/fdrs/services">
                     {"Services"}
-                  </Link>
+                  </LanguageLink>
                 </li>
                 <li className="inline-block mr1">
-                  <Link to="/fdrs/report">
+                  <LanguageLink to="/fdrs/report">
                     {"Report"}
-                  </Link>
+                  </LanguageLink>
                 </li>
                 <li className="inline-block align-middle mr1 select-no-underline select-no-scroll" style={{minWidth:300}}>
                   <Select
@@ -153,14 +155,14 @@ class Report extends React.Component {
               >
                 <ul className="clearfix">
                   <li>
-                    <Link to={ prefixLanguageToRoute(language, "/acknowledgements") }>
+                    <LanguageLink to={ prefixLanguageToRoute(language, "/acknowledgements") }>
                       <span>{ "Acknowledgements" }</span>
-                    </Link>
+                    </LanguageLink>
                   </li>
                   <li>
-                    <Link to={ prefixLanguageToRoute(language, "/data") }>
+                    <LanguageLink to={ prefixLanguageToRoute(language, "/data") }>
                       <span>{ "Data" }</span>
-                    </Link>
+                    </LanguageLink>
                   </li>
                 </ul>
               </div>

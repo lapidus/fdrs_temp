@@ -1,12 +1,10 @@
 import React, { PropTypes } from "react"
-import { Link } from "react-router"
 import LanguageLink from "../components/LanguageLink"
 import { connect } from "react-redux"
 import { translate } from "react-i18next"
 import Select from "react-select"
 
 import constructLanguageRoute from "../utils/constructLanguageRoute"
-import prefixLanguageToRoute from "../utils/prefixLanguageToRoute"
 import { toggleNav } from "../actions/appActions"
 import Icon from "../components/Icon"
 import Loader from "../components/Loader"
@@ -116,9 +114,9 @@ class App extends React.Component {
                 <div className="clearfix py2">
                   <div className="col sm-3 sm-offset-1">
                     <p className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue, sans-serif"}}>
-                      <Link to="/fdrs" className='color-inverted caps'>
+                      <LanguageLink to="/fdrs" className='color-inverted caps'>
                         <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
-                      </Link>
+                      </LanguageLink>
                     </p>
                     <p>{ t("common:credit") }</p>
                   </div>
@@ -128,44 +126,44 @@ class App extends React.Component {
                     </p>
                     <ul className="m0 p0">
                       <li className="block">
-                        <Link to="/fdrs/overview">
+                        <LanguageLink to="/fdrs/overview">
                           <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
                             <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
                           </svg>
                           <span>
                             { t("common:navigation")[0].dropdownItems[0] }
                           </span>
-                        </Link>
+                        </LanguageLink>
                       </li>
                       <li className="block">
-                        <Link to="/fdrs/societies">
+                        <LanguageLink to="/fdrs/societies">
                           <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
                             <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
                           </svg>
                           <span>
                             { t("common:navigation")[0].dropdownItems[1] }
                           </span>
-                        </Link>
+                        </LanguageLink>
                       </li>
                       <li className="block">
-                        <Link to="/fdrs/report">
+                        <LanguageLink to="/fdrs/report">
                           <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
                             <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
                           </svg>
                           <span>
                             { t("common:navigation")[0].dropdownItems[2] }
                           </span>
-                        </Link>
+                        </LanguageLink>
                       </li>
                       <li className="block">
-                        <Link to="/fdrs/data-download">
+                        <LanguageLink to="/fdrs/data-download">
                           <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
                             <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
                           </svg>
                           <span>
                             { t("common:navigation")[0].dropdownItems[3] }
                           </span>
-                        </Link>
+                        </LanguageLink>
                       </li>
                     </ul>
 
@@ -173,34 +171,34 @@ class App extends React.Component {
 
                     <ul className="m0 p0">
                       <li className="block">
-                        <Link to="/fdrs/faq">
+                        <LanguageLink to="/fdrs/faq">
                           <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
                             <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
                           </svg>
                           <span>
                             { t("common:navigation")[1].name }
                           </span>
-                        </Link>
+                        </LanguageLink>
                       </li>
                       <li className="block">
-                        <Link to="/fdrs/about">
+                        <LanguageLink to="/fdrs/about">
                           <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
                             <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
                           </svg>
                           <span>
                             { t("common:navigation")[2].name }
                           </span>
-                        </Link>
+                        </LanguageLink>
                       </li>
                       <li className="block">
-                        <Link to="/fdrs/acknowledgements">
+                        <LanguageLink to="/fdrs/acknowledgements">
                           <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
                             <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
                           </svg>
                           <span>
                             { t("common:navigation")[3].name }
                           </span>
-                        </Link>
+                        </LanguageLink>
                       </li>
                     </ul>
                   </div>
@@ -227,7 +225,7 @@ class App extends React.Component {
 
               <div className="col sm-3 sm-offset-1">
                 { this.props.location.pathname !== "/" ?
-                  <Link to="/">{ "Back to Data.ifrc.org" }</Link> :
+                  <LanguageLink to="/">{ "Back to Data.ifrc.org" }</LanguageLink> :
                   ""
                 }
 

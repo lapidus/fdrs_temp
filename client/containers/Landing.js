@@ -1,9 +1,8 @@
 
 import React from "react"
-import { Link } from "react-router"
+import LanguageLink  from "../components/LanguageLink"
 import { translate } from "react-i18next"
 import * as d3 from "d3";
-import LanguageLink from "../components/LanguageLink"
 
 
 class Landing extends React.Component {
@@ -82,9 +81,9 @@ class Landing extends React.Component {
               <h2 className="text-base color-secondary">{ "Featured project" }</h2>
               <article className="shadow-4 p2">
                 <h1 className='text-lg md-text-xl lh-small light m0'>
-                  <Link to="/fdrs">
+                  <LanguageLink to="/fdrs">
                     { t("landing:projects.fdrs.title") }
-                  </Link>
+                  </LanguageLink>
                 </h1>
                 <p>
                   { t("landing:projects.fdrs.text") }

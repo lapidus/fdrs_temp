@@ -1,7 +1,7 @@
 
 import React from "react"
 import { connect } from "react-redux"
-import { Link } from "react-router"
+import LanguageLink  from "../../components/LanguageLink"
 import niceNum from "../../utils/niceNum"
 import { VictoryLine, VictoryScatter, Point } from "victory"
 import { showTooltip, hideTooltip } from "../../actions/appActions"
@@ -116,9 +116,9 @@ class SocietyRow extends React.Component {
     return (
       <tr>
         <td className="px1 py05 base-4">
-          <Link to={`/fdrs/societies/${nationalSociety.slug}`} className="color-primary">
+          <LanguageLink to={`/fdrs/societies/${nationalSociety.slug}`} className="color-primary">
             { nationalSociety.NSO_DON_name }
-          </Link>
+          </LanguageLink>
         </td>
         <td className="py05 px1 base-4">
           <Trendline

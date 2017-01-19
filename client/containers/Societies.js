@@ -1,10 +1,8 @@
 import React from "react"
 import { connect } from "react-redux"
-import { Link } from "react-router"
+import LanguageLink  from "../components/LanguageLink"
 import { translate } from "react-i18next"
 import Breadcrumbs from "../components/Breadcrumbs"
-
-import prefixLanguageToRoute from "../utils/prefixLanguageToRoute"
 import { fetchNationalSocieties } from "../actions/appActions"
 import _ from "lodash"
 
@@ -34,7 +32,7 @@ class Societies extends React.Component {
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
-                <Link to="/fdrs/overview/map" className="btn block p1 link-no-underline text-left">
+                <LanguageLink to="/fdrs/overview/map" className="btn block p1 link-no-underline text-left">
                   <span className="inline-block">
                     <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g transform="translate(0, 0)">
@@ -49,10 +47,10 @@ class Societies extends React.Component {
                     { t("societies:tabs")[0][0] }&nbsp;
                   </span>
                   { t("societies:tabs")[0][1] }
-                </Link>
+                </LanguageLink>
               </li>
               <li className="inline-block">
-                <Link to="/fdrs/societies" className="btn block p1 bg-white link-no-underline text-left">
+                <LanguageLink to="/fdrs/societies" className="btn block p1 bg-white link-no-underline text-left">
                   <span>
                     <svg style={{width:16,height:16,marginTop:-3,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g  transform="translate(0, 0)">
@@ -67,7 +65,7 @@ class Societies extends React.Component {
                     { t("societies:tabs")[1][0] }&nbsp;
                   </span>
                   { t("societies:tabs")[1][1] }
-                </Link>
+                </LanguageLink>
               </li>
             </ul>
           </div>
@@ -91,9 +89,9 @@ class Societies extends React.Component {
                   {
                     sortedNationalSocieties.slice(0,societiesPerCol).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
-                        <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>
+                        <LanguageLink to={`/fdrs/societies/${society.slug}`}>
                           { t("national-societies:" + society.KPI_DON_Code) }
-                        </Link>
+                        </LanguageLink>
                       </li>
                     ))
                   }
@@ -102,9 +100,9 @@ class Societies extends React.Component {
                   {
                     sortedNationalSocieties.slice(societiesPerCol,societiesPerCol*2).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
-                        <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>
+                        <LanguageLink to={`/fdrs/societies/${society.slug}`}>
                           { t("national-societies:" + society.KPI_DON_Code) }
-                        </Link>
+                        </LanguageLink>
                       </li>
                     ))
                   }
@@ -113,9 +111,9 @@ class Societies extends React.Component {
                   {
                     sortedNationalSocieties.slice(societiesPerCol*2,societiesPerCol*3).map((society, i) => (
                       <li className="block py05" key={society.KPI_DON_Code}>
-                        <Link to={prefixLanguageToRoute(language, `/fdrs/societies/${society.slug}`)}>
+                        <LanguageLink to={`/fdrs/societies/${society.slug}`}>
                           { t("national-societies:" + society.KPI_DON_Code) }
-                        </Link>
+                        </LanguageLink>
                       </li>
                     ))
                   }
@@ -142,11 +140,11 @@ class Societies extends React.Component {
               <p className="lead">
                 { pageData.overviewPreview.lead }
               </p>
-              <Link to="/fdrs" className="btn btn--raised bg-primary">
+              <LanguageLink to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">
                   { pageData.overviewPreview.button }
                 </span>
-              </Link>
+              </LanguageLink>
             </div>
           </div>
         </div>
@@ -165,11 +163,11 @@ class Societies extends React.Component {
               <p className="lead">
                 { pageData.dataCollectors.lead }
               </p>
-              <Link to="/fdrs" className="btn btn--raised bg-primary">
+              <LanguageLink to="/fdrs" className="btn btn--raised bg-primary">
                 <span className="block py05 px1">
                   { pageData.dataCollectors.button }
                 </span>
-              </Link>
+              </LanguageLink>
             </div>
           </div>
         </div>

@@ -1,10 +1,6 @@
 import React from "react"
 import { translate } from "react-i18next"
-import { Link } from "react-router"
-
 import LanguageLink from "../../components/LanguageLink"
-
-import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
 import Reveal from "../../components/Reveal"
 import Icon from "../../components/Icon"
 import HeadlineDivider from "../../components/HeadlineDivider"
@@ -548,7 +544,7 @@ class Home extends React.Component {
                 <p className="lead">{t("report-common:chapters.data.body.1")} <Icon name="goto" width="24px" height="24px"/></p>
                 <br />
                 <br />
-                <Link to={prefixLanguageToRoute(language,"/fdrs/data")} className="btn bg-primary p1">{t("report-common:chapters.data.button")} <Icon name="goto" width="24px" height="24px"/></Link>
+                <LanguageLink to={"/fdrs/data"} className="btn bg-primary p1">{t("report-common:chapters.data.button")} <Icon name="goto" width="24px" height="24px"/></LanguageLink>
               </div>
             </div>
           </div>

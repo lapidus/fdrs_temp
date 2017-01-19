@@ -1,6 +1,6 @@
 import React from "react"
 import { connect } from "react-redux"
-import { Link } from "react-router"
+import LanguageLink  from "../components/LanguageLink"
 import Select from "react-select"
 import minBy from "lodash/minBy"
 import maxBy from "lodash/maxBy"

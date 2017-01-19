@@ -1,14 +1,13 @@
 import React from "react"
-import { Link } from "react-router"
+import LanguageLink  from "../../components/LanguageLink"
+
 import { translate } from "react-i18next"
 
-import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
 import { report } from "../../routes/config"
 
 const Navigation = ({ navOpen, t }, { i18n }) => {
   const { language } = i18n
   const content = i18n.store.data[language]["report-common"]
-  const langRoute = prefixLanguageToRoute(language)
   const { routes } = report
 
   const chaptersBySection = [
@@ -44,10 +43,10 @@ const Navigation = ({ navOpen, t }, { i18n }) => {
                           { chapter.id }
                         </div>
                         <div className="pl2">
-                          <Link to={ `${langRoute}/fdrs/report/${routes[chapter].slug}` }>
+                          <LanguageLink to={ `/fdrs/report/${routes[chapter].slug}` }>
                             <div className="title">{ t(`report-common:chapters.${chapter}.title`) }</div>
                             <hr style={{ marginBottom: "8px", marginTop: "4px" }} />
-                          </Link>
+                          </LanguageLink>
                         </div>
                       </li>
                     )
@@ -77,10 +76,10 @@ const Navigation = ({ navOpen, t }, { i18n }) => {
                   { "11" }
                 </div>
                 <div className="pl3">
-                  <Link to={ `${langRoute}/fdrs/report/${routes.acknowledgements.slug}` }>
+                  <LanguageLink to={ `/fdrs/report/${routes.acknowledgements.slug}` }>
                     <div className="title">{ t("report-common:chapters.acknowledgements.title") }</div>
                     <hr style={{ marginBottom: "8px", marginTop: "4px" }} />
-                  </Link>
+                  </LanguageLink>
                 </div>
               </li>
             </ul>

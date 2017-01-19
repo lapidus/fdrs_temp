@@ -1,19 +1,17 @@
 import React from "react"
-import { Link } from "react-router"
+import LanguageLink  from "../components/LanguageLink"
 
 import Icon from "../components/Icon"
-
-import prefixLanguageToRoute from "./prefixLanguageToRoute"
 
 const NextChapter = ({ nextChapter }, { language }) =>
   <div className="clearfix py2 bg-light">
     <div className="col sm-6 sm-offset-6 px1">
       <p className="text-sm color-primary m0">{ nextChapter.heading }</p>
       <h2 className="text-md sm-text-lg mt0 light">
-        <Link to={ prefixLanguageToRoute(language, `/${nextChapter.slug}`) }>
+        <LanguageLink to={ `/${nextChapter.slug}` }>
           { nextChapter.title }
           {/* <Icon name="goto" width={ 30 } height={ 30 } /> */}
-        </Link>
+        </LanguageLink>
       </h2>
     </div>
   </div>
