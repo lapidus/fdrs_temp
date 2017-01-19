@@ -50,7 +50,7 @@ class SocietiesRanking extends React.Component {
           { "Sorted" }&nbsp;<span className="color-primary">{ "High to Low" }</span>
         </h2>
 
-        <table style={{position:"absolute", height:"600px",overflowY:"scroll", display: "block"}}>
+        <table style={{height:"600px",overflowY:"scroll", display: "block"}}>
 
           {
             this.props.societiesList.reverse().map((society, i) => {
@@ -96,7 +96,7 @@ class OverviewMap extends React.Component {
       <div className="px1 pb3">
 
         <div className="relative clearfix mxn1">
-          <div className="col sm-10 sm-offset-1 md-9 md-offset-3 px1">
+          <div className="col sm-10 sm-offset-1 md-9 md-offset-3 px1 pt1">
             <div className="relative ratio-16-9">
               <div className="ratio-content bg-white">
                 <Map indicator={{id: this.props.currentIndicator}}
@@ -112,7 +112,6 @@ class OverviewMap extends React.Component {
                     />
               </div>
             </div>
-
             <div className="clearfix mxn1">
               <div className="col sm-8 sm-offset-2 md-9 md-offset-0 px1">
                 <div className="block text-center pb3">
@@ -155,7 +154,7 @@ class OverviewMap extends React.Component {
                 <SocietiesRanking
                   societiesList={sortBy(this.props.grouping[this.props.currentYear], o => Number(o[this.props.currentIndicator]))}
                   currentIndicator={this.props.currentIndicator}
-                  />
+                />
               </div>
             </div>
           </div>

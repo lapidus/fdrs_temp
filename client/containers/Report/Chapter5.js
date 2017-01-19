@@ -55,7 +55,7 @@ class Chapter5 extends React.Component {
 
         <div className="clearfix body-text" style={{position:"relative"}}>
 
-          <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section0","scroll-target-section1","scroll-target-section2","scroll-target-section3","scroll-target-section4","scroll-target-section5"]}/>
+          {/* <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section0","scroll-target-section1","scroll-target-section2","scroll-target-section3","scroll-target-section4","scroll-target-section5"]}/> */}
 
           <div className="clearfix" id="scroll-target-section0">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
@@ -110,18 +110,18 @@ class Chapter5 extends React.Component {
                 labels={
                   section0.blocks[4].dataset.map((item, i) => {
                     // return `${item.name} (${item.first + item.second + item.rest})`
-                    return { text: item.name, number: numberFormatter.addCommas(Math.round(item.first + item.second + item.rest)) }
+                    return { text: item.name, number: numberFormatter.addCommas(Math.round(Number(item.first) + Number(item.second) + Number(item.rest))) }
                   })
                 }
                 data={[
                   section0.blocks[4].dataset.map((item, i) => {
-                    return { x: item.index, y: item.first, name: item.names[0] }
+                    return { x: item.index, y: Number(item.first), name: item.names[0] }
                   }),
                   section0.blocks[4].dataset.map((item, i) => {
-                    return { x: item.index, y: item.second, name: item.names[1] }
+                    return { x: item.index, y: Number(item.second), name: item.names[1] }
                   }),
                   section0.blocks[4].dataset.map((item, i) => {
-                    return { x: item.index, y: item.rest }
+                    return { x: item.index, y: Number(item.rest) }
                   })
                 ]}
                 />
@@ -132,7 +132,7 @@ class Chapter5 extends React.Component {
                 height={300}
                 padding={{
                   top: 30,
-                  bottom: 40,
+                  bottom: 50,
                   left: 60,
                   right: 60
                 }}
@@ -144,10 +144,10 @@ class Chapter5 extends React.Component {
                 labels={section0.blocks[6].lineLabels}
                 dataset={[
                   section0.blocks[6].dataset[0].map((item, i) => {
-                    return { x: new Date(item.year,1,1), y: item.value}
+                    return { x: new Date(item.year,1,1), y: Number(item.value)}
                   }),
                   section0.blocks[6].dataset[1].map((item, i) => {
-                    return { x: new Date(item.year,1,1), y: item.value}
+                    return { x: new Date(item.year,1,1), y: Number(item.value)}
                   })
                 ]}
               />
@@ -211,7 +211,7 @@ class Chapter5 extends React.Component {
                   <TabPanel title={section2.blocks[1].tabs[1].name}>
                     <table>
                       <thead>
-                        <tr className="small">
+                        <tr className="text-xs">
                           {section2.blocks[1].tabs[1].headers.map((item, i) => {
                             return (<th key={i}>{item}</th>)
                           })}

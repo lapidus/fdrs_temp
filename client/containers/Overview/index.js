@@ -34,6 +34,7 @@ class Overview extends React.Component {
 
     const pageData = i18n.store.data[i18n.language]["common"]
 
+
     return (
       <section>
         <Breadcrumbs links={[
@@ -93,8 +94,7 @@ class Overview extends React.Component {
                 { t("overview:title") }
               </h1>
               <div className="relative">
-                {/* <span className="display-1 md-display-2 m0 light">{ pageData.indicators[this.props.currentIndicator] }</span> */}
-                <div className="sm-9 select-xl select-no-underline select-no-scroll">
+                <div className="sm-9 select-xl select-no-underline select-no-scroll mxn3">
                   <Select
                     searchable={ false }
                     clearable={ false }
@@ -103,28 +103,31 @@ class Overview extends React.Component {
                     multi={ false }
                     name="ns-selector"
                     valueRenderer={(option) => {
-                      return <span className="text-md sm-text-lg md-text-xl light">{ pageData.indicators[option.value] }</span>
+                      return <span className="text-md sm-text-lg md-text-xl light">{ pageData.indicators[option.value].name }</span>
                     }}
                     options={Object.keys(pageData.indicators).map(indicatorKey => {
                       return {
                         value: indicatorKey,
-                        label: pageData.indicators[indicatorKey],
+                        label: pageData.indicators[indicatorKey].name,
                       }
                     })}
                     optionRenderer={(option) => {
-                      return <span className="text-base md-text-sm">{ pageData.indicators[option.value] }</span>
+                      return <span className="text-base">{ pageData.indicators[option.value].name }</span>
                     }}
                     onChange={(indicator) => this.props.setIndicator(indicator.value)}
                   />
                 </div>
                 <div className="absolute t50 r0 y-center-self">
                   <Link to="/fdrs/overview/map" className="relative btn">
-                    <span className="small strong caps color-primary">{ "Map" }</span>
-                    <span className="absolute b0 l0 base-12 bg-primary" style={{height:4}}></span>
+                    <span className="small strong caps">{ "Map" }</span>
+                    <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/map" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
                   </Link>
+
                   <Link to="/fdrs/overview/table" className="relative btn">
-                    <span className="small strong caps color-secondary">{ "Table" }</span>
-                    <span className="absolute b0 l0 base-12 bg-secondary" style={{height:4}}></span>
+                    {/* <span className="small strong caps color-secondary">{ "Table" }</span>
+                    <span className="absolute b0 l0 base-12 bg-secondary" style={{height:4}}></span> */}
+                    <span className="small strong caps">{ "Table" }</span>
+                    <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/table" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
                   </Link>
                 </div>
               </div>
@@ -139,7 +142,7 @@ class Overview extends React.Component {
         <div className="bg-light px1 py05">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              { pageData.updateText }
+
             </div>
           </div>
         </div>
@@ -192,7 +195,6 @@ class Overview extends React.Component {
             </div>
           </div>
         </div>
-
 
       </section>
     )

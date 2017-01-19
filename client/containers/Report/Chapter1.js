@@ -89,7 +89,7 @@ class Chapter1 extends React.Component {
         </div>
 
         <div className="relative clearfix body-text">
-          <SideNavigation title={ chapter.title } sections={ chapter.sections } sectionReferences={["scroll-target-section0","scroll-target-section1"]}/>
+          {/* <SideNavigation title={ chapter.title } sections={ chapter.sections } sectionReferences={["scroll-target-section0","scroll-target-section1"]}/> */}
 
           <div className="clearfix" id="scroll-target-section0">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
@@ -373,9 +373,9 @@ class Chapter1 extends React.Component {
 
             <p>{section1.blocks[7]}</p>
 
-            <h4 className="title strong">{section1.blocks[8].title}</h4>
+            {/* <h4 className="title strong">{section1.blocks[8].title}</h4> */}
 
-            <Tabs active={0}>
+            {/* <Tabs active={0}>
               <TabPanel title={section1.blocks[8].tabs[0].name}>
                 <div>
                   <StackedBarChart
@@ -441,7 +441,7 @@ class Chapter1 extends React.Component {
                     />
                   </div>
               </TabPanel>
-            </Tabs>
+            </Tabs> */}
 
             <p>{section1.blocks[9]}</p>
             <p>{section1.blocks[10]}</p>

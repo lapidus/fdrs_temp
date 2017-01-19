@@ -171,7 +171,7 @@ class SocietyPDF extends React.Component {
                     <CardView viewIcon="lineChart">
                       <div className="pb1">
                         <h1 className="subhead mt0 mb1">
-                          { t("common:indicators.KPI_noPeopleVolunteering") }
+                          { t("common:indicators.KPI_noPeopleVolunteering.name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -212,7 +212,7 @@ class SocietyPDF extends React.Component {
                     <CardView viewIcon="lineChart">
                       <div className="pb1">
                         <h1 className="subhead mt0 mb1">
-                          { t("common:indicators.KPI_noLocalUnits") }
+                          { t("common:indicators.KPI_noLocalUnits.name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -315,7 +315,7 @@ class SocietyPDF extends React.Component {
                     <CardView viewIcon="lineChart">
                       <div className="pb1">
                         <h1 className="subhead mt0 mb1">
-                          { t("common:indicators.KPI_noPaidStaff") }
+                          { t("common:indicators.KPI_noPaidStaff.name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -397,7 +397,7 @@ class SocietyPDF extends React.Component {
                     <CardView viewIcon="lineChart">
                       <div className="">
                         <h1 className="subhead mt0 mb1">
-                          { t("common:indicators.KPI_noPeopleDonatingBlood") }
+                          { t("common:indicators.KPI_noPeopleDonatingBlood.name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -436,6 +436,12 @@ class SocietyPDF extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="clearfix text-center title bg-secondary p2">
+
+          For the latest information, see <a href="data.ifrc.org">data.ifrc.org</a>
+
         </div>
 
       </section>

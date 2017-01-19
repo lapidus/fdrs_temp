@@ -14,6 +14,17 @@
   .xs-heading-xxl  { font-size: calc(144 * var(--one)); }
   .xs-heading-xxxl { font-size: calc(240 * var(--one)); }
 
+  .xs-lead { font-size: calc(1.25 * var(--base-font-size)); }
+
+  .xs-display-5 { font-size: calc(272 * var(--one)); }
+  .xs-display-4 { font-size: calc(72 * var(--one));  }
+  .xs-display-3 { font-size: calc(56 * var(--one));  }
+  .xs-display-2 { font-size: calc(44 * var(--one));  }
+  .xs-display-1 { font-size: calc(34 * var(--one));  }
+  .xs-headline  { font-size: calc(24 * var(--one));  }
+  .xs-title     { font-size: calc(20 * var(--one));  }
+  .xs-subhead   { font-size: calc(16 * var(--one));  }
+
   .xs-lh-1       { line-height: 1; }
   .xs-lh-base    { line-height: var(--base-line-height);    }
   .xs-lh-small   { line-height: var(--small-line-height); }
@@ -55,6 +66,17 @@
   .sm-heading-xxl  { font-size: calc(144 * var(--one)); }
   .sm-heading-xxxl { font-size: calc(240 * var(--one)); }
 
+  .sm-lead { font-size: calc(1.25 * var(--base-font-size)); }
+
+  .sm-display-5 { font-size: calc(272 * var(--one)); }
+  .sm-display-4 { font-size: calc(72 * var(--one));  }
+  .sm-display-3 { font-size: calc(56 * var(--one));  }
+  .sm-display-2 { font-size: calc(44 * var(--one));  }
+  .sm-display-1 { font-size: calc(34 * var(--one));  }
+  .sm-headline  { font-size: calc(24 * var(--one));  }
+  .sm-title     { font-size: calc(20 * var(--one));  }
+  .sm-subhead   { font-size: calc(16 * var(--one));  }
+
   .sm-lh-1       { line-height: 1; }
   .sm-lh-base    { line-height: var(--base-line-height);    }
   .sm-lh-small   { line-height: var(--small-line-height); }
@@ -94,6 +116,17 @@
   .md-heading-xl   { font-size: calc(112 * var(--one)); }
   .md-heading-xxl  { font-size: calc(144 * var(--one)); }
   .md-heading-xxxl { font-size: calc(240 * var(--one)); }
+
+  .md-lead { font-size: calc(1.25 * var(--base-font-size)); }
+
+  .md-display-5 { font-size: calc(272 * var(--one)); }
+  .md-display-4 { font-size: calc(72 * var(--one));  }
+  .md-display-3 { font-size: calc(56 * var(--one));  }
+  .md-display-2 { font-size: calc(44 * var(--one));  }
+  .md-display-1 { font-size: calc(34 * var(--one));  }
+  .md-headline  { font-size: calc(24 * var(--one));  }
+  .md-title     { font-size: calc(20 * var(--one));  }
+  .md-subhead   { font-size: calc(16 * var(--one));  }
 
   .md-lh-1       { line-height: 1; }
   .md-lh-base    { line-height: var(--base-line-height);    }
@@ -136,6 +169,17 @@
   .lg-heading-xxl  { font-size: calc(144 * var(--one)); }
   .lg-heading-xxxl { font-size: calc(240 * var(--one)); }
 
+  .lg-lead { font-size: calc(1.25 * var(--base-font-size)); }
+
+  .lg-display-5 { font-size: calc(272 * var(--one)); }
+  .lg-display-4 { font-size: calc(72 * var(--one));  }
+  .lg-display-3 { font-size: calc(56 * var(--one));  }
+  .lg-display-2 { font-size: calc(44 * var(--one));  }
+  .lg-display-1 { font-size: calc(34 * var(--one));  }
+  .lg-headline  { font-size: calc(24 * var(--one));  }
+  .lg-title     { font-size: calc(20 * var(--one));  }
+  .lg-subhead   { font-size: calc(16 * var(--one));  }
+
   .lg-lh-1       { line-height: 1; }
   .lg-lh-base    { line-height: var(--base-line-height);    }
   .lg-lh-small   { line-height: var(--small-line-height); }
@@ -176,6 +220,17 @@
   .xl-heading-xl   { font-size: calc(112 * var(--one)); }
   .xl-heading-xxl  { font-size: calc(144 * var(--one)); }
   .xl-heading-xxxl { font-size: calc(240 * var(--one)); }
+
+  .xl-lead { font-size: calc(1.25 * var(--base-font-size)); }
+
+  .xl-display-5 { font-size: calc(272 * var(--one)); }
+  .xl-display-4 { font-size: calc(72 * var(--one));  }
+  .xl-display-3 { font-size: calc(56 * var(--one));  }
+  .xl-display-2 { font-size: calc(44 * var(--one));  }
+  .xl-display-1 { font-size: calc(34 * var(--one));  }
+  .xl-headline  { font-size: calc(24 * var(--one));  }
+  .xl-title     { font-size: calc(20 * var(--one));  }
+  .xl-subhead   { font-size: calc(16 * var(--one));  }
 
   .xl-lh-1       { line-height: 1; }
   .xl-lh-base    { line-height: var(--base-line-height);    }

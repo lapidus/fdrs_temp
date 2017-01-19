@@ -57,7 +57,7 @@ class Chapter4 extends React.Component {
 
         <div className="relative clearfix body-text">
 
-          <SideNavigation
+          {/* <SideNavigation
             title={ t("report-strategic-aim-1:title") }
             sections={chapter.sections}
             sectionReferences={[
@@ -69,7 +69,7 @@ class Chapter4 extends React.Component {
               "scroll-target-section5",
               "scroll-target-section6"
             ]}
-          />
+          /> */}
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
@@ -524,13 +524,13 @@ class Chapter4 extends React.Component {
               <h3 className="text-md sm-text-lg mt0 light">{t("report-strategic-aim-1:sections.6.title")}</h3>
               <HeadlineDivider />
               <p>{t("report-strategic-aim-1:sections.6.blocks.0")}</p>
-              <SimpleBarChart
+              {/* <SimpleBarChart
                 title={t("report-strategic-aim-1:sections.6.blocks.1.title")}
                 caption={t("report-strategic-aim-1:sections.6.blocks.1.caption")}
                 horizontal={false}
                 height={300}
                 data={section6.blocks[1].dataset.map((item, i) => {
-                  return { y: +item.value, x: new Date(item.year,1,1) }
+                  return { y: Number(item.value), x: new Date(item.year,1,1) }
                 })}
                 labels={section6.blocks[1].barLabels}
                 tickValues={section6.blocks[1].dataset.map((item, i) => {
@@ -538,7 +538,7 @@ class Chapter4 extends React.Component {
                 })}
                 tickFormat={(x) => x.getFullYear()}
                 axisLabels={section6.blocks[1].axisLabels}
-                />
+                /> */}
               <p>{t("report-strategic-aim-1:sections.6.blocks.2")}</p>
               <div>
                 <h4 className="title strong">{t("report-strategic-aim-1:sections.6.blocks.3.title")}</h4>

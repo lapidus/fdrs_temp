@@ -27,6 +27,17 @@ small,
 .heading-xl   { font-size: calc(112 * var(--one)); }
 .heading-xxl  { font-size: calc(144 * var(--one)); }
 .heading-xxxl { font-size: calc(240 * var(--one)); }
+
+.lead { font-size: calc(1.25 * var(--base-font-size)); }
+
+.display-5 { font-size: calc(272 * var(--one)); }
+.display-4 { font-size: calc(72 * var(--one));  }
+.display-3 { font-size: calc(56 * var(--one));  }
+.display-2 { font-size: calc(44 * var(--one));  }
+.display-1 { font-size: calc(34 * var(--one));  }
+.headline  { font-size: calc(24 * var(--one));  }
+.title     { font-size: calc(20 * var(--one));  }
+.subhead   { font-size: calc(16 * var(--one));  }
 /*
 small,
 .text-xs   { font-size: calc(13 * var(--one)); }

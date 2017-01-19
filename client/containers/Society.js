@@ -10,6 +10,7 @@ import filter from "lodash/fp/filter"
 import uniqBy from "lodash/fp/uniqBy"
 import sortBy from "lodash/sortBy"
 import niceNum from "../utils/niceNum"
+import Icon from "../components/Icon"
 
 import { translate } from "react-i18next"
 
@@ -127,6 +128,8 @@ class Society extends React.Component {
 
   render() {
 
+    // <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+
     const {
       year,
       earliestData,
@@ -229,6 +232,7 @@ class Society extends React.Component {
                     { ` ${earliestData.KPI_Year} ` }
                     { t("societies:fillerText")[1] }
                   </p>
+
                   <div className="clearfix">
                     <div className="left shadow-3">
                       <a target="_blank" href={"/fdrs/societies/" + society.slug + ".pdf"} className="btn link-no-underline px1">
@@ -236,11 +240,14 @@ class Society extends React.Component {
                       </a>
                     </div>
                     <div className="right shadow-3">
-                      <ShareBtn service="twitter" />
+                      <a href="https://twitter.com/intent/tweet?text=Society Profile&hashtags=IFRC,FDRS">
+                        <ShareBtn service="twitter" />
+                      </a>
                       <ShareBtn service="facebook" />
                       <ShareBtn service="mail" />
                     </div>
                   </div>
+
                 </div>
                 <div className="col base-8 base-offset-2 xs-6 xs-offset-3 sm-4 sm-offset-0 px1">
                   <Globe
@@ -266,8 +273,9 @@ class Society extends React.Component {
                   <Card indicator="KPI_noPeopleVolunteering">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
+                        {/* <h1 className="text-base mt0 mb1">{ t("common:indicators.KPI_noPeopleVolunteering") }</h1> */}
                         <h1 className="text-base mt0 mb1">
-                          { t("common:indicators.KPI_noPeopleVolunteering") }
+                          { t("common:indicators.KPI_noPeopleVolunteering.name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -370,8 +378,10 @@ class Society extends React.Component {
                   <Card indicator="KPI_noLocalUnits">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
+                        {/* <h1 className="text-base mt0 mb1">
+                          { t("common:indicators.KPI_noLocalUnits") }</h1> */}
                         <h1 className="text-base mt0 mb1">
-                          { t("common:indicators.KPI_noLocalUnits") }
+                          { t("common:indicators.KPI_noLocalUnits.name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -528,8 +538,10 @@ class Society extends React.Component {
                   <Card indicator="KPI_noPaidStaff">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
+                        {/* <h1 className="text-base mt0 mb1">
+                          { t("common:indicators.KPI_noPaidStaff") }</h1> */}
                         <h1 className="text-base mt0 mb1">
-                          { t("common:indicators.KPI_noPaidStaff") }
+                          { t("common:indicators.KPI_noPaidStaff.name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -719,8 +731,10 @@ class Society extends React.Component {
                   <Card indicator="KPI_noPeopleDonatingBlood">
                     <CardView viewIcon="lineChart">
                       <div className="p1">
+                        {/* <h1 className="text-base mt0 mb1">
+                          { t("common:indicators.KPI_noPeopleDonatingBlood") }</h1> */}
                         <h1 className="text-base mt0 mb1">
-                          { t("common:indicators.KPI_noPeopleDonatingBlood") }
+                          { t("common:indicators.KPI_noPeopleDonatingBlood.name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -917,13 +931,12 @@ class Society extends React.Component {
           </div>
         </div>
 
-        <div className="bg-light px1 py05">
+        {/* <div className="bg-light px1 py05">
           <div className="clearfix mxn1">
             <div className="col sm-10 sm-offset-1 px1">
-              { t("common:updateText") }
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="px1 bg-beige" style={{
             backgroundImage: "url(/img/overview-preview.png)",

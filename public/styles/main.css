@@ -1488,6 +1488,42 @@ small,
   font-size: 15rem;
 }
 
+.lead {
+  font-size: 1.25rem;
+}
+
+.display-5 {
+  font-size: 17rem;
+}
+
+.display-4 {
+  font-size: 4.5rem;
+}
+
+.display-3 {
+  font-size: 3.5rem;
+}
+
+.display-2 {
+  font-size: 2.75rem;
+}
+
+.display-1 {
+  font-size: 2.125rem;
+}
+
+.headline {
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+}
+
+.subhead {
+  font-size: 1rem;
+}
+
 /*
 small,
 .text-xs   { font-size: calc(13 * var(--one)); }
@@ -1629,6 +1665,42 @@ strong,
     font-size: 15rem;
   }
 
+  .xs-lead {
+    font-size: 1.25rem;
+  }
+
+  .xs-display-5 {
+    font-size: 17rem;
+  }
+
+  .xs-display-4 {
+    font-size: 4.5rem;
+  }
+
+  .xs-display-3 {
+    font-size: 3.5rem;
+  }
+
+  .xs-display-2 {
+    font-size: 2.75rem;
+  }
+
+  .xs-display-1 {
+    font-size: 2.125rem;
+  }
+
+  .xs-headline {
+    font-size: 1.5rem;
+  }
+
+  .xs-title {
+    font-size: 1.25rem;
+  }
+
+  .xs-subhead {
+    font-size: 1rem;
+  }
+
   .xs-lh-1 {
     line-height: 1;
   }
@@ -1746,6 +1818,42 @@ strong,
     font-size: 15rem;
   }
 
+  .sm-lead {
+    font-size: 1.25rem;
+  }
+
+  .sm-display-5 {
+    font-size: 17rem;
+  }
+
+  .sm-display-4 {
+    font-size: 4.5rem;
+  }
+
+  .sm-display-3 {
+    font-size: 3.5rem;
+  }
+
+  .sm-display-2 {
+    font-size: 2.75rem;
+  }
+
+  .sm-display-1 {
+    font-size: 2.125rem;
+  }
+
+  .sm-headline {
+    font-size: 1.5rem;
+  }
+
+  .sm-title {
+    font-size: 1.25rem;
+  }
+
+  .sm-subhead {
+    font-size: 1rem;
+  }
+
   .sm-lh-1 {
     line-height: 1;
   }
@@ -1857,6 +1965,42 @@ strong,
 
   .md-heading-xxxl {
     font-size: 15rem;
+  }
+
+  .md-lead {
+    font-size: 1.25rem;
+  }
+
+  .md-display-5 {
+    font-size: 17rem;
+  }
+
+  .md-display-4 {
+    font-size: 4.5rem;
+  }
+
+  .md-display-3 {
+    font-size: 3.5rem;
+  }
+
+  .md-display-2 {
+    font-size: 2.75rem;
+  }
+
+  .md-display-1 {
+    font-size: 2.125rem;
+  }
+
+  .md-headline {
+    font-size: 1.5rem;
+  }
+
+  .md-title {
+    font-size: 1.25rem;
+  }
+
+  .md-subhead {
+    font-size: 1rem;
   }
 
   .md-lh-1 {
@@ -1976,6 +2120,42 @@ strong,
     font-size: 15rem;
   }
 
+  .lg-lead {
+    font-size: 1.25rem;
+  }
+
+  .lg-display-5 {
+    font-size: 17rem;
+  }
+
+  .lg-display-4 {
+    font-size: 4.5rem;
+  }
+
+  .lg-display-3 {
+    font-size: 3.5rem;
+  }
+
+  .lg-display-2 {
+    font-size: 2.75rem;
+  }
+
+  .lg-display-1 {
+    font-size: 2.125rem;
+  }
+
+  .lg-headline {
+    font-size: 1.5rem;
+  }
+
+  .lg-title {
+    font-size: 1.25rem;
+  }
+
+  .lg-subhead {
+    font-size: 1rem;
+  }
+
   .lg-lh-1 {
     line-height: 1;
   }
@@ -2091,6 +2271,42 @@ strong,
 
   .xl-heading-xxxl {
     font-size: 15rem;
+  }
+
+  .xl-lead {
+    font-size: 1.25rem;
+  }
+
+  .xl-display-5 {
+    font-size: 17rem;
+  }
+
+  .xl-display-4 {
+    font-size: 4.5rem;
+  }
+
+  .xl-display-3 {
+    font-size: 3.5rem;
+  }
+
+  .xl-display-2 {
+    font-size: 2.75rem;
+  }
+
+  .xl-display-1 {
+    font-size: 2.125rem;
+  }
+
+  .xl-headline {
+    font-size: 1.5rem;
+  }
+
+  .xl-title {
+    font-size: 1.25rem;
+  }
+
+  .xl-subhead {
+    font-size: 1rem;
   }
 
   .xl-lh-1 {
