@@ -37,7 +37,7 @@
                 "y": "Catastrophes naturelles"
             },
             "lineLabels": [
-                "Catastrophes\\nnaturelles"
+                "Catastrophes\nnaturelles"
             ]
         }
     ],
@@ -357,58 +357,37 @@
                             "fill": "#0F9EE2"
                         },
                         {
-                            "x": [
-                                "Tremblements",
-                                "de terre (3)"
-                            ],
+                            "x": "Tremblements\nde terre (3)",
                             "y": "3",
                             "fill": "#FED02F"
                         },
                         {
-                            "x": [
-                                "\u00c9ruptions",
-                                "volcaniques (4)"
-                            ],
+                            "x": "\u00c9ruptions\nvolcaniques (4)",
                             "y": "4",
                             "fill": "#DE2214"
                         },
                         {
-                            "x": [
-                                "Cyclones,",
-                                "temp\u00eates, (4)"
-                            ],
+                            "x": "Cyclones,\ntemp\u00eates, (4)",
                             "y": "4",
                             "fill": "#84BB23"
                         },
                         {
-                            "x": [
-                                "Temp\u00e9rature",
-                                "extr\u00eame (4)"
-                            ],
+                            "x": "Temp\u00e9rature\nextr\u00eame (4)",
                             "y": "4",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "Troubles",
-                                "civils (13)"
-                            ],
+                            "x": "Troubles\ncivils (13)",
                             "y": "13",
                             "fill": "#84BB23"
                         },
                         {
-                            "x": [
-                                "Explosions,",
-                                "incendies (2)"
-                            ],
+                            "x": "Explosions,\nincendies (2)",
                             "y": "2",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "Mouvements de",
-                                "population (11)"
-                            ],
+                            "x": "Mouvements de\npopulation (11)",
                             "y": "11",
                             "fill": "#EE3224"
                         },
@@ -619,7 +598,8 @@
                         "79"
                     ],
                     "axisLabels": {
-                        "x": "Anne\u0301es"
+                        "x": "Anne\u0301es",
+                        "y": ""
                     },
                     "dataset": [
                         {
@@ -654,27 +634,17 @@
                             "name": "1993\u20142011",
                             "dataset": [
                                 {
-                                    "x": [
-                                        "Accidents",
-                                        "impliquant des ve\u0301hicules (10%)"
-                                    ],
+                                    "x": "Accidents\nimpliquant des ve\u0301hicules (10%)",
                                     "y": "10",
                                     "fill": "#012A39"
                                 },
                                 {
-                                    "x": [
-                                        "Violence\/",
-                                        "criminalite\u0301\/",
-                                        " conflit (30%)"
-                                    ],
+                                    "x": "Violence\/\ncriminalite\u0301\/\n conflit (30%)",
                                     "y": "30",
                                     "fill": "#EE3224"
                                 },
                                 {
-                                    "x": [
-                                        "Catastrophes",
-                                        "naturelles (60%)"
-                                    ],
+                                    "x": "Catastrophes\nnaturelles (60%)",
                                     "y": "60",
                                     "fill": "#FED02F"
                                 }
@@ -684,29 +654,17 @@
                             "name": "2012\u20142014",
                             "dataset": [
                                 {
-                                    "x": [
-                                        "Accidents",
-                                        "impliquant",
-                                        "des ve\u0301hicules",
-                                        "(10%)"
-                                    ],
+                                    "x": "Accidents\nimpliquant\ndes ve\u0301hicules\n(10%)",
                                     "y": "10",
                                     "fill": "#012A39"
                                 },
                                 {
-                                    "x": [
-                                        "Violence\/",
-                                        "criminalite\u0301\/",
-                                        " conflit (86%)"
-                                    ],
+                                    "x": "Violence\/\ncriminalite\u0301\/\n conflit (86%)",
                                     "y": "86",
                                     "fill": "#EE3224"
                                 },
                                 {
-                                    "x": [
-                                        "Catastrophes",
-                                        "naturelles (4%)"
-                                    ],
+                                    "x": "Catastrophes\nnaturelles (4%)",
                                     "y": "4",
                                     "fill": "#FED02F"
                                 }

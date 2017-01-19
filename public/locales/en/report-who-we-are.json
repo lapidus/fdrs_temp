@@ -18,7 +18,7 @@
                     "type": "chart",
                     "title": "Growth of National Societies",
                     "labels": [
-                        "National\\nSocieties"
+                        "National\nSocieties"
                     ],
                     "axisLabels": {
                         "x": "Years",

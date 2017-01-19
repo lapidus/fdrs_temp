@@ -12,42 +12,22 @@
                     "title": "R\u00e9vision des statuts des Soci\u00e9t\u00e9s nationales",
                     "dataset": [
                         {
-                            "x": [
-                                "Les statuts satisfont",
-                                "aux exigences",
-                                "minimales",
-                                "(26%)"
-                            ],
+                            "x": "Les statuts satisfont\naux exigences\nminimales\n(26%)",
                             "fill": "#84BB23",
                             "y": "26"
                         },
                         {
                             "y": "10",
-                            "x": [
-                                "Le processus",
-                                "de re\u0301vision n\u2019a",
-                                "pas encore e\u0301te\u0301",
-                                "engage\u0301 (10%)"
-                            ],
+                            "x": "Le processus\nde re\u0301vision n\u2019a\npas encore e\u0301te\u0301\nengage\u0301 (10%)",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "Les statuts",
-                                "ne satisfont",
-                                "pas aux exigences",
-                                "minimales (2%)"
-                            ],
+                            "x": "Les statuts\nne satisfont\npas aux exigences\nminimales (2%)",
                             "y": "2",
                             "fill": "#EE3224"
                         },
                         {
-                            "x": [
-                                "Les statuts",
-                                "sont en cours",
-                                "de re\u0301vision",
-                                "(62%)"
-                            ],
+                            "x": "Les statuts\nsont en cours\nde re\u0301vision\n(62%)",
                             "fill": "#FED02F",
                             "y": "62"
                         }
@@ -75,41 +55,44 @@
             "blocks": {
                 "2": {
                     "type": "chart",
-                    "dataset": {
-                        "0": {
+                    "dataset": [
+                        {
                             "x": "E\u0301tude de re\u0301fe\u0301rence initiale",
                             "y": "3"
                         },
-                        "1": {
+                        {
                             "y": "7",
                             "x": "E\u0301tude de cas\/recherche"
                         },
-                        "2": {
+                        {
                             "y": "9",
                             "x": "E\u0301valuation finale"
                         },
-                        "3": {
+                        {
                             "y": "2",
                             "x": "E\u0301valuation d\u2019impact"
                         },
-                        "4": {
+                        {
+                            "y": "1",
                             "x": "E\u0301valuation d\u2019impact\/e\u0301tude de cas\/recherche"
                         },
-                        "5": {
+                        {
                             "x": "E\u0301valuation a\u0300 mi-parcours",
                             "y": "3"
                         },
-                        "6": {
+                        {
+                            "y": "1",
                             "x": "E\u0301valuation en temps re\u0301el"
                         },
-                        "8": {
+                        {
+                            "y": "10",
+                            "x": "Examen"
+                        },
+                        {
                             "y": "2",
                             "x": "Enque\u0302te"
-                        },
-                        "7": {
-                            "x": "Examen"
                         }
-                    },
+                    ],
                     "title": "Rapports par type d\u2019e\u0301valuation",
                     "caption": "Source: de\u0301partement Planification et e\u0301valuation"
                 },
@@ -209,11 +192,12 @@
                     "type": "chart",
                     "title": "Utilisateurs de la Plateforme de formation",
                     "axisLabels": {
-                        "x": "Anne\u0301es"
+                        "x": "Anne\u0301es",
+                        "y": ""
                     },
                     "lineLabels": {
-                        "1": "Ache\u0300vement\\ndes cours",
-                        "0": "Inscriptions\\naux cours"
+                        "1": "Ache\u0300vement\ndes cours",
+                        "0": "Inscriptions\naux cours"
                     },
                     "caption": "The graph above shows the number of users who registered for courses vs. the number of students who completed courses."
                 },

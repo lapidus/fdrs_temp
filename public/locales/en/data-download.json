@@ -1,7 +1,6 @@
 {
-  "title" : "Data Download",
-  "intro" : "On this page you can download the datasets used for the various visualizations on FDRS",
-  "excel" : "Download Excel File",
-  "csv" : "Download CSV File"
-
+    "title": "Data Download",
+    "intro": "On this page you can download the datasets used for the various visualizations on FDRS",
+    "csv": "Download CSV File",
+    "excel": "Download Excel File"
 }

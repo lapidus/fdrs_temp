@@ -66,10 +66,7 @@
                     "title": "Economic impact",
                     "dataset": [
                         {
-                            "x": [
-                                "",
-                                "Collective"
-                            ],
+                            "x": "\nCollective",
                             "y": "6",
                             "fill": "#012A39"
                         },
@@ -79,11 +76,7 @@
                             "fill": "#EE3224"
                         },
                         {
-                            "x": [
-                                "Interpersonal",
-                                "",
-                                ""
-                            ],
+                            "x": "Interpersonal\n\n",
                             "y": "36",
                             "fill": "#FED02F"
                         }

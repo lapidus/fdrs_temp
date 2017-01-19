@@ -66,45 +66,40 @@
                     "title": "Repercusiones econ\u00f3micas",
                     "dataset": [
                         {
-                            "x": [
-                                "Violencia",
-                                "colectiva"
-                            ],
+                            "x": "Violencia\ncolectiva",
                             "y": "6",
                             "fill": "#012A39"
                         },
                         {
-                            "x": [
-                                "Violencia",
-                                "autoinfligida"
-                            ],
+                            "x": "Violencia\nautoinfligida",
                             "y": "58",
                             "fill": "#EE3224"
                         },
                         {
-                            "x": [
-                                "Violencia",
-                                "interpersonal",
-                                ""
-                            ],
+                            "x": "Violencia\ninterpersonal\n",
                             "y": "36",
                             "fill": "#FED02F"
                         }
-                    ]
+                    ],
+                    "caption": "The cost of intimate partner and sexual violence for countries are very high. They include the provision of health, social, and legal services, and the value of lost earnings. The impact of violence can affect up to 4% of a country\u2019s gross domestic product."
                 }
             ]
         },
         {
             "title": "Progresos en materia de reducci\u00f3n de la violencia",
-            "blocks": {
-                "1": {
+            "blocks": [
+                "Practical interventions by National Societies show the emergence of some common themes.",
+                {
+                    "type": "chart",
                     "title": "Progresos en materia de reducci\u00f3n de la violencia",
                     "items": [
                         {
+                            "img": "\/img\/chapters\/6\/child-protection.svg",
                             "number": "78",
-                            "text": {
-                                "1": "trabajan en la protecci\u00f3n de la infancia"
-                            }
+                            "text": [
+                                "National Societies",
+                                "trabajan en la protecci\u00f3n de la infancia"
+                            ]
                         },
                         {
                             "img": "\/img\/chapters\/6\/act-against-gender-based-violence.svg",
@@ -133,14 +128,14 @@
                     ],
                     "caption": "Fuente: Departamento de Principios y Valores"
                 },
-                "2": [
+                [
                     "Protecci\u00f3n infantil \u2013 se trata de proyectos usualmente ejecutados en contextos escolares y bajo el impulso de j\u00f3venes cuando estos son el grupo concernido. Entre los temas, figuran el acoso y la intimidaci\u00f3n, el maltrato f\u00edsico o psicol\u00f3gico, el abuso sexual, la trata y los conflictos entre j\u00f3venes.",
                     "Violencia por motivos de g\u00e9nero \u2013 estas actividades se centran en la prevenci\u00f3n de la violencia dom\u00e9stica, la violencia f\u00edsica y sexual contra mujeres y ni\u00f1as, la mutilaci\u00f3n genital de mujeres, la violencia contra hombres que tienen sexo con hombres, y la creciente violencia en situaciones de desastre y conflicto.",
                     "Violencia contra los migrantes \u2013 se trata de una esfera de prevenci\u00f3n que se ampl\u00eda e incluye el apoyo a los refugiados y los desplazados internos durante crisis y despu\u00e9s de estas, as\u00ed como la prestaci\u00f3n de servicios para los migrantes y los refugiados que llegan a un nuevo pa\u00eds con el fin de favorecer su integraci\u00f3n en las comunidades de acogida, y esfuerzos relativos a la trata de personas.",
                     " Violencia comunitaria \u2013 se trata de un nuevo \u00e1mbito de trabajo para las organizaciones de la Cruz Roja y de la Media Luna Roja cuya importancia se reconoce en las intervenciones a ra\u00edz de desastres pues las tensiones que pudieran existir o surgir pueden obstaculizar las operaciones de socorro. En otros contextos, algunas Sociedades Nacionales intentan disminuir la violencia en lugares p\u00fablicos mediante la disipaci\u00f3n o la eliminaci\u00f3n de elementos de divisi\u00f3n entre grupos que se enfrentan. Por ejemplo, la labor para reducir conflictos entre grupos \u00e9tnicos, o la violencia en multitudes, entre otros, durante elecciones o acontecimientos deportivos, la violencia urbana y de pandillas.",
                     "Violencia autoinfligida \u2013 se trata de un fen\u00f3menos que cobra cariz epid\u00e9mico. El cincuenta y ocho por ciento (58%) de las muertes violentas en el mundo corresponden a suicidios. Resulta imperioso inspirarse del ejemplo de ciertas Sociedades Nacionales y redoblar esfuerzos para salvar los obst\u00e1culos asociados a tab\u00faes culturales o religiosos y a la estigmatizaci\u00f3n que conllevan. Otras Sociedades Nacionales abordan el problema de la violencia autoinfligida mediante iniciativas directas encaminadas a reducir el consumo indebido de alcohol y otras substancias, o de forma indirecta, a trav\u00e9s de servicios de acompa\u00f1amiento psicosocial y de atenci\u00f3n de salud mental."
                 ],
-                "3": {
+                {
                     "type": "case-study-simple",
                     "title": "\u201cQuer\u00edan matarlos\u201d",
                     "content": [
@@ -148,7 +143,7 @@
                         " Para hacer frente al problema, la Cruz Roja de Kenia puso en marcha un proyecto de reducci\u00f3n de riesgos destinado a frenar el peligro de violencia en el futuro. En este proyecto se incluyen comit\u00e9s locales de paz, proyectos conjuntos para la generaci\u00f3n de ingresos dirigidos por mujeres, el di\u00e1logo con dirigentes religiosos y actividades escolares. La Cruz Roja de Kenia desempe\u00f1a una funci\u00f3n crucial pues asume la coordinaci\u00f3n de las actividades con neutralidad, independencia e imparcialidad."
                     ]
                 }
-            }
+            ]
         },
         {
             "title": "Agentes del cambio de comportamiento",

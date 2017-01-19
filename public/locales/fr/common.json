@@ -1,17 +1,160 @@
 {
-    "name": "Rio Grande",
+    "name": "Federation-wide databank and reporting system",
+    "nameParts": [
+        "Federation-wide",
+        "databank",
+        "and reporting system"
+    ],
+    "download": "T\u00e9l\u00e9charger le bilan",
+    "indicatorsTitle": "Indicators",
+    "updateText": "Last updated...",
     "indicators": {
-        "KPI_noPeopleVolunteering": "People volunteering time",
-        "KPI_noPaidStaff": "Paid staff",
-        "KPI_noPeopleDonatingBlood": "People donating blood",
-        "KPI_noLocalUnits": "Local units",
+        "KPI_noPeopleVolunteering": {
+            "name": "People volunteering their time",
+            "definition": "Number of people volunteering their time: People that have volunteered at least four hours during the annual reporting period.",
+            "source": "",
+            "unit": "",
+            "": "People volunteering their time"
+        },
+        "KPI_noPaidStaff": {
+            "name": "Paid staff",
+            "definition": "Number of paid staff: People who work with a National Society or the Secretariat for a minimum of three months and are remunerated.",
+            "source": "",
+            "unit": "[unit test]",
+            "": "Paid staff"
+        },
+        "KPI_noPeopleDonatingBlood": {
+            "name": "People donating blood",
+            "definition": "Number of people donating blood: People that have donated blood at least once during the reporting period.",
+            "source": "",
+            "unit": "",
+            "": "People donating blood"
+        },
+        "KPI_noLocalUnits": {
+            "name": "Local units",
+            "definition": "Number of local units: National Society subdivisions that work directly with the community \u2013 this can include local chapters, branches, regional and intermediate offices, and headquarters.",
+            "source": "",
+            "unit": "",
+            "": "Local units"
+        },
+        "KPI_IncomeLC (CHF)": {
+            "name": "Income (in CHF)",
+            "definition": "Total income received: the fiscal value of money, material goods, and services a National Society receives during the fiscal year (in CHF).",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_expenditureLC (CHF)": {
+            "name": "Expenditure (in CHF)",
+            "definition": "Total expenditure: the fiscal value of money, material goods, and services a National Society spends during the fiscal year (in CHF).",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedDisaster": {
+            "name": "People reached by disaster response and early recovery programmes",
+            "definition": "",
+            "source": "",
+            "unit": "",
+            "": "People reached by disaster response and early recovery programmes"
+        },
+        "KPI_noPeopleReachedAllServices": {
+            "name": "People reached by Long Term Services and Development Programmes",
+            "definition": "Number of people reached by Long Term Services and Development Programmes: Direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "",
+            "unit": "",
+            "": "People reached by long term services and development programmes"
+        },
+        "KPI_noPeopleReachedHealth": {
+            "name": "People reached by community health",
+            "definition": "",
+            "source": "",
+            "unit": "",
+            "": "People reached by community health"
+        },
+        "KPI_noPeopleReachedDevelopment": {
+            "name": "People reached by community development",
+            "definition": "",
+            "source": "",
+            "unit": "",
+            "": "People reached by community development"
+        },
+        "KPI_noPeopleReachedServices": {
+            "name": "People reached by social services",
+            "definition": "",
+            "source": "",
+            "unit": "",
+            "": "People reached by social services"
+        },
+        "KPI_noPeopleCoveredPreparedness": {
+            "name": "People covered",
+            "definition": "Number of people covered by Preparedness and Risk Reduction Programmes",
+            "source": "",
+            "unit": "",
+            "": "People covered by preparedness and risk reduction programmes"
+        },
+        "Population": {
+            "name": "Population, total",
+            "definition": "Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates.",
+            "source": "(1) United Nations Population Division. World Population Prospects, (2) Census reports and other statistical publications from national statistical offices, (3) Eurostat: Demographic Statistics, (4) United Nations Statistical Division. Population and Vital Statistics Report (various years), (5) U.S. Census Bureau: International Database, and (6) Secretariat of the Pacific Community: Statistics and Demography Programme.",
+            "unit": ""
+        },
+        "Poverty": {
+            "name": "National poverty headcount ratio",
+            "definition": "National poverty headcount ratio is the percentage of the population living below the national poverty lines. National estimates are based on population-weighted subgroup estimates from household surveys.",
+            "source": "World Bank, Global Poverty Working Group. Data are compiled from official government sources or are computed by World Bank staff using national (i.e. country\u2013specific) poverty lines.",
+            "unit": ""
+        },
+        "GDP": {
+            "name": "GDP (current US$)",
+            "definition": "GDP at purchaser's prices is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in current U.S. dollars. Dollar figures for GDP are converted from domestic currencies using single year official exchange rates. For a few countries where the official exchange rate does not reflect the rate effectively applied to actual foreign exchange transactions, an alternative conversion factor is used.",
+            "source": "World Bank national accounts data, and OECD National Accounts data files.",
+            "unit": ""
+        },
         "KPI_IncomeLC": "Income",
-        "KPI_expenditureLC": "Expenditure",
-        "KPI_noPeopleReachedDisaster": "People reached by disaster response and early recovery programmes",
-        "KPI_noPeopleReachedAllServices": "People reached by all services",
-        "KPI_noPeopleReachedHealth": "People reached by health services",
-        "KPI_noPeopleReachedDevelopment": "People reached by development",
-        "KPI_noPeopleReachedServices": "People reached by services",
-        "KPI_noPeopleCoveredPreparedness": "People covered"
-    }
+        "KPI_expenditureLC": "Expenditure"
+    },
+    "login": "Login",
+    "home": "Home",
+    "navigation": [
+        {
+            "name": "Services",
+            "dropdownItems": [
+                "The IFRC at a glance",
+                "National society profiles",
+                "\"Everyone counts\" report",
+                "Data download"
+            ]
+        },
+        {
+            "name": "FAQ"
+        },
+        {
+            "name": "About"
+        },
+        {
+            "name": "Acknowledgements"
+        }
+    ],
+    "dataCollectors": {
+        "title": "For data collectors",
+        "lead": "To get started with the data collection for your National Society, please log in.",
+        "button": "Login as data collector"
+    },
+    "nationalSocietiesPreview": {
+        "subtitle": "Get to know the National Societies",
+        "title": "National Society Profiles",
+        "lead": "Explore the dataset for each National Society, and download PDF profiles for further sharing.",
+        "button": "Explore National Society Profiles"
+    },
+    "overviewPreview": {
+        "title": "The IFRC at a glance",
+        "lead": "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks.",
+        "button": "Explore the IFRC"
+    },
+    "contact": {
+        "title": "Contact",
+        "lead": "If you have feedback, questions and\/or corrections, please write to the FDRS team.",
+        "email": "fdrs@ifrc.org"
+    },
+    "credit": "website by Lapidus Interactive",
+    "copyright": "@ 2016 IFRC"
 }
