@@ -8,8 +8,12 @@ import { showTooltip, hideTooltip } from "../../actions/appActions"
 import sortBy from "lodash/sortBy"
 
 function recalculateDataPoints(allYears, nsData, currentIndicator) {
+
+  allYears = ["2010", "2011", "2012", "2013", "2014", "2015"];
+
   return allYears.map(year => {
     const filtered = nsData.filter(obj => obj.KPI_Year === year)[0]
+
     return {
       x: new Date(year, 1, 1),
       y: filtered ? (filtered[currentIndicator.id] ? Number(filtered[currentIndicator.id]) : null) : null
@@ -46,7 +50,7 @@ class Trendline extends React.Component {
   }
   render() {
     const { dataPoints } = this.state
-
+    
     return (
       <div className="relative">
         <div className="absolute b0 l0 small">
