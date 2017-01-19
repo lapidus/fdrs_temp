@@ -188,11 +188,11 @@ class Home extends React.Component {
               <p className='lead'>
                 { t("common:dataCollectors.lead") }
               </p>
-              <LanguageLink to='/fdrs' className='btn btn--raised bg-primary'>
+              <a href="http://fdrs.ifrc.org" target="_blank" className='btn btn--raised bg-primary'>
                 <span className='block py05 px1'>
                   { t("common:dataCollectors.button") }
                 </span>
-              </LanguageLink>
+              </a>
             </div>
           </div>
         </div>

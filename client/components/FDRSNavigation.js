@@ -288,7 +288,7 @@ class FDRSNavigation extends React.Component {
                 {/* <a href="#" className="btn block p15 bg-light">{ "EN" }</a> */}
               </li>
               <li className="block relative sm-inline-block">
-                <a href="#" className="btn block p15 bg-primary color-inverted">{ "Login" }</a>
+                <a href="http://fdrs.ifrc.org" target="_blank" className="btn block p15 bg-primary color-inverted">{ "Login" }</a>
               </li>
             </ul>
           </nav>
