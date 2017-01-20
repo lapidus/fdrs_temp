@@ -36,7 +36,6 @@ class FAQ extends React.Component {
 
     const { i18n } = this.context
     const { t } = this.props
-    const { language } = i18n
 
     const questions = _.values(t("faq:questions"))
     const pageData = i18n.store.data[language]["common"]

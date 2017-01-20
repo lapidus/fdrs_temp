@@ -1,168 +1,186 @@
 {
     "breadcrumbs": {
-        "National society profiles": "National society profiles",
+        "National society profiles": "Profils des soci\u00e9t\u00e9s nationales",
         "FAQ": "FAQ",
         "Services": "Services",
-        "The IFRC at a glance": "The IFRC at a glance",
-        "Data download": "Data download",
-        "Home": "Home"
+        "The IFRC at a glance": "La FICR en bref",
+        "Data download": "T\u00e9l\u00e9charger les donn\u00e9es",
+        "Home": "Page d'acceuil"
     },
     "indicators": {
         "KPI_noPeopleVolunteering": {
-            "": "People volunteering their time",
-            "name": "People volunteering their time",
-            "definition": "Number of people volunteering their time: People that have volunteered at least four hours during the annual reporting period.",
+            "": "Personnes donnant de leur temps comme volontaires",
+            "name": "Personnes donnant de leur temps comme volontaires",
+            "definition": "Nombre de personnes donnant de leur temps comme volontaires : personnes ayant travaill\u00e9 au moins quatre heures comme volontaires pendant la p\u00e9riode consid\u00e9r\u00e9e.",
             "source": "",
             "unit": ""
         },
         "KPI_noPaidStaff": {
-            "": "Paid staff",
-            "name": "Paid staff",
-            "definition": "Number of paid staff: People who work with a National Society or the Secretariat for a minimum of three months and are remunerated.",
+            "": "Employ\u00e9s r\u00e9mun\u00e9r\u00e9s",
+            "name": "Employ\u00e9s r\u00e9mun\u00e9r\u00e9s",
+            "definition": "Nombre d\u2019employ\u00e9s r\u00e9mun\u00e9r\u00e9s : personnes ayant travaill\u00e9 au moins trois mois pour une Soci\u00e9t\u00e9 nationale ou le Secr\u00e9tariat pendant la p\u00e9riode consid\u00e9r\u00e9e en \u00e9tant r\u00e9mun\u00e9r\u00e9es.",
             "source": "",
             "unit": "[unit test]"
         },
         "KPI_noPeopleDonatingBlood": {
-            "": "People donating blood",
-            "name": "People donating blood",
-            "definition": "Number of people donating blood: People that have donated blood at least once during the reporting period.",
+            "": "Donneurs de sang",
+            "name": "Donneurs de sang",
+            "definition": "Nombre de donneurs de sang : personnes ayant donn\u00e9 du sang au moins une fois durant la p\u00e9riode consid\u00e9r\u00e9e.",
             "source": "",
             "unit": ""
         },
         "KPI_noLocalUnits": {
-            "": "Local units",
-            "name": "Local units",
-            "definition": "Number of local units: National Society subdivisions that work directly with the community \u2013 this can include local chapters, branches, regional and intermediate offices, and headquarters.",
+            "": "Unite\u0301s locales",
+            "name": "Unit\u00e9s locales",
+            "definition": "Nombre d\u2019unit\u00e9s locales : subdivisions de la Soci\u00e9t\u00e9 nationale qui travaillent directement aupr\u00e8s de la population \u2013 ce peut \u00eatre des chapitres locaux, des sections, des bureaux r\u00e9gionaux et interm\u00e9diaires, et le si\u00e8ge.",
             "source": "",
             "unit": ""
         },
         "KPI_noPeopleReachedDisaster": {
-            "": "People reached by disaster response and early recovery programmes",
-            "name": "People reached by disaster response and early recovery programmes",
+            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce",
+            "name": "de personnes ont b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce",
             "definition": "",
             "source": "",
             "unit": ""
         },
         "KPI_noPeopleReachedAllServices": {
-            "": "People reached by long term services and development programmes",
-            "name": "People reached by Long Term Services and Development Programmes",
-            "definition": "Number of people reached by Long Term Services and Development Programmes: Direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "": "Personnes ayant be\u0301ne\u0301ficie\u0301 de services a\u0300 long terme et programmes de d\u00e9veloppement",
+            "name": "Personnes ayant be\u0301ne\u0301ficie\u0301 de services a\u0300 long terme et programmes de d\u00e9veloppement",
+            "definition": "Personnes ayant be\u0301ne\u0301ficie\u0301 de services a\u0300 long terme et programmes de d\u00e9veloppement: nombre de b\u00e9n\u00e9ficiaires directs et indirects et de personnes couvertes par un service de la F\u00e9d\u00e9ration internationale.",
             "source": "",
             "unit": ""
         },
         "KPI_noPeopleReachedHealth": {
-            "": "People reached by community health",
-            "name": "People reached by community health",
+            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de sant\u00e9 communautaire",
+            "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de sant\u00e9 communautaire",
             "definition": "",
             "source": "",
             "unit": ""
         },
         "KPI_noPeopleReachedDevelopment": {
-            "": "People reached by community development",
-            "name": "People reached by community development",
+            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de d\u00e9veloppement communautaire",
+            "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de d\u00e9veloppement communautaire",
             "definition": "",
             "source": "",
             "unit": ""
         },
         "KPI_noPeopleReachedServices": {
-            "": "People reached by social services",
-            "name": "People reached by social services",
+            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services sociaux",
+            "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services sociaux",
             "definition": "",
             "source": "",
             "unit": ""
         },
         "KPI_noPeopleCoveredPreparedness": {
-            "": "People covered by preparedness and risk reduction programmes",
-            "name": "People covered",
-            "definition": "Number of people covered by Preparedness and Risk Reduction Programmes",
+            "": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration",
+            "name": "Personnes couvertes",
+            "definition": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration",
             "source": "",
             "unit": ""
         },
         "KPI_IncomeLC (CHF)": {
-            "name": "Income (in CHF)",
-            "definition": "Total income received: the fiscal value of money, material goods, and services a National Society receives during the fiscal year (in CHF).",
+            "name": "Recettes totales (CHF)",
+            "definition": "Recettes totales : valeur financi\u00e8re de l\u2019argent, des biens mat\u00e9riels et des services qu\u2019une Soci\u00e9t\u00e9 nationale re\u00e7oit pendant l\u2019exercice budg\u00e9taire.",
             "source": "",
             "unit": ""
         },
         "KPI_expenditureLC (CHF)": {
-            "name": "Expenditure (in CHF)",
-            "definition": "Total expenditure: the fiscal value of money, material goods, and services a National Society spends during the fiscal year (in CHF).",
+            "name": "Total des d\u00e9penses (CHF)",
+            "definition": "Total des d\u00e9penses : valeur financi\u00e8re de l\u2019argent, des biens mat\u00e9riels et des services qu\u2019une Soci\u00e9t\u00e9 nationale d\u00e9pense pendant l\u2019exercice budg\u00e9taire.",
             "source": "",
             "unit": ""
         },
         "Population": {
-            "name": "Population, total",
-            "definition": "Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates.",
-            "source": "(1) United Nations Population Division. World Population Prospects, (2) Census reports and other statistical publications from national statistical offices, (3) Eurostat: Demographic Statistics, (4) United Nations Statistical Division. Population and Vital Statistics Report (various years), (5) U.S. Census Bureau: International Database, and (6) Secretariat of the Pacific Community: Statistics and Demography Programme.",
+            "name": "totale de la population",
+            "definition": "La population totale est bas\u00e9e sur la d\u00e9finition de facto de la population, qui compte tous les r\u00e9sidents ind\u00e9pendamment de leurs statut l\u00e9gal ou de leur citoyennet\u00e9. Les valeurs indiqu\u00e9es sont des estimations semestrielles.",
+            "source": "(1) Division de la population des Nations Unies, (2) Rapports de recensement et autres publications statistiques des bureaux nationaux de statistique, (3) Eurostat: Statistiques d\u00e9mographiques, (4) Division de la statistique des Nations Unies, (5) Bureau de recensment des Etats Unies: Base de donn\u00e9e internationale, et (6) Secr\u00e9tariat de la communaut\u00e9 pacifique: Programmes statistiques et d\u00e9mographiques. ",
             "unit": ""
         },
         "Poverty": {
-            "name": "National poverty headcount ratio",
-            "definition": "National poverty headcount ratio is the percentage of the population living below the national poverty lines. National estimates are based on population-weighted subgroup estimates from household surveys.",
-            "source": "World Bank, Global Poverty Working Group. Data are compiled from official government sources or are computed by World Bank staff using national (i.e. country\u2013specific) poverty lines.",
+            "name": "Taux national de pauvret\u00e9",
+            "definition": "Le taux national de pauvret\u00e9 est le pourcentage de la population vivant en dessous des seuils nationaux de pauvret\u00e9. Les estimations nationales sont bas\u00e9es sur des estimations des sous-groupes pond\u00e9r\u00e9s par la population tir\u00e9es des enqu\u00eates aupr\u00e8s des m\u00e9nages.",
+            "source": "Banque mondiale, Groupe de travail sur la pauvret\u00e9 mondiale. Les donn\u00e9es proviennent de sources gouvernementales officielles ou sont calcul\u00e9es par le personnel de la Banque mondiale en utilisant des seuils de pauvret\u00e9 nationaux (c'est-\u00e0-dire sp\u00e9cifiques au pays).",
             "unit": ""
         },
         "GDP": {
-            "name": "GDP (current US$)",
-            "definition": "GDP at purchaser's prices is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in current U.S. dollars. Dollar figures for GDP are converted from domestic currencies using single year official exchange rates. For a few countries where the official exchange rate does not reflect the rate effectively applied to actual foreign exchange transactions, an alternative conversion factor is used.",
-            "source": "World Bank national accounts data, and OECD National Accounts data files.",
+            "name": "PIB (USD en vigeur)",
+            "definition": "Le PIB au prix de l'acheteur est la somme de la valeur ajout\u00e9e brute de tous les producteurs r\u00e9sidents de l'\u00e9conomie plus les taxes sur les produits et moins les subventions qui ne sont pas incluses dans la valeur des produits. Il est calcul\u00e9 sans faire de d\u00e9ductions pour amortissement des actifs fabriqu\u00e9s ou pour \u00e9puisement et d\u00e9gradation des ressources naturelles. Les donn\u00e9es sont en dollars am\u00e9ricains en vigeur. Les chiffres du PIB en dollars sont convertis en monnaies nationales en utilisant les taux de change officiels d'un an. Pour quelques pays o\u00f9 le taux de change officiel ne refl\u00e8te pas le taux effectivement appliqu\u00e9 aux op\u00e9rations de change r\u00e9elles, un autre facteur de conversion est utilis\u00e9",
+            "source": "Les donn\u00e9es des comptes nationaux de la Banque mondiale et les fichiers de donn\u00e9es des Comptes nationaux de l'OCDE",
             "unit": ""
         },
-        "KPI_IncomeLC": "Income",
-        "KPI_expenditureLC": "Expenditure"
+        "KPI_IncomeLC": "Recettes totales",
+        "KPI_expenditureLC": "D\u00e9penses totales"
     },
-    "name": "Federation-wide databank and reporting system",
+    "languages": {
+        "en": {
+            "name": "Anglais",
+            "slug": "en"
+        },
+        "fr": {
+            "name": "Fran\u00e7ais",
+            "slug": "fr"
+        },
+        "es": {
+            "name": "Espagnol",
+            "slug": "es"
+        },
+        "ar": {
+            "name": "Arabe",
+            "slug": "ar"
+        }
+    },
+    "name": "Base de donn\u00e9es et syst\u00e8me de compte rendu \u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration",
     "nameParts": [
-        "Federation-wide",
-        "databank",
-        "and reporting system"
+        "\u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration",
+        "Base de donn\u00e9es",
+        "et syst\u00e8me de compte rendu"
     ],
     "download": "T\u00e9l\u00e9charger le bilan",
-    "indicatorsTitle": "Indicators",
-    "updateText": "Last updated...",
-    "login": "Login",
-    "home": "Home",
+    "indicatorsTitle": "Indicateurs",
+    "updateText": "Derni\u00e8re mise-\u00e0-jours",
+    "login": "s'identifier",
+    "home": "Page d'acceuil",
     "navigation": [
         {
             "name": "Services",
             "dropdownItems": [
-                "The IFRC at a glance",
-                "National society profiles",
-                "\"Everyone counts\" report",
-                "Data download"
+                "La FICR en bref",
+                "Profils des soci\u00e9t\u00e9s nationales",
+                "Rapport \"Tout le monde compte\"",
+                "T\u00e9l\u00e9charger les donn\u00e9es"
             ]
         },
         {
             "name": "FAQ"
         },
         {
-            "name": "About"
+            "name": "\u00c0 propos de "
         },
         {
-            "name": "Acknowledgements"
+            "name": "Remerciements"
         }
     ],
     "dataCollectors": {
-        "title": "For data collectors",
-        "lead": "To get started with the data collection for your National Society, please log in.",
-        "button": "Login as data collector"
+        "title": "Pour les collecteurs de donn\u00e9es",
+        "lead": "Pour commencer la collecte de donn\u00e9es pour votre Soci\u00e9t\u00e9 nationale, veuillez vous connecter.",
+        "button": "Se connecter en tant que collecteur de donn\u00e9es"
     },
     "nationalSocietiesPreview": {
-        "subtitle": "Get to know the National Societies",
-        "title": "National Society Profiles",
-        "lead": "Explore the dataset for each National Society, and download PDF profiles for further sharing.",
-        "button": "Explore National Society Profiles"
+        "subtitle": "Conna\u00eetre les Soci\u00e9t\u00e9s nationales",
+        "title": "Profils des soci\u00e9t\u00e9s nationales",
+        "lead": "Explorez les donn\u00e9es pour chaque Soci\u00e9t\u00e9 nationale et t\u00e9l\u00e9chargez les profils PDF pour plus de partage.",
+        "button": "Explorer les profils des Soci\u00e9t\u00e9s nationales"
     },
     "overviewPreview": {
-        "title": "The IFRC at a glance",
-        "lead": "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks.",
-        "button": "Explore the IFRC"
+        "title": "La FICR en bref",
+        "lead": "D\u00e9couvrez d'un coup d'\u0153il la situation de la FICR et d\u00e9couvrez comment se pr\u00e9sente le plus grand r\u00e9seau humanitaire.",
+        "button": "Explorez la FICR"
     },
     "contact": {
         "title": "Contact",
-        "lead": "If you have feedback, questions and\/or corrections, please write to the FDRS team.",
+        "lead": "Si vous avez des commentaires, des questions et \/ ou des corrections, veuillez \u00e9crire \u00e0 l'\u00e9quipe FDRS.",
         "email": "fdrs@ifrc.org"
     },
-    "credit": "website by Lapidus Interactive",
-    "copyright": "@ 2016 IFRC"
+    "credit": "site par: Lapidus Interactive",
+    "copyright": "Copyright\n\u00a9 The International Federation of Red Cross and Red Crescent Societies. All rights reserved."
 }

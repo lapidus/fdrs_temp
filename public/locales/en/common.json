@@ -111,6 +111,24 @@
         "KPI_IncomeLC": "Income",
         "KPI_expenditureLC": "Expenditure"
     },
+    "languages": {
+        "en": {
+            "name": "English",
+            "slug": "en"
+        },
+        "fr": {
+            "name": "French",
+            "slug": "fr"
+        },
+        "es": {
+            "name": "Spanish",
+            "slug": "es"
+        },
+        "ar": {
+            "name": "Arabic",
+            "slug": "ar"
+        }
+    },
     "name": "Federation-wide databank and reporting system",
     "nameParts": [
         "Federation-wide",
