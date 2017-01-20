@@ -127,7 +127,7 @@ class Societies extends React.Component {
             backgroundImage: "url(/img/overview-preview.png)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "50% auto",
-            backgroundPosition: "center left",
+            backgroundPosition: this.context.i18n.language === "ar" ? "center right" : "center left",
           }}>
           <div className="clearfix mxn1 py6">
             <div className="col sm-4 sm-offset-6 px1">

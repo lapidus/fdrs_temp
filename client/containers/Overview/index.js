@@ -118,7 +118,7 @@ class Overview extends React.Component {
                     onChange={(indicator) => this.props.setIndicator(indicator.value)}
                   />
                 </div>
-                <div className="absolute t50 r0 y-center-self">
+                <div className={`absolute t50 ${this.context.i18n.language === "ar" ? "l0" : "r0"} y-center-self`}>
                   <LanguageLink to="/fdrs/overview/map" className="relative btn">
                     <span className="small strong caps">{ t("overview:map") }</span>
                     <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/map" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
@@ -152,7 +152,7 @@ class Overview extends React.Component {
             backgroundImage: "url(/img/profiles-preview.png)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "50% auto",
-            backgroundPosition: "center left",
+            backgroundPosition: this.context.i18n.language === "ar" ? "center right" : "center left",
           }}>
           <div className="clearfix mxn1 py4">
             <div className="col sm-4 sm-offset-6 px1">

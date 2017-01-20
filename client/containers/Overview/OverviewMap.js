@@ -92,7 +92,7 @@ class OverviewMap extends React.Component {
             </div>
           </div>
 
-          <div className="relative md-absolute t0 l0 b0 col sm-10 sm-offset-1 md-3 md-offset-0 px1 z-index-1">
+          <div className={ `relative md-absolute t0 ${this.context.i18n.language === "ar" ? "r0" : "l0" } b0 col sm-10 sm-offset-1 md-3 md-offset-0 px1 z-index-1` }>
             <div className="shadow-3">
               <div className="p1">
                 <h2 className="text-base m0">
