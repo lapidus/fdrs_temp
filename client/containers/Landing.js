@@ -88,10 +88,8 @@ class Landing extends React.Component {
                 <p>
                   { t("landing:projects.fdrs.text") }
                 </p>
-                <LanguageLink to="/fdrs/" className='btn btn--raised mt1 bg-primary'>
-                  <span className='block py05 px1'>
-                    { t("landing:projects.fdrs.navigate") }
-                  </span>
+                <LanguageLink to="/fdrs/" className='btn btn--raised mt1 bg-primary px1'>
+                  { t("landing:projects.fdrs.navigate") }
                 </LanguageLink>
               </article>
             </div>
@@ -128,10 +126,8 @@ class Landing extends React.Component {
                       }
                     </div>
                     <p>{item.description}</p>
-                    <a target="_blank" href={item.link} className='btn btn--raised bg-primary'>
-                     <span className='block py05 px1'>
-                       Read More
-                     </span>
+                    <a target="_blank" href={item.link} className='btn btn--raised bg-primary px1'>
+                      { t("common:readMore") }
                     </a>
                    </div>
                  </div>
