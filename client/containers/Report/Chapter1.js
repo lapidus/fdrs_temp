@@ -48,7 +48,7 @@ class Chapter1 extends React.Component {
         <strong>${sliced[0][0].toUpperCase() + sliced[0].slice(1)}</strong>
         <hr />
         <div class="pt1">
-          <span class="small">${sliced[1]}</span>
+          <span class="text-xs">${sliced[1]}</span>
         </div>
       </div>
     `
@@ -109,7 +109,7 @@ class Chapter1 extends React.Component {
                  *
                  */
               }
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <p className="text-sm color-primary m0">
                   { chapter.title }
                 </p>
@@ -127,7 +127,7 @@ class Chapter1 extends React.Component {
                 </ul>
               </div>
 
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <LineChart
                   title={section0.blocks[2].title}
                   caption={section0.blocks[2].caption}
@@ -156,7 +156,7 @@ class Chapter1 extends React.Component {
                 />
               </div>
 
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <p>{section0.blocks[3]}</p>
                 <p>{section0.blocks[4]}</p>
                 <p>{section0.blocks[5]}</p>
@@ -168,7 +168,7 @@ class Chapter1 extends React.Component {
                  *
                  */
               }
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <p className="text-sm color-primary m0">
                   { chapter.title }
                 </p>
@@ -185,18 +185,18 @@ class Chapter1 extends React.Component {
                 <StaffComposition title={ section1.blocks[1].title } translations={ section1.blocks[1].translations }/>
               </div>
 
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">>
                 <hr />
                 <StaffGenderDistribution translations={ section1.blocks[1].translations }/>
               </div>
 
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <p>
                   { section1.blocks[2] }
                 </p>
               </div>
 
-              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-7 md-offset-3 px1">
                 <div className="clearfix mxn1">
                   <div className="col sm-6 px1">
                     <p>
@@ -268,13 +268,13 @@ class Chapter1 extends React.Component {
                 </div>
               </div>
 
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <p>
                   { section1.blocks[5] }
                 </p>
               </div>
 
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <h4 className="text-base sm-text-sm">{section1.blocks[6].title}</h4>
                 <Tabs active={0}>
                   <TabPanel title={section1.blocks[6].tabs[0].name}>
@@ -389,7 +389,7 @@ class Chapter1 extends React.Component {
                 </Tabs>
               </div>
 
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <p>
                   { section1.blocks[7] }
                 </p>
@@ -401,7 +401,7 @@ class Chapter1 extends React.Component {
                 </p>
               </div>
 
-              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <h4 className="text-base sm-text-sm">
                   { section1.blocks[11].title }
                 </h4>
@@ -409,7 +409,7 @@ class Chapter1 extends React.Component {
                   <TabPanel title={section1.blocks[11].tabs[0].name}>
                     <table className="base-12">
                       <thead>
-                        <tr className="small bg-dark">
+                        <tr className="text-xs bg-dark">
                           {section1.blocks[11].tabs[0].headers.map((item, i) => {
                             return (<th key={i} className="p05">{item}</th>)
                           })}
@@ -428,12 +428,12 @@ class Chapter1 extends React.Component {
                         })}
                       </tbody>
                     </table>
-                    <p className="small">{section1.blocks[11].tabs[0].caption}</p>
+                    <p className="text-xs">{section1.blocks[11].tabs[0].caption}</p>
                   </TabPanel>
                   <TabPanel title={section1.blocks[11].tabs[1].name}>
                     <table className="base-12">
                       <thead>
-                        <tr className="small bg-dark">
+                        <tr className="text-xs bg-dark">
                           {section1.blocks[11].tabs[1].headers.map((item, i) => {
                             return (<th key={i} className="p05">{item}</th>)
                           })}
@@ -452,7 +452,7 @@ class Chapter1 extends React.Component {
                         })}
                       </tbody>
                     </table>
-                    <p className="small">{section1.blocks[11].tabs[1].caption}</p>
+                    <p className="text-xs">{section1.blocks[11].tabs[1].caption}</p>
                   </TabPanel>
                 </Tabs>
               </div>
@@ -461,146 +461,6 @@ class Chapter1 extends React.Component {
 
           </div>
         </div>
-
-
-
-        {/* <div className="relative clearfix body-text"> */}
-          {/* <div className="clearfix">
-            <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 py2">
-              <WorldMap
-                title={section0.blocks[6].title}
-                caption={section0.blocks[6].caption}
-                bubbleSource={section0.blocks[6].dataset}
-                bubbleCallback={this.bubbleCallback}
-                bubblePopupTemplate={this.bubblePopupTemplate}
-                />
-            </div>
-          </div> */}
-          {/* <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3"> */}
-            {/* <h4 className="title strong">{section1.blocks[8].title}</h4> */}
-            {/* <Tabs active={0}>
-              <TabPanel title={section1.blocks[8].tabs[0].name}>
-                <div>
-                  <StackedBarChart
-                    caption={section1.blocks[8].caption}
-                    height={360}
-                    width={480}
-                    padding={{
-                      top: 60,
-                      bottom: 30,
-                      left: 30,
-                      right: 120
-                    }}
-                    labels={
-                      section1.blocks[8].tabs[0].dataset.map((item, i) => {
-                        // return `${item.name} (${numberFormatter.addCommas(Math.round(item.first + item.second + item.rest))})`
-                        return { text: item.name, number: numberFormatter.addCommas(Math.round(Number(item.first) + Number(item.second) + Number(item.rest))) }
-                      })
-                    }
-                    data={[
-                      section1.blocks[8].tabs[0].dataset.map((item, i) => {
-                        return { x: Number(item.index), y: Number(item.first), name: item.names[0] }
-                      }),
-                      section1.blocks[8].tabs[0].dataset.map((item, i) => {
-                        return { x: Number(item.index), y: Number(item.second), name: item.names[1] }
-                      }),
-                      section1.blocks[8].tabs[0].dataset.map((item, i) => {
-                        return { x: Number(item.index), y: Number(item.rest) }
-                      })
-                    ]}
-                    />
-                  </div>
-              </TabPanel>
-              <TabPanel title={section1.blocks[8].tabs[1].name}>
-                <div>
-                  <StackedBarChart
-                    caption={section1.blocks[8].caption}
-                    height={360}
-                    width={480}
-                    padding={{
-                      top: 60,
-                      bottom: 30,
-                      left: 30,
-                      right: 120
-                    }}
-                    labels={
-                      section1.blocks[8].tabs[1].dataset.map((item, i) => {
-                        // return `${item.name} (${numberFormatter.addCommas(Math.round(item.first + item.second + item.rest))})`
-                        const sum = Number(item.first) + Number(item.second) + Number(item.rest)
-                        return { text: item.name, number: numberFormatter.addCommas(Math.round(sum)) }
-                      })
-                    }
-                    data={[
-                      section1.blocks[8].tabs[1].dataset.map((item, i) => {
-                        return { x: Number(item.index), y: Number(item.first), name: item.names[0] }
-                      }),
-                      section1.blocks[8].tabs[1].dataset.map((item, i) => {
-                        return { x: Number(item.index), y: Number(item.second), name: item.names[1] }
-                      }),
-                      section1.blocks[8].tabs[1].dataset.map((item, i) => {
-                        return { x: Number(item.index), y: Number(item.rest) }
-                      })
-                    ]}
-                    />
-                  </div>
-              </TabPanel>
-            </Tabs> */}
-            {/* <p>{section1.blocks[9]}</p>
-            <p>{section1.blocks[10]}</p> */}
-            {/* <h4 className="title strong">{section1.blocks[11].title}</h4>
-
-            <Tabs active={0}>
-              <TabPanel title={section1.blocks[11].tabs[0].name}>
-                <table className="base-12">
-                  <thead>
-                    <tr className="small bg-dark">
-                      {section1.blocks[11].tabs[0].headers.map((item, i) => {
-                        return (<th key={i} className="p05">{item}</th>)
-                      })}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {section1.blocks[11].tabs[0].dataset.map((item, i) => {
-                      return (
-                        <tr key={i}>
-                          <td className="p05 text-center">{item.rank}</td>
-                          <td className="p05">{item.donor}</td>
-                          <td className="p05">{item.total}</td>
-                          <td className="p05 text-center">{item.percent}%</td>
-                        </tr>
-                      )
-                    })}
-                  </tbody>
-                </table>
-                <p className="small">{section1.blocks[11].tabs[0].caption}</p>
-              </TabPanel>
-              <TabPanel title={section1.blocks[11].tabs[1].name}>
-                <table className="base-12">
-                  <thead>
-                    <tr className="small bg-dark">
-                      {section1.blocks[11].tabs[1].headers.map((item, i) => {
-                        return (<th key={i} className="p05">{item}</th>)
-                      })}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {section1.blocks[11].tabs[1].dataset.map((item, i) => {
-                      return (
-                        <tr key={i}>
-                          <td className="p05 text-center">{item.rank}</td>
-                          <td className="p05">{item.nationalSociety}</td>
-                          <td className="p05">{item.total}</td>
-                          <td className="p05 text-center">{item.percent}%</td>
-                        </tr>
-                      )
-                    })}
-                  </tbody>
-                </table>
-                <p className="small">{section1.blocks[11].tabs[1].caption}</p>
-              </TabPanel>
-            </Tabs> */}
-          {/* </div>
-        </div> */}
 
         <NextChapter nextChapter={chapter.nextChapter} />
       </div>

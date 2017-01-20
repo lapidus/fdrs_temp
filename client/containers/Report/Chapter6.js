@@ -8,9 +8,6 @@ import DonutChart from "../../components/charts/DonutChart"
 import SideNavigation from "../../components/Report/SideNavigation"
 
 class Chapter6 extends React.Component {
-  componentDidMount() {
-    console.log("Mounted Strategic Aim 3")
-  }
 
   shouldComponentUpdate(nextProps, nextState, nextContext) {
     const { language } = nextContext.i18n
@@ -33,11 +30,6 @@ class Chapter6 extends React.Component {
 
     return (
       <div>
-        {/* <div className="clearfix bg-primary-dark">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={chapter} language={language}/>
-          </div>
-        </div> */}
 
         <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
@@ -46,33 +38,51 @@ class Chapter6 extends React.Component {
           </div>
         </div>
 
-        <div className="clearfix bg-dark chapter-banner" style={{backgroundImage:"url(/img/chapters/chapter-6.jpg)",backgroundSize:"cover",backgroundPosition:"center 50%",backgroundRepeat:"no-repeat"}}>
+        <div className="clearfix bg-dark chapter-banner" style={{
+            backgroundImage:"url(/img/chapters/chapter-6.jpg)",
+            backgroundSize:"cover",backgroundPosition:"center 50%",
+            backgroundRepeat:"no-repeat"
+          }}>
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
             <p className="text-base sm-text-sm md-text-md">{chapter.intro}</p>
             <hr />
           </div>
         </div>
 
-        <div className="clearfix body-text" style={{position:"relative"}}>
+        <div className="px1 pt2 pb3">
+          <div className="clearfix mxn1">
 
-          {/* <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section0","scroll-target-section1","scroll-target-section2","scroll-target-section3","scroll-target-section4"]}/> */}
-
-          <div className="clearfix" id="scroll-target-section0">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p>{section0.blocks[0]}</p>
-              <ul>
-                {section0.blocks[1].map((item, i) => {
-                  return <li key={i}>{item}</li>
-                })}
+            {/* <aside className="relative md-absolute col sm-8 sm-offset-2 md-2 md-offset-0 px1 py1">
+              <h1 className="text-base sm-text-sm color-secondary mb0">Chapter overview</h1>
+              <ul className="m0 py1">
+                <li>
+                  <button className="btn base-12 py05 px1 text-left color-secondary">Our network</button>
+                </li>
+                <li>
+                  <button className="btn base-12 py05 px1 text-left color-secondary">Our resources</button>
+                </li>
               </ul>
-            </div>
-          </div>
+            </aside> */}
 
-          <div className="clearfix">
-            <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2">
-              <h4 className="title strong">{section0.blocks[2].title}</h4>
+            <div className="clearfix">
+              {
+                /*
+                 * General
+                 *
+                 */
+              }
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+                <p>{section0.blocks[0]}</p>
+                <ul>
+                  {section0.blocks[1].map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
 
-              <svg width="100%" height="560px" viewBox="0 0 1000 560">
+              <div className="col sm-8 sm-offset-2 md-7 px1">
+                <h4 className="text-base sm-text-sm m0">{section0.blocks[2].title}</h4>
+                <svg width="100%" height="560px" viewBox="0 0 1000 560">
                   <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" fontFamily="Roboto">
                       <g transform="translate(820, 10)">
                           <path d="M60,120 C93.137,120 120,93.137 120,60 C120,26.862 93.137,0 60,0 C26.862,0 0,26.862 0,60 C0,93.137 26.862,120 60,120 Z" fill="#D8D8D8"></path>
@@ -207,179 +217,194 @@ class Chapter6 extends React.Component {
                       <rect fill="#0F9EE3" x="470" y="316" width="20" height="120"></rect>
                       <rect fill="#EE3224" x="110" y="426" width="20" height="10"></rect>
                   </g>
-              </svg>
-
-              { /* <p className="small">{section0.blocks[2].caption}</p> */ }
-            </div>
-          </div>
-
-          <div className="clearfix">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <hr />
-              <DonutChart
-                title={section0.blocks[3].title}
-                caption={section0.blocks[3].caption}
-                maxSize={480}
-                dataset={section0.blocks[3].dataset}/>
-            </div>
-          </div>
-
-          <div className="clearfix" id="scroll-target-section1">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="text-sm color-primary m0">{chapter.title}</p>
-              <h3 className="text-md sm-text-lg mt0 light">{section1.title}</h3>
-              <HeadlineDivider />
-              <p>{section1.blocks[0]}</p>
-            </div>
-          </div>
-
-          <div className="clearfix">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 pb2">
-              <h4 className="title strong">{section1.blocks[1].title}</h4>
-              <div className="clearfix">
-
-                <div className="col xs-6">
-                  <div className="col sm-6">
-                    <img src={section1.blocks[1].items[0].img}/>
-                  </div>
-                  <div className="col sm-6">
-                    <p className="display-1 strong color-primary m0">{section1.blocks[1].items[0].number}</p>
-                    <p className="title strong m0">{section1.blocks[1].items[0].text[0]}</p>
-                    <p className="small">{section1.blocks[1].items[0].text[1]}</p>
-                  </div>
-                </div>
-                <div className="col xs-6">
-                  <div className="col sm-6">
-                    <img src={section1.blocks[1].items[1].img}/>
-                  </div>
-                  <div className="col sm-6">
-                    <p className="display-1 strong color-primary m0">{section1.blocks[1].items[1].number}</p>
-                    <p className="title strong m0">{section1.blocks[1].items[1].text[0]}</p>
-                    <p className="small">{section1.blocks[1].items[1].text[1]}</p>
-                  </div>
-                </div>
-
+                </svg>
               </div>
-              <div className="clearfix">
 
-                <div className="col xs-6">
-                  <div className="col sm-6">
-                    <img src={section1.blocks[1].items[2].img}/>
-                  </div>
-                  <div className="col sm-6">
-                    <p className="display-1 strong color-primary m0">{section1.blocks[1].items[2].number}</p>
-                    <p className="title strong m0">{section1.blocks[1].items[2].text[0]}</p>
-                    <p className="small">{section1.blocks[1].items[2].text[1]}</p>
-                  </div>
-                </div>
-                <div className="col xs-6">
-                  <div className="col sm-6">
-                    <img src={section1.blocks[1].items[3].img}/>
-                  </div>
-                  <div className="col sm-6">
-                    <p className="display-1 strong color-primary m0">{section1.blocks[1].items[3].number}</p>
-                    <p className="title strong m0">{section1.blocks[1].items[3].text[0]}</p>
-                    <p className="small">{section1.blocks[1].items[3].text[1]}</p>
-                  </div>
-                </div>
-
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+                <hr />
+                <DonutChart
+                  title={section0.blocks[3].title}
+                  caption={section0.blocks[3].caption}
+                  maxSize={480}
+                  dataset={section0.blocks[3].dataset}/>
               </div>
-              { /* <p className="small">{section1.blocks[1].caption}</p> */ }
-            </div>
-          </div>
 
-          <div className="clearfix">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-3 lg-4 lg-offset-3 sm-pr1">
-              <ul>
-                {section1.blocks[2].map((item, i) => {
-                  return <li key={i}>{item}</li>
-                })}
-              </ul>
-            </div>
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-0 lg-3">
-              <div className="bg-secondary p2">
-                <p className="small strong color-primary caps mb0">Case Study</p>
-                <h4 className="title strong mt0">{section1.blocks[3].title}</h4>
+              {
+                /*
+                 * Doing better in reducing violence
+                 *
+                 */
+              }
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+                <p className="text-sm color-primary m0">
+                  {chapter.title}
+                </p>
+                <h3 className="text-md sm-text-lg mt0 light">
+                  {section1.title}
+                </h3>
+                <HeadlineDivider />
+                <p>{section1.blocks[0]}</p>
+                <h4 className="text-base sm-text-sm m0">{section1.blocks[1].title}</h4>
+                <div className="clearfix">
+                  <div className="col xs-6">
+                    <div className="col sm-6">
+                      <img src={section1.blocks[1].items[0].img}/>
+                    </div>
+                    <div className="col sm-6">
+                      <p className="text-sm sm-text-md m0">{section1.blocks[1].items[0].number}</p>
+                      <p className="text-base strong m0">{section1.blocks[1].items[0].text[0]}</p>
+                      <p className="text-xs">{section1.blocks[1].items[0].text[1]}</p>
+                    </div>
+                  </div>
+                  <div className="col xs-6">
+                    <div className="col sm-6">
+                      <img src={section1.blocks[1].items[1].img}/>
+                    </div>
+                    <div className="col sm-6">
+                      <p className="text-sm sm-text-md m0">{section1.blocks[1].items[1].number}</p>
+                      <p className="text-base strong m0">{section1.blocks[1].items[1].text[0]}</p>
+                      <p className="text-xs">{section1.blocks[1].items[1].text[1]}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="clearfix">
+                  <div className="col xs-6">
+                    <div className="col sm-6">
+                      <img src={section1.blocks[1].items[2].img}/>
+                    </div>
+                    <div className="col sm-6">
+                      <p className="text-sm sm-text-md m0">{section1.blocks[1].items[2].number}</p>
+                      <p className="text-base strong m0">{section1.blocks[1].items[2].text[0]}</p>
+                      <p className="text-xs">{section1.blocks[1].items[2].text[1]}</p>
+                    </div>
+                  </div>
+                  <div className="col xs-6">
+                    <div className="col sm-6">
+                      <img src={section1.blocks[1].items[3].img}/>
+                    </div>
+                    <div className="col sm-6">
+                      <p className="text-sm sm-text-md m0">{section1.blocks[1].items[3].number}</p>
+                      <p className="text-base strong m0">{section1.blocks[1].items[3].text[0]}</p>
+                      <p className="text-xs">{section1.blocks[1].items[3].text[1]}</p>
+                    </div>
+                  </div>
+                </div>
+                <ul>
+                  {section1.blocks[2].map((item, i) => (
+                    <li key={i} className="py05">{item}</li>
+                  ))}
+                </ul>
+                <div className="bg-secondary p2">
+                  <p className="text-xs strong color-primary mb0">Case Study</p>
+                  <h4 className="text-base sm-text-sm m0">{section1.blocks[3].title}</h4>
                   <svg width="140px" height="109px" viewBox="0 0 140 109" style={{margin:"0 auto",display:"block"}}>
                     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                       <polygon fill="#A8A09C" points="90.737 12.380 97.665 12.380 97.665 10 102.774 10 101.889 12.824 101.334 16.642 102.438 25.096 109.358 30.788 110.455 34.384 109.303 37.943 111.101 37.943 111.643 47.404 108.061 49.465 105.896 48.527 102.474 48.923 102.487 51.858 100.279 53.795 101.445 55.343 106.880 55.843 112.876 63.784 117.915 66.276 123.780 79.442 128.757 80.380 128.818 84.857 130.373 87.446 127.326 87.446 126.369 85.085 123.940 84.038 115.028 87.369 105.838 96.489 102.507 96.489 100.646 95.330 92.345 97.815 88.292 96.289 84.856 97.233 81.483 96.289 78.548 98.961 68.198 90.846 67.699 88.596 64.492 87.042 62.256 90.013 57.099 88.632 53.553 90.957 46.619 87.904 41.379 79.978 41.545 78.005 39.935 75.569 33.404 72.467 33.890 71.086 31.794 69.149 33.009 66.824 29.857 64.388 29.413 62.743 22.369 59.585 20.655 56.829 21.918 55.683 20.932 53.746 18.995 53.247 16.837 50.922 11.985 49.922 10 48.554 11.047 45.861 10.166 44.535 14.087 42.994 16.024 38.066 17.281 36.351 17.170 34.304 19.266 31.923 20.100 29.000 27.934 27.668 35.743 37.322 40.948 35.892 48.547 36.336 50.373 39.154 58.416 39.425 57.764 38.377 64.641 34.886 65.994 31.839 69.700 30.013 77.460 35.157 82.235 35.107 89.376 26.300 94.276 21.359 93.067 19.700 93.512 16.118"></polygon>
                     </g>
                   </svg>
-                <p style={{fontSize:"16px"}}>{section1.blocks[3].content}</p>
+                  <p>{section1.blocks[3].content}</p>
+                </div>
               </div>
-            </div>
-          </div>
 
-
-          <div className="clearfix" id="scroll-target-section2">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="text-sm color-primary m0">{chapter.title}</p>
-              <h3 className="text-md sm-text-lg mt0 light">{section2.title}</h3>
-              <HeadlineDivider />
-              <p>{section2.blocks[0]}</p>
-            </div>
-          </div>
-
-          <div className="clearfix">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-3 lg-4 lg-offset-3 sm-pr1">
-              <p>{section2.blocks[1]}</p>
-              <p>{section2.blocks[2]}</p>
-              <p>{section2.blocks[3]}</p>
-            </div>
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-0 lg-3">
-              <div className="bg-secondary p2">
-                <p className="small strong color-primary caps mb0">Case Study</p>
-                <h4 className="title strong mt0">{section2.blocks[4].title}</h4>
-                <p style={{fontSize:"16px"}}>{section2.blocks[4].content}</p>
+              {
+                /*
+                 * Agents of behavioural change
+                 *
+                 */
+              }
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+                <p className="text-sm color-primary m0">
+                  {chapter.title}
+                </p>
+                <h3 className="text-md sm-text-lg mt0 light">
+                  {section2.title}
+                </h3>
+                <HeadlineDivider />
+                {section2.blocks[0]}
+                <p>{section2.blocks[1]}</p>
+                <p>{section2.blocks[2]}</p>
+                <p>{section2.blocks[3]}</p>
+                <div className="bg-secondary p2">
+                  <p className="text-xs strong color-primary mb0">Case Study</p>
+                  <h4 className="text-base sm-text-sm m0">{section2.blocks[4].title}</h4>
+                  <p style={{fontSize:"16px"}}>{section2.blocks[4].content}</p>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div className="clearfix" id="scroll-target-section3">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 pt2">
-              <p className="text-sm color-primary m0">{chapter.title}</p>
-              <h3 className="text-md sm-text-lg mt0 light">{section3.title}</h3>
-              <HeadlineDivider />
-              <p>{section3.blocks[0]}</p>
-              <p>{section3.blocks[1]}</p>
-              <p>{section3.blocks[2]}</p>
-              <p>{section3.blocks[3]}</p>
-            </div>
-          </div>
+              {
+                /*
+                 * Adding life to years
+                 *
+                 */
+              }
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+                <p className="text-sm color-primary m0">
+                  {chapter.title}
+                </p>
+                <h3 className="text-md sm-text-lg mt0 light">
+                  {section3.title}
+                </h3>
+                <HeadlineDivider />
+                <p>{section3.blocks[0]}</p>
+                <p>{section3.blocks[1]}</p>
+                <p>{section3.blocks[2]}</p>
+                <p>{section3.blocks[3]}</p>
+              </div>
 
-          <div className="clearfix" id="scroll-target-section4">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
-              <p className="text-sm color-primary m0">{chapter.title}</p>
-              <h3 className="text-md sm-text-lg mt0 light">{section4.title}</h3>
-              <HeadlineDivider />
-              <p>{section4.blocks[0]}</p>
-            </div>
-          </div>
+              {
+                /*
+                 * Migration
+                 *
+                 */
+              }
+              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+                <p className="text-sm color-primary m0">
+                  {chapter.title}
+                </p>
+                <h3 className="text-md sm-text-lg mt0 light">
+                  {section4.title}
+                </h3>
+                <HeadlineDivider />
+                <p>{section4.blocks[0]}</p>
+                <p>{section4.blocks[1]}</p>
+                <p>{section4.blocks[2]}</p>
+              </div>
 
-          <div className="clearfix">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-3 lg-4 lg-offset-3 sm-pr1">
-              <p>{section4.blocks[1]}</p>
-              <p>{section4.blocks[2]}</p>
-              <p>{section4.blocks[3]}</p>
-              <p>{section4.blocks[4]}</p>
-              <p>{section4.blocks[5]}</p>
-            </div>
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-3 md-offset-0 lg-3">
-              <h4 className="title strong mt0">{section4.blocks[6].title}</h4>
-              <p style={{fontSize:"16px"}}>{section4.blocks[6].caption}</p>
-              {section4.blocks[6].items.map((item, k) => {
-                return (
-                   <div className="clearfix pb1" key={k}>
-                      <div className="col sm-4 center display-1">
-                        <div className="bg-primary" style={{borderRadius:"50%",width:"60px",height:"60px",margin:"0 auto",lineHeight:"60px"}}>{k + 1}</div>
-                      </div>
-                      <div className="col sm-8">{item}</div>
-                   </div>
-                )
-              })}
-            </div>
-          </div>
+              <div className="col sm-8 sm-offset-2 md-7 md-offset-3 px1">
+                <div className="clearfix mxn1">
+                  <div className="col sm-6 px1">
+                    <p>{section4.blocks[3]}</p>
+                    <p>{section4.blocks[4]}</p>
+                    <p>{section4.blocks[5]}</p>
+                  </div>
+                  <div className="col sm-6 px1">
+                    <h4 className="text-base sm-text-sm m0">{section4.blocks[6].title}</h4>
+                    <p>{section4.blocks[6].caption}</p>
+                    {section4.blocks[6].items.map((item, k) => {
+                      return (
+                         <div className="clearfix pb1" key={k}>
+                            <div className="col sm-4 center display-1">
+                              <div className="bg-primary" style={{
+                                borderRadius:"50%",
+                                width:"60px",
+                                height:"60px",
+                                margin:"0 auto",
+                                lineHeight:"60px"
+                              }}>{k + 1}</div>
+                            </div>
+                            <div className="col sm-8">{item}</div>
+                         </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              </div>
 
+
+
+            </div>
+
+          </div>
         </div>
 
         <NextChapter nextChapter={chapter.nextChapter} />

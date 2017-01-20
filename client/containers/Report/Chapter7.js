@@ -34,11 +34,6 @@ class Chapter7 extends React.Component {
 
     return (
       <div>
-        {/* <div className="clearfix bg-primary-dark">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={chapter} language={language}/>
-          </div>
-        </div> */}
 
         <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
@@ -54,18 +49,18 @@ class Chapter7 extends React.Component {
           </div>
         </div>
 
-        <div className="clearfix body-text" style={{position:"relative"}}>
+        <div className="relative clearfix body-text">
 
           {/* <SideNavigation title={chapter.title} sections={chapter.sections} sectionReferences={["scroll-target-section0","scroll-target-section1","scroll-target-section2","scroll-target-section3"]}/> */}
 
           <div className="clearfix" id="scroll-target-section0">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
               <p>{section0.blocks[0]}</p>
-              <div>
+              {/* <div>
                 <h4 className="title strong">{section0.blocks[1].title}</h4>
                 <img src={section0.blocks[1].src} />
                 <p className="small">{section0.blocks[1].caption}</p>
-              </div>
+              </div> */}
               <p>{section0.blocks[2]}</p>
               <p>{section0.blocks[3]}</p>
             </div>
@@ -114,7 +109,7 @@ class Chapter7 extends React.Component {
             </div>
           </div>
 
-          <div className="clearfix">
+          {/* <div className="clearfix">
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2">
               <ScatterChart
                 title={ section0.blocks[6].title }
@@ -126,7 +121,7 @@ class Chapter7 extends React.Component {
                 legend={ section0.blocks[6].legend }
               />
             </div>
-          </div>
+          </div> */}
 
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">

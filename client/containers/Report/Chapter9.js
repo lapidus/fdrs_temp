@@ -10,9 +10,6 @@ import LineChart from "../../components/charts/LineChart"
 import DonutChart from "../../components/charts/DonutChart"
 
 class Chapter9 extends React.Component {
-  componentDidMount() {
-    console.log("Mounted Enabling Action 3")
-  }
 
   shouldComponentUpdate(nextProps, nextState, nextContext) {
     const { language } = nextContext.i18n
@@ -37,12 +34,6 @@ class Chapter9 extends React.Component {
 
     return (
       <div>
-        {/* <div className="clearfix bg-primary-dark">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={chapter} language={language}/>
-          </div>
-        </div> */}
-
         <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
             <p className="text-base m0">{chapter.title}</p>
@@ -83,14 +74,19 @@ class Chapter9 extends React.Component {
             </div>
           </div>
 
-          <div className="clearfix">
+          {/* <div className="clearfix">
             <div className="col px1 sm-px2 sm-8 sm-offset-2 md-4 md-offset-3 lg-4 lg-offset-2 pb2">
-              { /* <h4 className="title strong">{section1.blocks[1].title}</h4> */ }
               <img src={`/img/chapters/9/accountability-wheel${this.context.language != "en" ? "-" + this.context.language : ""}.jpg`} />
-              { /* <img src="/img/chapters/9/accountability-wheel.jpg" /> */ }
               <p className="small">{section1.blocks[1].caption}</p>
             </div>
             <div className="col px1 sm-px0 sm-8 sm-offset-2 md-4 md-offset-0 lg-4 lg-offset-0 pb2">
+              <p>{section1.blocks[2]}</p>
+              <p>{section1.blocks[3]}</p>
+            </div>
+          </div> */}
+
+          <div className="clearfix" id="scroll-target-section1">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
               <p>{section1.blocks[2]}</p>
               <p>{section1.blocks[3]}</p>
             </div>
@@ -103,14 +99,14 @@ class Chapter9 extends React.Component {
               <HeadlineDivider />
               <p>{section2.blocks[0]}</p>
               <p>{section2.blocks[1]}</p>
-              <SimpleBarChart
+              {/* <SimpleBarChart
                 title={section2.blocks[2].title}
                 caption={section2.blocks[2].caption}
                 horizontal={true}
                 height={300}
                 data={section2.blocks[2].dataset}
                 labels={(datum) => `${datum.xName} (${String(datum.y)})`}
-                />
+                /> */}
               <p>{section2.blocks[3]}</p>
             </div>
           </div>
@@ -127,7 +123,7 @@ class Chapter9 extends React.Component {
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2">
               <h4 className="title strong">{section3.blocks[1].title}</h4>
-              <table>
+              <table className="base-12">
                 <thead>
                   <tr className="small">
                     <th>Income level</th>
@@ -163,7 +159,7 @@ class Chapter9 extends React.Component {
 
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2">
               <h4 className="title strong">{section3.blocks[2].title}</h4>
-              <table>
+              <table className="base-12">
                 <thead>
                   <tr className="small">
                     <th>Income level</th>
@@ -233,7 +229,7 @@ class Chapter9 extends React.Component {
           </div>
 
           <div className="clearfix">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-4 lg-offset-2 pb2">
+            {/* <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-4 lg-offset-2 pb2">
               <SimpleBarChart
                 title={section5.blocks[1].title}
                 caption={section5.blocks[1].caption}
@@ -242,8 +238,8 @@ class Chapter9 extends React.Component {
                 data={section5.blocks[1].dataset}
                 labels={(datum) => `${datum.xName} ${String(datum.y)}`}
                 />
-            </div>
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-4 lg-offset-0 pb2">
+            </div> */}
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 pb2">
               <p>{section5.blocks[2]}</p>
               <p>{section5.blocks[3]}</p>
             </div>
@@ -258,7 +254,7 @@ class Chapter9 extends React.Component {
           <div className="clearfix">
             <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-6 lg-offset-3 pb2">
               <h4 className="title strong">{section5.blocks[5].title}</h4>
-              <table>
+              <table className="base-12">
                 <thead>
                   <tr className="small">
                     <th style={{width:"20%"}}>Year</th>
@@ -313,7 +309,7 @@ class Chapter9 extends React.Component {
                 height={480}
                 padding={{
                   top: 30,
-                  bottom: 40,
+                  bottom: 50,
                   left: 60,
                   right: 60
                 }}
