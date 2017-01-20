@@ -22,10 +22,10 @@ import {
 } from "../../actions/appActions"
 
 class OverviewTable extends React.Component {
-  shouldComponentUpdate(nextProps) {
-    const didIndicatorChange = nextProps.currentIndicator !== this.props.currentIndicator
-    return didIndicatorChange
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   const didIndicatorChange = nextProps.currentIndicator !== this.props.currentIndicator
+  //   return didIndicatorChange
+  // }
   render() {
 
     const { t } = this.props

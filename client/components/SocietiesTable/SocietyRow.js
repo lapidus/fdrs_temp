@@ -41,6 +41,10 @@ class Trendline extends React.Component {
       dataPoints: recalculateDataPoints(allYears, nsData, currentIndicator),
     }
   }
+  shouldComponentUpdate(nextProps) {
+    const didIndicatorChange = nextProps.indicator && this.props.indicator ? nextProps.indicator.id !== this.props.indicator.id : false
+    return didIndicatorChange
+  }
   componentWillReceiveProps(nextProps) {
     if(nextProps.currentIndicator.id !== this.props.currentIndicator.id) {
       this.setState({
@@ -50,7 +54,7 @@ class Trendline extends React.Component {
   }
   render() {
     const { dataPoints } = this.state
-    
+
     return (
       <div className="relative">
         <div className="absolute b0 l0 small">
@@ -103,10 +107,10 @@ class SocietyRow extends React.Component {
   constructor(props) {
     super(props)
   }
-  shouldComponentUpdate(nextProps) {
-    const didIndicatorChange = nextProps.indicator && this.props.indicator ? nextProps.indicator.id !== this.props.indicator.id : false
-    return didIndicatorChange || Boolean(this.props.forceUpdate)
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   const didIndicatorChange = nextProps.indicator && this.props.indicator ? nextProps.indicator.id !== this.props.indicator.id : false
+  //   return didIndicatorChange || Boolean(this.props.forceUpdate)
+  // }
   render() {
 
     const {

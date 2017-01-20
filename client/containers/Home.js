@@ -85,7 +85,13 @@ class Home extends React.Component {
              backgroundRepeat: "no-repeat",
              backgroundSize: "100% auto"
            }}>
-        <img src="/img/ipads2.png" className="absolute t0 r0 base-12 xs-8 sm-7 lg-6" style={{ transform: "translateY(-20%)" }}/>
+        {
+          this.context.i18n.language === "ar" ? (
+            <img src="/img/ipads2.png" className="absolute t0 l0 base-12 xs-8 sm-7 lg-6" style={{ transform: "translateY(-20%)" }}/>
+          ) : (
+            <img src="/img/ipads2.png" className="absolute t0 r0 base-12 xs-8 sm-7 lg-6" style={{ transform: "translateY(-20%)" }}/>
+          )
+        }
         <header className='block relative px1 py4'>
           <div className='clearfix mxn1'>
             <div className='col sm-8 sm-offset-1 md-6 md-offset-1 lg-6 px1'>
@@ -101,7 +107,7 @@ class Home extends React.Component {
 
         </header>
 
-        <Slant slantType='start' />
+        <Slant slantType='start' language={this.context.i18n.language} />
 
         <div className='px1 pb4 bg-beige'>
           <div className='clearfix mxn1'>
@@ -142,14 +148,14 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <Slant slantType='end' />
+        <Slant slantType='end' language={this.context.i18n.language} />
 
         <div className='px1 pb4'
              style={{
                backgroundImage: "url(/img/national-society-coverage.png)",
                backgroundSize: "auto 100%",
                backgroundRepeat: "no-repeat",
-               backgroundPosition: "left"
+               backgroundPosition: this.context.i18n.language === "ar" ? "right" : "left"
           }}>
           <div className='clearfix mxn1'>
             <div className='col sm-10 sm-offset-1 px1'>

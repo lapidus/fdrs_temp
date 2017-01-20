@@ -137,7 +137,7 @@ class FDRSNavigation extends React.Component {
             </span>
           </button>
         </div>
-        <div className={`absolute t0 r0 sm-relative col base-10 sm-6 bg-white sm-text-right nav ${this.props.navOpen ? "nav-open" : ""}`}>
+        <div className={`absolute t0 r0 sm-relative col base-10 sm-6 bg-white ${this.context.i18n.language === "ar" ? "sm-text-left" : "sm-text-right"} nav ${this.props.navOpen ? "nav-open" : ""}`}>
           <nav className="relative block sm-inline-block t0 r0">
             <ul className="m0 p0">
               <li className="block relative sm-inline-block">

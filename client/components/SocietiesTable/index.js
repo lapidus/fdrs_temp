@@ -66,13 +66,13 @@ class SocietiesTable extends React.Component {
     })
   }
 
-  shouldComponentUpdate(nextProps) {
-    const didYearChange = nextProps.currentYear !== this.props.currentYear
-    const didIndicatorChange = nextProps.currentIndicator.id !== this.props.currentIndicator.id
-    const didSelectionChange = nextProps.selectedSocieties.length !== this.props.selectedSocieties.length
-
-    return didYearChange || didIndicatorChange || didSelectionChange
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   const didYearChange = nextProps.currentYear !== this.props.currentYear
+  //   const didIndicatorChange = nextProps.currentIndicator.id !== this.props.currentIndicator.id
+  //   const didSelectionChange = nextProps.selectedSocieties.length !== this.props.selectedSocieties.length
+  //
+  //   return didYearChange || didIndicatorChange || didSelectionChange
+  // }
 
   componentWillReceiveProps(nextProps) {
 

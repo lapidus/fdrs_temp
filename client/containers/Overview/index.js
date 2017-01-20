@@ -23,11 +23,11 @@ import {
 } from "../../actions/appActions"
 
 class Overview extends React.Component {
-  shouldComponentUpdate(nextProps) {
-    const didIndicatorChange = nextProps.currentIndicator !== this.props.currentIndicator
-    const didRouteChange = this.props.children.props.location.pathname !== nextProps.children.props.location.pathname
-    return didIndicatorChange || didRouteChange
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   const didIndicatorChange = nextProps.currentIndicator !== this.props.currentIndicator
+  //   const didRouteChange = this.props.children.props.location.pathname !== nextProps.children.props.location.pathname
+  //   return didIndicatorChange || didRouteChange
+  // }
   render() {
 
     const { i18n, router } = this.context

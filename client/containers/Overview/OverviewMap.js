@@ -9,6 +9,7 @@ import Slider from "rc-slider"
 
 import niceNum from "../../utils/niceNum"
 import Map from "../../components/Data/Map"
+import SocietiesRanking from "../../components/SocietiesRanking"
 
 import { Origin } from "redux-tooltip"
 
@@ -26,7 +27,7 @@ import {
   selectSociety,
 } from "../../actions/appActions"
 
-class SocietiesRanking extends React.Component {
+class SocietiesRankingBackup extends React.Component {
   render() {
     return (
       <ul className="m0 p0">
@@ -79,12 +80,12 @@ class SocietiesRanking extends React.Component {
 }
 
 class OverviewMap extends React.Component {
-  shouldComponentUpdate(nextProps) {
-    const didSelectionChange = nextProps.selectedSocieties.length !== this.props.selectedSocieties.length
-    const didIndicatorChange = nextProps.currentIndicator !== this.props.currentIndicator
-    const didYearChange = nextProps.currentYear !== this.props.currentYear
-    return didIndicatorChange || didSelectionChange || didYearChange
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   const didSelectionChange = nextProps.selectedSocieties.length !== this.props.selectedSocieties.length
+  //   const didIndicatorChange = nextProps.currentIndicator !== this.props.currentIndicator
+  //   const didYearChange = nextProps.currentYear !== this.props.currentYear
+  //   return didIndicatorChange || didSelectionChange || didYearChange
+  // }
   render() {
 
     const { t } = this.props
