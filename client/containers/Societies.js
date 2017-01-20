@@ -24,7 +24,7 @@ class Societies extends React.Component {
 
         <Breadcrumbs links={[
           { name: pageData.home, path: "/fdrs" },
-          { name: pageData.navigation[0].name, path: "/fdrs" },
+          // { name: pageData.navigation[0].name, path: "/fdrs" },
           { name: pageData.navigation[0].dropdownItems[1], path: undefined },
         ]}/>
 

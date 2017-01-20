@@ -38,12 +38,13 @@ class FAQ extends React.Component {
     const { t } = this.props
 
     const questions = _.values(t("faq:questions"))
+    const pageData = i18n.store.data[language]["common"]
 
     return (
       <section>
         <Breadcrumbs links={[
-          { name: "Home", path: "/fdrs" },
-          { name: "FAQ", path: "/fdrs/faq" },
+          { name: pageData.home, path: "/fdrs" },
+          { name: pageData.faq, path: "/fdrs/faq" },
         ]}/>
         <div className="px1">
           <div className="clearfix mxn1">

@@ -35,12 +35,11 @@ class Overview extends React.Component {
 
     const pageData = i18n.store.data[i18n.language]["common"]
 
-
     return (
       <section>
         <Breadcrumbs links={[
-          { name: "Home", path: "/fdrs" },
-          { name: "Home", path: "/fdrs" },
+          { name: pageData.home, path: "/fdrs" },
+          // { name: "Home", path: "/fdrs" },
           { name: pageData.navigation[0].dropdownItems[0], path: undefined },
         ]}/>
 
