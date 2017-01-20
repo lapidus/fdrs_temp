@@ -13,20 +13,19 @@ class Download extends React.Component {
       <section>
         <Breadcrumbs links={[
           { name: t("common:breadcrumbs." + "Home"), path: "/fdrs" },
-          { name: t("common:breadcrumbs." + "Data download"), path: "/fdrs/download" },
+          { name: t("common:breadcrumbs." + "Data download"), path: undefined },
         ]}/>
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-6 sm-offset-3 px1 pt1">
-              <h1 className="display-1 md-display-2 m0 light">{ t("data-download:title") } </h1>
+              <h1 className="text-md sm-text-lg md-text-xl light m0">{ t("data-download:title") } </h1>
             </header>
           </div>
 
           <div className="clearfix mxn1 pb4">
             <div className="col sm-6 sm-offset-3 px1 pt1">
-              <p className="lead">{ t("data-download:intro") }</p>
-              <button className="btn bg-primary">
-                <a href="/api/indicators/time_series.csv" className="px1">
+              <p className="text-base sm-text-sm md-text-md">{ t("data-download:intro") }</p>
+                <a href="/api/indicators/time_series.csv" className="btn bg-primary link-no-underline px1">
                   <span>
                     <svg style={{width:16,height:16,marginTop:-1,marginRight:16}} width="24px" height="24px" viewBox="0 0 24 24">
                       <g transform="translate(0, 0)" style={{stroke:"currentcolor"}}>
@@ -38,8 +37,6 @@ class Download extends React.Component {
                   </span>
                   { t("data-download:csv") }
                 </a>
-              </button><br /><br />
-
             </div>
           </div>
         </div>

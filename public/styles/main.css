@@ -2393,6 +2393,10 @@ strong,
   float: right;
 }
 
+.base-auto {
+  width: auto;
+}
+
 .base-1 {
   width: 8.33333%;
 }

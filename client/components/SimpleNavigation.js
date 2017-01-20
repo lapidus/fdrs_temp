@@ -22,9 +22,9 @@ class SimpleNavigation extends React.Component {
     this.goToLanguage = this.goToLanguage.bind(this)
   }
   componentDidMount() {
-    window.addEventListener("resize", () => {
-      if(this.props.navOpen) this.props.closeNav()
-    })
+    // window.addEventListener("resize", () => {
+    //   if(this.props.navOpen) this.props.closeNav()
+    // })
   }
   showDropdown(n) {
     this.setState({
@@ -123,12 +123,13 @@ class SimpleNavigation extends React.Component {
             </LanguageLink>
           </h1>
         </div>
-        <div className={`absolute t0 r0 sm-relative col base-10 sm-6 bg-white sm-text-right nav`}>
+        {/* <div className={`absolute t0 r0 sm-relative col base-10 sm-6 bg-white sm-text-right`}> */}
+        <div className={`absolute t0 r0 sm-relative col base-auto sm-6 bg-white sm-text-right`}>
           <nav className="relative block sm-inline-block t0 r0">
             <ul className="m0 p0">
               <li className="block relative sm-inline-block">
                 <Dropdown showDropdown={ this.state.showDropdown[0] }>
-                  <div className="btn block py15 px1 text-left bg-white z-index-1 sm-visible sm-block" style={{minWidth:105}} onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                  <div className="btn block py15 px1 text-left bg-white z-index-1" style={{minWidth:105}} onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
                     <span className="inline-block px05">
                       { this.renderFlag(language) }
                     </span>

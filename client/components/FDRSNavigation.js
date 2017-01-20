@@ -105,7 +105,10 @@ class FDRSNavigation extends React.Component {
   render() {
 
     const { t } = this.props
-    const { language } = this.context.i18n
+    const { i18n } = this.context
+    const { language } = i18n
+
+    const pageData = i18n.store.data[language]["common"]
 
     return (
       <header className="relative clearfix shadow-4 bg-white z-index-max print-hidden">
@@ -156,7 +159,7 @@ class FDRSNavigation extends React.Component {
                       </svg>
                     </span>
                     <span className="inline-block px05">
-                      { "Services" }
+                      { pageData.navigation[0].name }
                     </span>
                   </LanguageLink>
                   <div className="relative sm-absolute t100 l0 bg-white text-left shadow-4" style={{width:"200%"}}>
@@ -171,7 +174,7 @@ class FDRSNavigation extends React.Component {
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M19,12.9c0,3.1-4,6.9-6,6.1c-1.8-0.7-0.5-2.1-1-6.1c-0.2-1.6,1.6-3,3.5-3S19,11.2,19,12.9z" strokeLinejoin="miter" strokeLinecap="butt"/>
                             </g>
                           </svg>
-                          { "IFRC at a glance" }
+                          { pageData.navigation[0].dropdownItems[0] }
                         </LanguageLink>
                       </li>
                       <li>
@@ -184,7 +187,7 @@ class FDRSNavigation extends React.Component {
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M21,5c0,2.5-4,6-4,6s-4-3.5-4-6c0-2.5,2.1-4,4-4S21,2.5,21,5z" strokeLinejoin="miter"/>
                             </g>
                           </svg>
-                          { "NS society profiles" }
+                          { pageData.navigation[0].dropdownItems[1] }
                         </LanguageLink>
                       </li>
                       <li>
@@ -197,7 +200,7 @@ class FDRSNavigation extends React.Component {
                               <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="16" y1="11" x2="16" y2="16" strokeLinejoin="miter"/>
                             </g>
                           </svg>
-                          { "Everyone counts report" }
+                          { pageData.navigation[0].dropdownItems[2] }
                         </LanguageLink>
                       </li>
                       <li>
@@ -209,7 +212,7 @@ class FDRSNavigation extends React.Component {
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M17,16h2c2.209,0,4-1.791,4-4c0-2.197-1.782-4.013-4.025-3.997C18.718,4.093,15.474,1,11.5,1C7.481,1,4.21,4.164,4.018,8.136C2.287,8.575,1,10.132,1,12c0,2.209,1.791,4,4,4h2" strokeLinejoin="miter"/>
                             </g>
                           </svg>
-                          { "Data download" }
+                          { pageData.navigation[0].dropdownItems[3] }
                         </LanguageLink>
                       </li>
                     </ul>
@@ -238,7 +241,9 @@ class FDRSNavigation extends React.Component {
                       </g>
                     </svg>
                   </span>
-                  <span className="inline-block px05">{ "FAQ" }</span>
+                  <span className="inline-block px05">
+                    { pageData.navigation[1].name }
+                  </span>
                 </LanguageLink>
               </li>
               <li className="block relative sm-inline-block">
@@ -248,7 +253,7 @@ class FDRSNavigation extends React.Component {
                       { this.renderFlag(language) }
                     </span>
                     <span className="inline-block px05 uppercase">
-                      { language }
+                      { pageData.languages[language].slug }
                     </span>
                   </div>
                   <div className="relative sm-absolute t100 l0 bg-white text-left shadow-4" style={{width:"100%"}}>
@@ -258,8 +263,8 @@ class FDRSNavigation extends React.Component {
                           <span className="inline-block px05">
                             { this.renderFlag("en") }
                           </span>
-                          <span className="inline-block px05">
-                            { "EN" }
+                          <span className="inline-block px05 uppercase">
+                            { pageData.languages.en.slug }
                           </span>
                         </button>
                       </li>
@@ -268,8 +273,8 @@ class FDRSNavigation extends React.Component {
                           <span className="inline-block px05">
                             { this.renderFlag("fr") }
                           </span>
-                          <span className="inline-block px05">
-                            { "FR" }
+                          <span className="inline-block px05 uppercase">
+                            { pageData.languages.fr.slug }
                           </span>
                         </button>
                       </li>
@@ -278,8 +283,8 @@ class FDRSNavigation extends React.Component {
                           <span className="inline-block px05">
                             { this.renderFlag("es") }
                           </span>
-                          <span className="inline-block px05">
-                            { "ES" }
+                          <span className="inline-block px05 uppercase">
+                            { pageData.languages.es.slug }
                           </span>
                         </button>
                       </li>
@@ -288,8 +293,8 @@ class FDRSNavigation extends React.Component {
                           <span className="inline-block px05">
                             { this.renderFlag("ar") }
                           </span>
-                          <span className="inline-block px05">
-                            { "AR" }
+                          <span className="inline-block px05 uppercase">
+                            { pageData.languages.ar.slug }
                           </span>
                         </button>
                       </li>

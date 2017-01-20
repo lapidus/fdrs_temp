@@ -23,7 +23,7 @@ class Collapsible extends React.Component {
         <header className="p1" style={{ cursor: "pointer" }} onClick={ this.toggleCollapsible }>
           { this.props.children[0] }
         </header>
-        <div className="p1 bg-secondary" style={{ display: this.state.expanded ? "block" : "none" }}>
+        <div className="p1 bg-light" style={{ display: this.state.expanded ? "block" : "none" }}>
           { this.props.children[1] }
         </div>
       </article>
@@ -35,6 +35,7 @@ class FAQ extends React.Component {
   render() {
 
     const { i18n } = this.context
+    const { language } = i18n
     const { t } = this.props
 
     const questions = _.values(t("faq:questions"))
@@ -43,19 +44,19 @@ class FAQ extends React.Component {
     return (
       <section>
         <Breadcrumbs links={[
-          { name: pageData.home, path: "/fdrs" },
-          { name: pageData.faq, path: "/fdrs/faq" },
+          { name: pageData.breadcrumbs["Home"], path: "/fdrs" },
+          { name: pageData.breadcrumbs["FAQ"], path: undefined },
         ]}/>
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-6 sm-offset-3 px1 pt1">
-              <h1 className="display-1 md-display-2 m0 light">{ t("faq:title") }</h1>
+              <h1 className="text-md sm-text-lg md-text-xl light m0">{ t("faq:title") }</h1>
             </header>
           </div>
 
           <div className="clearfix mxn1 pb4">
             <div className="col sm-6 sm-offset-3 px1 pt1">
-              <p className="lead">
+              <p className="text-base sm-text-sm md-text-md">
                 { t("faq:intro") }
                 <span className="color-primary"> { " fdrs@ifrc.org" }</span></p>
               {
@@ -66,7 +67,7 @@ class FAQ extends React.Component {
                   return (
                     <Collapsible key={ i }>
                       <CollapsibleHeader>
-                        <h1 className="headline m0">{ question }</h1>
+                        <h1 className="text-base sm-text-sm md-text-md m0">{ question }</h1>
                       </CollapsibleHeader>
                       <CollapsibleBody>
                         {

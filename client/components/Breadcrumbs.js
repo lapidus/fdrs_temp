@@ -13,7 +13,7 @@ class Breadcrumbs extends React.Component {
             <ul className="m0 py05 px0 text-base">
               {
                 this.props.links.map((item, i) => (
-                  <li className="inline-block mr1" key={ i }>
+                  <li className="inline-block" key={ i }>
                     {
                       item.path ? (
                         <LanguageLink to={ item.path }>
@@ -24,6 +24,15 @@ class Breadcrumbs extends React.Component {
                           { item.name }
                         </span>
                       )
+                    }
+                    {
+                      i < (this.props.links.length -1) ? (
+                        <div className="inline-block px05">
+                          <svg width="24px" height="24px" viewBox="0 0 24 24" style={{width: "1rem",stroke:"currentcolor",marginTop:-1}}>
+                            <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16 " transform="translate(0, 0)" strokeLinejoin="miter"/>
+                          </svg>
+                        </div>
+                      ) : null
                     }
                   </li>
                 ))

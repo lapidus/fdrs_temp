@@ -147,10 +147,9 @@ class Society extends React.Component {
       <section>
 
         <Breadcrumbs links={[
-          { name: pageData.home, path: "/fdrs/" },
-          { name: pageData.navigation[0].name, path: "/fdrs/" },
+          { name: pageData.breadcrumbs["Home"], path: "/fdrs/" },
           { name: pageData.navigation[0].dropdownItems[1], path: "/fdrs/societies" },
-          { name: society.NSO_DON_Name, path: undefined }
+          { name: t(`national-societies:${society.KPI_DON_Code}`), path: undefined }
         ]}/>
 
         <div className="clearfix bg-light px1">

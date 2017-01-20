@@ -108,30 +108,32 @@ class Landing extends React.Component {
           <div className='clearfix mxn1'>
             <div className='col sm-6 sm-offset-1 px1'>
               { this.state.items.map((item, index) =>
-                 <div key={index} className="shadow-4 p2 mb2">
+                 <div key={index} className="shadow-4 mb2">
                    {
                      this.getImage(item.content) !== "" ?
                      <img className="base-12" src={this.getImage(item.content)} alt=""/>
                      : ""
                    }
-                   <h1 className="text-md md-text-lg light lh-small">
-                     <a target="_blank" href={item.link}>{item.title}</a>
-                  </h1>
-                   <div>
-                     <span>By {item.author}</span> | <span>{item.pubDate.substring(0,item.pubDate.length-9)}</span>
-                     {
-                       item.categories ?
-                         item.categories.map((cat, index) =>
-                          <span key={index}> | {cat} </span>
-                        ) : null
-                     }
+                   <div className="px2 pt1 pb2">
+                     <h1 className="text-md md-text-lg light lh-small">
+                       <a target="_blank" href={item.link}>{item.title}</a>
+                    </h1>
+                    <div>
+                      <span>By {item.author}</span> | <span>{item.pubDate.substring(0,item.pubDate.length-9)}</span>
+                      {
+                        item.categories ?
+                          item.categories.map((cat, index) =>
+                           <span key={index}> | {cat} </span>
+                         ) : null
+                      }
+                    </div>
+                    <p>{item.description}</p>
+                    <a target="_blank" href={item.link} className='btn btn--raised bg-primary'>
+                     <span className='block py05 px1'>
+                       Read More
+                     </span>
+                    </a>
                    </div>
-                   <p>{item.description}</p>
-                   <a target="_blank" href={item.link} className='btn btn--raised bg-primary'>
-                    <span className='block py05 px1'>
-                      Read More
-                    </span>
-                   </a>
                  </div>
               )}
             </div>

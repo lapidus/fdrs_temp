@@ -11,6 +11,8 @@
   float: right;
 }
 
+.base-auto { width: auto; }
+
 .base-1  { width: calc(100 / 12 * 1)%  }
 .base-2  { width: calc(100 / 12 * 2)%  }
 .base-3  { width: calc(100 / 12 * 3)%  }
