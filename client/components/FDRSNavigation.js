@@ -162,7 +162,7 @@ class FDRSNavigation extends React.Component {
                       { pageData.navigation[0].name }
                     </span>
                   </LanguageLink>
-                  <div className="relative sm-absolute t100 l0 bg-white text-left shadow-4" style={{width:"200%"}}>
+                  <div className="relative sm-absolute t100 l0 bg-white text-left shadow-4 dropdown-menu">
                     <ul className="m0 p0 base-12">
                       <li>
                         <LanguageLink to="/fdrs/overview/map" className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>

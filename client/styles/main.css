@@ -329,6 +329,16 @@ tr:last-of-type > td {
    color: var(--color-grey-400);
 }
 
+#app {
+  width: 100%;
+  overflow: hidden
+}
+
+@media (--sm-viewport) {
+  .dropdown-menu {
+    width: 200%;
+  }
+}
 
 @import '../node_modules/normalize.css/normalize.css';
 @import 'base.css';

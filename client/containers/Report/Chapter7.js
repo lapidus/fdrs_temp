@@ -67,9 +67,9 @@ class Chapter7 extends React.Component {
           </div>
 
           <div className="clearfix">
-            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-6 lg-offset-2">
+            <div className="col px1 sm-px0 sm-8 sm-offset-2 md-7">
               <h4 className="title strong">{section0.blocks[4].title}</h4>
-              <table>
+              <table className="base-12">
                 <thead>
                   <tr className="small">
                     <th style={{width:"16%"}}>&nbsp;</th>

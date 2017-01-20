@@ -35,7 +35,6 @@ class FAQ extends React.Component {
   render() {
 
     const { i18n } = this.context
-    const { language } = i18n
     const { t } = this.props
     const { language } = i18n
 
