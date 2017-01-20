@@ -1,0 +1,69 @@
+{
+    "title": "T\u00e9l\u00e9chargement des donn\u00e9es",
+    "intro": "Vous trouverez ci-dessous les questions les plus fr\u00e9quemment pos\u00e9es. Si nous n'avons pas r\u00e9pondu \u00e0 votre question ci-dessous, veuillez contacter FDRS \u00e0 l'adresse suivante:",
+    "questions": {
+        "5": {
+            "answer": [
+                [
+                    "Toute information contenue dans ce site peut, en partie ou dans sa totalit\u00e9, \u00eatre cit\u00e9e, copi\u00e9e, traduite dans d\u2019autres langues ou adapt\u00e9e aux besoins locaux sans autorisation pr\u00e9alable de la F\u00e9d\u00e9ration internationale des Soci\u00e9t\u00e9s de la Croix-Rouge et du Croissant-Rouge, \u00e0 condition que la source soit clairement indiqu\u00e9e. Les demandes de reproduction \u00e0 des fins commerciales doivent \u00eatre adress\u00e9es \u00e0 l'\u00e9quipe FDRS \u00e0 l'adresse fdrs@ifrc.org",
+                    "Pour t\u00e9l\u00e9charger les donn\u00e9es utilis\u00e9s dans ce site Web, veuillez consulter le site http:\/\/data.ifrc.org\/fdrs\/data-download"
+                ]
+            ],
+            "question": "Comment les donn\u00e9es peuvent-elles \u00eatre utilis\u00e9es?"
+        },
+        "0": {
+            "question": "Qu'est-ce que FDRS?",
+            "answer": [
+                "Le Syst\u00e8me de Base de Donn\u00e9es et de Compte Rendu \u00e0 l\u2019Echelle de la F\u00e9d\u00e9ration (FDRS) couvre les principaux domaines d\u2019information et fournit un r\u00e9f\u00e9rentiel unique de documents cl\u00e9s tels que les lois, les statuts, les rapports annuels et les comptes audit\u00e9s. Le FDRS est con\u00e7u comme une ressource adaptable, accessible et de faible demande d\u2019entretien qui capture syst\u00e9matiquement les donn\u00e9es normalis\u00e9es. Chaque Soci\u00e9t\u00e9 Nationale est propri\u00e9taire et gardien de ses propres donn\u00e9es, et a la responsabilit\u00e9 de tenir \u00e0 jour ses donn\u00e9es, gr\u00e2ce \u00e0 l'appui technique du secr\u00e9tariat en cas de besoin."
+            ]
+        },
+        "1": {
+            "question": "Comment les donn\u00e9es ont-elles \u00e9t\u00e9 recueillies?",
+            "answer": [
+                "Les comptes rendus annuels que les Soci\u00e9t\u00e9s nationales sont tenues de fournir en vertu des Statuts de la F\u00e9d\u00e9ration s\u2019articulent autour de sept indicateurs cl\u00e9s, fond\u00e9s sur la Strat\u00e9gie 2020 et de trois documents principaux. Les sept indicateurs cl\u00e9s visent \u00e0 refl\u00e9ter les \u00e9l\u00e9ments suivants d\u2019appr\u00e9ciation des performances :",
+                [
+                    "La \u00ab couverture \u00bb, qui \u00e9value la port\u00e9e de notre action, c\u2019est-\u00e0-dire la mesure dans laquelle nous r\u00e9pondons aux vuln\u00e9rabilit\u00e9s et aux besoins qui ont \u00e9t\u00e9 recens\u00e9s dans les zones g\u00e9ographiques ou au sein de communaut\u00e9s et de groupes donn\u00e9s.",
+                    "La \u00ab qualit\u00e9 \u00bb, qui \u00e9value la qualit\u00e9 de notre action, c\u2019est-\u00e0-dire la mesure dans laquelle nos services sont conformes aux normes et aux r\u00e8gles \u00e9tablies.",
+                    "L\u2019\u00ab efficacit\u00e9 \u00bb, qui \u00e9value la mani\u00e8re dont nous employons les ressources, c\u2019est-\u00e0-dire la mesure dans laquelle nos services utilisent le mieux possible les moyens humains, financiers et mat\u00e9riels dont nous disposons.",
+                    "L\u2019\u00ab impact \u00bb, qui \u00e9value les effets de notre action, c\u2019est-\u00e0-dire l\u2019ampleur et la durabilit\u00e9 des changements qui se produisent au sein des communaut\u00e9s o\u00f9 nous op\u00e9rons.",
+                    "Le \u00ab respect des dispositions \u00bb, qui \u00e9value la mani\u00e8re dont nous fonctionnons, c\u2019est-\u00e0-dire la mesure dans laquelle nous adh\u00e9rons \u00e0 nos principes et \u00e0 nos valeurs, aux politiques et lignes directrices qui orientent la fourniture de services, et aux codes de conduite qui sont les garants de notre int\u00e9grit\u00e9, ainsi que la fa\u00e7on dont nous interagissons avec nos clients, nos partenaires et d\u2019autres parties prenantes."
+                ]
+            ]
+        },
+        "2": {
+            "question": "Quels sont les sept indicateurs cl\u00e9s?",
+            "answer": [
+                [
+                    "Nombre de personnes donnant de leur temps comme volontaires : personnes ayant travaill\u00e9 au moins quatre heures comme volontaires pendant la p\u00e9riode consid\u00e9r\u00e9e.",
+                    "Nombre d\u2019employ\u00e9s r\u00e9mun\u00e9r\u00e9s : personnes ayant travaill\u00e9 au moins trois mois pour une Soci\u00e9t\u00e9 nationale ou le Secr\u00e9tariat pendant la p\u00e9riode consid\u00e9r\u00e9e en \u00e9tant r\u00e9mun\u00e9r\u00e9es.",
+                    "Nombre de donneurs de sang : personnes ayant donn\u00e9 du sang au moins une fois durant la p\u00e9riode consid\u00e9r\u00e9e.",
+                    "Nombre d\u2019unit\u00e9s locales : subdivisions de la Soci\u00e9t\u00e9 nationale qui travaillent directement aupr\u00e8s de la population \u2013 ce peut \u00eatre des chapitres locaux, des sections, des bureaux r\u00e9gionaux et interm\u00e9diaires, et le si\u00e8ge.",
+                    "Nombre de personnes touch\u00e9es : nombre de b\u00e9n\u00e9ficiaires directs et indirects et de personnes couvertes par un service de la F\u00e9d\u00e9ration internationale.",
+                    "Recettes totales : valeur financi\u00e8re de l\u2019argent, des biens mat\u00e9riels et des services qu\u2019une Soci\u00e9t\u00e9 nationale re\u00e7oit pendant l\u2019exercice budg\u00e9taire.",
+                    "Total des d\u00e9penses : valeur financi\u00e8re de l\u2019argent, des biens mat\u00e9riels et des services qu\u2019une Soci\u00e9t\u00e9 nationale d\u00e9pense pendant l\u2019exercice budg\u00e9taire."
+                ]
+            ]
+        },
+        "3": {
+            "question": "Quels sont les trois documents principaux?",
+            "answer": [
+                [
+                    "Rapport annuel",
+                    "Comptes audit\u00e9s",
+                    "Plan strat\u00e9gique"
+                ]
+            ]
+        },
+        "4": {
+            "question": "Quelle est la limitation des donn\u00e9es?",
+            "answer": [
+                [
+                    "Subjectivit\u00e9 des donn\u00e9es : Ces donn\u00e9es ont \u00e9t\u00e9 fournies par les Soci\u00e9t\u00e9s nationales elles-m\u00eames, qui en sont les propri\u00e9taires et les gardiennes et en assument la responsabilit\u00e9 de l\u2019exactitude et de la mise \u00e0 jour. En cons\u00e9quence, bien que des efforts aient \u00e9t\u00e9 faits pour trianguler ces donn\u00e9es avec les informations fournies par les Soci\u00e9t\u00e9s nationales par le pass\u00e9 ou disponibles dans le domaine public, il convient de pr\u00e9ciser qu\u2019une certaine subjectivit\u00e9 n\u2019est pas \u00e0 exclure.",
+                    "Taille des \u00e9chantillons : les donn\u00e9es ventil\u00e9es par sexe restent rares. Le fait que les syst\u00e8mes de gestion des donn\u00e9es ne permettent pas de consolider les informations provenant des sections et la fragilit\u00e9 des contextes op\u00e9rationnels sont \u00e0 l\u2019origine de cette couverture incompl\u00e8te. Il est donc d\u00e9conseill\u00e9 de faire des extrapolations sur la base de ces donn\u00e9es.",
+                    "Normalisation et r\u00e9gularit\u00e9 des comptes rendus : bien que tous les efforts aient \u00e9t\u00e9 faits pour optimiser l\u2019utilisation des informations provenant des diff\u00e9rentes sources de donn\u00e9es dans le cadre de l\u2019analyse, certaines limites subsistent concernant la comparabilit\u00e9 des donn\u00e9es du fait des diff\u00e9rences dans les m\u00e9thodes de collecte des donn\u00e9es, la taille des \u00e9chantillons, les d\u00e9finitions utilis\u00e9es et la fr\u00e9quence des comptes rendus.",
+                    "D\u00e9calage : la disponibilit\u00e9 de chiffres d\u00e9finitifs, relatifs notamment aux recettes et aux d\u00e9penses, est li\u00e9e \u00e0 la disponibilit\u00e9 d\u2019\u00e9tats financiers v\u00e9rifi\u00e9s, laquelle varie en fonction des dates de d\u00e9but et de fin choisies pour les exercices budg\u00e9taires et des cycles correspondants de planification et de compte rendu des Soci\u00e9t\u00e9s nationales."
+                ]
+            ]
+        }
+    }
+}
