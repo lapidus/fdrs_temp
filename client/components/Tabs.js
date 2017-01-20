@@ -41,7 +41,7 @@ export class Tabs extends React.Component {
           {
             tabs.map((tab, i) =>
               <button
-                className={ active === i ? "btn bg-secondary" : "btn"}
+                className={ active === i ? "btn bg-light px1" : "btn px1"}
                 key={ i }
                 onClick={ this.switchTab.bind(this, i) }
               >

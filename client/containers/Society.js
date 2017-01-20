@@ -60,6 +60,8 @@ class Society extends React.Component {
     selectedCountry[props.society.iso_3] = { fillKey: "red" }
 
     this.state = {
+      lastLanguage: this.context.i18n.language,
+      currentLanguage: this.context.i18n.language,
       year: getLatestYearDocuments(props),
       earliestData: minBy(props.data, (o) => o.KPI_Year),
       latestData: maxBy(props.data, (o) => o.KPI_Year),
@@ -80,11 +82,11 @@ class Society extends React.Component {
     document.body.classList.add("html-ready")
   }
 
-  shouldComponentUpdate(nextProps,nextState) {
-    const didYearChange = nextState.year !== this.state.year
-    const didSocietyChange = nextProps.society.iso_2 !== this.props.society.iso_2
-    return didYearChange || didSocietyChange
-  }
+  // shouldComponentUpdate(nextProps, nextState, nextContext) {
+  //   const didYearChange = nextState.year !== this.state.year
+  //   const didSocietyChange = nextProps.society.iso_2 !== this.props.society.iso_2
+  //   return didYearChange || didSocietyChange || didLanguageChange
+  // }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.society.iso_2 !== nextProps.society.iso_2) {

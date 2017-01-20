@@ -6,9 +6,6 @@ import HeadlineDivider from "../../components/HeadlineDivider"
 import SideNavigation from "../../components/Report/SideNavigation"
 
 class Chapter2 extends React.Component {
-  componentDidMount() {
-    console.log("Mounted What we do")
-  }
 
   shouldComponentUpdate(nextProps, nextState, nextContext) {
     const { language } = nextContext.i18n
@@ -32,12 +29,81 @@ class Chapter2 extends React.Component {
           </div>
         </div>
 
-        <div className="clearfix bg-dark overflow-hidden" style={{backgroundImage:"url(/img/chapters/chapter-2.jpg)",backgroundSize: "cover",backgroundPosition:"center 40%",backgroundRepeat: "no-repeat", backgroundAttachment: "fixed"}}>
+        <div className="clearfix bg-dark overflow-hidden" style={{
+            backgroundImage:"url(/img/chapters/chapter-2.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition:"center 40%",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed"
+          }}>
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py4 md-py6">
             <p className="text-base sm-text-sm md-text-md">{chapter.intro}</p>
             <hr />
           </div>
         </div>
+
+        <div className="px1 pt2 pb3">
+          <div className="clearfix mxn1">
+
+            <aside className="relative md-absolute col sm-8 sm-offset-2 md-2 md-offset-0 px1 py1">
+              <h1 className="text-base sm-text-sm color-secondary mb0">Chapter overview</h1>
+              <ul className="m0 py1">
+                <li>
+                  <button className="btn base-12 py05 px1 text-left color-secondary">Our network</button>
+                </li>
+                <li>
+                  <button className="btn base-12 py05 px1 text-left color-secondary">Our resources</button>
+                </li>
+              </ul>
+            </aside>
+
+            <div className="clearfix">
+              {
+                /*
+                 * Text
+                 *
+                 */
+              }
+              <div className="col sm-8 sm-offset-2 md-5 md-offset-3 px1">
+                { "Main text..." }
+                <p>
+                  <strong>
+                    { section0.blocks[0] }
+                  </strong>
+                </p>
+                <ol>
+                  {section0.blocks[1].map((item, i) => (
+                    <li key={i} className="py05">{item}</li>
+                  ))}
+                </ol>
+                <p>
+                  <strong>
+                    { section0.blocks[2] }
+                  </strong>
+                </p>
+                <ol>
+                  {section0.blocks[3].map((item, i) => (
+                    <li key={i} className="py05">{item}</li>
+                  ))}
+                </ol>
+                <p>
+                  { section0.blocks[4] }
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
 
         <div className="clearfix body-text" style={{position:"relative"}}>
 
