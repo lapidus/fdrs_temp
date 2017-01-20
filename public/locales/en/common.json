@@ -140,25 +140,6 @@
     "updateText": "Last updated...",
     "login": "Login",
     "home": "Home",
-    "readMore": "Read More",
-    "languages": {
-      "en" : {
-        "name": "English",
-        "slug": "en"
-      },
-      "fr": {
-        "name": "French",
-        "slug": "fr"
-      },
-      "es": {
-        "name": "Spanish",
-        "slug": "es"
-      },
-      "ar": {
-        "name": "Arabic",
-        "slug": "ar"
-      }
-    },
     "navigation": [
         {
             "name": "Services",
