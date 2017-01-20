@@ -1,6 +1,4 @@
 {
-    "title" : "FAQ",
-    "intro" : "Below you find the most frequently asked questions. If your question has not been answered below, please contact FDRS at:",
     "questions": [
         {
             "question": "What is FDRS?",
@@ -55,15 +53,6 @@
                     "Time lag: The availability of definitive figures on income and expenditure, in particular, are constrained by the availability of the most recent audited financial statements. This is due to varying fiscal years, and corresponding planning and reporting cycles of the National Societies."
                 ]
             ]
-        },
-        {
-          "question": "How can the data be used?",
-          "answer": [
-            [
-              "Any part of this website may be cited, copied, translated into other languages or adapted to meet local needs without prior permission from the International Federation of Red Cross and Red Crescent Societies (IFRC), provided that the source is clearly stated. Requests for commercial reproduction should be directed to Federation wide databank and reporting system team at fdrs@ifrc.org",
-              "To download the datasets used in this website, please visit http://data.ifrc.org/fdrs/data-download"
-            ]
-          ]
         }
     ]
 }

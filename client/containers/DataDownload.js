@@ -36,7 +36,7 @@ class Download extends React.Component {
                       </g>
                     </svg>
                   </span>
-                  { "DOWNLOAD CSV FILE" }
+                  { t("data-download:csv") }
                 </a>
               </button><br /><br />
 

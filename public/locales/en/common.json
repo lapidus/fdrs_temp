@@ -5,6 +5,16 @@
         "databank",
         "and reporting system"
     ],
+
+    "breadcrumbs" : {
+      "Home" : "Home",
+      "FAQ" : "FAQ",
+      "National society profiles" : "National society profiles",
+      "Services" : "Services",
+      "The IFRC at a glance" : "The IFRC at a glance",
+      "Data download" : "Data download"
+    },
+
     "download": "Download",
     "indicatorsTitle": "Indicators",
     "updateText": "Last updated...",

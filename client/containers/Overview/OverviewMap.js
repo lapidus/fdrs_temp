@@ -97,7 +97,7 @@ class OverviewMap extends React.Component {
             <div className="shadow-3">
               <div className="p1">
                 <h2 className="text-base m0">
-                  Sorted <span className="color-primary">High to low</span>
+                  { t("overview:sorted") } <span className="color-primary">{ t("overview:hightolow") }</span>
                 </h2>
               </div>
               <div className="bg-white overflow-scroll" style={{height: "31.5rem"}}>

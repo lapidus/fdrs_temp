@@ -1,23 +1,20 @@
 {
-    "title": "Data Download",
+    "title": "Descargar datos",
     "titleParts": [
         "IFRC",
-        "Data Initiatives"
+        "Iniciativas de datos"
     ],
     "lead": "IFRC is a data-driven organization dedicated to making evidence-based decision-making",
     "about": {
-        "title": "About data.ifrc.org",
+        "title": "Sobre data.ifrc.org",
         "text": [
           "Data.ifrc.org is prototype website for data and data learning at IFRC. There are upcoming projects which will feed in the coming months. Stay tuned."
         ]
     },
     "projects": {
-        "featured" : "Featured projects",
-        "news" : "News",
         "fdrs": {
-            "title": "Federation-wide Databank and Reporting System",
-            "text": "The Federation-wide Databank and Reporting System provides data about all the National Societies.",
-            "navigate" : "Go to FDRS"
+            "title": "Banco de datos y sistema de información general",
+            "text": "The Federation-wide Databank and Reporting System provides data about all the National Societies."
         }
     }
 }

@@ -4,10 +4,6 @@
     [ "IFRC global", "overview" ],
     [ "National society", "profiles" ]
   ],
-  "table" : "Table",
-  "map" : "Map",
-  "sorted" : "Sorted",
-  "hightolow" : "High to low",
   "tableHeaders": [
     "National society name",
     "Trend",

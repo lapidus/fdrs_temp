@@ -78,7 +78,7 @@ class Landing extends React.Component {
         <div className='block relative px1 pb1'>
           <div className='clearfix mxn1'>
             <div className='col sm-10 sm-offset-1 px1'>
-              <h2 className="text-base color-secondary">{ "Featured project" }</h2>
+              <h2 className="text-base color-secondary"> { t("landing:projects.featured") }</h2>
               <article className="shadow-4 p2">
                 <h1 className='text-lg md-text-xl lh-small light m0'>
                   <LanguageLink to="/fdrs">
@@ -90,7 +90,7 @@ class Landing extends React.Component {
                 </p>
                 <LanguageLink to="/fdrs/" className='btn btn--raised mt1 bg-primary'>
                   <span className='block py05 px1'>
-                    { "Go to FDRS" }
+                    { t("landing:projects.fdrs.navigate") }
                   </span>
                 </LanguageLink>
               </article>
@@ -101,7 +101,7 @@ class Landing extends React.Component {
         <div className='block relative px1 pb1'>
           <div className='clearfix mxn1'>
             <div className='col sm-10 sm-offset-1 px1'>
-              <h2 className="text-base color-secondary">{ "News" }</h2>
+              <h2 className="text-base color-secondary">{ t("landing:projects.news") }</h2>
             </div>
           </div>
 
@@ -110,11 +110,12 @@ class Landing extends React.Component {
               { this.state.items.map((item, index) =>
                  <div key={index} className="shadow-4 p2 mb2">
                    {
+                     this.getImage(item.content) !== "" ?
                      <img className="base-12" src={this.getImage(item.content)} alt=""/>
+                     : ""
                    }
-                   <img src="" alt=""/>
                    <h1 className="text-md md-text-lg light lh-small">
-                    {item.title}
+                     <a target="_blank" href={item.link}>{item.title}</a>
                   </h1>
                    <div>
                      <span>By {item.author}</span> | <span>{item.pubDate.substring(0,item.pubDate.length-9)}</span>
