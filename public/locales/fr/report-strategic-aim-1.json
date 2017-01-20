@@ -1,0 +1,687 @@
+{
+    "chapter": "4",
+    "slug": "strategic-aim-1",
+    "title": "Objectif strat\u00e9gique 1",
+    "subtitle": "Sauver des vies, prot\u00e9ger les moyens d'existence et renforcer le rel\u00e8vement apr\u00e8s les catastrophes et les crises",
+    "intro": "Depuis leurs de\u0301buts, la Croix-Rouge et le Croissant-Rouge sont surtout connus pour leur mission, qui est d\u2019apporter une aide d\u2019urgence et un re\u0301confort aux personnes en de\u0301tresse.",
+    "general": [
+        "En 2014, nous avons mene\u0301 des ope\u0301rations internationales en re\u0301ponse a\u0300 278 catastrophes et crises survenues dans le monde, un chiffre qui s\u2019inscrit dans la tendance ge\u0301ne\u0301rale a\u0300 la baisse observe\u0301e au cours de la pre\u0301sente de\u0301cennie. Cette tendance est due en partie a\u0300 la re\u0301duction importante \u2013 mais peut-e\u0302tre temporaire \u2013 du nombre de catastrophes naturelles de grande ampleur enregistre\u0301es ces dernie\u0300res anne\u0301es, mais elle peut e\u0301galement e\u0302tre le signe de l\u2019ame\u0301lioration de la capacite\u0301 des unite\u0301s locales et nationales de faire face aux catastrophes sans avoir besoin d\u2019un appui international.",
+        {
+            "type": "chart",
+            "title": "D\u00e9clin des catastrophes naturelles",
+            "caption": "Source: Disaster and Crisis Management Department",
+            "dataset": [
+                {
+                    "year": "2010",
+                    "disasters": "393"
+                },
+                {
+                    "year": "2011",
+                    "disasters": "406"
+                },
+                {
+                    "year": "2012",
+                    "disasters": "358"
+                },
+                {
+                    "year": "2013",
+                    "disasters": "305"
+                },
+                {
+                    "year": "2014",
+                    "disasters": "278"
+                }
+            ],
+            "axisLabels": {
+                "x": "Ann\u00e9es",
+                "y": "Catastrophes naturelles"
+            },
+            "lineLabels": [
+                "Catastrophes\nnaturelles"
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "title": "Nombre de personnes soutenues, par type de catastrophe",
+            "blocks": [
+                "Les catastrophes les plus courantes dans toutes les re\u0301gions ont e\u0301te\u0301 les catastrophes hydrome\u0301te\u0301orologiques, telles que les inondations, les ouragans et les se\u0301cheresses, aggrave\u0301es en Afrique par des crises lie\u0301es a\u0300 des conflits prolonge\u0301s. La re\u0301gion Asie-Pacifique a e\u0301te\u0301 plus expose\u0301e a\u0300 des risques ge\u0301ophysiques, tels que les tremblements de terre.",
+                "La majorite\u0301 des interventions d\u2019urgence et des be\u0301ne\u0301ficiaires de la Croix-Rouge et du Croissant-Rouge se trouvent dans les re\u0301gions Asie-Pacifique et Afrique. Seul un faible nombre de Socie\u0301te\u0301s nationales a fourni des donne\u0301es ventile\u0301es par sexe, celles-ci faisant e\u0301tat d\u2019une re\u0301partition e\u0301quitable.",
+                {
+                    "type": "chart",
+                    "title": "Personnes soutenues, par type de catastrophe",
+                    "customFills": [
+                        "#E02726",
+                        "#1A9FE0",
+                        "#BEBAB8",
+                        "#FED02F"
+                    ],
+                    "dataset": [
+                        {
+                            "index": "1",
+                            "numbers": [
+                                "0",
+                                "608168",
+                                "6953897",
+                                "600019"
+                            ],
+                            "labels": [
+                                "Ge\u0301ophysique",
+                                "Hydrome\u0301te\u0301orologique",
+                                "Biologique",
+                                "Divers"
+                            ],
+                            "total": "8162084",
+                            "name": "Afrique"
+                        },
+                        {
+                            "index": "2",
+                            "numbers": [
+                                "2308695",
+                                "1152032",
+                                "10000",
+                                "173729"
+                            ],
+                            "labels": [
+                                "Ge\u0301ophysique",
+                                "Hydrome\u0301te\u0301orologique",
+                                "Biologique",
+                                "Divers"
+                            ],
+                            "total": "3644456",
+                            "name": "Asie-Pacifique"
+                        },
+                        {
+                            "index": "3",
+                            "numbers": [
+                                "0",
+                                "644820",
+                                "181250",
+                                "0"
+                            ],
+                            "labels": [
+                                "Ge\u0301ophysique",
+                                "Hydrome\u0301te\u0301orologique",
+                                "Biologique",
+                                "Divers"
+                            ],
+                            "total": "826070",
+                            "name": "Ame\u0301riques"
+                        },
+                        {
+                            "index": "4",
+                            "numbers": [
+                                "0",
+                                "72614",
+                                "172000",
+                                "168250"
+                            ],
+                            "labels": [
+                                "Ge\u0301ophysique",
+                                "Hydrome\u0301te\u0301orologique",
+                                "Biologique",
+                                "Divers"
+                            ],
+                            "total": "412864",
+                            "name": "Europe"
+                        },
+                        {
+                            "index": "5",
+                            "numbers": [
+                                "0",
+                                "69725",
+                                "0",
+                                "3000"
+                            ],
+                            "labels": [
+                                "Ge\u0301ophysique",
+                                "Hydrome\u0301te\u0301orologique",
+                                "Biologique",
+                                "Divers"
+                            ],
+                            "total": "72725",
+                            "name": "Moyen-Orient et Afrique du Nord"
+                        }
+                    ],
+                    "caption": "Source: Disaster and Crisis Management Department, FDRS"
+                }
+            ]
+        },
+        {
+            "title": "Magnitude des crises abord\u00e9es par le Croix Rouge et le Croissant Rouge",
+            "blocks": [
+                "Le nombre d\u2019interventions d\u2019urgence ne donne pas d\u2019indication sur l\u2019ampleur des catastrophes ou des crises. Pour connai\u0302tre cette donne\u0301e, il faut se re\u0301fe\u0301rer au nombre et au montant des appels d\u2019urgence lance\u0301s par le Secre\u0301tariat de la Fe\u0301de\u0301ration au nom des Socie\u0301te\u0301s nationales : 137 appels d\u2019un montant total de 1,25 milliard de francs suisses en faveur de 91 millions de be\u0301ne\u0301ficiaires ont e\u0301te\u0301 lance\u0301s pendant la pe\u0301riode de 2010 a\u0300 2014, une ou deux catastrophes de grande ampleur ayant influence\u0301 chaque anne\u0301e l\u2019e\u0301tendue des interventions d\u2019urgence et cause\u0301 d\u2019importantes fluctuations d\u2019une anne\u0301e a\u0300 l\u2019autre.",
+                {
+                    "type": "table",
+                    "title": "Engagement dans les plus grandes crises",
+                    "headers": [
+                        "Ann\u00e9e",
+                        "Nombre d\u2019appels d\u2019urgence lanc\u00e9s",
+                        "Montant des appels d\u2019urgence (en millions de CHF)",
+                        "Nombre de b\u00e9n\u00e9ficiaires (en millions)",
+                        "Crise majeure"
+                    ],
+                    "dataset": [
+                        {
+                            "year": "2010",
+                            "appealsLaunched": "30",
+                            "amount": "459.4",
+                            "beneficiaries": "10.9",
+                            "crisis": "Tremblement de terre \u00e0 Ha\u00efti"
+                        },
+                        {
+                            "year": "2011",
+                            "appealsLaunched": "25",
+                            "amount": "149.1",
+                            "beneficiaries": "3.3",
+                            "crisis": "Crise des re\u0301fugi\u00e9s en Somalie\/se\u0301cheresse dans la Corne de l\u2019Afrique"
+                        },
+                        {
+                            "year": "2012",
+                            "appealsLaunched": "36",
+                            "amount": "281.7",
+                            "beneficiaries": "12.4",
+                            "crisis": "Crise en Syrie"
+                        },
+                        {
+                            "year": "2013",
+                            "appealsLaunched": "19",
+                            "amount": "129.8",
+                            "beneficiaries": "1.9",
+                            "crisis": "Typhon Haiyan aux Philippines"
+                        },
+                        {
+                            "year": "2014",
+                            "appealsLaunched": "27",
+                            "amount": "230.8",
+                            "beneficiaries": "62.5",
+                            "crisis": "\u00c9pid\u00e9mie d\u2019Ebola en Afrique de l\u2019Ouest"
+                        },
+                        {
+                            "year": "Total",
+                            "appealsLaunched": "137",
+                            "amount": "1250.8",
+                            "beneficiaries": "91.1",
+                            "crisis": "-"
+                        }
+                    ],
+                    "caption": "Source: D\u00e9partement Finances"
+                }
+            ]
+        },
+        {
+            "title": "Appels d\u2019urgence les mieux et les moins bien financ\u00e9s",
+            "blocks": [
+                "Dans la pratique, la mise a\u0300 disposition des ressources ne\u0301cessaires par les donateurs de\u0301pend de nombreux facteurs. Les interventions lie\u0301es a\u0300 des crises chroniques ou persistantes tendent a\u0300 e\u0302tre moins bien finance\u0301es que celles lie\u0301es a\u0300 des catastrophes graves. Un nombre plus e\u0301leve\u0301 d\u2019appels dans une re\u0301gion donne\u0301e peut avoir une incidence sur la disposition des donateurs a\u0300 re\u0301pondre de manie\u0300re ade\u0301quate a\u0300 chacun d\u2019entre eux, par rapport a\u0300 une re\u0301gion dans laquelle moins d\u2019appels ont e\u0301te\u0301 lance\u0301s.",
+                "La proximite\u0301 des pays donateurs, en cas par exemple de crises a\u0300 la pe\u0301riphe\u0301rie de l\u2019Europe ou aux frontie\u0300res de l\u2019Ame\u0301rique du Nord, peut favoriser les financements, les donateurs ayant la volonte\u0301 de re\u0301duire les flux de re\u0301fugie\u0301s franchissant les frontie\u0300res de leurs pays respectifs. Les environnements conside\u0301re\u0301s comme difficiles car des facteurs politiques en limitent l\u2019acce\u0300s, ou les contextes dans lesquels les ope\u0301rations pre\u0301ce\u0301dentes ont obtenu de mauvais re\u0301sultats, peuvent attirer moins de ressources.",
+                "Les appels en faveur de l\u2019Afrique ont tendance a\u0300 e\u0302tre moins bien finance\u0301s, probablement parce que le continent fait face a\u0300 plusieurs crises de longue dure\u0301e, pour lesquelles l\u2019inte\u0301re\u0302t de\u0301cline apre\u0300s un certain temps. Les appels lie\u0301s a\u0300 l\u2019inse\u0301curite\u0301 alimentaire tendent aussi a\u0300 e\u0302tre sous-finance\u0301s, en raison peut-e\u0302tre du caracte\u0300re prolonge\u0301 de ce type de crises. Les situations d\u2019urgence tre\u0300s me\u0301diatise\u0301es sont souvent bien mieux finance\u0301es.",
+                {
+                    "type": "tabs",
+                    "title": "Financement des appels",
+                    "tabs": [
+                        {
+                            "name": "Moins bien financ\u00e9s",
+                            "headers": [
+                                "Appel",
+                                "Couverture"
+                            ],
+                            "dataset": [
+                                {
+                                    "country": "Kenya",
+                                    "percentage": "4.8"
+                                },
+                                {
+                                    "country": "Kenya",
+                                    "percentage": "7.6"
+                                },
+                                {
+                                    "country": "Angola",
+                                    "percentage": "8.8"
+                                },
+                                {
+                                    "country": "Ethiopie",
+                                    "percentage": "11.1"
+                                },
+                                {
+                                    "country": "C\u00f4te d'Ivoire",
+                                    "percentage": "11.7"
+                                },
+                                {
+                                    "country": "Sudan",
+                                    "percentage": "17.8"
+                                },
+                                {
+                                    "country": "Burkina Faso",
+                                    "percentage": "18.9"
+                                },
+                                {
+                                    "country": "Sudan",
+                                    "percentage": "23.6"
+                                },
+                                {
+                                    "country": "Niger",
+                                    "percentage": "25.2"
+                                },
+                                {
+                                    "country": "Chad",
+                                    "percentage": "26.7"
+                                },
+                                {
+                                    "country": "Kenya",
+                                    "percentage": "27.1"
+                                },
+                                {
+                                    "country": "R\u00e9publique du Congo",
+                                    "percentage": "28"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Mieux financ\u00e9s",
+                            "headers": [
+                                "Appel",
+                                "Couverture"
+                            ],
+                            "dataset": [
+                                {
+                                    "country": "Sierra Leone",
+                                    "percentage": "82.6"
+                                },
+                                {
+                                    "country": "Pakistan",
+                                    "percentage": "85"
+                                },
+                                {
+                                    "country": "Sri Lanka",
+                                    "percentage": "87.7"
+                                },
+                                {
+                                    "country": "Chili",
+                                    "percentage": "87.7"
+                                },
+                                {
+                                    "country": "Kenya",
+                                    "percentage": "88"
+                                },
+                                {
+                                    "country": "Ha\u00efti et la R\u00e9publique Dominicaine",
+                                    "percentage": "88.4"
+                                },
+                                {
+                                    "country": "Philippines",
+                                    "percentage": "88.5"
+                                },
+                                {
+                                    "country": "Cuba",
+                                    "percentage": "90.8"
+                                },
+                                {
+                                    "country": "Turquie",
+                                    "percentage": "95.2"
+                                },
+                                {
+                                    "country": "Pakistan",
+                                    "percentage": "96.5"
+                                },
+                                {
+                                    "country": "Ha\u00efti",
+                                    "percentage": "100"
+                                },
+                                {
+                                    "country": "Somalie",
+                                    "percentage": "100"
+                                }
+                            ]
+                        }
+                    ],
+                    "caption": "Source: Finance Department"
+                }
+            ]
+        },
+        {
+            "title": "Notre syst\u00e8me de gestion des catastrophes",
+            "blocks": [
+                "Le Fonds d\u2019urgence pour les secours lors de catastrophes (DREF) est un fonds ge\u0301re\u0301 par le Secre\u0301tariat de la Fe\u0301de\u0301ration, dont les ressources peuvent, sur demande, e\u0302tre imme\u0301diatement mises a\u0300 la disposition des Socie\u0301te\u0301s nationales pour lancer une intervention d\u2019urgence. Les centaines de catastrophes et d\u2019urgences sanitaires mineures qui sont a\u0300 de\u0301plorer chaque anne\u0301e n\u2019attirent pas l\u2019attention des me\u0301dias du fait de leur faible ampleur et ne rec\u0327oivent donc pas l\u2019appui financier rapide ne\u0301cessaire.",
+                {
+                    "type": "chart",
+                    "title": "DREF \u2013 type et nombre des op\u00e9rations",
+                    "dataset": [
+                        {
+                            "x": "S\u00e9cheresses (1)",
+                            "y": "1",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": "Inondations (30)",
+                            "y": "30",
+                            "fill": "#0F9EE2"
+                        },
+                        {
+                            "x": "Tremblements\nde terre (3)",
+                            "y": "3",
+                            "fill": "#FED02F"
+                        },
+                        {
+                            "x": "\u00c9ruptions\nvolcaniques (4)",
+                            "y": "4",
+                            "fill": "#DE2214"
+                        },
+                        {
+                            "x": "Cyclones,\ntemp\u00eates, (4)",
+                            "y": "4",
+                            "fill": "#84BB23"
+                        },
+                        {
+                            "x": "Temp\u00e9rature\nextr\u00eame (4)",
+                            "y": "4",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": "Troubles\ncivils (13)",
+                            "y": "13",
+                            "fill": "#84BB23"
+                        },
+                        {
+                            "x": "Explosions,\nincendies (2)",
+                            "y": "2",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": "Mouvements de\npopulation (11)",
+                            "y": "11",
+                            "fill": "#EE3224"
+                        },
+                        {
+                            "x": "Autres (2)",
+                            "y": "2",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": "Epid\u00e9mies (28)",
+                            "y": "28",
+                            "fill": "#FED02F"
+                        }
+                    ],
+                    "caption": "Source: Disaster and Crisis Management Department"
+                },
+                "Les chiffres montrent qu\u2019en 2014, le DREF a e\u0301te\u0301 le plus souvent sollicite\u0301 pour faire face a\u0300 des e\u0301pide\u0301mies, des inondations et des conflits."
+            ]
+        },
+        {
+            "title": "Notre Service mondial de logistique",
+            "blocks": [
+                "Le Service mondial de logistique de la Fe\u0301de\u0301ration, dont le travail a e\u0301te\u0301 salue\u0301 a\u0300 plusieurs reprises, a pour mission de garantir que les fournitures et les e\u0301quipements ade\u0301quats soient disponibles au bon endroit, au bon moment et au bon prix afin d\u2019atteindre le plus grand nombre possible de personnes vulne\u0301rables. Il ope\u0300re par le biais de po\u0302les situe\u0301s a\u0300 Gene\u0300ve, a\u0300 Panama, a\u0300 Las Palmas, a\u0300 Nairobi, a\u0300 Dubai\u0308 et a\u0300 Kuala Lumpur, et ge\u0300re un volume impressionnant et croissant d\u2019activite\u0301s.",
+                {
+                    "type": "chart",
+                    "title": "Volume croissant d\u2019activite\u0301s",
+                    "axisLabels": {
+                        "x": "Ann\u00e9es",
+                        "y": "Millions de CHF"
+                    },
+                    "lineLabels": [
+                        "Achats",
+                        "Mobilisation"
+                    ],
+                    "dataset": [
+                        [
+                            {
+                                "year": "2011",
+                                "value": "72"
+                            },
+                            {
+                                "year": "2012",
+                                "value": "78"
+                            },
+                            {
+                                "year": "2013",
+                                "value": "116"
+                            },
+                            {
+                                "year": "2014",
+                                "value": "148"
+                            }
+                        ],
+                        [
+                            {
+                                "year": "2011",
+                                "value": "45"
+                            },
+                            {
+                                "year": "2012",
+                                "value": "52"
+                            },
+                            {
+                                "year": "2013",
+                                "value": "88"
+                            },
+                            {
+                                "year": "2014",
+                                "value": "95"
+                            }
+                        ]
+                    ],
+                    "caption": "Source: Logistics Department"
+                },
+                "Le Service mondial de logistique est avant tout axe\u0301 sur les achats, le transport, le stockage, la gestion du parc automobile, les stocks d\u2019urgence et les compe\u0301tences techniques spe\u0301cialise\u0301es.",
+                "Il maintient en tout temps des stocks d\u2019urgence dans les entrepo\u0302ts installe\u0301s dans des endroits strate\u0301giques afin de permettre a\u0300 la Fe\u0301de\u0301ration de re\u0301pondre a\u0300 tout moment aux besoins imme\u0301diats de 450 000 personnes. Son ro\u0302le consiste e\u0301galement a\u0300 conseiller et a\u0300 aider les Socie\u0301te\u0301s nationales a\u0300 renforcer leurs propres capacite\u0301s logistiques. En e\u0301tendant ses services aux partenaires humanitaires externes, le Service mondial de logistique a accru ses volumes de transactions, ce qui lui a permis d\u2019ame\u0301liorer son pouvoir d\u2019achat et de re\u0301aliser des e\u0301conomies d\u2019e\u0301chelle be\u0301ne\u0301fiques pour l\u2019ensemble du re\u0301seau de la Fe\u0301de\u0301ration."
+            ]
+        },
+        {
+            "title": "Le logement: davantage que quatre murs et un toit",
+            "blocks": [
+                "Pour les individus qui ont tout perdu du fait d\u2019une catastrophe ou d\u2019une guerre, un logement, c\u2019est bien plus que quatre murs et un toit. C\u2019est un foyer, un endroit ou\u0300 ils se sentent en se\u0301curite\u0301 et ou\u0300 ils peuvent vivre dans l\u2019intimite\u0301 avec leurs proches. La fourniture de logements est une premie\u0300re e\u0301tape vers la reconstruction des vies et des moyens de subsistance, et elle permet aux individus de redevenir ou de rester en bonne sante\u0301. La re\u0301silience et la dignite\u0301 commencent par un logement ade\u0301quat.",
+                {
+                    "type": "chart",
+                    "title": "Personnes assist\u00e9es en 2014",
+                    "popupContent": "households assisted with shelter and\/or non-food items",
+                    "dataset": {
+                        "PHL": {
+                            "fillKey": "bubbleFill",
+                            "name": "Philippines-Haiyan",
+                            "number": "728000",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">728,000<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "SSD": {
+                            "fillKey": "bubbleFill",
+                            "name": "South Sudan",
+                            "number": "202907",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">202,907<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "COD": {
+                            "fillKey": "bubbleFill",
+                            "name": "Democratic Republic of Congo",
+                            "number": "166442",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">166,442<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "IRQ": {
+                            "fillKey": "bubbleFill",
+                            "name": "Iraq",
+                            "number": "108873",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">108,873<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "CAF": {
+                            "fillKey": "bubbleFill",
+                            "name": "Central African Republic",
+                            "number": "103904",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">103,904<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "SOM": {
+                            "fillKey": "bubbleFill",
+                            "name": "Somalia",
+                            "number": "55200",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">55,200<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "YEM": {
+                            "fillKey": "bubbleFill",
+                            "name": "Yemen",
+                            "number": "48855",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">48,855<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "BGD": {
+                            "fillKey": "bubbleFill",
+                            "name": "Bangladesh",
+                            "number": "43187",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">43,187<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "ETH": {
+                            "fillKey": "bubbleFill",
+                            "name": "Ethiopia",
+                            "number": "33918",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">33,918<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "SYR": {
+                            "fillKey": "bubbleFill",
+                            "name": "Syria",
+                            "number": "31825",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">31,825<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "AFG": {
+                            "fillKey": "bubbleFill",
+                            "name": "Afghanistan",
+                            "number": "19364",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">19,364<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "MMR": {
+                            "fillKey": "bubbleFill",
+                            "name": "Myanmar",
+                            "number": "16898",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">16,898<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "PAK": {
+                            "fillKey": "bubbleFill",
+                            "name": "Pakistan",
+                            "number": "15360",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">15,360<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "UKR": {
+                            "fillKey": "bubbleFill",
+                            "name": "Ukraine",
+                            "number": "13000",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">13,000<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        },
+                        "MLI": {
+                            "fillKey": "bubbleFill",
+                            "name": "Mali",
+                            "number": "11370",
+                            "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">11,370<\/span> households assisted with shelter and\/or non-food items<\/p>"
+                        }
+                    },
+                    "caption": "Source: Shelter and Settlements Department"
+                },
+                "Le re\u0301seau de la Croix-Rouge et du Croissant-Rouge est l\u2019acteur humanitaire qui fournit le plus grand nombre de logements d\u2019urgence. Il \u0153uvre e\u0301galement en faveur du rele\u0300vement et de la reconstruction a\u0300 plus long terme des communaute\u0301s touche\u0301es par une catastrophe. Au cours de la dernie\u0300re de\u0301cennie, la Fe\u0301de\u0301ration a fourni chaque anne\u0301e un soutien en matie\u0300re de logement a\u0300 plus de 2,5 millions de personnes touche\u0301es par une catastrophe, la moyenne annuelle des de\u0301penses dans ce domaine s\u2019e\u0301levant a\u0300 160 millions de francs suisses.",
+                {
+                    "type": "case-study-extended",
+                    "title": "The Syria crisis"
+                },
+                {
+                    "type": "case-study-extended",
+                    "title": "Typhoon Haiyan"
+                },
+                {
+                    "type": "case-study-extended",
+                    "title": "Ebola virus disease"
+                }
+            ]
+        },
+        {
+            "title": "La se\u0301curite\u0301",
+            "blocks": [
+                "\u0152uvrer en premie\u0300re ligne des interventions humanitaires peut e\u0302tre risque\u0301. Ces dix dernie\u0300res anne\u0301es, plus de 1 100 travailleurs humanitaires ont perdu la vie dans l\u2019exercice de leurs fonctions, beaucoup d\u2019autres ont e\u0301te\u0301 blesse\u0301s et un nombre accru d\u2019enle\u0300vements a e\u0301te\u0301 enregistre\u0301. Ces faits sont le re\u0301sultat du non-respect croissant du droit international humanitaire et de la prise pour cible de\u0301libe\u0301re\u0301e des structures humanitaires et sanitaires.",
+                {
+                    "type": "chart",
+                    "title": "Incidents de securit\u00e9",
+                    "barLabels": [
+                        "281",
+                        "155",
+                        "114",
+                        "103",
+                        "79"
+                    ],
+                    "axisLabels": {
+                        "x": "Anne\u0301es",
+                        "y": ""
+                    },
+                    "dataset": [
+                        {
+                            "value": "281",
+                            "year": "2010"
+                        },
+                        {
+                            "value": "155",
+                            "year": "2011"
+                        },
+                        {
+                            "value": "114",
+                            "year": "2012"
+                        },
+                        {
+                            "value": "103",
+                            "year": "2013"
+                        },
+                        {
+                            "value": "79",
+                            "year": "2014"
+                        }
+                    ],
+                    "caption": "Source: Security Unit"
+                },
+                "En ce qui concerne la Fe\u0301de\u0301ration, le nombre d\u2019incidents de se\u0301curite\u0301 signale\u0301s a baisse\u0301 ces dernie\u0300res anne\u0301es. La situation est encourageante: en 2010, un incident de se\u0301curite\u0301 e\u0301tait signale\u0301 pour environ 15 employe\u0301s de\u0301ploye\u0301s, contre un incident pour 44 employe\u0301s en 2014.",
+                {
+                    "type": "tabs",
+                    "title": "Employe\u0301s et volontaires de la Croix-Rouge et du Croissant-Rouge tue\u0301s ",
+                    "tabs": [
+                        {
+                            "name": "1993\u20142011",
+                            "dataset": [
+                                {
+                                    "x": "Accidents\nimpliquant des ve\u0301hicules (10%)",
+                                    "y": "10",
+                                    "fill": "#012A39"
+                                },
+                                {
+                                    "x": "Violence\/\ncriminalite\u0301\/\n conflit (30%)",
+                                    "y": "30",
+                                    "fill": "#EE3224"
+                                },
+                                {
+                                    "x": "Catastrophes\nnaturelles (60%)",
+                                    "y": "60",
+                                    "fill": "#FED02F"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012\u20142014",
+                            "dataset": [
+                                {
+                                    "x": "Accidents\nimpliquant\ndes ve\u0301hicules\n(10%)",
+                                    "y": "10",
+                                    "fill": "#012A39"
+                                },
+                                {
+                                    "x": "Violence\/\ncriminalite\u0301\/\n conflit (86%)",
+                                    "y": "86",
+                                    "fill": "#EE3224"
+                                },
+                                {
+                                    "x": "Catastrophes\nnaturelles (4%)",
+                                    "y": "4",
+                                    "fill": "#FED02F"
+                                }
+                            ]
+                        }
+                    ],
+                    "caption": "Source: Security Unit"
+                },
+                "Toutefois, les facteurs de risque ont change\u0301. Si, par le passe\u0301, la majorite\u0301 des de\u0301ce\u0300s de membres du personnel de la Croix-Rouge et du Croissant-Rouge survenaient dans le cadre d\u2019interventions conse\u0301cutives a\u0300 des catastrophes naturelles, la violence directe est aujourd\u2019hui une cause de de\u0301ce\u0300s de plus en plus courante."
+            ]
+        }
+    ],
+    "nextChapter": {
+        "heading": "Prochain chapitre",
+        "chapter": "5",
+        "subtitle": "Objectif strat\u00e9gique 2",
+        "title": "Promouvoir des modes de vie sains et s\u00fbrs",
+        "slug": "strategic-aim-2"
+    }
+}

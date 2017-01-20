@@ -1,0 +1,153 @@
+{
+  "disasters" : {
+    "type": "chart",
+    "dataset": [
+      {"year": 2010, "disasters": 393},
+      {"year": 2011, "disasters": 406},
+      {"year": 2012, "disasters": 358},
+      {"year": 2013, "disasters": 305},
+      {"year": 2014, "disasters": 278}
+    ]
+  },
+  "people_reached" : {
+    "type": "chart",
+    "customFills": ["#E02726","#1A9FE0", "#BEBAB8","#FED02F"],
+    "dataset": [
+      {
+        "index": 1,
+        "numbers": [0,608168,6953897,600019],
+        "labels": ["geophysical","hydrometeorological","biological","various"],
+        "total": 8162084,
+        "name": "africa"
+      },
+      {
+        "index": 2,
+        "numbers": [2308695,1152032,10000,173729],
+        "labels": ["geophysical","hydrometeorological","biological","various"],
+        "total": 3644456,
+        "name": "asia"
+      },
+      {
+        "index": 3,
+        "numbers": [0,644820,181250,0],
+        "labels": ["geophysical","hydrometeorological","biological","various"],
+        "total": 826070,
+        "name": "americas"
+      },
+      {
+        "index": 4,
+        "numbers": [0,72614,172000,168250],
+        "labels": ["geophysical","hydrometeorological","biological","various"],
+        "total": 412864,
+        "name": "europe"
+      },
+      {
+        "index": 5,
+        "numbers": [0,69725,0,3000],
+        "labels": ["geophysical","hydrometeorological","biological","various"],
+        "total": 72725,
+        "name": "middleast"
+      }
+    ]
+  },
+  "magnitude" : {
+    "type": "table",
+    "dataset": [
+      {
+        "year": 2010,
+        "appealsLaunched": 30,
+        "amount": 459.4,
+        "beneficiaries": 10.9,
+        "crisis": "Haiti Earthquake"
+      },
+      {
+        "year": 2011,
+        "appealsLaunched": 25,
+        "amount": 149.1,
+        "beneficiaries": 3.3,
+        "crisis": "Somalia Refugees / Horn of Africa drought"
+      },
+      {
+        "year": 2012,
+        "appealsLaunched": 36,
+        "amount": 281.7,
+        "beneficiaries": 12.4,
+        "crisis": "Syria Crisis"
+      },
+      {
+        "year": 2013,
+        "appealsLaunched": 19,
+        "amount": 129.8,
+        "beneficiaries": 1.9,
+        "crisis": "Typhoon Haiyan, Philippines"
+      },
+      {
+        "year": 2014,
+        "appealsLaunched": 27,
+        "amount": 230.8,
+        "beneficiaries": 62.5,
+        "crisis": "Ebola epidemic, West Africa"
+      },
+      {
+        "year": "Total",
+        "appealsLaunched": 137,
+        "amount": 1250.8,
+        "beneficiaries": 91.1,
+        "crisis": "-"
+      }
+    ],
+  },
+  "highest_lowest" : {
+    "type": "tabs",
+    "tabs" : [
+      {
+      "dataset": [
+        { "country": "Kenya", "percentage": 4.8 },
+        { "country": "Kenya", "percentage": 7.6 },
+        { "country": "Angola", "percentage": 8.8 },
+        { "country": "Ethiopia", "percentage": 11.1 },
+        { "country": "Côte d'Ivoire", "percentage": 11.7 },
+        { "country": "Sudan", "percentage": 17.8 },
+        { "country": "Burkina Faso", "percentage": 18.9 },
+        { "country": "Sudan", "percentage": 23.6 },
+        { "country": "Niger", "percentage": 25.2 },
+        { "country": "Chad", "percentage": 26.7 },
+        { "country": "Kenya", "percentage": 27.1 },
+        { "country": "Republic of Congo", "percentage": 28.0 }
+      ]
+    },
+    {
+      "dataset": [
+        { "country": "Sierra Leone", "percentage": 82.6 },
+        { "country": "Pakistan", "percentage": 85 },
+        { "country": "Sri Lanka", "percentage": 87.7 },
+        { "country": "Chile", "percentage": 87.7 },
+        { "country": "Kenya", "percentage": 88 },
+        { "country": "Haiti and Dominican Republic", "percentage": 88.4 },
+        { "country": "Philippines", "percentage": 88.5 },
+        { "country": "Cuba", "percentage": 90.8 },
+        { "country": "Turkey", "percentage": 95.2 },
+        { "country": "Pakistan", "percentage": 96.5 },
+        { "country": "Haiti", "percentage": 100 },
+        { "country": "Somalia", "percentage": 100 }
+      ]
+    }
+  ]
+  },
+  "management" : {
+    "type": "chart",
+    "dataset": [
+      { "x": "Droughts (1)", "y": 1, "fill": "#012A39" },
+      { "x": "Floods (30)", "y": 30, "fill": "#0F9EE2" },
+      { "x": "Earthquakes (3)", "y": 3, "fill": "#FED02F" },
+      { "x": "Volcanic\neruptions (4)", "y": 4, "fill": "#DE2214" },
+      { "x": "Cyclones,\nstorms (4)", "y": 4, "fill": "#84BB23" },
+      { "x": "Extreme\ntemperature (4)", "y": 4, "fill": "#012A39" },
+      { "x": "Civil\nunrest (13)", "y": 13, "fill": "#84BB23" },
+      { "x": "Explosions,\nfires (2)", "y": 2, "fill": "#012A39" },
+      { "x": "Population\nmovement (11)", "y": 11, "fill": "#EE3224" },
+      { "x": "Others (2)", "y": 2, "fill": "#012A39" },
+      { "x": "Epidemics (28)", "y": 28, "fill": "#FED02F" }
+    ],
+  }
+}

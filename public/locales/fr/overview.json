@@ -1,0 +1,23 @@
+{
+    "title": "La FICR en bref",
+    "tabs": [
+        [
+            "FICR mondiale",
+            "Aper\u00e7u"
+        ],
+        [
+            "Soci\u00e9t\u00e9 nationale",
+            "profils"
+        ]
+    ],
+    "table": "Tableau",
+    "map": "Carte",
+    "sorted": "Tri\u00e9",
+    "hightolow": "Haut en bas",
+    "tableHeaders": [
+        "Nom de la Soci\u00e9t\u00e9 nationale",
+        "Tendance",
+        "Donn\u00e9es pour"
+    ],
+    "filterPlaceholder": "Choisir des soci\u00e9t\u00e9s nationales pour comparer"
+}

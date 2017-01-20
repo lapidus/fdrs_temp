@@ -1,0 +1,69 @@
+{
+    "title": "FAQ",
+    "intro": "Below you find the most frequently asked questions. If your question has not been answered below, please contact FDRS at:",
+    "questions": {
+        "5": {
+            "answer": [
+                [
+                    "Any part of this website may be cited, copied, translated into other languages or adapted to meet local needs without prior permission from the International Federation of Red Cross and Red Crescent Societies (IFRC), provided that the source is clearly stated. Requests for commercial reproduction should be directed to Federation wide databank and reporting system team at fdrs@ifrc.org",
+                    "To download the datasets used in this website, please visit http:\/\/data.ifrc.org\/fdrs\/data-download"
+                ]
+            ],
+            "question": "How can the data be used?"
+        },
+        "0": {
+            "question": "What is FDRS?",
+            "answer": [
+                "The Federation-Wide Databank & Reporting System covers key domains of information and provides a single repository of key documents such as annual reports, audited accounts, and strategic plans. FDRS is designed as an adaptable, accessible and low maintenance resource that captures standardized data in a systematic manner. Each National Society is the owner and gatekeeper of its own data, and holds responsibility to keep updated its data - with technical support from the secretariat as needed."
+            ]
+        },
+        "1": {
+            "question": "How was the data collected?",
+            "answer": [
+                "Annual reporting by all National Societies is a constitutional requirement and FDRS has designed this around seven key proxy indicators (KPIs) guided by Strategy 2020 and three key documents. The KPIs are intended to reflect the following performance dimensions:",
+                [
+                    "Coverage: To assess how much we do, i.e. the extent to which we meet identified needs and vulnerabilities in defined geographical areas or population groups and communities.",
+                    "Quality: To assess how well we do, i.e. the extent to which our services reach set standards and norms.",
+                    "Efficiency: To assess how we use resources, i.e. the extent to which our services make the best possible use of the human, financial, and material inputs at our disposal.",
+                    "Impact: To assess how much difference we make, i.e. the extent and sustainability of the changes that occur within the communities where we operate.",
+                    "Compliance: To assess how suitably we function, i.e. the extent to which we adhere to our stated principles and values, and the policies and guidelines that drive our service delivery, the codes of behaviour that underpin our integrity, and the way we relate to our clients, partners, and other stakeholders."
+                ]
+            ]
+        },
+        "2": {
+            "question": "What are the seven KPIs?",
+            "answer": [
+                [
+                    "Number of people volunteering their time: People who have volunteered at least four hours of their time during the reporting period.",
+                    "Number of paid staff: People who work with a National Society for a minimum of three months during the reporting year and are remunerated.",
+                    "Number of people donating blood: People who have donated blood at least once during the reporting period.",
+                    "Number of local units: Local units are defined as National Society subdivisions that work with the community and can include local chapters, branches, regional and intermediate offices, and headquarters.",
+                    "Number of people reached: All direct and indirect recipients and people benefiting from Red Cross and Red Crescent services.",
+                    "Total income received: The fiscal value of money, material goods, and services a National Society receives during a fiscal year.",
+                    "Total expenditure: The fiscal value of money, material goods, and services a National Society spends during a fiscal year"
+                ]
+            ]
+        },
+        "3": {
+            "question": "What are the three key documents?",
+            "answer": [
+                [
+                    "Annual Report",
+                    "Audited Financial Statement",
+                    "Strategic Plan"
+                ]
+            ]
+        },
+        "4": {
+            "question": "What are the data limitations?",
+            "answer": [
+                [
+                    "Reporting bias: The data submitted through FDRS is self-reported information by each National Society \u2013 which is the owner and gatekeeper, and responsible for accuracy and updating. Accordingly, while efforts have been made to further triangulate the reported figures with data previously provided by National Societies or available in the public domain, it should be recognised that there might be possible reporting bias.",
+                    "Sample size: Gender disaggregated data remain sparse. Weak data systems to consolidate comprehensive branch level data and fragile operating contexts provide for incomplete coverage. Therefore extrapolations based on these data are discouraged.",
+                    "Standardisation and regularity of reporting: While maximum effort has been made to optimise information from the different data sources used in the analysis, there remain limitations on the comparability of data due to the different methodologies of data collection, sample sizes, definitions, and frequency of reporting.",
+                    "Time lag: The availability of definitive figures on income and expenditure, in particular, are constrained by the availability of the most recent audited financial statements. This is due to varying fiscal years, and corresponding planning and reporting cycles of the National Societies."
+                ]
+            ]
+        }
+    }
+}

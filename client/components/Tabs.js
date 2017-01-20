@@ -1,44 +1,72 @@
+import React from "react"
+import max from "lodash/max"
 
-import React from 'react';
-
-class Tabs extends React.Component {
+export class Tabs extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      activeTab: this.props.activeTab
+      active: this.props.active,
+      height: 0,
     }
-  }
-  switchTab() {
-    this.setState({activeTab: arguments[0]});
-  }
-  render() {
 
-    var tabs = this.props.children;
+    this.computeHeights = this.computeHeights.bind(this)
+  }
+
+  switchTab(i) {
+    this.setState({ active: i })
+  }
+
+  computeHeights() {
+    var els = []
+    for (var i = 0, len = this.tabPanelWrapper.childElementCount; i < len; i++) {
+      els[i] = this.tabPanelWrapper.children[i]
+    }
+    const heights = els.map(function(item) {
+      return Number(window.getComputedStyle(item).height.split("px")[0])
+    })
+    this.setState({height: max(heights)})
+  }
+
+  componentDidMount() {
+    this.computeHeights()
+  }
+
+  render() {
+    const tabs = this.props.children
+    const { active } = this.state
 
     return (
-      <div className='tabs'>
-        <div className='tab-navigation'>
-          {tabs.map((tab, i) => {
-            return <button className={this.state.activeTab === i ? 'tab-navigation__item active' : 'tab-navigation__item'} key={i} onClick={this.switchTab.bind(this, i)}>{tab.props.title}</button>
-          })}
+      <div className="tabs">
+        <div className="tab-navigation">
+          {
+            tabs.map((tab, i) =>
+              <button
+                className={ active === i ? "btn bg-light px1" : "btn px1"}
+                key={ i }
+                onClick={ this.switchTab.bind(this, i) }
+              >
+                { tab.props.title }
+              </button>
+            )
+          }
         </div>
-        <div>
-          {tabs.map((tabpanel, j) => {
-            return <TabPanel key={j} activeTab={this.state.activeTab === j}>{tabpanel.props.children}</TabPanel>
-          })}
+        <hr />
+        <div ref={tabPanelWrapper => this.tabPanelWrapper = tabPanelWrapper} style={{position:"relative",height: this.state.height}}>
+          {
+            tabs.map((tabpanel, j) =>
+              <TabPanel
+                key={ j }
+                active={ this.state.active === j }
+              >
+                { tabpanel.props.children }
+              </TabPanel>
+            )
+          }
         </div>
       </div>
-    );
+    )
   }
 }
 
-class TabPanel extends React.Component {
-  render() {
-    return (<div className={this.props.activeTab ? 'tab-panel active' : 'tab-panel'}>{this.props.children}</div>);
-  }
-}
-
-module.exports = {
-  Tabs: Tabs,
-  TabPanel: TabPanel
-};
+export const TabPanel = ({ active, children }) =>
+  <div className={ active ? "absolute t0 l0 base-12 opacity-1" : "absolute t0 l0 base-12 opacity-0" }>{children}</div>

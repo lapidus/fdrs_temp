@@ -65,7 +65,6 @@ class SimpleBarChart extends React.Component {
   }
 
   renderVerticalChart() {
-    console.log('THIS IS THE AXIS LABEL: ', this.props.axisLabels);
     return (
       <VictoryChart
         width={this.state.width}
@@ -133,8 +132,8 @@ class SimpleBarChart extends React.Component {
               fontSize: 13
             }
           }}
-          data={this.props.data}/>   
-      </VictoryChart> 
+          data={this.props.data}/>
+      </VictoryChart>
     );
   }
   renderHorizontalChart() {

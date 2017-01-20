@@ -1,11 +1,8 @@
+const constructLanguageRoute = (lang, { pathname }) => {
+  if (pathname === "/") return `${pathname}${lang || ""}`
 
-export default function constructLanguageRoute(lang, location) {
-  if(location.pathname === '/') {
-    return lang ? (location.pathname + lang) : location.pathname;
-  }
-  var urlArray = location.pathname.split('/');
-  if(urlArray[1].length === 2) {
-    return lang ? ('/' + lang + location.pathname.slice(3)) : location.pathname.slice(3);
-  }
-  return lang ? ('/' + lang + location.pathname) : location.pathname;
-};
+  if (pathname.split("/")[1].length === 2) pathname = pathname.slice(3)
+  return lang ? `/${lang}${pathname}` : pathname
+}
+
+export default constructLanguageRoute

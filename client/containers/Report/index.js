@@ -1,21 +1,35 @@
 import React, { PropTypes } from "react"
-import { Link } from "react-router"
+import { translate } from "react-i18next"
 import { connect } from "react-redux"
 
-import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
+import Select from "react-select"
+
+import LanguageLink  from "../../components/LanguageLink"
 import { toggleNav } from "../../actions/appActions"
 import Icon from "../../components/Icon"
 import Loader from "../../components/Loader"
 import Navigation from "../../components/Report/Navigation"
 import ReadMore from "../../components/Report/ReadMore"
+import Breadcrumbs from "../../components/Breadcrumbs"
+
+import prefixLanguageToRoute from "../../utils/prefixLanguageToRoute"
+
 
 class Report extends React.Component {
   componentDidMount() {
     console.log("Mounting app: ", this.props.location)
+
+    // this.goToChapter = this.goToChapter.bind(this)
+  }
+
+  goToChapter(chapter) {
+    const prefixedRoute = prefixLanguageToRoute(this.context.i18n.language, chapter.value)
+    this.context.router.push(prefixedRoute)
   }
 
   render() {
-    const { language, navOpen, toggleNav } = this.props
+    const { language } = this.context.i18n
+    const { t, navOpen, toggleNav } = this.props
     const headerClassName = navOpen ?
                             "site-header clearfix level-5 is-extended" :
                             "site-header clearfix level-5"
@@ -26,7 +40,7 @@ class Report extends React.Component {
         className={ language === "ar" ? "layout-rtl" : "" }
       >
         <Loader />
-        <header className={ headerClassName } style={{ top: "72px", zIndex: 10 }}>
+        {/* <header className={ headerClassName } style={{ top: "72px", zIndex: 10 }}>
           <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
             <div
               className="clearfix bg-white"
@@ -48,7 +62,7 @@ class Report extends React.Component {
                   }
                 </button>
                 <span className="caps">
-                  { this.props[language]["site-title"] }
+                  { t("report-common:site-title") }
                 </span>
               </div>
               <div
@@ -60,32 +74,80 @@ class Report extends React.Component {
                   href={ `/downloads/Everyone_counts_2013_${language.toUpperCase()}.pdf` }
                 >
                   &nbsp;&nbsp;&nbsp;
-                  <span className="caps">{ this.props[language].download}</span>
+                  <span className="caps">{ t("report-common:download") }</span>
                 </a>
               </div>
             </div>
-            <Navigation
-              navOpen={ navOpen }
-              toggleNav={ toggleNav }
-              language={ language }
-              navigationContent={{
-                en: this.props.en,
-                fr: this.props.fr,
-                es: this.props.es,
-                ar: this.props.ar,
-              }}
-            />
+            <Navigation navOpen={ navOpen } />
           </div>
-        </header>
+        </header> */}
+
+        {/* <div className="bg-secondary px1">
+          <div className="clearfix mxn1">
+            <div className="col sm-6 sm-offset-2 px1 py1"></div>
+          </div>
+        </div> */}
+
+        {/* <Breadcrumbs links={[
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/" },
+          { name: "Report", path: undefined },
+          { name: "Introduction", path: undefined },
+        ]}/> */}
+
+        <div className="sm-visible">
+          <div className="clearfix bg-light px1">
+            <div className="col sm-8 sm-offset-0 md-offset-2">
+              <ul className="m0 py05 px0 text-base">
+                <li className="inline-block mr1">
+                  <LanguageLink to="/fdrs">
+                    {"Home"}
+                  </LanguageLink>
+                </li>
+                <li className="inline-block mr1">
+                  <LanguageLink to="/fdrs/services">
+                    {"Services"}
+                  </LanguageLink>
+                </li>
+                <li className="inline-block mr1">
+                  <LanguageLink to="/fdrs/report">
+                    {"Report"}
+                  </LanguageLink>
+                </li>
+                <li className="inline-block align-middle mr1 select-no-underline select-no-scroll" style={{minWidth:300}}>
+                  <Select
+                    searchable={ false }
+                    clearable={ false }
+                    name="chapter-selector"
+                    value={this.context.router.getCurrentLocation().pathname}
+                    options={[
+                      { value: prefixLanguageToRoute(language, "/fdrs/report"), label: "Introduction" },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/who-we-are"), label: t("report-common:chapters.chapter1.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/what-we-do"), label: t("report-common:chapters.chapter2.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/living-our-fundamental-principles"), label: t("report-common:chapters.chapter3.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/strategic-aim-1"), label: t("report-common:chapters.chapter4.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/strategic-aim-2"), label: t("report-common:chapters.chapter5.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/strategic-aim-3"), label: t("report-common:chapters.chapter6.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-1"), label: t("report-common:chapters.chapter7.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-2"), label: t("report-common:chapters.chapter8.title") },
+                      { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-3"), label: t("report-common:chapters.chapter9.title") },
+                    ]}
+                    onChange={ this.goToChapter.bind(this) }
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
         <div className={ navOpen ? "main-content-wrapper removed" : "main-content-wrapper" }>
-          <div style={{ paddingTop:"72px" }}>
+          <div style={{minHeight:"100vh"}}>
             { this.props.children }
           </div>
 
           <ReadMore />
 
-          <footer className="site-footer bg-dark clearfix">
+          {/* <footer className="site-footer bg-dark clearfix">
             <div className="clearfix py3">
               <div
                 className="col xs-6 sm-5 sm-offset-2 md-3 px1"
@@ -93,14 +155,14 @@ class Report extends React.Component {
               >
                 <ul className="clearfix">
                   <li>
-                    <Link to={ prefixLanguageToRoute(language, "/acknowledgements") }>
+                    <LanguageLink to={ prefixLanguageToRoute(language, "/acknowledgements") }>
                       <span>{ "Acknowledgements" }</span>
-                    </Link>
+                    </LanguageLink>
                   </li>
                   <li>
-                    <Link to={ prefixLanguageToRoute(language, "/data") }>
+                    <LanguageLink to={ prefixLanguageToRoute(language, "/data") }>
                       <span>{ "Data" }</span>
-                    </Link>
+                    </LanguageLink>
                   </li>
                 </ul>
               </div>
@@ -119,7 +181,8 @@ class Report extends React.Component {
                 { "e-mail: fdrs@ifrc.org"}
               </div>
             </div>
-          </footer>
+          </footer> */}
+
         </div>
       </div>
     )
@@ -127,38 +190,24 @@ class Report extends React.Component {
 }
 
 Report.propTypes = {
+  t: PropTypes.func.isRequired,
   children: PropTypes.element,
-  language: PropTypes.string,
   location: PropTypes.object,
   navOpen: PropTypes.bool,
   toggleNav: PropTypes.func,
-  en: PropTypes.object,
-  fr: PropTypes.object,
-  es: PropTypes.object,
-  ar: PropTypes.object,
 }
 
 Report.contextTypes = {
+  i18n: React.PropTypes.object.isRequired,
   router: PropTypes.object.isRequired,
 }
 
-function mapStateToProps(state) {
-  return {
-    navOpen: state.appReducer.navOpen,
-    language: state.appReducer.language,
-    en: state.appReducer.en,
-    fr: state.appReducer.fr,
-    es: state.appReducer.es,
-    ar: state.appReducer.ar,
-  }
-}
+const mapStateToProps = state => ({
+  navOpen: state.appReducer.navOpen,
+})
 
-function mapDispatchToProps(dispatch) {
-  return {
-    toggleNav: () => {
-      dispatch(toggleNav())
-    },
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  toggleNav: () => dispatch(toggleNav()),
+})
 
-export default connect(mapStateToProps, mapDispatchToProps)(Report)
+export default translate([ "report-common" ], { wait: true })(connect(mapStateToProps, mapDispatchToProps)(Report))

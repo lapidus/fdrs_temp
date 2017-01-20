@@ -1,0 +1,39 @@
+{
+    "intro": {
+        "title": "Base de donn\u00e9es et syst\u00e8me de compte rendu \u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration",
+        "titleParts": [
+            "\u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration",
+            "Base de donn\u00e9es et syst\u00e8me de compte rendu"
+        ],
+        "lead": "La base de donn\u00e9es et syst\u00e8me de compte rendu \u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration (FDRS) fournit des informations sur la plus grande organisation humanitaire au monde."
+    },
+    "services": {
+        "title": "Services",
+        "items": [
+            {
+                "title": "La FICR en bref",
+                "description": "Voir notre travail en chiffres. Cet outil vous donnera un aper\u00e7u de ce que ressemble toute la F\u00e9d\u00e9ration.",
+                "button": "Explorez la FICR",
+                "slug": "Aper\u00e7u"
+            },
+            {
+                "title": "Profils des soci\u00e9t\u00e9s nationales",
+                "description": "Int\u00e9ress\u00e9 par une Soci\u00e9t\u00e9 nationale ou une r\u00e9gion en particulier? Cet outil est fait pour vous. Ici, vous pouvez \u00e9galement t\u00e9l\u00e9charger des profils en PDF.",
+                "button": "Trouvez votre Soci\u00e9t\u00e9 nationale",
+                "slug": "societies"
+            },
+            {
+                "title": "Rapport \"Tout le monde compte\"",
+                "description": "Nos derniers r\u00e9sultats sont \u00e9galement publi\u00e9s sous la forme d'un rapport interactif. Explorez le rapport en ligne ou t\u00e9l\u00e9chargez une version PDF.",
+                "button": "Lire le rapport",
+                "slug": "report"
+            }
+        ]
+    },
+    "insights": {
+        "title": "Derni\u00e8res informations",
+        "subtitle": "Couverture exceptionnelle",
+        "description": "En 2015, les 190 Soci\u00e9t\u00e9s nationales ont signal\u00e9 au FDRS au moins un indicateur cl\u00e9. Nous remercions les Soci\u00e9t\u00e9s nationales du monde entier pour leurs efforts visant \u00e0 am\u00e9liorer la transparence et la responsabilisation de la FICR.",
+        "button": "Explorer les donn\u00e9es"
+    }
+}

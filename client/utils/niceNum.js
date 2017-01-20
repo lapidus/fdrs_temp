@@ -8,10 +8,13 @@ const isNumeric = n => !isNaN(parseFloat(n)) && isFinite(n)
  * @param  {Number} precision
  * @return {String}
  */
-const niceNum = (input, precision, format) => {
-  if (!isNumeric(input)) return "…"
-  if (input === "N/A") return input
+const niceNum = (input, precision, format, fullNumber) => {
 
+  if (input === "N/A" || input === "#N/A" || input === "" || input === null) return "N/A"
+
+  input = Number(input);
+  if (!isNumeric(input)) return "…"
+  // if (input === "N/A" || input === "#N/A" || input === "") return input
   // Set the best precision
   if (isNumeric(input) && !isNumeric(precision)) {
     if (input < 0.001)
@@ -20,13 +23,26 @@ const niceNum = (input, precision, format) => {
       precision = 3
     else if (input < 0.1)
       precision = 2
-    else if (input < 10)
+    else if (input < 10 || input > 1000000)
       precision = 1
     else
       precision = 0
   }
 
-  if (Math.abs(input) < 10000) return input.toFixed(precision)
+  // if (Math.abs(input) < 1000) return input.toFixed(precision)
+  if (Math.abs(input) < 1000) return input.toFixed()
+
+  if(fullNumber) {
+    return String(input)
+            .split("")
+            .reverse()
+            .join("")
+            .match(/.{1,3}/g)
+            .join(",")
+            .split("")
+            .reverse()
+            .join("")
+  }
 
   const prefixes = format === "long" ?
     { k: " thousand", M: " million", G: " billion", T: " trillion" } :

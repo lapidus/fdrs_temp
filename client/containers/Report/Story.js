@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { VictoryChart, VictoryAxis, VictoryBar, VictoryScatter } from 'victory';
 
-import Reveal from '../Reveal';
+import Reveal from '../../components/Reveal';
 import { changeDataset, fetchDatasets } from '../../actions/storyActions';
 
 class Story extends React.Component {

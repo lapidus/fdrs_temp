@@ -1,0 +1,44 @@
+{
+    "title": "FAQ",
+    "tabs": [
+        [
+            "FICR mondiale",
+            "Aper\u00e7u"
+        ],
+        [
+            "Soci\u00e9t\u00e9 nationale",
+            "profils"
+        ]
+    ],
+    "titleParts": [
+        "FICR",
+        "Initiatives de donn\u00e9es"
+    ],
+    "peopleReached": "People reached",
+    "nationalSocieties": "National societies",
+    "searchPlaceholder": "Search...",
+    "noSocieties": "No societies found",
+    "generatedText": [
+        "was admitted to the IFRC in",
+        "In",
+        ", it counted",
+        "active volunteers",
+        "up from",
+        "in",
+        ", of which",
+        "were male and",
+        "female"
+    ],
+    "source": "source",
+    "fillerText": [
+        "Key proxy indicators reported by the National Society since",
+        "are available below, as well as copies of additional key documents."
+    ],
+    "callout": [
+        "What would you like to see here?",
+        "Help us improve data.ifrc.org",
+        "Send your ideas to:"
+    ],
+    "documents": "Documents",
+    "noDocuments": "No documents"
+}

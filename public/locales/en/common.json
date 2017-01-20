@@ -1,168 +1,186 @@
 {
-    "site-title": "Everyone counts progress 2015",
-    "preTitle": "Everyone counts",
-    "reportType": "Progress Report",
-    "download": "Download the report",
-    "share": "share",
-    "signature": [
-        "website by:",
-        "Lapidus Interactive"
+    "breadcrumbs": {
+        "National society profiles": "National society profiles",
+        "FAQ": "FAQ",
+        "Services": "Services",
+        "The IFRC at a glance": "The IFRC at a glance",
+        "Data download": "Data download",
+        "Home": "Home"
+    },
+    "indicators": {
+        "KPI_noPeopleVolunteering": {
+            "": "People volunteering their time",
+            "name": "People volunteering their time",
+            "definition": "Number of people volunteering their time: People that have volunteered at least four hours during the annual reporting period.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPaidStaff": {
+            "": "Paid staff",
+            "name": "Paid staff",
+            "definition": "Number of paid staff: People who work with a National Society or the Secretariat for a minimum of three months and are remunerated.",
+            "source": "",
+            "unit": "[unit test]"
+        },
+        "KPI_noPeopleDonatingBlood": {
+            "": "People donating blood",
+            "name": "People donating blood",
+            "definition": "Number of people donating blood: People that have donated blood at least once during the reporting period.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noLocalUnits": {
+            "": "Local units",
+            "name": "Local units",
+            "definition": "Number of local units: National Society subdivisions that work directly with the community \u2013 this can include local chapters, branches, regional and intermediate offices, and headquarters.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedDisaster": {
+            "": "People reached by disaster response and early recovery programmes",
+            "name": "People reached by disaster response and early recovery programmes",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedAllServices": {
+            "": "People reached by long term services and development programmes",
+            "name": "People reached by Long Term Services and Development Programmes",
+            "definition": "Number of people reached by Long Term Services and Development Programmes: Direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedHealth": {
+            "": "People reached by community health",
+            "name": "People reached by community health",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedDevelopment": {
+            "": "People reached by community development",
+            "name": "People reached by community development",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedServices": {
+            "": "People reached by social services",
+            "name": "People reached by social services",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleCoveredPreparedness": {
+            "": "People covered by preparedness and risk reduction programmes",
+            "name": "People covered",
+            "definition": "Number of people covered by Preparedness and Risk Reduction Programmes",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_IncomeLC (CHF)": {
+            "name": "Income (in CHF)",
+            "definition": "Total income received: the fiscal value of money, material goods, and services a National Society receives during the fiscal year (in CHF).",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_expenditureLC (CHF)": {
+            "name": "Expenditure (in CHF)",
+            "definition": "Total expenditure: the fiscal value of money, material goods, and services a National Society spends during the fiscal year (in CHF).",
+            "source": "",
+            "unit": ""
+        },
+        "Population": {
+            "name": "Population, total",
+            "definition": "Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates.",
+            "source": "(1) United Nations Population Division. World Population Prospects, (2) Census reports and other statistical publications from national statistical offices, (3) Eurostat: Demographic Statistics, (4) United Nations Statistical Division. Population and Vital Statistics Report (various years), (5) U.S. Census Bureau: International Database, and (6) Secretariat of the Pacific Community: Statistics and Demography Programme.",
+            "unit": ""
+        },
+        "Poverty": {
+            "name": "National poverty headcount ratio",
+            "definition": "National poverty headcount ratio is the percentage of the population living below the national poverty lines. National estimates are based on population-weighted subgroup estimates from household surveys.",
+            "source": "World Bank, Global Poverty Working Group. Data are compiled from official government sources or are computed by World Bank staff using national (i.e. country\u2013specific) poverty lines.",
+            "unit": ""
+        },
+        "GDP": {
+            "name": "GDP (current US$)",
+            "definition": "GDP at purchaser's prices is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in current U.S. dollars. Dollar figures for GDP are converted from domestic currencies using single year official exchange rates. For a few countries where the official exchange rate does not reflect the rate effectively applied to actual foreign exchange transactions, an alternative conversion factor is used.",
+            "source": "World Bank national accounts data, and OECD National Accounts data files.",
+            "unit": ""
+        },
+        "KPI_IncomeLC": "Income",
+        "KPI_expenditureLC": "Expenditure"
+    },
+    "languages": {
+        "en": {
+            "name": "English",
+            "slug": "en"
+        },
+        "fr": {
+            "name": "French",
+            "slug": "fr"
+        },
+        "es": {
+            "name": "Spanish",
+            "slug": "es"
+        },
+        "ar": {
+            "name": "Arabic",
+            "slug": "ar"
+        }
+    },
+    "name": "Federation-wide databank and reporting system",
+    "nameParts": [
+        "Federation-wide",
+        "databank",
+        "and reporting system"
     ],
-    "copyright": "@ 2016 IFRC",
-    "home": {
-        "title": [
-            "Everyone",
-            "counts",
-            "2015"
-        ],
-        "intro": [
-            "Halfway through this decade, and as we begin to close on the centenary of the International Federation of Red Cross and Red Crescent Societies (IFRC), it is timely to take stock of our delivery against the aspirations of Strategy 2020.",
-            "The picture presented in this report is encouraging. In 2013, you, the National Red Cross and Red Crescent Societies, reached more than 110 million people with disaster response and early recovery services."
-        ],
-        "signatures": [
-            {
-                "name": "Tadateru Kono\u00e9",
-                "title": "President"
-            },
-            {
-                "name": "Elhadj As Sy",
-                "title": "Secretary General"
-            }
-        ],
-        "section1": "Section 1",
-        "section2": "Section 2",
-        "section3": "Section 3",
-        "section4": "Section 4",
-        "overview": "Overview",
-        "strategicAims": "Strategic aims",
-        "enablingActions": "Enabling actions",
-        "downloadReportSection": {
-            "preTitle": "Report",
-            "title": "Want to read more?",
-            "body": "The Everyone Counts Progress Report 2015 is available in all four official languages of the IFRC. Choose a download from below.",
-            "buttons": [
-                "Download the report in English",
-                "Download the report in French",
-                "Download the report in Spanish",
-                "Download the report in Arabic"
+    "download": "Download",
+    "indicatorsTitle": "Indicators",
+    "updateText": "Last updated...",
+    "login": "Login",
+    "home": "Home",
+    "navigation": [
+        {
+            "name": "Services",
+            "dropdownItems": [
+                "The IFRC at a glance",
+                "National society profiles",
+                "\"Everyone counts\" report",
+                "Data download"
             ]
         },
-        "sections": [
-            {
-                "id": "Section 1",
-                "title": "Overview",
-                "statistic": {
-                    "number": "80M",
-                    "text": "Members"
-                },
-                "fact": "The network of the International Federation of Red Cross and Red Crescent Societies spans 190 countries.",
-                "quote": "All that we do is guided by our Fundamental Principles, which are distilled from out collective experience accumulated over more than a century.",
-                "chapters": [
-                    {
-                        "title": "Who we are",
-                        "slug": "\/who-we-are"
-                    },
-                    {
-                        "title": "What we do",
-                        "slug": "\/what-we-do"
-                    },
-                    {
-                        "title": "Living our fundamental principles",
-                        "slug": "\/living-our-fundamental-principles"
-                    }
-                ]
-            },
-            {
-                "id": "Section 2",
-                "title": "Strategic aims",
-                "statistic": {
-                    "number": "110M",
-                    "text": "People reached by disaster response and early recovery programmes"
-                },
-                "fact": "The network of the International Federation of Red Cross and Red Crescent Societies spans 190 countries.",
-                "quote": "From our earliest days, the Red Cross and Red Crescent is best known for our mission to bring urgent help and comfort in moments of greatest need.",
-                "chapters": [
-                    {
-                        "pretitle": "Strategic aim 1",
-                        "title": "Save lives, protect livelihoods and strengthen recovery from disasters and crises",
-                        "slug": "\/strategic-aim-1"
-                    },
-                    {
-                        "pretitle": "Strategic aim 2",
-                        "title": "Healthy and safe living",
-                        "slug": "\/strategic-aim-2"
-                    },
-                    {
-                        "pretitle": "Strategic aim 3",
-                        "title": "Social inclusion and a culture of non-violence and peace",
-                        "slug": "\/strategic-aim-3"
-                    }
-                ]
-            },
-            {
-                "id": "Section 3",
-                "title": "Enabling actions",
-                "statistic": {
-                    "number": "190",
-                    "text": "National Societies"
-                },
-                "fact": "To inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world.",
-                "quote": "Since the adoption of Strategy 2020, the major effort seeking to improve our functioning as the IFRC has been on strengthening our governance, introducing a framework for accountability, and promoting a culture of learning.",
-                "chapters": [
-                    {
-                        "pretitle": "Enabling action 1",
-                        "title": "Strong national red cross and red crescent societies",
-                        "slug": "\/enabling-action-1"
-                    },
-                    {
-                        "pretitle": "Enabling action 2",
-                        "title": "Humanitarian diplomacy to prevent and reduce vulnerability in a globalised world",
-                        "slug": "\/enabling-action-2"
-                    },
-                    {
-                        "pretitle": "Enabling action 3",
-                        "title": "Function effectively as the IFRC",
-                        "slug": "\/enabling-action-3"
-                    }
-                ]
-            },
-            {
-                "id": "Section 4",
-                "title": "Annexes",
-                "chapters": [
-                    {
-                        "preTitle": "Data tools",
-                        "title": "Explore the data",
-                        "slug": "\/data",
-                        "body": [
-                            "See the seven key indicators across all National Societies",
-                            "Find information about your National Society"
-                        ],
-                        "button": "Explore the data from FDRS"
-                    },
-                    {
-                        "title": "Acknowledgements",
-                        "slug": "acknowledgements"
-                    }
-                ]
-            }
-        ]
-    },
-    "data": {
-        "title": "Data",
-        "subtitle": "From the Federation-Wide Databank and Reporting System",
-        "indicators-title": "Key Indicators",
-        "bubble-size": "Bubble size",
-        "national-society": "National society",
-        "guide": "Select a key indicator to see on the map",
-        "indicators": {
-            "KPI_Number_of_People_Volunteering": "Volunteers",
-            "KPI_Number_of_PaidStaff": "Paid Staff",
-            "KPI_Total_Number_of_People_Donating_Blood": "Blood Donors",
-            "KPI_Number_of_Local_Units": "Local Units",
-            "KPI_Number_of_People_Reached_AllServices": "People Reached",
-            "Total_Expenditure_CHF": "Expenditure",
-            "Total_Income_CHF": "Income"
+        {
+            "name": "FAQ"
+        },
+        {
+            "name": "About"
+        },
+        {
+            "name": "Acknowledgements"
         }
-    }
+    ],
+    "dataCollectors": {
+        "title": "For data collectors",
+        "lead": "To get started with the data collection for your National Society, please log in.",
+        "button": "Login as data collector"
+    },
+    "nationalSocietiesPreview": {
+        "subtitle": "Get to know the National Societies",
+        "title": "National Society Profiles",
+        "lead": "Explore the dataset for each National Society, and download PDF profiles for further sharing.",
+        "button": "Explore National Society Profiles"
+    },
+    "overviewPreview": {
+        "title": "The IFRC at a glance",
+        "lead": "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks.",
+        "button": "Explore the IFRC"
+    },
+    "contact": {
+        "title": "Contact",
+        "lead": "If you have feedback, questions and\/or corrections, please write to the FDRS team.",
+        "email": "fdrs@ifrc.org"
+    },
+    "credit": "website by Lapidus Interactive",
+    "copyright": "All information contained in this web site is Copyright\n\u00a9 The International Federation of Red Cross and Red Crescent Societies. All rights reserved."
 }
