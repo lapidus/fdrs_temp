@@ -117,6 +117,7 @@ class Home extends React.Component {
                   servicesIllustrations.map((item, i) => {
 
                     const serviceItem = t("home:services.items")[i]
+                    const slugs = ['overview/map', 'societies', 'report']
 
                     return (
                       <div key={i} className='col sm-6 lg-4 px1 md-px3'>
@@ -129,7 +130,7 @@ class Home extends React.Component {
                         <p>
                           { serviceItem.description }
                         </p>
-                        <LanguageLink to={`/fdrs/${serviceItem.slug}`} className="strong inline-block py05 link-underlined">
+                        <LanguageLink to={`/fdrs/${slugs[i]}`} className="strong inline-block py05 link-underlined">
                           { serviceItem.button }
                         </LanguageLink>
                       </div>
