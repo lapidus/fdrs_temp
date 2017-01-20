@@ -26,7 +26,7 @@ class Dropdown extends React.Component {
   render() {
 
     const dropdownStyles = {
-      opacity: this.state.showDropdown || this.props.navOpen ? 1 : 0,
+      display: this.state.showDropdown || this.props.navOpen ? 'block' : 'none',
       pointerEvents: this.state.showDropdown || this.props.navOpen ? "all" : "none",
     }
 
