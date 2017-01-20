@@ -1,12 +1,23 @@
 {
-    "questions": [
-        {
+    "title": "Data Download",
+    "intro": "Below you find the most frequently asked questions. If your question has not been answered below, please contact FDRS at:",
+    "questions": {
+        "5": {
+            "answer": [
+                [
+                    "Any part of this website may be cited, copied, translated into other languages or adapted to meet local needs without prior permission from the International Federation of Red Cross and Red Crescent Societies (IFRC), provided that the source is clearly stated. Requests for commercial reproduction should be directed to Federation wide databank and reporting system team at fdrs@ifrc.org",
+                    "To download the datasets used in this website, please visit http:\/\/data.ifrc.org\/fdrs\/data-download"
+                ]
+            ],
+            "question": "How can the data be used?"
+        },
+        "0": {
             "question": "What is FDRS?",
             "answer": [
                 "The Federation-Wide Databank & Reporting System covers key domains of information and provides a single repository of key documents such as annual reports, audited accounts, and strategic plans. FDRS is designed as an adaptable, accessible and low maintenance resource that captures standardized data in a systematic manner. Each National Society is the owner and gatekeeper of its own data, and holds responsibility to keep updated its data - with technical support from the secretariat as needed."
             ]
         },
-        {
+        "1": {
             "question": "How was the data collected?",
             "answer": [
                 "Annual reporting by all National Societies is a constitutional requirement and FDRS has designed this around seven key proxy indicators (KPIs) guided by Strategy 2020 and three key documents. The KPIs are intended to reflect the following performance dimensions:",
@@ -19,7 +30,7 @@
                 ]
             ]
         },
-        {
+        "2": {
             "question": "What are the seven KPIs?",
             "answer": [
                 [
@@ -33,7 +44,7 @@
                 ]
             ]
         },
-        {
+        "3": {
             "question": "What are the three key documents?",
             "answer": [
                 [
@@ -43,7 +54,7 @@
                 ]
             ]
         },
-        {
+        "4": {
             "question": "What are the data limitations?",
             "answer": [
                 [
@@ -54,5 +65,5 @@
                 ]
             ]
         }
-    ]
+    }
 }

@@ -1,9 +1,11 @@
 
 import React from "react"
 import LanguageLink from "../components/LanguageLink"
+import { translate } from "react-i18next"
 
 class Breadcrumbs extends React.Component {
   render() {
+    const { t } = this.props
     return (
       <div className="sm-visible">
         <div className="clearfix bg-light px1">
@@ -34,4 +36,4 @@ class Breadcrumbs extends React.Component {
   }
 }
 
-export default Breadcrumbs
+export default translate([], { wait: true })(Breadcrumbs)

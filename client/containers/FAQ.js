@@ -37,7 +37,7 @@ class FAQ extends React.Component {
     const { i18n } = this.context
     const { t } = this.props
 
-    const questions = t("faq:questions")
+    const questions = _.values(t("faq:questions"))
 
     return (
       <section>
@@ -48,14 +48,15 @@ class FAQ extends React.Component {
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-6 sm-offset-3 px1 pt1">
-              <h1 className="display-1 md-display-2 m0 light">{ "FAQ" }</h1>
+              <h1 className="display-1 md-display-2 m0 light">{ t("faq:title") }</h1>
             </header>
           </div>
 
           <div className="clearfix mxn1 pb4">
             <div className="col sm-6 sm-offset-3 px1 pt1">
-              <p className="lead">{ "This text will be the introduction for the FAQ page. Below you will find the most frequently asked questions. If your question has not been answered below, please contact the IFRC secreatariat at: " }<span className="color-primary">{ "fdrs@ifrc.org" }</span></p>
-
+              <p className="lead">
+                { t("faq:intro") }
+                <span className="color-primary"> { " fdrs@ifrc.org" }</span></p>
               {
                 questions.map((questionItem, i) => {
 

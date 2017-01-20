@@ -1,41 +1,82 @@
 {
-    "name": "Federation-wide databank and reporting system",
-    "nameParts": [
-        "Federation-wide",
-        "databank",
-        "and reporting system"
-    ],
-    "download": "T\u00e9l\u00e9charger le bilan",
-    "indicatorsTitle": "Indicators",
-    "updateText": "Last updated...",
+    "breadcrumbs": {
+        "National society profiles": "National society profiles",
+        "FAQ": "FAQ",
+        "Services": "Services",
+        "The IFRC at a glance": "The IFRC at a glance",
+        "Data download": "Data download",
+        "Home": "Home"
+    },
     "indicators": {
         "KPI_noPeopleVolunteering": {
+            "": "People volunteering their time",
             "name": "People volunteering their time",
             "definition": "Number of people volunteering their time: People that have volunteered at least four hours during the annual reporting period.",
             "source": "",
-            "unit": "",
-            "": "People volunteering their time"
+            "unit": ""
         },
         "KPI_noPaidStaff": {
+            "": "Paid staff",
             "name": "Paid staff",
             "definition": "Number of paid staff: People who work with a National Society or the Secretariat for a minimum of three months and are remunerated.",
             "source": "",
-            "unit": "[unit test]",
-            "": "Paid staff"
+            "unit": "[unit test]"
         },
         "KPI_noPeopleDonatingBlood": {
+            "": "People donating blood",
             "name": "People donating blood",
             "definition": "Number of people donating blood: People that have donated blood at least once during the reporting period.",
             "source": "",
-            "unit": "",
-            "": "People donating blood"
+            "unit": ""
         },
         "KPI_noLocalUnits": {
+            "": "Local units",
             "name": "Local units",
             "definition": "Number of local units: National Society subdivisions that work directly with the community \u2013 this can include local chapters, branches, regional and intermediate offices, and headquarters.",
             "source": "",
-            "unit": "",
-            "": "Local units"
+            "unit": ""
+        },
+        "KPI_noPeopleReachedDisaster": {
+            "": "People reached by disaster response and early recovery programmes",
+            "name": "People reached by disaster response and early recovery programmes",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedAllServices": {
+            "": "People reached by long term services and development programmes",
+            "name": "People reached by Long Term Services and Development Programmes",
+            "definition": "Number of people reached by Long Term Services and Development Programmes: Direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedHealth": {
+            "": "People reached by community health",
+            "name": "People reached by community health",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedDevelopment": {
+            "": "People reached by community development",
+            "name": "People reached by community development",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedServices": {
+            "": "People reached by social services",
+            "name": "People reached by social services",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleCoveredPreparedness": {
+            "": "People covered by preparedness and risk reduction programmes",
+            "name": "People covered",
+            "definition": "Number of people covered by Preparedness and Risk Reduction Programmes",
+            "source": "",
+            "unit": ""
         },
         "KPI_IncomeLC (CHF)": {
             "name": "Income (in CHF)",
@@ -48,48 +89,6 @@
             "definition": "Total expenditure: the fiscal value of money, material goods, and services a National Society spends during the fiscal year (in CHF).",
             "source": "",
             "unit": ""
-        },
-        "KPI_noPeopleReachedDisaster": {
-            "name": "People reached by disaster response and early recovery programmes",
-            "definition": "",
-            "source": "",
-            "unit": "",
-            "": "People reached by disaster response and early recovery programmes"
-        },
-        "KPI_noPeopleReachedAllServices": {
-            "name": "People reached by Long Term Services and Development Programmes",
-            "definition": "Number of people reached by Long Term Services and Development Programmes: Direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
-            "source": "",
-            "unit": "",
-            "": "People reached by long term services and development programmes"
-        },
-        "KPI_noPeopleReachedHealth": {
-            "name": "People reached by community health",
-            "definition": "",
-            "source": "",
-            "unit": "",
-            "": "People reached by community health"
-        },
-        "KPI_noPeopleReachedDevelopment": {
-            "name": "People reached by community development",
-            "definition": "",
-            "source": "",
-            "unit": "",
-            "": "People reached by community development"
-        },
-        "KPI_noPeopleReachedServices": {
-            "name": "People reached by social services",
-            "definition": "",
-            "source": "",
-            "unit": "",
-            "": "People reached by social services"
-        },
-        "KPI_noPeopleCoveredPreparedness": {
-            "name": "People covered",
-            "definition": "Number of people covered by Preparedness and Risk Reduction Programmes",
-            "source": "",
-            "unit": "",
-            "": "People covered by preparedness and risk reduction programmes"
         },
         "Population": {
             "name": "Population, total",
@@ -112,6 +111,15 @@
         "KPI_IncomeLC": "Income",
         "KPI_expenditureLC": "Expenditure"
     },
+    "name": "Federation-wide databank and reporting system",
+    "nameParts": [
+        "Federation-wide",
+        "databank",
+        "and reporting system"
+    ],
+    "download": "T\u00e9l\u00e9charger le bilan",
+    "indicatorsTitle": "Indicators",
+    "updateText": "Last updated...",
     "login": "Login",
     "home": "Home",
     "navigation": [

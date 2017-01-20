@@ -39,8 +39,8 @@ class Overview extends React.Component {
     return (
       <section>
         <Breadcrumbs links={[
-          { name: pageData.home, path: "/fdrs" },
-          { name: pageData.navigation[0].name, path: "/fdrs" },
+          { name: "Home", path: "/fdrs" },
+          { name: "Home", path: "/fdrs" },
           { name: pageData.navigation[0].dropdownItems[0], path: undefined },
         ]}/>
 
@@ -120,14 +120,14 @@ class Overview extends React.Component {
                 </div>
                 <div className="absolute t50 r0 y-center-self">
                   <LanguageLink to="/fdrs/overview/map" className="relative btn">
-                    <span className="small strong caps">{ "Map" }</span>
+                    <span className="small strong caps">{ t("overview:map") }</span>
                     <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/map" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
                   </LanguageLink>
 
                   <LanguageLink to="/fdrs/overview/table" className="relative btn">
                     {/* <span className="small strong caps color-secondary">{ "Table" }</span>
                     <span className="absolute b0 l0 base-12 bg-secondary" style={{height:4}}></span> */}
-                    <span className="small strong caps">{ "Table" }</span>
+                    <span className="small strong caps">{ t("overview:table") }</span>
                     <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/table" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
                   </LanguageLink>
                 </div>

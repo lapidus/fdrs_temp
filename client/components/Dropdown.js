@@ -26,16 +26,16 @@ class Dropdown extends React.Component {
   render() {
 
     const dropdownStyles = {
-      opacity: this.state.showDropdown || this.props.navOpen ? 1 : 0,
+      display: this.state.showDropdown || this.props.navOpen ? 'block' : 'none',
       pointerEvents: this.state.showDropdown || this.props.navOpen ? "all" : "none",
     }
 
     return (
       <span onMouseEnter={ this.showDropdown } onMouseLeave={ this.hideDropdown } onClick={ this.hideDropdown }>
         { this.props.children[0] }
-        <span style={ dropdownStyles }>
+        <div style={ dropdownStyles }>
           { this.props.children[1] }
-        </span>
+        </div>
       </span>
     )
   }

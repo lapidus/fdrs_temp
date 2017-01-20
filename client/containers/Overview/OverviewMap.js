@@ -27,58 +27,6 @@ import {
   selectSociety,
 } from "../../actions/appActions"
 
-class SocietiesRankingBackup extends React.Component {
-  render() {
-    return (
-      <ul className="m0 p0">
-        {
-          this.props.societiesList.reverse().map((society, i) => {
-            return (
-              <li className="block" key={i} style={{background: i % 2 === 0 ? "rgba(0,0,0,0.05)" : "transparent"}}>
-                <button className="relative block btn base-12 pl15 pr4 text-left overflow-hidden text-xs">
-                  <div className="overflow-hidden" style={{whiteSpace:"nowrap",textOverflow:"ellipsis"}}>
-                    { society.NSO_DON_name }
-                  </div>
-                  <div className="absolute t50 r0 y-center-self text-center color-secondary text-xs" style={{width:"4rem"}}>
-                    { niceNum(society[this.props.currentIndicator], null, null, false) }
-                  </div>
-                </button>
-              </li>
-            )
-          })
-        }
-        {/* <h2 className="subhead mt0 mb1">
-          { "Sorted" }&nbsp;<span className="color-primary">{ "High to Low" }</span>
-        </h2>
-
-        <table style={{height:"600px",overflowY:"scroll", display: "block"}}>
-
-          {
-            this.props.societiesList.reverse().map((society, i) => {
-              return (
-                <tr key={ i } style={
-              {
-                  paddingTop:"0.2rem",
-                  paddingBottom:"0.2rem",
-                  fontSize:"0.9rem",
-                  background: i % 2 === 0 ? `rgb(246, 244, 242)` : "transparent"
-              }
-            }>
-                <td>
-
-                </td>
-                <td>{ society.NSO_DON_name } </td><td>{ niceNum(society[this.props.currentIndicator], null, null, false) }</td>
-              </tr>
-              )
-
-            })
-          }
-        </table> */}
-      </ul>
-    )
-  }
-}
-
 class OverviewMap extends React.Component {
   // shouldComponentUpdate(nextProps) {
   //   const didSelectionChange = nextProps.selectedSocieties.length !== this.props.selectedSocieties.length
@@ -148,7 +96,7 @@ class OverviewMap extends React.Component {
             <div className="shadow-3">
               <div className="p1">
                 <h2 className="text-base m0">
-                  Sorted <span className="color-primary">High to low</span>
+                  { t("overview:sorted") } <span className="color-primary">{ t("overview:hightolow") }</span>
                 </h2>
               </div>
               <div className="bg-white overflow-scroll" style={{height: "31.5rem"}}>
@@ -208,5 +156,6 @@ const mapDispatchToProps = dispatch => ({
   switchYear: (year) => dispatch(switchYear(year)),
   selectSociety: (societyID) => dispatch(selectSociety(societyID)),
 })
+
 
 export default translate(["overview", "national-societies"], { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(OverviewMap))

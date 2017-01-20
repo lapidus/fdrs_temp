@@ -222,7 +222,7 @@ class Society extends React.Component {
                 <div className="col sm-8 px1 pb1">
                   <p className="text-base sm-text-sm">
                     <GeneratedIntroText
-                      societyName={ society.NSO_DON_name }
+                      society={ society }
                       admissionDate={ society.admission_date.split(".")[2] }
                       latestData={ latestData }
                       earliestData={ earliestData }
