@@ -1,23 +1,23 @@
 {
-    "title": "T\u00e9l\u00e9chargement des donn\u00e9es",
+    "title": "FAQ",
     "titleParts": [
-        "IFRC",
-        "Data Initiatives"
+        "FICR",
+        "Initiatives de donn\u00e9es"
     ],
-    "lead": "IFRC is a data-driven organization dedicated to making evidence-based decision-making",
+    "lead": "La FICR est une organisation ax\u00e9e sur les donn\u00e9es qui se consacre \u00e0 la prise de d\u00e9cisions fond\u00e9es sur des donn\u00e9es probantes",
     "about": {
-        "title": "About data.ifrc.org",
+        "title": "\u00c0 propos de data.ifrc.org",
         "text": [
-            "Data.ifrc.org is prototype website for data and data learning at IFRC. There are upcoming projects which will feed in the coming months. Stay tuned."
+            "Data.ifrc.org est un prototype de site Web pour les donn\u00e9es et l'apprentissage \u00e0 la FICR. Des projets \u00e0 venir alimenteront les prochains mois. Restez \u00e0 l'\u00e9coute."
         ]
     },
     "projects": {
-        "featured": "Featured projects",
-        "news": "News",
+        "featured": "Projets actuels",
+        "news": "Nouvelles",
         "fdrs": {
-            "title": "Federation-wide Databank and Reporting System",
-            "text": "The Federation-wide Databank and Reporting System provides data about all the National Societies.",
-            "navigate": "Go to FDRS"
+            "title": "Base de donn\u00e9es et syst\u00e8me de compte rendu \u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration",
+            "text": "La base de donn\u00e9es et syst\u00e8me de compte rendu \u00e0 l'\u00e9chelle de la F\u00e9d\u00e9ration fournis des donn\u00e9es sur toutes les Soci\u00e9t\u00e9s nationales.",
+            "navigate": "Aller sur FDRS"
         }
     }
 }

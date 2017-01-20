@@ -1,18 +1,18 @@
 {
-    "title": "T\u00e9l\u00e9chargement des donn\u00e9es",
+    "title": "FAQ",
     "tabs": [
         [
-            "IFRC global",
-            "overview"
+            "FICR mondiale",
+            "Aper\u00e7u"
         ],
         [
-            "National society",
-            "profiles"
+            "Soci\u00e9t\u00e9 nationale",
+            "profils"
         ]
     ],
     "titleParts": [
-        "IFRC",
-        "Data Initiatives"
+        "FICR",
+        "Initiatives de donn\u00e9es"
     ],
     "peopleReached": "People reached",
     "nationalSocieties": "National societies",
