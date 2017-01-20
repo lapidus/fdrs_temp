@@ -17,11 +17,11 @@ class Breadcrumbs extends React.Component {
                     {
                       item.path ? (
                         <LanguageLink to={ item.path }>
-                          { t("common:breadcrumbs." + item.name) }
+                          { item.name }
                         </LanguageLink>
                       ) : (
                         <span className={ i === (this.props.links.length - 1) ? "color-primary" : "" }>
-                          { t("common:breadcrumbs." + item.name) }
+                          { item.name }
                         </span>
                       )
                     }

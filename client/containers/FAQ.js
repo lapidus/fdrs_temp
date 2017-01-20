@@ -37,7 +37,7 @@ class FAQ extends React.Component {
     const { i18n } = this.context
     const { t } = this.props
 
-    const questions = t("faq:questions")
+    const questions = _.values(t("faq:questions"))
 
     return (
       <section>

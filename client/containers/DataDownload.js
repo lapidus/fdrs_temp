@@ -12,8 +12,8 @@ class Download extends React.Component {
     return (
       <section>
         <Breadcrumbs links={[
-          { name: "Home", path: "/fdrs" },
-          { name: "Data download", path: "/fdrs/download" },
+          { name: t("common:breadcrumbs." + "Home"), path: "/fdrs" },
+          { name: t("common:breadcrumbs." + "Data download"), path: "/fdrs/download" },
         ]}/>
         <div className="px1">
           <div className="clearfix mxn1">

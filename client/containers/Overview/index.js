@@ -39,8 +39,8 @@ class Overview extends React.Component {
     return (
       <section>
         <Breadcrumbs links={[
-          { name: pageData.home, path: "/fdrs" },
-          { name: pageData.navigation[0].name, path: "/fdrs" },
+          { name: "Home", path: "/fdrs" },
+          { name: "Home", path: "/fdrs" },
           { name: pageData.navigation[0].dropdownItems[0], path: undefined },
         ]}/>
 
