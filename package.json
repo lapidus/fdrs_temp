@@ -100,6 +100,6 @@
     "normalize.css": "^5.0.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-partial-import": "^2.1.0",
-    "webpack": "^2.1.0-beta.27"
+    "webpack": "^2.2.0"
   }
 }
