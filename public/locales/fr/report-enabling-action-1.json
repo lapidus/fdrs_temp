@@ -88,63 +88,63 @@
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "Afrique",
                             "x_regular_gdp": "268.0539113455",
                             "x": "2.4282221487",
                             "y": "39",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "Afrique",
                             "x_regular_gdp": "394.775830896",
                             "x": "2.5963505563",
                             "y": "31",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "Afrique",
                             "x_regular_gdp": "413.7574148529",
                             "x": "2.6167457897",
                             "y": "28",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "Afrique",
                             "x_regular_gdp": "447.4371289135",
                             "x": "2.6507320196",
                             "y": "54",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "Afrique",
                             "x_regular_gdp": "453.5689927392",
                             "x": "2.6566433573",
                             "y": "40",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "Afrique",
                             "x_regular_gdp": "491.7899781002",
                             "x": "2.6917796743",
                             "y": "42",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "Afrique",
                             "x_regular_gdp": "494.3146150632",
                             "x": "2.6940034511",
                             "y": "69",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "Afrique",
                             "x_regular_gdp": "512.1031992238",
                             "x": "2.709357489",
                             "y": "36",
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Africa",
+                            "region": "Afrique",
                             "x_regular_gdp": "574.1195223244",
                             "x": "2.7590023148",
                             "y": "53",
@@ -158,7 +158,7 @@
                             "stroke": "#82BC01"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "Asie-Pacifique",
                             "x_regular_gdp": "687.2454749827",
                             "x": "2.837111889",
                             "y": "42",
@@ -214,7 +214,7 @@
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "Asie-Pacifique",
                             "x_regular_gdp": "1144",
                             "x": "3.0584260245",
                             "y": "31",
@@ -228,7 +228,7 @@
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "Asie-Pacifique",
                             "x_regular_gdp": "1243.986074645",
                             "x": "3.0948155188",
                             "y": "16",
@@ -305,14 +305,14 @@
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "Asie-Pacifique",
                             "x_regular_gdp": "3672.9669404092",
                             "x": "3.5650170194",
                             "y": "40",
                             "stroke": "#EE3224"
                         },
                         {
-                            "region": "Americas",
+                            "region": "Am\u00e9riques",
                             "x_regular_gdp": "3789.5675576278",
                             "x": "3.5785896538",
                             "y": "42",
@@ -326,14 +326,14 @@
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Middle East and North Africa",
+                            "region": "Moyen-Orient et Afrique du Nord",
                             "x_regular_gdp": "4236.793630997",
                             "x": "3.6270373106",
                             "y": "6",
                             "stroke": "#7E6E69"
                         },
                         {
-                            "region": "Asia and the Pacific",
+                            "region": "Asie-Pacifique",
                             "x_regular_gdp": "4467.1037911876",
                             "x": "3.6500260432",
                             "y": "86",
@@ -347,21 +347,21 @@
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Americas",
+                            "region": "Am\u00e9riques",
                             "x_regular_gdp": "4636",
                             "x": "3.6661434273",
                             "y": "49",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Middle East and North Africa",
+                            "region": "Moyen-Orient et Afrique du Nord",
                             "x_regular_gdp": "4909.0280937704",
                             "x": "3.6909955175",
                             "y": "88",
                             "stroke": "#7E6E69"
                         },
                         {
-                            "region": "Americas",
+                            "region": "Am\u00e9riques",
                             "x_regular_gdp": "5440.4524646364",
                             "x": "3.7356350201",
                             "y": "51",
@@ -466,14 +466,14 @@
                             "stroke": "#5C315E"
                         },
                         {
-                            "region": "Americas",
+                            "region": "Am\u00e9riques",
                             "x_regular_gdp": "15452.173598195",
                             "x": "4.1889895786",
                             "y": "47",
                             "stroke": "#0F9EE3"
                         },
                         {
-                            "region": "Middle East and North Africa",
+                            "region": "Moyen-Orient et Afrique du Nord",
                             "x_regular_gdp": "19512",
                             "x": "4.2903017873",
                             "y": "72",
@@ -551,7 +551,7 @@
                     "title": "Une journe\u0301e dans la vie d\u2019un volontaire",
                     "content": [
                         "Il est 6 h 30 et Daniel se pre\u0301pare a\u0300 endosser son habit de volontaire. Depuis un an, il participe aux efforts de\u0301ploye\u0301s pour mettre fin a\u0300 l\u2019e\u0301pide\u0301mie de maladie a\u0300 virus Ebola en Sierra Leone. Il dirige aujourd\u2019hui l\u2019e\u0301quipe de la Croix-Rouge de Sierra Leone qui proce\u0300de a\u0300 l\u2019inhumation su\u0302re et digne de de\u0301pouilles susceptibles d\u2019e\u0302tre infecte\u0301es par le virus. C\u2019est un travail difficile et les membres de l\u2019e\u0301quipe se sont heurte\u0301s a\u0300 une forte opposition des communaute\u0301s qui avaient peur d\u2019eux. Leurs propres familles leur ont demande\u0301 de quitter la maison, les ho\u0302tels ont refuse\u0301 de leur louer des chambres et beaucoup de commerces de les servir. Mais progressivement, ils ont su gagner la confiance des communaute\u0301s. Daniel est l\u2019un des 7 000 volontaires de la Croix-Rouge a\u0300 l\u2019\u0153uvre dans les pays touche\u0301s par le virus Ebola.",
-                        "On 8 May 2015 we asked our volunteers from around the world to take a photo of what they were doing on that day \u2013 World Red Cross and Red Crescent Day. Nearly 3,000 photos and stories were submitted from 110 countries \u2013 still only a small slice of the incredible work done by volunteers."
+                        "Le 8 mai 2015, Journe\u0301e mondiale de la Croix-Rouge et du Croissant-Rouge, nous avons demande\u0301 a\u0300 nos volontaires partout dans le monde de prendre une photo de ce qu\u2019ils faisaient ce jour-la\u0300. Pre\u0300s de 3 000 photos et re\u0301cits ont e\u0301te\u0301 pre\u0301sente\u0301s par 110 pays, ce qui ne repre\u0301sente qu\u2019une petite partie de l\u2019incroyable travail accompli par les volontaires."
                     ]
                 }
             ]

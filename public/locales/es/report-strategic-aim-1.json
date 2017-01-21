@@ -1,15 +1,15 @@
 {
     "chapter": "4",
     "slug": "strategic-aim-1",
-    "title": "Strategic aim 1",
-    "subtitle": "Save lives, protect livelihoods and strengthen recovery from disasters and crises",
-    "intro": "From our earliest days, the Red Cross and Red Crescent is best known for our mission to bring urgent help and comfort in moments of greatest need.",
+    "title": "Objetivo estrat\u00e9gico 1",
+    "subtitle": "Salvar vidas, proteger los medios de sustento y apoyar la recuperaci\u00f3n despu\u00e9s de desastres y crisis",
+    "intro": "Desde sus or\u00edgenes, se conoce a las organizaciones de la Cruz Roja y de la Media Luna Roja por su cometido de prestar asistencia urgente y consuelo a las personas en momentos de gran necesidad.",
     "general": [
-        "In 2014, we responded internationally to 278 disasters and crises worldwide, continuing a general downward trend during this decade. This trend is partly a reflection of the wider \u2013 perhaps temporary \u2013 reduction in the frequency of major natural disasters in recent years, but may also be an indicator of increased local and national capacities to deal with disasters without requiring international support.",
+        "En 2014, a nivel internacional, la organizaci\u00f3n intervino a ra\u00edz de doscientos setenta y ocho (278) situaciones de crisis y desastres en el mundo.",
         {
             "type": "chart",
-            "title": "Declining number of natural disasters",
-            "caption": "Source: Disaster and Crisis Management Department",
+            "title": "Intervenci\u00f3n de las organizaciones de la Cruz Roja y de la Media Luna Roja en situaciones de desastre y de crisis",
+            "caption": "Fuente: Departamento de Gesti\u00f3n de Desastres y Crisis",
             "dataset": [
                 {
                     "year": "2010",
@@ -33,23 +33,23 @@
                 }
             ],
             "axisLabels": {
-                "x": "Years",
-                "y": "Natural disasters"
+                "x": "A\u00f1os",
+                "y": "Desastres naturales"
             },
             "lineLabels": [
-                "Natural\ndisasters"
+                "Desastres\nnaturales"
             ]
         }
     ],
     "sections": [
         {
-            "title": "Number of people reached by types of disasters",
+            "title": "Cantidad de beneficiarios por tipo de desastre",
             "blocks": [
-                "Hydrometeorological disasters including floods, hurricanes, and droughts dominated in all regions. Africa had the added burden of prolonged conflict-related crises. Asia Pacific tends to have been more prone to geophysical hazards including earthquakes.",
-                "The majority of the Red Cross and Red Crescent emergency actions and beneficiaries were in Asia Pacific and Africa.",
+                "Las cat\u00e1strofes hidro-meteorol\u00f3gicas, entre otras, inundaciones, huracanes y sequ\u00edas, predominaron en todas las regiones y, en \u00c1frica, contaron con el factor a\u00f1adido de crisis relativas a conflictos prolongados.",
+                "La zona de Asia y el Pac\u00edfico denota mayor proclividad a las amenazas geof\u00edsicas, con inclusi\u00f3n de los terremotos.",
                 {
                     "type": "chart",
-                    "title": "People reached by region",
+                    "title": "Cantidad de beneficiarios por tipo de desastre",
                     "customFills": [
                         "#E02726",
                         "#1A9FE0",
@@ -66,13 +66,13 @@
                                 "600019"
                             ],
                             "labels": [
-                                "Geophysical",
-                                "Hydrometeorological",
-                                "Biological",
-                                "Various"
+                                "Geof\u00edsicos",
+                                "Hidrometeorol\u00f3gicos",
+                                "Biol\u00f3gicos",
+                                "Otras causas"
                             ],
                             "total": "8162084",
-                            "name": "Africa"
+                            "name": "\u00c1frica"
                         },
                         {
                             "index": "2",
@@ -83,13 +83,13 @@
                                 "173729"
                             ],
                             "labels": [
-                                "Geophysical",
-                                "Hydrometeorological",
-                                "Biological",
-                                "Various"
+                                "Geof\u00edsicos",
+                                "Hidrometeorol\u00f3gicos",
+                                "Biol\u00f3gicos",
+                                "Otras causas"
                             ],
                             "total": "3644456",
-                            "name": "Asia and the Pacific"
+                            "name": "Asia y el Pac\u00edfico"
                         },
                         {
                             "index": "3",
@@ -100,13 +100,13 @@
                                 "0"
                             ],
                             "labels": [
-                                "Geophysical",
-                                "Hydrometeorological",
-                                "Biological",
-                                "Various"
+                                "Geof\u00edsicos",
+                                "Hidrometeorol\u00f3gicos",
+                                "Biol\u00f3gicos",
+                                "Otras causas"
                             ],
                             "total": "826070",
-                            "name": "Americas"
+                            "name": "Am\u00e9rica"
                         },
                         {
                             "index": "4",
@@ -188,14 +188,14 @@
                             "appealsLaunched": "19",
                             "amount": "129.8",
                             "beneficiaries": "1.9",
-                            "crisis": "Typhoon Haiyan, Philippines"
+                            "crisis": "Tif\u00f3n Haiyan, Filipinas"
                         },
                         {
                             "year": "2014",
                             "appealsLaunched": "27",
                             "amount": "230.8",
                             "beneficiaries": "62.5",
-                            "crisis": "Ebola epidemic, West Africa"
+                            "crisis": "Epidemia de \u00e9bola en \u00c1frica occidental"
                         },
                         {
                             "year": "Total",
@@ -397,7 +397,7 @@
                             "fill": "#012A39"
                         },
                         {
-                            "x": "Epidemics (28)",
+                            "x": "Epidemias (28)",
                             "y": "28",
                             "fill": "#FED02F"
                         }
@@ -495,7 +495,7 @@
                         },
                         "IRQ": {
                             "fillKey": "bubbleFill",
-                            "name": "Iraq",
+                            "name": "Irak",
                             "number": "108873",
                             "popupContent": "<p class=\"small\"><span class=\"color-primary strong\">108,873<\/span> Familias beneficiarias de ayuda para alojamiento provisional y de emergencia o con la entrega de art\u00edculos no alimentarios<\/p>"
                         },
@@ -571,25 +571,25 @@
                 "Hasta la fecha, la Federaci\u00f3n Internacional ha coordinado actividades de alojamiento provisional y de emergencia a ra\u00edz de treinta y dos (32) emergencias mediante el env\u00edo de unidades especializadas que incluyen personal de distintas Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja y de otros organismos miembros del grupo tem\u00e1tico.",
                 {
                     "type": "case-study-extended",
-                    "title": "The Syria crisis"
+                    "title": "La crisis en Siria"
                 },
                 {
                     "type": "case-study-extended",
-                    "title": "Typhoon Haiyan"
+                    "title": "Tif\u00f3n Haiyan "
                 },
                 {
                     "type": "case-study-extended",
-                    "title": "Ebola virus disease"
+                    "title": "Enfermedad causada por el virus del \u00e9bola"
                 }
             ]
         },
         {
-            "title": "Staying safe",
+            "title": "Mant\u00e9ngase a salvo",
             "blocks": [
-                "It can be risky at the frontline of humanitarian response. Worldwide, more than 1,100 aid workers have died in the course of their duties over the past decade with many more being injured and an increasing number of kidnappings. The trend indicates increased disrespect for international humanitarian law and the deliberate targeting of humanitarian and health service facilities.",
+                "El servicio humanitario en primera l\u00ednea no est\u00e1 exento de riesgos. A nivel mundial, m\u00e1s de mil cien (1 100) trabajadores humanitarios han perecido en el cumplimiento de su deber durante el \u00faltimo decenio; una cifra superior de ellos ha sufrido heridas, y se observa un aumento sostenido en la cantidad de secuestros. Las tendencias apuntan a una creciente inobservancia de las normas del derecho internacional humanitario y a ataques deliberados contra bienes e instalaciones humanitarias y sanitarias.",
                 {
                     "type": "chart",
-                    "title": "Security incidents",
+                    "title": "Incidentes relativos a la seguridad comunicados a la secretar\u00eda de la Federaci\u00f3n Internacional",
                     "barLabels": [
                         "281",
                         "155",
@@ -598,7 +598,7 @@
                         "79"
                     ],
                     "axisLabels": {
-                        "x": "Years",
+                        "x": "A\u00f1os",
                         "y": ""
                     },
                     "dataset": [
@@ -623,28 +623,28 @@
                             "year": "2014"
                         }
                     ],
-                    "caption": "Source: Security Unit"
+                    "caption": "Fuente: Unidad de Seguridad de la secretar\u00eda"
                 },
-                "For the IFRC, the number of reported security incidents has declined in recent years. It is a positive sign that while there was one security incident recorded for about 15 IFRC staff deployed in 2010, this had improved to one incident per 44 staff in 2014.",
+                "En el caso de la Federaci\u00f3n Internacional, en a\u00f1os recientes ha disminuido la cantidad de notificaciones de incidentes relativos a la seguridad. Se trata de un indicio alentador pues en 2010, el \u00edndice correspond\u00eda a un incidente relativo a la seguridad por cada quince (15) miembros del personal de la Federaci\u00f3n Internacional presentes sobre el terreno, mientras que en 2014, ese \u00edndice fue de un incidente por cada cuarenta y cuatro (44) miembros del personal.",
                 {
                     "type": "tabs",
-                    "title": "Causes of death",
+                    "title": "Muertes de miembros del personal y de voluntarios que trabajan para las organizaciones de la Cruz Roja y de la Media Luna Roja - cambio de tendencias",
                     "tabs": [
                         {
                             "name": "1993\u20142011",
                             "dataset": [
                                 {
-                                    "x": "Vehicle\naccidents (10)",
+                                    "x": "Accidentes\ncon veh\u00edculos (10)",
                                     "y": "10",
                                     "fill": "#012A39"
                                 },
                                 {
-                                    "x": "Violence\/\ncrime\/\nconflict\nrelated (30)",
+                                    "x": "Violencia,\nDelincuencia,\n Conflictos\n (30)",
                                     "y": "30",
                                     "fill": "#EE3224"
                                 },
                                 {
-                                    "x": "Natural\ndisasters (60)",
+                                    "x": "Desastres\nnaturales (60)",
                                     "y": "60",
                                     "fill": "#FED02F"
                                 }
@@ -654,17 +654,17 @@
                             "name": "2012\u20142014",
                             "dataset": [
                                 {
-                                    "x": "Vehicle\naccidents (10)",
+                                    "x": "Accidentes\ncon veh\u00edculos (10)",
                                     "y": "10",
                                     "fill": "#012A39"
                                 },
                                 {
-                                    "x": "Violence\/crime\/\nconflict related (86)",
+                                    "x": "Violencia,\nDelincuencia,\n Conflictos\n (86)",
                                     "y": "86",
                                     "fill": "#EE3224"
                                 },
                                 {
-                                    "x": "Natural\ndisasters (4)",
+                                    "x": "Desastres \nnaturales (4)",
                                     "y": "4",
                                     "fill": "#FED02F"
                                 }
@@ -678,10 +678,10 @@
         }
     ],
     "nextChapter": {
-        "heading": "Next chapter",
+        "heading": "Cap\u00edtulo siguiente",
         "chapter": "5",
         "subtitle": "Objetivo estrat\u00e9gico 2",
-        "title": "Healthy and safe living",
+        "title": "Posibilitar una vida sana y segura",
         "slug": "strategic-aim-2"
     }
 }

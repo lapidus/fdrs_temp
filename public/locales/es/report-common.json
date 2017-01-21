@@ -75,11 +75,11 @@
                     "number": "190",
                     "text": "Sociedades Nacionales"
                 },
-                "fact": "To inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world.",
+                "fact": "La mayor fortaleza de la Federaci\u00f3n Internacional y del Movimiento en su conjunto reside en la capacidad aunada de servicio de las Sociedades Nacionales.",
                 "quote": "Desde la aprobaci\u00f3n de la Estrategia 2020, los esfuerzos encaminados a mejorar el funcionamiento de la Federaci\u00f3n Internacional en calidad de organizaci\u00f3n han girado en torno al fortalecimiento de los \u00f3rganos y las funciones de gobierno, el establecimiento de un marco para la rendici\u00f3n de cuentas y la promoci\u00f3n de una cultura de incorporaci\u00f3n de ense\u00f1anzas."
             },
             {
-                "id": "Section 4",
+                "id": "Secci\u00f3n 4",
                 "title": "Ap\u00e9ndices"
             }
         ]
@@ -92,40 +92,40 @@
             "title": "Nuestra Labor"
         },
         "chapter3": {
-            "title": "Living our fundamental principles"
+            "title": "Los Principios Fundamentales En La Pr\u00e1ctica Cotidiana"
         },
         "chapter4": {
-            "pretitle": "Strategic aim 1",
-            "title": "Save lives, protect livelihoods and strengthen recovery from disasters and crises"
+            "pretitle": "Objetivo estrat\u00e9gico 1",
+            "title": "Salvar vidas, proteger los medios de sustento y apoyar la recuperaci\u00f3n despu\u00e9s de desastres y crisis"
         },
         "chapter5": {
-            "pretitle": "Strategic aim 2",
-            "title": "Healthy and safe living"
+            "pretitle": "Objetivo estrat\u00e9gico 2",
+            "title": "Posibilitar una vida sana y segura"
         },
         "chapter6": {
-            "pretitle": "Strategic aim 3",
-            "title": "Social inclusion and a culture of non-violence and peace"
+            "pretitle": "Objetivo estrat\u00e9gico 3",
+            "title": "Promover la inclusi\u00f3n social y una cultura de no violencia y paz"
         },
         "chapter7": {
-            "pretitle": "Enabling action 1",
-            "title": "Strong national red cross and red crescent societies"
+            "pretitle": "Acci\u00f3n facilitadora 1 ",
+            "title": "Construir Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja fuertes"
         },
         "chapter8": {
-            "pretitle": "Enabling action 2",
-            "title": "Humanitarian diplomacy to prevent and reduce vulnerability in a globalised world"
+            "pretitle": "Acci\u00f3n facilitadora 2",
+            "title": "Valernos de la diplomacia humanitaria para prevenir y reducir la vulnerabilidad en un mundo globalizado"
         },
         "chapter9": {
-            "pretitle": "Enabling action 3",
-            "title": "Function effectively as the IFRC"
+            "pretitle": "Acci\u00f3n facilitadora 3",
+            "title": "Funcionar con eficacia como Federaci\u00f3n Internacional"
         },
         "data": {
             "pretitle": "Data tools",
-            "title": "Explore the data",
+            "title": "Explorar los datos",
             "body": [
                 "Las siete indicadores claves",
-                "Find information about your National Society"
+                "Informaci\u00f3n sobre su Sociedad Nacional"
             ],
-            "button": "Explore the data from FDRS"
+            "button": "Explorar los datos"
         },
         "acknowledgements": {
             "title": "Agradecimiento"

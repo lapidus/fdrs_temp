@@ -4,12 +4,12 @@
     "chapter": "9",
     "sections": [
         {
-            "title": "Keeping our governance up to date",
+            "title": "\u00d3rganos de gobierno informados",
             "blocks": {
                 "0": "Un indicador de buen gobierno reside en el cumplimiento por parte de las Sociedades Nacionales de la obligaci\u00f3n que les incumbe con respecto a la actualizaci\u00f3n de sus estatutos y dem\u00e1s instrumentos de base jur\u00eddica, de manera que guarden consonancia con la evoluci\u00f3n del mundo. Por regla general, una Sociedad Nacional deber\u00eda proceder a la revisi\u00f3n de sus estatutos cada diez a\u00f1os.",
                 "2": {
                     "type": "chart",
-                    "title": "National Society statutes revision",
+                    "title": "Examen de los estatutos de las Sociedades Nacionales",
                     "dataset": [
                         {
                             "x": "de los estatutos\n cumplen con\n los requisitos\n m\u00ednimos\n(26)",
@@ -34,7 +34,7 @@
                     ],
                     "caption": "Fuente: Cooperaci\u00f3n y Apoyo a \u00d3rganos de Gobierno"
                 },
-                "1": "At the end of 2013, some 26 per cent of National Societies had statutes that met minimum requirements and more than 60 per cent were engaged in the revision of their statutory base instruments. Such revisions are an arduous process as National Societies are bottom-up democratic bodies, and changes have to be owned by members and reflect local social and cultural contexts.",
+                "1": "A finales de 2013, el veintis\u00e9is por ciento (26%) de las Sociedades Nacionales contaba con estatutos que satisfac\u00edan los requisitos m\u00ednimos y m\u00e1s del sesenta por ciento (60%) de ellas hab\u00eda emprendido la revisi\u00f3n de los instrumentos de base jur\u00eddica. Se trata de un proceso arduo pues las Sociedades Nacionales son entidades democr\u00e1ticas de pir\u00e1mide ascendente en las que los miembros deben sentirse identificados con los cambios en esos textos y estos deben corresponder al contexto social y cultural local.",
                 "3": "Al mismo tiempo, las Sociedades Nacionales son miembros de la Federaci\u00f3n Internacional y deben cumplir con requisitos m\u00ednimos. Para la mayor\u00eda de Sociedades Nacionales se trata de un proceso de desarrollo y la revisi\u00f3n de los estatutos pone al orden del d\u00eda importantes di\u00e1logos nacionales sobre el lugar de estas organizaciones en el entorno de sus pa\u00edses."
             }
         },
@@ -66,27 +66,27 @@
                         },
                         {
                             "y": "9",
-                            "x": "Final evaluation"
+                            "x": "Evaluaci\u00f3n final"
                         },
                         {
                             "y": "2",
-                            "x": "Impact evaluation"
+                            "x": "Evaluaci\u00f3n de la incidencia"
                         },
                         {
                             "y": "1",
-                            "x": "Impact evaluation\/case study\/research"
+                            "x": "Evaluaci\u00f3n de la incidencia, el estudio de caso e investigaci\u00f3"
                         },
                         {
-                            "x": "Mid-term evaluation",
+                            "x": "Evaluaci\u00f3n intermedia",
                             "y": "3"
                         },
                         {
                             "y": "1",
-                            "x": "Real-time evaluation"
+                            "x": "Evaluaci\u00f3n en tiempo real"
                         },
                         {
                             "y": "10",
-                            "x": "Review"
+                            "x": "Examen"
                         },
                         {
                             "y": "2",
@@ -141,112 +141,112 @@
                         },
                         "1": {
                             "y": "85",
-                            "x": "French"
+                            "x": "Franc\u00e9s"
                         },
                         "2": {
                             "y": "81",
-                            "x": "Spanish"
+                            "x": "Espa\u00f1ol"
                         },
                         "3": {
                             "y": "44",
-                            "x": "Italian"
+                            "x": "Italiano"
                         },
                         "4": {
                             "y": "43",
-                            "x": "Portuguese"
+                            "x": "Portugu\u00e9s"
                         },
                         "6": {
-                            "x": "Chinese",
+                            "x": "Chino",
                             "y": "30"
                         },
                         "5": {
                             "y": "30",
-                            "x": "German"
+                            "x": "Alem\u00e1n"
                         },
                         "7": {
                             "y": "28",
-                            "x": "Russian"
+                            "x": "Ruso"
                         },
                         "8": {
                             "y": "20",
-                            "x": "Arabic"
+                            "x": "\u00c1rabe"
                         },
                         "9": {
-                            "x": "Others",
+                            "x": "Otros",
                             "y": "63"
                         }
                     },
                     "type": "chart",
-                    "title": "Learning platform courses by languages",
-                    "caption": "Source: Learning and Research Department"
+                    "title": "Idiomas disponibles en la plataforma de formaci\u00f3n",
+                    "caption": "Fuente: Departamento de Formaci\u00f3n e Investigaci\u00f3n"
                 },
-                "3": "The IFRC Learning Platform is a global yet local online learning community offering 131 courses available in 16 languages.",
-                "2": "The IFRC Learning Passport scheme encourages people to take responsibility for their own development, and fosters the portability of the learning they undertake while moving between institutions and employers.",
-                "4": "Over the past six years, an average of 489 Red Cross and Red Crescent staff have taken the International Mobilisation and Preparation for Action (IMPACT) training annually, in preparation for international deployments",
+                "3": "La plataforma de formaci\u00f3n de la Federaci\u00f3n Internacional es una comunidad mundial en l\u00ednea que, no obstante, guarda rasgos locales, en la que se encuentran disponibles ciento treinta y un (131) cursos en diecis\u00e9is (16) idiomas",
+                "2": "La formaci\u00f3n es un elemento esencial que favorece la adaptaci\u00f3n y la actualizaci\u00f3n de una instituci\u00f3n sujeta a un mundo en transformaci\u00f3n. Otro aspecto importante reside en el fomento de la profesionalidad de quienes colaboran con las organizaciones de la Cruz Roja y de la Media Luna Roja a fin de que gocen de mayor credibilidad al demostrar que cumplen con normas expl\u00edcitas. ",
+                "4": "En los \u00faltimos seis a\u00f1os, un promedio anual de 489 miembros del personal de las organizaciones de la Cruz Roja y de la Media Luna Roja han cursado la formaci\u00f3n b\u00e1sica de preparaci\u00f3n para la acci\u00f3n y la movilizaci\u00f3n internacional en el contexto de su preparaci\u00f3n para una misi\u00f3n.",
                 "5": {
                     "type": "chart",
-                    "title": "International Mobilisation and Preparation for Action (IMPACT) course",
-                    "caption": "Sources: Learning and Research Department"
+                    "title": "Curso sobre movilizaci\u00f3n internacional y preparaci\u00f3n para la acci\u00f3n (curso)",
+                    "caption": "Fuente: Departamento de Formaci\u00f3n e Investigaci\u00f3n"
                 },
                 "6": {
                     "type": "chart",
-                    "title": "Learning platform users",
+                    "title": "Usuarios de la plataforma de formaci\u00f3n",
                     "axisLabels": {
-                        "x": "Years",
+                        "x": "A\u00f1os",
                         "y": ""
                     },
                     "lineLabels": {
-                        "1": "Course\ncompletions",
-                        "0": "Course\nregistrations"
+                        "1": "Cursos\ncompletados",
+                        "0": "Inscripciones\nen los cursos"
                     },
                     "caption": "The graph above shows the number of users who registered for courses vs. the number of students who completed courses."
                 },
-                "8": "With the rapid growth in overall registered users to more than 140,000 in 2014, course registrations have soared to over 220,000 with some users signed up to take more than one course. Course completion rates have also increased to just under 50 per cent, indicating steadily increasing customer utility.",
-                "7": "The Learning Platform is rapidly becoming a social community in its own right with encouragement for group learning and peer-to-peer sharing."
+                "8": "En 2014 se observ\u00f3 un r\u00e1pido aumento en la cantidad de inscripciones de usuarios (m\u00e1s de 140 000) que incidi\u00f3 en el vertiginoso incremento en el n\u00famero de inscripciones (m\u00e1s de 220 000), si bien algunos usuarios siguieron m\u00e1s de un curso. El porcentaje de cursos concluidos tambi\u00e9n aument\u00f3 situ\u00e1ndose ligeramente por debajo del cincuenta por ciento (50%) en un indicio de constante aumento en la percepci\u00f3n de utilidad por parte del usuario.",
+                "7": "La plataforma de formaci\u00f3n adquiere r\u00e1pidamente titularidad por derecho propio en calidad de comunidad social con facilidades para la formaci\u00f3n colectiva y el di\u00e1logo entre hom\u00f3logos."
             }
         },
         {
-            "title": "Centres of expertise around the world",
+            "title": "Centros de pericia en el mundo",
             "blocks": [
-                "A unique advantage of our extensive network is the access to world-class expertise, organised through Red Cross and Red Crescent reference centres that focus on specific subjects. The centres conduct research, develop innovative approaches, consolidate best practices, share knowledge, conduct advocacy, and offer training and technical assistance to National Societies, thus enabling them to do more and better.",
+                "Una singular ventaja de nuestra amplia red de colaboraci\u00f3n reside en el acceso a conocimientos especializados de alto nivel que se sistematizan por conducto de diversos centros de referencia de la Federaci\u00f3n Internacional dedicados a temas espec\u00edficos. Los centros realizan investigaciones, desarrollan enfoques innovadores, recopilan informaci\u00f3n sobre pr\u00e1cticas \u00f3ptimas, difunden conocimientos, promueven y defienden causas y, adem\u00e1s, brindan formaci\u00f3n y asistencia a las Sociedades Nacionales con el fin de que ampl\u00eden y perfeccionen su labor.",
                 [
                     {
-                        "title": "Caribbean Disaster Risk Management Centre",
-                        "subtitle": "The Barbados Red Cross Society",
+                        "title": "Centro regional de informaci\u00f3n sobre desastres para el Caribe.",
+                        "subtitle": "Cruz Roja de Barbados",
                         "slug": "http:\/\/www.cdema.org"
                     },
                     {
                         "title": "Centro de referencia sobre pr\u00e1cticas sustentadas en pruebas.",
                         "slug": "http:\/\/www.rodekruis.be\/en\/who-are-we\/research\/centre-for-evidence-based-practice\/",
-                        "subtitle": "Belgian Red Cross"
+                        "subtitle": "Cruz Roja de B\u00e9lgica"
                     },
                     {
-                        "title": "Climate Center",
-                        "subtitle": "The Netherlands Red Cross",
+                        "title": "Centro de informaci\u00f3n sobre cambio clim\u00e1tico.",
+                        "subtitle": "Cruz Roja Neerlandesa",
                         "slug": "http:\/\/www.climatecentre.org\/"
                     },
                     {
-                        "title": "Global Disaster Preparedness Centre",
+                        "title": "Centro mundial de referencia sobre preparaci\u00f3n para desastres.",
                         "slug": "http:\/\/www.preparecenter.org\/",
-                        "subtitle": "American Red Cross"
+                        "subtitle": "Cruz Roja Americana"
                     },
                     {
-                        "title": "Global First Aid Reference Centre",
+                        "title": "Centro mundial de referencia sobre primeros auxilios",
                         "slug": "http:\/\/www.ifrc.org\/en\/get-involved\/learning-education-training\/reference-centres\/",
-                        "subtitle": "French Red Cross"
+                        "subtitle": "Cruz Roja Francesa"
                     },
                     {
-                        "title": "Livelihoods Resource Centre",
+                        "title": "Centro de referencia para desarrollo econ\u00f3mico y medios de vida sostenibles.",
                         "slug": "http:\/\/www.livelihoodscentre.org\/",
-                        "subtitle": "Spanish Red Cross"
+                        "subtitle": "Cruz Roja Espa\u00f1ola"
                     },
                     {
-                        "title": "Reference Centre for Community Resilience",
+                        "title": "Centro de referencia sobre fomento de la capacidad de resistencia y recuperaci\u00f3n de las comunidades.",
                         "slug": "http:\/\/www.crrec.cruzroja.org\/",
-                        "subtitle": "Costa Rican Red Cross"
+                        "subtitle": "Cruz Roja Costarricense"
                     },
                     {
-                        "title": "Reference Centre for Institutional Disaster Preparedness",
+                        "title": "Centro de referencia en preparaci\u00f3n institucional para desastres.",
                         "slug": "http:\/\/www.crepd.cruzroja.org\/",
                         "subtitle": "Cruz Roja Salvadore\u00f1a"
                     },
@@ -280,7 +280,7 @@
         }
     ],
     "slug": "enabling-action-3",
-    "intro": "Since the adoption of Strategy 2020, the major effort seeking to improve our functioning as the IFRC has been on strengthening our governance, introducing a framework for accountability, and promoting a culture of learning.",
+    "intro": "Desde la aprobaci\u00f3n de la Estrategia 2020, los esfuerzos encaminados a mejorar el funcionamiento de la Federaci\u00f3n Internacional en calidad de organizaci\u00f3n han girado en torno al fortalecimiento de los \u00f3rganos y las funciones de gobierno, el establecimiento de un marco para la rendici\u00f3n de cuentas y la promoci\u00f3n de una cultura de incorporaci\u00f3n de ense\u00f1anzas.",
     "nextChapter": {
         "heading": "Cap\u00edtulo siguiente",
         "chapter": "10",

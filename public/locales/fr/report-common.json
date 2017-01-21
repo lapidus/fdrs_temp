@@ -70,12 +70,12 @@
             },
             {
                 "id": "Section 3",
-                "title": "Enabling actions",
+                "title": "Actions facilitatrices",
                 "statistic": {
                     "number": "190",
-                    "text": "National Societies"
+                    "text": "Soci\u00e9t\u00e9s nationales"
                 },
-                "fact": "To inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world.",
+                "fact": "La capacit\u00e9 combin\u00e9e des Soci\u00e9t\u00e9s nationales de fournir des services est la principale force de la F\u00e9d\u00e9ration et du Mouvement dans son ensemble.",
                 "quote": "Depuis l\u2019adoption de la Strat\u00e9gie 2020, les principales mesures prises pour am\u00e9liorer notre fonctionnement en tant que F\u00e9d\u00e9ration ont consist\u00e9 \u00e0 renforcer notre gouvernance, \u00e0 mettre en place un cadre de redevabilit\u00e9 et \u00e0 promouvoir une culture de l\u2019apprentissage."
             },
             {
@@ -86,7 +86,7 @@
     },
     "chapters": {
         "chapter1": {
-            "title": "Who we are"
+            "title": "Qui nous sommes"
         },
         "chapter2": {
             "title": "Ce que nous faisons"
@@ -116,16 +116,16 @@
         },
         "chapter9": {
             "pretitle": "Action facilitatrice 3",
-            "title": "Function effectively as the IFRC"
+            "title": "Fonctionner de mani\u00e8re efficace en tant que f\u00e9d\u00e9ration internationale"
         },
         "data": {
             "pretitle": "Data tools",
             "title": "Explorez les donn\u00e9es",
             "body": [
-                "See the seven key indicators across all National Societies",
-                "Find information about your National Society"
+                "Voir les sept indicateurs cl\u00e9s dans toutes les Soci\u00e9t\u00e9s nationales",
+                "Trouvez des informations sur votre Soci\u00e9t\u00e9 nationale"
             ],
-            "button": "Explore the data from FDRS"
+            "button": "Explorez les donn\u00e9es"
         },
         "acknowledgements": {
             "title": "Remerciements"
