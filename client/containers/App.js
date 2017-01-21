@@ -118,8 +118,8 @@ class App extends React.Component {
                         <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
                       </LanguageLink>
                     </p>
-                    <p>{ t("common:credit") }</p>
-                  </div>
+                    <p>{ t("common:credit") } <strong><a href="http://www.lapidus.se" target="_blank">Lapidus Interactive</a></strong></p>
+                                 </div>
                   <div className="col sm-3">
                     <p className="subhead strong">
                       { t("common:navigation")[0].name }
