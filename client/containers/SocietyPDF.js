@@ -4,11 +4,13 @@ import LanguageLink  from "../components/LanguageLink"
 import Select from "react-select"
 import minBy from "lodash/minBy"
 import maxBy from "lodash/maxBy"
+import max from "lodash/max"
 import map from "lodash/fp/map"
 import filter from "lodash/fp/filter"
 import uniqBy from "lodash/fp/uniqBy"
 import sortBy from "lodash/sortBy"
 import niceNum from "../utils/niceNum"
+import Icon from "../components/Icon"
 
 import { translate } from "react-i18next"
 
@@ -24,14 +26,12 @@ import FilteredSocietiesSidebar from "../components/FilteredSocietiesSidebar"
 import {
   makeGetSociety,
   makeGetSocietyData,
-  makeGetSocietyDocuments,
   makeGroupTimeSeriesBySociety,
 } from "../selectors"
 import {
   fetchNationalSocieties,
   fetchTimeSeries,
   fetchTimeSeriesMeta,
-  fetchDocuments,
 } from "../actions/appActions"
 
 function roundIt(n) {
@@ -49,7 +49,7 @@ function missingDataString(dataType, countryName, year) {
   return `There is no ${dataType} data available for ${countryName} for ${year}`
 }
 
-class SocietyPDF extends React.Component {
+class Society extends React.Component {
   constructor(props, context) {
     super(props, context)
 
@@ -57,6 +57,8 @@ class SocietyPDF extends React.Component {
     selectedCountry[props.society.iso_3] = { fillKey: "red" }
 
     this.state = {
+      lastLanguage: this.context.i18n.language,
+      currentLanguage: this.context.i18n.language,
       year: getLatestYearDocuments(props),
       earliestData: minBy(props.data, (o) => o.KPI_Year),
       latestData: maxBy(props.data, (o) => o.KPI_Year),
@@ -76,6 +78,12 @@ class SocietyPDF extends React.Component {
   componentDidMount() {
     document.body.classList.add("html-ready")
   }
+
+  // shouldComponentUpdate(nextProps, nextState, nextContext) {
+  //   const didYearChange = nextState.year !== this.state.year
+  //   const didSocietyChange = nextProps.society.iso_2 !== this.props.society.iso_2
+  //   return didYearChange || didSocietyChange || didLanguageChange
+  // }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.society.iso_2 !== nextProps.society.iso_2) {
@@ -119,11 +127,13 @@ class SocietyPDF extends React.Component {
 
   render() {
 
+    // <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+
     const {
       year,
       earliestData,
       latestData
-    } = this.state
+      } = this.state
 
     const { society, data, timeSeriesMeta, t } = this.props
     const { i18n } = this.context
@@ -131,46 +141,82 @@ class SocietyPDF extends React.Component {
     const pageData = i18n.store.data[language]["common"]
 
     return (
-      <section className="PDF" style={{zoom:'0.5'}}>
+      <section>
 
         <div className="px1">
-          <div className="clearfix">
-            <header className="col base-8 px1 py1">
-              <p className="color-primary strong m0 small">NATIONAL SOCIETY PROFILE</p>
-              <h1 className="display-2 m0 light">{ society.NSO_DON_name }</h1>
+          <div className="clearfix mxn1">
+            <header className="col sm-8 sm-offset-3 px1 py1">
+              <p className="color-primary strong m0 text-base">{ society.NSO_ZON_name }</p>
+              <h1 className="text-md sm-text-lg md-text-xl light m0">
+                { t("national-societies:" + society.KPI_DON_Code) }
+              </h1>
             </header>
           </div>
 
-          <div className="clearfix">
+          <div className="clearfix mxn1">
+            <aside className="col sm-3 px1 sm-visible">
+              <FilteredSocietiesSidebar
+                nationalSocieties={ this.props.nationalSocieties }
+                title={ t("societies:nationalSocieties") }
+                filterPlaceholder={ t("societies:searchPlaceholder") }
+                noSocietiesText={ t("societies:noSocieties") }
+              />
+            </aside>
 
+            <div className="col sm-9 md-8 px1">
 
-            <div className="col px1">
-
-              <div className="clearfix mxn1">
-                <div className="col base-8 px1 pb1">
-                  <p className="">
+              <div className="clearfix mxn1 pb2">
+                <div className="col sm-8 px1 pb1">
+                  <p className="text-base sm-text-sm">
                     <GeneratedIntroText
-                      societyName={ society.NSO_DON_name }
+                      society={ society }
                       admissionDate={ society.admission_date.split(".")[2] }
                       latestData={ latestData }
                       earliestData={ earliestData }
                       translationText={ t("societies:generatedText") }
                     />
                   </p>
-                  <p className="lead">
+                  <p className="text-base sm-text-sm">
                     { t("societies:fillerText")[0] }
-                    { ` ${earliestData.KPI_Year}:` }
+                    { ` ${earliestData.KPI_Year} ` }
+                    { t("societies:fillerText")[1] }
                   </p>
 
-                </div>
+                  <div className="clearfix">
+                    <div className="left shadow-3">
+                      <a target="_blank" href={"/fdrs/societies/" + society.slug + ".pdf"} className="btn link-no-underline px1">
+                        { "Download PDF" }
+                      </a>
+                    </div>
+                    <div className="right shadow-3">
+                      <a href="https://twitter.com/intent/tweet?text=Society Profile&hashtags=IFRC,FDRS">
+                        <ShareBtn service="twitter" />
+                      </a>
+                      <ShareBtn service="facebook" />
+                      <ShareBtn service="mail" />
+                    </div>
+                  </div>
 
+                </div>
+                <div className="col base-8 base-offset-2 xs-6 xs-offset-3 sm-4 sm-offset-0 px1">
+
+                </div>
               </div>
 
-              <div className="clearfix pb2">
-                <div className="col base-6">
+              {
+                /*
+                 * People volunteering
+                 *
+                 */
+              }
+
+              <div className="clearfix mxn1 pb2">
+                <div className="col sm-6 lg-4 px1 pb2">
+                  <Card indicator="KPI_noPeopleVolunteering">
                     <CardView viewIcon="lineChart">
-                      <div className="pb1">
-                        <h1 className="subhead mt0 mb1">
+                      <div className="p1">
+                        {/* <h1 className="text-base mt0 mb1">{ t("common:indicators.KPI_noPeopleVolunteering") }</h1> */}
+                        <h1 className="text-base mt0 mb1">
                           { t("common:indicators.KPI_noPeopleVolunteering.name") }
                         </h1>
                         <LineChart
@@ -205,13 +251,76 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
-
+                    <CardView viewIcon="plainNumber">
+                      <div className="p1">
+                        <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noPeopleVolunteering) }</p>
+                        <p className="m0">{ t("common:indicators.KPI_noPeopleVolunteering.name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                      </div>
+                    </CardView>
+                    <CardOverlay>
+                      <p>{ t("common:indicators.KPI_noPeopleVolunteering.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noPeopleVolunteering.source") }</p>
+                    </CardOverlay>
+                  </Card>
                 </div>
 
-                <div className="col base-6">
+                {
+                  /*
+                   * Population
+                   *
+                   */
+                }
+
+                <div className="col sm-6 lg-4 px1 pb2">
+                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(this.state.latestPopulationData.Population, 2) !== "N/A"}>
+                    <CardView viewIcon="plainNumber">
+                      {
+                        niceNum(this.state.latestPopulationData.Population, 2) !== "N/A" ? (
+                          <div className="pt3 px1">
+                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestPopulationData.Population) }</p>
+                            <p className="m0">
+                              { t("common:indicators.Population.name") + `, ${t(`countries:${society.iso_2}`)}, ${this.state.latestPopulationData.KPI_Year}` }
+                            </p>
+                          </div>
+                        ) : (
+                          <div className="pt3 px1">
+                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestPopulationData.Population) }</p>
+                            <p className="m0">
+                              { missingDataString("population", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
+                            </p>
+                          </div>
+                        )
+                      }
+                    </CardView>
+                    <CardOverlay>
+                      <p>
+                        {
+                          niceNum(latestData.Population, 2) == "N/A" ? (
+                            missingDataString("population", t(`countries:${society.iso_2}`), latestData.KPI_Year)
+                          ) : (
+                            t("common:indicators.Population.definition") + "."
+                          )
+                        }
+                      </p>
+                      <p>Source: { t("common:indicators.Population.source") }</p>
+                    </CardOverlay>
+                  </Card>
+                </div>
+
+                {
+                  /*
+                   * Local Units
+                   *
+                   */
+                }
+
+                <div className="col sm-12 lg-4 px1 pb2">
+                  <Card indicator="KPI_noLocalUnits">
                     <CardView viewIcon="lineChart">
-                      <div className="pb1">
-                        <h1 className="subhead mt0 mb1">
+                      <div className="p1">
+                        {/* <h1 className="text-base mt0 mb1">
+                         { t("common:indicators.KPI_noLocalUnits") }</h1> */}
+                        <h1 className="text-base mt0 mb1">
                           { t("common:indicators.KPI_noLocalUnits.name") }
                         </h1>
                         <LineChart
@@ -260,13 +369,32 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
+                    <CardView viewIcon="plainNumber">
+                      <div className="p1">
+                        <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noLocalUnits) }</p>
+                        <p className="m0">{ t("common:indicators.KPI_noLocalUnits.name") + `, ${society.NSO_DON_name},  ${latestData.KPI_Year}` }</p>
+                      </div>
+                    </CardView>
+                    <CardOverlay>
+                      <p>{ t("common:indicators.KPI_noLocalUnits.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noLocalUnits.source") }</p>
+                    </CardOverlay>
+                  </Card>
                 </div>
 
-                <div className="col base-6">
+                {
+                  /*
+                   * Income + Expenditure
+                   *
+                   */
+                }
+
+                <div className="col sm-12 lg-8 px1 pb2">
+                  <Card>
                     <CardView viewIcon="lineChart">
-                      <div className="pb1">
-                        <h1 className="subhead mt0 mb1">
-                          { "Income and Expenditure" }
+                      <div className="p1">
+                        <h1 className="text-base mt0 mb1">
+                          { t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name") + " and " + t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -287,8 +415,8 @@ class SocietyPDF extends React.Component {
                                 Number(maxBy(
                                   data,
                                   d => {
-                                    return Number(d["KPI_expenditureLC (CHF)"]) || 0
-                                  })["KPI_expenditureLC (CHF)"])
+                                    return Number(d["KPI_IncomeLC (CHF)"]) || 0
+                                  })["KPI_IncomeLC (CHF)"])
                               ),
                             ],
                           }}
@@ -309,12 +437,44 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
+                    <CardView viewIcon="plainNumber">
+                      <div className="p1">
+                        <div className="clearfix mxn1">
+                          <div className="col sm-6 px1">
+                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData["KPI_IncomeLC (CHF)"]) }</p>
+                            <p className="m0">{ t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                          </div>
+                          <div className="col sm-6 px1">
+                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData["KPI_expenditureLC (CHF)"]) }</p>
+                            <p className="m0">{ t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                          </div>
+                        </div>
+                      </div>
+                    </CardView>
+                    <CardOverlay>
+                      <p>{ t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".definition") }</p>
+                      <p>{ t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".definition") }</p>
+
+                      <p>Source: { t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".source") }</p>
+
+                    </CardOverlay>
+                  </Card>
                 </div>
 
-                <div className="col base-6">
+                {
+                  /*
+                   * Paid staff
+                   *
+                   */
+                }
+
+                <div className="col sm-6 lg-4 px1 pb2">
+                  <Card indicator="KPI_noPaidStaff">
                     <CardView viewIcon="lineChart">
-                      <div className="pb1">
-                        <h1 className="subhead mt0 mb1">
+                      <div className="p1">
+                        {/* <h1 className="text-base mt0 mb1">
+                         { t("common:indicators.KPI_noPaidStaff") }</h1> */}
+                        <h1 className="text-base mt0 mb1">
                           { t("common:indicators.KPI_noPaidStaff.name") }
                         </h1>
                         <LineChart
@@ -351,12 +511,66 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
+                    <CardView viewIcon="plainNumber">
+                      <div className="p1">
+                        <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noPaidStaff) }</p>
+                        <p className="m0">{ t("common:indicators.KPI_noPaidStaff.definition") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
+                      </div>
+                    </CardView>
+                    <CardOverlay>
+                      <p>{ t("common:indicators.KPI_noPaidStaff.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noPaidStaff.source") }</p>
+                    </CardOverlay>
+                  </Card>
                 </div>
 
-                <div className="col base-6">
+                {
+                  /*
+                   * Poverty
+                   *
+                   */
+                }
+
+                <div className="col sm-6 lg-4 px1 pb2">
+                  <Card initialView={ 0 } bgColor="bg-beige" basicCard controlsVisible={niceNum(this.state.latestPovertyData.Poverty) !== "N/A"}>
+                    <CardView viewIcon="plainNumber">
+                      {
+                        niceNum(this.state.latestPovertyData.Poverty) !== "N/A" ? (
+                          <div className="pt3 px1">
+                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestPovertyData.Poverty) }%</p>
+                            <p className="m0">
+                              { t("common:indicators.Poverty.name") + `, ${t(`countries:${society.iso_2}`)}, ${this.state.latestPovertyData.KPI_Year}` }
+                            </p>
+                          </div>
+                        ) : (
+                          <div className="pt3 px1">
+                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestPovertyData.Poverty) }</p>
+                            <p className="m0">
+                              { missingDataString("poverty", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
+                            </p>
+                          </div>
+                        )
+                      }
+                    </CardView>
+                    <CardOverlay>
+                      <p>{ t("common:indicators.Poverty.definition") }</p>
+                      <p>Source: { t("common:indicators.Poverty.source") }</p>
+                    </CardOverlay>
+                  </Card>
+                </div>
+
+                {
+                  /*
+                   * People reached
+                   *
+                   */
+                }
+
+                <div className="col sm-12 lg-8 px1 pb2">
+                  <Card>
                     <CardView viewIcon="lineChart">
-                      <div className="">
-                        <h1 className="subhead mt0 mb1">
+                      <div className="p1">
+                        <h1 className="text-base mt0 mb1">
                           { t("societies:peopleReached") }
                         </h1>
                         <LineChart
@@ -364,7 +578,7 @@ class SocietyPDF extends React.Component {
                           padding={{
                             top: 10,
                             bottom: 30,
-                            left: 40,
+                            left: 50,
                             right: 16,
                           }}
                           domain={{
@@ -375,10 +589,19 @@ class SocietyPDF extends React.Component {
                             y: [
                               0,
                               roundIt(
-                                maxBy(
-                                  data,
-                                  d => +d.KPI_noPeopleReachedDisaster || 0
-                                ).KPI_noPeopleReachedDisaster
+                                (() => {
+                                  const highestValues = data.map(d => {
+                                    const values = [
+                                      Number(d.KPI_noPeopleReachedHealth),
+                                      Number(d.KPI_noPeopleReachedDisaster),
+                                      Number(d.KPI_noPeopleReachedAllServices),
+                                      Number(d.KPI_noPeopleReachedDevelopment),
+                                      Number(d.KPI_noPeopleCoveredPreparedness),
+                                    ]
+                                    return max(values)
+                                  })
+                                  return max(highestValues)
+                                })()
                               ),
                             ],
                           }}
@@ -387,16 +610,50 @@ class SocietyPDF extends React.Component {
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedDisaster) || null,
                             })),
+                            data.map(d => ({
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleReachedAllServices) || null,
+                            })),
+                            data.map(d => ({
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleReachedHealth) || null,
+                            })),
+                            data.map(d => ({
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleReachedDevelopment) || null,
+                            })),
+                            data.map(d => ({
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleCoveredPreparedness) || null,
+                            })),
                           ] }
                         />
                       </div>
                     </CardView>
+                    <CardView viewIcon="plainNumber">
+                      { "View 1" }
+                    </CardView>
+                    <CardOverlay>
+                      <p>{ t("common:indicators.KPI_noPeopleReachedAllServices.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noPeopleReachedAllServices.source") }</p>
+                    </CardOverlay>
+                  </Card>
                 </div>
 
-                <div className="col base-6">
+                {
+                  /*
+                   * People donating blood
+                   *
+                   */
+                }
+
+                <div className="col sm-6 lg-4 px1 pb2">
+                  <Card indicator="KPI_noPeopleDonatingBlood">
                     <CardView viewIcon="lineChart">
-                      <div className="">
-                        <h1 className="subhead mt0 mb1">
+                      <div className="p1">
+                        {/* <h1 className="text-base mt0 mb1">
+                         { t("common:indicators.KPI_noPeopleDonatingBlood") }</h1> */}
+                        <h1 className="text-base mt0 mb1">
                           { t("common:indicators.KPI_noPeopleDonatingBlood.name") }
                         </h1>
                         <LineChart
@@ -431,25 +688,101 @@ class SocietyPDF extends React.Component {
                         />
                       </div>
                     </CardView>
+                    <CardView viewIcon="plainNumber">
+                      <div className="p1">
+                        <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noPeopleDonatingBlood) }</p>
+                        <p className="m0">
+                          {
+                            t("common:indicators.KPI_noPeopleDonatingBlood.name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}`
+                          }
+                        </p>
+                      </div>
+                    </CardView>
+                    <CardOverlay>
+                      <p>{ t("common:indicators.KPI_noPeopleDonatingBlood.definition") }</p>
+                      <p>Source: { t("common:indicators.KPI_noPeopleDonatingBlood.source") }</p>
+                    </CardOverlay>
+                  </Card>
                 </div>
+
+                {
+                  /*
+                   * GDP
+                   *
+                   */
+                }
+
+                <div className="col sm-6 lg-4 px1 pb2">
+                  <Card bgColor="bg-beige" basicCard controlsVisible={niceNum(this.state.latestGDPData.GDP) !== "N/A"}>
+                    <CardView>
+                      {
+                        niceNum(this.state.latestGDPData.GDP) !== "N/A" ? (
+                          <div className="pt3 px1">
+                            <p className="text-xs strong m0">
+                              { niceNum(this.state.latestGDPData.GDP) === "N/A" ? "" : "USD" }
+                            </p>
+                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestGDPData.GDP) }</p>
+                            <p className="m0">
+                              { t("common:indicators.GDP.name") + `, ${t(`countries:${society.iso_2}`)}, ${this.state.latestGDPData.KPI_Year}` }
+                            </p>
+                          </div>
+                        ) : (
+                          <div className="pt3 px1">
+                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(this.state.latestGDPData.GDP) }</p>
+                            <p className="m0">
+                              { missingDataString("gbp", t(`countries:${society.iso_2}`), latestData.KPI_Year) }
+                            </p>
+                          </div>
+                        )
+                      }
+                    </CardView>
+                    <CardOverlay>
+                      <p>{ t("common:indicators.GDP.definition") }</p>
+                      <p>Source: { t("common:indicators.GDP.source") }</p>
+                    </CardOverlay>
+                  </Card>
+                </div>
+
+                {
+                  /*
+                   * Call to action
+                   *
+                   */
+                }
+
+                <div className="col sm-6 lg-4 px1 pb2">
+                  <Card bgColor="bg-primary" basicCard controlsVisible={false}>
+                    <CardView>
+                      <div className="pt3 px2">
+                        <p className="display-1 lh-1 strong mt0 mb1">
+                          { t("societies:callout")[0] }
+                        </p>
+                        <p className="m0">
+                          { t("societies:callout")[1] }
+                        </p>
+                        <p className="m0">{ t("societies:callout")[2] }<br />{ "fdrs@ifrc.org" }</p>
+                      </div>
+                    </CardView>
+                    <CardOverlay>
+                      <p>{ "" }</p>
+                    </CardOverlay>
+                  </Card>
+                </div>
+
 
               </div>
             </div>
           </div>
         </div>
 
-        <div className="clearfix text-center title bg-secondary p2">
 
-          For the latest information, see <a href="data.ifrc.org">data.ifrc.org</a>
-
-        </div>
 
       </section>
     )
   }
 }
 
-SocietyPDF.propTypes = {
+Society.propTypes = {
   t: React.PropTypes.func.isRequired,
   params: React.PropTypes.object.isRequired,
   society: React.PropTypes.object,
@@ -459,27 +792,25 @@ SocietyPDF.propTypes = {
   timeSeriesMeta: React.PropTypes.array,
 }
 
-SocietyPDF.contextTypes = {
+Society.contextTypes = {
   i18n: React.PropTypes.object.isRequired,
 }
 
-SocietyPDF.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchDocuments, fetchTimeSeriesMeta ]
+Society.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
 
 const makeMapStateToProps = () => {
   const getSociety = makeGetSociety()
   const getSocietyData = makeGetSocietyData()
-  const getSocietyDocuments = makeGetSocietyDocuments()
   const groupTimeSeriesBySociety = makeGroupTimeSeriesBySociety()
   return (state, props) => ({
     grouping: groupTimeSeriesBySociety(state, props),
     society: getSociety(state, props),
     data: getSocietyData(state, props),
-    documents: getSocietyDocuments(state, props),
     nationalSocieties: state.appReducer.nationalSocieties,
     timeSeriesMeta: state.appReducer.timeSeriesMeta,
   })
 }
 
-export default translate([ "countries", "societies" ], { wait: true })(connect(makeMapStateToProps)(SocietyPDF))
+export default translate([ "countries", "societies", "national-societies" ], { wait: true })(connect(makeMapStateToProps)(Society))
 
 // export default connect(makeMapStateToProps)(Society)
