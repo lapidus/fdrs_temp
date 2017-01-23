@@ -1,6 +1,6 @@
 webpackJsonp([22,29],{
 
-/***/ 1324:
+/***/ 1310:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24,13 +24,13 @@ var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
 var _reactI18next = __webpack_require__(41);
 
-var _Breadcrumbs = __webpack_require__(1330);
+var _Breadcrumbs = __webpack_require__(1316);
 
 var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 
 var _appActions = __webpack_require__(69);
 
-var _lodash = __webpack_require__(462);
+var _lodash = __webpack_require__(461);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -334,7 +334,7 @@ exports.default = (0, _reactI18next.translate)(["societies", "national-societies
 
 /***/ },
 
-/***/ 1330:
+/***/ 1316:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";

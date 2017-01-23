@@ -1,6 +1,6 @@
 webpackJsonp([17,29],{
 
-/***/ 1322:
+/***/ 1308:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16,7 +16,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _groupBy = __webpack_require__(534);
+var _groupBy = __webpack_require__(530);
 
 var _groupBy2 = _interopRequireDefault(_groupBy);
 
@@ -24,11 +24,11 @@ var _reactRedux = __webpack_require__(27);
 
 var _reactI18next = __webpack_require__(41);
 
-var _SocietiesTable = __webpack_require__(1374);
+var _SocietiesTable = __webpack_require__(1360);
 
 var _SocietiesTable2 = _interopRequireDefault(_SocietiesTable);
 
-var _selectors = __webpack_require__(1334);
+var _selectors = __webpack_require__(1320);
 
 var _appActions = __webpack_require__(69);
 
@@ -159,7 +159,7 @@ exports.default = (0, _reactI18next.translate)("overview", { wait: true })((0, _
 
 /***/ },
 
-/***/ 1327:
+/***/ 1313:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -211,19 +211,19 @@ exports.default = niceNum;
 
 /***/ },
 
-/***/ 1331:
+/***/ 1317:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('filter', __webpack_require__(537));
+var convert = __webpack_require__(529),
+    func = convert('filter', __webpack_require__(533));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1334:
+/***/ 1320:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -234,21 +234,21 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesByYear = exports.makeGetIndicatorData = exports.makeGetSocietyDocuments = exports.makeGetSocietyData = exports.makeGetSociety = undefined;
 
-var _reselect = __webpack_require__(311);
+var _reselect = __webpack_require__(310);
 
-var _filter = __webpack_require__(1331);
+var _filter = __webpack_require__(1317);
 
 var _filter2 = _interopRequireDefault(_filter);
 
-var _find = __webpack_require__(1335);
+var _find = __webpack_require__(1321);
 
 var _find2 = _interopRequireDefault(_find);
 
-var _map = __webpack_require__(535);
+var _map = __webpack_require__(531);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _groupBy = __webpack_require__(534);
+var _groupBy = __webpack_require__(530);
 
 var _groupBy2 = _interopRequireDefault(_groupBy);
 
@@ -351,19 +351,19 @@ var makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesBySociety = functi
 
 /***/ },
 
-/***/ 1335:
+/***/ 1321:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('find', __webpack_require__(1338));
+var convert = __webpack_require__(529),
+    func = convert('find', __webpack_require__(1324));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1337:
+/***/ 1323:
 /***/ function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
@@ -395,11 +395,11 @@ module.exports = createFind;
 
 /***/ },
 
-/***/ 1338:
+/***/ 1324:
 /***/ function(module, exports, __webpack_require__) {
 
-var createFind = __webpack_require__(1337),
-    findIndex = __webpack_require__(1339);
+var createFind = __webpack_require__(1323),
+    findIndex = __webpack_require__(1325);
 
 /**
  * Iterates over elements of `collection`, returning the first element
@@ -444,10 +444,10 @@ module.exports = find;
 
 /***/ },
 
-/***/ 1339:
+/***/ 1325:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(536),
+var baseFindIndex = __webpack_require__(532),
     baseIteratee = __webpack_require__(87),
     toInteger = __webpack_require__(178);
 
@@ -506,7 +506,7 @@ module.exports = findIndex;
 
 /***/ },
 
-/***/ 1363:
+/***/ 1349:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -528,15 +528,15 @@ var _LanguageLink = __webpack_require__(176);
 
 var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
 var _appActions = __webpack_require__(69);
 
-var _sortBy = __webpack_require__(310);
+var _sortBy = __webpack_require__(309);
 
 var _sortBy2 = _interopRequireDefault(_sortBy);
 
@@ -741,7 +741,7 @@ exports.default = SocietyRow;
 
 /***/ },
 
-/***/ 1371:
+/***/ 1357:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -759,13 +759,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(27);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
-var _SocietyRow = __webpack_require__(1363);
+var _SocietyRow = __webpack_require__(1349);
 
 var _SocietyRow2 = _interopRequireDefault(_SocietyRow);
 
@@ -875,7 +875,7 @@ exports.default = AllSocieties;
 
 /***/ },
 
-/***/ 1372:
+/***/ 1358:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -985,7 +985,7 @@ exports.default = (0, _reactI18next.translate)("overview", { wait: true })(Socie
 
 /***/ },
 
-/***/ 1373:
+/***/ 1359:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1001,13 +1001,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(27);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
-var _SocietyRow = __webpack_require__(1363);
+var _SocietyRow = __webpack_require__(1349);
 
 var _SocietyRow2 = _interopRequireDefault(_SocietyRow);
 
@@ -1060,7 +1060,7 @@ exports.default = SelectedSocieties;
 
 /***/ },
 
-/***/ 1374:
+/***/ 1360:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1082,19 +1082,19 @@ var _reactSelect = __webpack_require__(70);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _Header = __webpack_require__(1372);
+var _Header = __webpack_require__(1358);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _SelectedSocieties = __webpack_require__(1373);
+var _SelectedSocieties = __webpack_require__(1359);
 
 var _SelectedSocieties2 = _interopRequireDefault(_SelectedSocieties);
 
-var _AllSocieties = __webpack_require__(1371);
+var _AllSocieties = __webpack_require__(1357);
 
 var _AllSocieties2 = _interopRequireDefault(_AllSocieties);
 
-var _sortBy = __webpack_require__(310);
+var _sortBy = __webpack_require__(309);
 
 var _sortBy2 = _interopRequireDefault(_sortBy);
 

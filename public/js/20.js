@@ -1,6 +1,6 @@
 webpackJsonp([20,29],{
 
-/***/ 1323:
+/***/ 1309:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30,11 +30,11 @@ var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
 var _reduxTooltip = __webpack_require__(130);
 
-var _Breadcrumbs = __webpack_require__(1330);
+var _Breadcrumbs = __webpack_require__(1316);
 
 var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 
-var _selectors = __webpack_require__(1334);
+var _selectors = __webpack_require__(1320);
 
 var _appActions = __webpack_require__(69);
 
@@ -378,7 +378,7 @@ exports.default = (0, _reactI18next.translate)("overview", { wait: true })((0, _
 
 /***/ },
 
-/***/ 1330:
+/***/ 1316:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -474,19 +474,19 @@ exports.default = (0, _reactI18next.translate)([], { wait: true })(Breadcrumbs);
 
 /***/ },
 
-/***/ 1331:
+/***/ 1317:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('filter', __webpack_require__(537));
+var convert = __webpack_require__(529),
+    func = convert('filter', __webpack_require__(533));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1334:
+/***/ 1320:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -497,21 +497,21 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesByYear = exports.makeGetIndicatorData = exports.makeGetSocietyDocuments = exports.makeGetSocietyData = exports.makeGetSociety = undefined;
 
-var _reselect = __webpack_require__(311);
+var _reselect = __webpack_require__(310);
 
-var _filter = __webpack_require__(1331);
+var _filter = __webpack_require__(1317);
 
 var _filter2 = _interopRequireDefault(_filter);
 
-var _find = __webpack_require__(1335);
+var _find = __webpack_require__(1321);
 
 var _find2 = _interopRequireDefault(_find);
 
-var _map = __webpack_require__(535);
+var _map = __webpack_require__(531);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _groupBy = __webpack_require__(534);
+var _groupBy = __webpack_require__(530);
 
 var _groupBy2 = _interopRequireDefault(_groupBy);
 
@@ -614,19 +614,19 @@ var makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesBySociety = functi
 
 /***/ },
 
-/***/ 1335:
+/***/ 1321:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('find', __webpack_require__(1338));
+var convert = __webpack_require__(529),
+    func = convert('find', __webpack_require__(1324));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1337:
+/***/ 1323:
 /***/ function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
@@ -658,11 +658,11 @@ module.exports = createFind;
 
 /***/ },
 
-/***/ 1338:
+/***/ 1324:
 /***/ function(module, exports, __webpack_require__) {
 
-var createFind = __webpack_require__(1337),
-    findIndex = __webpack_require__(1339);
+var createFind = __webpack_require__(1323),
+    findIndex = __webpack_require__(1325);
 
 /**
  * Iterates over elements of `collection`, returning the first element
@@ -707,10 +707,10 @@ module.exports = find;
 
 /***/ },
 
-/***/ 1339:
+/***/ 1325:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(536),
+var baseFindIndex = __webpack_require__(532),
     baseIteratee = __webpack_require__(87),
     toInteger = __webpack_require__(178);
 

@@ -1,6 +1,6 @@
 webpackJsonp([4,29],{
 
-/***/ 1327:
+/***/ 1313:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52,7 +52,7 @@ exports.default = niceNum;
 
 /***/ },
 
-/***/ 1328:
+/***/ 1314:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91,7 +91,7 @@ exports.default = HeadlineDivider;
 
 /***/ },
 
-/***/ 1329:
+/***/ 1315:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109,7 +109,7 @@ var _LanguageLink = __webpack_require__(176);
 
 var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
-var _Icon = __webpack_require__(533);
+var _Icon = __webpack_require__(528);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -154,7 +154,7 @@ exports.default = NextChapter;
 
 /***/ },
 
-/***/ 1332:
+/***/ 1318:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -357,7 +357,7 @@ module.exports = SideNavigation;
 
 /***/ },
 
-/***/ 1333:
+/***/ 1319:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -373,9 +373,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
@@ -599,7 +599,7 @@ exports.default = LineChart;
 
 /***/ },
 
-/***/ 1340:
+/***/ 1326:
 /***/ function(module, exports) {
 
 "use strict";
@@ -626,7 +626,7 @@ exports.default = {
 
 /***/ },
 
-/***/ 1341:
+/***/ 1327:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -670,7 +670,7 @@ exports.default = ChartTooltip;
 
 /***/ },
 
-/***/ 1343:
+/***/ 1329:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -682,7 +682,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -911,7 +911,7 @@ module.exports = SimpleBarChart;
 
 /***/ },
 
-/***/ 1346:
+/***/ 1332:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -928,7 +928,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _max = __webpack_require__(540);
+var _max = __webpack_require__(534);
 
 var _max2 = _interopRequireDefault(_max);
 
@@ -1042,7 +1042,7 @@ var TabPanel = exports.TabPanel = function TabPanel(_ref) {
 
 /***/ },
 
-/***/ 1347:
+/***/ 1333:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1058,13 +1058,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
-var _ChartTooltip = __webpack_require__(1341);
+var _ChartTooltip = __webpack_require__(1327);
 
 var _ChartTooltip2 = _interopRequireDefault(_ChartTooltip);
 
-var _numberFormatter = __webpack_require__(1340);
+var _numberFormatter = __webpack_require__(1326);
 
 var _numberFormatter2 = _interopRequireDefault(_numberFormatter);
 
@@ -1280,7 +1280,7 @@ exports.default = StackedBarChart;
 
 /***/ },
 
-/***/ 550:
+/***/ 546:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1300,35 +1300,35 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactI18next = __webpack_require__(41);
 
-var _numberFormatter = __webpack_require__(1340);
+var _numberFormatter = __webpack_require__(1326);
 
 var _numberFormatter2 = _interopRequireDefault(_numberFormatter);
 
-var _HeadlineDivider = __webpack_require__(1328);
+var _HeadlineDivider = __webpack_require__(1314);
 
 var _HeadlineDivider2 = _interopRequireDefault(_HeadlineDivider);
 
-var _NextChapter = __webpack_require__(1329);
+var _NextChapter = __webpack_require__(1315);
 
 var _NextChapter2 = _interopRequireDefault(_NextChapter);
 
-var _SideNavigation = __webpack_require__(1332);
+var _SideNavigation = __webpack_require__(1318);
 
 var _SideNavigation2 = _interopRequireDefault(_SideNavigation);
 
-var _SimpleBarChart = __webpack_require__(1343);
+var _SimpleBarChart = __webpack_require__(1329);
 
 var _SimpleBarChart2 = _interopRequireDefault(_SimpleBarChart);
 
-var _StackedBarChart = __webpack_require__(1347);
+var _StackedBarChart = __webpack_require__(1333);
 
 var _StackedBarChart2 = _interopRequireDefault(_StackedBarChart);
 
-var _LineChart = __webpack_require__(1333);
+var _LineChart = __webpack_require__(1319);
 
 var _LineChart2 = _interopRequireDefault(_LineChart);
 
-var _Tabs = __webpack_require__(1346);
+var _Tabs = __webpack_require__(1332);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

@@ -26,7 +26,8 @@ import {
   geoTimes,
   geoWagner6
 } from "d3-geo-projection"
-import topojson from "topojson-client"
+
+import {feature} from "topojson-client"
 
 import {
   makeGetIndicatorData,
@@ -54,7 +55,7 @@ class Map extends React.Component {
     const max = Number(maxBy(maxArray))
 
     this.state = {
-      countries: this.props.countryPaths ? topojson.feature(props.countryPaths, props.countryPaths.objects.countries).features : null,
+      countries: this.props.countryPaths ? feature(props.countryPaths, props.countryPaths.objects.countries).features : null,
       loading: !this.props.countryPaths ? true : false,
       currentYearData: currentYearData,
       minData: min,
@@ -83,7 +84,7 @@ class Map extends React.Component {
 
     if(nextProps.countryPaths !== this.props.countryPaths) {
       this.setState({
-        countries: topojson.feature(nextProps.countryPaths, nextProps.countryPaths.objects.countries).features,
+        countries: feature(nextProps.countryPaths, nextProps.countryPaths.objects.countries).features,
         loading: false,
       })
     }

@@ -1,6 +1,6 @@
 webpackJsonp([3,29],{
 
-/***/ 1327:
+/***/ 1313:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52,7 +52,7 @@ exports.default = niceNum;
 
 /***/ },
 
-/***/ 1328:
+/***/ 1314:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91,7 +91,7 @@ exports.default = HeadlineDivider;
 
 /***/ },
 
-/***/ 1329:
+/***/ 1315:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109,7 +109,7 @@ var _LanguageLink = __webpack_require__(176);
 
 var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
-var _Icon = __webpack_require__(533);
+var _Icon = __webpack_require__(528);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -154,7 +154,7 @@ exports.default = NextChapter;
 
 /***/ },
 
-/***/ 1333:
+/***/ 1319:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -170,9 +170,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
@@ -396,7 +396,7 @@ exports.default = LineChart;
 
 /***/ },
 
-/***/ 1340:
+/***/ 1326:
 /***/ function(module, exports) {
 
 "use strict";
@@ -423,7 +423,7 @@ exports.default = {
 
 /***/ },
 
-/***/ 1341:
+/***/ 1327:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -467,7 +467,7 @@ exports.default = ChartTooltip;
 
 /***/ },
 
-/***/ 1346:
+/***/ 1332:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -484,7 +484,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _max = __webpack_require__(540);
+var _max = __webpack_require__(534);
 
 var _max2 = _interopRequireDefault(_max);
 
@@ -598,7 +598,7 @@ var TabPanel = exports.TabPanel = function TabPanel(_ref) {
 
 /***/ },
 
-/***/ 1347:
+/***/ 1333:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -614,13 +614,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
-var _ChartTooltip = __webpack_require__(1341);
+var _ChartTooltip = __webpack_require__(1327);
 
 var _ChartTooltip2 = _interopRequireDefault(_ChartTooltip);
 
-var _numberFormatter = __webpack_require__(1340);
+var _numberFormatter = __webpack_require__(1326);
 
 var _numberFormatter2 = _interopRequireDefault(_numberFormatter);
 
@@ -836,7 +836,7 @@ exports.default = StackedBarChart;
 
 /***/ },
 
-/***/ 1367:
+/***/ 1353:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1043,7 +1043,7 @@ exports.default = StaffCompositionChart;
 
 /***/ },
 
-/***/ 1368:
+/***/ 1354:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1190,7 +1190,7 @@ exports.default = StaffGenderDistribution;
 
 /***/ },
 
-/***/ 546:
+/***/ 542:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1210,33 +1210,33 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactI18next = __webpack_require__(41);
 
-var _NextChapter = __webpack_require__(1329);
+var _NextChapter = __webpack_require__(1315);
 
 var _NextChapter2 = _interopRequireDefault(_NextChapter);
 
-var _numberFormatter = __webpack_require__(1340);
+var _numberFormatter = __webpack_require__(1326);
 
 var _numberFormatter2 = _interopRequireDefault(_numberFormatter);
 
-var _HeadlineDivider = __webpack_require__(1328);
+var _HeadlineDivider = __webpack_require__(1314);
 
 var _HeadlineDivider2 = _interopRequireDefault(_HeadlineDivider);
 
-var _LineChart = __webpack_require__(1333);
+var _LineChart = __webpack_require__(1319);
 
 var _LineChart2 = _interopRequireDefault(_LineChart);
 
-var _Tabs = __webpack_require__(1346);
+var _Tabs = __webpack_require__(1332);
 
-var _StaffComposition = __webpack_require__(1367);
+var _StaffComposition = __webpack_require__(1353);
 
 var _StaffComposition2 = _interopRequireDefault(_StaffComposition);
 
-var _StaffGenderDistribution = __webpack_require__(1368);
+var _StaffGenderDistribution = __webpack_require__(1354);
 
 var _StaffGenderDistribution2 = _interopRequireDefault(_StaffGenderDistribution);
 
-var _StackedBarChart = __webpack_require__(1347);
+var _StackedBarChart = __webpack_require__(1333);
 
 var _StackedBarChart2 = _interopRequireDefault(_StackedBarChart);
 

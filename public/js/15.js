@@ -1,6 +1,6 @@
 webpackJsonp([15,29],{
 
-/***/ 1325:
+/***/ 1311:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26,81 +26,81 @@ var _reactSelect = __webpack_require__(70);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _minBy = __webpack_require__(1345);
+var _minBy = __webpack_require__(1331);
 
 var _minBy2 = _interopRequireDefault(_minBy);
 
-var _maxBy = __webpack_require__(1344);
+var _maxBy = __webpack_require__(1330);
 
 var _maxBy2 = _interopRequireDefault(_maxBy);
 
-var _max = __webpack_require__(540);
+var _max = __webpack_require__(534);
 
 var _max2 = _interopRequireDefault(_max);
 
-var _map = __webpack_require__(535);
+var _map = __webpack_require__(531);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _filter = __webpack_require__(1331);
+var _filter = __webpack_require__(1317);
 
 var _filter2 = _interopRequireDefault(_filter);
 
-var _uniqBy = __webpack_require__(1361);
+var _uniqBy = __webpack_require__(1347);
 
 var _uniqBy2 = _interopRequireDefault(_uniqBy);
 
-var _sortBy = __webpack_require__(310);
+var _sortBy = __webpack_require__(309);
 
 var _sortBy2 = _interopRequireDefault(_sortBy);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
-var _Icon = __webpack_require__(533);
+var _Icon = __webpack_require__(528);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
 var _reactI18next = __webpack_require__(41);
 
-var _LineChart = __webpack_require__(1333);
+var _LineChart = __webpack_require__(1319);
 
 var _LineChart2 = _interopRequireDefault(_LineChart);
 
-var _ShareBtn = __webpack_require__(1359);
+var _ShareBtn = __webpack_require__(1345);
 
 var _ShareBtn2 = _interopRequireDefault(_ShareBtn);
 
-var _Breadcrumbs = __webpack_require__(1330);
+var _Breadcrumbs = __webpack_require__(1316);
 
 var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 
-var _Globe = __webpack_require__(1364);
+var _Globe = __webpack_require__(1350);
 
 var _Globe2 = _interopRequireDefault(_Globe);
 
-var _Card = __webpack_require__(1355);
+var _Card = __webpack_require__(1341);
 
 var _Card2 = _interopRequireDefault(_Card);
 
-var _CardView = __webpack_require__(1357);
+var _CardView = __webpack_require__(1343);
 
 var _CardView2 = _interopRequireDefault(_CardView);
 
-var _CardOverlay = __webpack_require__(1356);
+var _CardOverlay = __webpack_require__(1342);
 
 var _CardOverlay2 = _interopRequireDefault(_CardOverlay);
 
-var _GeneratedIntroText = __webpack_require__(1351);
+var _GeneratedIntroText = __webpack_require__(1337);
 
 var _GeneratedIntroText2 = _interopRequireDefault(_GeneratedIntroText);
 
-var _FilteredSocietiesSidebar = __webpack_require__(1350);
+var _FilteredSocietiesSidebar = __webpack_require__(1336);
 
 var _FilteredSocietiesSidebar2 = _interopRequireDefault(_FilteredSocietiesSidebar);
 
-var _selectors = __webpack_require__(1334);
+var _selectors = __webpack_require__(1320);
 
 var _appActions = __webpack_require__(69);
 
@@ -1390,7 +1390,7 @@ exports.default = (0, _reactI18next.translate)(["countries", "societies", "natio
 
 /***/ },
 
-/***/ 1327:
+/***/ 1313:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1442,7 +1442,7 @@ exports.default = niceNum;
 
 /***/ },
 
-/***/ 1330:
+/***/ 1316:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1538,19 +1538,19 @@ exports.default = (0, _reactI18next.translate)([], { wait: true })(Breadcrumbs);
 
 /***/ },
 
-/***/ 1331:
+/***/ 1317:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('filter', __webpack_require__(537));
+var convert = __webpack_require__(529),
+    func = convert('filter', __webpack_require__(533));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1333:
+/***/ 1319:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1566,9 +1566,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
@@ -1792,7 +1792,7 @@ exports.default = LineChart;
 
 /***/ },
 
-/***/ 1334:
+/***/ 1320:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1803,21 +1803,21 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesByYear = exports.makeGetIndicatorData = exports.makeGetSocietyDocuments = exports.makeGetSocietyData = exports.makeGetSociety = undefined;
 
-var _reselect = __webpack_require__(311);
+var _reselect = __webpack_require__(310);
 
-var _filter = __webpack_require__(1331);
+var _filter = __webpack_require__(1317);
 
 var _filter2 = _interopRequireDefault(_filter);
 
-var _find = __webpack_require__(1335);
+var _find = __webpack_require__(1321);
 
 var _find2 = _interopRequireDefault(_find);
 
-var _map = __webpack_require__(535);
+var _map = __webpack_require__(531);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _groupBy = __webpack_require__(534);
+var _groupBy = __webpack_require__(530);
 
 var _groupBy2 = _interopRequireDefault(_groupBy);
 
@@ -1920,19 +1920,19 @@ var makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesBySociety = functi
 
 /***/ },
 
-/***/ 1335:
+/***/ 1321:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('find', __webpack_require__(1338));
+var convert = __webpack_require__(529),
+    func = convert('find', __webpack_require__(1324));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1337:
+/***/ 1323:
 /***/ function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
@@ -1964,11 +1964,11 @@ module.exports = createFind;
 
 /***/ },
 
-/***/ 1338:
+/***/ 1324:
 /***/ function(module, exports, __webpack_require__) {
 
-var createFind = __webpack_require__(1337),
-    findIndex = __webpack_require__(1339);
+var createFind = __webpack_require__(1323),
+    findIndex = __webpack_require__(1325);
 
 /**
  * Iterates over elements of `collection`, returning the first element
@@ -2013,10 +2013,10 @@ module.exports = find;
 
 /***/ },
 
-/***/ 1339:
+/***/ 1325:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(536),
+var baseFindIndex = __webpack_require__(532),
     baseIteratee = __webpack_require__(87),
     toInteger = __webpack_require__(178);
 
@@ -2075,11 +2075,11 @@ module.exports = findIndex;
 
 /***/ },
 
-/***/ 1344:
+/***/ 1330:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseExtremum = __webpack_require__(309),
-    baseGt = __webpack_require__(538),
+var baseExtremum = __webpack_require__(308),
+    baseGt = __webpack_require__(535),
     baseIteratee = __webpack_require__(87);
 
 /**
@@ -2116,12 +2116,12 @@ module.exports = maxBy;
 
 /***/ },
 
-/***/ 1345:
+/***/ 1331:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseExtremum = __webpack_require__(309),
+var baseExtremum = __webpack_require__(308),
     baseIteratee = __webpack_require__(87),
-    baseLt = __webpack_require__(539);
+    baseLt = __webpack_require__(536);
 
 /**
  * This method is like `_.min` except that it accepts `iteratee` which is
@@ -2157,7 +2157,7 @@ module.exports = minBy;
 
 /***/ },
 
-/***/ 1350:
+/***/ 1336:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2177,15 +2177,15 @@ var _LanguageLink = __webpack_require__(176);
 
 var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
-var _reactIscroll = __webpack_require__(313);
+var _reactIscroll = __webpack_require__(312);
 
 var _reactIscroll2 = _interopRequireDefault(_reactIscroll);
 
-var _StickySidebar = __webpack_require__(1353);
+var _StickySidebar = __webpack_require__(1339);
 
 var _StickySidebar2 = _interopRequireDefault(_StickySidebar);
 
-var _Textfield = __webpack_require__(1354);
+var _Textfield = __webpack_require__(1340);
 
 var _Textfield2 = _interopRequireDefault(_Textfield);
 
@@ -2199,7 +2199,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var iScroll = __webpack_require__(312);
+var iScroll = __webpack_require__(311);
 
 var FilteredSocietiesSidebar = function (_React$Component) {
   _inherits(FilteredSocietiesSidebar, _React$Component);
@@ -2330,7 +2330,7 @@ exports.default = (0, _reactI18next.translate)(["national-societies"], { wait: t
 
 /***/ },
 
-/***/ 1351:
+/***/ 1337:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2348,7 +2348,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
@@ -2413,7 +2413,7 @@ exports.default = (0, _reactI18next.translate)(["national-societies"], { wait: t
 
 /***/ },
 
-/***/ 1353:
+/***/ 1339:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2429,7 +2429,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactIscroll = __webpack_require__(313);
+var _reactIscroll = __webpack_require__(312);
 
 var _reactIscroll2 = _interopRequireDefault(_reactIscroll);
 
@@ -2441,7 +2441,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var iScroll = __webpack_require__(312);
+var iScroll = __webpack_require__(311);
 
 var StickySidebar = function (_React$Component) {
   _inherits(StickySidebar, _React$Component);
@@ -2591,7 +2591,7 @@ exports.default = StickySidebar;
 
 /***/ },
 
-/***/ 1354:
+/***/ 1340:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2682,7 +2682,7 @@ exports.default = Textfield;
 
 /***/ },
 
-/***/ 1355:
+/***/ 1341:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2943,7 +2943,7 @@ exports.default = Card;
 
 /***/ },
 
-/***/ 1356:
+/***/ 1342:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2981,7 +2981,7 @@ exports.default = CardOverlay;
 
 /***/ },
 
-/***/ 1357:
+/***/ 1343:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3019,7 +3019,7 @@ exports.default = CardView;
 
 /***/ },
 
-/***/ 1359:
+/***/ 1345:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3124,23 +3124,23 @@ exports.default = ShareBtn;
 
 /***/ },
 
-/***/ 1361:
+/***/ 1347:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('uniqBy', __webpack_require__(1362));
+var convert = __webpack_require__(529),
+    func = convert('uniqBy', __webpack_require__(1348));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1362:
+/***/ 1348:
 /***/ function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
-    baseUniq = __webpack_require__(541);
+    baseUniq = __webpack_require__(537);
 
 /**
  * This method is like `_.uniq` except that it accepts `iteratee` which is
@@ -3174,7 +3174,7 @@ module.exports = uniqBy;
 
 /***/ },
 
-/***/ 1364:
+/***/ 1350:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3196,9 +3196,7 @@ var _d = __webpack_require__(177);
 
 var _d3Geo = __webpack_require__(2);
 
-var _topojsonClient = __webpack_require__(314);
-
-var _topojsonClient2 = _interopRequireDefault(_topojsonClient);
+var _topojsonClient = __webpack_require__(313);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3243,7 +3241,7 @@ var Globe = function (_React$Component) {
         (0, _d.json)("/api/report/world-topo.json", function (err, world) {
           if (err) console.log(err);
           _this2.setState({
-            countries: _topojsonClient2.default.feature(world, world.objects.countries).features,
+            countries: (0, _topojsonClient.feature)(world, world.objects.countries).features,
             loading: false
           });
           resolve();

@@ -1,6 +1,6 @@
 webpackJsonp([16,29],{
 
-/***/ 1326:
+/***/ 1312:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26,69 +26,77 @@ var _reactSelect = __webpack_require__(70);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _minBy = __webpack_require__(1345);
+var _minBy = __webpack_require__(1331);
 
 var _minBy2 = _interopRequireDefault(_minBy);
 
-var _maxBy = __webpack_require__(1344);
+var _maxBy = __webpack_require__(1330);
 
 var _maxBy2 = _interopRequireDefault(_maxBy);
 
-var _map = __webpack_require__(535);
+var _max = __webpack_require__(534);
+
+var _max2 = _interopRequireDefault(_max);
+
+var _map = __webpack_require__(531);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _filter = __webpack_require__(1331);
+var _filter = __webpack_require__(1317);
 
 var _filter2 = _interopRequireDefault(_filter);
 
-var _uniqBy = __webpack_require__(1361);
+var _uniqBy = __webpack_require__(1347);
 
 var _uniqBy2 = _interopRequireDefault(_uniqBy);
 
-var _sortBy = __webpack_require__(310);
+var _sortBy = __webpack_require__(309);
 
 var _sortBy2 = _interopRequireDefault(_sortBy);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
+var _Icon = __webpack_require__(528);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
 var _reactI18next = __webpack_require__(41);
 
-var _LineChart = __webpack_require__(1333);
+var _LineChart = __webpack_require__(1319);
 
 var _LineChart2 = _interopRequireDefault(_LineChart);
 
-var _ShareBtn = __webpack_require__(1359);
+var _ShareBtn = __webpack_require__(1345);
 
 var _ShareBtn2 = _interopRequireDefault(_ShareBtn);
 
-var _Breadcrumbs = __webpack_require__(1330);
+var _Breadcrumbs = __webpack_require__(1316);
 
 var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 
-var _Card = __webpack_require__(1355);
+var _Card = __webpack_require__(1341);
 
 var _Card2 = _interopRequireDefault(_Card);
 
-var _CardView = __webpack_require__(1357);
+var _CardView = __webpack_require__(1343);
 
 var _CardView2 = _interopRequireDefault(_CardView);
 
-var _CardOverlay = __webpack_require__(1356);
+var _CardOverlay = __webpack_require__(1342);
 
 var _CardOverlay2 = _interopRequireDefault(_CardOverlay);
 
-var _GeneratedIntroText = __webpack_require__(1351);
+var _GeneratedIntroText = __webpack_require__(1337);
 
 var _GeneratedIntroText2 = _interopRequireDefault(_GeneratedIntroText);
 
-var _FilteredSocietiesSidebar = __webpack_require__(1350);
+var _FilteredSocietiesSidebar = __webpack_require__(1336);
 
 var _FilteredSocietiesSidebar2 = _interopRequireDefault(_FilteredSocietiesSidebar);
 
-var _selectors = __webpack_require__(1334);
+var _selectors = __webpack_require__(1320);
 
 var _appActions = __webpack_require__(69);
 
@@ -117,18 +125,20 @@ function missingDataString(dataType, countryName, year) {
   return "There is no " + dataType + " data available for " + countryName + " for " + year;
 }
 
-var SocietyPDF = function (_React$Component) {
-  _inherits(SocietyPDF, _React$Component);
+var Society = function (_React$Component) {
+  _inherits(Society, _React$Component);
 
-  function SocietyPDF(props, context) {
-    _classCallCheck(this, SocietyPDF);
+  function Society(props, context) {
+    _classCallCheck(this, Society);
 
-    var _this = _possibleConstructorReturn(this, (SocietyPDF.__proto__ || Object.getPrototypeOf(SocietyPDF)).call(this, props, context));
+    var _this = _possibleConstructorReturn(this, (Society.__proto__ || Object.getPrototypeOf(Society)).call(this, props, context));
 
     var selectedCountry = {};
     selectedCountry[props.society.iso_3] = { fillKey: "red" };
 
     _this.state = {
+      lastLanguage: _this.context.i18n.language,
+      currentLanguage: _this.context.i18n.language,
       year: getLatestYearDocuments(props),
       earliestData: (0, _minBy2.default)(props.data, function (o) {
         return o.KPI_Year;
@@ -160,11 +170,18 @@ var SocietyPDF = function (_React$Component) {
     return _this;
   }
 
-  _createClass(SocietyPDF, [{
+  _createClass(Society, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       document.body.classList.add("html-ready");
     }
+
+    // shouldComponentUpdate(nextProps, nextState, nextContext) {
+    //   const didYearChange = nextState.year !== this.state.year
+    //   const didSocietyChange = nextProps.society.iso_2 !== this.props.society.iso_2
+    //   return didYearChange || didSocietyChange || didLanguageChange
+    // }
+
   }, {
     key: "componentWillReceiveProps",
     value: function componentWillReceiveProps(nextProps) {
@@ -234,6 +251,9 @@ var SocietyPDF = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+
+      // <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+
       var _state = this.state,
           year = _state.year,
           earliestData = _state.earliestData,
@@ -250,45 +270,55 @@ var SocietyPDF = function (_React$Component) {
 
       return _react2.default.createElement(
         "section",
-        { className: "PDF", style: { zoom: '0.5' } },
+        null,
         _react2.default.createElement(
           "div",
           { className: "px1" },
           _react2.default.createElement(
             "div",
-            { className: "clearfix" },
+            { className: "clearfix mxn1" },
             _react2.default.createElement(
               "header",
-              { className: "col base-8 px1 py1" },
+              { className: "col sm-8 sm-offset-3 px1 py1" },
               _react2.default.createElement(
                 "p",
-                { className: "color-primary strong m0 small" },
-                "NATIONAL SOCIETY PROFILE"
+                { className: "color-primary strong m0 text-base" },
+                society.NSO_ZON_name
               ),
               _react2.default.createElement(
                 "h1",
-                { className: "display-2 m0 light" },
-                society.NSO_DON_name
+                { className: "text-md sm-text-lg md-text-xl light m0" },
+                t("national-societies:" + society.KPI_DON_Code)
               )
             )
           ),
           _react2.default.createElement(
             "div",
-            { className: "clearfix" },
+            { className: "clearfix mxn1" },
+            _react2.default.createElement(
+              "aside",
+              { className: "col sm-3 px1 sm-visible" },
+              _react2.default.createElement(_FilteredSocietiesSidebar2.default, {
+                nationalSocieties: this.props.nationalSocieties,
+                title: t("societies:nationalSocieties"),
+                filterPlaceholder: t("societies:searchPlaceholder"),
+                noSocietiesText: t("societies:noSocieties")
+              })
+            ),
             _react2.default.createElement(
               "div",
-              { className: "col px1" },
+              { className: "col sm-9 md-8 px1" },
               _react2.default.createElement(
                 "div",
-                { className: "clearfix mxn1" },
+                { className: "clearfix mxn1 pb2" },
                 _react2.default.createElement(
                   "div",
-                  { className: "col base-8 px1 pb1" },
+                  { className: "col sm-8 px1 pb1" },
                   _react2.default.createElement(
                     "p",
-                    { className: "" },
+                    { className: "text-base sm-text-sm" },
                     _react2.default.createElement(_GeneratedIntroText2.default, {
-                      societyName: society.NSO_DON_name,
+                      society: society,
                       admissionDate: society.admission_date.split(".")[2],
                       latestData: latestData,
                       earliestData: earliestData,
@@ -297,283 +327,769 @@ var SocietyPDF = function (_React$Component) {
                   ),
                   _react2.default.createElement(
                     "p",
-                    { className: "lead" },
+                    { className: "text-base sm-text-sm" },
                     t("societies:fillerText")[0],
-                    " " + earliestData.KPI_Year + ":"
+                    " " + earliestData.KPI_Year + " ",
+                    t("societies:fillerText")[1]
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "clearfix" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "left shadow-3" },
+                      _react2.default.createElement(
+                        "a",
+                        { target: "_blank", href: "/fdrs/societies/" + society.slug + ".pdf", className: "btn link-no-underline px1" },
+                        "Download PDF"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "right shadow-3" },
+                      _react2.default.createElement(
+                        "a",
+                        { href: "https://twitter.com/intent/tweet?text=Society Profile&hashtags=IFRC,FDRS" },
+                        _react2.default.createElement(_ShareBtn2.default, { service: "twitter" })
+                      ),
+                      _react2.default.createElement(_ShareBtn2.default, { service: "facebook" }),
+                      _react2.default.createElement(_ShareBtn2.default, { service: "mail" })
+                    )
                   )
-                )
+                ),
+                _react2.default.createElement("div", { className: "col base-8 base-offset-2 xs-6 xs-offset-3 sm-4 sm-offset-0 px1" })
               ),
               _react2.default.createElement(
                 "div",
-                { className: "clearfix pb2" },
+                { className: "clearfix mxn1 pb2" },
                 _react2.default.createElement(
                   "div",
-                  { className: "col base-6" },
+                  { className: "col sm-6 lg-4 px1 pb2" },
                   _react2.default.createElement(
-                    _CardView2.default,
-                    { viewIcon: "lineChart" },
+                    _Card2.default,
+                    { indicator: "KPI_noPeopleVolunteering" },
                     _react2.default.createElement(
-                      "div",
-                      { className: "pb1" },
+                      _CardView2.default,
+                      { viewIcon: "lineChart" },
                       _react2.default.createElement(
-                        "h1",
-                        { className: "subhead mt0 mb1" },
-                        t("common:indicators.KPI_noPeopleVolunteering.name")
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "h1",
+                          { className: "text-base mt0 mb1" },
+                          t("common:indicators.KPI_noPeopleVolunteering.name")
+                        ),
+                        _react2.default.createElement(_LineChart2.default, {
+                          height: 150,
+                          padding: {
+                            top: 10,
+                            bottom: 30,
+                            left: 40,
+                            right: 16
+                          },
+                          domain: {
+                            x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
+                            y: [0, roundIt((0, _maxBy2.default)(data, function (d) {
+                              return +d.KPI_noPeopleVolunteering || 0;
+                            }).KPI_noPeopleVolunteering)]
+                          },
+                          dataset: [data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleVolunteering) || null
+                            };
+                          })]
+                        })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      { viewIcon: "plainNumber" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(latestData.KPI_noPeopleVolunteering)
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          t("common:indicators.KPI_noPeopleVolunteering.name") + (", " + society.NSO_DON_name + " in " + latestData.KPI_Year)
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        t("common:indicators.KPI_noPeopleVolunteering.definition")
                       ),
-                      _react2.default.createElement(_LineChart2.default, {
-                        height: 150,
-                        padding: {
-                          top: 10,
-                          bottom: 30,
-                          left: 40,
-                          right: 16
-                        },
-                        domain: {
-                          x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
-                          y: [0, roundIt((0, _maxBy2.default)(data, function (d) {
-                            return +d.KPI_noPeopleVolunteering || 0;
-                          }).KPI_noPeopleVolunteering)]
-                        },
-                        dataset: [data.map(function (d) {
-                          return {
-                            x: new Date(d.KPI_Year, 1, 1),
-                            y: Number(d.KPI_noPeopleVolunteering) || null
-                          };
-                        })]
-                      })
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "Source: ",
+                        t("common:indicators.KPI_noPeopleVolunteering.source")
+                      )
                     )
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { className: "col base-6" },
+                  { className: "col sm-6 lg-4 px1 pb2" },
                   _react2.default.createElement(
-                    _CardView2.default,
-                    { viewIcon: "lineChart" },
+                    _Card2.default,
+                    { bgColor: "bg-beige", basicCard: true, controlsVisible: (0, _niceNum2.default)(this.state.latestPopulationData.Population, 2) !== "N/A" },
                     _react2.default.createElement(
-                      "div",
-                      { className: "pb1" },
+                      _CardView2.default,
+                      { viewIcon: "plainNumber" },
+                      (0, _niceNum2.default)(this.state.latestPopulationData.Population, 2) !== "N/A" ? _react2.default.createElement(
+                        "div",
+                        { className: "pt3 px1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(this.state.latestPopulationData.Population)
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          t("common:indicators.Population.name") + (", " + t("countries:" + society.iso_2) + ", " + this.state.latestPopulationData.KPI_Year)
+                        )
+                      ) : _react2.default.createElement(
+                        "div",
+                        { className: "pt3 px1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(this.state.latestPopulationData.Population)
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          missingDataString("population", t("countries:" + society.iso_2), latestData.KPI_Year)
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
                       _react2.default.createElement(
-                        "h1",
-                        { className: "subhead mt0 mb1" },
-                        t("common:indicators.KPI_noLocalUnits.name")
+                        "p",
+                        null,
+                        (0, _niceNum2.default)(latestData.Population, 2) == "N/A" ? missingDataString("population", t("countries:" + society.iso_2), latestData.KPI_Year) : t("common:indicators.Population.definition") + "."
                       ),
-                      _react2.default.createElement(_LineChart2.default, {
-                        height: 150,
-                        padding: {
-                          top: 10,
-                          bottom: 30,
-                          left: 40,
-                          right: 16
-                        },
-                        tickCount: function () {
-                          var domainValue = roundIt((0, _maxBy2.default)(data, function (d) {
-                            return +d.KPI_noLocalUnits || 0;
-                          }).KPI_noLocalUnits);
-                          return domainValue === 1 ? 2 : 3;
-                        }(),
-                        domain: {
-                          x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
-                          y: [0, function () {
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "Source: ",
+                        t("common:indicators.Population.source")
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "col sm-12 lg-4 px1 pb2" },
+                  _react2.default.createElement(
+                    _Card2.default,
+                    { indicator: "KPI_noLocalUnits" },
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      { viewIcon: "lineChart" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "h1",
+                          { className: "text-base mt0 mb1" },
+                          t("common:indicators.KPI_noLocalUnits.name")
+                        ),
+                        _react2.default.createElement(_LineChart2.default, {
+                          height: 150,
+                          padding: {
+                            top: 10,
+                            bottom: 30,
+                            left: 40,
+                            right: 16
+                          },
+                          tickCount: function () {
                             var domainValue = roundIt((0, _maxBy2.default)(data, function (d) {
                               return +d.KPI_noLocalUnits || 0;
                             }).KPI_noLocalUnits);
-                            return domainValue === 1 ? 2 : domainValue;
-                          }()]
-                        },
-                        dataset: [data.map(function (d) {
-                          return {
-                            x: new Date(d.KPI_Year, 1, 1),
-                            y: function () {
-                              return d.KPI_noLocalUnits ? Number(d.KPI_noLocalUnits) : null;
-                            }()
-                          };
-                        })]
-                      })
+                            return domainValue === 1 ? 2 : 3;
+                          }(),
+                          domain: {
+                            x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
+                            y: [0, function () {
+                              var domainValue = roundIt((0, _maxBy2.default)(data, function (d) {
+                                return +d.KPI_noLocalUnits || 0;
+                              }).KPI_noLocalUnits);
+                              return domainValue === 1 ? 2 : domainValue;
+                            }()]
+                          },
+                          dataset: [data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: function () {
+                                return d.KPI_noLocalUnits ? Number(d.KPI_noLocalUnits) : null;
+                              }()
+                            };
+                          })]
+                        })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      { viewIcon: "plainNumber" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(latestData.KPI_noLocalUnits)
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          t("common:indicators.KPI_noLocalUnits.name") + (", " + society.NSO_DON_name + ",  " + latestData.KPI_Year)
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        t("common:indicators.KPI_noLocalUnits.definition")
+                      ),
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "Source: ",
+                        t("common:indicators.KPI_noLocalUnits.source")
+                      )
                     )
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { className: "col base-6" },
+                  { className: "col sm-12 lg-8 px1 pb2" },
                   _react2.default.createElement(
-                    _CardView2.default,
-                    { viewIcon: "lineChart" },
+                    _Card2.default,
+                    null,
                     _react2.default.createElement(
-                      "div",
-                      { className: "pb1" },
+                      _CardView2.default,
+                      { viewIcon: "lineChart" },
                       _react2.default.createElement(
-                        "h1",
-                        { className: "subhead mt0 mb1" },
-                        "Income and Expenditure"
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "h1",
+                          { className: "text-base mt0 mb1" },
+                          t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name") + " and " + t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name")
+                        ),
+                        _react2.default.createElement(_LineChart2.default, {
+                          height: 150,
+                          padding: {
+                            top: 10,
+                            bottom: 30,
+                            left: 50,
+                            right: 16
+                          },
+                          domain: {
+                            x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
+                            y: [0, roundIt(Number((0, _maxBy2.default)(data, function (d) {
+                              return Number(d["KPI_IncomeLC (CHF)"]) || 0;
+                            })["KPI_IncomeLC (CHF)"]))]
+                          },
+                          dataset: [data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d["KPI_expenditureLC (CHF)"]) || null
+                            };
+                          }), data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d["KPI_IncomeLC (CHF)"]) || null
+                            };
+                          })]
+                        })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      { viewIcon: "plainNumber" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "div",
+                          { className: "clearfix mxn1" },
+                          _react2.default.createElement(
+                            "div",
+                            { className: "col sm-6 px1" },
+                            _react2.default.createElement(
+                              "p",
+                              { className: "text-md sm-text-lg md-text-xl strong m0" },
+                              (0, _niceNum2.default)(latestData["KPI_IncomeLC (CHF)"])
+                            ),
+                            _react2.default.createElement(
+                              "p",
+                              { className: "m0" },
+                              t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name") + (", " + society.NSO_DON_name + " in " + latestData.KPI_Year)
+                            )
+                          ),
+                          _react2.default.createElement(
+                            "div",
+                            { className: "col sm-6 px1" },
+                            _react2.default.createElement(
+                              "p",
+                              { className: "text-md sm-text-lg md-text-xl strong m0" },
+                              (0, _niceNum2.default)(latestData["KPI_expenditureLC (CHF)"])
+                            ),
+                            _react2.default.createElement(
+                              "p",
+                              { className: "m0" },
+                              t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name") + (", " + society.NSO_DON_name + " in " + latestData.KPI_Year)
+                            )
+                          )
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".definition")
                       ),
-                      _react2.default.createElement(_LineChart2.default, {
-                        height: 150,
-                        padding: {
-                          top: 10,
-                          bottom: 30,
-                          left: 50,
-                          right: 16
-                        },
-                        domain: {
-                          x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
-                          y: [0, roundIt(Number((0, _maxBy2.default)(data, function (d) {
-                            return Number(d["KPI_expenditureLC (CHF)"]) || 0;
-                          })["KPI_expenditureLC (CHF)"]))]
-                        },
-                        dataset: [data.map(function (d) {
-                          return {
-                            x: new Date(d.KPI_Year, 1, 1),
-                            y: Number(d["KPI_expenditureLC (CHF)"]) || null
-                          };
-                        }), data.map(function (d) {
-                          return {
-                            x: new Date(d.KPI_Year, 1, 1),
-                            y: Number(d["KPI_IncomeLC (CHF)"]) || null
-                          };
-                        })]
-                      })
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".definition")
+                      ),
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "Source: ",
+                        t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".source")
+                      )
                     )
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { className: "col base-6" },
+                  { className: "col sm-6 lg-4 px1 pb2" },
                   _react2.default.createElement(
-                    _CardView2.default,
-                    { viewIcon: "lineChart" },
+                    _Card2.default,
+                    { indicator: "KPI_noPaidStaff" },
                     _react2.default.createElement(
-                      "div",
-                      { className: "pb1" },
+                      _CardView2.default,
+                      { viewIcon: "lineChart" },
                       _react2.default.createElement(
-                        "h1",
-                        { className: "subhead mt0 mb1" },
-                        t("common:indicators.KPI_noPaidStaff.name")
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "h1",
+                          { className: "text-base mt0 mb1" },
+                          t("common:indicators.KPI_noPaidStaff.name")
+                        ),
+                        _react2.default.createElement(_LineChart2.default, {
+                          height: 150,
+                          padding: {
+                            top: 10,
+                            bottom: 30,
+                            left: 40,
+                            right: 16
+                          },
+                          domain: {
+                            x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
+                            y: [0, roundIt((0, _maxBy2.default)(data, function (d) {
+                              return +d.KPI_noPaidStaff || 0;
+                            }).KPI_noPaidStaff)]
+                          },
+                          dataset: [data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: function () {
+                                return d.KPI_noPaidStaff ? Number(d.KPI_noPaidStaff) : null;
+                              }()
+                            };
+                          })]
+                        })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      { viewIcon: "plainNumber" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(latestData.KPI_noPaidStaff)
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          t("common:indicators.KPI_noPaidStaff.definition") + (", " + society.NSO_DON_name + " in " + latestData.KPI_Year)
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        t("common:indicators.KPI_noPaidStaff.definition")
                       ),
-                      _react2.default.createElement(_LineChart2.default, {
-                        height: 150,
-                        padding: {
-                          top: 10,
-                          bottom: 30,
-                          left: 40,
-                          right: 16
-                        },
-                        domain: {
-                          x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
-                          y: [0, roundIt((0, _maxBy2.default)(data, function (d) {
-                            return +d.KPI_noPaidStaff || 0;
-                          }).KPI_noPaidStaff)]
-                        },
-                        dataset: [data.map(function (d) {
-                          return {
-                            x: new Date(d.KPI_Year, 1, 1),
-                            y: function () {
-                              return d.KPI_noPaidStaff ? Number(d.KPI_noPaidStaff) : null;
-                            }()
-                          };
-                        })]
-                      })
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "Source: ",
+                        t("common:indicators.KPI_noPaidStaff.source")
+                      )
                     )
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { className: "col base-6" },
+                  { className: "col sm-6 lg-4 px1 pb2" },
                   _react2.default.createElement(
-                    _CardView2.default,
-                    { viewIcon: "lineChart" },
+                    _Card2.default,
+                    { initialView: 0, bgColor: "bg-beige", basicCard: true, controlsVisible: (0, _niceNum2.default)(this.state.latestPovertyData.Poverty) !== "N/A" },
                     _react2.default.createElement(
-                      "div",
-                      { className: "" },
+                      _CardView2.default,
+                      { viewIcon: "plainNumber" },
+                      (0, _niceNum2.default)(this.state.latestPovertyData.Poverty) !== "N/A" ? _react2.default.createElement(
+                        "div",
+                        { className: "pt3 px1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(this.state.latestPovertyData.Poverty),
+                          "%"
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          t("common:indicators.Poverty.name") + (", " + t("countries:" + society.iso_2) + ", " + this.state.latestPovertyData.KPI_Year)
+                        )
+                      ) : _react2.default.createElement(
+                        "div",
+                        { className: "pt3 px1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(this.state.latestPovertyData.Poverty)
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          missingDataString("poverty", t("countries:" + society.iso_2), latestData.KPI_Year)
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
                       _react2.default.createElement(
-                        "h1",
-                        { className: "subhead mt0 mb1" },
-                        t("societies:peopleReached")
+                        "p",
+                        null,
+                        t("common:indicators.Poverty.definition")
                       ),
-                      _react2.default.createElement(_LineChart2.default, {
-                        height: 150,
-                        padding: {
-                          top: 10,
-                          bottom: 30,
-                          left: 40,
-                          right: 16
-                        },
-                        domain: {
-                          x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
-                          y: [0, roundIt((0, _maxBy2.default)(data, function (d) {
-                            return +d.KPI_noPeopleReachedDisaster || 0;
-                          }).KPI_noPeopleReachedDisaster)]
-                        },
-                        dataset: [data.map(function (d) {
-                          return {
-                            x: new Date(d.KPI_Year, 1, 1),
-                            y: Number(d.KPI_noPeopleReachedDisaster) || null
-                          };
-                        })]
-                      })
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "Source: ",
+                        t("common:indicators.Poverty.source")
+                      )
                     )
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { className: "col base-6" },
+                  { className: "col sm-12 lg-8 px1 pb2" },
                   _react2.default.createElement(
-                    _CardView2.default,
-                    { viewIcon: "lineChart" },
+                    _Card2.default,
+                    null,
                     _react2.default.createElement(
-                      "div",
-                      { className: "" },
+                      _CardView2.default,
+                      { viewIcon: "lineChart" },
                       _react2.default.createElement(
-                        "h1",
-                        { className: "subhead mt0 mb1" },
-                        t("common:indicators.KPI_noPeopleDonatingBlood.name")
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "h1",
+                          { className: "text-base mt0 mb1" },
+                          t("societies:peopleReached")
+                        ),
+                        _react2.default.createElement(_LineChart2.default, {
+                          height: 150,
+                          padding: {
+                            top: 10,
+                            bottom: 30,
+                            left: 50,
+                            right: 16
+                          },
+                          domain: {
+                            x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
+                            y: [0, roundIt(function () {
+                              var highestValues = data.map(function (d) {
+                                var values = [Number(d.KPI_noPeopleReachedHealth), Number(d.KPI_noPeopleReachedDisaster), Number(d.KPI_noPeopleReachedAllServices), Number(d.KPI_noPeopleReachedDevelopment), Number(d.KPI_noPeopleCoveredPreparedness)];
+                                return (0, _max2.default)(values);
+                              });
+                              return (0, _max2.default)(highestValues);
+                            }())]
+                          },
+                          dataset: [data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleReachedDisaster) || null
+                            };
+                          }), data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleReachedAllServices) || null
+                            };
+                          }), data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleReachedHealth) || null
+                            };
+                          }), data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleReachedDevelopment) || null
+                            };
+                          }), data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleCoveredPreparedness) || null
+                            };
+                          })]
+                        })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      { viewIcon: "plainNumber" },
+                      "View 1"
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        t("common:indicators.KPI_noPeopleReachedAllServices.definition")
                       ),
-                      _react2.default.createElement(_LineChart2.default, {
-                        height: 150,
-                        padding: {
-                          top: 10,
-                          bottom: 30,
-                          left: 40,
-                          right: 16
-                        },
-                        domain: {
-                          x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
-                          y: [0, roundIt((0, _maxBy2.default)(data, function (d) {
-                            return +d.KPI_noPeopleDonatingBlood || 0;
-                          }).KPI_noPeopleDonatingBlood)]
-                        },
-                        dataset: [data.map(function (d) {
-                          return {
-                            x: new Date(d.KPI_Year, 1, 1),
-                            y: Number(d.KPI_noPeopleDonatingBlood) || null
-                          };
-                        })]
-                      })
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "Source: ",
+                        t("common:indicators.KPI_noPeopleReachedAllServices.source")
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "col sm-6 lg-4 px1 pb2" },
+                  _react2.default.createElement(
+                    _Card2.default,
+                    { indicator: "KPI_noPeopleDonatingBlood" },
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      { viewIcon: "lineChart" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "h1",
+                          { className: "text-base mt0 mb1" },
+                          t("common:indicators.KPI_noPeopleDonatingBlood.name")
+                        ),
+                        _react2.default.createElement(_LineChart2.default, {
+                          height: 150,
+                          padding: {
+                            top: 10,
+                            bottom: 30,
+                            left: 40,
+                            right: 16
+                          },
+                          domain: {
+                            x: [new Date(earliestData.KPI_Year, 1, 1), new Date(latestData.KPI_Year, 1, 1)],
+                            y: [0, roundIt((0, _maxBy2.default)(data, function (d) {
+                              return +d.KPI_noPeopleDonatingBlood || 0;
+                            }).KPI_noPeopleDonatingBlood)]
+                          },
+                          dataset: [data.map(function (d) {
+                            return {
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleDonatingBlood) || null
+                            };
+                          })]
+                        })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      { viewIcon: "plainNumber" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "p1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(latestData.KPI_noPeopleDonatingBlood)
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          t("common:indicators.KPI_noPeopleDonatingBlood.name") + (", " + society.NSO_DON_name + " in " + latestData.KPI_Year)
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        t("common:indicators.KPI_noPeopleDonatingBlood.definition")
+                      ),
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "Source: ",
+                        t("common:indicators.KPI_noPeopleDonatingBlood.source")
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "col sm-6 lg-4 px1 pb2" },
+                  _react2.default.createElement(
+                    _Card2.default,
+                    { bgColor: "bg-beige", basicCard: true, controlsVisible: (0, _niceNum2.default)(this.state.latestGDPData.GDP) !== "N/A" },
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      null,
+                      (0, _niceNum2.default)(this.state.latestGDPData.GDP) !== "N/A" ? _react2.default.createElement(
+                        "div",
+                        { className: "pt3 px1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-xs strong m0" },
+                          (0, _niceNum2.default)(this.state.latestGDPData.GDP) === "N/A" ? "" : "USD"
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(this.state.latestGDPData.GDP)
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          t("common:indicators.GDP.name") + (", " + t("countries:" + society.iso_2) + ", " + this.state.latestGDPData.KPI_Year)
+                        )
+                      ) : _react2.default.createElement(
+                        "div",
+                        { className: "pt3 px1" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "text-md sm-text-lg md-text-xl strong m0" },
+                          (0, _niceNum2.default)(this.state.latestGDPData.GDP)
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          missingDataString("gbp", t("countries:" + society.iso_2), latestData.KPI_Year)
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        t("common:indicators.GDP.definition")
+                      ),
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "Source: ",
+                        t("common:indicators.GDP.source")
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "col sm-6 lg-4 px1 pb2" },
+                  _react2.default.createElement(
+                    _Card2.default,
+                    { bgColor: "bg-primary", basicCard: true, controlsVisible: false },
+                    _react2.default.createElement(
+                      _CardView2.default,
+                      null,
+                      _react2.default.createElement(
+                        "div",
+                        { className: "pt3 px2" },
+                        _react2.default.createElement(
+                          "p",
+                          { className: "display-1 lh-1 strong mt0 mb1" },
+                          t("societies:callout")[0]
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          t("societies:callout")[1]
+                        ),
+                        _react2.default.createElement(
+                          "p",
+                          { className: "m0" },
+                          t("societies:callout")[2],
+                          _react2.default.createElement("br", null),
+                          "fdrs@ifrc.org"
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _CardOverlay2.default,
+                      null,
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        ""
+                      )
                     )
                   )
                 )
               )
             )
           )
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "clearfix text-center title bg-secondary p2" },
-          "For the latest information, see ",
-          _react2.default.createElement(
-            "a",
-            { href: "data.ifrc.org" },
-            "data.ifrc.org"
-          )
         )
       );
     }
   }]);
 
-  return SocietyPDF;
+  return Society;
 }(_react2.default.Component);
 
-SocietyPDF.propTypes = {
+Society.propTypes = {
   t: _react2.default.PropTypes.func.isRequired,
   params: _react2.default.PropTypes.object.isRequired,
   society: _react2.default.PropTypes.object,
@@ -583,36 +1099,34 @@ SocietyPDF.propTypes = {
   timeSeriesMeta: _react2.default.PropTypes.array
 };
 
-SocietyPDF.contextTypes = {
+Society.contextTypes = {
   i18n: _react2.default.PropTypes.object.isRequired
 };
 
-SocietyPDF.needs = [_appActions.fetchNationalSocieties, _appActions.fetchTimeSeries, _appActions.fetchDocuments, _appActions.fetchTimeSeriesMeta];
+Society.needs = [_appActions.fetchNationalSocieties, _appActions.fetchTimeSeries, _appActions.fetchTimeSeriesMeta];
 
 var makeMapStateToProps = function makeMapStateToProps() {
   var getSociety = (0, _selectors.makeGetSociety)();
   var getSocietyData = (0, _selectors.makeGetSocietyData)();
-  var getSocietyDocuments = (0, _selectors.makeGetSocietyDocuments)();
   var groupTimeSeriesBySociety = (0, _selectors.makeGroupTimeSeriesBySociety)();
   return function (state, props) {
     return {
       grouping: groupTimeSeriesBySociety(state, props),
       society: getSociety(state, props),
       data: getSocietyData(state, props),
-      documents: getSocietyDocuments(state, props),
       nationalSocieties: state.appReducer.nationalSocieties,
       timeSeriesMeta: state.appReducer.timeSeriesMeta
     };
   };
 };
 
-exports.default = (0, _reactI18next.translate)(["countries", "societies"], { wait: true })((0, _reactRedux.connect)(makeMapStateToProps)(SocietyPDF));
+exports.default = (0, _reactI18next.translate)(["countries", "societies", "national-societies"], { wait: true })((0, _reactRedux.connect)(makeMapStateToProps)(Society));
 
 // export default connect(makeMapStateToProps)(Society)
 
 /***/ },
 
-/***/ 1327:
+/***/ 1313:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -664,7 +1178,7 @@ exports.default = niceNum;
 
 /***/ },
 
-/***/ 1330:
+/***/ 1316:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -760,19 +1274,19 @@ exports.default = (0, _reactI18next.translate)([], { wait: true })(Breadcrumbs);
 
 /***/ },
 
-/***/ 1331:
+/***/ 1317:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('filter', __webpack_require__(537));
+var convert = __webpack_require__(529),
+    func = convert('filter', __webpack_require__(533));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1333:
+/***/ 1319:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -788,9 +1302,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _victory = __webpack_require__(307);
+var _victory = __webpack_require__(306);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
@@ -1014,7 +1528,7 @@ exports.default = LineChart;
 
 /***/ },
 
-/***/ 1334:
+/***/ 1320:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1025,21 +1539,21 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesByYear = exports.makeGetIndicatorData = exports.makeGetSocietyDocuments = exports.makeGetSocietyData = exports.makeGetSociety = undefined;
 
-var _reselect = __webpack_require__(311);
+var _reselect = __webpack_require__(310);
 
-var _filter = __webpack_require__(1331);
+var _filter = __webpack_require__(1317);
 
 var _filter2 = _interopRequireDefault(_filter);
 
-var _find = __webpack_require__(1335);
+var _find = __webpack_require__(1321);
 
 var _find2 = _interopRequireDefault(_find);
 
-var _map = __webpack_require__(535);
+var _map = __webpack_require__(531);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _groupBy = __webpack_require__(534);
+var _groupBy = __webpack_require__(530);
 
 var _groupBy2 = _interopRequireDefault(_groupBy);
 
@@ -1142,19 +1656,19 @@ var makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesBySociety = functi
 
 /***/ },
 
-/***/ 1335:
+/***/ 1321:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('find', __webpack_require__(1338));
+var convert = __webpack_require__(529),
+    func = convert('find', __webpack_require__(1324));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1337:
+/***/ 1323:
 /***/ function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
@@ -1186,11 +1700,11 @@ module.exports = createFind;
 
 /***/ },
 
-/***/ 1338:
+/***/ 1324:
 /***/ function(module, exports, __webpack_require__) {
 
-var createFind = __webpack_require__(1337),
-    findIndex = __webpack_require__(1339);
+var createFind = __webpack_require__(1323),
+    findIndex = __webpack_require__(1325);
 
 /**
  * Iterates over elements of `collection`, returning the first element
@@ -1235,10 +1749,10 @@ module.exports = find;
 
 /***/ },
 
-/***/ 1339:
+/***/ 1325:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(536),
+var baseFindIndex = __webpack_require__(532),
     baseIteratee = __webpack_require__(87),
     toInteger = __webpack_require__(178);
 
@@ -1297,11 +1811,11 @@ module.exports = findIndex;
 
 /***/ },
 
-/***/ 1344:
+/***/ 1330:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseExtremum = __webpack_require__(309),
-    baseGt = __webpack_require__(538),
+var baseExtremum = __webpack_require__(308),
+    baseGt = __webpack_require__(535),
     baseIteratee = __webpack_require__(87);
 
 /**
@@ -1338,12 +1852,12 @@ module.exports = maxBy;
 
 /***/ },
 
-/***/ 1345:
+/***/ 1331:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseExtremum = __webpack_require__(309),
+var baseExtremum = __webpack_require__(308),
     baseIteratee = __webpack_require__(87),
-    baseLt = __webpack_require__(539);
+    baseLt = __webpack_require__(536);
 
 /**
  * This method is like `_.min` except that it accepts `iteratee` which is
@@ -1379,7 +1893,7 @@ module.exports = minBy;
 
 /***/ },
 
-/***/ 1350:
+/***/ 1336:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1399,15 +1913,15 @@ var _LanguageLink = __webpack_require__(176);
 
 var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
-var _reactIscroll = __webpack_require__(313);
+var _reactIscroll = __webpack_require__(312);
 
 var _reactIscroll2 = _interopRequireDefault(_reactIscroll);
 
-var _StickySidebar = __webpack_require__(1353);
+var _StickySidebar = __webpack_require__(1339);
 
 var _StickySidebar2 = _interopRequireDefault(_StickySidebar);
 
-var _Textfield = __webpack_require__(1354);
+var _Textfield = __webpack_require__(1340);
 
 var _Textfield2 = _interopRequireDefault(_Textfield);
 
@@ -1421,7 +1935,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var iScroll = __webpack_require__(312);
+var iScroll = __webpack_require__(311);
 
 var FilteredSocietiesSidebar = function (_React$Component) {
   _inherits(FilteredSocietiesSidebar, _React$Component);
@@ -1552,7 +2066,7 @@ exports.default = (0, _reactI18next.translate)(["national-societies"], { wait: t
 
 /***/ },
 
-/***/ 1351:
+/***/ 1337:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1570,7 +2084,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
@@ -1635,7 +2149,7 @@ exports.default = (0, _reactI18next.translate)(["national-societies"], { wait: t
 
 /***/ },
 
-/***/ 1353:
+/***/ 1339:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1651,7 +2165,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactIscroll = __webpack_require__(313);
+var _reactIscroll = __webpack_require__(312);
 
 var _reactIscroll2 = _interopRequireDefault(_reactIscroll);
 
@@ -1663,7 +2177,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var iScroll = __webpack_require__(312);
+var iScroll = __webpack_require__(311);
 
 var StickySidebar = function (_React$Component) {
   _inherits(StickySidebar, _React$Component);
@@ -1813,7 +2327,7 @@ exports.default = StickySidebar;
 
 /***/ },
 
-/***/ 1354:
+/***/ 1340:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1904,7 +2418,7 @@ exports.default = Textfield;
 
 /***/ },
 
-/***/ 1355:
+/***/ 1341:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2165,7 +2679,7 @@ exports.default = Card;
 
 /***/ },
 
-/***/ 1356:
+/***/ 1342:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2203,7 +2717,7 @@ exports.default = CardOverlay;
 
 /***/ },
 
-/***/ 1357:
+/***/ 1343:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2241,7 +2755,7 @@ exports.default = CardView;
 
 /***/ },
 
-/***/ 1359:
+/***/ 1345:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2346,23 +2860,23 @@ exports.default = ShareBtn;
 
 /***/ },
 
-/***/ 1361:
+/***/ 1347:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('uniqBy', __webpack_require__(1362));
+var convert = __webpack_require__(529),
+    func = convert('uniqBy', __webpack_require__(1348));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1362:
+/***/ 1348:
 /***/ function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
-    baseUniq = __webpack_require__(541);
+    baseUniq = __webpack_require__(537);
 
 /**
  * This method is like `_.uniq` except that it accepts `iteratee` which is

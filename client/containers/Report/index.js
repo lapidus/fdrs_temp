@@ -19,7 +19,6 @@ class Report extends React.Component {
   componentDidMount() {
     console.log("Mounting app: ", this.props.location)
 
-    // this.goToChapter = this.goToChapter.bind(this)
   }
 
   goToChapter(chapter) {
@@ -40,60 +39,6 @@ class Report extends React.Component {
         className={ language === "ar" ? "layout-rtl" : "" }
       >
         <Loader />
-        {/* <header className={ headerClassName } style={{ top: "72px", zIndex: 10 }}>
-          <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
-            <div
-              className="clearfix bg-white"
-              style={{ position: "relative", zIndex: 10000, height: "72px" }}
-            >
-              <div
-                className="logo-wrapper"
-                style={{ position: "relative", float: language === "ar" ? "right" : "left" }}
-              >
-                <button
-                  onClick={ toggleNav }
-                  className="btn no-focus"
-                  style={{ padding: "20px 20px" }}
-                >
-                  {
-                    navOpen ?
-                      <Icon width="28px" height="28px" name="close" /> :
-                      <Icon width="28px" height="28px" name="navigation" />
-                  }
-                </button>
-                <span className="caps">
-                  { t("report-common:site-title") }
-                </span>
-              </div>
-              <div
-                style={{ position: "relative", float: language === "ar" ? "left" : "right" }}
-                className="pr2 md-visible"
-              >
-                <a
-                  className="btn px1 py15"
-                  href={ `/downloads/Everyone_counts_2013_${language.toUpperCase()}.pdf` }
-                >
-                  &nbsp;&nbsp;&nbsp;
-                  <span className="caps">{ t("report-common:download") }</span>
-                </a>
-              </div>
-            </div>
-            <Navigation navOpen={ navOpen } />
-          </div>
-        </header> */}
-
-        {/* <div className="bg-secondary px1">
-          <div className="clearfix mxn1">
-            <div className="col sm-6 sm-offset-2 px1 py1"></div>
-          </div>
-        </div> */}
-
-        {/* <Breadcrumbs links={[
-          { name: "Home", path: "/" },
-          { name: "Services", path: "/" },
-          { name: "Report", path: undefined },
-          { name: "Introduction", path: undefined },
-        ]}/> */}
 
         <div className="sm-visible">
           <div className="clearfix bg-light px1">
@@ -121,16 +66,16 @@ class Report extends React.Component {
                     name="chapter-selector"
                     value={this.context.router.getCurrentLocation().pathname}
                     options={[
-                      { value: prefixLanguageToRoute(language, "/fdrs/report"), label: "Introduction" },
-                      { value: prefixLanguageToRoute(language, "/fdrs/report/who-we-are"), label: t("report-common:chapters.chapter1.title") },
-                      { value: prefixLanguageToRoute(language, "/fdrs/report/what-we-do"), label: t("report-common:chapters.chapter2.title") },
-                      { value: prefixLanguageToRoute(language, "/fdrs/report/living-our-fundamental-principles"), label: t("report-common:chapters.chapter3.title") },
-                      { value: prefixLanguageToRoute(language, "/fdrs/report/strategic-aim-1"), label: t("report-common:chapters.chapter4.title") },
-                      { value: prefixLanguageToRoute(language, "/fdrs/report/strategic-aim-2"), label: t("report-common:chapters.chapter5.title") },
-                      { value: prefixLanguageToRoute(language, "/fdrs/report/strategic-aim-3"), label: t("report-common:chapters.chapter6.title") },
-                      { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-1"), label: t("report-common:chapters.chapter7.title") },
-                      { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-2"), label: t("report-common:chapters.chapter8.title") },
-                      { value: prefixLanguageToRoute(language, "/fdrs/report/enabling-action-3"), label: t("report-common:chapters.chapter9.title") },
+                      { value: "/fdrs/report", label: "Introduction" },
+                      { value: "/fdrs/report/who-we-are", label: t("report-common:chapters.chapter1.title") },
+                      { value: "/fdrs/report/what-we-do", label: t("report-common:chapters.chapter2.title") },
+                      { value: "/fdrs/report/living-our-fundamental-principles", label: t("report-common:chapters.chapter3.title") },
+                      { value: "/fdrs/report/strategic-aim-1", label: t("report-common:chapters.chapter4.title") },
+                      { value: "/fdrs/report/strategic-aim-2", label: t("report-common:chapters.chapter5.title") },
+                      { value: "/fdrs/report/strategic-aim-3", label: t("report-common:chapters.chapter6.title") },
+                      { value: "/fdrs/report/enabling-action-1", label: t("report-common:chapters.chapter7.title") },
+                      { value: "/fdrs/report/enabling-action-2", label: t("report-common:chapters.chapter8.title") },
+                      { value: "/fdrs/report/enabling-action-3", label: t("report-common:chapters.chapter9.title") },
                     ]}
                     onChange={ this.goToChapter.bind(this) }
                   />
@@ -155,12 +100,12 @@ class Report extends React.Component {
               >
                 <ul className="clearfix">
                   <li>
-                    <LanguageLink to={ prefixLanguageToRoute(language, "/acknowledgements") }>
+                    <LanguageLink to={ "/acknowledgements") }>
                       <span>{ "Acknowledgements" }</span>
                     </LanguageLink>
                   </li>
                   <li>
-                    <LanguageLink to={ prefixLanguageToRoute(language, "/data") }>
+                    <LanguageLink to={ "/data") }>
                       <span>{ "Data" }</span>
                     </LanguageLink>
                   </li>

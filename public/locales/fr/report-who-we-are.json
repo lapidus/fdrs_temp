@@ -471,7 +471,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Middle East and North Africa",
+                                    "name": "Moyen-Orient et Afrique du Nord",
                                     "index": "4",
                                     "first": "7500",
                                     "second": "4150",
@@ -482,7 +482,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Africa",
+                                    "name": "Afrique",
                                     "index": "5",
                                     "first": "1114",
                                     "second": "800",
@@ -497,16 +497,16 @@
                         }
                     ]
                 },
-                "The Japanese Red Cross Society has the largest income but, in aggregate, the wealthiest National Societies are in Europe. Expenditure mirrors this trend. The largest numbers of paid staff are also in Europe, reflecting the tendency of richer National Societies to rely more on paid workers than volunteers, especially for services that are paid for or subsidised by national and local authorities.",
+                "La Socie\u0301te\u0301 de la Croix-Rouge du Japon affiche les recettes les plus e\u0301leve\u0301es, mais, dans l\u2019ensemble, les Socie\u0301te\u0301s nationales les plus riches sont situe\u0301es en Europe. De manie\u0300re ge\u0301ne\u0301rale, le niveau des de\u0301penses correspond au niveau des recettes. Les Socie\u0301te\u0301s nationales comptant le plus d\u2019employe\u0301s re\u0301mune\u0301re\u0301s sont e\u0301galement situe\u0301es en Europe, ce qui refle\u0300te la tendance des Socie\u0301te\u0301s nationales les plus riches a\u0300 s\u2019en remettre davantage a\u0300 des travailleurs re\u0301mune\u0301re\u0301s qu\u2019a\u0300 des volontaires, en particulier en ce qui concerne la prestation de services finance\u0301s ou subventionne\u0301s par les autorite\u0301s nationales et locales.",
                 {
                     "type": "tabs",
                     "title": "Regional budgets",
                     "tabs": [
                         {
-                            "name": "Income",
+                            "name": "Recettes",
                             "dataset": [
                                 {
-                                    "name": "Asia and The Pacific",
+                                    "name": "Asie-Pacifique",
                                     "index": "1",
                                     "first": "10663700440.393",
                                     "second": "810096534.6958",
@@ -528,7 +528,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Americas",
+                                    "name": "Ame\u0301riques",
                                     "index": "3",
                                     "first": "3065067796.1811",
                                     "second": "300863549.30617",
@@ -539,7 +539,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Middle East and North Africa",
+                                    "name": "Moyen-Orient et Afrique du Nord",
                                     "index": "4",
                                     "first": "235038763.49247",
                                     "second": "162610077.5209",

@@ -1,6 +1,6 @@
 webpackJsonp([24,29],{
 
-/***/ 1317:
+/***/ 1303:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20,7 +20,7 @@ var _LanguageLink = __webpack_require__(176);
 
 var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
-var _Breadcrumbs = __webpack_require__(1330);
+var _Breadcrumbs = __webpack_require__(1316);
 
 var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 
@@ -123,7 +123,7 @@ exports.default = (0, _reactI18next.translate)("data-download")(Download);
 
 /***/ },
 
-/***/ 1330:
+/***/ 1316:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";

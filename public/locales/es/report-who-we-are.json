@@ -281,15 +281,15 @@
                 "Nuestra mayor fortaleza reside en las personas que nos acompa\u00f1an. En 2013, las Sociedades Nacionales en conjunto contaban con ochenta (80) millones de miembros. Figuraban en plantilla cuatrocientos cincuenta y dos mil (452 000) miembros del personal y movilizaban a cerca de diecis\u00e9is (16) millones de voluntarios, con un \u00edndice de treinta y cinco voluntarios por cada miembro del personal y un cincuenta por ciento (50%) de mujeres entre los voluntarios.",
                 {
                     "type": "chart",
-                    "title": "Human Resources in National Societies",
+                    "title": "Recursos humanos de la Federaci\u00f3n Internacional",
                     "translations": {
-                        "volunteers": "Volunteers",
-                        "paidStaff": "Paid staff",
-                        "secretariatStaff": "Secretariat staff",
-                        "male": "Male",
-                        "female": "Female",
+                        "volunteers": "Voluntarios",
+                        "paidStaff": "Personal renumerado",
+                        "secretariatStaff": "Personal de la secretar\u00eda",
+                        "male": "Hombres",
+                        "female": "Mujeres",
                         "nationalSocietyStaff": "Miembros del personal de las Sociedades Nacionales",
-                        "nationalSocietyVolunteers": "National Society Volunteers",
+                        "nationalSocietyVolunteers": "Voluntarios que prestan servicio en las Sociedades Nacionales",
                         "IFRCSecretariatStaff": "Miembros del personal de la secretar\u00eda de la Federaci\u00f3n Internacional"
                     },
                     "caption": "Fuente: Departamento de Recursos Humanos y banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
@@ -460,7 +460,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Americas",
+                                    "name": "Am\u00e9rica",
                                     "index": "3",
                                     "first": "27827",
                                     "second": "9273",
@@ -471,7 +471,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Middle East and North Africa",
+                                    "name": "Oriente Medio y Norte de \u00c1frica",
                                     "index": "4",
                                     "first": "7500",
                                     "second": "4150",
@@ -482,7 +482,7 @@
                                     ]
                                 },
                                 {
-                                    "name": "Africa",
+                                    "name": "\u00c1frica",
                                     "index": "5",
                                     "first": "1114",
                                     "second": "800",
@@ -493,17 +493,17 @@
                                     ]
                                 }
                             ],
-                            "caption": "Source: FDRS"
+                            "caption": "Fuente: Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
                         }
                     ]
                 },
-                "The Japanese Red Cross Society has the largest income but, in aggregate, the wealthiest National Societies are in Europe. Expenditure mirrors this trend. The largest numbers of paid staff are also in Europe, reflecting the tendency of richer National Societies to rely more on paid workers than volunteers, especially for services that are paid for or subsidised by national and local authorities.",
+                "La Cruz Roja Japonesa cuenta con los ingresos m\u00e1s elevados pero, en conjunto, las Sociedades Nacionales m\u00e1s pudientes se encuentran en Europa. Los gastos reflejan esa tendencia. La mayor cantidad de miembros de personal asalariado tambi\u00e9n se encuentra en Europa, en clara correlaci\u00f3n con la tendencia de las Sociedades Nacionales m\u00e1s ricas a recurrir a colaboradores remunerados m\u00e1s que a voluntarios, en particular en lo que concierne a servicios que pagan o subsidian las autoridades locales o nacionales.",
                 {
                     "type": "tabs",
-                    "title": "Regional budgets",
+                    "title": "Ingresos y Gastos",
                     "tabs": [
                         {
-                            "name": "Income",
+                            "name": "Ingresos",
                             "dataset": [
                                 {
                                     "name": "Asia and The Pacific",
@@ -747,13 +747,13 @@
                             ]
                         },
                         {
-                            "name": "Recipients",
-                            "caption": "Source: Finance Department",
+                            "name": "Beneficiarias",
+                            "caption": "Fuente: Departamento de Finanzas",
                             "headers": [
-                                "Rank",
-                                "National Society",
-                                "Total (CHF millions)",
-                                "%"
+                                "Clas.",
+                                "Sociedades Nacionales beneficiarias de",
+                                "Total (millones de francos suizos)",
+                                "Porcentaje %"
                             ],
                             "dataset": [
                                 {
@@ -868,10 +868,10 @@
         }
     ],
     "nextChapter": {
-        "heading": "Next chapter",
+        "heading": "Cap\u00edtulo siguiente",
         "chapter": "2",
-        "subtitle": "Overview",
-        "title": "What we do",
+        "subtitle": "Visi\u00f3n de conjunto",
+        "title": "Nuestra labor",
         "slug": "what-we-do"
     }
 }

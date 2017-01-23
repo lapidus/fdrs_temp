@@ -1,6 +1,6 @@
 webpackJsonp([11,29],{
 
-/***/ 1329:
+/***/ 1315:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18,7 +18,7 @@ var _LanguageLink = __webpack_require__(176);
 
 var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
-var _Icon = __webpack_require__(533);
+var _Icon = __webpack_require__(528);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -63,7 +63,7 @@ exports.default = NextChapter;
 
 /***/ },
 
-/***/ 1336:
+/***/ 1322:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -116,7 +116,7 @@ exports.default = BreadCrumbs;
 
 /***/ },
 
-/***/ 548:
+/***/ 544:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -136,11 +136,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactI18next = __webpack_require__(41);
 
-var _NextChapter = __webpack_require__(1329);
+var _NextChapter = __webpack_require__(1315);
 
 var _NextChapter2 = _interopRequireDefault(_NextChapter);
 
-var _Breadcrumbs = __webpack_require__(1336);
+var _Breadcrumbs = __webpack_require__(1322);
 
 var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 

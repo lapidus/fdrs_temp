@@ -1,6 +1,6 @@
 webpackJsonp([0,29],{
 
-/***/ 1328:
+/***/ 1314:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39,7 +39,7 @@ exports.default = HeadlineDivider;
 
 /***/ },
 
-/***/ 1330:
+/***/ 1316:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -135,7 +135,7 @@ exports.default = (0, _reactI18next.translate)([], { wait: true })(Breadcrumbs);
 
 /***/ },
 
-/***/ 1365:
+/***/ 1351:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -155,7 +155,7 @@ var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
 var _reactI18next = __webpack_require__(41);
 
-var _config = __webpack_require__(557);
+var _config = __webpack_require__(553);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -294,7 +294,7 @@ exports.default = (0, _reactI18next.translate)([], { wait: true })(Navigation);
 
 /***/ },
 
-/***/ 1366:
+/***/ 1352:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -310,11 +310,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactI18next = __webpack_require__(41);
 
-var _HeadlineDivider = __webpack_require__(1328);
+var _HeadlineDivider = __webpack_require__(1314);
 
 var _HeadlineDivider2 = _interopRequireDefault(_HeadlineDivider);
 
-var _Icon = __webpack_require__(533);
+var _Icon = __webpack_require__(528);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -399,7 +399,7 @@ exports.default = (0, _reactI18next.translate)()(ReadMore);
 
 /***/ },
 
-/***/ 316:
+/***/ 315:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -429,27 +429,27 @@ var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
 var _appActions = __webpack_require__(69);
 
-var _Icon = __webpack_require__(533);
+var _Icon = __webpack_require__(528);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _Loader = __webpack_require__(543);
+var _Loader = __webpack_require__(539);
 
 var _Loader2 = _interopRequireDefault(_Loader);
 
-var _Navigation = __webpack_require__(1365);
+var _Navigation = __webpack_require__(1351);
 
 var _Navigation2 = _interopRequireDefault(_Navigation);
 
-var _ReadMore = __webpack_require__(1366);
+var _ReadMore = __webpack_require__(1352);
 
 var _ReadMore2 = _interopRequireDefault(_ReadMore);
 
-var _Breadcrumbs = __webpack_require__(1330);
+var _Breadcrumbs = __webpack_require__(1316);
 
 var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 
-var _prefixLanguageToRoute = __webpack_require__(558);
+var _prefixLanguageToRoute = __webpack_require__(554);
 
 var _prefixLanguageToRoute2 = _interopRequireDefault(_prefixLanguageToRoute);
 
@@ -474,8 +474,6 @@ var Report = function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       console.log("Mounting app: ", this.props.location);
-
-      // this.goToChapter = this.goToChapter.bind(this)
     }
   }, {
     key: "goToChapter",
@@ -548,7 +546,7 @@ var Report = function (_React$Component) {
                     clearable: false,
                     name: "chapter-selector",
                     value: this.context.router.getCurrentLocation().pathname,
-                    options: [{ value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report"), label: "Introduction" }, { value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report/who-we-are"), label: t("report-common:chapters.chapter1.title") }, { value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report/what-we-do"), label: t("report-common:chapters.chapter2.title") }, { value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report/living-our-fundamental-principles"), label: t("report-common:chapters.chapter3.title") }, { value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report/strategic-aim-1"), label: t("report-common:chapters.chapter4.title") }, { value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report/strategic-aim-2"), label: t("report-common:chapters.chapter5.title") }, { value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report/strategic-aim-3"), label: t("report-common:chapters.chapter6.title") }, { value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report/enabling-action-1"), label: t("report-common:chapters.chapter7.title") }, { value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report/enabling-action-2"), label: t("report-common:chapters.chapter8.title") }, { value: (0, _prefixLanguageToRoute2.default)(language, "/fdrs/report/enabling-action-3"), label: t("report-common:chapters.chapter9.title") }],
+                    options: [{ value: "/fdrs/report", label: "Introduction" }, { value: "/fdrs/report/who-we-are", label: t("report-common:chapters.chapter1.title") }, { value: "/fdrs/report/what-we-do", label: t("report-common:chapters.chapter2.title") }, { value: "/fdrs/report/living-our-fundamental-principles", label: t("report-common:chapters.chapter3.title") }, { value: "/fdrs/report/strategic-aim-1", label: t("report-common:chapters.chapter4.title") }, { value: "/fdrs/report/strategic-aim-2", label: t("report-common:chapters.chapter5.title") }, { value: "/fdrs/report/strategic-aim-3", label: t("report-common:chapters.chapter6.title") }, { value: "/fdrs/report/enabling-action-1", label: t("report-common:chapters.chapter7.title") }, { value: "/fdrs/report/enabling-action-2", label: t("report-common:chapters.chapter8.title") }, { value: "/fdrs/report/enabling-action-3", label: t("report-common:chapters.chapter9.title") }],
                     onChange: this.goToChapter.bind(this)
                   })
                 )

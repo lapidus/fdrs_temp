@@ -1,6 +1,6 @@
 webpackJsonp([12,29],{
 
-/***/ 1336:
+/***/ 1322:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53,7 +53,7 @@ exports.default = BreadCrumbs;
 
 /***/ },
 
-/***/ 545:
+/***/ 541:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71,7 +71,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactI18next = __webpack_require__(41);
 
-var _Breadcrumbs = __webpack_require__(1336);
+var _Breadcrumbs = __webpack_require__(1322);
 
 var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 

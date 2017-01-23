@@ -1,6 +1,6 @@
 webpackJsonp([21,29],{
 
-/***/ 1320:
+/***/ 1306:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18,7 +18,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactI18next = __webpack_require__(41);
 
-var _Slant = __webpack_require__(1369);
+var _Slant = __webpack_require__(1355);
 
 var _Slant2 = _interopRequireDefault(_Slant);
 
@@ -340,7 +340,7 @@ exports.default = (0, _reactI18next.translate)("home", { wait: true })(Home);
 
 /***/ },
 
-/***/ 1369:
+/***/ 1355:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";

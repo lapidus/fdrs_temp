@@ -1,6 +1,6 @@
 webpackJsonp([19,29],{
 
-/***/ 1316:
+/***/ 1302:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18,19 +18,19 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(27);
 
-var _map = __webpack_require__(535);
+var _map = __webpack_require__(531);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _filter = __webpack_require__(1331);
+var _filter = __webpack_require__(1317);
 
 var _filter2 = _interopRequireDefault(_filter);
 
-var _find = __webpack_require__(1335);
+var _find = __webpack_require__(1321);
 
 var _find2 = _interopRequireDefault(_find);
 
-var _Map = __webpack_require__(1349);
+var _Map = __webpack_require__(1335);
 
 var _Map2 = _interopRequireDefault(_Map);
 
@@ -155,7 +155,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps)(DataView);
 
 /***/ },
 
-/***/ 1327:
+/***/ 1313:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -207,19 +207,19 @@ exports.default = niceNum;
 
 /***/ },
 
-/***/ 1331:
+/***/ 1317:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('filter', __webpack_require__(537));
+var convert = __webpack_require__(529),
+    func = convert('filter', __webpack_require__(533));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1334:
+/***/ 1320:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -230,21 +230,21 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesByYear = exports.makeGetIndicatorData = exports.makeGetSocietyDocuments = exports.makeGetSocietyData = exports.makeGetSociety = undefined;
 
-var _reselect = __webpack_require__(311);
+var _reselect = __webpack_require__(310);
 
-var _filter = __webpack_require__(1331);
+var _filter = __webpack_require__(1317);
 
 var _filter2 = _interopRequireDefault(_filter);
 
-var _find = __webpack_require__(1335);
+var _find = __webpack_require__(1321);
 
 var _find2 = _interopRequireDefault(_find);
 
-var _map = __webpack_require__(535);
+var _map = __webpack_require__(531);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _groupBy = __webpack_require__(534);
+var _groupBy = __webpack_require__(530);
 
 var _groupBy2 = _interopRequireDefault(_groupBy);
 
@@ -347,19 +347,19 @@ var makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesBySociety = functi
 
 /***/ },
 
-/***/ 1335:
+/***/ 1321:
 /***/ function(module, exports, __webpack_require__) {
 
-var convert = __webpack_require__(532),
-    func = convert('find', __webpack_require__(1338));
+var convert = __webpack_require__(529),
+    func = convert('find', __webpack_require__(1324));
 
-func.placeholder = __webpack_require__(308);
+func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
 /***/ },
 
-/***/ 1337:
+/***/ 1323:
 /***/ function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
@@ -391,11 +391,11 @@ module.exports = createFind;
 
 /***/ },
 
-/***/ 1338:
+/***/ 1324:
 /***/ function(module, exports, __webpack_require__) {
 
-var createFind = __webpack_require__(1337),
-    findIndex = __webpack_require__(1339);
+var createFind = __webpack_require__(1323),
+    findIndex = __webpack_require__(1325);
 
 /**
  * Iterates over elements of `collection`, returning the first element
@@ -440,10 +440,10 @@ module.exports = find;
 
 /***/ },
 
-/***/ 1339:
+/***/ 1325:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(536),
+var baseFindIndex = __webpack_require__(532),
     baseIteratee = __webpack_require__(87),
     toInteger = __webpack_require__(178);
 
@@ -502,11 +502,11 @@ module.exports = findIndex;
 
 /***/ },
 
-/***/ 1344:
+/***/ 1330:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseExtremum = __webpack_require__(309),
-    baseGt = __webpack_require__(538),
+var baseExtremum = __webpack_require__(308),
+    baseGt = __webpack_require__(535),
     baseIteratee = __webpack_require__(87);
 
 /**
@@ -543,12 +543,12 @@ module.exports = maxBy;
 
 /***/ },
 
-/***/ 1345:
+/***/ 1331:
 /***/ function(module, exports, __webpack_require__) {
 
-var baseExtremum = __webpack_require__(309),
+var baseExtremum = __webpack_require__(308),
     baseIteratee = __webpack_require__(87),
-    baseLt = __webpack_require__(539);
+    baseLt = __webpack_require__(536);
 
 /**
  * This method is like `_.min` except that it accepts `iteratee` which is
@@ -584,7 +584,7 @@ module.exports = minBy;
 
 /***/ },
 
-/***/ 1348:
+/***/ 1334:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -650,7 +650,7 @@ exports.default = Countries;
 
 /***/ },
 
-/***/ 1349:
+/***/ 1335:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -668,25 +668,25 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(27);
 
-var _groupBy = __webpack_require__(534);
+var _groupBy = __webpack_require__(530);
 
 var _groupBy2 = _interopRequireDefault(_groupBy);
 
-var _minBy = __webpack_require__(1345);
+var _minBy = __webpack_require__(1331);
 
 var _minBy2 = _interopRequireDefault(_minBy);
 
-var _maxBy = __webpack_require__(1344);
+var _maxBy = __webpack_require__(1330);
 
 var _maxBy2 = _interopRequireDefault(_maxBy);
 
 var _reduxTooltip = __webpack_require__(130);
 
-var _Countries = __webpack_require__(1348);
+var _Countries = __webpack_require__(1334);
 
 var _Countries2 = _interopRequireDefault(_Countries);
 
-var _niceNum = __webpack_require__(1327);
+var _niceNum = __webpack_require__(1313);
 
 var _niceNum2 = _interopRequireDefault(_niceNum);
 
@@ -694,13 +694,11 @@ var _d = __webpack_require__(177);
 
 var _d3Geo = __webpack_require__(2);
 
-var _d3GeoProjection = __webpack_require__(317);
+var _d3GeoProjection = __webpack_require__(316);
 
-var _topojsonClient = __webpack_require__(314);
+var _topojsonClient = __webpack_require__(313);
 
-var _topojsonClient2 = _interopRequireDefault(_topojsonClient);
-
-var _selectors = __webpack_require__(1334);
+var _selectors = __webpack_require__(1320);
 
 var _appActions = __webpack_require__(69);
 
@@ -741,7 +739,7 @@ var Map = function (_React$Component) {
     var max = Number((0, _maxBy2.default)(maxArray));
 
     _this.state = {
-      countries: _this.props.countryPaths ? _topojsonClient2.default.feature(props.countryPaths, props.countryPaths.objects.countries).features : null,
+      countries: _this.props.countryPaths ? (0, _topojsonClient.feature)(props.countryPaths, props.countryPaths.objects.countries).features : null,
       loading: !_this.props.countryPaths ? true : false,
       currentYearData: currentYearData,
       minData: min,
@@ -780,7 +778,7 @@ var Map = function (_React$Component) {
 
       if (nextProps.countryPaths !== this.props.countryPaths) {
         this.setState({
-          countries: _topojsonClient2.default.feature(nextProps.countryPaths, nextProps.countryPaths.objects.countries).features,
+          countries: (0, _topojsonClient.feature)(nextProps.countryPaths, nextProps.countryPaths.objects.countries).features,
           loading: false
         });
       }

@@ -73,7 +73,6 @@
     "redux-tooltip": "^0.7.2",
     "reselect": "^2.5.4",
     "superagent": "^2.3.0",
-    "topojson": "^2.0.0",
     "topojson-client": "^2.1.0",
     "victory": "^0.13.7",
     "wsdm-slider": "^1.5.3"
@@ -101,6 +100,6 @@
     "normalize.css": "^5.0.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-partial-import": "^2.1.0",
-    "webpack": "^2.1.0-beta.27"
+    "webpack": "^2.2.0"
   }
 }

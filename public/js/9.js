@@ -1,6 +1,6 @@
 webpackJsonp([9,29],{
 
-/***/ 1328:
+/***/ 1314:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39,7 +39,7 @@ exports.default = HeadlineDivider;
 
 /***/ },
 
-/***/ 1329:
+/***/ 1315:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57,7 +57,7 @@ var _LanguageLink = __webpack_require__(176);
 
 var _LanguageLink2 = _interopRequireDefault(_LanguageLink);
 
-var _Icon = __webpack_require__(533);
+var _Icon = __webpack_require__(528);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -102,7 +102,7 @@ exports.default = NextChapter;
 
 /***/ },
 
-/***/ 1332:
+/***/ 1318:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -305,7 +305,7 @@ module.exports = SideNavigation;
 
 /***/ },
 
-/***/ 547:
+/***/ 543:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -325,15 +325,15 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactI18next = __webpack_require__(41);
 
-var _NextChapter = __webpack_require__(1329);
+var _NextChapter = __webpack_require__(1315);
 
 var _NextChapter2 = _interopRequireDefault(_NextChapter);
 
-var _HeadlineDivider = __webpack_require__(1328);
+var _HeadlineDivider = __webpack_require__(1314);
 
 var _HeadlineDivider2 = _interopRequireDefault(_HeadlineDivider);
 
-var _SideNavigation = __webpack_require__(1332);
+var _SideNavigation = __webpack_require__(1318);
 
 var _SideNavigation2 = _interopRequireDefault(_SideNavigation);
 

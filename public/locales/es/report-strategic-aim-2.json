@@ -1,28 +1,28 @@
 {
     "chapter": "5",
     "slug": "strategic-aim-2",
-    "title": "Strategic aim 2",
-    "subtitle": "Healthy and safe living",
-    "intro": "For the IFRC, the community resilience approach is, in many ways, just the modern designation of how we have worked with communities for many decades.",
+    "title": "Objetivo estrat\u00e9gico 2",
+    "subtitle": "Posibilitar una vida sana y segura",
+    "intro": "Para la Federaci\u00f3n Internacional, el enfoque de fomento de la capacidad de resistencia y recuperaci\u00f3n de las comunidades es, en muchos aspectos, apenas una designaci\u00f3n moderna de las modalidades de colaboraci\u00f3n con las comunidades aplicadas por la organizaci\u00f3n desde hace varios decenios.",
     "sections": [
         {
-            "title": "People reached by long-term services",
+            "title": "Beneficiarios de los servicios a largo plazo",
             "blocks": [
-                "Our National Societies achieve this through their volunteers, who engage their own communities via education and training. By getting to know their own specific hazards and by analysing their risks and vulnerabilities, they are able to develop the appropriate solutions for their local context.",
+                "Las Sociedades Nacionales miembros realizan esta labor gracias a la ayuda de los voluntarios y su interacci\u00f3n con las comunidades a las que pertenecen, a trav\u00e9s de iniciativas de educaci\u00f3n y formaci\u00f3n que les permiten conocer mejor las amenazas que pesan sobre ellas, y analizar los riesgos y vulnerabilidades, de manera que conciban soluciones adecuadas en funci\u00f3n de su respectivo contexto.",
                 {
                     "type": "chart",
-                    "title": "People reached",
+                    "title": "Beneficiarios",
                     "axisLabels": {
-                        "x": "Years",
+                        "x": "A\u00f1os",
                         "y": ""
                     },
-                    "caption": "Source: FDRS"
+                    "caption": "Fuente: Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
                 },
-                "Overall, the IFRC network reached nearly 161 million people with one or more long-term services in 2013, an increase of 55 per cent on the 103.4 million reported in 2012. This increase is partly due to more National Societies reporting on this indicator.",
-                "The Americas region has the largest outreach with  long-term programmes reflecting the historical roots of Red Cross work there. Gender-disaggregated reporting is a significant general weakness and will be strengthened in future years.",
+                "En conjunto, en 2013, la Federaci\u00f3n Internacional benefici\u00f3 a casi ciento sesenta y un (161) millones de personas mediante uno o varios servicios a largo plazo, lo cual denot\u00f3 un incremento del cincuenta y cinco por ciento (55%) frente a los 103,4 millones registrados en 2012. Este aumento se explica en parte por la mayor cantidad de Sociedades Nacionales que aportaron informaci\u00f3n relativa a este indicador.",
+                "En Am\u00e9rica se observa el m\u00e1s amplio alcance mediante programas a largo plazo que denotan el arraigo de larga data de las organizaciones de la Cruz Roja en la regi\u00f3n. En general, la informaci\u00f3n adolece de una falta de datos desglosados por sexo que se promover\u00e1 en el futuro.",
                 {
                     "type": "chart",
-                    "title": "People reached by region and gender",
+                    "title": "Desglose por zona geogr\u00e1fica y por sexo de los beneficiarios de los servicios a largo plazo",
                     "dataset": [
                         {
                             "name": "Americas",
@@ -80,7 +80,7 @@
                             ]
                         }
                     ],
-                    "caption": "Source: FDRS"
+                    "caption": "Fuente: Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional"
                 },
                 "El panorama anual establecido por la secretar\u00eda de la Federaci\u00f3n Internacional en cuanto a servicios para la reducci\u00f3n del riesgo de desastres apunta a una intensificaci\u00f3n gradual de esfuerzos desde el inicio del decenio. Hasta 2014, se hab\u00eda invertido 151,7 millones de francos suizos en ciento veintiuna (121) Sociedades Nacionales en beneficio de 31,2 millones de personas",
                 {
@@ -388,86 +388,86 @@
                         },
                         {
                             "y": "8",
-                            "x": "Other maternal, newborn and child health"
+                            "x": "Otros actividades relacionadas con salud materna, neonatal e infantil"
                         }
                     ],
-                    "caption": "Source: Health Department"
+                    "caption": "Fuente: Departamento de Salud"
                 },
-                "In terms of targeting, the majority of National Societies work with youth, children, elderly, people living with HIV, migrants, and people with disabilities",
+                "En cuanto a los grupos destinatarios, la mayor\u00eda de Sociedades Nacionales trabaja con j\u00f3venes, ni\u00f1os, adultos mayores, personas que viven con el VIH, migrantes y personas con discapacidades.",
                 {
                     "type": "chart",
-                    "title": "Number of National Societies targeting the health needs of specific groups",
+                    "title": "Cantidad de Sociedades Nacionales que atienden a las necesidades en materia de salud de grupos espec\u00edficos",
                     "dataset": [
                         {
                             "y": "11",
-                            "x": "Transgender persons",
+                            "x": "Personas transg\u00e9nero",
                             "fill": "#C5C6C6"
                         },
                         {
                             "y": "13",
-                            "x": "Other groups",
+                            "x": "Otros grupos",
                             "fill": "#756661"
                         },
                         {
                             "y": "20",
-                            "x": "Men who have sex with men",
+                            "x": "Hombres que mantienen relaciones sexuales con otros hombres",
                             "fill": "#FED02F"
                         },
                         {
                             "y": "32",
-                            "x": "Drug users",
+                            "x": "Consumidores de drogas",
                             "fill": "#5A6122"
                         },
                         {
                             "y": "35",
-                            "x": "Sex workers",
+                            "x": "Trabajadores del sexo",
                             "fill": "#D5106E"
                         },
                         {
                             "y": "56",
-                            "x": "Migrants",
+                            "x": "Migrantes",
                             "fill": "#1A9FE0"
                         },
                         {
                             "y": "56",
-                            "x": "Persons living with disabilities",
+                            "x": "Personas con discapacidad",
                             "fill": "#84BB23"
                         },
                         {
                             "y": "60",
-                            "x": "People living with HIV",
+                            "x": "Personas que viven con el VIH",
                             "fill": "#5B325D"
                         },
                         {
                             "y": "67",
-                            "x": "Children",
+                            "x": "Ni\u00f1os",
                             "fill": "#E02726"
                         },
                         {
                             "y": "74",
-                            "x": "Elderly",
+                            "x": "Mayores",
                             "fill": "#012A39"
                         },
                         {
                             "y": "83",
-                            "x": "Youth",
+                            "x": "J\u00f3venes",
                             "fill": "#682F26"
                         }
                     ],
-                    "caption": "Source: Health Department"
+                    "caption": "Fuente: Departamento de Salud"
                 }
             ]
         },
         {
-            "title": "Promoting safe blood systems",
+            "title": "Promoci\u00f3n de sistemas seguros de suministro de sangre",
             "blocks": [
-                "To serve others by donating your spare money, time, or skills is commendable. To give of your own self is truly noble. It is, therefore, unsurprising that the Red Cross and Red Crescent has been associated with blood services ever since the technology became available. Safe and accessible blood supplies are crucial to save or preserve life in medical care and in the aftermath of accidents, violence, and disasters.",
+                "La donaci\u00f3n de tiempo, dinero o servicios para ayudar a los dem\u00e1s es encomiable. Ahora bien, la donaci\u00f3n de parte de s\u00ed es verdaderamente noble. As\u00ed, no sorprende que las organizaciones de la Cruz Roja y de la Media Luna Roja hayan estado asociadas a servicios de sangre desde que se dispuso de la tecnolog\u00eda adecuada. El suministro seguro, inocuo y accesible de productos de sangre es primordial para salvar vidas o preservarlas en contextos de atenci\u00f3n m\u00e9dica o a ra\u00edz de accidentes, situaciones de violencia y desastres.",
                 {
                     "type": "chart",
-                    "title": "Number of blood donors",
+                    "title": "Cantidad de donantes de sangre",
                     "dataset": [
                         {
-                            "name": "Asia and The Pacific",
+                            "name": "Asia y el Pac\u00edfico",
                             "index": "1",
                             "first": "5160000",
                             "second": "2708173",
@@ -478,7 +478,7 @@
                             ]
                         },
                         {
-                            "name": "Europe",
+                            "name": "Europa",
                             "index": "2",
                             "first": "1723440",
                             "second": "1640882",

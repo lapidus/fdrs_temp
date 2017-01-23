@@ -1,7 +1,7 @@
 import i18n from "i18next"
 import XHR from "i18next-xhr-backend"
 
-i18n.default
+i18n
   .use(XHR)
   .init({
     fallbackLng: "en",
@@ -11,4 +11,4 @@ i18n.default
     returnObjects: true,
   })
 
-export default i18n.default
+export default i18n

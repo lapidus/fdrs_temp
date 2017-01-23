@@ -1,5 +1,5 @@
 {
-    "title": "FAQ",
+    "title": "National Society profiles",
     "tabs": [
         [
             "IFRC global",
@@ -11,8 +11,8 @@
         ]
     ],
     "titleParts": [
-        "IFRC",
-        "Data Initiatives"
+        "National society",
+        "profiles"
     ],
     "peopleReached": "People reached",
     "nationalSocieties": "National societies",

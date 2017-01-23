@@ -1,6 +1,6 @@
 webpackJsonp([25,29],{
 
-/***/ 1315:
+/***/ 1301:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16,7 +16,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Breadcrumbs = __webpack_require__(1330);
+var _Breadcrumbs = __webpack_require__(1316);
 
 var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 
@@ -100,7 +100,7 @@ exports.default = About;
 
 /***/ },
 
-/***/ 1330:
+/***/ 1316:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
