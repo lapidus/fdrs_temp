@@ -9,6 +9,7 @@ npm-debug.log
 .idea/*
 .DS_Store
 public/js
+public/js/*
 public/index.html
 
 yarn.lock
