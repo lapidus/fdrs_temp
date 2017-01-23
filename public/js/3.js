@@ -1,10 +1,10 @@
 webpackJsonp([3,29],{
 
 /***/ 1313:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -50,13 +50,13 @@ var niceNum = function niceNum(input, precision, format, fullNumber) {
 
 exports.default = niceNum;
 
-/***/ },
+/***/ }),
 
 /***/ 1314:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -89,13 +89,13 @@ var HeadlineDivider = function HeadlineDivider() {
 
 exports.default = HeadlineDivider;
 
-/***/ },
+/***/ }),
 
 /***/ 1315:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -152,13 +152,13 @@ NextChapter.contextTypes = {
 
 exports.default = NextChapter;
 
-/***/ },
+/***/ }),
 
 /***/ 1319:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -394,13 +394,13 @@ LineChart.defaultProps = {
 
 exports.default = LineChart;
 
-/***/ },
+/***/ }),
 
 /***/ 1326:
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -421,13 +421,13 @@ exports.default = {
   addCommas: addCommas
 };
 
-/***/ },
+/***/ }),
 
 /***/ 1327:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -465,13 +465,13 @@ ChartTooltip.propTypes = {
 
 exports.default = ChartTooltip;
 
-/***/ },
+/***/ }),
 
 /***/ 1332:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -596,13 +596,13 @@ var TabPanel = exports.TabPanel = function TabPanel(_ref) {
   );
 };
 
-/***/ },
+/***/ }),
 
 /***/ 1333:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -834,13 +834,13 @@ StackedBarChart.defaultProps = {
 
 exports.default = StackedBarChart;
 
-/***/ },
+/***/ }),
 
 /***/ 1353:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1041,13 +1041,13 @@ StaffCompositionChart.defaultProps = {
 
 exports.default = StaffCompositionChart;
 
-/***/ },
+/***/ }),
 
 /***/ 1354:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1188,13 +1188,13 @@ StaffGenderDistribution.propTypes = {
 
 exports.default = StaffGenderDistribution;
 
-/***/ },
+/***/ }),
 
 /***/ 542:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1953,6 +1953,6 @@ Chapter1.contextTypes = {
 
 exports.default = (0, _reactI18next.translate)(["report-who-we-are"], { wait: true })(Chapter1);
 
-/***/ }
+/***/ })
 
 });

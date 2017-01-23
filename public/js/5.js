@@ -1,10 +1,10 @@
 webpackJsonp([5,29],{
 
 /***/ 1314:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -37,13 +37,13 @@ var HeadlineDivider = function HeadlineDivider() {
 
 exports.default = HeadlineDivider;
 
-/***/ },
+/***/ }),
 
 /***/ 1315:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -100,13 +100,13 @@ NextChapter.contextTypes = {
 
 exports.default = NextChapter;
 
-/***/ },
+/***/ }),
 
 /***/ 1318:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -303,13 +303,13 @@ var SideNavigation = function (_React$Component) {
 
 module.exports = SideNavigation;
 
-/***/ },
+/***/ }),
 
 /***/ 1322:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -356,13 +356,13 @@ BreadCrumbs.propTypes = {
 
 exports.default = BreadCrumbs;
 
-/***/ },
+/***/ }),
 
 /***/ 1326:
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -383,13 +383,13 @@ exports.default = {
   addCommas: addCommas
 };
 
-/***/ },
+/***/ }),
 
 /***/ 1327:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -427,13 +427,13 @@ ChartTooltip.propTypes = {
 
 exports.default = ChartTooltip;
 
-/***/ },
+/***/ }),
 
 /***/ 1328:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -570,13 +570,13 @@ DonutChart.propTypes = {
 
 exports.default = DonutChart;
 
-/***/ },
+/***/ }),
 
 /***/ 1329:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -811,13 +811,13 @@ var SimpleBarChart = function (_React$Component) {
 
 module.exports = SimpleBarChart;
 
-/***/ },
+/***/ }),
 
 /***/ 1361:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -1066,13 +1066,13 @@ var ScatterChart = function (_React$Component) {
 
 module.exports = ScatterChart;
 
-/***/ },
+/***/ }),
 
 /***/ 548:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1601,6 +1601,6 @@ Chapter7.contextTypes = {
 
 exports.default = (0, _reactI18next.translate)(["report-enabling-action-1"], { wait: true })(Chapter7);
 
-/***/ }
+/***/ })
 
 });

@@ -1,10 +1,10 @@
 webpackJsonp([19,29],{
 
 /***/ 1302:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -153,13 +153,13 @@ var mapStateToProps = function mapStateToProps(state) {
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(DataView);
 
-/***/ },
+/***/ }),
 
 /***/ 1313:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -205,10 +205,10 @@ var niceNum = function niceNum(input, precision, format, fullNumber) {
 
 exports.default = niceNum;
 
-/***/ },
+/***/ }),
 
 /***/ 1317:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var convert = __webpack_require__(529),
     func = convert('filter', __webpack_require__(533));
@@ -217,13 +217,13 @@ func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1320:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -345,10 +345,10 @@ var makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesBySociety = functi
   });
 };
 
-/***/ },
+/***/ }),
 
 /***/ 1321:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var convert = __webpack_require__(529),
     func = convert('find', __webpack_require__(1324));
@@ -357,10 +357,10 @@ func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1323:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
     isArrayLike = __webpack_require__(33),
@@ -389,10 +389,10 @@ function createFind(findIndexFunc) {
 module.exports = createFind;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1324:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var createFind = __webpack_require__(1323),
     findIndex = __webpack_require__(1325);
@@ -438,10 +438,10 @@ var find = createFind(findIndex);
 module.exports = find;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1325:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseFindIndex = __webpack_require__(532),
     baseIteratee = __webpack_require__(87),
@@ -500,10 +500,10 @@ function findIndex(array, predicate, fromIndex) {
 module.exports = findIndex;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1330:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseExtremum = __webpack_require__(308),
     baseGt = __webpack_require__(535),
@@ -541,10 +541,10 @@ function maxBy(array, iteratee) {
 module.exports = maxBy;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1331:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseExtremum = __webpack_require__(308),
     baseIteratee = __webpack_require__(87),
@@ -582,13 +582,13 @@ function minBy(array, iteratee) {
 module.exports = minBy;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1334:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -648,13 +648,13 @@ Countries.propTypes = {
 
 exports.default = Countries;
 
-/***/ },
+/***/ }),
 
 /***/ 1335:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -932,6 +932,6 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 exports.default = (0, _reactRedux.connect)(makeMapStateToProps, mapDispatchToProps)(Map);
 
-/***/ }
+/***/ })
 
 });

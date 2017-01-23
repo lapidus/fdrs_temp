@@ -1,10 +1,10 @@
 webpackJsonp([11,29],{
 
 /***/ 1315:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -61,13 +61,13 @@ NextChapter.contextTypes = {
 
 exports.default = NextChapter;
 
-/***/ },
+/***/ }),
 
 /***/ 1322:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -114,13 +114,13 @@ BreadCrumbs.propTypes = {
 
 exports.default = BreadCrumbs;
 
-/***/ },
+/***/ }),
 
 /***/ 544:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -407,6 +407,6 @@ Chapter3.contextTypes = {
 
 exports.default = (0, _reactI18next.translate)(["report-living-our-fundamental-principles"], { wait: true })(Chapter3);
 
-/***/ }
+/***/ })
 
 });

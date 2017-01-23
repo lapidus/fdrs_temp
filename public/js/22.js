@@ -1,10 +1,10 @@
 webpackJsonp([22,29],{
 
 /***/ 1310:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -332,13 +332,13 @@ var mapStateToProps = function mapStateToProps(state) {
 
 exports.default = (0, _reactI18next.translate)(["societies", "national-societies"], { wait: true })((0, _reactRedux.connect)(mapStateToProps)(Societies));
 
-/***/ },
+/***/ }),
 
 /***/ 1316:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -428,6 +428,6 @@ var Breadcrumbs = function (_React$Component) {
 
 exports.default = (0, _reactI18next.translate)([], { wait: true })(Breadcrumbs);
 
-/***/ }
+/***/ })
 
 });

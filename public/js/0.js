@@ -1,10 +1,10 @@
 webpackJsonp([0,29],{
 
 /***/ 1314:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -37,13 +37,13 @@ var HeadlineDivider = function HeadlineDivider() {
 
 exports.default = HeadlineDivider;
 
-/***/ },
+/***/ }),
 
 /***/ 1316:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -133,13 +133,13 @@ var Breadcrumbs = function (_React$Component) {
 
 exports.default = (0, _reactI18next.translate)([], { wait: true })(Breadcrumbs);
 
-/***/ },
+/***/ }),
 
 /***/ 1351:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -292,13 +292,13 @@ Navigation.contextTypes = {
 
 exports.default = (0, _reactI18next.translate)([], { wait: true })(Navigation);
 
-/***/ },
+/***/ }),
 
 /***/ 1352:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -397,13 +397,13 @@ ReadMore.propTypes = {
 
 exports.default = (0, _reactI18next.translate)()(ReadMore);
 
-/***/ },
+/***/ }),
 
 /***/ 315:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -600,6 +600,6 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 exports.default = (0, _reactI18next.translate)(["report-common"], { wait: true })((0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Report));
 
-/***/ }
+/***/ })
 
 });

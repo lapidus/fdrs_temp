@@ -1,10 +1,10 @@
 webpackJsonp([12,29],{
 
 /***/ 1322:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -51,13 +51,13 @@ BreadCrumbs.propTypes = {
 
 exports.default = BreadCrumbs;
 
-/***/ },
+/***/ }),
 
 /***/ 541:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -281,6 +281,6 @@ Acknowledgements.contextTypes = {
 
 exports.default = (0, _reactI18next.translate)()(Acknowledgements);
 
-/***/ }
+/***/ })
 
 });

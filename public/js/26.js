@@ -1,10 +1,10 @@
 webpackJsonp([26,29],{
 
 /***/ 1305:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -49,6 +49,6 @@ var FDRS = function (_React$Component) {
 
 exports.default = FDRS;
 
-/***/ }
+/***/ })
 
 });

@@ -1,10 +1,10 @@
 webpackJsonp([21,29],{
 
 /***/ 1306:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -338,13 +338,13 @@ Home.contextTypes = {
 
 exports.default = (0, _reactI18next.translate)("home", { wait: true })(Home);
 
-/***/ },
+/***/ }),
 
 /***/ 1355:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -383,6 +383,6 @@ var Slant = function Slant(_ref) {
 
 exports.default = Slant;
 
-/***/ }
+/***/ })
 
 });

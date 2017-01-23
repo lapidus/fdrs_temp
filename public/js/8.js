@@ -1,10 +1,10 @@
 webpackJsonp([8,29],{
 
 /***/ 1314:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -37,13 +37,13 @@ var HeadlineDivider = function HeadlineDivider() {
 
 exports.default = HeadlineDivider;
 
-/***/ },
+/***/ }),
 
 /***/ 1315:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -100,13 +100,13 @@ NextChapter.contextTypes = {
 
 exports.default = NextChapter;
 
-/***/ },
+/***/ }),
 
 /***/ 1318:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -303,13 +303,13 @@ var SideNavigation = function (_React$Component) {
 
 module.exports = SideNavigation;
 
-/***/ },
+/***/ }),
 
 /***/ 1322:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -356,13 +356,13 @@ BreadCrumbs.propTypes = {
 
 exports.default = BreadCrumbs;
 
-/***/ },
+/***/ }),
 
 /***/ 1328:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -499,13 +499,13 @@ DonutChart.propTypes = {
 
 exports.default = DonutChart;
 
-/***/ },
+/***/ }),
 
 /***/ 547:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1335,6 +1335,6 @@ Chapter6.contextTypes = {
 
 exports.default = (0, _reactI18next.translate)(["report-strategic-aim-3"], { wait: true })(Chapter6);
 
-/***/ }
+/***/ })
 
 });

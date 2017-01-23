@@ -1,7 +1,7 @@
 webpackJsonp([28,29],{
 
 /***/ 1002:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var basePropertyOf = __webpack_require__(970);
 
@@ -76,10 +76,10 @@ var deburrLetter = basePropertyOf(deburredLetters);
 module.exports = deburrLetter;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1012:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 /** Used to detect strings that need a more robust regexp to match words. */
 var reHasUnicodeWord = /[a-z][A-Z]|[A-Z]{2,}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/;
@@ -98,10 +98,10 @@ function hasUnicodeWord(string) {
 module.exports = hasUnicodeWord;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1053:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 /** Used to compose unicode character classes. */
 var rsAstralRange = '\\ud800-\\udfff',
@@ -174,10 +174,10 @@ function unicodeWords(string) {
 module.exports = unicodeWords;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1056:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var createWrap = __webpack_require__(113);
 
@@ -210,10 +210,10 @@ function ary(func, n, guard) {
 module.exports = ary;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1059:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseClone = __webpack_require__(249);
 
@@ -253,10 +253,10 @@ function clone(value) {
 module.exports = clone;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1060:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var createWrap = __webpack_require__(113);
 
@@ -317,10 +317,10 @@ curry.placeholder = {};
 module.exports = curry;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1061:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var deburrLetter = __webpack_require__(1002),
     toString = __webpack_require__(163);
@@ -369,10 +369,10 @@ function deburr(string) {
 module.exports = deburr;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1064:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var mapping = __webpack_require__(1065),
     fallbackHolder = __webpack_require__(307);
@@ -943,10 +943,10 @@ function baseConvert(util, name, func, options) {
 module.exports = baseConvert;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1065:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 /** Used to map aliases to their real names. */
 exports.aliasToReal = {
@@ -1317,10 +1317,10 @@ exports.skipRearg = {
 };
 
 
-/***/ },
+/***/ }),
 
 /***/ 1066:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
   'ary': __webpack_require__(1056),
@@ -1338,10 +1338,10 @@ module.exports = {
 };
 
 
-/***/ },
+/***/ }),
 
 /***/ 1071:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseClone = __webpack_require__(249),
     baseIteratee = __webpack_require__(87);
@@ -1398,10 +1398,10 @@ function iteratee(func) {
 module.exports = iteratee;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1072:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var createCompounder = __webpack_require__(996);
 
@@ -1433,10 +1433,10 @@ var kebabCase = createCompounder(function(result, word, index) {
 module.exports = kebabCase;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1073:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var arrayMap = __webpack_require__(60),
     baseIteratee = __webpack_require__(87),
@@ -1493,10 +1493,10 @@ function map(collection, iteratee) {
 module.exports = map;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1078:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var createWrap = __webpack_require__(113),
     flatRest = __webpack_require__(258);
@@ -1533,10 +1533,10 @@ var rearg = flatRest(function(func, indexes) {
 module.exports = rearg;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1082:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var arrayMap = __webpack_require__(60),
     copyArray = __webpack_require__(111),
@@ -1573,10 +1573,10 @@ function toPath(value) {
 module.exports = toPath;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1084:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var asciiWords = __webpack_require__(947),
     hasUnicodeWord = __webpack_require__(1012),
@@ -1615,13 +1615,13 @@ function words(string, pattern, guard) {
 module.exports = words;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1299:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 var _react = __webpack_require__(0);
 
@@ -1702,13 +1702,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/***/ },
+/***/ }),
 
 /***/ 176:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1768,13 +1768,13 @@ LanguageLink.contextTypes = {
 
 exports.default = (0, _reactI18next.translate)()(LanguageLink);
 
-/***/ },
+/***/ }),
 
 /***/ 180:
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1790,10 +1790,10 @@ var constructLanguageRoute = function constructLanguageRoute(lang, _ref) {
 
 exports.default = constructLanguageRoute;
 
-/***/ },
+/***/ }),
 
 /***/ 307:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 /**
  * The default argument placeholder value for methods.
@@ -1803,13 +1803,13 @@ exports.default = constructLanguageRoute;
 module.exports = {};
 
 
-/***/ },
+/***/ }),
 
 /***/ 318:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1890,13 +1890,13 @@ var Dropdown = function (_React$Component) {
 
 exports.default = Dropdown;
 
-/***/ },
+/***/ }),
 
 /***/ 522:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1947,13 +1947,13 @@ function configureStore(initialState) {
   return (0, _redux.createStore)((0, _redux.combineReducers)(_reducers2.default), (0, _redux.applyMiddleware)(logger, _reduxThunk2.default));
 }
 
-/***/ },
+/***/ }),
 
 /***/ 523:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1979,13 +1979,13 @@ _i18next2.default.use(_i18nextXhrBackend2.default).init({
 
 exports.default = _i18next2.default;
 
-/***/ },
+/***/ }),
 
 /***/ 524:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2026,64 +2026,64 @@ var reportChildRoutes = Object.keys(_config.report.routes).map(function (routeKe
 var fdrsChildRoutes = [{
   path: "data",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(19).then(__webpack_require__.bind(null, 1302)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(19).then(__webpack_require__.bind(null, 1302)).then(loadRoute(cb)).catch(errorLoading);
   }
 }, {
   path: "overview",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(20).then(__webpack_require__.bind(null, 1309)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(20).then(__webpack_require__.bind(null, 1309)).then(loadRoute(cb)).catch(errorLoading);
   },
 
   childRoutes: [{
     path: "map",
     getComponent: function getComponent(location, cb) {
-      __webpack_require__.e/* System.import */(18).then(__webpack_require__.bind(null, 1307)).then(loadRoute(cb)).catch(errorLoading);
+      __webpack_require__.e/* import() */(18).then(__webpack_require__.bind(null, 1307)).then(loadRoute(cb)).catch(errorLoading);
     }
   }, {
     path: "table",
     getComponent: function getComponent(location, cb) {
-      __webpack_require__.e/* System.import */(17).then(__webpack_require__.bind(null, 1308)).then(loadRoute(cb)).catch(errorLoading);
+      __webpack_require__.e/* import() */(17).then(__webpack_require__.bind(null, 1308)).then(loadRoute(cb)).catch(errorLoading);
     }
   }]
 }, {
   path: "faq",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(23).then(__webpack_require__.bind(null, 1304)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(23).then(__webpack_require__.bind(null, 1304)).then(loadRoute(cb)).catch(errorLoading);
   }
 }, {
   path: "about",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(25).then(__webpack_require__.bind(null, 1301)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(25).then(__webpack_require__.bind(null, 1301)).then(loadRoute(cb)).catch(errorLoading);
   }
 }, {
   path: "data-download",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(24).then(__webpack_require__.bind(null, 1303)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(24).then(__webpack_require__.bind(null, 1303)).then(loadRoute(cb)).catch(errorLoading);
   }
 }, {
   path: "societies",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(22).then(__webpack_require__.bind(null, 1310)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(22).then(__webpack_require__.bind(null, 1310)).then(loadRoute(cb)).catch(errorLoading);
   }
 }, {
   path: "societies/:id",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(15).then(__webpack_require__.bind(null, 1311)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(15).then(__webpack_require__.bind(null, 1311)).then(loadRoute(cb)).catch(errorLoading);
   }
 }, {
   path: "societies_pdf/:id",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(16).then(__webpack_require__.bind(null, 1312)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(16).then(__webpack_require__.bind(null, 1312)).then(loadRoute(cb)).catch(errorLoading);
   }
 }, {
   path: "report",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(0/* duplicate */).then(__webpack_require__.bind(null, 315)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 315)).then(loadRoute(cb)).catch(errorLoading);
   },
 
   indexRoute: {
     getComponent: function getComponent(location, cb) {
-      __webpack_require__.e/* System.import */(1/* duplicate */).then(__webpack_require__.bind(null, 314)).then(loadRoute(cb)).catch(errorLoading);
+      __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 314)).then(loadRoute(cb)).catch(errorLoading);
     }
   },
   childRoutes: reportChildRoutes
@@ -2092,12 +2092,12 @@ var fdrsChildRoutes = [{
 var fdrsRoutes = [{
   path: "fdrs",
   getComponent: function getComponent(location, cb) {
-    __webpack_require__.e/* System.import */(26).then(__webpack_require__.bind(null, 1305)).then(loadRoute(cb)).catch(errorLoading);
+    __webpack_require__.e/* import() */(26).then(__webpack_require__.bind(null, 1305)).then(loadRoute(cb)).catch(errorLoading);
   },
 
   indexRoute: {
     getComponent: function getComponent(location, cb) {
-      __webpack_require__.e/* System.import */(21).then(__webpack_require__.bind(null, 1306)).then(loadRoute(cb)).catch(errorLoading);
+      __webpack_require__.e/* import() */(21).then(__webpack_require__.bind(null, 1306)).then(loadRoute(cb)).catch(errorLoading);
     }
   },
   childRoutes: fdrsChildRoutes
@@ -2108,7 +2108,7 @@ var routes = {
   childRoutes: [{
     path: "/",
     getComponent: function getComponent(location, cb) {
-      __webpack_require__.e/* System.import */(14).then(__webpack_require__.bind(null, 540)).then(loadRoute(cb)).catch(errorLoading);
+      __webpack_require__.e/* import() */(14).then(__webpack_require__.bind(null, 540)).then(loadRoute(cb)).catch(errorLoading);
     }
   }]
 };
@@ -2122,7 +2122,7 @@ var langPrefixedRoutes = function langPrefixedRoutes(lang) {
     path: lang,
     indexRoute: {
       getComponent: function getComponent(location, cb) {
-        __webpack_require__.e/* System.import */(14/* duplicate */).then(__webpack_require__.bind(null, 540)).then(loadRoute(cb)).catch(errorLoading);
+        __webpack_require__.e/* import() */(14/* duplicate */).then(__webpack_require__.bind(null, 540)).then(loadRoute(cb)).catch(errorLoading);
       }
     },
     childRoutes: fdrsRoutes
@@ -2133,13 +2133,13 @@ routes.childRoutes.push(langPrefixedRoutes("fr"), langPrefixedRoutes("es"), lang
 
 exports.default = routes;
 
-/***/ },
+/***/ }),
 
 /***/ 525:
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2157,13 +2157,13 @@ var fetchNeededData = function fetchNeededData(dispatch, _ref) {
 
 exports.default = fetchNeededData;
 
-/***/ },
+/***/ }),
 
 /***/ 528:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2292,10 +2292,10 @@ var Icon = function Icon(props) {
 
 exports.default = Icon;
 
-/***/ },
+/***/ }),
 
 /***/ 529:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseConvert = __webpack_require__(1064),
     util = __webpack_require__(1066);
@@ -2317,10 +2317,10 @@ function convert(name, func, options) {
 module.exports = convert;
 
 
-/***/ },
+/***/ }),
 
 /***/ 531:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var convert = __webpack_require__(529),
     func = convert('map', __webpack_require__(1073));
@@ -2329,13 +2329,13 @@ func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
-/***/ },
+/***/ }),
 
 /***/ 538:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2409,13 +2409,13 @@ function shouldFetchDatasets(state) {
   return state.storyReducer.isFetching ? false : state.storyReducer.datasets.length === 0;
 }
 
-/***/ },
+/***/ }),
 
 /***/ 539:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2469,13 +2469,13 @@ function mapStateToProps(state) {
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(Loader);
 
-/***/ },
+/***/ }),
 
 /***/ 553:
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2516,13 +2516,13 @@ var report = exports.report = {
   }
 };
 
-/***/ },
+/***/ }),
 
 /***/ 554:
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
           value: true
@@ -2534,10 +2534,10 @@ var prefixLanguageToRoute = function prefixLanguageToRoute(lang) {
 
 exports.default = prefixLanguageToRoute;
 
-/***/ },
+/***/ }),
 
 /***/ 555:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"./Acknowledgements": [
@@ -2667,13 +2667,13 @@ module.exports = webpackAsyncContext;
 webpackAsyncContext.id = 555;
 
 
-/***/ },
+/***/ }),
 
 /***/ 559:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3253,13 +3253,13 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 exports.default = (0, _reactI18next.translate)()((0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(FDRSNavigation));
 
-/***/ },
+/***/ }),
 
 /***/ 560:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3616,13 +3616,13 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 exports.default = (0, _reactI18next.translate)()((0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(SimpleNavigation));
 
-/***/ },
+/***/ }),
 
 /***/ 561:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -4064,13 +4064,13 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 // export default App
 exports.default = (0, _reactI18next.translate)()((0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(App));
 
-/***/ },
+/***/ }),
 
 /***/ 562:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -4217,13 +4217,13 @@ function storyReducer() {
   }
 }
 
-/***/ },
+/***/ }),
 
 /***/ 563:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -4247,13 +4247,13 @@ exports.default = {
   tooltip: _reduxTooltip.reducer
 };
 
-/***/ },
+/***/ }),
 
 /***/ 564:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -4299,13 +4299,13 @@ function storyReducer() {
   }
 }
 
-/***/ },
+/***/ }),
 
 /***/ 565:
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 (function () {
   d3.geo.project = function (object, projection) {
@@ -4610,13 +4610,13 @@ function storyReducer() {
   }).raw = times;
 })();
 
-/***/ },
+/***/ }),
 
 /***/ 69:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -4961,10 +4961,10 @@ var switchYear = exports.switchYear = function switchYear(year) {
   };
 };
 
-/***/ },
+/***/ }),
 
 /***/ 947:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 /** Used to match words composed of alphanumeric characters. */
 var reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;
@@ -4983,10 +4983,10 @@ function asciiWords(string) {
 module.exports = asciiWords;
 
 
-/***/ },
+/***/ }),
 
 /***/ 970:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 /**
  * The base implementation of `_.propertyOf` without support for deep paths.
@@ -5004,10 +5004,10 @@ function basePropertyOf(object) {
 module.exports = basePropertyOf;
 
 
-/***/ },
+/***/ }),
 
 /***/ 996:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var arrayReduce = __webpack_require__(248),
     deburr = __webpack_require__(1061),
@@ -5035,6 +5035,6 @@ function createCompounder(callback) {
 module.exports = createCompounder;
 
 
-/***/ }
+/***/ })
 
 },[1299]);

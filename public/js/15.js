@@ -1,10 +1,10 @@
 webpackJsonp([15,29],{
 
 /***/ 1311:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1388,13 +1388,13 @@ exports.default = (0, _reactI18next.translate)(["countries", "societies", "natio
 
 // export default connect(makeMapStateToProps)(Society)
 
-/***/ },
+/***/ }),
 
 /***/ 1313:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1440,13 +1440,13 @@ var niceNum = function niceNum(input, precision, format, fullNumber) {
 
 exports.default = niceNum;
 
-/***/ },
+/***/ }),
 
 /***/ 1316:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1536,10 +1536,10 @@ var Breadcrumbs = function (_React$Component) {
 
 exports.default = (0, _reactI18next.translate)([], { wait: true })(Breadcrumbs);
 
-/***/ },
+/***/ }),
 
 /***/ 1317:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var convert = __webpack_require__(529),
     func = convert('filter', __webpack_require__(533));
@@ -1548,13 +1548,13 @@ func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1319:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1790,13 +1790,13 @@ LineChart.defaultProps = {
 
 exports.default = LineChart;
 
-/***/ },
+/***/ }),
 
 /***/ 1320:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1918,10 +1918,10 @@ var makeGroupTimeSeriesBySociety = exports.makeGroupTimeSeriesBySociety = functi
   });
 };
 
-/***/ },
+/***/ }),
 
 /***/ 1321:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var convert = __webpack_require__(529),
     func = convert('find', __webpack_require__(1324));
@@ -1930,10 +1930,10 @@ func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1323:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
     isArrayLike = __webpack_require__(33),
@@ -1962,10 +1962,10 @@ function createFind(findIndexFunc) {
 module.exports = createFind;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1324:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var createFind = __webpack_require__(1323),
     findIndex = __webpack_require__(1325);
@@ -2011,10 +2011,10 @@ var find = createFind(findIndex);
 module.exports = find;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1325:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseFindIndex = __webpack_require__(532),
     baseIteratee = __webpack_require__(87),
@@ -2073,10 +2073,10 @@ function findIndex(array, predicate, fromIndex) {
 module.exports = findIndex;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1330:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseExtremum = __webpack_require__(308),
     baseGt = __webpack_require__(535),
@@ -2114,10 +2114,10 @@ function maxBy(array, iteratee) {
 module.exports = maxBy;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1331:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseExtremum = __webpack_require__(308),
     baseIteratee = __webpack_require__(87),
@@ -2155,13 +2155,13 @@ function minBy(array, iteratee) {
 module.exports = minBy;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1336:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2328,13 +2328,13 @@ FilteredSocietiesSidebar.propTypes = {
 
 exports.default = (0, _reactI18next.translate)(["national-societies"], { wait: true })(FilteredSocietiesSidebar);
 
-/***/ },
+/***/ }),
 
 /***/ 1337:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2411,13 +2411,13 @@ var GeneratedIntroText = function (_React$Component) {
 
 exports.default = (0, _reactI18next.translate)(["national-societies"], { wait: true })(GeneratedIntroText);
 
-/***/ },
+/***/ }),
 
 /***/ 1339:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2589,13 +2589,13 @@ var StickySidebar = function (_React$Component) {
 
 exports.default = StickySidebar;
 
-/***/ },
+/***/ }),
 
 /***/ 1340:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2680,13 +2680,13 @@ var Textfield = function (_React$Component) {
 
 exports.default = Textfield;
 
-/***/ },
+/***/ }),
 
 /***/ 1341:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2941,13 +2941,13 @@ Card.defaultProps = {
 
 exports.default = Card;
 
-/***/ },
+/***/ }),
 
 /***/ 1342:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2979,13 +2979,13 @@ CardOverlay.propTypes = {
 
 exports.default = CardOverlay;
 
-/***/ },
+/***/ }),
 
 /***/ 1343:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3017,13 +3017,13 @@ CardView.propTypes = {
 
 exports.default = CardView;
 
-/***/ },
+/***/ }),
 
 /***/ 1345:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -3122,10 +3122,10 @@ var ShareBtn = function (_React$Component) {
 
 exports.default = ShareBtn;
 
-/***/ },
+/***/ }),
 
 /***/ 1347:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var convert = __webpack_require__(529),
     func = convert('uniqBy', __webpack_require__(1348));
@@ -3134,10 +3134,10 @@ func.placeholder = __webpack_require__(307);
 module.exports = func;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1348:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(87),
     baseUniq = __webpack_require__(537);
@@ -3172,13 +3172,13 @@ function uniqBy(array, iteratee) {
 module.exports = uniqBy;
 
 
-/***/ },
+/***/ }),
 
 /***/ 1350:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3304,6 +3304,6 @@ var Globe = function (_React$Component) {
 
 exports.default = Globe;
 
-/***/ }
+/***/ })
 
 });

@@ -1,10 +1,10 @@
 webpackJsonp([14,29],{
 
 /***/ 540:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -307,6 +307,6 @@ Landing.propTypes = {
 
 exports.default = (0, _reactI18next.translate)("landing", { wait: true })(Landing);
 
-/***/ }
+/***/ })
 
 });

@@ -1,10 +1,10 @@
 webpackJsonp([1,29],{
 
 /***/ 1314:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -37,13 +37,13 @@ var HeadlineDivider = function HeadlineDivider() {
 
 exports.default = HeadlineDivider;
 
-/***/ },
+/***/ }),
 
 /***/ 1338:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -177,13 +177,13 @@ Reveal.defaultProps = {
 
 exports.default = Reveal;
 
-/***/ },
+/***/ }),
 
 /***/ 1346:
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -214,13 +214,13 @@ function debounce(fn, threshold, isAsap) {
   return debounced;
 }
 
-/***/ },
+/***/ }),
 
 /***/ 314:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1003,6 +1003,6 @@ Home.contextTypes = {
 
 exports.default = (0, _reactI18next.translate)()(Home);
 
-/***/ }
+/***/ })
 
 });
