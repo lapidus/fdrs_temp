@@ -21,31 +21,29 @@ const ReadMore = ({ t }) => {
   )
 
   return (
-    <div>
-      <div className="clearfix bg-primary pb2">
-        <div className="clearfix pt3 px1 sm-px0">
-          <div className="col sm-3 sm-offset-2">
-            <p className="small strong caps m0">
-              { t("report-common:home.downloadReportSection.preTitle") }
-            </p>
-            <h2 className="display-1 mt0">
-              { t("report-common:home.downloadReportSection.title") }
-            </h2>
-            <HeadlineDivider />
-            <br />
-            <br />
-          </div>
+    <div className="bg-primary pb2 px1">
+      <div className="clearfix pt3 px1 sm-px0">
+        <div className="col sm-3 sm-offset-2">
+          <p className="text-sm m0">
+            { t("report-common:home.downloadReportSection.preTitle") }
+          </p>
+          <h2 className="text-md sm-text-lg mt0 light">
+            { t("report-common:home.downloadReportSection.title") }
+          </h2>
+          <HeadlineDivider />
+          <br />
+          <br />
         </div>
-        <div className="clearfix pb3 px1 sm-px0">
-          <div className="col sm-4 sm-offset-2 pr2">
-            <img src="/img/cover.png" alt="" />
-          </div>
-          <div className="col sm-4">
-            <p className="lead">{ t("report-common:home.downloadReportSection.body") }</p>
-            <ul>
-              { downloadLinks }
-            </ul>
-          </div>
+      </div>
+      <div className="clearfix pb3 mxn1 text-center sm-text-left">
+        <div className="col sm-5 sm-offset-1 md-4 md-offset-2 px1 mb2">
+          <img src="/img/cover.png" alt="report-cover" style={{ width: "100%" }}/>
+        </div>
+        <div className="col sm-5 md-4 px1">
+          <p className="lead">{ t("report-common:home.downloadReportSection.body") }</p>
+          <ul>
+            { downloadLinks }
+          </ul>
         </div>
       </div>
     </div>

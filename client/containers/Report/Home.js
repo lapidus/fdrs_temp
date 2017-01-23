@@ -525,7 +525,7 @@ class Home extends React.Component {
            *
            */
         }
-        <div style={{backgroundImage:"url(/img/dataViewPreview.jpg)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+        {/* <div style={{backgroundImage:"url(/img/dataViewPreview.jpg)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
           <div className="clearfix bg-data pb2" style={{background:"rgba(0,0,0,0.4)"}}>
             <div className="clearfix pt3 px1 sm-px0">
               <div className="col sm-3 sm-offset-2">
@@ -548,10 +548,9 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </div>
-
 
     )
   }
