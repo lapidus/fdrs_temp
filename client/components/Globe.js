@@ -11,7 +11,7 @@ import {
   geoPath,
   geoOrthographic
 } from "d3-geo";
-import topojson from "topojson-client"
+import {feature} from "topojson-client"
 
 const SVGOrigin = Origin.wrapBy("g")
 
@@ -38,7 +38,7 @@ class Globe extends React.Component {
       json("/api/report/world-topo.json", (err, world) => {
         if (err) console.log(err)
         this.setState({
-          countries: topojson.feature(world, world.objects.countries).features,
+          countries: feature(world, world.objects.countries).features,
           loading: false,
         })
         resolve()

@@ -140,6 +140,7 @@
     "updateText": "Last updated...",
     "login": "Login",
     "home": "Home",
+    "readMore" : "Read more",
     "navigation": [
         {
             "name": "Services",
