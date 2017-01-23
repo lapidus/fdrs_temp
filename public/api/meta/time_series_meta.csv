@@ -1,0 +1,71 @@
+id,description
+KPI_DON_Code,"ID to indentify the NS , Example ""DAD001"" for Andorran Red Cross "
+NSO_DON_name,"National Society Name , Example ""Afgan Red Crescent"" is for National Society in Afganistan "
+NSO_ZON_name,"The Zone the National Society is classified under , Example ""Asia Pacific"" is for National Society that is in Asia Pacific  "
+KPI_Id,"The data is organized under different list which are linked one to another, the KPI id is a code for program (computer) to understand and relate them. We don't need to know it this is only for IT usage."
+KPI_Year,"The year the data belong to , Example ""2012"" is for data that belongs to that year "
+KPI_StartDate,"explains a year for data collection starts when and finish when. In other word how a year is defined, (Jan to Dec or March to April or, etc. )"
+KPI_EndDate,"explains a year for data collection starts when and finish when. In other word how a year is defined, (Jan to Dec or March to April or, etc. )"
+KPI_noPeopleVolunteering,"Total Number of people volunterring in that National society for that year , Example ""145"" is for 145 people in total as volunteer in that National society for that year"
+KPI_noPeopleVolunteeringM,"Number of people volunterring in that National society for that year that are male only  , Example ""85"" is for 85 people in total as volunteer in that National society for that year that are male only "
+KPI_noPeopleVolunteeringF,"Number of people volunterring in that National society for that year that are male only  , Example ""60"" is for 85 people in total as volunteer in that National society for that year that are female only "
+KPI_noPaidStaff,"Total Number of people as paid staff in that National society for that year , Example ""17"" is for 17 people in total as paid staff in that National society for that year"
+KPI_noPaidStaffM,"Number of people as paid staff in that National society for that year that are male only  , Example ""14"" is for 14 people in total as paid staff in that National society for that year that are male only "
+KPI_noPaidStaffF,"Number of people as paid staff in that National society for that year that are female only  , Example ""14"" is for 14 people in total as paid staff in that National society for that year that are female only "
+KPI_noPeopleDonatingBlood,"Total Number of people that have donated blood in that National society for that year , Example ""1000"" is for 1000 people in total that have donated blood in that National society for that year"
+KPI_noPeopleDonatingBloodM,"Number of people that have donated blood in that National society for that year that are male only , Example ""600"" is for 600 people that have donated blood in that National society for that year that are male only"
+KPI_noPeopleDonatingBloodF,"Number of people that have donated blood in that National society for that year that are female only , Example ""600"" is for 600 people that have donated blood in that National society for that year that are female only"
+KPI_noLocalUnits,"Total Number of local unit (HQ, Branch , chapter and Etc ) under the National Society for that Year, Example ""100"" is for 100 units in total in that year "
+KPI_CUR_Code,"Currency code , ""EUR"" refers to Euro , see Copy of ISO - Copy of National Society Details.xlsx for full listing "
+KPI_IncomeLC,"Total Income for the national Society for that year as per currency stated in "" KPI_CUR_Code"" "
+KPI_expenditureLC,"Total expenditure for the national Society for that year as per currency stated in "" KPI_CUR_Code"" "
+KPI_incomeFromNSsLC,"when you fill the form to enter data into FDRS, at the end of form you have questions like "" Income received from other Federation members"" the answer to this question is reported under this column"
+KPI_financesToNSsLC,"when you fill the form to enter data into FDRS, at the end of form you have questions like "" Finances transferred to other Federation members"" the answer to this question is reported under this column"
+KPI_FinanaceStatementHasInKind,NS financial statement has financial figures for In kind Donations ? (yes for example a donation can be 100 tents and not money)
+KPI_FiguresHasInKind,Figures provided by NS In kind Donations ? Does NS report this goods and services in their Financial Statement (For example the monetary value value of 100 tents is approximatively 2000 CHF and it is noted in the Income satement of the NS. 
+KPI_hasGoodsInKind,If the National society received in kind donation then the value for this column must be 1 
+KPI_hasServicesInKind,If NS donated goods or services (ex. The French RC helped the Gabian RC in immigration crisis by providing them doctors) then the value of this column will be 1
+KPI_recievedInKindLC,approxmiation of the monetary value of in-kind received
+KPI_donatedInKindLC,approxmiation of the monetary value of in-kind donated
+KPI_hasFinancialStatement,NS has Financial Statements 
+KPI_hasExternalAduits,The financial statement will be externally auditted 
+KPI_hasIFRS,The NS uses International Financial Reporting Standards 
+KPI_accountingSystem,"Type of accounting system example "" Accrual , Cash Basis """
+KPI_deletedDateTime,not sure but I think : If a KPI was entered to the system and deleted aftarward (because of any reason) here you have when it happened
+KPI_noPeopleReachedDisaster,Total number of people reached for disaster response and early recovery 
+KPI_noPeopleReachedDisasterDirect,Total number of people reached for disaster response and early recovery that are directly associated 
+KPI_noPeopleReachedDisasterDirectM,Total number of people reached for disaster response and early recovery that are directly associated (Male) 
+KPI_noPeopleReachedDisasterDirectF,Total number of people reached for disaster response and early recovery that are directly associated (female) 
+KPI_noPeopleReachedDisasterIndirect,Total number of people reached for disaster response and early recovery that are indirectly associated 
+KPI_noPeopleReachedAllServices,Total number of people reached for long term Services and Development Programmes
+KPI_noPeopleReachedAllServicesDirect,Total number of people reached for long term Services and Development Programmes that are directly associated 
+KPI_noPeopleReachedAllServicesDirectM,Total number of people reached for long term Services and Development Programmes  that are directly associated (Male) 
+KPI_noPeopleReachedAllServicesDirectF,Total number of people reached for long term Services and Development Programmes  that are directly associated (Female) 
+KPI_noPeopleReachedAllServicesIndirect,Total number of people reached for long term Services and Development Programmes that are indirectly associated 
+KPI_noPeopleReachedHealth,
+KPI_noPeopleReachedHealthDirect,
+KPI_noPeopleReachedHealthDirectM,
+KPI_noPeopleReachedHealthDirectF,
+KPI_noPeopleReachedHealthIndirect,
+KPI_noPeopleReachedDevelopment,
+KPI_noPeopleReachedDevelopmentDirect,
+KPI_noPeopleReachedDevelopmentDirectM,
+KPI_noPeopleReachedDevelopmentDirectF,
+KPI_noPeopleReachedDevelopmentIndirect,
+KPI_noPeopleReachedServices,
+KPI_noPeopleReachedServicesDirect,
+KPI_noPeopleReachedServicesDirectM,
+KPI_noPeopleReachedServicesDirectF,
+KPI_noPeopleReachedServicesIndirect,
+KPI_noPeopleCoveredPreparedness,Total number of people reached for prepadness and Risk Reduction Programmes
+KPI_SPS_ID,"Don't know excatly but once agin it must be a reference to data in database for computer, we don't need it."
+KPI_createdBy,The person that created that years entry 
+KPI_createdDateTime,The date and time this entry was created 
+KPI_modifiedBy,Last person to modify this entry 
+KPI_modifiedDateTime,The last time and date this entry was  modified 
+KPI_IncomeLC (CHF),Total Income in Swiss Franc currency 
+KPI_expenditureLC (CHF),Total Expenditure in Swiss Franc currency 
+KPI_incomeFromNSsLC (CHF),Refers to line 21 converted in CHF
+KPI_financesToNSsLC (CHF),Refers to line 22 converted in CHF
+KPI_recievedInKindLC (CHF),Refers to line 27 converted in CHF
+KPI_donatedInKindLC (CHF),Refers to line 28 converted in CHF

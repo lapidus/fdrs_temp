@@ -1,0 +1,212 @@
+{
+    "chapter": "6",
+    "slug": "strategic-aim-3",
+    "title": "Objectif strat\u00e9gique 3",
+    "subtitle": "Promouvoir l\u2019inte\u0301gration sociale et une culture de non-violence et de paix",
+    "intro": "La violence touche tous les individus, tous les pays et tous les continents. Elle reve\u0302t diffe\u0301rentes formes (elle peut e\u0302tre auto-inflige\u0301e, interpersonnelle, communautaire ou collective) et a des conse\u0301quences de\u0301vastatrices sur les plans humain, social et e\u0301conomique.",
+    "sections": [
+        {
+            "title": "L\u2019impact de la violence au niveau mondial",
+            "blocks": [
+                "Bien que la violence soit un phe\u0301nome\u0300ne re\u0301pandu et complexe, souvent cache\u0301 ou garde\u0301 secret, et pouvant survenir partout et a\u0300 tout moment, elle n\u2019est pas ine\u0301vitable. Dans bien des cas, il est possible de pre\u0301voir, de pre\u0301venir et d\u2019atte\u0301nuer la violence. Du point de vue de la Croix-Rouge et du Croissant-Rouge, quatre grandes conside\u0301rations sont particulie\u0300rement importantes:",
+                [
+                    "la violence interpersonnelle, qui inclut les mauvais traitements, l\u2019exploitation et la traite d\u2019e\u0302tres humains, est un risque courant dans tous les contextes ;",
+                    "un moyen efficace de re\u0301duire la violence peut consister a\u0300 la placer au rang de proble\u0300me de sante\u0301 publique ;",
+                    "il est essentiel de mener des activite\u0301s fonde\u0301es sur des faits pour obtenir des ame\u0301liorations mesurables en matie\u0300re de se\u0301curite\u0301;",
+                    "il est crucial d\u2019inte\u0301grer les activite\u0301s de lutte contre la violence a\u0300 d\u2019autres programmes et services pour atteindre les objectifs voulus en matie\u0300re de pre\u0301vention et d\u2019atte\u0301nuation."
+                ],
+                {
+                    "type": "chart",
+                    "title": "Conse\u0301quences pour la sante\u0301",
+                    "dataset": {
+                        "consequences": [
+                            "Death",
+                            "Physical Injury",
+                            [
+                                "Unintended",
+                                "pregnancy",
+                                "induced abortions"
+                            ],
+                            [
+                                "Sexually",
+                                "transmitted",
+                                "infections including",
+                                "HIV"
+                            ],
+                            [
+                                "Depression, anxiety,",
+                                "post traumatic",
+                                "stress disorder"
+                            ],
+                            [
+                                "Harmful use of",
+                                "tobacco, drugs, and",
+                                "alcohol"
+                            ]
+                        ],
+                        "summaries": [
+                            {
+                                "number": "1.3M",
+                                "text": "Deaths per year"
+                            },
+                            {
+                                "number": "16M",
+                                "text": "Hospitalisations per year"
+                            },
+                            {
+                                "number": "unknown",
+                                "text": "Injuries"
+                            }
+                        ]
+                    },
+                    "caption": "The chart above shows..."
+                },
+                {
+                    "type": "chart",
+                    "title": "Impact e\u0301conomique",
+                    "dataset": [
+                        {
+                            "x": "\nCollective",
+                            "y": "6",
+                            "fill": "#012A39"
+                        },
+                        {
+                            "x": "Self-inflicted",
+                            "y": "58",
+                            "fill": "#EE3224"
+                        },
+                        {
+                            "x": "Interpersonal\n\n",
+                            "y": "36",
+                            "fill": "#FED02F"
+                        }
+                    ],
+                    "caption": "Le cou\u0302t de la violence entre partenaires intimes et de la violence sexuelle pour les pays est tre\u0300s e\u0301leve\u0301. Il comprend les de\u0301penses lie\u0301es a\u0300 la fourniture de soins de sante\u0301 et de services sociaux et juridiques, ainsi que le manque a\u0300 gagner."
+                }
+            ]
+        },
+        {
+            "title": "Faire mieux dans le domaine de la lutte contre la violence",
+            "blocks": [
+                "Les activite\u0301s que les Socie\u0301te\u0301s nationales me\u0300nent sur le terrain illustrent l\u2019e\u0301mergence de proble\u0301matiques communes.",
+                {
+                    "type": "chart",
+                    "title": "Doing better in reducing violence",
+                    "items": [
+                        {
+                            "img": "\/img\/chapters\/6\/child-protection.svg",
+                            "number": "78",
+                            "text": [
+                                "National Societies",
+                                "work towards better child protection"
+                            ]
+                        },
+                        {
+                            "img": "\/img\/chapters\/6\/act-against-gender-based-violence.svg",
+                            "number": "52",
+                            "text": [
+                                "National Societies",
+                                "act against gender-based violence"
+                            ]
+                        },
+                        {
+                            "img": "\/img\/chapters\/6\/tackle-violence-against-migrants.svg",
+                            "number": "28",
+                            "text": [
+                                "National Societies",
+                                "tackle violence against migrants"
+                            ]
+                        },
+                        {
+                            "img": "\/img\/chapters\/6\/address-self-directed-harm.svg",
+                            "number": "21",
+                            "text": [
+                                "National Societies",
+                                "address self-directed harm"
+                            ]
+                        }
+                    ],
+                    "caption": "The chart above shows..."
+                },
+                [
+                    "Child protection projects are usually implemented through schools, with those involving youth often led to them. Topics covered include bullying, physical, psychological and sexual abuse, trafficking, and youth conflict.",
+                    "Gender-based violence activities focus on preventing domestic violence, physical and sexual violence against women and girls, female genital mutilation, violence against men who have sex with men, and increasingly, violence in disasters and conflicts.",
+                    "Violence against migrants is a growing area of preventative work including supporting refugees and internally displaced during and after crises, providing services for migrants and refugees arriving in a new country to help integrate them into host communities, and addressing human trafficking.",
+                    "Community violence is an emerging area for Red Cross and Red Crescent intervention. This is a recognised consideration in disaster response where pre-existing or new tensions can impede relief operations. Elsewhere, some National Societies are tackling violence in public spaces by trying to halt or heal divides between conflicting groups. Examples include work to reduce inter-ethnic conflicts, mob violence, for example, during elections and sporting events, and urban and gang violence.",
+                    "Self-directed violence is reaching epidemic proportions. Fifty-eight per cent of all violent deaths globally are due to suicide. More needs to be done to overcome the obstacles posed by cultural and religious stigma and taboos, following the example of some National Societies who do so. Others are also addressing self-harm directly through efforts to reduce alcohol and substance misuse, and indirectly through psychosocial and mental health care services."
+                ],
+                {
+                    "type": "case-study-simple",
+                    "title": "\u201cThey wanted to kill\u201d",
+                    "content": [
+                        "In 2012, Kenya\u2019s Tana Delta region experienced extreme violence between farming and pastoralist communities over the sharing of limited land and water. One hundred and sixty people were killed and 112,000 people were displaced. Kony, a primary school student, recalls, \u201cWe were in school when we heard the first blast. One of my classmates said that it was a gunshot. It was very scary, and we began to run to the village which is a few metres from the school.\u201d",
+                        "In response, the Kenya Red Cross Society developed a risk reduction project to defuse the risk of future violence. This included local peace committees, female-led joint income generation projects, dialogue with religious leaders, and school-based activities. Crucially, it also involved the Red Cross acting as a neutral, independent, and impartial facilitator."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Agents of behavioural change",
+            "blocks": [
+                "A sizeable number of projects on violence are led by youth with at least 52 National Societies (28 per cent) reporting that they do so. Youth as Agents of Behavioural Change (YABC) is the IFRC secretariat\u2019s flagship initiative on the promotion of a culture of non-violence and peace. Created in 2008, it seeks to empower individuals as ethical leaders in their communities. Currently, there are more than 1,450 trained peer educators from 125 National Red Cross and Red Crescent Societies.",
+                "YABC is about changing minds by touching hearts. It relies on peer education and a participant-centred, experiential approach \u2013 meaning that feelings, experiences, or the physical body, rather than intellectual analysis, are the entry points for developing self-awareness and skills in understanding societal issues such as discrimination, exclusion, and violence.",
+                "YABC uses games, role-plays, simulation and visualisation exercises, storytelling, and artistic platforms to move learners out of their comfort zone while creating a safe and respectful environment where they are not told what to think or do, but where solutions are explored together. Learning comes from within and from trusted peer exchange so that individuals develop their own commitments through critical reflections.",
+                "Context is important. When integrated into other Red Cross and Red Crescent work such as first aid, disaster and emergency management, migration, shelter, road safety, and psychosocial support, YABC strengthens not only what we do, but also how we do it. ",
+                {
+                    "type": "case-study-simple",
+                    "title": "I changed a lot in a very short period of time",
+                    "content": [
+                        "\u201cThis experience has been a turning point for me. Without this training, it would have taken me a lifetime to understand these issues and change myself,\u201d said a YABC peer educator.",
+                        "The self-transformation in trainers and peer educators that YABC triggers results not only in changes in motivation, identity, vocabulary, and attitudes, but also in positive behaviours. This can have a domino effect that frequently improves their family, peer, and professional relationships.",
+                        "A five-year impact study concluded: \u201cThe YABC initiative leverages the Red Cross and Red Crescent Fundamental Principles and humanitarian values to deliver sustained transformations of attitude and behaviour, cross-culturally and on a global scale, in an extremely short period and sustained over a long time. This makes it an outstanding model of best practice in peer education internationally and a worthy benchmark for behaviour change interventions inside and outside the International Red Cross and Red Crescent Movement.\u201d"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Adding life to years",
+            "blocks": [
+                "The world is ageing as people live longer. As per current trends, the number of people aged over 60 will more than treble to 2 billion by 2050, with 80 per cent of them living in low and middle-income countries. This is already having profound social and economic consequences.",
+                "The Red Cross and Red Crescent seeks to build a positive image of ageing that recognises older people as an important resource for society thanks to their acquired knowledge and skills that are of huge benefit to younger generations. This means advocating for a socially inclusive enabling environment in favour of older people, and strengthening their capacities to be autonomous.",
+                "Activities include schemes to help older people keep as fit and healthy as possible, and to prevent and tackle abuse. Advocating for transport, housing, and care services that are better tailored to their needs is matched by practical support from volunteers to help access them. A particular challenge exists in emergency situations where they have special needs that are often neglected.",
+                "The Red Cross and Red Crescent engagement with older people takes place in many diverse circumstances. To get a fuller picture, the Federation-wide Databank and Reporting System will introduce an age marker in future data collection as part of the strengthening of age and gender disaggregated reporting."
+            ]
+        },
+        {
+            "title": "Migration",
+            "blocks": [
+                "Migration has occurred throughout history and migrants make up three per cent of the global population. This means that approximately every 1 in 35 people in the world is a migrant. Migrants are people who leave or flee their home to go to a new place \u2013 usually abroad \u2013 to seek better and safer surroundings. Migration can be voluntary or forced, but generally a combination of choices and constraints are involved.",
+                "Many migrants succeed in establishing themselves in their new communities, but others face difficulties and it is these people who are of primary concern to us. With their traditional support systems removed, migrants are often unable to access basic health and welfare services. They may lose links with their families and communities, and be subject to people smuggling and trafficking, or be exploited in informal labour arrangements.",
+                "Au cours du processus de migration, ils peuvent e\u0302tre de\u0301tenus et prive\u0301s de liberte\u0301. Ils peuvent e\u0301galement se heurter a\u0300 d\u2019autres obstacles, tels que les barrie\u0300res culturelles et linguistiques, la discrimination et l\u2019exclusion, voire la violence. Parmi la population migrante, les femmes, les enfants et les mineurs non accompagne\u0301s courent les plus grands risques.",
+                "The Red Cross and Red Crescent is neither for nor against migration, but is committed to addressing the needs of vulnerable migrants regardless of their legal or administrative status. This means defending the principle of humanitarian access, \u2018humanising\u2019 migrants rather than excluding or stigmatising them, and helping them to find durable solutions for themselves in cooperation with originating and receiving communities. Migrants make many positive social, economic, cultural, and demographic contributions to their host countries. They also contribute substantially to their countries of origin, for example, through remittances that, in aggregate, far exceed the value of global development aid.",
+                "Where migratory pressures are due to social or economic distress linked to environmental degradation, disasters and conflicts, the Red Cross and Red Crescent seeks to build resilience to alleviate pressures that induce people to migrate against their will and desire.",
+                "Nous exhortons les gouvernements du monde entier a\u0300 respecter les droits des migrants. A\u0300 la XXXIe Confe\u0301rence internationale de la Croix-Rouge et du Croissant-Rouge, en 2011, 164 gouvernements sur 194 ont adopte\u0301 une re\u0301solution sur la migration intitule\u0301e \u00ab garantir l\u2019acce\u0300s, la dignite\u0301, le respect de la diversite\u0301 et l\u2019inte\u0301gration sociale \u00bb.",
+                {
+                    "type": "chart",
+                    "title": "\u201cHumanising\u201d migrants: a matter of principle",
+                    "caption": "Principes d\u2019action ge\u0301ne\u0301raux de la Croix-Rouge et du Croissant-Rouge :",
+                    "items": [
+                        "Focus on the needs and vulnerabilities of migrants",
+                        "Inclure les migrants parmi les be\u0301ne\u0301ficiaires des pro-grammes humanitaires",
+                        "Soutenir les aspirations des migrants",
+                        "Reconnai\u0302tre les droits des migrants",
+                        "Lier l\u2019assistance, la protection et le plaidoyer humanitaire en faveur des migrants",
+                        "E\u0301tablir des partenariats pour les migrants",
+                        "Agir tout au long des routes migratoires",
+                        "Apporter une aide au retour",
+                        "Agir face aux de\u0301placements de population",
+                        "Atte\u0301nuer les pressions a\u0300 l\u2019e\u0301migration dans les pays d\u2019origine"
+                    ]
+                },
+                "Le travail de la Croix-Rouge et du Croissant-Rouge en faveur des migrants consiste a\u0300 apporter une aide humanitaire et, au niveau individuel, a\u0300 fournir une assistance sociale, une protection juridique et un soutien personnel. Les Socie\u0301te\u0301s nationales me\u0300nent des activite\u0301s lie\u0301es a\u0300 la migration dans toutes les re\u0301gions du monde."
+            ]
+        }
+    ],
+    "nextChapter": {
+        "heading": "Prochain chapitre",
+        "chapter": "7",
+        "subtitle": "Action facilitatrice 1",
+        "title": "Ba\u0302tir des socie\u0301te\u0301s nationales de la croix-rouge et du croissant-rouge fortes",
+        "slug": "enabling-action-1"
+    }
+}

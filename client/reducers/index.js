@@ -1,10 +1,9 @@
-
-import storyReducer from './storyReducer';
-import appReducer from './appReducer';
-import chapterReducer from './chapterReducer';
+import storyReducer from "./storyReducer"
+import appReducer from "./appReducer"
+import { reducer as tooltip } from 'redux-tooltip';
 
 export default {
   appReducer,
-  chapterReducer,
-  storyReducer
-};
+  storyReducer,
+  tooltip,
+}

@@ -1,0 +1,134 @@
+{
+    "site-title": "Todos y cada uno tienen importancia - Progreso hasta 2015",
+    "preTitle": "Todos y cada uno tienen importancia",
+    "reportType": "Informe de Progreso",
+    "download": "Descargar el informe",
+    "share": "Compartir",
+    "signature": [
+        "P\u00e1gina web por:",
+        "Lapidus Interactive"
+    ],
+    "copyright": "@ 2016 IFRC",
+    "home": {
+        "title": [
+            "Todos y cada uno tienen",
+            "importancia",
+            "2015"
+        ],
+        "intro": [
+            "Una vez transcurridos los cinco primeros a\u00f1os del decenio y a medida que se aproxima el centenario de la Federaci\u00f3n Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja (Federaci\u00f3n Internacional) es oportuno establecer un balance de nuestros resultados con respecto a las aspiraciones enunciadas en la Estrategia 2020",
+            "El panorama que traza este informe es alentador. En 2013, las Sociedades Nacionales de la Cruz Roja y de la Media Luna Roja prestaron ayuda a m\u00e1s de ciento diez (110) millones de personas mediante servicios de intervenci\u00f3n y de recuperaci\u00f3n temprana."
+        ],
+        "signatures": [
+            {
+                "name": "Tadateru Kono\u00e9",
+                "title": "Presidente"
+            },
+            {
+                "name": "Elhadj As Sy",
+                "title": "Secretario General"
+            }
+        ],
+        "section1": "Secci\u00f3n 1",
+        "section2": "Secci\u00f3n 2",
+        "section3": "Secci\u00f3n 3",
+        "section4": "Secci\u00f3n 4",
+        "overview": "Visi\u00f3n de conjunto",
+        "strategicAims": "Objetivos estrat\u00e9gicos",
+        "enablingActions": "Acci\u00f3nes facilitadores",
+        "downloadReportSection": {
+            "preTitle": "Informe",
+            "title": "Quieres leer m\u00e1s?",
+            "body": "The Everyone Counts Progress Report 2015 is available in all four official languages of the IFRC. Choose a download from below.",
+            "buttons": [
+                "Descargar en ingles",
+                "Descargar en franc\u00e9s",
+                "Descargar en espa\u00f1ol",
+                "Descargar en \u00e1rabe"
+            ]
+        },
+        "sections": [
+            {
+                "id": "Secci\u00f3n 1",
+                "title": "Visi\u00f3n de conjunto",
+                "statistic": {
+                    "number": "80M",
+                    "text": "Miembros"
+                },
+                "fact": "La Federaci\u00f3n Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja acusa constante crecimiento desde sus or\u00edgenes en 1863 y, desde 2015, cuenta con 190 Sociedades Nacionales.",
+                "quote": "Los principios fundamentales son la piedra angular de cuanto hacemos y emanan de nuestra experiencia colectiva acumulada a lo largo de m\u00e1s de un siglo de actividades."
+            },
+            {
+                "id": "Secci\u00f3n 2",
+                "title": "Objetivos estrat\u00e9gicos",
+                "statistic": {
+                    "number": "110M",
+                    "text": "Beneficiarios de las intervenciones motivadas por desastres y de programas en apoyo a la recuperaci\u00f3n inicial"
+                },
+                "fact": "La visi\u00f3n de la Federaci\u00f3n es: Inspirar, estimular, facilitar y promover en todo momento todas las formas de actividades humanitarias realizadas por las sociedades Nacionales, con el prop\u00f3sito de prevenir y aliviar el sufrimiento humano, con lo que se contribuye al mantenimiento y la promoci\u00f3n de la dignidad humana y la paz en el mundo.",
+                "quote": "Desde sus or\u00edgenes, se conoce a las organizaciones de la Cruz\ufffcRoja y de la Media Luna Roja por su cometido de prestar asistencia urgente y consuelo a las personas en momentos de gran necesidad"
+            },
+            {
+                "id": "Secci\u00f3n 3",
+                "title": "Acci\u00f3nes facilitadores",
+                "statistic": {
+                    "number": "190",
+                    "text": "Sociedades Nacionales"
+                },
+                "fact": "To inspire, encourage, facilitate and promote at all times all forms of humanitarian activities by National Societies, with a view to preventing and alleviating human suffering, and thereby contributing to the maintenance and promotion of human dignity and peace in the world.",
+                "quote": "Desde la aprobaci\u00f3n de la Estrategia 2020, los esfuerzos encaminados a mejorar el funcionamiento de la Federaci\u00f3n Internacional en calidad de organizaci\u00f3n han girado en torno al fortalecimiento de los \u00f3rganos y las funciones de gobierno, el establecimiento de un marco para la rendici\u00f3n de cuentas y la promoci\u00f3n de una cultura de incorporaci\u00f3n de ense\u00f1anzas."
+            },
+            {
+                "id": "Section 4",
+                "title": "Ap\u00e9ndices"
+            }
+        ]
+    },
+    "chapters": {
+        "chapter1": {
+            "title": "Nuestra Identidad"
+        },
+        "chapter2": {
+            "title": "Nuestra Labor"
+        },
+        "chapter3": {
+            "title": "Living our fundamental principles"
+        },
+        "chapter4": {
+            "pretitle": "Strategic aim 1",
+            "title": "Save lives, protect livelihoods and strengthen recovery from disasters and crises"
+        },
+        "chapter5": {
+            "pretitle": "Strategic aim 2",
+            "title": "Healthy and safe living"
+        },
+        "chapter6": {
+            "pretitle": "Strategic aim 3",
+            "title": "Social inclusion and a culture of non-violence and peace"
+        },
+        "chapter7": {
+            "pretitle": "Enabling action 1",
+            "title": "Strong national red cross and red crescent societies"
+        },
+        "chapter8": {
+            "pretitle": "Enabling action 2",
+            "title": "Humanitarian diplomacy to prevent and reduce vulnerability in a globalised world"
+        },
+        "chapter9": {
+            "pretitle": "Enabling action 3",
+            "title": "Function effectively as the IFRC"
+        },
+        "data": {
+            "pretitle": "Data tools",
+            "title": "Explore the data",
+            "body": [
+                "Las siete indicadores claves",
+                "Find information about your National Society"
+            ],
+            "button": "Explore the data from FDRS"
+        },
+        "acknowledgements": {
+            "title": "Agradecimiento"
+        }
+    }
+}

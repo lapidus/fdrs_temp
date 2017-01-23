@@ -1,168 +1,186 @@
 {
-    "site-title": "Tout le monde compte Bilan jusqu\u2019en 2015",
-    "preTitle": "Tout le monde compte",
-    "reportType": "Bilan",
-    "download": "T\u00e9l\u00e9charger le bilan",
-    "share": "partager",
-    "signature": [
-        "site par:",
-        "Lapidus Interactive"
+    "breadcrumbs": {
+        "National society profiles": "Profils des soci\u00e9t\u00e9s nationales",
+        "FAQ": "FAQ",
+        "Services": "Services",
+        "The IFRC at a glance": "La FICR en bref",
+        "Data download": "T\u00e9l\u00e9charger les donn\u00e9es",
+        "Home": "Page d'acceuil"
+    },
+    "indicators": {
+        "KPI_noPeopleVolunteering": {
+            "": "Personnes donnant de leur temps comme volontaires",
+            "name": "Personnes donnant de leur temps comme volontaires",
+            "definition": "Nombre de personnes donnant de leur temps comme volontaires : personnes ayant travaill\u00e9 au moins quatre heures comme volontaires pendant la p\u00e9riode consid\u00e9r\u00e9e.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPaidStaff": {
+            "": "Employ\u00e9s r\u00e9mun\u00e9r\u00e9s",
+            "name": "Employ\u00e9s r\u00e9mun\u00e9r\u00e9s",
+            "definition": "Nombre d\u2019employ\u00e9s r\u00e9mun\u00e9r\u00e9s : personnes ayant travaill\u00e9 au moins trois mois pour une Soci\u00e9t\u00e9 nationale ou le Secr\u00e9tariat pendant la p\u00e9riode consid\u00e9r\u00e9e en \u00e9tant r\u00e9mun\u00e9r\u00e9es.",
+            "source": "",
+            "unit": "[unit test]"
+        },
+        "KPI_noPeopleDonatingBlood": {
+            "": "Donneurs de sang",
+            "name": "Donneurs de sang",
+            "definition": "Nombre de donneurs de sang : personnes ayant donn\u00e9 du sang au moins une fois durant la p\u00e9riode consid\u00e9r\u00e9e.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noLocalUnits": {
+            "": "Unite\u0301s locales",
+            "name": "Unit\u00e9s locales",
+            "definition": "Nombre d\u2019unit\u00e9s locales : subdivisions de la Soci\u00e9t\u00e9 nationale qui travaillent directement aupr\u00e8s de la population \u2013 ce peut \u00eatre des chapitres locaux, des sections, des bureaux r\u00e9gionaux et interm\u00e9diaires, et le si\u00e8ge.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedDisaster": {
+            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce",
+            "name": "de personnes ont b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedAllServices": {
+            "": "Personnes ayant be\u0301ne\u0301ficie\u0301 de services a\u0300 long terme et programmes de d\u00e9veloppement",
+            "name": "Personnes ayant be\u0301ne\u0301ficie\u0301 de services a\u0300 long terme et programmes de d\u00e9veloppement",
+            "definition": "Personnes ayant be\u0301ne\u0301ficie\u0301 de services a\u0300 long terme et programmes de d\u00e9veloppement: nombre de b\u00e9n\u00e9ficiaires directs et indirects et de personnes couvertes par un service de la F\u00e9d\u00e9ration internationale.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedHealth": {
+            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de sant\u00e9 communautaire",
+            "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de sant\u00e9 communautaire",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedDevelopment": {
+            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de d\u00e9veloppement communautaire",
+            "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de d\u00e9veloppement communautaire",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleReachedServices": {
+            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services sociaux",
+            "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services sociaux",
+            "definition": "",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_noPeopleCoveredPreparedness": {
+            "": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration",
+            "name": "Personnes couvertes",
+            "definition": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_IncomeLC (CHF)": {
+            "name": "Recettes totales (CHF)",
+            "definition": "Recettes totales : valeur financi\u00e8re de l\u2019argent, des biens mat\u00e9riels et des services qu\u2019une Soci\u00e9t\u00e9 nationale re\u00e7oit pendant l\u2019exercice budg\u00e9taire.",
+            "source": "",
+            "unit": ""
+        },
+        "KPI_expenditureLC (CHF)": {
+            "name": "Total des d\u00e9penses (CHF)",
+            "definition": "Total des d\u00e9penses : valeur financi\u00e8re de l\u2019argent, des biens mat\u00e9riels et des services qu\u2019une Soci\u00e9t\u00e9 nationale d\u00e9pense pendant l\u2019exercice budg\u00e9taire.",
+            "source": "",
+            "unit": ""
+        },
+        "Population": {
+            "name": "totale de la population",
+            "definition": "La population totale est bas\u00e9e sur la d\u00e9finition de facto de la population, qui compte tous les r\u00e9sidents ind\u00e9pendamment de leurs statut l\u00e9gal ou de leur citoyennet\u00e9. Les valeurs indiqu\u00e9es sont des estimations semestrielles.",
+            "source": "(1) Division de la population des Nations Unies, (2) Rapports de recensement et autres publications statistiques des bureaux nationaux de statistique, (3) Eurostat: Statistiques d\u00e9mographiques, (4) Division de la statistique des Nations Unies, (5) Bureau de recensment des Etats Unies: Base de donn\u00e9e internationale, et (6) Secr\u00e9tariat de la communaut\u00e9 pacifique: Programmes statistiques et d\u00e9mographiques. ",
+            "unit": ""
+        },
+        "Poverty": {
+            "name": "Taux national de pauvret\u00e9",
+            "definition": "Le taux national de pauvret\u00e9 est le pourcentage de la population vivant en dessous des seuils nationaux de pauvret\u00e9. Les estimations nationales sont bas\u00e9es sur des estimations des sous-groupes pond\u00e9r\u00e9s par la population tir\u00e9es des enqu\u00eates aupr\u00e8s des m\u00e9nages.",
+            "source": "Banque mondiale, Groupe de travail sur la pauvret\u00e9 mondiale. Les donn\u00e9es proviennent de sources gouvernementales officielles ou sont calcul\u00e9es par le personnel de la Banque mondiale en utilisant des seuils de pauvret\u00e9 nationaux (c'est-\u00e0-dire sp\u00e9cifiques au pays).",
+            "unit": ""
+        },
+        "GDP": {
+            "name": "PIB (USD en vigeur)",
+            "definition": "Le PIB au prix de l'acheteur est la somme de la valeur ajout\u00e9e brute de tous les producteurs r\u00e9sidents de l'\u00e9conomie plus les taxes sur les produits et moins les subventions qui ne sont pas incluses dans la valeur des produits. Il est calcul\u00e9 sans faire de d\u00e9ductions pour amortissement des actifs fabriqu\u00e9s ou pour \u00e9puisement et d\u00e9gradation des ressources naturelles. Les donn\u00e9es sont en dollars am\u00e9ricains en vigeur. Les chiffres du PIB en dollars sont convertis en monnaies nationales en utilisant les taux de change officiels d'un an. Pour quelques pays o\u00f9 le taux de change officiel ne refl\u00e8te pas le taux effectivement appliqu\u00e9 aux op\u00e9rations de change r\u00e9elles, un autre facteur de conversion est utilis\u00e9",
+            "source": "Les donn\u00e9es des comptes nationaux de la Banque mondiale et les fichiers de donn\u00e9es des Comptes nationaux de l'OCDE",
+            "unit": ""
+        },
+        "KPI_IncomeLC": "Recettes totales",
+        "KPI_expenditureLC": "D\u00e9penses totales"
+    },
+    "languages": {
+        "en": {
+            "name": "Anglais",
+            "slug": "en"
+        },
+        "fr": {
+            "name": "Fran\u00e7ais",
+            "slug": "fr"
+        },
+        "es": {
+            "name": "Espagnol",
+            "slug": "es"
+        },
+        "ar": {
+            "name": "Arabe",
+            "slug": "ar"
+        }
+    },
+    "name": "Base de donn\u00e9es et syst\u00e8me de compte rendu \u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration",
+    "nameParts": [
+        "\u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration",
+        "Base de donn\u00e9es",
+        "et syst\u00e8me de compte rendu"
     ],
-    "copyright": "@ 2016 IFRC",
-    "home": {
-        "title": [
-            "Tout le monde",
-            "compte",
-            "2015"
-        ],
-        "intro": [
-            "\u00c0 mi-parcours de cette de\u0301cennie, et a\u0300 quelques anne\u0301es du centenaire de la Fe\u0301de\u0301ration internationale des Socie\u0301te\u0301s de la Croix-Rouge et du Croissant-Rouge (Fe\u0301de\u0301ration), le moment est venu de dresser le bilan de nos re\u0301alisations a\u0300 la lumie\u0300re des aspirations de la Strate\u0301gie 2020.",
-            "Le tableau pr\u00e9sent\u00e9 dans ce rapport est encourageant. En 2013, vous, les Soci\u00e9t\u00e9s nationales de la Croix-Rouge et du Croissant-Rouge, avez port\u00e9 assistance \u00e0 plus de 110 millions de personnes dans le cadre de vos op\u00e9rations d'urgence en cas de catastrophe et de vos programmes de rele\u0300vement pre\u0301coce."
-        ],
-        "signatures": [
-            {
-                "name": "Tadateru Kono\u00e9",
-                "title": "Pre\u0301sident"
-            },
-            {
-                "name": "Elhadj As Sy",
-                "title": "Secre\u0301taire ge\u0301ne\u0301ral"
-            }
-        ],
-        "section1": "Section 1",
-        "section2": "Section 2",
-        "section3": "Section 3",
-        "section4": "Section 4",
-        "overview": "Aper\u00e7u",
-        "strategicAims": "Objectifs strat\u00e9giques",
-        "enablingActions": "Actions facilitatrices",
-        "downloadReportSection": {
-            "preTitle": "Bilan",
-            "title": "Vous voulez en savoir plus?",
-            "body": "Le bilan 2015 est disponible dans les quatre langues officielles de la FICR. Choisissez un t\u00e9l\u00e9chargement \u00e0 partir ci-dessous .",
-            "buttons": [
-                "T\u00e9l\u00e9charger le bilan en anglais",
-                "T\u00e9l\u00e9charger le bilan en fran\u00e7ais",
-                "T\u00e9l\u00e9charger le bilan en espagnol",
-                "T\u00e9l\u00e9charger le bilan en arabe"
+    "download": "T\u00e9l\u00e9charger le bilan",
+    "indicatorsTitle": "Indicateurs",
+    "updateText": "Derni\u00e8re mise-\u00e0-jours",
+    "login": "s'identifier",
+    "home": "Page d'acceuil",
+    "navigation": [
+        {
+            "name": "Services",
+            "dropdownItems": [
+                "La FICR en bref",
+                "Profils des soci\u00e9t\u00e9s nationales",
+                "Rapport \"Tout le monde compte\"",
+                "T\u00e9l\u00e9charger les donn\u00e9es"
             ]
         },
-        "sections": [
-            {
-                "id": "Section 1",
-                "title": "Aper\u00e7u",
-                "statistic": {
-                    "number": "80M",
-                    "text": "Membres"
-                },
-                "fact": "Le r\u00e9seau mondial de la Croix-Rouge et du Croissant- Rouge s\u2019est \u00e9tendu de mani\u00e8re continue depuis sa naissance en 1863. Il compte 190 Soci\u00e9t\u00e9s nationales depuis 2015.",
-                "quote": "Toutes nos actions sont guide\u0301es par nos Principes fondamentaux, lesquels s\u2019inspirent de l\u2019expe\u0301rience collective accumule\u0301e depuis plus d\u2019un sie\u0300cle.",
-                "chapters": [
-                    {
-                        "title": "Qui nous sommes",
-                        "slug": "\/who-we-are"
-                    },
-                    {
-                        "title": "Ce que nous faisons",
-                        "slug": "\/what-we-do"
-                    },
-                    {
-                        "title": "Nos principes fondamentaux en action",
-                        "slug": "\/living-our-fundamental-principles"
-                    }
-                ]
-            },
-            {
-                "id": "Section 2",
-                "title": "Objectifs strat\u00e9giques",
-                "statistic": {
-                    "number": "110M",
-                    "text": "de personnes ont b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce"
-                },
-                "fact": "La vision de la F\u00e9d\u00e9ration est: Inspirer, encourager, faciliter et promouvoir en tout moment toutes les formes d'activit\u00e9s humanitaires des Soci\u00e9t\u00e9es Nationales, en visant \u00e0 pr\u00e9venir et appaiser les souffrances humaines, ce qui contribue a maintenir et promouvoir le respect de la dignit\u00e9 et la paix dans le monde.",
-                "quote": "Depuis leurs d\u00e9buts, la Croix-Rouge et le Croissant-Rouge sont surtout connus pour leur mission, qui est d\u2019apporter une aide d\u2019urgence et un r\u00e9confort aux personnes en d\u00e9tresse.",
-                "chapters": [
-                    {
-                        "pretitle": "Objectif strat\u00e9gique 1",
-                        "title": "Sauver des views, prot\u00e9ger les moyens d'existence et renforcer le rel\u00e8vement apr\u00e8s les catastrophes et les crises",
-                        "slug": "\/strategic-aim-1"
-                    },
-                    {
-                        "pretitle": "Objectif strat\u00e9gique 2",
-                        "title": "Promouvoir des modes de vie sains et s\u00fbrs",
-                        "slug": "\/strategic-aim-2"
-                    },
-                    {
-                        "pretitle": "Objectif strat\u00e9gique 3",
-                        "title": "Promouvoir l'int\u00e9gration sociale et une culture de non-violence et de paix",
-                        "slug": "\/strategic-aim-3"
-                    }
-                ]
-            },
-            {
-                "id": "Section 3",
-                "title": "Actions facilitatrices",
-                "statistic": {
-                    "number": "190",
-                    "text": "Soci\u00e9t\u00e9s nationales"
-                },
-                "fact": "La capacit\u00e9 combin\u00e9e des Soci\u00e9t\u00e9s nationales de fournir des services est la principale force de la F\u00e9d\u00e9ration et du Mouvement dans son ensemble.",
-                "quote": "Depuis l\u2019adoption de la Strat\u00e9gie 2020, les principales mesures prises pour am\u00e9liorer notre fonctionnement en tant que F\u00e9d\u00e9ration ont consist\u00e9 \u00e0 renforcer notre gouvernance, \u00e0 mettre en place un cadre de redevabilit\u00e9 et \u00e0 promouvoir une culture de l\u2019apprentissage.",
-                "chapters": [
-                    {
-                        "pretitle": "Action facilitatrice 1",
-                        "title": "B\u00e2tir des soci\u00e9t\u00e9s nationales de la croix-rouge et du croissant-rouge fortes",
-                        "slug": "\/enabling-action-1"
-                    },
-                    {
-                        "pretitle": "Action facilitatrice 2",
-                        "title": "Mener des activit\u00e9s de diplomatie humanitaire pour pr\u00e9venir et r\u00e9duire la vuln\u00e9rabilit\u00e9 dans un monde interd\u00e9pendant",
-                        "slug": "\/enabling-action-2"
-                    },
-                    {
-                        "pretitle": "Action facilitatrice 3",
-                        "title": "Fonctionner de mani\u00e8re efficace en tant que f\u00e9d\u00e9ration internationale",
-                        "slug": "\/enabling-action-3"
-                    }
-                ]
-            },
-            {
-                "id": "Section 4",
-                "title": "Annexes",
-                "chapters": [
-                    {
-                        "preTitle": "Outils de donn\u00e9es",
-                        "title": "Explorez les donn\u00e9es",
-                        "slug": "\/data",
-                        "body": [
-                            "Voir les sept indicateurs cl\u00e9s dans toutes les Soci\u00e9t\u00e9s nationales",
-                            "Trouvez des informations sur votre Soci\u00e9t\u00e9 nationale"
-                        ],
-                        "button": "Explorez les donn\u00e9es"
-                    },
-                    {
-                        "title": "Remerciements",
-                        "slug": "\/acknowledgements"
-                    }
-                ]
-            }
-        ]
-    },
-    "data": {
-        "title": "Donn\u00e9es",
-        "subtitle": "Base de donn\u00e9es et du syst\u00e8me de compte rendu \u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration",
-        "indicators-title": "Indicateurs cl\u00e9 de performance",
-        "bubble-size": "Bubble size",
-        "national-society": "Soci\u00e9t\u00e9 nationale",
-        "guide": "S\u00e9lectionnez un indicateur cl\u00e9 pour voir sur la carte",
-        "indicators": {
-            "KPI_Number_of_People_Volunteering": "Volontaires",
-            "KPI_Number_of_PaidStaff": "Employ\u00e9s r\u00e9mun\u00e9r\u00e9s",
-            "KPI_Total_Number_of_People_Donating_Blood": "Donneurs du sang",
-            "KPI_Number_of_Local_Units": "Unit\u00e9s locales",
-            "KPI_Number_of_People_Reached_AllServices": "Personnes touch\u00e9es par tous les services",
-            "Total_Expenditure_CHF": "D\u00e9penses totales",
-            "Total_Income_CHF": "Recettes totales"
+        {
+            "name": "FAQ"
+        },
+        {
+            "name": "\u00c0 propos de "
+        },
+        {
+            "name": "Remerciements"
         }
-    }
+    ],
+    "dataCollectors": {
+        "title": "Pour les collecteurs de donn\u00e9es",
+        "lead": "Pour commencer la collecte de donn\u00e9es pour votre Soci\u00e9t\u00e9 nationale, veuillez vous connecter.",
+        "button": "Se connecter en tant que collecteur de donn\u00e9es"
+    },
+    "nationalSocietiesPreview": {
+        "subtitle": "Conna\u00eetre les Soci\u00e9t\u00e9s nationales",
+        "title": "Profils des soci\u00e9t\u00e9s nationales",
+        "lead": "Explorez les donn\u00e9es pour chaque Soci\u00e9t\u00e9 nationale et t\u00e9l\u00e9chargez les profils PDF pour plus de partage.",
+        "button": "Explorer les profils des Soci\u00e9t\u00e9s nationales"
+    },
+    "overviewPreview": {
+        "title": "La FICR en bref",
+        "lead": "D\u00e9couvrez d'un coup d'\u0153il la situation de la FICR et d\u00e9couvrez comment se pr\u00e9sente le plus grand r\u00e9seau humanitaire.",
+        "button": "Explorez la FICR"
+    },
+    "contact": {
+        "title": "Contact",
+        "lead": "Si vous avez des commentaires, des questions et \/ ou des corrections, veuillez \u00e9crire \u00e0 l'\u00e9quipe FDRS.",
+        "email": "fdrs@ifrc.org"
+    },
+    "credit": "site par: Lapidus Interactive",
+    "copyright": "Copyright\n\u00a9 The International Federation of Red Cross and Red Crescent Societies. All rights reserved."
 }
