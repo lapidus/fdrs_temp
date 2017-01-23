@@ -171,7 +171,7 @@ class Home extends React.Component {
                   <p>
                     { t("home:insights.description") }
                   </p>
-                  <LanguageLink to="/fdrs" className="strong inline-block py05 link-underlined">
+                  <LanguageLink to="/fdrs/overview/map" className="strong inline-block py05 link-underlined">
                     { t("home:insights.button") }
                   </LanguageLink>
                 </div>
