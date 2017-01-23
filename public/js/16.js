@@ -1164,7 +1164,7 @@ var niceNum = function niceNum(input, precision, format, fullNumber) {
   if (Math.abs(input) < 1000) return input.toFixed();
 
   if (fullNumber) {
-    return String(input).split("").reverse().join("").match(/.{1,3}/g).join(",").split("").reverse().join("");
+    return String(Math.round(input)).split("").reverse().join("").match(/.{1,3}/g).join(",").split("").reverse().join("");
   }
 
   var prefixes = format === "long" ? { k: " thousand", M: " million", G: " billion", T: " trillion" } : { k: "k", M: "m", G: "bn", T: "tr" };

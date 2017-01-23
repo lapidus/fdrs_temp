@@ -33,7 +33,7 @@ const niceNum = (input, precision, format, fullNumber) => {
   if (Math.abs(input) < 1000) return input.toFixed()
 
   if(fullNumber) {
-    return String(input)
+    return String(Math.round(input))
             .split("")
             .reverse()
             .join("")
