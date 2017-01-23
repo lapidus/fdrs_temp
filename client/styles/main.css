@@ -278,6 +278,7 @@ tr:last-of-type > td {
   background: #fff;
   transition: all 0.3s;
   pointer-events: none;
+  overflow: scroll;
 }
 .card__overlay > div {
   opacity: 0;
