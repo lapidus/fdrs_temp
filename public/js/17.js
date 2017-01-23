@@ -588,14 +588,13 @@ var Trendline = function (_React$Component) {
     };
     return _this;
   }
+  // shouldComponentUpdate(nextProps) {
+  //   const didIndicatorChange = nextProps.indicator && this.props.indicator ? nextProps.indicator.id !== this.props.indicator.id : false
+  //   return didIndicatorChange
+  // }
+
 
   _createClass(Trendline, [{
-    key: "shouldComponentUpdate",
-    value: function shouldComponentUpdate(nextProps) {
-      var didIndicatorChange = nextProps.indicator && this.props.indicator ? nextProps.indicator.id !== this.props.indicator.id : false;
-      return didIndicatorChange;
-    }
-  }, {
     key: "componentWillReceiveProps",
     value: function componentWillReceiveProps(nextProps) {
       if (nextProps.currentIndicator.id !== this.props.currentIndicator.id) {

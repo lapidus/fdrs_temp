@@ -41,10 +41,10 @@ class Trendline extends React.Component {
       dataPoints: recalculateDataPoints(allYears, nsData, currentIndicator),
     }
   }
-  shouldComponentUpdate(nextProps) {
-    const didIndicatorChange = nextProps.indicator && this.props.indicator ? nextProps.indicator.id !== this.props.indicator.id : false
-    return didIndicatorChange
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   const didIndicatorChange = nextProps.indicator && this.props.indicator ? nextProps.indicator.id !== this.props.indicator.id : false
+  //   return didIndicatorChange
+  // }
   componentWillReceiveProps(nextProps) {
     if(nextProps.currentIndicator.id !== this.props.currentIndicator.id) {
       this.setState({
