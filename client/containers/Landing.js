@@ -79,18 +79,27 @@ class Landing extends React.Component {
           <div className='clearfix mxn1'>
             <div className='col sm-10 sm-offset-1 px1'>
               <h2 className="text-base color-secondary"> { t("landing:projects.featured") }</h2>
-              <article className="shadow-4 p2">
-                <h1 className='text-lg md-text-xl lh-small light m0'>
-                  <LanguageLink to="/fdrs">
-                    { t("landing:projects.fdrs.title") }
+              <article className="shadow-4" style={{
+                  backgroundImage: "url(img/worldmap.jpeg)",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center center"
+                }}>
+                <div className="p2" style={{
+                    background: "rgba(255,255,255,0.6)"
+                  }}>
+                  <h1 className='text-lg md-text-xl lh-small light m0'>
+                    <LanguageLink to="/fdrs">
+                      { t("landing:projects.fdrs.title") }
+                    </LanguageLink>
+                  </h1>
+                  <p>
+                    { t("landing:projects.fdrs.text") }
+                  </p>
+                  <LanguageLink to="/fdrs/" className='btn btn--raised mt1 bg-primary px1'>
+                    { t("landing:projects.fdrs.navigate") }
                   </LanguageLink>
-                </h1>
-                <p>
-                  { t("landing:projects.fdrs.text") }
-                </p>
-                <LanguageLink to="/fdrs/" className='btn btn--raised mt1 bg-primary px1'>
-                  { t("landing:projects.fdrs.navigate") }
-                </LanguageLink>
+                </div>
               </article>
             </div>
           </div>
