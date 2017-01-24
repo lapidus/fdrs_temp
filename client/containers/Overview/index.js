@@ -3,6 +3,7 @@ import React from "react"
 import { connect } from "react-redux"
 import { translate } from "react-i18next"
 import LanguageLink  from "../../components/LanguageLink"
+import filter from "lodash/filter"
 
 import Select from "react-select"
 import { Origin } from 'redux-tooltip';
@@ -99,13 +100,12 @@ class Overview extends React.Component {
                     searchable={ false }
                     clearable={ false }
                     value={ this.props.currentIndicator }
-                    placeholder={"Whaddup"}
                     multi={ false }
                     name="ns-selector"
                     valueRenderer={(option) => {
                       return <span className="text-md sm-text-lg md-text-xl light">{ pageData.indicators[option.value].name }</span>
                     }}
-                    options={Object.keys(pageData.indicators).map(indicatorKey => {
+                    options={filter(Object.keys(pageData.indicators), obj => obj !== "Population" && obj !== "Poverty" && obj !== "GDP").map(indicatorKey => {
                       return {
                         value: indicatorKey,
                         label: pageData.indicators[indicatorKey].name,
