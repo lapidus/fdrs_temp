@@ -25,6 +25,7 @@ import {
   // hideTooltip,
   switchYear,
   selectSociety,
+  unselectSociety,
 } from "../../actions/appActions"
 
 class OverviewMap extends React.Component {
@@ -55,7 +56,12 @@ class OverviewMap extends React.Component {
                      nationalSocieties={this.props.nationalSocieties}
                      societiesBlacklist={this.props.selectedSocieties}
                      bubbleClick={ (e, bubble, indicator) => {
-                       this.props.selectSociety(bubble.KPI_DON_Code)
+                       if(this.props.selectedSocieties.indexOf(bubble.KPI_DON_Code) === -1) {
+                         this.props.selectSociety(bubble.KPI_DON_Code)
+                       }
+                       else {
+                         this.props.unselectSociety(bubble.KPI_DON_Code)
+                       }
                      }}
                      nationalSocietyNames={ nationalSocietyNames }
                     />
@@ -103,6 +109,15 @@ class OverviewMap extends React.Component {
                 <SocietiesRanking
                   societiesList={sortBy(this.props.grouping[this.props.currentYear], o => Number(o[this.props.currentIndicator]))}
                   currentIndicator={this.props.currentIndicator}
+                  selectedSocieties={this.props.selectedSocieties}
+                  onSocietyClick={(e, society, indicator) => {
+                    if(this.props.selectedSocieties.indexOf(society.KPI_DON_Code) === -1) {
+                      this.props.selectSociety(society.KPI_DON_Code)
+                    }
+                    else {
+                      this.props.unselectSociety(society.KPI_DON_Code)
+                    }
+                  }}
                 />
               </div>
             </div>
@@ -155,6 +170,7 @@ const mapDispatchToProps = dispatch => ({
   // hideTooltip: () => dispatch(hideTooltip()),
   switchYear: (year) => dispatch(switchYear(year)),
   selectSociety: (societyID) => dispatch(selectSociety(societyID)),
+  unselectSociety: (societyID) => dispatch(unselectSociety(societyID)),
 })
 
 
