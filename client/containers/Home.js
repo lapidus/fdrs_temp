@@ -7,7 +7,8 @@ import LanguageLink  from "../components/LanguageLink"
 class Home extends React.Component {
   render() {
 
-    const { t } = this.props
+    const { t } = this.props;
+    const language = this.context.i18n.language;
 
     const servicesIllustrations = [
       (
@@ -96,8 +97,8 @@ class Home extends React.Component {
           <div className='clearfix mxn1'>
             <div className='col sm-8 sm-offset-1 md-6 md-offset-1 lg-6 px1'>
               <h1 className='text-lg sm-text-xl md-text-xxl lh-small light'>
-                <span className="color-primary">{ t("home:intro.titleParts")[0] }&nbsp;</span>
-                { t("home:intro.titleParts")[1] }
+                <span className="color-primary">{  language == "en" ? t("home:intro.titleParts")[0] : t("home:intro.titleParts")[1] }&nbsp;</span>
+                { language == "en" ? t("home:intro.titleParts")[1] : t("home:intro.titleParts")[0] }
               </h1>
               <p className='text-sm md-text-md pr4'>
                 { t("home:intro.lead") }
