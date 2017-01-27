@@ -43,7 +43,6 @@ class GeneratedIntroText extends React.Component {
       admissionDate,
       latestData,
       earliestData,
-      translationText,
       t
     } = this.props
 
@@ -55,11 +54,11 @@ class GeneratedIntroText extends React.Component {
         admissionDate={admissionDate}
         latestData={latestData}
         earliestData={earliestData}
-        translationText={translationText}
+        translationText={t("societies:generatedText")}
         t={t}
       />
     ) : (
-      <span>{ "Other language intro text" }</span>
+      <span>{ "" }</span>
     )
   }
 }
@@ -68,4 +67,4 @@ GeneratedIntroText.contextTypes = {
   i18n: React.PropTypes.object.isRequired,
 }
 
-export default translate([ "national-societies" ], { wait: true })(GeneratedIntroText)
+export default translate([ "national-societies", "societies" ], { wait: true })(GeneratedIntroText)

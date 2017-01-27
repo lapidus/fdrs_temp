@@ -220,12 +220,18 @@ class Society extends React.Component {
               <div className="clearfix mxn1 pb2">
                 <div className="col sm-8 px1 pb1">
                   <p className="text-base sm-text-sm">
-                    <GeneratedIntroText
+                    {/* <GeneratedIntroText
                       society={ society }
                       admissionDate={ society.admission_date.split(".")[2] }
                       latestData={ latestData }
                       earliestData={ earliestData }
                       translationText={ t("societies:generatedText") }
+                    /> */}
+                    <GeneratedIntroText
+                      society={ society }
+                      admissionDate={ society.admission_date.split(".")[2] }
+                      latestData={ latestData }
+                      earliestData={ earliestData }
                     />
                   </p>
                   <p className="text-base sm-text-sm">
