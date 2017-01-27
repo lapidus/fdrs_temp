@@ -368,7 +368,7 @@ class Chapter9 extends React.Component {
 
         </div>
 
-        <NextChapter nextChapter={chapter.nextChapter} />
+        <NextChapter slug="/fdrs/overview/map" nextChapter={chapter.nextChapter} />
       </div>
     )
   }

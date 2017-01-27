@@ -5,11 +5,11 @@ import HeadlineDivider from "../HeadlineDivider"
 import Icon from "../Icon"
 
 const ReadMore = ({ t }) => {
-  const downloadLinks = [ "en", "fr", "es", "ar" ].map((lang, i) =>
+  const downloadLinks = [ "EN", "FR", "ES", "AR" ].map((lang, i) =>
     <li key={ lang }>
       <a
         className="btn py1"
-        href={ `/downloads/Everyone_counts_2013_${lang}.pdf` }
+        href={ `/downloads/Everyone_Counts_2013_${lang}.pdf` }
         target="_blank"
         rel="noopener noreferrer"
       >
