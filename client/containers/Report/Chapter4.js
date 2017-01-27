@@ -394,7 +394,7 @@ class Chapter4 extends React.Component {
                   <p>137 National Societies have supported the operation since the start of the crisis.</p>
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Shelter</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">Houses built</div>
                     <div className="col xs-4 right-align">61,328</div>
                     <div className="col xs-8">Beneficiaries</div>
@@ -403,14 +403,14 @@ class Chapter4 extends React.Component {
 
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Livelihood support</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">Households supported with livelihood assistance</div>
                     <div className="col xs-4 right-align">58,454</div>
                   </div>
 
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Healthcare</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">Health facilities rehabilitated or constructed</div>
                     <div className="col xs-4 right-align">32</div>
                     <div className="col xs-8">Households reached</div>
@@ -419,7 +419,7 @@ class Chapter4 extends React.Component {
 
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Water, sanitation and hygiene promotion</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">Households participating in hygiene promotion</div>
                     <div className="col xs-4 right-align">34,032</div>
                   </div>
@@ -428,7 +428,7 @@ class Chapter4 extends React.Component {
                 <div className="col xs-6 pr2">
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Education</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">Classrooms repaired and constructed</div>
                     <div className="col xs-4 right-align">224</div>
                     <div className="col xs-8">Students covered by repaired and constructed classrooms</div>
@@ -449,7 +449,7 @@ class Chapter4 extends React.Component {
 
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Disaster risk reduction</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">Instructors trained in disaster risk reduction</div>
                     <div className="col xs-4 right-align">95</div>
                   </div>
@@ -466,25 +466,25 @@ class Chapter4 extends React.Component {
                   <p>33 National Societies have supported the operation since the start of the crisis.</p>
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Social mobilisation and beneficiary communication</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">people reached</div>
                     <div className="col xs-4 right-align">7M</div>
                   </div>
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Tracing and monitoring contacts</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">People traced</div>
                     <div className="col xs-4 right-align">&gt97,000</div>
                   </div>
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Safe and dignified burials</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">Bodies safely buried</div>
                     <div className="col xs-4 right-align">34,448</div>
                   </div>
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Psychosocial support</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">People supported</div>
                     <div className="col xs-4 right-align">&gt339,000</div>
                   </div>
@@ -502,7 +502,7 @@ class Chapter4 extends React.Component {
                 <div className="col sm-6">
                   <div className="clearfix pb1">
                     <div className="col xs-8"><strong>Clinical case management</strong></div>
-                    <div className="col xs-4">&nbsp</div>
+                    <div className="col xs-4">&nbsp;</div>
                     <div className="col xs-8">Admissions</div>
                     <div className="col xs-4 right-align">1,341</div>
                     <div className="col xs-8">Discharges</div>
