@@ -28,6 +28,7 @@ import {
   switchYear,
   selectSociety,
   unselectSociety,
+  clearSocieties,
 } from "../../actions/appActions"
 
 // const { show, hide } = actions
@@ -104,8 +105,21 @@ class OverviewMap extends React.Component {
 
           <div className={ `relative md-absolute t0 ${this.context.i18n.language === "ar" ? "r0" : "l0" } b0 col sm-10 sm-offset-1 md-3 md-offset-0 px1 z-index-1` }>
             <div className="shadow-3">
-              <div className="p1">
+              <div className="p1 pl15">
                 <h2 className="text-base m0">
+                  <button onClick={ this.props.clearSocieties } className="btn p0 mr1" style={{
+                    border:0,
+                    marginTop:-2,
+                    marginRight:"0.5rem",
+                    color: this.props.selectedSocieties.length > 0 ? "currentcolor" : "rgba(0,0,0,0.1)"
+                    }}>
+                    <svg width="16px" height="16px" viewBox="0 0 16 16" className="block">
+                      <g>
+                        <rect x="4" y="7" fill="currentcolor" width="8" height="2"></rect>
+                        <path fill="currentcolor" d="M15,0H1C0.4,0,0,0.4,0,1v14c0,0.6,0.4,1,1,1h14c0.6,0,1-0.4,1-1V1C16,0.4,15.6,0,15,0z M14,14H2V2h12V14z"></path>
+                      </g>
+                    </svg>
+                  </button>
                   { t("overview:sorted") } <span className="color-primary">{ t("overview:hightolow") }</span>
                 </h2>
               </div>
@@ -152,6 +166,7 @@ OverviewMap.propTypes = {
   switchYear: React.PropTypes.func,
   selectedSocieties: React.PropTypes.array,
   selectSociety: React.PropTypes.func,
+  clearSocieties: React.PropTypes.func,
 }
 
 OverviewMap.needs = [ fetchNationalSocieties, fetchTimeSeries, fetchTimeSeriesMeta ]
@@ -175,6 +190,7 @@ const mapDispatchToProps = dispatch => ({
   switchYear: (year) => dispatch(switchYear(year)),
   selectSociety: (societyID) => dispatch(selectSociety(societyID)),
   unselectSociety: (societyID) => dispatch(unselectSociety(societyID)),
+  clearSocieties: () => dispatch(clearSocieties()),
 })
 
 

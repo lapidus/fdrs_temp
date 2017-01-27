@@ -18,7 +18,7 @@ class SocietiesRanking extends React.Component {
                   <div className="overflow-hidden" style={{whiteSpace:"nowrap",textOverflow:"ellipsis"}}>
                     <svg width="16px" height="16px" viewBox="0 0 16 16" style={{marginRight:"0.5rem"}}>
                       {
-                        this.props.selectedSocieties.length === 0 || this.props.selectedSocieties.indexOf(society.KPI_DON_Code) !== -1 ? (
+                        this.props.selectedSocieties.indexOf(society.KPI_DON_Code) !== -1 ? (
                           <g>
                             <polygon fill="#444444" points="5.6,9.6 2.4,6.4 0,8.8 5.6,14.4 16,4 13.6,1.6 " />
                           </g>

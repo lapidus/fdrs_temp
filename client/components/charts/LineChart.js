@@ -4,6 +4,7 @@ import { VictoryChart, VictoryAxis, VictoryLine, VictoryScatter } from "victory"
 import niceNum from "../../utils/niceNum"
 
 import { actions } from 'redux-tooltip';
+// import { translate } from "react-i18next"
 
 const { show, hide, toggle, place } = actions;
 
@@ -36,6 +37,9 @@ class LineChart extends React.Component {
     window.removeEventListener("resize", this.resizeChart)
   }
   render() {
+
+    const { language } = this.context.i18n
+
     return (
       <div ref="visualizationWrapper">
         {
@@ -83,13 +87,13 @@ class LineChart extends React.Component {
                       axisLabel: {
                         fontFamily: "inherit",
                         fontSize: 16,
-                        padding: 40,
+                        padding: 40
                       },
                       ticks: {
                         stroke: "transparent"
                       }
                     }}
-                    orientation="left"
+                    orientation={ language === "ar" ? "right" : "left" }
                     tickFormat={ (y) => niceNum(y) }
                   />
                 ) : (
@@ -107,6 +111,7 @@ class LineChart extends React.Component {
                       right: 60
                     }}
                     domain={(() => {
+                      // return language === "ar" ? this.props.domain.x.reverse() : this.props.domain.x
                       return this.props.domain.x
                     })()}
                     standalone={false}
@@ -229,6 +234,10 @@ class LineChart extends React.Component {
       </div>
     )
   }
+}
+
+LineChart.contextTypes = {
+  i18n: React.PropTypes.object.isRequired
 }
 
 LineChart.defaultProps = {
