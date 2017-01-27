@@ -6,7 +6,7 @@ import LanguageLink  from "../../components/LanguageLink"
 import filter from "lodash/filter"
 
 import Select from "react-select"
-import { Origin } from 'redux-tooltip';
+// import { Origin } from 'redux-tooltip';
 
 import Breadcrumbs from "../../components/Breadcrumbs"
 import {

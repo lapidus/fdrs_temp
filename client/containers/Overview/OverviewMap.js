@@ -5,13 +5,15 @@ import { translate } from "react-i18next"
 import groupBy from "lodash/groupBy"
 import sortBy from "lodash/sortBy"
 
+
 import Slider from "rc-slider"
 
 import niceNum from "../../utils/niceNum"
 import Map from "../../components/Data/Map"
 import SocietiesRanking from "../../components/SocietiesRanking"
 
-import { Origin } from "redux-tooltip"
+// import { Origin } from "redux-tooltip"
+// import { actions } from "redux-tooltip"
 
 import {
   makeGetSocietyData,
@@ -27,6 +29,8 @@ import {
   selectSociety,
   unselectSociety,
 } from "../../actions/appActions"
+
+// const { show, hide } = actions
 
 class OverviewMap extends React.Component {
   // shouldComponentUpdate(nextProps) {
