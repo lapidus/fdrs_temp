@@ -180,7 +180,7 @@ class App extends React.Component {
                           </span>
                         </LanguageLink>
                       </li>
-                      <li className="block">
+                      {/* <li className="block">
                         <LanguageLink to="/fdrs/about">
                           <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
                             <polyline  fill="none" stroke="inherit" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16" transform="translate(0, 0)" strokeLinejoin="miter"/>
@@ -189,7 +189,7 @@ class App extends React.Component {
                             { t("common:navigation")[2].name }
                           </span>
                         </LanguageLink>
-                      </li>
+                      </li> */}
                       <li className="block">
                         <LanguageLink to="/fdrs/acknowledgements">
                           <svg style={{width:16,height:16,marginTop:-1}} className="stroke-current" width="24px" height="24px" viewBox="0 0 24 24">
@@ -235,7 +235,8 @@ class App extends React.Component {
               </div>
               <div className="col sm-3">
                 <p>
-                  &copy;&nbsp;{ t("common:copyright") }
+                  {/* &copy;&nbsp; */}
+                  { t("common:copyright") }
                 </p>
               </div>
             </div>
