@@ -341,6 +341,11 @@ tr:last-of-type > td {
   }
 }
 
+.layout-rtl svg text{
+  text-anchor: end;
+  letter-spacing: initial;
+}
+
 @import '../node_modules/normalize.css/normalize.css';
 @import 'base.css';
 @import 'buttons.css';

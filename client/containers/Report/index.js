@@ -64,9 +64,9 @@ class Report extends React.Component {
                     searchable={ false }
                     clearable={ false }
                     name="chapter-selector"
-                    value={this.context.router.getCurrentLocation().pathname}
+                    value={language === "en" ? this.context.router.getCurrentLocation().pathname : "/" + this.context.router.getCurrentLocation().pathname.split("/").splice(2).join("/") }
                     options={[
-                      { value: "/fdrs/report", label: "Introduction" },
+                      { value: "/fdrs/report", label: t("report-common:chapters.introduction.title") },
                       { value: "/fdrs/report/who-we-are", label: t("report-common:chapters.chapter1.title") },
                       { value: "/fdrs/report/what-we-do", label: t("report-common:chapters.chapter2.title") },
                       { value: "/fdrs/report/living-our-fundamental-principles", label: t("report-common:chapters.chapter3.title") },

@@ -14,7 +14,7 @@ const StaffGenderDistribution = ({ translations }) =>
         <path d="M560.577577,183.569083 L556.216494,158.2925 L556.216494,136.024917 C556.216494,129.185833 550.355827,123.1875 543.674077,123.1875 L528.619244,123.1875 C522.143994,123.1875 516.88316,128.944917 516.88316,136.024917 L516.88316,158.046667 L511.38141,184.154167 C511.224077,184.891667 511.41091,185.629167 511.877994,186.219167 C512.345077,186.764917 513.04816,187.104167 513.790577,187.104167 L521.799827,187.104167 L521.799827,204.3125 C521.799827,205.694083 522.90116,206.770833 524.25816,206.770833 L548.841494,206.770833 C550.20341,206.770833 551.299827,205.694083 551.299827,204.3125 L551.299827,187.104167 L558.266744,187.104167 L558.320827,187.104167 C559.692577,187.153333 560.82341,186.027417 560.82341,184.645833 C560.82341,184.257417 560.739827,183.908333 560.577577,183.569083 Z M536.141744,121.4175 C544.278827,121.4175 550.891744,114.829167 550.891744,106.6675 C550.891744,98.555 544.278827,91.9175 536.141744,91.9175 C528.009577,91.9175 521.391744,98.555 521.391744,106.6675 C521.391744,114.829167 528.009577,121.4175 536.141744,121.4175 Z" fill="#D6D2D0" />
 
         <g transform="translate(143.960494, 90)">
-          <text x="150" y="0" fontSize="13" fontWeight="normal" fill="#786A65" textAnchor="middle">
+          <text x="150" y="0" fontSize="13" fontWeight="normal" fill="#786A65" textAnchor="middle" style={{textAnchor:"middle"}}>
             { translations.nationalSocietyStaff }
           </text>
           <rect fill="#786A65" x="62" y="9" width="80" height="10" />
@@ -28,7 +28,7 @@ const StaffGenderDistribution = ({ translations }) =>
         </g>
 
         <g transform="translate(120.960494, 140)">
-          <text x="170" y="0" fontSize="13" fontWeight="normal" fill="#786A65" textAnchor="middle">
+          <text x="170" y="0" fontSize="13" fontWeight="normal" fill="#786A65" textAnchor="middle" style={{textAnchor:"middle"}}>
             { translations.nationalSocietyVolunteers }
           </text>
           <rect fill="#786A65" x="185" y="9" width="96" height="10" />
@@ -42,7 +42,7 @@ const StaffGenderDistribution = ({ translations }) =>
         </g>
 
         <g transform="translate(99.960494, 190)">
-          <text x="190" y="0" fontSize="13" fontWeight="normal" fill="#786A65" textAnchor="middle">
+          <text x="190" y="0" fontSize="13" fontWeight="normal" fill="#786A65" textAnchor="middle" style={{textAnchor:"middle"}}>
             { translations.IFRCSecretariatStaff }
           </text>
           <rect fill="#EE3224" x="62" y="9" width="124" height="10" />

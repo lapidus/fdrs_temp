@@ -85,6 +85,9 @@
         ]
     },
     "chapters": {
+        "introduction": {
+          "title": "Introduction"
+        },
         "chapter1": {
             "title": "Who we are"
         },

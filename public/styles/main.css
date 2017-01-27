@@ -268,6 +268,12 @@ tr:last-of-type > td {
   }
 }
 
+.layout-rtl svg text{
+  text-anchor: end;
+  letter-spacing: normal;
+  letter-spacing: initial;
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /**

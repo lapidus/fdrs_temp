@@ -214,6 +214,7 @@ class Chapter1 extends React.Component {
                           <text fontSize="16" fontWeight="bold" fill="#786A65">
                             <tspan x="10" y="71.3532504">{section1.blocks[4].translations.nationalSocieties}</tspan>
                           </text>
+
                           <g transform="translate(10, 99.353250)">
                             <text fontSize="34" fontWeight="normal" fill="#786A65">
                               <tspan x="223" y="32">30.8Bn</tspan>
@@ -236,9 +237,11 @@ class Chapter1 extends React.Component {
                             <rect fill="#786A65" x="0" y="21" width="180" height="10"></rect>
                             <rect fill="#786A65" opacity="0.6" x="0" y="70" width="170" height="10"></rect>
                           </g>
+
                           <text fontSize="16" fontWeight="bold" fill="#786A65">
                             <tspan x="10" y="224.35325">{section1.blocks[4].translations.ifrcSecretariat}</tspan>
                           </text>
+
                           <g transform="translate(10, 252.353250)">
                             <text fontSize="34" fontWeight="normal" fill="#786A65">
                               <tspan x="183" y="32">345.5M</tspan>
@@ -261,6 +264,7 @@ class Chapter1 extends React.Component {
                             <rect fill="#786A65" x="0" y="21" width="140" height="10"></rect>
                             <rect fill="#786A65" opacity="0.6" x="0" y="70" width="152" height="10"></rect>
                           </g>
+
                         </g>
                       </g>
                     </svg>
