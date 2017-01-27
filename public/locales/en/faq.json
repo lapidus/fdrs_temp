@@ -34,13 +34,13 @@
             "question": "What are the seven KPIs?",
             "answer": [
                 [
-                    "Number of people volunteering their time: People who have volunteered at least four hours of their time during the reporting period.",
-                    "Number of paid staff: People who work with a National Society for a minimum of three months during the reporting year and are remunerated.",
-                    "Number of people donating blood: People who have donated blood at least once during the reporting period.",
-                    "Number of local units: Local units are defined as National Society subdivisions that work with the community and can include local chapters, branches, regional and intermediate offices, and headquarters.",
-                    "Number of people reached: All direct and indirect recipients and people benefiting from Red Cross and Red Crescent services.",
-                    "Total income received: The fiscal value of money, material goods, and services a National Society receives during a fiscal year.",
-                    "Total expenditure: The fiscal value of money, material goods, and services a National Society spends during a fiscal year"
+                    "Number of people volunteering their time: people who have volunteered at least four hours of their time during the reporting period.",
+                    "Number of paid staff: people who work with a National Society for a minimum of three months during the reporting year and are remunerated.",
+                    "Number of people donating blood: people who have donated blood at least once during the reporting period.",
+                    "Number of local units: local units are defined as National Society subdivisions that work with the community and can include local chapters, branches, regional and intermediate offices, and headquarters.",
+                    "Number of people reached: all direct and indirect recipients and people benefiting from Red Cross and Red Crescent services.",
+                    "Total income received: the fiscal value of money, material goods, and services a National Society receives during a fiscal year.",
+                    "Total expenditure: the fiscal value of money, material goods, and services a National Society spends during a fiscal year"
                 ]
             ]
         },

@@ -1,0 +1,69 @@
+{
+    "title": "FAQ",
+    "intro": "A continuaci\u00f3n encontrar\u00e1 las preguntas m\u00e1s frecuentes. Si su pregunta no ha sido respondida abajo, por favor contacte a FDRS en:",
+    "questions": {
+        "5": {
+            "answer": [
+                [
+                    "Se autoriza citar total o parcialmente el contenido de este sitio web con fines no comerciales, siempre y cuando se mencione la fuente. La Federaci\u00f3n Internacional apreciar\u00eda recibir detalles acerca de su utilizaci\u00f3n. Las solicitudes para la reproducci\u00f3n comercial deben dirigirse al equipo FDRS de la Federaci\u00f3n Internacional a: fdrs@ifrc.org.",
+                    "Para descargar los datos utilizados en este sitio web, visite http:\/\/data.ifrc.org\/fdrs\/data-download"
+                ]
+            ],
+            "question": "\u00bfC\u00f3mo se pueden utilizar los datos?"
+        },
+        "0": {
+            "question": "\u00bfQu\u00e9 es FDRS?",
+            "answer": [
+                "El banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional (FDRS) abarca \u00e1mbitos clave de informaci\u00f3n y proporciona un repositorio \u00fanico de documentos clave, tales como leyes, estatutos, informes anuales y cuentas auditadas. El FDRS est\u00e1 dise\u00f1ado como un recurso adaptable, accesible y de bajo mantenimiento que recopila informaci\u00f3n estandarizada de una manera sistem\u00e1tica. Cada Sociedad Nacional es due\u00f1a y responsable de su propia informaci\u00f3n, y tiene la responsabilidad de mantener actualizada sus datos \u2013 con el apoyo t\u00e9cnico de la Secretar\u00eda, seg\u00fan sea necesario."
+            ]
+        },
+        "1": {
+            "question": "\u00bfC\u00f3mo se recopilaron los datos?",
+            "answer": [
+                "De conformidad con los estatutos, incumbe a las Sociedades Nacionales remitir informes anuales. El banco de datos y sistema de informaci\u00f3n general interno ha organizado ese ejercicio en torno a siete indicadores principales relacionados con la Estrategia 2020 y tres documentos clave.",
+                [
+                    "Cobertura: determinar la magnitud de la labor, esto es, la medida en la cual se satisface las necesidades y se atiende a las vulnerabilidades identificadas en una determinada zona geogr\u00e1fica, una comunidad o un grupo de poblaci\u00f3n.",
+                    "Calidad: determinar cu\u00e1n acertada es la labor, esto es, la medida en la cual los servicios cumplen con normas y reglas establecidas.",
+                    "Eficiencia: determinar el modo en que se utilizan los recursos, esto es, la medida en la cual en la prestaci\u00f3n de servicios se aprovecha de manera \u00f3ptima los recursos humanos, financieros y materiales a nuestra disposici\u00f3n.",
+                    "Incidencia: determinar la diferencia que se marca, esto es, el alcance y el car\u00e1cter sostenible de los cambios que ocurren en las comunidades cuando se ejecutan las actividades.",
+                    "Cumplimiento normativo: determinar la idoneidad de nuestro funcionamiento, es decir, la medida en que adherimos a los principios y valores declarados, las pol\u00edticas y directrices que gu\u00edan la prestaci\u00f3n de servicios, los c\u00f3digos de comportamiento que sustentan nuestra integridad y las relaciones que entablamos con nuestros beneficiarios, asociados, y dem\u00e1s partes interesadas."
+                ]
+            ]
+        },
+        "2": {
+            "question": "\u00bfCu\u00e1les son los siete indicadores?",
+            "answer": [
+                [
+                    "N\u00famero de personas que ofrecen voluntariamente su tiempo: personas que han dedicado al menos cuatro horas de trabajo voluntario durante el per\u00edodo anual del informe",
+                    "N\u00famero de empleados remunerados: personas que trabajan con una Sociedad Nacional o para la Secretar\u00eda por tres meses como m\u00ednimo y perciben una remuneraci\u00f3n.",
+                    "N\u00famero de personas que donan sangre: personas que han donado sangre al menos una vez durante el per\u00edodo que se informa.",
+                    "N\u00famero de unidades locales: subdivisiones de las Sociedades Nacionales que trabajan directamente con la comunidad, entre las que se incluyen las sub-filiales locales, las filiales, las oficinas regionales e intermedias y la sede.",
+                    "N\u00famero de personas alcanzadas: receptores directos e indirectos de los servicios de la Federaci\u00f3n y personas cubiertas por ellos, desglosados por \u00e1reas de servicios.",
+                    "Cuant\u00eda total de ingresos recibidos: valor fiscal del dinero, los bienes f\u00edsicos y los servicios que recibe una Sociedad Nacional durante el ejercicio econ\u00f3mico (en francos suizos).",
+                    "Cuant\u00eda total de gastos: valor fiscal del dinero, los bienes f\u00edsicos y los servicios que gasta una Sociedad Nacional durante el ejercicio econ\u00f3mico (en francos suizos)."
+                ]
+            ]
+        },
+        "3": {
+            "question": "\u00bfCu\u00e1les son los tres documentos clave?",
+            "answer": [
+                [
+                    "Informe anual",
+                    "Informes financieros auditados",
+                    "Plan estrat\u00e9gico"
+                ]
+            ]
+        },
+        "4": {
+            "question": "\u00bfCu\u00e1les son las limitaciones relativas a los datos?",
+            "answer": [
+                [
+                    "Sesgo: la informaci\u00f3n que se remite a trav\u00e9s del banco de datos y sistema de informaci\u00f3n general interno es generada por las propias Sociedades Nacionales que son propietarias y custodias de los datos, a cuyo respecto asumen responsabilidad en cuanto a la exactitud y la actualizaci\u00f3n. Por consiguiente, no obstante los esfuerzos desplegados para la triangulaci\u00f3n de cifras con datos aportados previamente por las Sociedades Nacionales o de dominio p\u00fablico, se reconoce la posibilidad de sesgo en la informaci\u00f3n.",
+                    "Tama\u00f1o de las muestras o universos: son a\u00fan escasos los datos desglosados por sexo. La incompleta cobertura se podr\u00eda atribuir a sistemas deficientes para la consolidaci\u00f3n de informaci\u00f3n integral y completa a nivel de las secciones, aunados a contextos operativos fr\u00e1giles. Por ende, se desaconseja las extrapolaciones en base a estos datos.",
+                    "Normalizaci\u00f3n y periodicidad de los informes: pese a los esfuerzos desplegados con miras a la optimizaci\u00f3n de la informaci\u00f3n procedente de diversas fuentes que se utiliz\u00f3 en el an\u00e1lisis, persisten limitaciones para la comparabilidad de datos debido a las diferentes metodolog\u00edas empleadas para la recopilaci\u00f3n, la diferencia entre muestras, definiciones y periodicidad de los informes.",
+                    "Desfase en el tiempo: la disponibilidad de cifras definitivas en relaci\u00f3n con ingresos y gastos, en particular, se ve limitada por la disponibilidad de los m\u00e1s recientes estados financieros auditados. Ello se debe a a\u00f1os fiscales variables y a los consiguientes ciclos de planificaci\u00f3n y rendici\u00f3n de informes de las Sociedades Nacionales."
+                ]
+            ]
+        }
+    }
+}

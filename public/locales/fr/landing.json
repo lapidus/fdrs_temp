@@ -3,15 +3,15 @@
         "FICR",
         "Initiatives de donn\u00e9es"
     ],
-    "lead": "La FICR est une organisation ax\u00e9e sur les donn\u00e9es qui se consacre \u00e0 la prise de d\u00e9cisions fond\u00e9es sur des donn\u00e9es probantes",
+    "lead": "La FICR est une organisation ax\u00e9e sur les donn\u00e9es, elle est consacr\u00e9 \u00e0 la prise de d\u00e9cisions factuelles",
     "about": {
         "title": "\u00c0 propos de data.ifrc.org",
         "text": [
-            "Data.ifrc.org est un prototype de site Web pour les donn\u00e9es et l'apprentissage \u00e0 la FICR. Des projets \u00e0 venir alimenteront les prochains mois. Restez \u00e0 l'\u00e9coute."
+            "Data.ifrc.org est un prototype de siteweb consacr\u00e9 aux donn\u00e9es et \u00e0 l'apprentissage des donn\u00e9es \u00e0 la FICR. Des prochains projets vont alimenter ce siteweb dans les mois \u00e0 venir. Restez avec nous!"
         ]
     },
     "projects": {
-        "featured": "Projets actuels",
+        "featured": "Projets \u00e0 l'affiche",
         "news": "Nouvelles",
         "fdrs": {
             "title": "Base de donn\u00e9es et syst\u00e8me de compte rendu \u00e0 l\u2019\u00e9chelle de la F\u00e9d\u00e9ration",

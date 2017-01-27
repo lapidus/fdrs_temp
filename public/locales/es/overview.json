@@ -1,0 +1,23 @@
+{
+    "title": "La FICR de un vistazo",
+    "tabs": [
+        [
+            "FICR global",
+            "visi\u00f3n de conjunto"
+        ],
+        [
+            "Sociedad Nacional",
+            "perfiles"
+        ]
+    ],
+    "table": "Cuadro",
+    "map": "Mapa",
+    "sorted": "Ordenado",
+    "hightolow": "De mayor a menor",
+    "tableHeaders": [
+        "Nombre de la Sociedad Nacional",
+        "Tendencia",
+        "Datos para"
+    ],
+    "filterPlaceholder": "Seleccionar Sociedades Nacionales para comparar"
+}

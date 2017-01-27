@@ -12,82 +12,82 @@
             "": "Personnes donnant de leur temps comme volontaires",
             "name": "Personnes donnant de leur temps comme volontaires",
             "definition": "Nombre de personnes donnant de leur temps comme volontaires : personnes ayant travaill\u00e9 au moins quatre heures comme volontaires pendant la p\u00e9riode consid\u00e9r\u00e9e.",
-            "source": "",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPaidStaff": {
             "": "Employ\u00e9s r\u00e9mun\u00e9r\u00e9s",
             "name": "Employ\u00e9s r\u00e9mun\u00e9r\u00e9s",
             "definition": "Nombre d\u2019employ\u00e9s r\u00e9mun\u00e9r\u00e9s : personnes ayant travaill\u00e9 au moins trois mois pour une Soci\u00e9t\u00e9 nationale ou le Secr\u00e9tariat pendant la p\u00e9riode consid\u00e9r\u00e9e en \u00e9tant r\u00e9mun\u00e9r\u00e9es.",
-            "source": "",
+            "source": "FDRS",
             "unit": "[unit test]"
         },
         "KPI_noPeopleDonatingBlood": {
             "": "Donneurs de sang",
             "name": "Donneurs de sang",
             "definition": "Nombre de donneurs de sang : personnes ayant donn\u00e9 du sang au moins une fois durant la p\u00e9riode consid\u00e9r\u00e9e.",
-            "source": "",
-            "unit": ""
+            "source": "FDRS",
+            "unit": "FDRS"
         },
         "KPI_noLocalUnits": {
             "": "Unite\u0301s locales",
             "name": "Unit\u00e9s locales",
             "definition": "Nombre d\u2019unit\u00e9s locales : subdivisions de la Soci\u00e9t\u00e9 nationale qui travaillent directement aupr\u00e8s de la population \u2013 ce peut \u00eatre des chapitres locaux, des sections, des bureaux r\u00e9gionaux et interm\u00e9diaires, et le si\u00e8ge.",
-            "source": "",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedDisaster": {
             "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce",
             "name": "de personnes ont b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce",
-            "definition": "",
-            "source": "",
+            "definition": "Number of people reached by disaster response and early recovery programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedAllServices": {
             "": "Personnes ayant be\u0301ne\u0301ficie\u0301 de services a\u0300 long terme et programmes de d\u00e9veloppement",
             "name": "Personnes ayant be\u0301ne\u0301ficie\u0301 de services a\u0300 long terme et programmes de d\u00e9veloppement",
             "definition": "Personnes ayant be\u0301ne\u0301ficie\u0301 de services a\u0300 long terme et programmes de d\u00e9veloppement: nombre de b\u00e9n\u00e9ficiaires directs et indirects et de personnes couvertes par un service de la F\u00e9d\u00e9ration internationale.",
-            "source": "",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedHealth": {
             "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de sant\u00e9 communautaire",
             "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de sant\u00e9 communautaire",
-            "definition": "",
-            "source": "",
+            "definition": "Number of people reached by community health programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedDevelopment": {
             "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de d\u00e9veloppement communautaire",
             "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de d\u00e9veloppement communautaire",
-            "definition": "",
-            "source": "",
+            "definition": "Number of people reached by community development programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedServices": {
             "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services sociaux",
             "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services sociaux",
-            "definition": "",
-            "source": "",
+            "definition": "Number of people reached by social services: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleCoveredPreparedness": {
             "": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration",
             "name": "Personnes couvertes",
             "definition": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration",
-            "source": "",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_IncomeLC (CHF)": {
             "name": "Recettes totales (CHF)",
             "definition": "Recettes totales : valeur financi\u00e8re de l\u2019argent, des biens mat\u00e9riels et des services qu\u2019une Soci\u00e9t\u00e9 nationale re\u00e7oit pendant l\u2019exercice budg\u00e9taire.",
-            "source": "",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_expenditureLC (CHF)": {
             "name": "Total des d\u00e9penses (CHF)",
             "definition": "Total des d\u00e9penses : valeur financi\u00e8re de l\u2019argent, des biens mat\u00e9riels et des services qu\u2019une Soci\u00e9t\u00e9 nationale d\u00e9pense pendant l\u2019exercice budg\u00e9taire.",
-            "source": "",
+            "source": "FDRS",
             "unit": ""
         },
         "Population": {
@@ -140,6 +140,7 @@
     "updateText": "Derni\u00e8re mise-\u00e0-jours",
     "login": "s'identifier",
     "home": "Page d'acceuil",
+    "readMore": "en savoir plus",
     "navigation": [
         {
             "name": "Services",
@@ -181,6 +182,6 @@
         "lead": "Si vous avez des commentaires, des questions et \/ ou des corrections, veuillez \u00e9crire \u00e0 l'\u00e9quipe FDRS.",
         "email": "fdrs@ifrc.org"
     },
-    "credit": "site par: Lapidus Interactive",
+    "credit": "site par:",
     "copyright": "Copyright\n\u00a9 The International Federation of Red Cross and Red Crescent Societies. All rights reserved."
 }

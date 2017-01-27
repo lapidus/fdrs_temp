@@ -1,0 +1,44 @@
+{
+    "title": "Perfiles de las Sociedades Nacionales",
+    "tabs": [
+        [
+            "FICR global",
+            "visi\u00f3n de conjunto"
+        ],
+        [
+            "Sociedad Nacional",
+            "perfiles"
+        ]
+    ],
+    "titleParts": [
+        "Sociedad Nacional",
+        "perfiles"
+    ],
+    "peopleReached": "Personas alcanzadas",
+    "nationalSocieties": "Sociedades Nacionales",
+    "searchPlaceholder": "Buscar...",
+    "noSocieties": "No se han encontrado Sociedades Nacionales",
+    "generatedText": [
+        "Fue admitido en la FICR en",
+        "En",
+        ", cont\u00f3",
+        "voluntarios activos",
+        "desde",
+        "en",
+        ", de los cuales",
+        "were male and",
+        "mujeres"
+    ],
+    "source": "fuente",
+    "fillerText": [
+        "Indicadores claves reportados por la Sociedad Nacional desde",
+        "est\u00e1n disponibles a continuaci\u00f3n, as\u00ed como copias de documentos clave adicionales."
+    ],
+    "callout": [
+        "\u00bfQu\u00e9 le gustar\u00eda ver aqu\u00ed?",
+        "Ay\u00fadenos a mejorar data.ifrc.org",
+        "Env\u00ede sus ideas a:"
+    ],
+    "documents": "Documentos",
+    "noDocuments": "No hay documentos"
+}

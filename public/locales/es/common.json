@@ -1,186 +1,187 @@
 {
     "breadcrumbs": {
-        "National society profiles": "National society profiles",
+        "National society profiles": "Perfiles de las Sociedades Nacionales",
         "FAQ": "FAQ",
-        "Services": "Services",
-        "The IFRC at a glance": "The IFRC at a glance",
-        "Data download": "Data download",
-        "Home": "Home"
+        "Services": "Servicios",
+        "The IFRC at a glance": "La FICR de un vistazo",
+        "Data download": "Descarga de datos",
+        "Home": "Inicio"
     },
     "indicators": {
         "KPI_noPeopleVolunteering": {
-            "": "People volunteering their time",
-            "name": "People volunteering their time",
-            "definition": "Number of people volunteering their time: People that have volunteered at least four hours during the annual reporting period.",
-            "source": "",
+            "": "Personas que ofrecen voluntariamente su tiempo",
+            "name": "Personas que ofrecen voluntariamente su tiempo",
+            "definition": "N\u00famero de personas que ofrecen voluntariamente su tiempo: personas que han dedicado al menos cuatro horas de trabajo voluntario durante el per\u00edodo anual del informe",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPaidStaff": {
-            "": "Paid staff",
-            "name": "Paid staff",
-            "definition": "Number of paid staff: People who work with a National Society or the Secretariat for a minimum of three months and are remunerated.",
-            "source": "",
+            "": "Personal remunerado",
+            "name": "Empleados remunerados",
+            "definition": "N\u00famero de empleados remunerados: personas que trabajan con una Sociedad Nacional o para la Secretar\u00eda por tres meses como m\u00ednimo y perciben una remuneraci\u00f3n.",
+            "source": "FDRS",
             "unit": "[unit test]"
         },
         "KPI_noPeopleDonatingBlood": {
-            "": "People donating blood",
-            "name": "People donating blood",
-            "definition": "Number of people donating blood: People that have donated blood at least once during the reporting period.",
-            "source": "",
-            "unit": ""
+            "": "Personas que donan sangre",
+            "name": "Personas que donan sangre",
+            "definition": "N\u00famero de personas que donan sangre: personas que han donado sangre al menos una vez durante el per\u00edodo que se informa.",
+            "source": "FDRS",
+            "unit": "FDRS"
         },
         "KPI_noLocalUnits": {
-            "": "Local units",
-            "name": "Local units",
-            "definition": "Number of local units: National Society subdivisions that work directly with the community \u2013 this can include local chapters, branches, regional and intermediate offices, and headquarters.",
-            "source": "",
+            "": "Unidades locales",
+            "name": "Unidades locales",
+            "definition": "N\u00famero de unidades locales: subdivisiones de las Sociedades Nacionales que trabajan directamente con la comunidad, entre las que se incluyen las sub-filiales locales, las filiales, las oficinas regionales e intermedias y la sede.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedDisaster": {
-            "": "People reached by disaster response and early recovery programmes",
-            "name": "People reached by disaster response and early recovery programmes",
-            "definition": "",
-            "source": "",
+            "": "Personas alcanzadas por programas en casos de desastre y recuperaci\u00f3n inicial",
+            "name": "Personas alcanzadas por programas en casos de desastre y recuperaci\u00f3n inicial",
+            "definition": "N\u00famero de personas alcanzadas por programas en casos de desastre y recuperaci\u00f3n inicial: receptores directos e indirectos de los servicios de la Federaci\u00f3n y personas cubiertas por ellos, desglosados por \u00e1reas de servicios.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedAllServices": {
-            "": "People reached by long term services and development programmes",
-            "name": "People reached by Long Term Services and Development Programmes",
-            "definition": "Number of people reached by Long Term Services and Development Programmes: Direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
-            "source": "",
+            "": "Personas alcanzadas por servicios a largo plazo y programas de desarrollo",
+            "name": "Personas alcanzadas por servicios a largo plazo y programas de desarrollo",
+            "definition": "N\u00famero de personas alcanzadas por servicios a largo plazo y programas de desarrollo: receptores directos e indirectos de los servicios de la Federaci\u00f3n y personas cubiertas por ellos, desglosados por \u00e1reas de servicios.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedHealth": {
-            "": "People reached by community health",
-            "name": "People reached by community health",
-            "definition": "",
-            "source": "",
+            "": "Personas alcanzadas por programas de salud comunitaria",
+            "name": "Personas alcanzadas por programas de salud comunitaria",
+            "definition": "N\u00famero de personas alcanzadas por programas de salud comunitaria: receptores directos e indirectos de los servicios de la Federaci\u00f3n y personas cubiertas por ellos, desglosados por \u00e1reas de servicios.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedDevelopment": {
-            "": "People reached by community development",
-            "name": "People reached by community development",
-            "definition": "",
-            "source": "",
+            "": "Personas alcanzadas por programas de desarrollo comunitario",
+            "name": "Personas alcanzadas por programas de desarrollo comunitario",
+            "definition": "N\u00famero de personas alcanzadas por programas de desarrollo comunitario: receptores directos e indirectos de los servicios de la Federaci\u00f3n y personas cubiertas por ellos, desglosados por \u00e1reas de servicios.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedServices": {
-            "": "People reached by social services",
-            "name": "People reached by social services",
-            "definition": "",
-            "source": "",
+            "": "Personas alcanzadas por servicios sociales",
+            "name": "Personas alcanzadas por servicios sociales",
+            "definition": "N\u00famero de personas alcanzadas por servicios sociales: receptores directos e indirectos de los servicios de la Federaci\u00f3n y personas cubiertas por ellos, desglosados por \u00e1reas de servicios.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleCoveredPreparedness": {
-            "": "People covered by preparedness and risk reduction programmes",
-            "name": "People covered",
-            "definition": "Number of people covered by Preparedness and Risk Reduction Programmes",
-            "source": "",
+            "": "Personas cubiertas por programas de preparaci\u00f3n para desastres",
+            "name": "Personas cubiertas por programas de preparaci\u00f3n para desastres",
+            "definition": "N\u00famero de personas cubiertas por programas de preparaci\u00f3n para desastres: son las personas a las que se dirige un programa que no produce un beneficio inmediato, pero del cual podr\u00e1 beneficiarse la poblaci\u00f3n destinataria cuando ocurra un evento adverso.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_IncomeLC (CHF)": {
-            "name": "Income (in CHF)",
-            "definition": "Total income received: the fiscal value of money, material goods, and services a National Society receives during the fiscal year (in CHF).",
-            "source": "",
+            "name": "Ingresos (en francos suizos)",
+            "definition": "Cuant\u00eda total de ingresos recibidos: valor fiscal del dinero, los bienes f\u00edsicos y los servicios que recibe una Sociedad Nacional durante el ejercicio econ\u00f3mico (en francos suizos).",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_expenditureLC (CHF)": {
-            "name": "Expenditure (in CHF)",
-            "definition": "Total expenditure: the fiscal value of money, material goods, and services a National Society spends during the fiscal year (in CHF).",
-            "source": "",
+            "name": "Gastos (en francos suizos)",
+            "definition": "Cuant\u00eda total de gastos: valor fiscal del dinero, los bienes f\u00edsicos y los servicios que gasta una Sociedad Nacional durante el ejercicio econ\u00f3mico (en francos suizos).",
+            "source": "FDRS",
             "unit": ""
         },
         "Population": {
-            "name": "Population, total",
+            "name": "Poblaci\u00f3n total",
             "definition": "Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates.",
             "source": "(1) United Nations Population Division. World Population Prospects, (2) Census reports and other statistical publications from national statistical offices, (3) Eurostat: Demographic Statistics, (4) United Nations Statistical Division. Population and Vital Statistics Report (various years), (5) U.S. Census Bureau: International Database, and (6) Secretariat of the Pacific Community: Statistics and Demography Programme.",
             "unit": ""
         },
         "Poverty": {
-            "name": "National poverty headcount ratio",
+            "name": "\u00cdndice nacional de incidencia de la pobreza",
             "definition": "National poverty headcount ratio is the percentage of the population living below the national poverty lines. National estimates are based on population-weighted subgroup estimates from household surveys.",
             "source": "World Bank, Global Poverty Working Group. Data are compiled from official government sources or are computed by World Bank staff using national (i.e. country\u2013specific) poverty lines.",
             "unit": ""
         },
         "GDP": {
-            "name": "GDP (current US$)",
+            "name": "PIB (US $ actuales)",
             "definition": "GDP at purchaser's prices is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in current U.S. dollars. Dollar figures for GDP are converted from domestic currencies using single year official exchange rates. For a few countries where the official exchange rate does not reflect the rate effectively applied to actual foreign exchange transactions, an alternative conversion factor is used.",
             "source": "World Bank national accounts data, and OECD National Accounts data files.",
             "unit": ""
         },
-        "KPI_IncomeLC": "Income",
-        "KPI_expenditureLC": "Expenditure"
+        "KPI_IncomeLC": "Ingresos",
+        "KPI_expenditureLC": "Gastos"
     },
     "languages": {
         "en": {
-            "name": "English",
+            "name": "Ingl\u00e9s",
             "slug": "en"
         },
         "fr": {
-            "name": "French",
+            "name": "Franc\u00e9s",
             "slug": "fr"
         },
         "es": {
-            "name": "Spanish",
+            "name": "Espa\u00f1ol",
             "slug": "es"
         },
         "ar": {
-            "name": "Arabic",
+            "name": "\u00c1rabe",
             "slug": "ar"
         }
     },
-    "name": "Federation-wide databank and reporting system",
+    "name": "Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional",
     "nameParts": [
-        "Federation-wide",
-        "databank",
-        "and reporting system"
+        "de la Federaci\u00f3n Internacional",
+        "Banco de datos",
+        "y sistema de informaci\u00f3n general interno"
     ],
-    "download": "Descargar el informe",
-    "indicatorsTitle": "Indicators",
-    "updateText": "Last updated...",
-    "login": "Login",
-    "home": "Home",
+    "download": "Descargar",
+    "indicatorsTitle": "Indicadores",
+    "updateText": "\u00daltima actualizaci\u00f3n...",
+    "login": "Iniciar sesi\u00f3n",
+    "home": "Inicio",
+    "readMore": "Leer m\u00e1s",
     "navigation": [
         {
-            "name": "Services",
+            "name": "Servicios",
             "dropdownItems": [
-                "The IFRC at a glance",
-                "National society profiles",
-                "\"Everyone counts\" report",
-                "Data download"
+                "La FICR de un vistazo",
+                "Perfiles de las sociedades nacionales",
+                "Informe \"Todos y cada uno tienen importancia\"",
+                "Descarga de datos"
             ]
         },
         {
             "name": "FAQ"
         },
         {
-            "name": "About"
+            "name": "Qui\u00e9nes somos"
         },
         {
-            "name": "Acknowledgements"
+            "name": "Agradecimiento"
         }
     ],
     "dataCollectors": {
-        "title": "For data collectors",
-        "lead": "To get started with the data collection for your National Society, please log in.",
-        "button": "Login as data collector"
+        "title": "Para los recopiladores de datos",
+        "lead": "Para empezar con la recolecci\u00f3n de datos para su Sociedad Nacional, por favor, inicie sesi\u00f3n.",
+        "button": "Iniciar sesi\u00f3n como recopilador de datos"
     },
     "nationalSocietiesPreview": {
-        "subtitle": "Get to know the National Societies",
-        "title": "National Society Profiles",
-        "lead": "Explore the dataset for each National Society, and download PDF profiles for further sharing.",
-        "button": "Explore National Society Profiles"
+        "subtitle": "Conozca a las Sociedades Nacionales",
+        "title": "Perfiles de las Sociedades Nacionales",
+        "lead": "Explorar los datos de cada Sociedad Nacional, y descargar perfiles PDF para compartir.",
+        "button": "Explorar perfiles de las Sociedades Nacionales"
     },
     "overviewPreview": {
-        "title": "The IFRC at a glance",
-        "lead": "Get the big picture with the IFRC at a glance, and see how the largest humanitarian network looks.",
-        "button": "Explore the IFRC"
+        "title": "La FICR de un vistazo",
+        "lead": "Obtenga una visi\u00f3n general de la FICR y vea c\u00f3mo se ve la red humanitaria m\u00e1s grande.",
+        "button": "Explorar la FICR"
     },
     "contact": {
-        "title": "Contact",
-        "lead": "If you have feedback, questions and\/or corrections, please write to the FDRS team.",
+        "title": "Contacto",
+        "lead": "Si tiene comentarios, preguntas y \/ o correcciones, por favor escriba al equipo de FDRS.",
         "email": "fdrs@ifrc.org"
     },
-    "credit": "website by Lapidus Interactive",
-    "copyright": "@ 2016 IFRC"
+    "credit": "P\u00e1gina web por:",
+    "copyright": "Copyright \u00a9 The International Federation of Red Cross and Red Crescent Societies. All rights reserved."
 }
