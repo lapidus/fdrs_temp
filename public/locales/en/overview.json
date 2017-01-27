@@ -6,7 +6,7 @@
             "overview"
         ],
         [
-            "National society",
+            "National Society",
             "profiles"
         ]
     ],
@@ -15,9 +15,9 @@
     "sorted": "Sorted",
     "hightolow": "High to low",
     "tableHeaders": [
-        "National society name",
+        "National Society name",
         "Trend",
         "Data for"
     ],
-    "filterPlaceholder": "Select national societies to compare"
+    "filterPlaceholder": "Select National Societies to compare"
 }

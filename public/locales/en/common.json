@@ -1,6 +1,6 @@
 {
     "breadcrumbs": {
-        "National society profiles": "National society profiles",
+        "National society profiles": "National Society profiles",
         "FAQ": "FAQ",
         "Services": "Services",
         "The IFRC at a glance": "The IFRC at a glance",
@@ -11,96 +11,84 @@
         "KPI_noPeopleVolunteering": {
             "": "People volunteering their time",
             "name": "People volunteering their time",
-            "definition": "Number of people volunteering their time: People that have volunteered at least four hours during the annual reporting period.",
-            "source": "",
+            "definition": "Number of people volunteering their time: people that have volunteered at least four hours during the annual reporting period.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPaidStaff": {
             "": "Paid staff",
             "name": "Paid staff",
-            "definition": "Number of paid staff: People who work with a National Society or the Secretariat for a minimum of three months and are remunerated.",
-            "source": "",
+            "definition": "Number of paid staff: people who work with a National Society or the Secretariat for a minimum of three months and are remunerated.",
+            "source": "FDRS",
             "unit": "[unit test]"
         },
         "KPI_noPeopleDonatingBlood": {
             "": "People donating blood",
             "name": "People donating blood",
-            "definition": "Number of people donating blood: People that have donated blood at least once during the reporting period.",
-            "source": "",
-            "unit": ""
+            "definition": "Number of people donating blood: people that have donated blood at least once during the reporting period.",
+            "source": "FDRS",
+            "unit": "FDRS"
         },
         "KPI_noLocalUnits": {
             "": "Local units",
             "name": "Local units",
             "definition": "Number of local units: National Society subdivisions that work directly with the community \u2013 this can include local chapters, branches, regional and intermediate offices, and headquarters.",
-            "source": "",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedDisaster": {
             "": "People reached by disaster response and early recovery programmes",
             "name": "People reached by disaster response and early recovery programmes",
-            "definition": "",
-            "source": "",
+            "definition": "Number of people reached by disaster response and early recovery programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedAllServices": {
             "": "People reached by long term services and development programmes",
             "name": "People reached by Long Term Services and Development Programmes",
-            "definition": "Number of people reached by Long Term Services and Development Programmes: Direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
-            "source": "",
+            "definition": "Number of people reached by Long Term Services and Development Programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedHealth": {
             "": "People reached by community health",
             "name": "People reached by community health",
-            "definition": "",
-            "source": "",
+            "definition": "Number of people reached by community health programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedDevelopment": {
             "": "People reached by community development",
             "name": "People reached by community development",
-            "definition": "",
-            "source": "",
+            "definition": "Number of people reached by community development programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedServices": {
             "": "People reached by social services",
             "name": "People reached by social services",
-            "definition": "",
-            "source": "",
+            "definition": "Number of people reached by social services: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleCoveredPreparedness": {
             "": "People covered by preparedness and risk reduction programmes",
-            "name": "People covered",
-            "definition": "Number of people covered by Preparedness and Risk Reduction Programmes",
-            "source": "",
+            "name": "People covered by preparedness and risk reduction programmes",
+            "definition": "Number of people covered by preparedness and risk reduction programmes: people covered are people that are targeted by a programme for which the benefit is not immediate but from which target population can benefit if an adverse event occurs.",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_IncomeLC (CHF)": {
             "name": "Income (in CHF)",
             "definition": "Total income received: the fiscal value of money, material goods, and services a National Society receives during the fiscal year (in CHF).",
-            "source": "",
+            "source": "FDRS",
             "unit": ""
         },
         "KPI_expenditureLC (CHF)": {
             "name": "Expenditure (in CHF)",
             "definition": "Total expenditure: the fiscal value of money, material goods, and services a National Society spends during the fiscal year (in CHF).",
-            "source": "",
+            "source": "FDRS",
             "unit": ""
-        },
-        "KPI_IncomeLC": {
-          "name": "Income (in local currency)",
-          "definition": "Total income received: the fiscal value of money, material goods, and services a National Society receives during the fiscal year (in local currency).",
-          "source": "",
-          "unit": ""
-        },
-        "KPI_expenditureLC": {
-          "name": "Expenditure (in local currency)",
-          "definition": "Total expenditure: the fiscal value of money, material goods, and services a National Society spends during the fiscal year (in local currency).",
-          "source": "",
-          "unit": ""
         },
         "Population": {
             "name": "Population, total",
@@ -119,7 +107,9 @@
             "definition": "GDP at purchaser's prices is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in current U.S. dollars. Dollar figures for GDP are converted from domestic currencies using single year official exchange rates. For a few countries where the official exchange rate does not reflect the rate effectively applied to actual foreign exchange transactions, an alternative conversion factor is used.",
             "source": "World Bank national accounts data, and OECD National Accounts data files.",
             "unit": ""
-        }
+        },
+        "KPI_IncomeLC": "Income",
+        "KPI_expenditureLC": "Expenditure"
     },
     "languages": {
         "en": {
@@ -150,13 +140,13 @@
     "updateText": "Last updated...",
     "login": "Login",
     "home": "Home",
-    "readMore" : "Read more",
+    "readMore": "Read more",
     "navigation": [
         {
             "name": "Services",
             "dropdownItems": [
                 "The IFRC at a glance",
-                "National society profiles",
+                "National Society profiles",
                 "\"Everyone counts\" report",
                 "Data download"
             ]
@@ -193,5 +183,5 @@
         "email": "fdrs@ifrc.org"
     },
     "credit": "website by",
-    "copyright": "All information contained in this web site is Copyright\n\u00a9 The International Federation of Red Cross and Red Crescent Societies. All rights reserved."
+    "copyright": "Copyright \u00a9 The International Federation of Red Cross and Red Crescent Societies. All rights reserved."
 }

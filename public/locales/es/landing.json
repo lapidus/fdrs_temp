@@ -1,0 +1,22 @@
+{
+    "titleParts": [
+        "FICR",
+        "Iniciativas de datos"
+    ],
+    "lead": "La FICR es una organizaci\u00f3n que se dedica a usar datos para tomar decisiones basadas en evidencia",
+    "about": {
+        "title": "Acerca de data.ifrc.org",
+        "text": [
+            "Data.ifrc.org es un prototipo de sitio web para el aprendizaje de datos y datos en la FICR. Hay pr\u00f3ximos proyectos que vamos a lanzar en los pr\u00f3ximos meses. Mant\u00e9nganse al tanto."
+        ]
+    },
+    "projects": {
+        "featured": "Proyectos destacados",
+        "news": "Noticias",
+        "fdrs": {
+            "title": "Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional",
+            "text": "El banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional proporciona datos sobre todas las Sociedades Nacionales.",
+            "navigate": "Ir a FDRS"
+        }
+    }
+}

@@ -2,38 +2,38 @@
     "intro": {
         "title": "Banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional",
         "titleParts": [
-            "Federation-wide",
-            "databank and reporting system"
+            "de la Federaci\u00f3n Internacional",
+            "Banco de datos y sistema de informaci\u00f3n general interno"
         ],
-        "lead": "FDRS provides crucial insights, reports and analytical tools for National Societies and the IFRC secretariat."
+        "lead": "El banco de datos y sistema de informaci\u00f3n general interno de la Federaci\u00f3n Internacional proporciona datos sobre la organizaci\u00f3n humanitaria m\u00e1s grande del mundo."
     },
     "services": {
-        "title": "Services",
+        "title": "Servicios",
         "items": [
             {
-                "title": "The IFRC at a glance",
-                "description": "See our work in numbers. This tool will give you an overview of what the entire Federation looks like.",
-                "button": "Explore the IFRC",
-                "slug": "overview"
+                "title": "La FICR de un vistazo",
+                "description": "Vea nuestro trabajo en n\u00fameros. Esta herramienta le dar\u00e1 una visi\u00f3n general de la FICR.",
+                "button": "Explorar la FICR",
+                "slug": "Visi\u00f3n de conjunto"
             },
             {
-                "title": "National Society profiles",
-                "description": "Interested in a particular National Society or a specific region? This tool is for you. Here you can also download profiles as PDFs.",
-                "button": "Find your National Society",
-                "slug": "societies"
+                "title": "Perfiles de las Sociedades Nacionales",
+                "description": "\u00bfInteresado en una Sociedad Nacional o una regi\u00f3n espec\u00edfica? Esta herramienta es para usted. Aqu\u00ed tambi\u00e9n puede descargar perfiles en formato PDF.",
+                "button": "Encuentre su Sociedad Nacional",
+                "slug": "Sociedades"
             },
             {
-                "title": "\"Everyone Counts\" report",
-                "description": "Our latest findings are also published in the form of an interactive report. Explore the report online, or download a PDF version.",
-                "button": "Read the report",
-                "slug": "report"
+                "title": "Informe \"Todos y cada uno tienen importancia\"",
+                "description": "Nuestros \u00faltimos resultados tambi\u00e9n se publican en forma de un informe interactivo. Explore el informe en l\u00ednea o descargue una versi\u00f3n en PDF.",
+                "button": "Leer el informe",
+                "slug": "informe"
             }
         ]
     },
     "insights": {
-        "title": "Latest insights",
-        "subtitle": "Exceptional coverage",
-        "description": "In 2015, all 190 National Societies have reported to FDRS on at least 1 key indicator. We thank the National Societies worldwide for their efforts to improve transparency and accountability of the IFRC.",
-        "button": "Explore the data"
+        "title": "\u00daltimos resultados",
+        "subtitle": "Alcance excepcional",
+        "description": "En 2015, las 190 Sociedades Nacionales han informado al FDRS sobre al menos un indicador clave. Damos las gracias a las Sociedades Nacionales en todo el mundo por sus esfuerzos para mejorar la transparencia y la responsabilidad de la FICR.",
+        "button": "Explorar los datos"
     }
 }
