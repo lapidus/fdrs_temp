@@ -1,8 +1,13 @@
 import React from "react"
+import { connect } from 'react-redux';
 import { VictoryChart, VictoryAxis, VictoryLine, VictoryScatter } from "victory"
 import niceNum from "../../utils/niceNum"
 
-var lineColors = [
+import { actions } from 'redux-tooltip';
+
+const { show, hide, toggle, place } = actions;
+
+const lineColors = [
   "#EE3224",
   "#0F9EE3",
   "#D7006D",
@@ -189,6 +194,23 @@ class LineChart extends React.Component {
                           }
                         },
                       }}
+                      events={[
+                        {
+                          target: "data",
+                          eventHandlers: {
+                            onMouseEnter: (e, d) => {
+                              console.log("EVENT: ", e.target, d, this.props.dataset[i][d.index])
+                              this.props.dispatch(show({
+                                origin: e.target,
+                                content:  d.datum.datasetName + ": " + niceNum(d.datum.y, null, null, true)
+                              }))
+                            },
+                            onMouseLeave: () => {
+                              this.props.dispatch(hide())
+                            }
+                          }
+                        }
+                      ]}
                       size={4}
                     />
                   )
@@ -215,4 +237,4 @@ LineChart.defaultProps = {
   showAxes: true,
 }
 
-export default LineChart
+export default connect()(LineChart)

@@ -305,6 +305,7 @@ class Society extends React.Component {
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleVolunteering) || null,
+                              datasetName: t("common:indicators.KPI_noPeopleVolunteering.name")
                             })),
                           ] }
                         />
@@ -423,6 +424,7 @@ class Society extends React.Component {
                               y: (() => {
                                 return d.KPI_noLocalUnits ? Number(d.KPI_noLocalUnits) : null
                               })(),
+                              datasetName: t("common:indicators.KPI_noLocalUnits.name")
                             })),
                           ] }
                         />
@@ -483,13 +485,15 @@ class Society extends React.Component {
                             data.map(d => {
                               return ({
                                 x: new Date(d.KPI_Year, 1, 1),
-                                y: Number(d["KPI_expenditureLC (CHF)"]) || null
+                                y: Number(d["KPI_expenditureLC (CHF)"]) || null,
+                                datasetName: t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name")
                               })
                             }),
                             data.map(d => {
                               return ({
                                 x: new Date(d.KPI_Year, 1, 1),
-                                y: Number(d["KPI_IncomeLC (CHF)"]) || null
+                                y: Number(d["KPI_IncomeLC (CHF)"]) || null,
+                                datasetName: t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name")
                               })
                             }),
                           ] }
@@ -565,6 +569,7 @@ class Society extends React.Component {
                               y: (() => {
                                 return d.KPI_noPaidStaff ? Number(d.KPI_noPaidStaff) : null
                               })(),
+                              datasetName: t("common:indicators.KPI_noPaidStaff.name")
                             })),
                           ] }
                         />
@@ -629,8 +634,9 @@ class Society extends React.Component {
                   <Card>
                     <CardView viewIcon="lineChart">
                       <div className="p1">
-                        <h1 className="text-base mt0 mb1">
-                          { t("societies:peopleReached") }
+                        <h1 className="text-base mt0 mb1 lh-small">
+                          {/* { t("societies:peopleReached") } */}
+                          { "Number of people reached: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas." }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -668,22 +674,27 @@ class Society extends React.Component {
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedDisaster) || null,
+                              datasetName: "People reached by disaster response and early recovery programmes",
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedAllServices) || null,
+                              datasetName: "People reached by all services",
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedHealth) || null,
+                              datasetName: "People reached by community health",
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedDevelopment) || null,
+                              datasetName: "People reached by community development",
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleCoveredPreparedness) || null,
+                              datasetName: "People covered by preparedness and risk reduction programmes",
                             })),
                           ] }
                         />
