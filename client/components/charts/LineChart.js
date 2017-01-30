@@ -68,6 +68,7 @@ class LineChart extends React.Component {
                     domain={(() => {
                       return this.props.domain.y
                     })()}
+                    scale={this.props.scale ? this.props.scale.y || "linear" : "linear"}
                     standalone={false}
                     tickCount={this.props.tickCount || 3}
                     height={this.props.height}
@@ -118,7 +119,7 @@ class LineChart extends React.Component {
                     tickCount={4}
                     height={this.props.height}
                     width={this.state.width}
-                    scale="time"
+                    scale={this.props.scale ? this.props.scale.x || "time" : "time"}
                     tickFormat={(x) => x.getFullYear()}
                     style={{
                       axisLabel: {
@@ -151,6 +152,7 @@ class LineChart extends React.Component {
                       standalone={false}
                       width={this.state.width}
                       height={this.props.height}
+                      scale={this.props.scale || {x:"time", y:"linear"}}
                       padding={this.props.padding || {
                         top: 30,
                         bottom: 40,
@@ -186,6 +188,7 @@ class LineChart extends React.Component {
                         left: 60,
                         right: 60
                       }}
+                      scale={this.props.scale || {x:"time", y:"linear"}}
                       key={i}
                       data={this.props.dataset[i]}
                       style={{
@@ -204,11 +207,12 @@ class LineChart extends React.Component {
                           target: "data",
                           eventHandlers: {
                             onMouseEnter: (e, d) => {
-                              console.log("EVENT: ", e.target, d, this.props.dataset[i][d.index])
-                              this.props.dispatch(show({
-                                origin: e.target,
-                                content:  d.datum.datasetName + ": " + niceNum(d.datum.y, null, null, true)
-                              }))
+                              if(d.datum.y) {
+                                this.props.dispatch(show({
+                                  origin: e.target,
+                                  content:  d.datum.datasetName + ": " + niceNum(d.datum.y, null, null, true)
+                                }))
+                              }
                             },
                             onMouseLeave: () => {
                               this.props.dispatch(hide())

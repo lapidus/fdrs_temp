@@ -637,7 +637,7 @@ class Society extends React.Component {
                 }
 
                 <div className="col sm-12 lg-8 px1 pb2">
-                  <Card>
+                  <Card basicCard>
                     <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="text-base mt0 mb1 lh-small">
@@ -665,9 +665,10 @@ class Society extends React.Component {
                                     const values = [
                                       Number(d.KPI_noPeopleReachedHealth),
                                       Number(d.KPI_noPeopleReachedDisaster),
-                                      Number(d.KPI_noPeopleReachedAllServices),
+                                      Number(d.KPI_noPeopleReachedServices),
                                       Number(d.KPI_noPeopleReachedDevelopment),
-                                      Number(d.KPI_noPeopleCoveredPreparedness),
+                                      // Number(d.KPI_noPeopleReachedAllServices),
+                                      // Number(d.KPI_noPeopleCoveredPreparedness),
                                     ]
                                     return max(values)
                                   })
@@ -684,8 +685,8 @@ class Society extends React.Component {
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_noPeopleReachedAllServices) || null,
-                              datasetName: "People reached by all services",
+                              y: Number(d.KPI_noPeopleReachedServices) || null,
+                              datasetName: "People reached by social services?",
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
@@ -697,18 +698,23 @@ class Society extends React.Component {
                               y: Number(d.KPI_noPeopleReachedDevelopment) || null,
                               datasetName: "People reached by community development",
                             })),
-                            data.map(d => ({
-                              x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_noPeopleCoveredPreparedness) || null,
-                              datasetName: "People covered by preparedness and risk reduction programmes",
-                            })),
+                            // data.map(d => ({
+                            //   x: new Date(d.KPI_Year, 1, 1),
+                            //   y: Number(d.KPI_noPeopleReachedAllServices) || null,
+                            //   datasetName: "People reached by all services",
+                            // })),
+                            // data.map(d => ({
+                            //   x: new Date(d.KPI_Year, 1, 1),
+                            //   y: Number(d.KPI_noPeopleCoveredPreparedness) || null,
+                            //   datasetName: "People covered by preparedness and risk reduction programmes",
+                            // })),
                           ] }
                         />
                       </div>
                     </CardView>
-                    <CardView viewIcon="plainNumber">
+                    {/* <CardView viewIcon="plainNumber">
                       { "View 1" }
-                    </CardView>
+                    </CardView> */}
                     <CardOverlay>
                       <p>{ t("common:indicators.KPI_noPeopleReachedAllServices.definition") }</p>
                       <p>Source: { t("common:indicators.KPI_noPeopleReachedAllServices.source") }</p>
@@ -759,6 +765,7 @@ class Society extends React.Component {
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleDonatingBlood) || null,
+                              datasetName: "People donating blood"
                             })),
                           ] }
                         />
