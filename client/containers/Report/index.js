@@ -44,22 +44,43 @@ class Report extends React.Component {
           <div className="clearfix bg-light px1">
             <div className="col sm-8 sm-offset-0 md-offset-2">
               <ul className="m0 py05 px0 text-base">
-                <li className="inline-block mr1">
+                <li className="inline-block">
                   <LanguageLink to="/fdrs">
                     {"Home"}
                   </LanguageLink>
+                  {
+                    <div className="inline-block px05">
+                      <svg width="24px" height="24px" viewBox="0 0 24 24" style={{width: "1rem",stroke:"currentcolor",marginTop:-1}}>
+                        <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16 " transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                    </div>
+                  }
                 </li>
-                <li className="inline-block mr1">
+                <li className="inline-block">
                   <LanguageLink to="/fdrs/services">
                     {"Services"}
                   </LanguageLink>
+                  {
+                    <div className="inline-block px05">
+                      <svg width="24px" height="24px" viewBox="0 0 24 24" style={{width: "1rem",stroke:"currentcolor",marginTop:-1}}>
+                        <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16 " transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                    </div>
+                  }
                 </li>
-                <li className="inline-block mr1">
+                <li className="inline-block">
                   <LanguageLink to="/fdrs/report">
                     {"Report"}
                   </LanguageLink>
+                  {
+                    <div className="inline-block px05">
+                      <svg width="24px" height="24px" viewBox="0 0 24 24" style={{width: "1rem",stroke:"currentcolor",marginTop:-1}}>
+                        <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16 " transform="translate(0, 0)" strokeLinejoin="miter"/>
+                      </svg>
+                    </div>
+                  }
                 </li>
-                <li className="inline-block align-middle mr1 select-no-underline select-no-scroll" style={{minWidth:300}}>
+                <li className="inline-block align-middle select-no-underline select-no-scroll" style={{minWidth:300}}>
                   <Select
                     searchable={ false }
                     clearable={ false }
@@ -76,6 +97,7 @@ class Report extends React.Component {
                       { value: "/fdrs/report/enabling-action-1", label: t("report-common:chapters.chapter7.title") },
                       { value: "/fdrs/report/enabling-action-2", label: t("report-common:chapters.chapter8.title") },
                       { value: "/fdrs/report/enabling-action-3", label: t("report-common:chapters.chapter9.title") },
+                      { value: "/fdrs/report/acknowledgements", label: t("report-common:chapters.acknowledgements.title") },
                     ]}
                     onChange={ this.goToChapter.bind(this) }
                   />
