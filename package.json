@@ -8,6 +8,7 @@
     "development": "webpack --progress --colors --watch",
     "build": "NODE_ENV=production webpack -p && rm -rf ./build && npm run copy",
     "copy": "mkdir build && node ./tools/copy",
+    "css": "gulp",
     "scss": "node_modules/.bin/node-sass client/styles/styles.scss public/styles/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
