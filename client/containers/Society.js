@@ -289,8 +289,8 @@ class Society extends React.Component {
                           padding={{
                             top: 10,
                             bottom: 30,
-                            left: 40,
-                            right: 16,
+                            left: language === "ar" ? 16 : 40,
+                            right: language === "ar" ? 40 : 16,
                           }}
                           domain={{
                             x: [
@@ -394,8 +394,8 @@ class Society extends React.Component {
                           padding={{
                             top: 10,
                             bottom: 30,
-                            left: 40,
-                            right: 16,
+                            left: language === "ar" ? 16 : 40,
+                            right: language === "ar" ? 40 : 16,
                           }}
                           tickCount={(() => {
                             const domainValue = roundIt(
@@ -468,8 +468,8 @@ class Society extends React.Component {
                           padding={{
                             top: 10,
                             bottom: 30,
-                            left: 50,
-                            right: 16,
+                            left: language === "ar" ? 16 : 50,
+                            right: language === "ar" ? 50 : 16,
                           }}
                           domain={{
                             x: [
@@ -551,8 +551,8 @@ class Society extends React.Component {
                           padding={{
                             top: 10,
                             bottom: 30,
-                            left: 40,
-                            right: 16,
+                            left: language === "ar" ? 16 : 40,
+                            right: language === "ar" ? 40 : 16,
                           }}
                           domain={{
                             x: [
@@ -649,8 +649,8 @@ class Society extends React.Component {
                           padding={{
                             top: 10,
                             bottom: 30,
-                            left: 50,
-                            right: 16,
+                            left: language === "ar" ? 16 : 50,
+                            right: language === "ar" ? 50 : 16,
                           }}
                           domain={{
                             x: [
@@ -756,8 +756,8 @@ class Society extends React.Component {
                           padding={{
                             top: 10,
                             bottom: 30,
-                            left: 40,
-                            right: 16,
+                            left: language === "ar" ? 16 : 40,
+                            right: language === "ar" ? 40 : 16,
                           }}
                           domain={{
                             x: [
