@@ -720,9 +720,17 @@ class Society extends React.Component {
                       <p>{ t("common:indicators.KPI_noPeopleReachedDisaster.definition") }</p>
                       <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedDisaster.source") }</p>
 
-                      <p className="strong">{ t("common:indicators.KPI_noPeopleReachedAllServices.name") }</p>
-                      <p>{ t("common:indicators.KPI_noPeopleReachedAllServices.definition") }</p>
-                      <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedAllServices.source") }</p>
+                      <p className="strong">{ t("common:indicators.KPI_noPeopleReachedServices.name") }</p>
+                      <p>{ t("common:indicators.KPI_noPeopleReachedServices.definition") }</p>
+                      <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedServices.source") }</p>
+
+                      <p className="strong">{ t("common:indicators.KPI_noPeopleReachedHealth.name") }</p>
+                      <p>{ t("common:indicators.KPI_noPeopleReachedHealth.definition") }</p>
+                      <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedHealth.source") }</p>
+
+                      <p className="strong">{ t("common:indicators.KPI_noPeopleReachedDevelopment.name") }</p>
+                      <p>{ t("common:indicators.KPI_noPeopleReachedDevelopment.definition") }</p>
+                      <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedDevelopment.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
