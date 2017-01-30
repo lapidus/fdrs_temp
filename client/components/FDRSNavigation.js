@@ -110,6 +110,30 @@ class FDRSNavigation extends React.Component {
 
     const pageData = i18n.store.data[language]["common"]
 
+    //let getHeader = () => {
+    //  return (
+    //  <span className='color-primary'>t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
+    //
+    //  )
+    //}
+    //
+
+    this.getHeader = () => {
+
+      if(language == "en"){
+        return <span><span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }</span>
+      }
+
+      if(language == "es" || language == "fr"){
+        return <span><span className=''>{ t("common:nameParts")[1] }</span>&nbsp;{ t("common:nameParts")[2] }<br />{ t("common:nameParts")[0] }</span>
+      }
+
+      if(language == "ar"){
+        return <span><span className=''>{ t("common:nameParts")[1] }</span>&nbsp;{ t("common:nameParts")[2] }<br />{ t("common:nameParts")[0] }</span>
+      }
+
+    }
+
     return (
       <header className="relative clearfix shadow-4 bg-white z-index-max print-hidden">
         <div className="col sm-6">
@@ -123,7 +147,11 @@ class FDRSNavigation extends React.Component {
           </a>
           <h1 className='inline-block align-middle text-xs light m0 lh-small' style={{fontFamily: "Helvetica Neue, sans-serif"}}>
             <LanguageLink to="/fdrs" className='color-regular uppercase extended link-no-underline'>
-              <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
+
+              {
+                this.getHeader()
+              }
+
             </LanguageLink>
           </h1>
         </div>

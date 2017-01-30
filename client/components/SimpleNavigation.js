@@ -119,7 +119,7 @@ class SimpleNavigation extends React.Component {
           </a>
           <h1 className='inline-block align-middle text-xs light m0 lh-small' style={{fontFamily: "Helvetica Neue, sans-serif"}}>
             <LanguageLink to="/" className='color-regular uppercase extended link-no-underline'>
-              IFRC Data Initiatives
+              <span>{ t("landing:titleParts")[0] }&nbsp;{ t("landing:titleParts")[1] }</span>
             </LanguageLink>
           </h1>
         </div>
@@ -211,4 +211,4 @@ const mapDispatchToProps = dispatch => ({
   closeNav: () => dispatch(closeNav()),
 })
 
-export default translate()(connect(mapStateToProps, mapDispatchToProps)(SimpleNavigation))
+export default translate(["landing"])(connect(mapStateToProps, mapDispatchToProps)(SimpleNavigation))
