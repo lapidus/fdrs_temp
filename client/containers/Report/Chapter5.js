@@ -351,18 +351,18 @@ class Chapter5 extends React.Component {
                   labels={
                     section4.blocks[1].dataset.map((item, i) => {
                       // return `${item.name} (${numberFormatter.addCommas(item.first + item.second + item.rest)})`
-                      return { text: item.name, number: numberFormatter.addCommas(Math.round(item.first + item.second + item.rest)) }
+                      return { text: item.name, number: numberFormatter.addCommas(Math.round(Number(item.first) + Number(item.second) + Number(item.rest))) }
                     })
                   }
                   data={[
                     section4.blocks[1].dataset.map((item, i) => {
-                      return { x: item.index, y: item.first, name: item.names[0] }
+                      return { x: item.index, y: Number(item.first), name: item.names[0] }
                     }),
                     section4.blocks[1].dataset.map((item, i) => {
-                      return { x: item.index, y: item.second, name: item.names[1] }
+                      return { x: item.index, y: Number(item.second), name: item.names[1] }
                     }),
                     section4.blocks[1].dataset.map((item, i) => {
-                      return { x: item.index, y: item.rest }
+                      return { x: item.index, y: Number(item.rest) }
                     })
                   ]}
                 />
@@ -371,7 +371,7 @@ class Chapter5 extends React.Component {
 
               {
                 /*
-                 * Promoting safe blood systems
+                 * Water and sanitation
                  *
                  */
               }
@@ -389,18 +389,18 @@ class Chapter5 extends React.Component {
               <div className="col sm-8 sm-offset-2 md-7 px1">
                 <svg width="100%" height="540px" viewBox="0 0 840 540">
                     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                        <text fontFamily="Roboto-Bold, Roboto" fontSize="45" fontWeight="bold" fill="#0F9EE2">
+                        <text fontFamily="Roboto-Bold, Roboto, sans-serif" fontSize="45" fontWeight="bold" fill="#0F9EE2">
                             <tspan x="600" y="142">&gt;9M</tspan>
                         </text>
-                        <text fontFamily="Roboto-Bold, Roboto" fontSize="20" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
+                        <text fontFamily="Roboto-Bold, Roboto, sans-serif" fontSize="20" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
                             {section5.blocks[1].translations[0].split("\n").map((item, i) => {
                               return <tspan key={i} x="600" y={188 + (i * 24)}>{item}</tspan>
                             })}
                         </text>
-                        <text fontFamily="Roboto-Bold, Roboto" fontSize="24" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
+                        <text fontFamily="Roboto-Bold, Roboto, sans-serif" fontSize="24" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
                             <tspan x="122.460" y="291">2015</tspan>
                         </text>
-                        <text fontFamily="Roboto-Bold, Roboto" fontSize="24" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
+                        <text fontFamily="Roboto-Bold, Roboto, sans-serif" fontSize="24" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
                             {section5.blocks[1].translations[1].split("\n").map((item, i) => {
                               return <tspan key={ i } x="155" y={420 + (i * 30)} textAnchor="middle">{item}</tspan>
                             })}
@@ -453,14 +453,14 @@ class Chapter5 extends React.Component {
                             <path d="M29.770,55.541 L27.153,40.375 L27.153,27.014 C27.153,22.911 23.637,19.312 19.628,19.312 L10.595,19.312 C6.710,19.312 3.553,22.766 3.553,27.014 L3.553,40.228 L0.252,55.892 C0.158,56.335 0.270,56.777 0.550,57.131 C0.830,57.458 1.252,57.662 1.698,57.662 L6.503,57.662 L6.503,67.987 C6.503,68.816 7.164,69.462 7.978,69.462 L22.728,69.462 C23.545,69.462 24.203,68.816 24.203,67.987 L24.203,57.662 L28.383,57.662 L28.416,57.662 C29.239,57.692 29.917,57.016 29.917,56.187 C29.917,55.954 29.867,55.745 29.770,55.541"></path>
                             <path d="M15.108,18.250 C19.991,18.250 23.958,14.297 23.958,9.400 C23.958,4.533 19.991,0.550 15.108,0.550 C10.229,0.550 6.258,4.533 6.258,9.400 C6.258,14.297 10.229,18.250 15.108,18.250"></path>
                         </g>
-                        <text fontFamily="Roboto-Bold, Roboto" fontSize="72" fontWeight="bold" fill="#0F9EE2">
+                        <text fontFamily="Roboto-Bold, Roboto, sans-serif" fontSize="72" fontWeight="bold" fill="#0F9EE2">
                             <tspan x="77" y="372">15M</tspan>
                         </text>
                         <path d="M659.062,32.878 C661.687,37.097 663,41.679 663,46.625 C663,50.140 662.314,53.492 660.943,56.679 C659.572,59.867 657.732,62.615 655.423,64.923 C653.115,67.232 650.367,69.072 647.179,70.443 C643.992,71.814 640.640,72.5 637.125,72.5 C633.609,72.5 630.257,71.814 627.070,70.443 C623.882,69.072 621.134,67.232 618.826,64.923 C616.517,62.615 614.677,59.867 613.306,56.679 C611.935,53.492 611.25,50.140 611.25,46.625 C611.25,41.679 612.562,37.097 615.187,32.878 C616.429,30.886 618.790,27.945 622.271,24.054 C625.751,20.164 628.470,17.205 630.427,15.177 C632.384,13.150 633.949,11.550 635.121,10.378 L637.125,8.375 L639.128,10.378 C640.300,11.550 641.865,13.150 643.822,15.177 C645.779,17.205 648.498,20.164 651.978,24.054 C655.459,27.945 657.820,30.886 659.062,32.878 L659.062,32.878 Z M637.125,66.875 C639.867,66.875 642.486,66.341 644.982,65.275 C647.478,64.208 649.634,62.767 651.451,60.951 C653.267,59.134 654.708,56.978 655.775,54.482 C656.841,51.986 657.375,49.367 657.375,46.625 C657.375,42.734 656.343,39.148 654.281,35.867 C652.148,32.468 646.429,25.964 637.125,16.355 C627.820,25.964 622.101,32.468 619.968,35.867 C617.906,39.148 616.875,42.734 616.875,46.625 C616.875,49.367 617.408,51.986 618.474,54.482 C619.541,56.978 620.982,59.134 622.798,60.951 C624.615,62.767 626.771,64.208 629.267,65.275 C631.763,66.341 634.382,66.875 637.125,66.875 L637.125,66.875 Z M623.765,38.222 C625.195,35.949 628.968,31.531 635.085,24.968 L639.164,28.835 C633.421,34.953 629.882,39.078 628.546,41.210 C627.515,42.851 627,44.656 627,46.625 C627,49.484 628.031,51.910 630.093,53.902 L626.156,57.910 C622.968,54.839 621.375,51.078 621.375,46.625 C621.375,43.601 622.171,40.800 623.765,38.222 L623.765,38.222 Z" fill="#0F9EE2"></path>
-                        <text fontFamily="Roboto-Bold, Roboto" fontSize="45" fontWeight="bold" fill="#0F9EE2">
+                        <text fontFamily="Roboto-Bold, Roboto, sans-serif" fontSize="45" fontWeight="bold" fill="#0F9EE2">
                             <tspan x="600" y="383">&gt;5M</tspan>
                         </text>
-                        <text fontFamily="Roboto-Bold, Roboto" fontSize="20" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
+                        <text fontFamily="Roboto-Bold, Roboto, sans-serif" fontSize="20" fontWeight="bold" fillOpacity="0.5" fill="#786A65">
                           {section5.blocks[1].translations[2].split("\n").map((item, i) => {
                             return <tspan key={ i } x="600" y={429 + (i * 24)}>{item}</tspan>
                           })}

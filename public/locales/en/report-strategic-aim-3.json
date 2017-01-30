@@ -66,17 +66,17 @@
                     "title": "Economic impact",
                     "dataset": [
                         {
-                            "x": "\nCollective",
+                            "x": "\nCollective (6)",
                             "y": "6",
                             "fill": "#012A39"
                         },
                         {
-                            "x": "Self-inflicted",
+                            "x": "Self-inflicted (58)",
                             "y": "58",
                             "fill": "#EE3224"
                         },
                         {
-                            "x": "Interpersonal\n\n",
+                            "x": "Interpersonal\n(36)\n",
                             "y": "36",
                             "fill": "#FED02F"
                         }

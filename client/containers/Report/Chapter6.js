@@ -83,7 +83,7 @@ class Chapter6 extends React.Component {
               <div className="col sm-8 sm-offset-2 md-7 px1">
                 <h4 className="text-base sm-text-sm m0">{section0.blocks[2].title}</h4>
                 <svg width="100%" height="560px" viewBox="0 0 1000 560">
-                  <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" fontFamily="Roboto">
+                  <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" fontFamily="Roboto, sans-serif">
                       <g transform="translate(820, 10)">
                           <path d="M60,120 C93.137,120 120,93.137 120,60 C120,26.862 93.137,0 60,0 C26.862,0 0,26.862 0,60 C0,93.137 26.862,120 60,120 Z" fill="#D8D8D8"></path>
                           <g transform="translate(41.116, 75.580) rotate(-345) translate(-41.116, -75.580) translate(32.616, 72.080)" fill="#786A65">
@@ -389,10 +389,11 @@ class Chapter6 extends React.Component {
                                 width:"60px",
                                 height:"60px",
                                 margin:"0 auto",
-                                lineHeight:"60px"
+                                lineHeight:"60px",
+                                textAlign: "center",
                               }}>{k + 1}</div>
                             </div>
-                            <div className="col sm-8">{item}</div>
+                            <div className="col sm-8 text-center sm-text-left">{item}</div>
                          </div>
                       )
                     })}
