@@ -8,8 +8,8 @@ class Breadcrumbs extends React.Component {
     const { language } = this.context.i18n
     const { t } = this.props
     return (
-      <div className="sm-visible">
-        <div className="clearfix bg-light px1">
+      <div className="sm-visible hidden-print">
+        <div className="clearfix bg-light px1 hidden-print">
           <div className="col sm-8 sm-offset-0 md-offset-2">
             <ul className="m0 py05 px0 text-base">
               {

@@ -15,13 +15,10 @@ import Icon from "../components/Icon"
 import { translate } from "react-i18next"
 
 import LineChart from "../components/charts/LineChart"
-import ShareBtn from "../components/socialMedia/ShareBtn"
-import Breadcrumbs from "../components/Breadcrumbs"
 import Card from "../components/cards/Card"
 import CardView from "../components/cards/CardView"
 import CardOverlay from "../components/cards/CardOverlay"
 import GeneratedIntroText from "../components/GeneratedIntroText"
-import FilteredSocietiesSidebar from "../components/FilteredSocietiesSidebar"
 
 import {
   makeGetSociety,
@@ -154,26 +151,18 @@ class Society extends React.Component {
           </div>
 
           <div className="clearfix mxn1">
-            <aside className="col sm-3 px1 sm-visible">
-              <FilteredSocietiesSidebar
-                nationalSocieties={ this.props.nationalSocieties }
-                title={ t("societies:nationalSocieties") }
-                filterPlaceholder={ t("societies:searchPlaceholder") }
-                noSocietiesText={ t("societies:noSocieties") }
-              />
-            </aside>
 
             <div className="col sm-9 md-8 px1">
 
               <div className="clearfix mxn1 pb2">
                 <div className="col sm-8 px1 pb1">
                   <p className="text-base sm-text-sm">
-                    <GeneratedIntroText
+
+                   <GeneratedIntroText
                       society={ society }
                       admissionDate={ society.admission_date.split(".")[2] }
                       latestData={ latestData }
                       earliestData={ earliestData }
-                      translationText={ t("societies:generatedText") }
                     />
                   </p>
                   <p className="text-base sm-text-sm">
@@ -181,21 +170,6 @@ class Society extends React.Component {
                     { ` ${earliestData.KPI_Year} ` }
                     { t("societies:fillerText")[1] }
                   </p>
-
-                  <div className="clearfix">
-                    <div className="left shadow-3">
-                      <a target="_blank" href={"/fdrs/societies/" + society.slug + ".pdf"} className="btn link-no-underline px1">
-                        { "Download PDF" }
-                      </a>
-                    </div>
-                    <div className="right shadow-3">
-                      <a href="https://twitter.com/intent/tweet?text=Society Profile&hashtags=IFRC,FDRS">
-                        <ShareBtn service="twitter" />
-                      </a>
-                      <ShareBtn service="facebook" />
-                      <ShareBtn service="mail" />
-                    </div>
-                  </div>
 
                 </div>
                 <div className="col base-8 base-offset-2 xs-6 xs-offset-3 sm-4 sm-offset-0 px1">
@@ -246,15 +220,10 @@ class Society extends React.Component {
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleVolunteering) || null,
+                              datasetName: t("common:indicators.KPI_noPeopleVolunteering.name")
                             })),
                           ] }
                         />
-                      </div>
-                    </CardView>
-                    <CardView viewIcon="plainNumber">
-                      <div className="p1">
-                        <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noPeopleVolunteering) }</p>
-                        <p className="m0">{ t("common:indicators.KPI_noPeopleVolunteering.name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
@@ -364,15 +333,10 @@ class Society extends React.Component {
                               y: (() => {
                                 return d.KPI_noLocalUnits ? Number(d.KPI_noLocalUnits) : null
                               })(),
+                              datasetName: t("common:indicators.KPI_noLocalUnits.name")
                             })),
                           ] }
                         />
-                      </div>
-                    </CardView>
-                    <CardView viewIcon="plainNumber">
-                      <div className="p1">
-                        <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noLocalUnits) }</p>
-                        <p className="m0">{ t("common:indicators.KPI_noLocalUnits.name") + `, ${society.NSO_DON_name},  ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
@@ -424,31 +388,19 @@ class Society extends React.Component {
                             data.map(d => {
                               return ({
                                 x: new Date(d.KPI_Year, 1, 1),
-                                y: Number(d["KPI_expenditureLC (CHF)"]) || null
+                                y: Number(d["KPI_expenditureLC (CHF)"]) || null,
+                                datasetName: t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name")
                               })
                             }),
                             data.map(d => {
                               return ({
                                 x: new Date(d.KPI_Year, 1, 1),
-                                y: Number(d["KPI_IncomeLC (CHF)"]) || null
+                                y: Number(d["KPI_IncomeLC (CHF)"]) || null,
+                                datasetName: t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name")
                               })
                             }),
                           ] }
                         />
-                      </div>
-                    </CardView>
-                    <CardView viewIcon="plainNumber">
-                      <div className="p1">
-                        <div className="clearfix mxn1">
-                          <div className="col sm-6 px1">
-                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData["KPI_IncomeLC (CHF)"]) }</p>
-                            <p className="m0">{ t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
-                          </div>
-                          <div className="col sm-6 px1">
-                            <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData["KPI_expenditureLC (CHF)"]) }</p>
-                            <p className="m0">{ t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
-                          </div>
-                        </div>
                       </div>
                     </CardView>
                     <CardOverlay>
@@ -506,15 +458,10 @@ class Society extends React.Component {
                               y: (() => {
                                 return d.KPI_noPaidStaff ? Number(d.KPI_noPaidStaff) : null
                               })(),
+                              datasetName: t("common:indicators.KPI_noPaidStaff.name")
                             })),
                           ] }
                         />
-                      </div>
-                    </CardView>
-                    <CardView viewIcon="plainNumber">
-                      <div className="p1">
-                        <p className="text-md sm-text-lg md-text-xl strong m0">{ niceNum(latestData.KPI_noPaidStaff) }</p>
-                        <p className="m0">{ t("common:indicators.KPI_noPaidStaff.definition") + `, ${society.NSO_DON_name} in ${latestData.KPI_Year}` }</p>
                       </div>
                     </CardView>
                     <CardOverlay>
@@ -567,11 +514,12 @@ class Society extends React.Component {
                 }
 
                 <div className="col sm-12 lg-8 px1 pb2">
-                  <Card>
+                  <Card basicCard>
                     <CardView viewIcon="lineChart">
                       <div className="p1">
-                        <h1 className="text-base mt0 mb1">
-                          { t("societies:peopleReached") }
+                        <h1 className="text-base mt0 mb1 lh-small">
+                          {/* { t("societies:peopleReached") } */}
+                          { "Number of people reached: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas." }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -594,9 +542,10 @@ class Society extends React.Component {
                                     const values = [
                                       Number(d.KPI_noPeopleReachedHealth),
                                       Number(d.KPI_noPeopleReachedDisaster),
-                                      Number(d.KPI_noPeopleReachedAllServices),
+                                      Number(d.KPI_noPeopleReachedServices),
                                       Number(d.KPI_noPeopleReachedDevelopment),
-                                      Number(d.KPI_noPeopleCoveredPreparedness),
+                                      // Number(d.KPI_noPeopleReachedAllServices),
+                                      // Number(d.KPI_noPeopleCoveredPreparedness),
                                     ]
                                     return max(values)
                                   })
@@ -609,33 +558,42 @@ class Society extends React.Component {
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedDisaster) || null,
+                              datasetName: t("common:indicators.KPI_noPeopleReachedDisaster.name"),
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_noPeopleReachedAllServices) || null,
+                              y: Number(d.KPI_noPeopleReachedServices) || null,
+                              datasetName: t("common:indicators.KPI_noPeopleReachedServices.name"),
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedHealth) || null,
+                              datasetName: t("common:indicators.KPI_noPeopleReachedHealth.name"),
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedDevelopment) || null,
+                              datasetName: t("common:indicators.KPI_noPeopleReachedDevelopment.name"),
                             })),
-                            data.map(d => ({
-                              x: new Date(d.KPI_Year, 1, 1),
-                              y: Number(d.KPI_noPeopleCoveredPreparedness) || null,
-                            })),
+                            // data.map(d => ({
+                            //   x: new Date(d.KPI_Year, 1, 1),
+                            //   y: Number(d.KPI_noPeopleReachedAllServices) || null,
+                            //   datasetName: "People reached by all services",
+                            // })),
+                            // data.map(d => ({
+                            //   x: new Date(d.KPI_Year, 1, 1),
+                            //   y: Number(d.KPI_noPeopleCoveredPreparedness) || null,
+                            //   datasetName: "People covered by preparedness and risk reduction programmes",
+                            // })),
                           ] }
                         />
                       </div>
                     </CardView>
-                    <CardView viewIcon="plainNumber">
-                      { "View 1" }
-                    </CardView>
+                    {/* <CardView viewIcon="plainNumber">
+                     { "View 1" }
+                     </CardView> */}
                     <CardOverlay>
-                      <p>{ t("common:indicators.KPI_noPeopleReachedAllServices.definition") }</p>
-                      <p>Source: { t("common:indicators.KPI_noPeopleReachedAllServices.source") }</p>
+
                     </CardOverlay>
                   </Card>
                 </div>
@@ -683,6 +641,7 @@ class Society extends React.Component {
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleDonatingBlood) || null,
+                              datasetName: "People donating blood"
                             })),
                           ] }
                         />
@@ -743,38 +702,15 @@ class Society extends React.Component {
                   </Card>
                 </div>
 
-                {
-                  /*
-                   * Call to action
-                   *
-                   */
-                }
 
-                <div className="col sm-6 lg-4 px1 pb2">
-                  <Card bgColor="bg-primary" basicCard controlsVisible={false}>
-                    <CardView>
-                      <div className="pt3 px2">
-                        <p className="display-1 lh-1 strong mt0 mb1">
-                          { t("societies:callout")[0] }
-                        </p>
-                        <p className="m0">
-                          { t("societies:callout")[1] }
-                        </p>
-                        <p className="m0">{ t("societies:callout")[2] }<br />{ "fdrs@ifrc.org" }</p>
-                      </div>
-                    </CardView>
-                    <CardOverlay>
-                      <p>{ "" }</p>
-                    </CardOverlay>
-                  </Card>
+                <div className="col sm-12 px1 pb2">
+                  <hr />
                 </div>
-
 
               </div>
             </div>
           </div>
         </div>
-
 
 
       </section>
