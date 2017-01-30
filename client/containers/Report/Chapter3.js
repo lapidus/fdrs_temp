@@ -34,11 +34,6 @@ class Chapter3 extends React.Component {
 
     return (
       <div>
-        {/* <div className="clearfix bg-primary-dark">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py1">
-            <BreadCrumbs chapter={chapter} language={language}/>
-          </div>
-        </div> */}
 
         <div className="clearfix bg-primary">
           <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 py2">
@@ -53,19 +48,6 @@ class Chapter3 extends React.Component {
             <hr />
           </div>
         </div>
-
-        {/* <div className="clearfix bg-primary pt1">
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-            <h2 className="display-2">{chapter.title}</h2>
-          </div>
-        </div>
-
-        <div className="clearfix bg-dark chapter-banner" style={{backgroundImage:"url(/img/chapters/chapter-3.jpg)",backgroundSize: "cover",backgroundPosition:"center 50%",backgroundRepeat: "no-repeat"}}>
-          <div className="col px1 sm-px0 sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3">
-            <p className="lead">{chapter.intro}</p>
-            <hr />
-          </div>
-        </div> */}
 
         <div className="clearfix bg-secondary body-text py2">
           <div className="col sm-10 sm-offset-1 text-center">
@@ -99,7 +81,7 @@ class Chapter3 extends React.Component {
                   <g>
                     <circle cx="240" cy="240" r="210" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
                     <circle cx="240" cy="240" r="150" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
-                    <g transform="translate(0, 62)" fontSize="20" fontFamily="Roboto-Bold, Roboto" fill="#786A65" fontWeight="700">
+                    <g transform="translate(0, 62)" fontSize="20" fontFamily="Roboto-Bold, Roboto, sans-serif" fill="#786A65" fontWeight="700">
                       {section0.blocks[1].items.map((item, i) => {
                         var xReferences = [240,360,390,340,150,90,120]
                         var yReferences = [19,106,198,290,290,198,106]
@@ -133,7 +115,7 @@ class Chapter3 extends React.Component {
                   <g>
                     <circle cx="240" cy="240" r="210" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
                     <circle cx="240" cy="240" r="150" fill="none" stroke="#F1F0EF" strokeWidth="4"></circle>
-                    <g transform="translate(0, 62)" fontSize="20" fontFamily="Roboto-Bold, Roboto" fill="#786A65" fontWeight="700">
+                    <g transform="translate(0, 62)" fontSize="20" fontFamily="Roboto-Bold, Roboto, sans-serif" fill="#786A65" fontWeight="700">
                       {section0.blocks[4].items.map((item, i) => {
                         var xReferences = [240,360,390,340,150,90,120]
                         var yReferences = [19,106,198,290,290,198,106]
