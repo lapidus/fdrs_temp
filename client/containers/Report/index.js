@@ -51,7 +51,7 @@ class Report extends React.Component {
                   {
                     <div className="inline-block px05">
                       <svg width="24px" height="24px" viewBox="0 0 24 24" style={{width: "1rem",stroke:"currentcolor",marginTop:-1}}>
-                        <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16 " transform="translate(0, 0)" strokeLinejoin="miter"/>
+                        <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points={language === "ar" ? "10,8 6,12 10,16 " : "10,8 14,12 10,16 "} transform="translate(0, 0)" strokeLinejoin="miter"/>
                       </svg>
                     </div>
                   }
@@ -63,7 +63,7 @@ class Report extends React.Component {
                   {
                     <div className="inline-block px05">
                       <svg width="24px" height="24px" viewBox="0 0 24 24" style={{width: "1rem",stroke:"currentcolor",marginTop:-1}}>
-                        <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16 " transform="translate(0, 0)" strokeLinejoin="miter"/>
+                        <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points={language === "ar" ? "10,8 6,12 10,16 " : "10,8 14,12 10,16 "} transform="translate(0, 0)" strokeLinejoin="miter"/>
                       </svg>
                     </div>
                   }
@@ -75,7 +75,7 @@ class Report extends React.Component {
                   {
                     <div className="inline-block px05">
                       <svg width="24px" height="24px" viewBox="0 0 24 24" style={{width: "1rem",stroke:"currentcolor",marginTop:-1}}>
-                        <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16 " transform="translate(0, 0)" strokeLinejoin="miter"/>
+                        <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points={language === "ar" ? "10,8 6,12 10,16 " : "10,8 14,12 10,16 "} transform="translate(0, 0)" strokeLinejoin="miter"/>
                       </svg>
                     </div>
                   }

@@ -5,6 +5,7 @@ import { translate } from "react-i18next"
 
 class Breadcrumbs extends React.Component {
   render() {
+    const { language } = this.context.i18n
     const { t } = this.props
     return (
       <div className="sm-visible">
@@ -29,7 +30,7 @@ class Breadcrumbs extends React.Component {
                       i < (this.props.links.length -1) ? (
                         <div className="inline-block px05">
                           <svg width="24px" height="24px" viewBox="0 0 24 24" style={{width: "1rem",stroke:"currentcolor",marginTop:-1}}>
-                            <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="10,8 14,12 10,16 " transform="translate(0, 0)" strokeLinejoin="miter"/>
+                            <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points={language === "ar" ? "10,8 6,12 10,16 " : "10,8 14,12 10,16 "} transform="translate(0, 0)" strokeLinejoin="miter"/>
                           </svg>
                         </div>
                       ) : null
@@ -43,6 +44,10 @@ class Breadcrumbs extends React.Component {
       </div>
     )
   }
+}
+
+Breadcrumbs.contextTypes = {
+  i18n: React.PropTypes.object.isRequired,
 }
 
 export default translate([], { wait: true })(Breadcrumbs)
