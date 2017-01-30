@@ -155,7 +155,7 @@ class FDRSNavigation extends React.Component {
             </LanguageLink>
           </h1>
         </div>
-        <div className="absolute t0 r0 z-index-1 sm-hidden">
+        <div className={`absolute t0 ${language === "ar" ? "l0" : "r0"} z-index-1 sm-hidden`}>
           <button className='btn bg-light p15' onClick={ this.props.toggleNav }>
             <span className='block'>
               <svg className="block" width="20px" height="20px" viewBox="0 0 24 24">
@@ -190,11 +190,11 @@ class FDRSNavigation extends React.Component {
                       { pageData.navigation[0].name }
                     </span>
                   </LanguageLink>
-                  <div className="relative sm-absolute t100 l0 bg-white text-left shadow-4 dropdown-menu">
+                  <div className={`relative sm-absolute t100 ${language === "ar" ? "r0" : "l0"} bg-white text-left shadow-4 dropdown-menu`}>
                     <ul className="m0 p0 base-12">
                       <li>
-                        <LanguageLink to="/fdrs/overview/map" className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
-                          <svg style={{width:"1rem",height:"1rem",marginTop:-1,marginRight:"1rem"}} width="24px" height="24px" viewBox="0 0 24 24">
+                        <LanguageLink to="/fdrs/overview/map" className={`btn py1 ${language === "ar" ? "text-right" : "text-left"} base-12`} onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                          <svg style={{width:"1rem",height:"1rem",marginTop:-1,marginLeft:"0.5rem",marginRight:"0.5rem"}} width="24px" height="24px" viewBox="0 0 24 24">
                             <g transform="translate(0, 0)" className="stroke-current">
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M5.7,3C6.4,3.5,7,4.1,7.5,5C7.9,5.7,8.9,7.8,8,9c-1,1.3-4,1.8-4,3c0,0.9,1.3,2,2,3c1,1.5,0.6,3,0,4c-0.3,0.5-0.8,0.9-1.3,1.2" strokeLinejoin="miter" strokeLinecap="butt"/>
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M20.6,5.2C18.5,6.3,15.5,7,15,7c-1,0.1-1.2-0.8-2-2c-0.6-0.9-2-2.1-2-3c0-0.4,0-0.7,0.1-1" strokeLinejoin="miter" strokeLinecap="butt"/>
@@ -202,12 +202,14 @@ class FDRSNavigation extends React.Component {
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M19,12.9c0,3.1-4,6.9-6,6.1c-1.8-0.7-0.5-2.1-1-6.1c-0.2-1.6,1.6-3,3.5-3S19,11.2,19,12.9z" strokeLinejoin="miter" strokeLinecap="butt"/>
                             </g>
                           </svg>
-                          { pageData.navigation[0].dropdownItems[0] }
+                          <span className="px05">
+                            { pageData.navigation[0].dropdownItems[0] }
+                          </span>
                         </LanguageLink>
                       </li>
                       <li>
-                        <LanguageLink to="/fdrs/societies" className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
-                          <svg style={{width:"1rem",height:"1rem",marginTop:-3,marginRight:"1rem"}} width="24px" height="24px" viewBox="0 0 24 24">
+                        <LanguageLink to="/fdrs/societies" className={`btn py1 ${language === "ar" ? "text-right" : "text-left"} base-12`} onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                          <svg style={{width:"1rem",height:"1rem",marginTop:-3,marginLeft:"0.5rem",marginRight:"0.5rem"}} width="24px" height="24px" viewBox="0 0 24 24">
                             <g  transform="translate(0, 0)" className="stroke-current">
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M12,23c-2-1.6-2.1-6.8,1-8c1.6-0.6,2.2,2.9,5.4,2c0.6-0.2,2.1,0.7,1.6,2.1" strokeLinejoin="miter" strokeLinecap="butt"/>
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" d="M6.3,4.8c0.6,0.5,1.1,1.1,1.6,1.8c0.4,0.7,1.3,2.6,0.5,3.6c-0.9,1.2-3.6,1.6-3.6,2.7c0,0.8,1.2,1.8,1.8,2.7c1,1.4,0.5,2.8,0,3.6c-0.3,0.5-0.7,0.8-1.2,1.1" strokeLinejoin="miter" strokeLinecap="butt"/>
@@ -215,12 +217,14 @@ class FDRSNavigation extends React.Component {
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M21,5c0,2.5-4,6-4,6s-4-3.5-4-6c0-2.5,2.1-4,4-4S21,2.5,21,5z" strokeLinejoin="miter"/>
                             </g>
                           </svg>
-                          { pageData.navigation[0].dropdownItems[1] }
+                          <span className="px05">
+                            { pageData.navigation[0].dropdownItems[1] }
+                          </span>
                         </LanguageLink>
                       </li>
                       <li>
-                        <LanguageLink to="/fdrs/report" className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
-                          <svg style={{width:"1rem",height:"1rem",marginTop:-3,marginRight:"1rem"}} width="24px" height="24px" viewBox="0 0 24 24">
+                        <LanguageLink to="/fdrs/report" className={`btn py1 ${language === "ar" ? "text-right" : "text-left"} base-12`} onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                          <svg style={{width:"1rem",height:"1rem",marginTop:-3,marginLeft:"0.5rem",marginRight:"0.5rem"}} width="24px" height="24px" viewBox="0 0 24 24">
                             <g transform="translate(0, 0)" className="stroke-current">
                               <rect x="2" y="1" fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" width="20" height="22" strokeLinejoin="miter"/>
                               <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="12" y1="8" x2="12" y2="16" strokeLinejoin="miter"/>
@@ -228,19 +232,23 @@ class FDRSNavigation extends React.Component {
                               <line fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="16" y1="11" x2="16" y2="16" strokeLinejoin="miter"/>
                             </g>
                           </svg>
-                          { pageData.navigation[0].dropdownItems[2] }
+                          <span className="px05">
+                            { pageData.navigation[0].dropdownItems[2] }
+                          </span>
                         </LanguageLink>
                       </li>
                       <li>
-                        <LanguageLink to="/fdrs/data-download" className="btn px1 py1 text-left base-12" onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
-                          <svg style={{width:"1rem",height:"1rem",marginTop:-1,marginRight:"1rem"}} width="24px" height="24px" viewBox="0 0 24 24">
+                        <LanguageLink to="/fdrs/data-download" className={`btn py1 ${language === "ar" ? "text-right" : "text-left"} base-12`} onFocus={() => this.showDropdown(0)} onBlur={() => this.hideDropdown(0)}>
+                          <svg style={{width:"1rem",height:"1rem",marginTop:-1,marginLeft:"0.5rem",marginRight:"0.5rem"}} width="24px" height="24px" viewBox="0 0 24 24">
                             <g transform="translate(0, 0)" className="stroke-current">
                               <line fill="none" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" x1="12" y1="9" x2="12" y2="22" strokeLinejoin="miter" strokeLinecap="butt"/>
                               <polyline fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="15,19 12,22 9,19 " strokeLinejoin="miter"/>
                               <path fill="none" stroke="#343434" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M17,16h2c2.209,0,4-1.791,4-4c0-2.197-1.782-4.013-4.025-3.997C18.718,4.093,15.474,1,11.5,1C7.481,1,4.21,4.164,4.018,8.136C2.287,8.575,1,10.132,1,12c0,2.209,1.791,4,4,4h2" strokeLinejoin="miter"/>
                             </g>
                           </svg>
-                          { pageData.navigation[0].dropdownItems[3] }
+                          <span className="px05">
+                            { pageData.navigation[0].dropdownItems[3] }
+                          </span>
                         </LanguageLink>
                       </li>
                     </ul>
