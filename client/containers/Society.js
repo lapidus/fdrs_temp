@@ -681,22 +681,22 @@ class Society extends React.Component {
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedDisaster) || null,
-                              datasetName: "People reached by disaster response and early recovery programmes",
+                              datasetName: t("common:indicators.KPI_noPeopleReachedDisaster.name"),
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedServices) || null,
-                              datasetName: "People reached by social services?",
+                              datasetName: t("common:indicators.KPI_noPeopleReachedServices.name"),
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedHealth) || null,
-                              datasetName: "People reached by community health",
+                              datasetName: t("common:indicators.KPI_noPeopleReachedHealth.name"),
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedDevelopment) || null,
-                              datasetName: "People reached by community development",
+                              datasetName: t("common:indicators.KPI_noPeopleReachedDevelopment.name"),
                             })),
                             // data.map(d => ({
                             //   x: new Date(d.KPI_Year, 1, 1),
@@ -716,8 +716,13 @@ class Society extends React.Component {
                       { "View 1" }
                     </CardView> */}
                     <CardOverlay>
+                      <p className="strong">{ t("common:indicators.KPI_noPeopleReachedDisaster.name") }</p>
+                      <p>{ t("common:indicators.KPI_noPeopleReachedDisaster.definition") }</p>
+                      <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedDisaster.source") }</p>
+
+                      <p className="strong">{ t("common:indicators.KPI_noPeopleReachedAllServices.name") }</p>
                       <p>{ t("common:indicators.KPI_noPeopleReachedAllServices.definition") }</p>
-                      <p>Source: { t("common:indicators.KPI_noPeopleReachedAllServices.source") }</p>
+                      <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedAllServices.source") }</p>
                     </CardOverlay>
                   </Card>
                 </div>
