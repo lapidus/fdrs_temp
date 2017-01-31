@@ -97,7 +97,7 @@ class OverviewMap extends React.Component {
                 <div className="pb3">
                   <p className="text-xs">
                     {/* { "* The boundaries and the designations used on this map do not imply the expression of any opinion on the part of the International Federation of Red Cross and Red Crescent Societies and are used for illustrative purposes only." } */}
-                    { "* " + t("overview:borderMessage")}
+                    {"*"}&nbsp;{ t("overview:borderMessage")}
                   </p>
                 </div>
               </div>
