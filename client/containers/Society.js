@@ -153,7 +153,7 @@ class Society extends React.Component {
           { name: t(`national-societies:${society.KPI_DON_Code}`), path: undefined }
         ]}/>
 
-        <div className="clearfix bg-light px1">
+        <div className="clearfix bg-light px1 hidden-print">
           <div className="col sm-10 sm-offset-1 align-right">
             <ul className="p0 m0">
               <li className="inline-block">
@@ -207,7 +207,7 @@ class Society extends React.Component {
           </div>
 
           <div className="clearfix mxn1">
-            <aside className="col sm-3 px1 sm-visible">
+            <aside className="col sm-3 px1 sm-visible hidden-print">
               <FilteredSocietiesSidebar
                 nationalSocieties={ this.props.nationalSocieties }
                 title={ t("societies:nationalSocieties") }
@@ -241,11 +241,13 @@ class Society extends React.Component {
                     { t("societies:fillerText")[1] }
                   </p>
 
-                  <div className="clearfix">
+                  <div className="clearfix hidden-print">
                     <div className="left shadow-3">
-                      <a target="_blank" href={"/fdrs/societies/" + society.slug + ".pdf"} className="btn link-no-underline px1">
-                        { "Download PDF" }
-                      </a>
+                      {
+                        /* <a onClick={function() { window.print() } }  className="btn link-no-underline px1">
+                         { "Print PDF" }
+                         </a>*/
+                      }
                     </div>
                     <div className="right shadow-3">
                       <a href="https://twitter.com/intent/tweet?text=Society Profile&hashtags=IFRC,FDRS">
@@ -887,7 +889,7 @@ class Society extends React.Component {
                   */
                 }
 
-                <div className="col sm-6 lg-4 px1 pb2">
+                <div className="col sm-6 lg-4 px1 pb2 hidden-print">
                   <Card bgColor="bg-primary" basicCard controlsVisible={false}>
                     <CardView>
                       <div className="pt3 px2">
@@ -919,7 +921,7 @@ class Society extends React.Component {
 
                 {
                   this.state.filteredDocuments.length > 0 ? (
-                    <div className="col sm-12 px1 pb2">
+                    <div className="col sm-12 px1 pb2 hidden-print">
                       <div className="relative overflow-hidden shadow-2 pt1 px1 pb2">
                         <h2 className="text-base mt0">
                           { t("societies:documents") }
@@ -953,7 +955,7 @@ class Society extends React.Component {
                                     </div>
                                   </div>
                                   <div className="inline-block align-top sm-12 px1">
-                                    <h1 className="text-base mt0 sm-my1">{ `${doc.document_type} - ${doc.year}` }</h1>
+                                    <h1 className="text-base mt0 sm-my1">{ `${doc.document_type}` } <br /><span style={{ wordWrap: "break-word" }} className="text-xs">({doc.name})</span></h1>
                                     <a href={ 'http://data.ifrc.org/public/' + doc.path } target="_blank" rel="noopener noreferrer" className="btn bg-light">
                                       <span>
                                         <svg style={{width:16,height:16,marginTop:-1,marginRight:8}} width="24px" height="24px" viewBox="0 0 24 24">
@@ -975,7 +977,7 @@ class Society extends React.Component {
                       </div>
                     </div>
                   ) : (
-                    <div className="px1">{ t("societies:noDocuments") }</div>
+                    <div className="px1 hidden-print">{ t("societies:noDocuments") }</div>
                   )
                 }
               </div>
@@ -990,7 +992,7 @@ class Society extends React.Component {
           </div>
         </div> */}
 
-        <div className="px1 bg-beige" style={{
+        <div className="px1 bg-beige hidden-print" style={{
             backgroundImage: "url(/img/overview-preview.png)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "50% auto",
@@ -1016,13 +1018,13 @@ class Society extends React.Component {
           </div>
         </div>
 
-        <div className="px1 bg-light" style={{
+        <div className="px1 bg-light hidden-print" style={{
               backgroundImage:"url(/img/worldmap.jpeg)",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundPosition: "center"
          }}>
-          <div className="clearfix mxn1 py6" style={{ background: "rgba(255,255,255,0.5)" }}>
+          <div className="clearfix mxn1 py6 hidden-print" style={{ background: "rgba(255,255,255,0.5)" }}>
             <div className="col sm-10 sm-offset-1 px1">
               <h2 className="headline sm-display-1 light mt0">
                 { pageData.dataCollectors.title }

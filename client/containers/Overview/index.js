@@ -44,8 +44,8 @@ class Overview extends React.Component {
           { name: pageData.navigation[0].dropdownItems[0], path: undefined },
         ]}/>
 
-        <div className="clearfix bg-light px1">
-          <div className="col sm-10 sm-offset-1 align-right">
+        <div className="clearfix bg-light px1 hidden-print">
+          <div className="col sm-10 sm-offset-1 align-right hidden-print">
             <ul className="p0 m0">
               <li className="inline-block">
                 <LanguageLink to="/fdrs/overview/map" className="btn block p1 bg-white link-no-underline text-left">

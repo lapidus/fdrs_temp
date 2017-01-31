@@ -135,7 +135,7 @@ class FDRSNavigation extends React.Component {
     }
 
     return (
-      <header className="relative clearfix shadow-4 bg-white z-index-max print-hidden">
+      <header className="relative clearfix shadow-4 bg-white z-index-max hidden-print">
         <div className="col sm-6">
           {/* <div class="relative t0 l0" style="height:68px">Logo</div> */}
           <a href="http://www.ifrc.org" target="_blank" className="inline-block align-middle link-no-underline">

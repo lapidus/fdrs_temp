@@ -14,9 +14,17 @@ import {
   closeNav,
 } from "./actions/appActions"
 
+var ReactGA = require('react-ga');
+ReactGA.initialize('UA-91167716-1');
+
 const store = configureStore()
 window.store = store
 const history = browserHistory
+
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
 
 function beforeTransitionHandler(location, callback) {
   console.log("Before transition")
@@ -50,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ReactDOM.render(
       <I18nextProvider i18n={ i18n }>
         <Provider store={ store }>
-          <Router history={ history } routes={ routes } />
+          <Router history={ history } routes={ routes } onUpdate={ logPageView } />
         </Provider>
       </I18nextProvider>,
       document.getElementById("app"))
