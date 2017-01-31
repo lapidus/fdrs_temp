@@ -84,6 +84,15 @@ class Card extends React.Component {
 
     return (
       <article className={ `relative overflow-hidden shadow-2 ${bgColor}` }>
+        {
+          children.map((child, i) =>
+            child.props.componentIdentifier === "CardLegend" ? (
+              <div key={ i }>
+                { child.props.children }
+              </div>
+            ) : null
+          )
+        }
         <div>
           {
             children.map((child, i) =>
@@ -116,9 +125,8 @@ class Card extends React.Component {
               }
             </div>
           }
-          <LanguageLink to={`/fdrs/overview/map?currentIndicator=${this.props.indicator}`} className={this.props.indicator ? "btn" : "btn opacity-0"}>
-
-          </LanguageLink>
+          {/* <LanguageLink to={`/fdrs/overview/map?currentIndicator=${this.props.indicator}`} className={this.props.indicator ? "btn" : "btn opacity-0"}></LanguageLink> */}
+          &nbsp;
           <button
             className="btn btn--raised btn--circle bg-white absolute t0 r1 y-center-self"
             style={{width:48,height:48}}

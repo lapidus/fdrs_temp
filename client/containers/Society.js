@@ -14,13 +14,14 @@ import Icon from "../components/Icon"
 
 import { translate } from "react-i18next"
 
-import LineChart from "../components/charts/LineChart"
+import LineChart, { lineColors } from "../components/charts/LineChart"
 import ShareBtn from "../components/socialMedia/ShareBtn"
 import Breadcrumbs from "../components/Breadcrumbs"
 import Globe from "../components/Globe"
 import Card from "../components/cards/Card"
 import CardView from "../components/cards/CardView"
 import CardOverlay from "../components/cards/CardOverlay"
+import CardLegend from "../components/cards/CardLegend"
 import GeneratedIntroText from "../components/GeneratedIntroText"
 import FilteredSocietiesSidebar from "../components/FilteredSocietiesSidebar"
 
@@ -523,10 +524,20 @@ class Society extends React.Component {
                     <CardOverlay>
                       <p>{ t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".definition") }</p>
                       <p>{ t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".definition") }</p>
-
                       <p>Source: { t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".source") }</p>
-
                     </CardOverlay>
+                    <CardLegend>
+                      <div className="absolute l0 b0 text-xs pl6 pb3">
+                        <ul className="pl1">
+                          <li className="relative pl1">
+                            <span className="absolute t0 l0" style={{marginTop:4,width:10,height:10,background:lineColors[0]}}></span>{ t("common:indicators." + 'KPI_expenditureLC (CHF)' + ".name") }
+                          </li>
+                          <li className="relative pl1">
+                            <span className="absolute t0 l0" style={{marginTop:4,width:10,height:10,background:lineColors[1]}}></span>{ t("common:indicators." + 'KPI_IncomeLC (CHF)' + ".name") }
+                          </li>
+                        </ul>
+                      </div>
+                    </CardLegend>
                   </Card>
                 </div>
 
@@ -641,8 +652,7 @@ class Society extends React.Component {
                     <CardView viewIcon="lineChart">
                       <div className="p1">
                         <h1 className="text-base mt0 mb1 lh-small">
-                          {/* { t("societies:peopleReached") } */}
-                          { "Number of people reached: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas." }
+                          { t("societies:peopleReached") }
                         </h1>
                         <LineChart
                           height={ 150 }
@@ -663,8 +673,9 @@ class Society extends React.Component {
                                 (() => {
                                   const highestValues = data.map(d => {
                                     const values = [
-                                      Number(d.KPI_noPeopleReachedHealth),
                                       Number(d.KPI_noPeopleReachedDisaster),
+                                      Number(d.KPI_noPeopleReachedAllServices),
+                                      Number(d.KPI_noPeopleReachedHealth),
                                       Number(d.KPI_noPeopleReachedServices),
                                       Number(d.KPI_noPeopleReachedDevelopment),
                                       // Number(d.KPI_noPeopleReachedAllServices),
@@ -682,6 +693,11 @@ class Society extends React.Component {
                               x: new Date(d.KPI_Year, 1, 1),
                               y: Number(d.KPI_noPeopleReachedDisaster) || null,
                               datasetName: t("common:indicators.KPI_noPeopleReachedDisaster.name"),
+                            })),
+                            data.map(d => ({
+                              x: new Date(d.KPI_Year, 1, 1),
+                              y: Number(d.KPI_noPeopleReachedDisaster) || null,
+                              datasetName: t("common:indicators.KPI_noPeopleReachedAllServices.name"),
                             })),
                             data.map(d => ({
                               x: new Date(d.KPI_Year, 1, 1),
@@ -720,6 +736,10 @@ class Society extends React.Component {
                       <p>{ t("common:indicators.KPI_noPeopleReachedDisaster.definition") }</p>
                       <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedDisaster.source") }</p>
 
+                      <p className="strong">{ t("common:indicators.KPI_noPeopleReachedAllServices.name") }</p>
+                      <p>{ t("common:indicators.KPI_noPeopleReachedAllServices.definition") }</p>
+                      <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedAllServices.source") }</p>
+
                       <p className="strong">{ t("common:indicators.KPI_noPeopleReachedServices.name") }</p>
                       <p>{ t("common:indicators.KPI_noPeopleReachedServices.definition") }</p>
                       <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedServices.source") }</p>
@@ -732,6 +752,27 @@ class Society extends React.Component {
                       <p>{ t("common:indicators.KPI_noPeopleReachedDevelopment.definition") }</p>
                       <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedDevelopment.source") }</p>
                     </CardOverlay>
+                    <CardLegend>
+                      <div className="absolute l0 b0 text-xs px1 pb05">
+                        <ul>
+                          <li className="relative pl1">
+                            <span className="absolute t0 l0" style={{marginTop:4,width:10,height:10,background:lineColors[0]}}></span>{ t("common:indicators.KPI_noPeopleReachedDisaster.name") }
+                          </li>
+                          <li className="relative pl1">
+                            <span className="absolute t0 l0" style={{marginTop:4,width:10,height:10,background:lineColors[1]}}></span>{ t("common:indicators.KPI_noPeopleReachedAllServices.name") }
+                          </li>
+                          <li className="relative pl1">
+                            <span className="absolute t0 l0" style={{marginTop:4,width:10,height:10,background:lineColors[2]}}></span>{ t("common:indicators.KPI_noPeopleReachedServices.name") }
+                          </li>
+                          <li className="relative pl1">
+                            <span className="absolute t0 l0" style={{marginTop:4,width:10,height:10,background:lineColors[3]}}></span>{ t("common:indicators.KPI_noPeopleReachedHealth.name") }
+                          </li>
+                          <li className="relative pl1">
+                            <span className="absolute t0 l0" style={{marginTop:4,width:10,height:10,background:lineColors[4]}}></span>{ t("common:indicators.KPI_noPeopleReachedDevelopment.name") }
+                          </li>
+                        </ul>
+                      </div>
+                    </CardLegend>
                   </Card>
                 </div>
 

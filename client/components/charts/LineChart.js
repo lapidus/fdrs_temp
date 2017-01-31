@@ -8,10 +8,17 @@ import { actions } from 'redux-tooltip';
 
 const { show, hide, toggle, place } = actions;
 
-const lineColors = [
-  "#EE3224",
-  "#0F9EE3",
-  "#D7006D",
+export const lineColors = [
+  // "#EE3224",
+  // "#0F9EE3",
+  // "#D7006D",
+  "#E2231B",
+  "#009EE3",
+  "#E5007C",
+  "#FFD100",
+  "#82BC00",
+  "#5C315E",
+  "#692F24",
 ]
 
 class LineChart extends React.Component {
