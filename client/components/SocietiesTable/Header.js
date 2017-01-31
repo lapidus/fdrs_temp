@@ -1,6 +1,10 @@
 
 import React from "react"
 import { translate } from "react-i18next"
+import Select from "react-select"
+import { connect } from "react-redux"
+
+import { switchYear } from "../../actions/appActions"
 
 class SocietiesTableHeader extends React.Component {
   render() {
@@ -27,7 +31,27 @@ class SocietiesTableHeader extends React.Component {
             <th className="p1 base-4 sm-4">{ t("overview:tableHeaders")[0] }</th>
             <th className="p1 base-4 sm-4">{ t("overview:tableHeaders")[1] }</th>
             <th className="p1 base-4 sm-4 relative">
-              { t("overview:tableHeaders")[2] } { currentYear }
+              { t("overview:tableHeaders")[2] }
+              <span className="inline-block align-middle select-no-underline" style={{width:"100px",color:"inherit"}}>
+                <Select
+                  searchable={ false }
+                  clearable={ false }
+                  name="year-selector"
+                  value={ currentYear }
+                  options={[
+                    { value: 2010, label: "2010" },
+                    { value: 2011, label: "2011" },
+                    { value: 2012, label: "2012" },
+                    { value: 2013, label: "2013" },
+                    { value: 2014, label: "2014" },
+                    { value: 2015, label: "2015" },
+                    { value: 2016, label: "2016" },
+                  ]}
+                  onChange={(d) => {
+                    this.props.switchYear(d.value)
+                  }}
+                />
+              </span>
             </th>
           </tr>
         </tbody>
@@ -60,4 +84,10 @@ SocietiesTableHeader.defaultProps = {
   down: "24,10 14,20 4,10",
 }
 
-export default translate("overview", { wait: true })(SocietiesTableHeader)
+const mapStateToProps = state => ({})
+
+const mapDispatchToProps = dispatch => ({
+  switchYear: (year) => dispatch(switchYear(year))
+})
+
+export default translate("overview", { wait: true })(connect(mapStateToProps,mapDispatchToProps)(SocietiesTableHeader))

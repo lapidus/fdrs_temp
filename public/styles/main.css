@@ -1092,7 +1092,8 @@ ul {
 .Select-control {
   border: 0;
   border-bottom: 2px solid #ccc;
-  color: #333;
+  /*color: #333;*/
+  color: inherit;
   cursor: default;
   display: table;
   border-spacing: 0;
@@ -1133,7 +1134,8 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #aaa;
+  /*color: #aaa;*/
+  color: inherit;
   /*line-height: 36px;*/
   line-height: 2.25rem;
   height: 100%;
@@ -1146,9 +1148,14 @@ ul {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.is-open.Select-placeholder,
+.is-open.Select--single > .Select-control .Select-value {
+  color: #212121;
+}
 .has-value.Select--single > .Select-control .Select-value .Select-value-label,
 .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
-  color: #333;
+  /*color: #333;*/
+  color: inherit;
 }
 .has-value.Select--single > .Select-control .Select-value a.Select-value-label,
 .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label {
@@ -1276,7 +1283,7 @@ ul {
 .Select-option {
   box-sizing: border-box;
   background-color: #fff;
-  color: inherit;
+  color: #212121;
   cursor: pointer;
   display: block;
   /*padding: 8px 10px;*/
