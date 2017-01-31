@@ -115,7 +115,8 @@ class App extends React.Component {
                   <div className="col sm-3 sm-offset-1">
                     <p className='inline-block align-middle small light m0' style={{lineHeight:'1rem',letterSpacing:'1px',fontFamily: "Helvetica Neue, sans-serif"}}>
                       <LanguageLink to="/fdrs" className='color-inverted caps'>
-                        <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] }
+                        {/* <span className='color-primary'>{ t("common:nameParts")[0] }</span>&nbsp;{ t("common:nameParts")[1] }<br />{ t("common:nameParts")[2] } */}
+                        <span>{ t("common:name") }</span>
                       </LanguageLink>
                     </p>
                     <p>{ t("common:credit") } <strong><a href="http://www.lapidus.se" target="_blank">Lapidus Interactive</a></strong></p>
