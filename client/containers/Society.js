@@ -142,7 +142,7 @@ class Society extends React.Component {
     const { society, data, timeSeriesMeta, t } = this.props
     const { i18n } = this.context
     const { language } = i18n
-    const pageData = i18n.store.data[language]["common"]
+    const pageData = i18n.store.data[language] ? i18n.store.data[language]["common"] : i18n.store.data["en"]["common"]
 
     return (
       <section>
