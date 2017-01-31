@@ -226,10 +226,9 @@ class App extends React.Component {
 
               <div className="col sm-3 sm-offset-1">
                 { this.props.location.pathname !== "/" ?
-                  <LanguageLink to="/">{ "Back to Data.ifrc.org" }</LanguageLink> :
+                  <LanguageLink to="/">{ t("common:backToDataIFRCorg") }</LanguageLink> :
                   ""
                 }
-
               </div>
               <div className="col sm-3">
 

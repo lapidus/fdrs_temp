@@ -49,7 +49,8 @@ class Home extends React.Component {
       <div>
         <div className="text-center overflow-hidden" style={{ boxShadow:"inset 0 100px 100px #fff,inset 0 -100px 100px #fff",backgroundImage: "url(/img/ifrc-progress-report-2015-bg.jpg)", backgroundSize: 'cover'}}>
           <h1 style={{paddingTop:"96px"}} className="bg-gradient--white m0 pb4">
-            <div className="text-lg sm-text-xl md-text-xxl light">{ t("report-common:home.title.0") } <span className="color-primary"> { t("report-common:home.title.1") }</span></div>
+            {/* <div className="text-lg sm-text-xl md-text-xxl light">{ t("report-common:home.title.0") } <span className="color-primary"> { t("report-common:home.title.1") }</span></div> */}
+            <div className="text-lg sm-text-xl md-text-xxl light">{ t("report-common:preTitle") }</div>
             <div className="heading-xl sm-heading-xxl md-heading-xxxl color-primary lh-1">{ t("report-common:home.title.2") }</div>
             <div className="text-base sm-text-md md-text-lg">{t("report-common:reportType")}</div>
             <div className="inline-block pt2" style={{width: '48px'}}>
