@@ -103,7 +103,7 @@ class Card extends React.Component {
             )
           }
         </div>
-        <footer className="relative pt2 pb05 px1" style={{opacity: this.props.controlsVisible ? 1 : 0, pointerEvents: this.props.controlsVisible ? "all" : "none"}}>
+        <footer className="relative pt2 pb1 px1" style={{opacity: this.props.controlsVisible ? 1 : 0, pointerEvents: this.props.controlsVisible ? "all" : "none"}}>
           {
             !basicCard &&
             <div className="t0 l1 y-center-self absolute btn-group btn-group--raised">

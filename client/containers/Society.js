@@ -755,7 +755,7 @@ class Society extends React.Component {
                       <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedDevelopment.source") }</p>
                     </CardOverlay>
                     <CardLegend>
-                      <div className="absolute l0 b0 text-xs px1 pb05">
+                      <div className="absolute l0 b0 text-xs px1 pb05" style={{fontSize:"12px"}}>
                         <ul>
                           <li className="relative pl1">
                             <span className="absolute t0 l0" style={{marginTop:4,width:10,height:10,background:lineColors[0]}}></span>{ t("common:indicators.KPI_noPeopleReachedDisaster.name") }
