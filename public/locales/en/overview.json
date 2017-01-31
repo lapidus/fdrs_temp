@@ -19,5 +19,6 @@
         "Trend",
         "Data for"
     ],
+    "allNationalSocieties": "IFRC (all National Societies)",
     "filterPlaceholder": "Select National Societies to compare"
 }

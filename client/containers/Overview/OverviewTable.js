@@ -29,6 +29,7 @@ class OverviewTable extends React.Component {
   render() {
 
     const { t } = this.props
+    const NSNames = this.context.i18n.store.data[this.context.i18n.language]["national-societies"]
 
     return (
       <div className="px1">
@@ -45,6 +46,7 @@ class OverviewTable extends React.Component {
               handleUnselectSociety={() => { console.log("Unselected NS") }}
               handleNSSelect={() => { console.log("Selected NS") }}
               handleYearSelect={() => { console.log("Selected Year") }}
+              nationalSocietyNames={NSNames}
             />
           </div>
         </div>
@@ -96,4 +98,4 @@ const mapDispatchToProps = dispatch => ({
   clearSocieties: () => dispatch(clearSocieties()),
 })
 
-export default translate("overview", { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(OverviewTable))
+export default translate(["overview", "national-societies"], { wait: true })(connect(makeMapStateToProps, mapDispatchToProps)(OverviewTable))
