@@ -28,7 +28,7 @@
       // Branch
       "ref": "origin/master",
       // Git repository to clone
-      "repo": "git@gitlab.com:LapidusInteractive/fdrs.git",
+      "repo": "https://github.com/lapidus/fdrs_temp.git",
       // Path of the application on target servers
       "path": "/home/master",
       // Commands to execute locally (on the same machine you deploy things)
