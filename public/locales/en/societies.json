@@ -31,7 +31,6 @@
         ", it counted",
         "active volunteers",
         "up from",
-        "down from",
         "in",
         ", of which",
         "were male and",
@@ -47,6 +46,6 @@
         "Help us improve data.ifrc.org",
         "Send your ideas to:"
     ],
-    "documents": "Documents",
+    "documents": "Documents issued",
     "noDocuments": "No documents"
 }

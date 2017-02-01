@@ -11,7 +11,7 @@
         "KPI_noPeopleVolunteering": {
             "": "Personas que ofrecen voluntariamente su tiempo",
             "name": "Personas que ofrecen voluntariamente su tiempo",
-            "definition": "N\u00famero de personas que ofrecen voluntariamente su tiempo: personas que han dedicado al menos cuatro horas de trabajo voluntario durante el per\u00edodo anual del informe",
+            "definition": "N\u00famero de personas que ofrecen voluntariamente su tiempo: personas que han dedicado al menos cuatro horas de trabajo voluntario durante el per\u00edodo anual del informe.",
             "source": "FDRS",
             "unit": ""
         },

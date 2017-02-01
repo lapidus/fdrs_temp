@@ -31,14 +31,14 @@
     ],
     "source": "source",
     "fillerText": [
-        "Key proxy indicators reported by the National Society since",
-        "are available below, as well as copies of additional key documents."
+        "Les indicateurs cl\u00e9s rapport\u00e9s par la Soci\u00e9t\u00e9 nationale depuis",
+        "sont disponibles ci-dessous, ainsi que des copies de documents cl\u00e9s suppl\u00e9mentaires."
     ],
     "callout": [
-        "What would you like to see here?",
-        "Help us improve data.ifrc.org",
-        "Send your ideas to:"
+        "Que voulez-vous voir ici?",
+        "Aidez-nous \u00e0 am\u00e9liorer data.ifrc.org",
+        "Envoyez vos id\u00e9es \u00e0:"
     ],
-    "documents": "Documents",
-    "noDocuments": "No documents"
+    "documents": "Documents \u00e9mis",
+    "noDocuments": "Pas de documents"
 }

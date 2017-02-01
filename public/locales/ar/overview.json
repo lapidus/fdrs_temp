@@ -1,24 +1,24 @@
 {
-    "title": "The IFRC at a glance",
+    "title": "\u0644\u0645\u062d\u0629 \u0634\u0627\u0645\u0644\u0629 \u0639\u0646 \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a",
     "tabs": [
         [
-            "\u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0639\u0627\u0644\u0645\u064a\u0627\u064b",
+            "\u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a",
             "\u0646\u0638\u0631\u0629 \u0639\u0627\u0645\u0629"
         ],
         [
-            "\u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629",
-            "\u0644\u0645\u062d\u0627\u062a"
+            "\u0644\u0645\u062d\u0627\u062a \u0639\u0646",
+            "\u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629"
         ]
     ],
-    "table": "Table",
-    "map": "Map",
-    "sorted": "Sorted",
-    "hightolow": "High to low",
+    "table": "\u062c\u062f\u0648\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",
+    "map": "\u062e\u0631\u064a\u0637\u0629",
+    "sorted": "\u0627\u0644\u062a\u0631\u062a\u064a\u0628",
+    "hightolow": "\u0645\u0646 \u0627\u0644\u0627\u0639\u0644\u0649 \u0627\u0644\u0649 \u0627\u0644\u0627\u062f\u0646\u0649",
     "tableHeaders": [
-        "National Society name",
-        "Trend",
-        "Data for"
+        "\u0627\u0644\u062c\u0645\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629",
+        "\u0627\u0644\u0627\u062a\u062c\u0627\u0647 \u0627\u0644\u0639\u0627\u0645",
+        "\u0628\u064a\u0627\u0646\u0627\u062a \u0639\u0627\u0645"
     ],
-    "filterPlaceholder": "Select National Societies to compare",
+    "filterPlaceholder": "\u0627\u062e\u062a\u064a\u0627\u0631 \u0627\u0644\u062c\u0645\u0639\u064a\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0644\u0644\u0645\u0642\u0627\u0631\u0646\u0629"
     "borderMessage": "The boundaries and the designations used on this map do not imply the expression of any opinion on the part of the International Federation of Red Cross and Red Crescent Societies and are used for illustrative purposes only."
 }

@@ -1,3 +1,4 @@
+import "babel-polyfill";
 import React, { PropTypes } from "react"
 import LanguageLink from "../components/LanguageLink"
 import { connect } from "react-redux"
