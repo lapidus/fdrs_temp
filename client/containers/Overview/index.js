@@ -148,7 +148,7 @@ class Overview extends React.Component {
         </div>
 
         <div className="px1 bg-beige" style={{
-            backgroundImage: "url(/img/profiles-preview.png)",
+            backgroundImage: this.context.i18n.language === "ar" ? "url(/img/profiles-preview-ar.jpg)" : "url(/img/profiles-preview.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "50% auto",
             backgroundPosition: this.context.i18n.language === "ar" ? "center right" : "center left",

@@ -124,7 +124,7 @@ class Societies extends React.Component {
         </div>
 
         <div className="px1 bg-beige" style={{
-            backgroundImage: "url(/img/overview-preview.png)",
+            backgroundImage: this.context.i18n.language === "ar" ? "url(/img/overview-preview-ar.jpg)" : "url(/img/overview-preview.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "50% auto",
             backgroundPosition: this.context.i18n.language === "ar" ? "center right" : "center left",

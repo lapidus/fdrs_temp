@@ -33,6 +33,7 @@
     "insights": {
         "title": "Latest insights",
         "subtitle": "Exceptional coverage",
+        "nsCoverage": "National Society coverage",
         "description": "In 2015, all 190 National Societies have reported to FDRS on at least 1 key indicator. We thank the National Societies worldwide for their efforts to improve transparency and accountability of the IFRC.",
         "button": "Explore the data"
     }

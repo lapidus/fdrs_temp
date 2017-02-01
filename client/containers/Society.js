@@ -199,7 +199,7 @@ class Society extends React.Component {
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-8 sm-offset-3 px1 py1">
-              <p className="color-primary strong m0 text-base">{ society.NSO_ZON_name }</p>
+              <p className="color-primary strong m0 text-base">{ t(`societies:regions.${society.NSO_ZON_name}`) }</p>
               <h1 className="text-md sm-text-lg md-text-xl light m0">
                 { t("national-societies:" + society.KPI_DON_Code) }
               </h1>
@@ -993,7 +993,7 @@ class Society extends React.Component {
         </div> */}
 
         <div className="px1 bg-beige hidden-print" style={{
-            backgroundImage: "url(/img/overview-preview.png)",
+            backgroundImage: this.context.i18n.language === "ar" ? "url(/img/overview-preview-ar.jpg)" : "url(/img/overview-preview.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "50% auto",
             backgroundPosition: this.context.i18n.language === "ar" ? "center right" : "center left",
