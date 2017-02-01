@@ -358,7 +358,9 @@ class Chapter4 extends React.Component {
                   choroplethDataset={section5.blocks[1].dataset}
                   /> */}
                 <h4 className="title strong">{t("report-strategic-aim-1:sections.5.blocks.1.title")}</h4>
-                <CountryMap selectedCountries={section5.blocks[1].dataset}/>
+                <CountryMap
+                  selectedCountries={section5.blocks[1].dataset}
+                />
                 <p className="text-xs">{t("report-strategic-aim-1:sections.5.blocks.1.caption")}</p>
               </div>
 

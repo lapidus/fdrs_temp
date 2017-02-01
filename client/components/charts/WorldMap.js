@@ -82,11 +82,13 @@ class CountryMap extends React.Component {
     }
   }
   handleTooltipShow(e, d) {
-    const country = this.props.selectedCountries[reference[d.id]]
-    this.props.showTooltip({
-      origin: e.target,
-      content: country.name + " - " + niceNum(country.number, null, null, true)
-    });
+    if(this.props.selectedCountries) {
+      const country = this.props.selectedCountries[reference[d.id]]
+      this.props.showTooltip({
+        origin: e.target,
+        content: country.name + " - " + niceNum(country.number, null, null, true)
+      });
+    }
   }
   handleTooltipHide() {
     this.props.hideTooltip()
@@ -116,6 +118,25 @@ class CountryMap extends React.Component {
                     handleTooltipHide={this.handleTooltipHide}
                   />
                 ) : (null)
+              }
+              {
+                this.props.bubbles ? (
+                  <g>
+                    {
+                      this.props.bubbles.map((bubble, i) => {
+                        return <circle
+                                  key={i}
+                                  cx={this.projection()([bubble.longitude, bubble.latitude])[0]}
+                                  cy={this.projection()([bubble.longitude, bubble.latitude])[1]}
+                                  r={8}
+                                  style={{
+                                    fill: "#D0021B"
+                                  }}
+                                />
+                      })
+                    }
+                  </g>
+                ) : null
               }
             </svg>
           }

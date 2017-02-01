@@ -91,7 +91,7 @@ class App extends React.Component {
     return (
       <div
         dir={ language === "ar" ? "rtl" : "ltr" }
-        className={ language === "ar" ? "layout-rtl" : "" }
+        className={ language === "ar" ? "relative layout-rtl" : "relative" }
       >
         <Loader />
 
