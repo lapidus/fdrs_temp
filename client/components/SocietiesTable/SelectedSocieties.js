@@ -39,7 +39,7 @@ const SelectedSocieties = ({
                     currentYear={ currentYear }
                     societiesBlacklist={ societiesBlacklist }
                     unselectSociety={ unselectSociety }
-                    nationalSocietyName={nationalSocietyNames[o.KPI_DON_Code]}
+                    nationalSocietyName={nationalSocietyNames[NS]}
                   />
                 )
               })
