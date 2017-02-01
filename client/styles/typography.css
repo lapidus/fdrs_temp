@@ -23,6 +23,8 @@ small,
 .text-xxl  { font-size: calc(56 * var(--one)); }
 .text-xxxl { font-size: calc(64 * var(--one)); }
 
+.text-logo   { font-size: calc(13 * var(--one)); }
+
 .heading-lg   { font-size: calc(72  * var(--one)); }
 .heading-xl   { font-size: calc(112 * var(--one)); }
 .heading-xxl  { font-size: calc(144 * var(--one)); }

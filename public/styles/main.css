@@ -1401,6 +1401,10 @@ small,
   font-size: 4rem;
 }
 
+.text-logo {
+  font-size: 0.8125rem;
+}
+
 .heading-lg {
   font-size: 4.5rem;
 }
@@ -1729,6 +1733,10 @@ strong,
 
   .sm-text-xxxl {
     font-size: 4rem;
+  }
+
+  .text-logo {
+    font-size: 0.9375rem;
   }
 
   .sm-heading-lg {

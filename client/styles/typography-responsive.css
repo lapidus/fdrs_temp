@@ -61,6 +61,8 @@
   .sm-text-xxl  { font-size: calc(56 * var(--one)); }
   .sm-text-xxxl { font-size: calc(64 * var(--one)); }
 
+  .text-logo   { font-size: calc(15 * var(--one)); }
+
   .sm-heading-lg   { font-size: calc(72  * var(--one)); }
   .sm-heading-xl   { font-size: calc(112 * var(--one)); }
   .sm-heading-xxl  { font-size: calc(144 * var(--one)); }

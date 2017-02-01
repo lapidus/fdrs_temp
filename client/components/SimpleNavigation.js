@@ -117,7 +117,7 @@ class SimpleNavigation extends React.Component {
               className="inline-block align-middle mx1"
             />
           </a>
-          <h1 className='inline-block align-middle text-xs light m0 lh-small' style={{fontFamily: "Helvetica Neue, sans-serif"}}>
+          <h1 className='inline-block align-middle text-logo light m0 lh-small' style={{fontFamily: "Helvetica Neue, sans-serif"}}>
             <LanguageLink to="/" className='color-regular uppercase extended link-no-underline'>
               <span>{ t("landing:titleParts")[0] }&nbsp;{ t("landing:titleParts")[1] }</span>
             </LanguageLink>
