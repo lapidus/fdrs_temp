@@ -1,6 +1,6 @@
 {
     "breadcrumbs": {
-        "National society profiles": "Profils des soci\u00e9t\u00e9s nationales",
+        "National society profiles": "Profils des Soci\u00e9t\u00e9s nationales",
         "FAQ": "FAQ",
         "Services": "Services",
         "The IFRC at a glance": "La FICR en bref",
@@ -37,9 +37,9 @@
             "unit": ""
         },
         "KPI_noPeopleReachedDisaster": {
-            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce",
-            "name": "de personnes ont b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement pr\u00e9coce",
-            "definition": "Number of people reached by disaster response and early recovery programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement initial",
+            "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des programmes d\u2019intervention en cas de catastrophe et de rel\u00e8vement initial",
+            "definition": "Nombre de personnes ayant b\u00e9n\u00e9fici\u00e9 des programmes d'intervention en cas de catastrophe et rel\u00e8vement initial: b\u00e9n\u00e9ficiaires directs et indirects d\u2019un service ou personnes couvertes par un service de la F\u00e9d\u00e9ration, ventil\u00e9s par type de service.",
             "source": "FDRS",
             "unit": ""
         },
@@ -53,28 +53,28 @@
         "KPI_noPeopleReachedHealth": {
             "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de sant\u00e9 communautaire",
             "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de sant\u00e9 communautaire",
-            "definition": "Number of people reached by community health programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "definition": "Personnes ayant be\u0301ne\u0301ficie\u0301 des services de sant\u00e9 communautaire: nombre de b\u00e9n\u00e9ficiaires directs et indirects et de personnes couvertes par un service de la F\u00e9d\u00e9ration internationale.",
             "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedDevelopment": {
             "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de d\u00e9veloppement communautaire",
             "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services de d\u00e9veloppement communautaire",
-            "definition": "Number of people reached by community development programmes: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "definition": "Personnes ayant be\u0301ne\u0301ficie\u0301 des services de d\u00e9veloppement communautaire: nombre de b\u00e9n\u00e9ficiaires directs et indirects et de personnes couvertes par un service de la F\u00e9d\u00e9ration internationale.",
             "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleReachedServices": {
             "": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services sociaux",
             "name": "Personnes ayant b\u00e9n\u00e9fici\u00e9 des services sociaux",
-            "definition": "Number of people reached by social services: direct and indirect recipients and people covered by Federation services counted, disaggregated by service areas.",
+            "definition": "Personnes ayant be\u0301ne\u0301ficie\u0301 des services sociaux: nombre de b\u00e9n\u00e9ficiaires directs et indirects et de personnes couvertes par un service de la F\u00e9d\u00e9ration internationale.",
             "source": "FDRS",
             "unit": ""
         },
         "KPI_noPeopleCoveredPreparedness": {
             "": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration",
-            "name": "Personnes couvertes",
-            "definition": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration",
+            "name": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration",
+            "definition": "Personnes couvertes par des programmes de r\u00e9duction des risques et de pr\u00e9paration: les personnes couvertes sont des personnes qui sont cibl\u00e9es par un programme pour lequel les b\u00e9n\u00e9fices ne sont pas imm\u00e9diats mais dont les populations cibl\u00e9es peuvent en b\u00e9n\u00e9ficier en cas d\u2019\u00e9v\u00e9nements n\u00e9fastes.",
             "source": "FDRS",
             "unit": ""
         },
@@ -91,7 +91,7 @@
             "unit": ""
         },
         "Population": {
-            "name": "totale de la population",
+            "name": "Population totale",
             "definition": "La population totale est bas\u00e9e sur la d\u00e9finition de facto de la population, qui compte tous les r\u00e9sidents ind\u00e9pendamment de leurs statut l\u00e9gal ou de leur citoyennet\u00e9. Les valeurs indiqu\u00e9es sont des estimations semestrielles.",
             "source": "(1) Division de la population des Nations Unies, (2) Rapports de recensement et autres publications statistiques des bureaux nationaux de statistique, (3) Eurostat: Statistiques d\u00e9mographiques, (4) Division de la statistique des Nations Unies, (5) Bureau de recensment des Etats Unies: Base de donn\u00e9e internationale, et (6) Secr\u00e9tariat de la communaut\u00e9 pacifique: Programmes statistiques et d\u00e9mographiques. ",
             "unit": ""
@@ -140,7 +140,7 @@
     "updateText": "Derni\u00e8re mise-\u00e0-jours",
     "login": "s'identifier",
     "home": "Page d'acceuil",
-    "readMore": "en savoir plus",
+    "readMore": "En savoir plus",
     "navigation": [
         {
             "name": "Services",
