@@ -95,7 +95,7 @@ class Overview extends React.Component {
                 { t("overview:title") }
               </h1>
               <div className="relative">
-                <div className="sm-9 select-xl select-no-underline select-no-scroll mxn3">
+                <div className="sm-10 select-xl select-no-underline select-no-scroll sm-mxn3">
                   <Select
                     searchable={ false }
                     clearable={ false }
@@ -103,7 +103,7 @@ class Overview extends React.Component {
                     multi={ false }
                     name="ns-selector"
                     valueRenderer={(option) => {
-                      return <span className="text-md sm-text-lg md-text-xl light">{ pageData.indicators[option.value].name }</span>
+                      return <span className="text-sm xs-text-md sm-text-lg lg-text-xl light">{ pageData.indicators[option.value].name }</span>
                     }}
                     options={filter(Object.keys(pageData.indicators), obj => obj !== "Population" && obj !== "Poverty" && obj !== "GDP").map(indicatorKey => {
                       return {
@@ -117,13 +117,13 @@ class Overview extends React.Component {
                     onChange={(indicator) => this.props.setIndicator(indicator.value)}
                   />
                 </div>
-                <div className={`absolute t50 ${this.context.i18n.language === "ar" ? "l0" : "r0"} y-center-self`}>
-                  <LanguageLink to="/fdrs/overview/map" className="relative btn">
+                <div className={`sm-absolute t50 ${this.context.i18n.language === "ar" ? "l0" : "r0"} y-center-self`}>
+                  <LanguageLink to="/fdrs/overview/map" className="relative btn base-6 text-center sm-text-left">
                     <span className="small strong caps">{ t("overview:map") }</span>
                     <span className= {"absolute b0 l0 base-12  " + (this.props.location.pathname == "/fdrs/overview/map" ? 'bg-primary' : 'bg-secondary')} style={{height:4}}></span>
                   </LanguageLink>
 
-                  <LanguageLink to="/fdrs/overview/table" className="relative btn">
+                  <LanguageLink to="/fdrs/overview/table" className="relative btn base-6 text-center sm-text-left">
                     {/* <span className="small strong caps color-secondary">{ "Table" }</span>
                     <span className="absolute b0 l0 base-12 bg-secondary" style={{height:4}}></span> */}
                     <span className="small strong caps">{ t("overview:table") }</span>
