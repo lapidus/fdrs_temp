@@ -142,7 +142,7 @@ class Society extends React.Component {
     const { society, data, timeSeriesMeta, t } = this.props
     const { i18n } = this.context
     const { language } = i18n
-    const pageData = i18n.store.data[language]["common"]
+    const pageData = i18n.store.data[language] ? i18n.store.data[language]["common"] : i18n.store.data["en"]["common"]
 
     return (
       <section>
@@ -199,7 +199,7 @@ class Society extends React.Component {
         <div className="px1">
           <div className="clearfix mxn1">
             <header className="col sm-8 sm-offset-3 px1 py1">
-              <p className="color-primary strong m0 text-base">{ society.NSO_ZON_name }</p>
+              <p className="color-primary strong m0 text-base">{ t(`societies:regions.${society.NSO_ZON_name}`) }</p>
               <h1 className="text-md sm-text-lg md-text-xl light m0">
                 { t("national-societies:" + society.KPI_DON_Code) }
               </h1>
@@ -755,7 +755,7 @@ class Society extends React.Component {
                       <p>{ "Source: " + t("common:indicators.KPI_noPeopleReachedDevelopment.source") }</p>
                     </CardOverlay>
                     <CardLegend>
-                      <div className="absolute l0 b0 text-xs px1 pb05">
+                      <div className="absolute l0 b0 text-xs px1 pb05" style={{fontSize:"12px"}}>
                         <ul>
                           <li className="relative pl1">
                             <span className="absolute t0 l0" style={{marginTop:4,width:10,height:10,background:lineColors[0]}}></span>{ t("common:indicators.KPI_noPeopleReachedDisaster.name") }
@@ -993,7 +993,7 @@ class Society extends React.Component {
         </div> */}
 
         <div className="px1 bg-beige hidden-print" style={{
-            backgroundImage: "url(/img/overview-preview.png)",
+            backgroundImage: this.context.i18n.language === "ar" ? "url(/img/overview-preview-ar.jpg)" : "url(/img/overview-preview.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "50% auto",
             backgroundPosition: this.context.i18n.language === "ar" ? "center right" : "center left",

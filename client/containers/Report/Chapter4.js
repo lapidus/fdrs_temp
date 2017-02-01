@@ -9,7 +9,8 @@ import { Tabs, TabPanel } from "../../components/Tabs"
 import SideNavigation from "../../components/Report/SideNavigation"
 import SimpleBarChart from "../../components/charts/SimpleBarChart"
 import DonutChart from "../../components/charts/DonutChart"
-import WorldMap from "../../components/charts/WorldMap"
+// import WorldMap from "../../components/charts/WorldMap"
+import CountryMap from "../../components/charts/WorldMap"
 import StackedBarChart from "../../components/charts/StackedBarChart"
 
 class Chapter4 extends React.Component {
@@ -351,169 +352,205 @@ class Chapter4 extends React.Component {
               </div>
 
               <div className="col sm-8 sm-offset-2 md-7 px1">
-                <WorldMap
+                {/* <WorldMap
                   title={t("report-strategic-aim-1:sections.5.blocks.1.title")}
                   caption={t("report-strategic-aim-1:sections.5.blocks.1.caption")}
                   choroplethDataset={section5.blocks[1].dataset}
-                  />
+                  /> */}
+                <h4 className="title strong">{t("report-strategic-aim-1:sections.5.blocks.1.title")}</h4>
+                <CountryMap
+                  selectedCountries={section5.blocks[1].dataset}
+                />
+                <p className="text-xs">{t("report-strategic-aim-1:sections.5.blocks.1.caption")}</p>
               </div>
 
               <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <p>{t("report-strategic-aim-1:sections.5.blocks.2")}</p>
               </div>
 
-              <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2" style={{position: "relative",minHeight:"600px",backgroundImage:"url(/img/chapters/4/syria-crisis.svg)",backgroundSize:"100% auto",backgroundRepeat:"no-repeat",backgroundPosition:"50% 50%"}}>
-                <div className="col xs-6 xs-offset-6">
-                  <h4 className="text-base sm-text-sm m0">The Syria crisis</h4>
-                  <p>40 Syrian Arab Red Crescent and 8 Palestinian Red Crescent Society staff and volunteers have lost their lives while providing support since the beginning of the crisis.</p>
-                </div>
-                <div className="col xs-6 xs-offset-6">
-                  <p>2011</p>
-                  <p className="display-1 color-primary strong">22.8M</p>
-                  <p className="text-xs">total population</p>
-                </div>
-                <div className="col xs-6">
-                  <div className="col xs-6 xs-offset-6 pr1">
-                    <p className="display-1 color-primary strong">4.1M</p>
-                    <p className="text-xs">people displaced in neighbouring countries</p>
+              {
+                language === "en" ? (
+                  <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 pb2" style={{position: "relative",minHeight:"600px",backgroundImage:"url(/img/chapters/4/syria-crisis.svg)",backgroundSize:"100% auto",backgroundRepeat:"no-repeat",backgroundPosition:"50% 50%"}}>
+                    <div className="col xs-6 xs-offset-6">
+                      <h4 className="text-base sm-text-sm m0">The Syria crisis</h4>
+                      <p>40 Syrian Arab Red Crescent and 8 Palestinian Red Crescent Society staff and volunteers have lost their lives while providing support since the beginning of the crisis.</p>
+                    </div>
+                    <div className="col xs-6 xs-offset-6">
+                      <p>2011</p>
+                      <p className="display-1 color-primary strong">22.8M</p>
+                      <p className="text-xs">total population</p>
+                    </div>
+                    <div className="col xs-6">
+                      <div className="col xs-6 xs-offset-6 pr1">
+                        <p className="display-1 color-primary strong">4.1M</p>
+                        <p className="text-xs">people displaced in neighbouring countries</p>
+                      </div>
+                    </div>
+                    <div className="col xs-6">
+                      <p className="display-1 color-primary strong">7.6M</p>
+                      <p className="text-xs">internally displaced people</p>
+                    </div>
                   </div>
-                </div>
-                <div className="col xs-6">
-                  <p className="display-1 color-primary strong">7.6M</p>
-                  <p className="text-xs">internally displaced people</p>
-                </div>
-              </div>
+                ) : null
+              }
 
-              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+              {
+                language === "en" ? (
+                  <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+                    <hr />
+                  </div>
+                ) : null
+              }
+
+              {/* <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <hr />
-              </div>
+              </div> */}
 
-              <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 py2" style={{position: "relative",minHeight:"660px",backgroundImage:"url(/img/chapters/4/taiphoon.svg)",backgroundSize:"100% auto",backgroundRepeat:"no-repeat",backgroundPosition:"50% 50%"}}>
-                <div className="col xs-6 pr2">
-                  <h4 className="text-base sm-text-sm m0">Taiphoon Haiyan</h4>
-                  <p>137 National Societies have supported the operation since the start of the crisis.</p>
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Shelter</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">Houses built</div>
-                    <div className="col xs-4 right-align">61,328</div>
-                    <div className="col xs-8">Beneficiaries</div>
-                    <div className="col xs-4 right-align">76,032</div>
+              {
+                language === "en" ? (
+                  <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 py2" style={{position: "relative",minHeight:"660px",backgroundImage:"url(/img/chapters/4/taiphoon.svg)",backgroundSize:"100% auto",backgroundRepeat:"no-repeat",backgroundPosition:"50% 50%"}}>
+                    <div className="col xs-6 pr2">
+                      <h4 className="text-base sm-text-sm m0">Taiphoon Haiyan</h4>
+                      <p>137 National Societies have supported the operation since the start of the crisis.</p>
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Shelter</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">Houses built</div>
+                        <div className="col xs-4 right-align">61,328</div>
+                        <div className="col xs-8">Beneficiaries</div>
+                        <div className="col xs-4 right-align">76,032</div>
+                      </div>
+
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Livelihood support</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">Households supported with livelihood assistance</div>
+                        <div className="col xs-4 right-align">58,454</div>
+                      </div>
+
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Healthcare</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">Health facilities rehabilitated or constructed</div>
+                        <div className="col xs-4 right-align">32</div>
+                        <div className="col xs-8">Households reached</div>
+                        <div className="col xs-4 right-align">33,685</div>
+                      </div>
+
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Water, sanitation and hygiene promotion</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">Households participating in hygiene promotion</div>
+                        <div className="col xs-4 right-align">34,032</div>
+                      </div>
+                    </div>
+
+                    <div className="col xs-6 pr2">
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Education</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">Classrooms repaired and constructed</div>
+                        <div className="col xs-4 right-align">224</div>
+                        <div className="col xs-8">Students covered by repaired and constructed classrooms</div>
+                        <div className="col xs-4 right-align">48,731</div>
+                      </div>
+
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+                      <br className="xs-visible"/>
+
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Disaster risk reduction</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">Instructors trained in disaster risk reduction</div>
+                        <div className="col xs-4 right-align">95</div>
+                      </div>
+                    </div>
                   </div>
+                ) : null
+              }
 
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Livelihood support</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">Households supported with livelihood assistance</div>
-                    <div className="col xs-4 right-align">58,454</div>
+              {
+                language === "en" ? (
+                  <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+                    <hr />
                   </div>
+                ) : null
+              }
 
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Healthcare</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">Health facilities rehabilitated or constructed</div>
-                    <div className="col xs-4 right-align">32</div>
-                    <div className="col xs-8">Households reached</div>
-                    <div className="col xs-4 right-align">33,685</div>
+              {
+                language === "en" ? (
+                  <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 py2" style={{position: "relative",minHeight:"892px",backgroundImage:"url(/img/chapters/4/ebola.svg)",backgroundSize:"100% auto",backgroundRepeat:"no-repeat",backgroundPosition:"50% 50%"}}>
+                    <div className="col xs-6 xs-offset-6">
+                      <h4 className="text-base sm-text-sm m0">Ebola virus disease</h4>
+                      <p>33 National Societies have supported the operation since the start of the crisis.</p>
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Social mobilisation and beneficiary communication</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">people reached</div>
+                        <div className="col xs-4 right-align">7M</div>
+                      </div>
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Tracing and monitoring contacts</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">People traced</div>
+                        <div className="col xs-4 right-align">&gt97,000</div>
+                      </div>
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Safe and dignified burials</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">Bodies safely buried</div>
+                        <div className="col xs-4 right-align">34,448</div>
+                      </div>
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Psychosocial support</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">People supported</div>
+                        <div className="col xs-4 right-align">&gt339,000</div>
+                      </div>
+                    </div>
+                    <div className="col xs-6">
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Volunteers trained in Ebola response</strong></div>
+                        <div className="col xs-4">6,927</div>
+                      </div>
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Volunteers currently active</strong></div>
+                        <div className="col xs-4">3,917</div>
+                      </div>
+                    </div>
+                    <div className="col sm-6">
+                      <div className="clearfix pb1">
+                        <div className="col xs-8"><strong>Clinical case management</strong></div>
+                        <div className="col xs-4">&nbsp;</div>
+                        <div className="col xs-8">Admissions</div>
+                        <div className="col xs-4 right-align">1,341</div>
+                        <div className="col xs-8">Discharges</div>
+                        <div className="col xs-4 right-align">774</div>
+                      </div>
+                    </div>
                   </div>
+                ) : null
+              }
 
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Water, sanitation and hygiene promotion</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">Households participating in hygiene promotion</div>
-                    <div className="col xs-4 right-align">34,032</div>
-                  </div>
-                </div>
-
-                <div className="col xs-6 pr2">
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Education</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">Classrooms repaired and constructed</div>
-                    <div className="col xs-4 right-align">224</div>
-                    <div className="col xs-8">Students covered by repaired and constructed classrooms</div>
-                    <div className="col xs-4 right-align">48,731</div>
-                  </div>
-
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-                  <br className="xs-visible"/>
-
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Disaster risk reduction</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">Instructors trained in disaster risk reduction</div>
-                    <div className="col xs-4 right-align">95</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+              {/* <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
                 <hr />
-              </div>
-
-              <div className="col px1 sm-px0 sm-10 sm-offset-1 md-7 md-offset-3 lg-7 lg-offset-2 py2" style={{position: "relative",minHeight:"892px",backgroundImage:"url(/img/chapters/4/ebola.svg)",backgroundSize:"100% auto",backgroundRepeat:"no-repeat",backgroundPosition:"50% 50%"}}>
-                <div className="col xs-6 xs-offset-6">
-                  <h4 className="text-base sm-text-sm m0">Ebola virus disease</h4>
-                  <p>33 National Societies have supported the operation since the start of the crisis.</p>
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Social mobilisation and beneficiary communication</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">people reached</div>
-                    <div className="col xs-4 right-align">7M</div>
+              </div> */}
+              {
+                language === "en" ? (
+                  <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
+                    <hr />
                   </div>
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Tracing and monitoring contacts</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">People traced</div>
-                    <div className="col xs-4 right-align">&gt97,000</div>
-                  </div>
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Safe and dignified burials</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">Bodies safely buried</div>
-                    <div className="col xs-4 right-align">34,448</div>
-                  </div>
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Psychosocial support</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">People supported</div>
-                    <div className="col xs-4 right-align">&gt339,000</div>
-                  </div>
-                </div>
-                <div className="col xs-6">
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Volunteers trained in Ebola response</strong></div>
-                    <div className="col xs-4">6,927</div>
-                  </div>
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Volunteers currently active</strong></div>
-                    <div className="col xs-4">3,917</div>
-                  </div>
-                </div>
-                <div className="col sm-6">
-                  <div className="clearfix pb1">
-                    <div className="col xs-8"><strong>Clinical case management</strong></div>
-                    <div className="col xs-4">&nbsp;</div>
-                    <div className="col xs-8">Admissions</div>
-                    <div className="col xs-4 right-align">1,341</div>
-                    <div className="col xs-8">Discharges</div>
-                    <div className="col xs-4 right-align">774</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col sm-8 sm-offset-2 md-6 md-offset-3 lg-5 lg-offset-3 px1">
-                <hr />
-              </div>
+                ) : null
+              }
 
               {
                 /*

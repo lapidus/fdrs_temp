@@ -108,7 +108,7 @@ class FDRSNavigation extends React.Component {
     const { i18n } = this.context
     const { language } = i18n
 
-    const pageData = i18n.store.data[language]["common"]
+    const pageData = i18n.store.data[language] ? i18n.store.data[language]["common"] : i18n.store.data["en"]["common"]
 
     //let getHeader = () => {
     //  return (
@@ -370,4 +370,4 @@ const mapDispatchToProps = dispatch => ({
   closeNav: () => dispatch(closeNav()),
 })
 
-export default translate()(connect(mapStateToProps, mapDispatchToProps)(FDRSNavigation))
+export default translate("common", { wait: true })(connect(mapStateToProps, mapDispatchToProps)(FDRSNavigation))

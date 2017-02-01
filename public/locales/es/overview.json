@@ -19,5 +19,6 @@
         "Tendencia",
         "Datos para"
     ],
-    "filterPlaceholder": "Seleccionar Sociedades Nacionales para comparar"
+    "filterPlaceholder": "Seleccionar Sociedades Nacionales para comparar",
+    "borderMessage": "The boundaries and the designations used on this map do not imply the expression of any opinion on the part of the International Federation of Red Cross and Red Crescent Societies and are used for illustrative purposes only."
 }

@@ -46,7 +46,7 @@ class Report extends React.Component {
               <ul className="m0 py05 px0 text-base">
                 <li className="inline-block">
                   <LanguageLink to="/fdrs">
-                    {"Home"}
+                    { t("common:home") }
                   </LanguageLink>
                   {
                     <div className="inline-block px05">

@@ -17,7 +17,8 @@ class AllSocieties extends React.Component {
       currentIndicator,
       currentYear,
       currentDataset,
-      sum
+      sum,
+      nationalSocietyNames,
     } = this.props
 
     return (
@@ -56,6 +57,7 @@ class AllSocieties extends React.Component {
                     currentIndicator={ currentIndicator }
                     currentYear={ currentYear }
                     societiesBlacklist={ societiesBlacklist }
+                    nationalSocietyName={nationalSocietyNames[NS.KPI_DON_Code]}
                   />
                 ) : (
                   null

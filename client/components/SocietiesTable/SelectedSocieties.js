@@ -14,7 +14,8 @@ const SelectedSocieties = ({
   currentYear,
   currentDataset,
   nationalSocieties,
-  unselectSociety
+  unselectSociety,
+  nationalSocietyNames,
 }) => (
   <div>
     {
@@ -38,6 +39,7 @@ const SelectedSocieties = ({
                     currentYear={ currentYear }
                     societiesBlacklist={ societiesBlacklist }
                     unselectSociety={ unselectSociety }
+                    nationalSocietyName={nationalSocietyNames[o.KPI_DON_Code]}
                   />
                 )
               })

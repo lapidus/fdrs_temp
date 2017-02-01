@@ -14,7 +14,14 @@
         "National Society",
         "profiles"
     ],
-    "peopleReached": "People reached",
+    "regions": {
+      "Asia Pacific": "Asia Pacific",
+      "Europe and Central Asia": "Europe and Central Asia",
+      "Middle East and North Africa": "Middle East and North Africa",
+      "Americas": "Americas",
+      "Africa": "Africa"
+    },
+    "peopleReached": "Number of people reached",
     "nationalSocieties": "National Societies",
     "searchPlaceholder": "Search...",
     "noSocieties": "No National Societies found",

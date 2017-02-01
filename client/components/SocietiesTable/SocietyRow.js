@@ -119,13 +119,15 @@ class SocietyRow extends React.Component {
       groupedByCode,
       currentIndicator,
       unselectSociety,
+      nationalSocietyName,
     } = this.props
 
     return (
       <tr>
         <td className="px1 py05 base-4">
           <LanguageLink to={`/fdrs/societies/${nationalSociety.slug}`} className="color-primary">
-            { nationalSociety.NSO_DON_name }
+            {/* { nationalSociety.NSO_DON_name } */}
+            { nationalSocietyName }
           </LanguageLink>
         </td>
         <td className="py05 px1 base-4">

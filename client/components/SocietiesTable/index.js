@@ -121,7 +121,7 @@ class SocietiesTable extends React.Component {
             options={this.props.nationalSocieties.map(ns => {
               return {
                 value: ns.KPI_DON_Code,
-                label: ns.NSO_DON_name,
+                label: this.props.nationalSocietyNames[ns.KPI_DON_Code],
                 slug: ns.slug,
               }
             })}
@@ -144,6 +144,7 @@ class SocietiesTable extends React.Component {
           groupedByCode={this.props.groupedByCode}
           currentDataset={this.state.currentDataset}
           unselectSociety={this.props.unselectSociety}
+          nationalSocietyNames={this.props.nationalSocietyNames}
         />
         <AllSocieties
           sum={this.state.currentDatasetSum}
@@ -154,6 +155,7 @@ class SocietiesTable extends React.Component {
           groupedTimeSeries={this.props.groupedTimeSeries}
           groupedByCode={this.props.groupedByCode}
           currentDataset={this.state.currentDataset}
+          nationalSocietyNames={this.props.nationalSocietyNames}
         />
       </div>
     )
@@ -175,6 +177,7 @@ SocietiesTable.propTypes = {
   selectSociety: React.PropTypes.func,
   unselectSociety: React.PropTypes.func,
   clearSocieties: React.PropTypes.func,
+  nationalSocietyNames: React.PropTypes.object,
 }
 
 const mapStateToProps = state => ({

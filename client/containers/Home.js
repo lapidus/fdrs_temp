@@ -154,7 +154,7 @@ class Home extends React.Component {
 
         <div className='px1 pb4'
              style={{
-               backgroundImage: "url(/img/national-society-coverage.png)",
+               backgroundImage: this.context.i18n.language === "ar" ? "url(/img/national-society-coverage-ar.jpg)" : "url(/img/national-society-coverage.jpg)",
                backgroundSize: "auto 100%",
                backgroundRepeat: "no-repeat",
                backgroundPosition: this.context.i18n.language === "ar" ? "right" : "left"
@@ -165,7 +165,11 @@ class Home extends React.Component {
                 { t("home:insights.title") }
               </h2>
               <div className="clearfix mxn1">
-                <div className="col base-6 base-offset-6 px1 py4">
+                <div className="col sm-12 md-6 px1 py1 md-py4 text-center md-text-left">
+                  <p className="heading-lg md-heading-xl strong color-primary lh-1 m0">{ "100%" }</p>
+                  <p className="text-md m0 strong">{ t("home:insights.nsCoverage") }</p>
+                </div>
+                <div className="col sm-12 md-6 px1 py1 md-py4">
                   <h2 className="title sm-headline strong">
                     { t("home:insights.subtitle") }
                   </h2>

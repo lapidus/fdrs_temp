@@ -19,5 +19,6 @@
         "Tendance",
         "Donn\u00e9es pour"
     ],
-    "filterPlaceholder": "Choisir des soci\u00e9t\u00e9s nationales pour comparer"
+    "filterPlaceholder": "Choisir des soci\u00e9t\u00e9s nationales pour comparer",
+    "borderMessage": "The boundaries and the designations used on this map do not imply the expression of any opinion on the part of the International Federation of Red Cross and Red Crescent Societies and are used for illustrative purposes only."
 }

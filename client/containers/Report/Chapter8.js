@@ -126,7 +126,8 @@ class Chapter8 extends React.Component {
                 caption={section2.blocks[1].caption}
                 bubbleSource={false}
                 bubbleCallback={this.bubbleCallback}
-                />
+                bubbles={this.bubbleCallback()}
+              />
               <div className="clearfix">
                 {section2.blocks[1].items.map((item, i) => {
                   return (

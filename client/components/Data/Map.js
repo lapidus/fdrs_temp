@@ -109,8 +109,6 @@ class Map extends React.Component {
   render() {
     const { data, indicator, nationalSocieties } = this.props
 
-
-
     const tooltipContent = (name, kpi, value) => (
       <div className="text-center p1" style={{maxWidth:240}}>
         <div>{ name }</div>
@@ -145,11 +143,9 @@ class Map extends React.Component {
                 ) : (null)
               }
 
-
               {
                 !this.state.loading ?
                   currentYearData.map((bubble, i) => {
-
 
                   const lat  = Number(nationalSocietiesByID[bubble.KPI_DON_Code].lat)
                   const long = Number(nationalSocietiesByID[bubble.KPI_DON_Code].long)
@@ -157,30 +153,6 @@ class Map extends React.Component {
                   const bubbleData = bubble[this.props.indicator.id]
 
                   if(bubbleData && coords) {
-                    // return (
-                    //   <SVGOrigin
-                    //     content={tooltipContent(this.props.nationalSocietyNames[bubble.KPI_DON_Code], this.props.indicator.id, bubbleData)}
-                    //     key={bubble.KPI_DON_Code}>
-                    //     <circle
-                    //       cx={this.projection()(coords)[0]}
-                    //       cy={this.projection()(coords)[1]}
-                    //       r={bubbleData ? this.state.scale(Number(bubbleData)) : 0}
-                    //       style={{
-                    //         fill: this.props.societiesBlacklist.indexOf(bubble.KPI_DON_Code) !== -1 || this.props.societiesBlacklist.length == 0 ? "rgba(208,2,27,0.8)" : "rgba(208,2,27,0.1)",
-                    //         stroke: "#fff",
-                    //         strokeWidth: "1.5px",
-                    //         cursor: "pointer"
-                    //       }}
-                    //       onClick={ (e) => this.props.bubbleClick(e, bubble, bubbleData) }
-                    //       onMouseEnter={ (e) => {
-                    //           this.props.dispatch(show({
-                    //             origin: e.target,
-                    //             content: "WHASAAAA!"
-                    //           }))
-                    //       }}
-                    //     />
-                    //   </SVGOrigin>
-                    // )
                     return (
                       <circle
                         key={ bubble.KPI_DON_Code }
