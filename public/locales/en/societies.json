@@ -1,14 +1,14 @@
 {
     "title": "National Society profiles",
     "tabs": [
-        [
-            "IFRC global",
-            "overview"
-        ],
-        [
-            "National Society",
-            "profiles"
-        ]
+      {
+        "longName": "IFRC global overview",
+        "shortName": "overview"
+      },
+      {
+        "longName": "National Society profiles",
+        "shortName": "profiles"
+      }
     ],
     "titleParts": [
         "National Society",

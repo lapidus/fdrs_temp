@@ -43,10 +43,10 @@ class Societies extends React.Component {
                       </g>
                     </svg>
                   </span>
-                  <span className="inline-block xs-visible">
+                  {/* <span className="inline-block xs-visible">
                     { t("societies:tabs")[0][0] }&nbsp;
-                  </span>
-                  { t("societies:tabs")[0][1] }
+                  </span> */}
+                  { t("societies:tabs")[0].longName }
                 </LanguageLink>
               </li>
               <li className="inline-block">
@@ -61,10 +61,10 @@ class Societies extends React.Component {
                       </g>
                     </svg>
                   </span>
-                  <span className="xs-visible">
+                  {/* <span className="xs-visible">
                     { t("societies:tabs")[1][0] }&nbsp;
-                  </span>
-                  { t("societies:tabs")[1][1] }
+                  </span> */}
+                  { t("societies:tabs")[1].longName }
                 </LanguageLink>
               </li>
             </ul>

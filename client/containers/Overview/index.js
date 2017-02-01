@@ -59,10 +59,10 @@ class Overview extends React.Component {
                       </g>
                     </svg>
                   </span>
-                  <span className="inline-block xs-visible">
+                  {/* <span className="inline-block xs-visible">
                     { t("overview:tabs")[0][0] }&nbsp;
-                  </span>
-                  { t("overview:tabs")[0][1] }
+                  </span> */}
+                  { t("overview:tabs")[0].longName }
                 </LanguageLink>
               </li>
               <li className="inline-block">
@@ -77,10 +77,10 @@ class Overview extends React.Component {
                       </g>
                     </svg>
                   </span>
-                  <span className="xs-visible">
+                  {/* <span className="xs-visible">
                     { t("overview:tabs")[1][0] }&nbsp;
-                  </span>
-                  { t("overview:tabs")[1][1] }
+                  </span> */}
+                  { t("overview:tabs")[1].longName }
                 </LanguageLink>
               </li>
             </ul>

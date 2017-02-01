@@ -1,14 +1,14 @@
 {
     "title": "The IFRC at a glance",
     "tabs": [
-        [
-            "IFRC global",
-            "overview"
-        ],
-        [
-            "National Society",
-            "profiles"
-        ]
+      {
+        "longName": "IFRC global overview",
+        "shortName": "overview"
+      },
+      {
+        "longName": "National Society profiles",
+        "shortName": "profiles"
+      }
     ],
     "table": "Table",
     "map": "Map",
