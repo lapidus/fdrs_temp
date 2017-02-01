@@ -136,7 +136,7 @@ class Map extends React.Component {
         }
         <div style={{opacity: this.state.loading ? 0 : 1, transform: `translateY(${this.state.loading ? '30px' : '0'})`, transition: "all 0.75s"}}>
           {
-            <svg style={{width:"100%"}} width={800} height={480} viewBox="0 0 800 480">
+            <svg style={{width:"100%",height:"auto"}} width={800} height={480} viewBox="0 0 800 480">
               {
                 !this.state.loading ? (
                   <Countries countries={this.state.countries} projection={this.projection} />
